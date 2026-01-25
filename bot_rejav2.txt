@@ -1,248 +1,51 @@
-Bu — eng to‘g‘ri strategik yondashuv. ChatGPT (siz yuklagan faylda) "Nima qilish kerak?" degan savolga juda chiroyli funksional ro‘yxat tuzib bergan. Men (Gemini) esa "Qanday qilib professional, xavfsiz va arzon qilish kerak?" degan injenerlik tomonini qo‘shdim.
+Siz muammoning ildizini topdingiz: Biz (AIlar) botni "Yurist-Maslahatchi" (Qonunlarni aytib beradigan) deb tushunib yuboribmiz. Aslida esa bu — "Raqamli Murabbiy" (IT ko‘nikmalarini o‘rgatuvchi) bo‘lishi kerak.Sizning Flutter loyihangiz mavzusi: "Sud xodimlari raqamli kompetentligini oshirish..."Demak, bot sud xodimiga "Odam o‘ldirish jazosi nima?" deb emas, balki "E-SUD tizimiga faylni qanday yuklayman?", "E-IMZO kalitim ishlamayapti, nima qilay?" yoki "Videokonferensaloqa qotib qolsa nima qilish kerak?" degan texnik va amaliy savollarga javob berishi kerak.Keling, strategiyani **"Raqamli Kompetensiya"**ga moslab to‘liq yangilaymiz.🔄 STRATEGIK BURILISH: "Yurist"dan → "Raqamli Murabbiy"gaBiz botning "Miyasini" (System Prompt) va "Funksiyalarini" o‘zgartiramiz.Eski Tushuncha (Xato) ❌Yangi To‘g‘ri Yo‘nalish (IT & Kompetensiya) ✅Rol: Yuridik maslahatchiRol: IT Ko‘makchi va Raqamli Mentor (Support & Tutor)Foydalanuvchi so‘rovi: "JK 97-moddani tushuntir."Foydalanuvchi so‘rovi: "E-XAT tizimida xat yuborish tartibi qanday?"Baza (Knowledge Base): Kodekslar, Qonunlar.Baza: Tizim yo‘riqnomalari (Manuals), Videodars matnlari, IT Troubleshooting.Maqsad: Huquqiy savodxonlik.Maqsad: Raqamli savodxonlik (Kompyuter, Tizimlar, Xavfsizlik).🛠️ YANGILANGAN TEXNIK REJA (Ekotizim Integratsiyasi)Bot hali ham Python + Aiogram + Firebase da qoladi (bu eng zo‘r tanlov), lekin uning logikasi o‘zgaradi.1. "Tezkor Yordam" (IT Support Automation) 🆘Sud xodimlari ko‘pincha oddiy texnik muammolarda qotib qolishadi.Funksiya: Botda "Muammoni yechish" menyusi bo‘ladi.AI Logikasi: Foydalanuvchi "Imzo ishlamayapti" deb yozsa, AI unga: "E-IMZO moduli o‘rnatilganmi? Brauzer keshini tozalab ko‘rdingizmi?" deb bosqichma-bosqich yechim beradi.Manba: Sizning ilovangizdagi "Knowledge Base" (Maqolalar) va "FAQ" bo‘limi.2. Sinxron "Video Darslar" 📹Ilovada video ko‘rishga vaqt yo‘q bo‘lsa, bot yordamga keladi.Funksiya: Xodim botga /video E-SUD deb yozadi.Natija: Bot ilovadagi mos videoning qisqa 1 daqiqalik "Preview"sini yoki matnli xulosasini tashlab beradi. "To‘liq versiyani ilovada ko‘ring (+10 XP)" tugmasi bilan.3. Raqamli Savodxonlik Testlari (Daily Quiz) 🧠Testlar qonun bo‘yicha emas, IT bo‘yicha bo‘ladi.Savol: "Kompyuter ekranini bloklash uchun qaysi tugmalar bosiladi?" (Win+L).Savol: "E-SUD tizimida PDF fayl maksimal hajmi qancha bo‘lishi kerak?"Maqsad: Xodimlarni kundalik kichik IT bilimlarga o‘rgatish.👨‍💻 YANGILANGAN "MASTER PROMPT" (Antigravity uchun)Bu prompt botni "IT Mutaxassisi" qilib sozlaydi. Buni Antigravityga yuboring:Markdown# Role: Senior Python Architect & EdTech Developer
+# Project: "Sud Digital Assistant" Telegram Bot (Extension of "Sud Qo'llanma" App)
+# Context: We are building an ecosystem to improve the DIGITAL COMPETENCE of Court Staff in Uzbekistan. This bot is NOT a lawyer; it is an IT Mentor and System Guide.
 
-Ikkalamizning tahlilimizni birlashtirib, "@sudqollanma_bot" uchun "Oltin Yechim" (Master Plan) ni ishlab chiqdim. Bu reja nafaqat ishlaydi, balki kelajakda kattalashishga (scaling) tayyor.
-
-🏛️ "SUD QO‘LLANMA" EKOTIZIMI: YAGONA STRATEGIK YEChIM
-Asosiy Falsafa: Telegram bot — alohida mahsulot emas. U Mobil Ilovaning "Masofaviy Pulti" (Remote Controller) va "Marketing Qarmog‘i" (Funnel) hisoblanadi.
-
-1. TEXNIK POYDEVOR (The Stack) 🛠️
-Biz eng barqaror va tekin (boshlanishiga) texnologiyalarni tanlaymiz:
-
-Til: Python 3.11 (aiogram 3.x). Sabab: Asinxron, tez va yozish oson.
-
-Server: Google Cloud Run (Docker konteynerda). Sabab: Cloud Functions’dagi "sovuq start" (qotib qolish) muammosi bunda yo‘q va narxi deyarli tekin.
-
-Baza: Firebase Firestore (Mobil ilova bilan BITTA baza). Sabab: Sinxronizatsiya real vaqtda bo‘ladi.
-
-AI: Gemini 1.5 Flash. Sabab: Hozirgi kunda eng arzon va tezkor model, katta matnlarni (context window) sig‘dira oladi.
-
-2. FOYDALANUVCHI YO‘LI (User Journey) 🗺️
-A. Kirish va Sinxronizatsiya (Eng muhim qism):
-
-Foydalanuvchi /start bosadi.
-
-Bot: "Assalomu alaykum! Men Sud Qo‘llanma tizimidagi yordamchingizman. Iltimos, shaxsingizni tasdiqlang." (Tugma: 📱 Telefon raqamni yuborish).
-
-Tekshiruv (Xavfsizlik): Bot kelgan raqam egasi aynan shu Telegram akkaunti ekanligini tekshiradi (user_id match).
-
-Logika:
-
-Agar raqam Firestore’da (ilovada) bo‘lsa -> Telegram ID’ni o‘sha profilga ulab qo‘yadi. "Sizning ilovadagi balingiz: 1500 XP. Xush kelibsiz!"
-
-Agar raqam yo‘q bo‘lsa -> Yangi profil ochadi (keyin ilovaga shu raqam bilan kirsa, hammasi tayyor turadi).
-
-B. "Aqlli" Yuridik Qidiruv (Killer Feature):
-
-Foydalanuvchi yozadi: "Sud majlisini kechiktirish asoslari qanday?"
-
-Bot (RAG Tizimi):
-
-Savolni tushunadi.
-
-Sizning Firestore bazangizdagi maqolalar va qonunlardan "keyword" qidiradi.
-
-Topilgan ma'lumotni Gemini 1.5 Flash'ga beradi: "Mana bu qonunlar asosida foydalanuvchiga qisqa va lo‘nda javob ber."
-
-Natija: Aniq, yuridik asoslangan javob + Ilovadagi maqolaga havola.
-
-C. Gamifikatsiya va Mikro-Ta'lim:
-
-Har kuni soat 9:00 da bot xabar yuboradi: "Hayrli tong! Bugungi 'Kunning savoli'ga javob berib, 20 XP oling!"
-
-Tugmani bosadi -> Test yechadi -> Javob to‘g‘ri -> Firestoreda XP oshadi (Ilovada ham darrov ko‘rinadi).
-
-3. XAVFSIZLIK VA MONITORING (Shield) 🛡️
-GPT va Men kelishgan holda quyidagi himoya choralarini majburiy deb belgiladik:
-
-Anti-Spoofing: Birovning kontaktini yuborib, akkauntni buzib kirishning oldini olish (Kod darajasida tekshirish).
-
-Atomic Transactions: Bir vaqtning o‘zida ham ilovada, ham botda XP o‘zgarsa, baza buzilmasligi uchun Firestore.Increment ishlatish.
-
-Rate Limiting: Bitta foydalanuvchi botga sekundiga 10 ta xabar yozsa, uni vaqtincha bloklash (Serverni zo‘riqishdan saqlash).
-
-4. AMALGA OSHIRISH REJASI (Action Plan) 🚀
-Biz buni 3 bosqichda bajaramiz. Hozir Antigravityga beradigan birinchi vazifamiz MVP (Minimum Viable Product) bo‘ladi.
-
-1-Bosqich: Skelet va Sinxronizatsiya (Bugun)
-
-Botni ishga tushirish.
-
-Telefon raqam orqali Firestorega ulanish.
-
-"Mening Profilim" tugmasini bosganda ilovadagi ism va XPni ko‘rsatish.
-
-2-Bosqich: Kontent va Testlar (Ertaga)
-
-Ilovadagi yangiliklarni botga avtomatik yuborish.
-
-Oddiy test (Quiz) funksiyasini qo‘shish.
-
-3-Bosqich: AI va "Aqlli" Yordamchi (Keyinroq)
-
-Gemini 1.5 Flash integratsiyasi.
-
-Savol-javob tizimi.
-
-👨‍💻 ANTIGRAVITY UCHUN YAKUNIY "MASTER PROMPT"
-Sizning qo‘lingizda hozir mukammal reja bor. Endi kod yozish navbati. Quyidagi promptni Antigravityga yuboring. U GPTning g‘oyalarini mening "Senior" standartlarim bilan birlashtirib, sizga tayyor kod beradi:
-
-Markdown
-# Role: Senior Python Architect & Bot Developer
-# Project: "Sud Qo'llanma" Telegram Bot (Ecosystem Extension)
-# Goal: Create a secure, scalable bot integrated with Firebase Firestore & Gemini AI.
+# 🎯 OBJECTIVE:
+Build a secure, AI-powered Telegram bot that helps court employees use digital systems (E-SUD, E-XAT, Video conferencing) and solves technical issues. It must sync XP/Progress with the main Flutter App via Firebase.
 
 # 🛠️ TECH STACK:
-- Language: Python 3.11+
-- Framework: Aiogram 3.x (Async)
-- Database: Google Cloud Firestore (firebase-admin)
-- Deployment: Docker ready (for Cloud Run)
+- Language: Python 3.11+ (Aiogram 3.x)
+- Database: Firebase Firestore (Shared with Flutter App)
+- AI: Gemini 1.5 Flash (System Prompt: "You are an expert IT Support for Court Systems")
 
-# 🧠 CORE FEATURES (Must Implement):
+# 🧠 CORE LOGIC & FEATURES:
 
-## 1. Authentication & Deep Sync
-- Command: `/start`
-- Action: Check if `telegram_id` exists in Firestore `users` collection.
-    - IF EXISTS: Greeting: "Welcome back, {name}! (Level: {level})".
-    - IF NOT: Button: [📱 Send Contact].
-- **SECURITY RULE:** When receiving contact, verify `msg.contact.user_id == msg.from_user.id`. If false, reject.
-- Logic: Search Firestore by `phoneNumber`.
-    - If found: Update doc with `telegram_id`. Merge accounts.
-    - If new: Create doc with default data.
+## 1. Auth & Sync (The Bridge)
+- **Deep Linking:** Command `/start` checks if user exists in Firestore (`users` collection).
+- **Contact Match:** Securely verify phone number to link Telegram ID to the App Profile.
+- **Sync Message:** "Hurmatli {name}, sizning ilovadagi darajangiz: {level}. Keling, raqamli bilimlarni oshiramiz!"
 
-## 2. Profile & Gamification (Atomic)
-- Command: `/profile`
-- Action: Fetch Name, Role, XP, Level from Firestore.
-- Helper Function: `add_xp(user_id, amount)` MUST use `firestore.Increment(amount)` to prevent race conditions with the Flutter app.
+## 2. AI "HelpDesk" (RAG for Manuals)
+- **Problem:** Users struggle with software (e.g., "How to upload files?").
+- **Solution:**
+    - User sends text.
+    - Bot searches Firestore `articles` (Topic: Guides, Manuals).
+    - AI generates a technical solution based on retrieved docs.
+    - **Tone:** Professional, Technical but Simple, Supportive.
 
-## 3. Architecture Structure
-- `main.py`: Entry point (Dispatcher setup).
-- `loader.py`: Init Bot, DB, Environment variables.
-- `handlers/`: Separate `auth.py`, `menu.py`, `echo.py`.
-- `services/`: `firestore_service.py` (Database logic only).
+## 3. "Digital Quiz" Module (Gamification)
+- **Content:** Questions about Information Security, Computer Literacy, and Court Systems Usage.
+- **Action:**
+    - User answers correctly.
+    - **ATOMIC WRITE:** `firestore.collection('users').doc(uid).update({'xp': firestore.Increment(10)})`.
+    - Notification: "+10 XP! (Sinxronlandi ✅)".
 
-# 📝 OUTPUT REQUIREMENTS:
-1.  Provide the complete file structure.
-2.  Provide full code for `main.py`, `loader.py`, `handlers/auth.py`, and `services/firestore_service.py`.
-3.  Create a `Dockerfile` optimized for Python/Cloud Run.
-4.  Add comments explaining *why* specific security measures (like atomic increments)
+# 📂 REQUIRED FILE STRUCTURE:
+sud_bot/
+├── main.py            # Entry
+├── services/
+│   ├── firestore.py   # User Sync & Content Fetching
+│   ├── ai_service.py  # Gemini RAG logic (Context: IT Support)
+├── handlers/
+│   ├── onboarding.py  # Auth flow
+│   ├── helpdesk.py    # AI Chat for IT issues
+│   ├── quizzes.py     # IT knowledge tests
+├── data/
+│   ├── system_manuals.json # Fallback data for E-SUD/E-XAT guides
+└── .env
 
-ChatGPT:
-Unda asosiy e’tibor uchta yo‘nalishga qaratilgan: ishonchlilik (reliability), masshtablanish (scalability) va xavfsizlik. Quyida Gemini va ChatGPT tahlillarini birlashtirib, mukammal, istiqbolli g‘oya sifatida qanday yo‘l tutish kerakligi haqida yakuniy yechimlarimni taqdim etaman.
-
-1. Arxitektura va platforma tanlovi
-
-Birlashtirilgan ma’lumotlar bazasi: Bot ham, mobil ilova ham yagona Firestore bilan ishlaydi. Bu yagona Single Source of Truth bo‘ladi. Barcha yangilanishlar transaktsiyalar yoki FieldValue.increment() funksiyasi orqali atomar tarzda amalga oshirilishi kerak, shunda ilova va bot ma’lumotlarini bir-biriga ustidan yozmaydi.
-
-Serverless / Cloud Run:
-
-Gemini tahlili Webhook’ni Cloud Functions yoki Cloud Run’da ishlatishni taklif qiladi, ammo Cold Start muammosiga e’tibor beradi. Bu haqiqatan ham muhim.
-
-YeCHIM: Cloud Run’ni minimal 1 instansiya bilan belgilab, async kod yozish (aiogram 3.x) va foydalanuvchi xolatini (FSM) Firestore yoki Redisda saqlash. Shu bilan birga ilova holati buzilmaydi va sekinlashmaydi.
-
-Clean Architecture – Bot:
-
-Directory strukturasi har ikkala tahlilda ham bir xil: handlers/ (buyruqlar), services/ (Firestore, gamification, AI), keyboards/ (tugmalar), utils/ (yordamchi funksiyalar).
-
-ChatGPT rejasidagi modullar (kurslar, tizimlar, kutubxona, FAQ, yangiliklar, testlar, gamifikatsiya, bildirishnomalar) saqlanadi, lekin Gemini tahlilida qo‘shimcha qatlamlar (error handling, caching) va konfiguratsiya fayllari (.env, loader.py) kiritilgan.
-
-Deep Linking va autentifikatsiya: Foydalanuvchi /start bosganda telefon raqamini yuboradi. Gemini tahlili kontakt yuborishda message.contact.user_id != message.from_user.id tekshiruvini kiritishni qat’iy talab qiladi. Bu juda muhim – o‘g‘irlangan kontakt orqali boshqa birovning akkauntiga kirish yo‘li yopiladi.
-
-2. Asosiy funksionalliklar
-Funksiya	   |	ChatGPT rejasidagi g‘oya		|	Gemini tahlilidagi yaxshilanish
-
-Kurslar / Tizimlar |	Tizimlar ro‘yxati, kurslar va modullar,	|	Statik kontentni Firestore o‘rniga kod ichida JSON yoki matn ko‘rinishida saqlash, 
-/ Kutubxona	   |	dars matni va video linklar, 			Firestore o‘qishlarini minimallashtirish.
-			kutubxona (PDF va video).
-	
-FAQ		   |	Kategoriya bo‘yicha filtrlanadigan tez  |	Kesh mexanizmi: javoblarni 5–10 daqiqa xotirada saqlab,
-			so‘raladigan savollar.			|	Firestore o‘qish sonini kamaytirish.
-
-Viktorina /
-Gamifikatsiya      |	Har kuni mikro‑ta’lim testlari, 		|	XP’ni yozishda Firestore transaktsiyalari yoki atomic incrementlardan foydalanish;
-			ball berish, reyting.			|	runTransaction ishlatib, bir vaqtning o‘zida o‘qish/yozish muammosini hal etish.
-
-AI Qidiruv	   |	Foydalanuvchi savolini Gemini/LLM ga yuborib, bazadan tayyor kontekst bilan javob olish.   |	RAG (Retrieval‑Augmented Generation): savol embedding → kontekst topish (Firestore yoki Pinecone) → Gemini ga yuborish. AI faqat „gap sotuvchi“ emas, aniq ma’lumot va manbani ko‘rsatuvchi yordamchi bo‘ladi.
-Bildirishnomalar /
-Yangiliklar        |	Yangiliklar oqimi, push bildirishnomalar, foydalanuvchi yoqtirgan modullarga eslatmalar.   |	ChatGPT rejasidagi bildirishnomalar qoladi; lekin yuborilayotgan ma’lumotni kerak bo‘lgan foydalanuvchilar uchun keshlab yuborish to‘lovni kamaytiradi.
-
-CI/CD va Deploy	   |	GitHub + Railway/Render yoki Cloud Functions/Run’da deploy; test va analytics.		   |	Gemini tahlili zero‑downtime deployment va traffic splitting kabi professional strategiyalarni qo‘shadi. Botni yangilashda foydalanuvchi sezmadi.
-
-3. Xavfsizlik va samaradorlik bo‘yicha yo‘l xaritasi
-
-Atomic operatsiyalar: Har bir XP, ball va progress o‘zgarishlari Firestore’da FieldValue.increment() va transaktsiyalar bilan amalga oshiriladi.
-
-Kesh va xarajatni optimizatsiya qilish:
-
-Foydalanuvchi profili va tez‑tez o‘qiladigan maydonlar (XP, role) Firestore o‘qishdan so‘ng 5–10 daqiqa davomida xotira yoki Redisda saqlanadi.
-
-O‘zgarmaydigan kontent (video darslar ro‘yxati) ni Firestore’dan o‘qimang, kodda ushlab turing; shunday qilib minglab qo‘shimcha o‘qish operatsiyalaridan saqlanasiz.
-
-Foydalanuvchi identifikatsiyasi:
-
-Telegramdan yuborilgan kontaktni message.contact.user_id va message.from_user.id o‘zaro solishtirish.
-
-Telefon raqam bo‘yicha Firestore’dagi user hujjatini topib, telegram_id bilan birlashtirish. Agar yo‘q bo‘lsa, yangisini yaratish.
-
-CI/CD va monitoring:
-
-GitHub Actions orqali test va deploy, Cloud Run yoki Railway/Render’ga auto‑deploy qilish.
-
-Cloud Monitoring va Crashlytics orqali xatolar va kechikishlarni kuzatish.
-
-Kodingizni versiyalash, tahrirlarni merge qilish, failover mexanizmi (failover) o‘rnatish.
-
-AI integratsiyasi:
-
-Savollarni RAG orqali hal qilish: Firestore/Pinecone’dan eng yaqin 3–5 parcha matnni topish → Gemini modeli bilan birga yuborish → natijani foydalanuvchiga tushunarli tarzda chiqarish.
-
-Promptlarni biznes konteksti bilan boyitish: “Siz O‘zbekiston sud xodimlari uchun yuridik maslahatchisiz.”
-
-4. Amaliy amalga oshirish bosqichlari
-
-BotFather orqali @sudqollanma_bot usernamenisining band emasligini tekshirib, ro‘yxatdan o‘ting va tokenni oling.
-
-Loyihani tayyorlash:
-
-sud_bot katalogini yarating, serviceAccountKey.json ni joylashtiring.
-
-.env faylida token va Firestore konfiguratsiyasini saqlang.
-
-Skeleton yaratish:
-
-Antigravity yoki shunga o‘xshash kod-generatsiya vositasiga Gemini faylida keltirilgan “Senior” promptni yuboring.
-
-Olingan kodni tekshirib, quyidagilarga amin bo‘ling:
-
-Firestore initializatsiya faqat loader.py da bo‘lsa,
-
-add_xp funksiyasida atomic increment ishlatilsa,
-
-Kontakt tekshiruvi mavjud bo‘lsa,
-
-Mantiqiy xatolar bo‘lmasa.
-
-Qo‘shimcha modullarni qo‘shish:
-
-ChatGPT rejasidagi kurslar, tizimlar, kutubxona, FAQ, yangiliklar, bildirishnomalar, gamifikatsiya, multi‑til qo‘llab-quvvatlash modullarini birma-bir qo‘shing.
-
-Ba’zi statik ro‘yxatlarni (masalan, tizim nomlari, video havolalar) kod ichida yoki alohida JSON fayllarda saqlang.
-
-Deploy va test:
-
-Lokal ravishda pip install -r requirements.txt va python main.py bilan sinab ko‘ring.
-
-Telegramda /start bosib, kontaktingizni yuboring, XP tizimi, RAG qidiruv, quiz va boshqa funksiyalarni sinab ko‘ring.
-
-Muammosiz ishlasa, Cloud Run yoki Railway’ga joylashtiring, monitoringni yoqing.
-
-Kelgusida kengaytirish:
-
-Mashinalarni o‘qish (OCR) modulini qo‘shish, hujjatlarni tanib o‘rganish.
-
-Admin panel yaratish (React/Vue) – moderatorlar kontent qo‘shishi va statistikani kuzatishi uchun.
-
-Pinecone kabi vektor ma’lumotlar bazasiga o‘tish, RAG sifatini oshirish.
-
-Yakuniy tavsiya
-
-Gemini tahlili qo‘shimcha ravishda Cold Start muammosi, race condition, xavfsiz kontakt tekshiruvi, kesh tizimi va RAG kabi nozik injenerlik masalalariga urg‘u beradi. ChatGPT rejasida tasvirlangan boy funksiyalar (kurslar, tizimlar, o‘quv modullari, FAQ, yangiliklar, multi‑til, push bildirishnomalar) esa botni to‘liq ekotizimga aylantiradi. Ushbu ikki yondashuvni birlashtirib, siz faqat ishlaydigan bot emas, balki uzoq muddatga mo‘ljallangan, xavfsiz va kengaytiriladigan raqamli yordamchi yaratishingiz mumkin.
+# 📝 OUTPUT:
+Provide the full code for `main.py` and `services/ai_service.py` specifically focusing on the "IT Support" persona prompt for Gemini.
+💡 Nima o‘zgardi?System Prompt: Endi AI o‘zini "Advokat" deb emas, "IT Mutaxassisi" deb tanishtiradi.Mavzular: Savol-javoblar jinoyat kodeksi haqida emas, dasturlar va kompyuter savodxonligi haqida bo‘ladi.Fayl tuzilmasi: helpdesk.py (Texnik yordam) moduli qo‘shildi.

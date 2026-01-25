@@ -2,23 +2,22 @@ import asyncio
 import logging
 import sys
 from loader import bot, dp
-from handlers import auth, profile, ai
+from handlers import onboarding, helpdesk, quizzes
 
 async def main():
-    # Logging configuration
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     
-    # Register Routers
-    dp.include_router(auth.router)
-    dp.include_router(profile.router)
-    dp.include_router(ai.router) # AI handler should be last to catch text messages
+    # Register Routers (Order matters!)
+    dp.include_router(onboarding.router)  # /start
+    dp.include_router(quizzes.router)     # /quiz
+    dp.include_router(helpdesk.router)    # Text messages (Fallthrough)
 
-    logging.info("Bot ishga tushdi... (Gemini va Firestore ulangan)")
+    logging.info("IT Support Bot ishga tushdi...")
     
     try:
         await dp.start_polling(bot)
     except Exception as e:
-        logging.error(f"Error during polling: {e}")
+        logging.error(f"Polling error: {e}")
 
 if __name__ == "__main__":
     try:
