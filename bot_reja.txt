@@ -1,0 +1,338 @@
+🗺️ 1-BOSQICH: TIZIM ARXITEKTURASI (Miya)
+Bot alohida "yashaydigan" narsa bo'lmasligi kerak. U sizning mobil ilovangiz bilan bitta ma'lumotlar bazasini (Firestore) ishlatishi shart.
+
+Texnologiya (Stack):
+
+Til: Python (aiogram 3.x) — Vibe Coding uchun eng qulayi.
+
+Backend: Google Cloud Functions yoki Google Cloud Run (Server sotib olish shart emas, tekin kvota bor).
+
+Database: Cloud Firestore (Mavjud loyihaga ulanadi).
+
+AI: Google Gemini 1.5 Flash (Tez va arzon javoblar uchun).
+
+🛠️ 2-BOSQICH: QADAMMA-QADAM AMALGA OSHIRISH
+1. Ro'yxatdan o'tish (BotFather)
+Hozirning o'zida @sudqollanma band qilinmagan bo'lsa, uni darhol olish kerak.
+
+Telegramda @BotFather ga kirasiz.
+
+/newbot -> Ismi: "Sud Qo'llanma | Yordamchi" -> Username: sudqollanma_bot.
+
+TOKENni olasiz va hech kimga ko'rsatmaysiz.
+
+2. Loyiha Strukturasini Tuzish (Clean Architecture)
+Botni ham xuddi ilova kabi tartibli quramiz.
+
+Plaintext
+sud_bot/
+├── main.py            # Ishga tushirish fayli
+├── config.py          # Token va sozlamalar (.env dan oladi)
+├── handlers/          # Buyruqlar (start, search, quiz)
+│   ├── users.py
+│   ├── admin.py
+├── services/          # Tashqi xizmatlar
+│   ├── firestore.py   # Bazaga ulanish
+│   ├── gemini.py      # AI javoblari
+├── keyboards/         # Tugmalar (Inline va Reply)
+└── utils/             # Yordamchi funksiyalar
+3. Asosiy Funksiyalar (MVP)
+A. Avtorizatsiya va Sinxronizatsiya 🔗
+
+Muammo: Botdagi foydalanuvchi va Ilovadagi foydalanuvchi bitta odam ekanligini qanday bilamiz?
+
+Yechim: "Deep Linking".
+
+Botda /start bosilganda, foydalanuvchidan telefon raqamini so'rash (contact tugmasi).
+
+Agar raqam Firestore'dagi users kolleksiyasida bo'lsa, bot va ilova hisobini birlashtiramiz (TelegramID ni bazaga yozib qo'yamiz).
+
+Natija: Botda test yechsa, ilovada XP oshadi!
+
+B. "Aqlli" Qidiruv (AI Search) 🔍
+
+Foydalanuvchi savol yozadi: "Sud majlisini qoldirish tartibi qanday?"
+
+Bot bu savolni Geminiga yuboradi + Sizning bazangizdagi maqolalar kontekstini qo'shadi (RAG).
+
+Javob qaytadi: "Qonunchilikka ko'ra... (Manba: Sizning maqolangiz havolasi)".
+
+C. Mikro-Ta'lim (Daily Quiz) ⚡
+
+Har kuni ertalab soat 9:00 da bot xodimga bitta qisqa test yuboradi.
+
+Tugmani bosadi -> Javob to'g'ri bo'lsa -> +10 XP (Ilovada ham ko'rinadi).
+
+🧬 3-BOSQICH: Antigravity (AI) uchun Prompt
+Siz kod yozib o'tirmang. Antigravity yoki OpenCode'ga quyidagi Master Promptni bering, u sizga botning skeletini 5 daqiqada qurib beradi.
+
+Promptni nusxalang:
+
+Markdown
+# Role: Senior Python Bot Developer
+# Task: Create a Telegram Bot for "Sud Qo'llanma" linked to Firebase
+# Context: I have a Flutter app using Firebase Firestore. I need a Telegram bot that interacts with the same database.
+
+# TECH STACK:
+- Language: Python 3.10+
+- Library: aiogram 3.x (Asynchronous)
+- Database: firebase-admin (Firestore)
+- AI: google-generativeai (Gemini)
+
+# FEATURES TO IMPLEMENT:
+1.  **Firebase Connection:** Initialize generic firebase app using `serviceAccountKey.json`.
+2.  **User Sync:** On `/start`, check if the user exists in Firestore `users` collection by Telegram ID. If not, ask for phone number contact to match/create profile.
+3.  **XP System:** Create a function `add_xp(user_id, amount)` that updates the user's `xp` field in Firestore atomically.
+4.  **AI Chat:** If user sends text, send it to Gemini API with a system prompt: "You are a legal assistant for Uzbekistan Court staff."
+
+# DELIVERABLES:
+- Provide the file structure.
+- Provide `main.py`, `firestore_service.py`, and `handlers.py`.
+- Include a `.env` template.
+🚀 4-BOSQICH: DEPLOY (Ishga tushirish)
+Bot 24/7 ishlashi kerak.
+
+Variant A (Oson): Railway.app yoki Render.com.
+
+GitHub'ga bot kodini yuklaysiz.
+
+Railway'ga ulab, "Deploy" bosasiz. Oyiga $5 yetadi (yoki tekin).
+
+Variant B (Professional): Google Cloud Functions.
+
+Botni "Webhook" rejimida ishlataz. Telegram serveri har safar xabar kelganda Google Cloud funksiyangizni chaqiradi. Bu eng arzon va professional yo'l.
+
+🎯 Strategik Maslahat
+Hozir @sudqollanma username bo'sh turgan bo'lsa, birinchi ishingiz uni egallash bo'lsin. Kodni keyin yozsa ham bo'ladi, lekin username ketib qolsa, qaytarib bo'lmaydi.
+
+
+ChatGPT: 
+1. Konseptsiya va maqsadni aniqlash
+
+Nima uchun bot?
+
+Mobil ilova bo‘lganiga qaramay, ko‘plab foydalanuvchilar kundalik ravishda Telegram kabi messenjerlardan foydalanadilar. Bot orqali qisqa savollarga javob olish, yangiliklardan xabardor bo‘lish, oddiy testlar va modul tavsiyalarini olish qulay.
+
+Botni birinchi navbatda axborot portal sifatida ko‘rish mumkin: “Sud tizimlari haqida ma’lumot”, “Darsliklar ro‘yxati”, “Video qo‘llanma linklari”, “FAQ”, va hokazo.
+
+Keyingi bosqichlarda botni interaktiv yordamchiga aylantirish mumkin: foydalanuvchi so‘rovini tushunib, kerakli kurs yoki tizimni tavsiya qilish, test natijalarini qabul qilish va xulosalar berish.
+
+Asosiy auditoriya
+
+Sud xodimlari, sudda ishlovchi ma’murlar, AKT bo‘limi mutaxassislari.
+
+Telegram’ga o‘rganib qolgan foydalanuvchilar.
+
+Raqamli savodxonlik darajasi o‘rta yoki past bo‘lganlar: interfeys minimalizm va oddiy menyu asosida bo‘lishi kerak.
+
+Asosiy funksiyalar ro‘yhatini tuzing
+
+Kurslar va tizimlar katalogi: foydalanuvchi tizimlar ro‘yxatini ko‘rishi, ularning tavsifini so‘rashi.
+
+O‘quv modul va darslar: darslarning qisqa konspekti va to‘liq materialga link.
+
+Testlar: bot orqali qisqa viktorinalar, yakunida ball va tavsiya.
+
+Jamoa va yangiliklar: sud tizimiga oid so‘nggi yangiliklar, jamoa savollariga javob.
+
+FAQ: tez‑tez beriladigan savollar bo‘yicha tezkor javob.
+
+Bildirishnomalar: yangi kurs, yangi yangilik, test natijasi, hodisalarga eslatmalar.
+
+Multi‑til qo‘llab‑quvvatlash: o‘zbek, rus, ingliz tilini tanlash.
+
+2. Texnik talablar va resurslar
+
+Telegram Platformasi
+
+Telegram bot yaratish uchun @BotFather orqali yangi bot ochasiz. @sudqollanma nomi band emasligini tekshiring va saqlang.
+
+Bot tokenini (API key) olasiz. Bu tokenni server kodida ishlatish uchun yashirin saqlash zarur.
+
+Texnologik stek
+
+Server tili: Python (pishiq kutubxonalarga ega) yoki Node.js / Go – sizga qulay bo‘lganini tanlang.
+
+Telegram API bilan ishlash: python-telegram-bot (Python), node-telegram-bot-api (Node.js) kabi kutubxonalar; webhook yoki long‑polling rejimi.
+
+Ma’lumotlar bazasi: mavjud mobil ilovangizda Firestore ishlatilgani uchun, bot ham Firestore’ni yoki Cloud Functions’ni chaqirishi mumkin. Shu yo‘l bilan “systems”, “courses”, “faq” kolleksiyalaridan ma’lumot olib beriladi.
+
+Xosting: Heroku, Render, AWS Lambda yoki Google Cloud Functions’da deploy qilish. Webhook qo‘llash uchun HTTPS server zarur.
+
+Integratsiya
+
+Firebase uchun xizmat hisobini (serviceAccountKey.json) olish va serverga o‘rnatish. Bu bilan Firestore va Storage’dan ma’lumot o‘qish mumkin bo‘ladi.
+
+Agar audio/video fayllarni yuborish lozim bo‘lsa, Telegram’ning fayl yuborish limitini (50MB) hisobga oling. Og‘ir video darslarni link ko‘rinishida yuboring.
+
+Xavfsizlik va maxfiylik
+
+Bot tokenini kodga yozmaslik, balki konfiguratsiya faylida yoki muhit o‘zgaruvchisida saqlash.
+
+Foydalanuvchi ma’lumotlarini (Telegram ID, kurs progressi) Firestore’da saqlashdan oldin minimalizm prinsipiga rioya qiling: ortiqcha shaxsiy ma’lumotlarni so‘ramang.
+
+Firestore rules’ini to‘g‘ri sozlang, sud xodimining natijalari va test javoblari faqat o‘sha foydalanuvchining o‘ziga ko‘rinadigan bo‘lsin.
+
+3. Bot foydalanuvchi interfeysi
+
+Start va asosiy menyu
+
+/start buyrug‘ida foydalanuvchini ko‘rib kutib oling. Unga tanlang ular bilan “Assalomu alaykum! Men Sud Qo‘llanma botiman. Men orqali sud tizimlari haqida ma’lumot olishingiz, kurslarimiz bilan tanishishingiz va kichik testlar yechishingiz mumkin.” kabi xabar jo‘nating.
+
+Foydalanuvchi tilini tanlash menyusi.
+
+Asosiy menyu — ReplyKeyboardMarkup yoki InlineKeyboardMarkup bilan:
+
+🎓 Kurslar
+
+🏛 Tizimlar
+
+📚 Darslar (Kutubxona)
+
+❓ FAQ
+
+🧪 Viktorina
+
+📰 Yangiliklar
+
+⚙️ Sozlamalar
+
+Kurslar bo‘limi
+
+Foydalanuvchi bo‘limni tanlaganida bot Firestore’dagi courses kolleksiyasidan kurslar ro‘yxatini olib keladi (nomi, qisqa tavsifi, darajasi).
+
+Har bir kurs uchun Learn more tugmasi bilan to‘liq sahifa (modullar ro‘yxati, dars soni) va botda qisqacha ma’lumot. To‘liq kontentga havola (mobil ilova yoki web).
+
+Kurs bo‘yicha test bo‘lsa, “Testni boshlash” tugmasi.
+
+Tizimlar bo‘limi
+
+Tizimlar ro‘yxati (systems kolleksiyasi). Foydalanuvchi tizim nomini tanlasa, login bo‘yicha qo‘llanma (PDF yoki matn), qo‘llab‑quvvatlash kontaktlari (email, telefon) ko‘rsatiladi.
+
+Kutubxona / Darslar
+
+Maqolalar, PDF va video darslar. Telegram’da matnli darsning qisqacha qismini yuboring, to‘liq versiyaga link bering.
+
+Videolarni YouTube’dagi yashirin linklar ko‘rinishida yuboring. Agar qisqa video bo‘lsa (≤ 50MB), Telegram’ning sendVideo dan foydalanib, bevosita yuborish mumkin.
+
+FAQ
+
+Tez‑tez beriladigan savollarning ro‘yxati. Foydalanuvchi “Savol tanlang” tugmalarini bosadi, bot mos javobni yuboradi.
+
+Kategoriya bo‘yicha filtrlash (Masalan: “Hisob qaydnomasini tiklash”, “Raqamli imzo”, “Login xatolari”).
+
+Viktorina
+
+Oddiy testlarni bot ichida o‘tkazish uchun Telegram’ning Quiz Mode poll funksiyasidan foydalaning (yakuniy ball ko‘rsatiladi va to‘g‘ri javoblar yashirin bo‘ladi).
+
+Murakkabroq testlar uchun avval savolni yuboring, foydalanuvchi variantni tanlasa, keyingi savol. Yakunda Firestore’ga quiz_attempts kolleksiyasiga saqlang va foydalanuvchiga natija va tavsiya bering.
+
+Gamifikatsiya modulini ulab, foydalanuvchi botda test topshirsa ham ball qo‘shilsin.
+
+Yangiliklar
+
+Firestore’dagi news kolleksiyasini o‘qib, eng so‘nggi 3–5 ta yangilikni yuborish. Har bir yangilikni “Davomi” tugmasi bilan to‘liq o‘qish (mobil ilova yoki web sahifaga link).
+
+Yangilik yoki e’lon chiqqanda, bot barcha obunachilarga push yuborishi mumkin (bulk notification).
+
+Sozlamalar
+
+Tilni o‘zgartirish.
+
+Bildirishnomalarni yoqish/o‘chirish.
+
+Shaxsiy ma’lumotlarni o‘chirish (foydalanuvchi identifikatori va progressini Firestore’dan o‘chirish) funksiyasini ham qo‘shish — GDPR kabi normativlarga rioya.
+
+4. Backend va integratsiya dizayni
+
+Webhook vs Long Polling
+
+Agar xostingda doimiy IP va HTTPS bo‘lsa, Telegram webhook ishlatish eng samarali. So‘rovlar real vaqtda serverga keladi.
+
+Agar bu imkoniyat yo‘q bo‘lsa, polling (bot serveri Telegram’dan ma’lumotlarni ma’lum oraliqda tekshiradi) ishlatish mumkin; lekin bu resursni ko‘proq talab qiladi.
+
+Session va holat boshqaruvi
+
+Har bir foydalanuvchi bilan suhbat mantiqini yodda tutish uchun oddiy finite‑state‑machine qo‘llash mumkin (masalan, python-telegram-bot ning ConversationHandler).
+
+Foydalanuvchi nimani so‘raganini, qaysi kursga kirganini, qaysi savolga javob berayotganini transient memoriyada (Redis yoki Firestore document) saqlash mumkin.
+
+Firebase integratsiyasi
+
+Serverda Firebase Admin SDK’ni o‘rnatib, Firestore’ga so‘rov yuborasiz: tizimlar, kurslar, savollar.
+
+Bot foydalanuvchi ID va Telegram ID’ni moslab saqlashi mumkin. Agar mobil ilovadagi foydalanuvchi ID bilan bog‘lamoqchi bo‘lsangiz, foydalanuvchini avval Telegram orqali autentifikatsiya qilish (masalan, “Login with phone/email” link yuborish va token tekshirish) kerak bo‘ladi.
+
+cloud_functions orqali murakkab logikani (sertifikat generatsiyasi, AI tavsiyalar) bajarish.
+
+AI komponenti (keyingi bosqichlar)
+
+AI modeli yordamida foydalanuvchi savollarini tushunish (NLU) va tegishli modulga yo‘naltirish.
+
+ChatGPT yoki boshqa LLM API’laridan foydalanish uchun OpenAI yoki Google Vertex AI integratsiyasi; lekin bu ehtiyotkorlikni talab qiladi (noaniqlik, tarafkashlik risklari).
+
+AI tavsiyalarini inson qo‘llab‑quvvatlash bilan birga ishlash tarzida taqdim etish (etika normalarini inobatga olish).
+
+5. Rivojlantirish jarayoni
+
+Dizayn va prototip
+
+Foydalanuvchining odatiy scenariylarini chizing: “Foydalanuvchi /start bosdi → Kurslar bo‘limi → Mavjud kurslarni ko‘rish → Testni boshlash → Natija olish”.
+
+Reply va Inline klaviaturalar, xabar formatlarini qog‘ozda yoki Figma’da rejalashtiring.
+
+API to‘g‘ri ishlashini sinash uchun mock ma’lumotlar bilan test script yozing.
+
+Botni ro‘yxatdan o‘tkazish
+
+Telegram’da @BotFather ga /newbot buyruq berib, Sud Qo‘llanma nomli bot yaratish.
+
+Username sifatida @sudqollanma ni tanlang; bo‘sh ekanligini tekshiring.
+
+Olingan tokenni server konfiguratsiyasiga qo‘ying.
+
+Server va kod
+
+Tanlagan dasturlash tilingizda botni boshlash:
+
+Python uchun python-telegram-bot bilan Updater va Dispatcher ni sozlang.
+
+Node.js uchun node-telegram-bot-api bilan bot.onText va bot.on('callback_query') keltiring.
+
+Firestore’dan ma’lumotlar olish va yuborish uchun modullar yarating (ma’lumotlar strukturasi: systems, courses, quizzes, faq).
+
+Har bir buyruq va menyu tugmasi uchun alohida handler yozing.
+
+Har bir funksiya uchun loglash va xato qayta ishlashni qo‘shing (try/except bloklari).
+
+Sinov
+
+Funktsional test: kurslarni ro‘yxati, tizimlar ma’lumotlari, test savollari to‘g‘ri chiqayaptimi?
+
+Xavfsizlik: noto‘g‘ri buyruq yoki kiruvchi input botni ishdan chiqarmasligini tekshiring.
+
+Chatdagi har xil holatlar: foydalanuvchi tildan chiqsa, bir nechta oynani ketma‑ket bosib yuborsa, so‘rov navbatda qolib ketmasin.
+
+Joylashtirish va monitoring
+
+Kodingizni git repo (GitHub) ga joylash; CI/CD pipeline sozlash.
+
+Xosting tanlab, bot serverini joylashtiring. Webhook uchun HTTPS sertifikat o‘rnating.
+
+Monitoring va logging qo‘shing (Sentry, Stackdriver, yoki oddiy log fayl).
+
+Firestore o‘qish/yozish kvotalarini kuzatib boring; ko‘p so‘rov bo‘lsa, kesh mekanizmlari qo‘llang.
+
+Yangilanishlar va foydalanuvchi mulohazalari
+
+Bot ishga tushgach, foydalanuvchilardan fikr to‘plang (anonim survey).
+
+Ilk versiyada faqat asosiy funksiyalarni qo‘ying; keyingi haftalarda yangiliklar, gamifikatsiya, AI modulini qo‘shish.
+
+Mobil ilova va bot o‘rtasida sinxron statistikani ta’minlang: bir joyda qilgan test natijasi ikkala platformada ham ko‘rinsin.
+
+6. Xulosa
+
+@sudqollanma bot – bu mobil ilovangizni kengaytiruvchi va foydalanuvchilarga oddiy interfeys orqali kerakli ma’lumotni tezda topib beruvchi vosita bo‘ladi. U yengil, qulay va ko‘p tilli bo‘lishi kerak. Dasturiy jarayonlarni an’anaviy tartibda — talablarni aniqlash, dizayn, dasturlash, testlash, joylashtirish va monitoring — amalga oshirsangiz, sifatli va ishonchli bot yaratishingiz mumkin.
+
+Siz allaqachon qurgan “Sud Qo‘llanma” ta’lim platformasi kodeksini botga mos ravishda integratsiya qilib, foydalanuvchilarga yanada keng imkoniyatlar taqdim etasiz.
