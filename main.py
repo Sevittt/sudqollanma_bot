@@ -2,13 +2,15 @@ import asyncio
 import logging
 import sys
 from loader import bot, dp
-from handlers import router as main_router
+from handlers import onboarding, helpdesk, quizzes
 
 async def main():
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     
-    # Register Main Router (handles onboarding, quizzes, helpdesk)
-    dp.include_router(main_router)
+    # Routerlarni ro'yxatdan o'tkazish
+    dp.include_router(onboarding.router) # Birinchi onboarding bo'lishi shart!
+    dp.include_router(helpdesk.router)
+    dp.include_router(quizzes.router)
 
     logging.info("IT Support Bot ishga tushdi...")
     
