@@ -73,7 +73,8 @@ class FirestoreService:
             if found_doc:
                 # Update existing user
                 found_doc.reference.update({
-                    'telegram_id': telegram_id
+                    'telegram_id': telegram_id,
+                    'last_updated_by': 'telegram_bot'
                 })
                 return "linked", found_doc.to_dict()
             else:
@@ -85,7 +86,8 @@ class FirestoreService:
                     'xp': 0,
                     'level': 1,
                     'role': 'user',
-                    'createdAt': firestore.SERVER_TIMESTAMP
+                    'createdAt': firestore.SERVER_TIMESTAMP,
+                    'last_updated_by': 'telegram_bot'
                 }
                 db.collection('users').add(new_user)
                 return "created", new_user
@@ -103,7 +105,10 @@ class FirestoreService:
             
             for doc in query:
                 # atomic increment
-                doc.reference.update({'xp': Increment(amount)})
+                doc.reference.update({
+                    'xp': Increment(amount),
+                    'last_updated_by': 'telegram_bot'
+                })
                 return True
             return False
         except Exception as e:

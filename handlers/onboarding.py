@@ -36,6 +36,8 @@ async def start_command(message: Message):
 
 @router.message(F.contact)
 async def contact_handler(message: Message):
+    logging.info(f"Contact received from user {message.from_user.id}")
+    
     if message.contact.user_id != message.from_user.id:
         await message.answer("Iltimos, o'zingizning kontaktingizni yuboring.")
         return
@@ -43,16 +45,23 @@ async def contact_handler(message: Message):
     phone = message.contact.phone_number
     if not phone.startswith('+'): phone = '+' + phone
     
-    status, user = await FirestoreService.link_telegram_to_phone(
-        phone, message.from_user.id, message.from_user.full_name
-    )
-
-    if status in ["linked", "created"]:
-        await message.answer(
-            f"✅ <b>Tabriklayman!</b>\n\n"
-            f"Sizning hisobingiz muvaffaqiyatli ulandi.\n"
-            f"Endi bemalol savollaringizni berishingiz mumkin.",
-            reply_markup=ReplyKeyboardRemove()
+    logging.info(f"Linking phone {phone} to telegram_id {message.from_user.id}")
+    
+    try:
+        status, user = await FirestoreService.link_telegram_to_phone(
+            phone, message.from_user.id, message.from_user.full_name
         )
-    else:
+        logging.info(f"Link status: {status}")
+
+        if status in ["linked", "created"]:
+            await message.answer(
+                f"✅ <b>Tabriklayman!</b>\n\n"
+                f"Sizning hisobingiz muvaffaqiyatli ulandi.\n"
+                f"Endi bemalol savollaringizni berishingiz mumkin.",
+                reply_markup=ReplyKeyboardRemove()
+            )
+        else:
+            await message.answer("Xatolik yuz berdi (bazaga bog'lanish). Iltimos keyinroq urinib ko'ring.")
+    except Exception as e:
+        logging.error(f"Error in contact_handler: {e}")
         await message.answer("Xatolik yuz berdi. Iltimos keyinroq urinib ko'ring.")
