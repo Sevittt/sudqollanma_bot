@@ -15,8 +15,8 @@ async def helpdesk_handler(message: Message):
     # Send "typing" action to show the bot is thinking
     await message.bot.send_chat_action(chat_id=message.chat.id, action=ChatAction.TYPING)
     
-    # Generate solution using the AI Service (IT Persona)
-    response = await AIService.generate_solution(message.text)
+    # Generate solution using the AI Service with user context
+    response = await AIService.generate_solution(message.text, telegram_id=message.from_user.id)
     
     # Split long messages if needed
     if len(response) > 4000:

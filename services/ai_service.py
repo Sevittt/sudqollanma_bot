@@ -70,10 +70,44 @@ class AIService:
             return ""
 
     @staticmethod
-    async def generate_solution(user_query):
+    async def get_user_context(telegram_id):
         """
-        Generates a technical solution using Gemini 3.0 Flash.
+        Fetch user metadata (role, courtName, department) for personalized AI responses.
+        """
+        if not telegram_id:
+            return ""
+        
+        try:
+            from services.firestore_service import FirestoreService
+            user = await FirestoreService.get_user(telegram_id)
+            
+            if not user:
+                return ""
+            
+            role = user.get('role', 'foydalanuvchi')
+            court_name = user.get('courtName', 'noma\'lum')
+            department = user.get('department', '')
+            first_name = user.get('firstName', '')
+            
+            context = f"""
+--- FOYDALANUVCHI KONTEKSTI ---
+Ism: {first_name}
+Lavozim: {role}
+Sud: {court_name}
+Bo'lim: {department}
+-----------------------------------
+"""
+            return context
+        except Exception as e:
+            logging.error(f"Error fetching user context: {e}")
+            return ""
+
+    @staticmethod
+    async def generate_solution(user_query, telegram_id=None):
+        """
+        Generates a technical solution using Gemini 3 Flash Preview.
         Context: IT Support for Court Systems (E-SUD, E-XAT).
+        Includes user context for personalized responses.
         """
         try:
             # Initialize model with specific system instruction
@@ -83,10 +117,15 @@ class AIService:
                 system_instruction=SYSTEM_INSTRUCTION
             )
             
-            context = await AIService.get_system_manuals()
+            # Fetch knowledge base
+            manuals_context = await AIService.get_system_manuals()
+            
+            # Fetch user-specific context
+            user_context = await AIService.get_user_context(telegram_id)
             
             full_prompt = (
-                f"--- DRIVERS & MANUALS (CONTEXT) ---\n{context}\n"
+                f"{user_context}\n"
+                f"--- DRIVERS & MANUALS (CONTEXT) ---\n{manuals_context}\n"
                 f"-----------------------------------\n\n"
                 f"USER PROBLEM: {user_query}\n"
                 f"YOUR SOLUTION:"
