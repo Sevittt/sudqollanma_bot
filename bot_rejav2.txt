@@ -49,3 +49,125 @@ sud_bot/
 # 📝 OUTPUT:
 Provide the full code for `main.py` and `services/ai_service.py` specifically focusing on the "IT Support" persona prompt for Gemini.
 💡 Nima o‘zgardi?System Prompt: Endi AI o‘zini "Advokat" deb emas, "IT Mutaxassisi" deb tanishtiradi.Mavzular: Savol-javoblar jinoyat kodeksi haqida emas, dasturlar va kompyuter savodxonligi haqida bo‘ladi.Fayl tuzilmasi: helpdesk.py (Texnik yordam) moduli qo‘shildi.
+
+# Antigravity Task Plan: Unified Vector Search Integration
+
+## Context & Objective
+We are integrating a "Single Source of Truth" global search system using the official Firebase extension: "Vector Search with Firestore".
+We have two connected projects:
+1. `education_app` (Flutter frontend with Clean Architecture)
+2. `sudqollanma_bot` (Python Aiogram bot)
+
+The goal is to index all knowledge base items (Articles, Videos, Systems, FAQs) into a single Firestore collection named `search_index`. The Firebase extension will automatically generate embeddings for the `input` field. Both the Flutter app and the Python bot will query this collection.
+
+## Phase 1: Flutter App - Data Insertion (Admin Side)
+**Goal:** Whenever an admin creates or updates an Article, Video, System, or FAQ, the app must also write a sync document to the `search_index` collection.
+
+**Tasks for AI:**
+1. Create a model class `SearchIndexModel` with fields:
+   - `id` (Document ID)
+   - `original_id` (ID of the original article/video)
+   - `type` (String: 'article', 'video', 'system', or 'faq')
+   - `title` (String)
+   - `input` (String: This is the raw text content that the Firebase extension will read to generate the embedding).
+2. Update the existing Admin creation/update usecases or repositories (e.g., `article_repository_impl.dart`, `video_repository_impl.dart`):
+   - Whenever `addArticle` or `updateArticle` (and similar for others) is called, simultaneously write to `FirebaseFirestore.instance.collection('search_index')`.
+   - The document ID in `search_index` should ideally match the `original_id` or be clearly linked.
+
+## Phase 2: Flutter App - Global Search (Client Side)
+**Goal:** Modify the existing Global Search to use the Firebase Extension's Cloud Function.
+
+**Tasks for AI:**
+1. Update `lib/features/search/data/datasources/search_remote_datasource.dart`.
+2. Replace the current manual search logic with a call to the Firebase Cloud Function provided by the extension.
+   - Function name: `ext-firestore-vector-search-queryCallable` (use exact name).
+   - Parameters to pass: `{"query": userQuery, "limit": 5}`.
+3. The function will return a list of document IDs or documents. Map these results to `SearchResultEntity`.
+4. Ensure the UI (`GlobalSearchScreen`) correctly displays the polymorphic results (Videos, Articles, etc.) without breaking existing Riverpod/Provider state.
+
+## Phase 3: Python Telegram Bot Integration
+**Goal:** The bot should answer user questions by semantically searching the same `search_index` collection to provide context to Gemini.
+
+**Tasks for AI:**
+1. Open the bot project folder.
+2. In `services/ai_service.py` (or a new `vector_service.py`), implement a function `smart_search(query: str)`.
+3. Since the bot runs in a backend environment, use the `google-cloud-firestore` library to perform a vector search directly:
+   - Embed the user query using `google.generativeai` text-embedding model (`models/text-embedding-004`).
+   - Use `db.collection('search_index').find_nearest(...)` with `DistanceMeasure.COSINE`.
+4. Combine the top 3 results' `input` fields into a `context` string.
+5. Feed this context into the existing Gemini prompt: "Base your answer on the following context: {context}. User question: {query}".
+
+## Rules & Constraints for Antigravity Agent
+- Strictly adhere to the existing Clean Architecture principles (Domain -> Data -> Presentation).
+- Do not remove existing UI components, only update the Data/Repository implementations.
+- Write robust error handling (try-catch) and Firebase network logs.
+- Add comments explaining the Vector Search logic for future maintainability.
+
+Start with Phase 1, ask for my review, then proceed to Phase 2, and finally Phase 3.
+
+Telegram Bot uchun so'rov kodi (Python)
+Bot backend (server) da ishlagani uchun, uni Cloud Function orqali emas, balki to'g'ridan-to'g'ri bazaga (Firestore) va Gemini API'ga ulab qo'yish xavfsizroq va tezroq bo'ladi. Sababi, bot foydalanuvchilarida Firebase Auth tokeni yo'q.
+
+Botdagi mavjud services/ai_service.py yoki yangi services/vector_service.py faylida shunday kod yozamiz:
+
+Kerakli kutubxonalar: pip install google-generativeai firebase-admin google-cloud-firestore
+
+import google.generativeai as genai
+from google.cloud.firestore_v1.base_vector_query import DistanceMeasure
+from firebase_admin import firestore
+
+# Gemini sozlamalari (Sizning API kilitingiz)
+genai.configure(api_key="SIZNING_GEMINI_API_KILITINGIZ")
+db = firestore.client()
+
+async def get_smart_answer_for_bot(user_question: str) -> str:
+    try:
+        # 1-Qadam: Bot foydalanuvchi so'rovini xuddi extension kabi vektorga o'giradi
+        embedding_result = genai.embed_content(
+            model="models/text-embedding-004", # Extension qaysi modelni ishlatsa shuni yozing
+            content=user_question,
+            task_type="retrieval_query"
+        )
+        query_vector = embedding_result['embedding']
+
+        # 2-Qadam: Firestore-dagi "search_index" kolleksiyasidan eng o'xshash matnlarni qidirish
+        collection_ref = db.collection('search_index') # Extension ulangan kolleksiya nomi
+        vector_query = collection_ref.find_nearest(
+            vector_field="embedding",
+            query_vector=query_vector,
+            distance_measure=DistanceMeasure.COSINE,
+            limit=3  # Faqat eng yaxshi 3 ta natijani olamiz
+        )
+        
+        results = vector_query.get()
+        
+        # 3-Qadam: Topilgan ma'lumotlarni bitta matnga yig'ish (Context)
+        context_texts = []
+        for doc in results:
+            doc_data = doc.to_dict()
+            # Extension 'input' degan maydondan vektor yasayotgan edi, shuni o'qiymiz
+            context_texts.append(doc_data.get('input', '')) 
+            
+        full_context = "\n\n---\n\n".join(context_texts)
+
+        # 4-Qadam: Gemini'ga faqat shu topilgan yo'riqnomalar asosida javob yozdiramiz
+        prompt = f"""
+        Siz "Sud Qo'llanma" tizimining aqlli yordamchisisiz.
+        Foydalanuvchiga faqat quyidagi ma'lumotlar asosida javob bering.
+        Agar ma'lumotlar ichida javob bo'lmasa, "Kechirasiz, bu haqida yo'riqnoma topilmadi" deb ayting.
+        
+        Ma'lumotlar:
+        {full_context}
+        
+        Foydalanuvchi savoli: {user_question}
+        """
+        
+        # Generativ model orqali inson tilida javob qaytarish
+        generative_model = genai.GenerativeModel('gemini-1.5-pro') # Yoki gemini-1.5-flash
+        response = generative_model.generate_content(prompt)
+        
+        return response.text
+
+    except Exception as e:
+        print(f"Vektor qidiruvida xatolik: {e}")
+        return "Tizimda xatolik yuz berdi, iltimos keyinroq qayta urinib ko'ring."

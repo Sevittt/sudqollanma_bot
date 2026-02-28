@@ -114,3 +114,48 @@ class FirestoreService:
         except Exception as e:
             logging.error(f"Error adding XP: {e}")
             return False
+
+    @staticmethod
+    async def save_message(telegram_id, role, text):
+        """Save a message to the user's conversation history."""
+        if not db: return False
+        try:
+            # We store conversations in a subcollection or a root collection. Let's use a root collection 'conversations'
+            # with user's telegram_id as part of the path, or just a separate document per message.
+            # Best is /users/{user_doc_id}/history/{message_id} but we have telegram_id. 
+            # Alternatively: /conversations with telegram_id field.
+            db.collection('conversations').add({
+                'telegram_id': str(telegram_id),
+                'role': role, # 'user' or 'model'
+                'text': text,
+                'timestamp': firestore.SERVER_TIMESTAMP
+            })
+            return True
+        except Exception as e:
+            logging.error(f"Error saving message: {e}")
+            return False
+
+    @staticmethod
+    async def get_recent_messages(telegram_id, limit=6):
+        """Get recent chat history for a user."""
+        if not db: return []
+        try:
+            # Query recent messages for this user, ordered by timestamp desc
+            query = db.collection('conversations')\
+                      .where('telegram_id', '==', str(telegram_id))\
+                      .order_by('timestamp', direction=firestore.Query.DESCENDING)\
+                      .limit(limit)\
+                      .stream()
+            
+            messages = []
+            for doc in query:
+                data = doc.to_dict()
+                if 'text' in data and 'role' in data:
+                    messages.append({'role': data['role'], 'text': data['text']})
+            
+            # Reverse to get chronological order
+            messages.reverse()
+            return messages
+        except Exception as e:
+            logging.error(f"Error getting recent messages: {e}")
+            return []

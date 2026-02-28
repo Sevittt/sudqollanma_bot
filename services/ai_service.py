@@ -70,6 +70,48 @@ class AIService:
             return ""
 
     @staticmethod
+    async def get_relevant_context(user_query, limit=3):
+        """
+        Fetch most relevant knowledge chunks using Vector Search.
+        """
+        try:
+            # Generate embedding for the query using Gemini
+            embedding_result = genai.embed_content(
+                model="models/text-embedding-004",
+                content=user_query,
+                task_type="retrieval_query",
+            )
+            query_vector = embedding_result['embedding']
+
+            # Use Firestore Vector Search
+            from google.cloud.firestore_v1.vector import Vector
+            from google.cloud.firestore_v1.base_vector_query import DistanceMeasure
+
+            results = db.collection("knowledge_base").find_nearest(
+                vector_field="embedding",
+                query_vector=Vector(query_vector),
+                distance_measure=DistanceMeasure.COSINE,
+                limit=limit
+            ).get()
+
+            context_parts = []
+            for doc in results:
+                data = doc.to_dict()
+                if 'text' in data:
+                    context_parts.append(data['text'])
+
+            if not context_parts:
+                logging.warning("Vector search returned no results. Extension might be processing.")
+                # Fallback to older heavy method if empty
+                return await AIService.get_system_manuals()
+
+            return "\n\n...[Vector Chunk]...\n\n".join(context_parts)
+        except Exception as e:
+            logging.error(f"Vector search failed (Index missing or extension mismatch?). Error: {e}")
+            # Fallback to classic heavy method if vector search fails
+            return await AIService.get_system_manuals()
+
+    @staticmethod
     async def get_user_context(telegram_id):
         """
         Fetch user metadata (role, courtName, department) for personalized AI responses.
@@ -110,32 +152,97 @@ Bo'lim: {department}
         Includes user context for personalized responses.
         """
         try:
-            # Initialize model with specific system instruction
-            # switch to gemini-3-flash-preview as requested/available
             model = genai.GenerativeModel(
                 model_name="gemini-3-flash-preview", 
                 system_instruction=SYSTEM_INSTRUCTION
             )
             
-            # Fetch knowledge base
-            manuals_context = await AIService.get_system_manuals()
+            from services.firestore_service import FirestoreService
+
+            # Fetch relevant knowledge base chunks using Vector Search
+            manuals_context = await AIService.get_relevant_context(user_query, limit=3)
             
             # Fetch user-specific context
             user_context = await AIService.get_user_context(telegram_id)
+            
+            # Fetch recent chat history
+            history = await FirestoreService.get_recent_messages(telegram_id)
+            history_text = ""
+            if history:
+                history_text = "--- OLDINGI SUHBAT TARIXI ---\n"
+                for msg in history:
+                    sender = "Foydalanuvchi" if msg['role'] == 'user' else "Mentor (AI)"
+                    history_text += f"{sender}: {msg['text']}\n\n"
+                history_text += "-----------------------------------\n\n"
             
             full_prompt = (
                 f"{user_context}\n"
                 f"--- DRIVERS & MANUALS (CONTEXT) ---\n{manuals_context}\n"
                 f"-----------------------------------\n\n"
+                f"{history_text}"
                 f"USER PROBLEM: {user_query}\n"
                 f"YOUR SOLUTION:"
             )
             
+            # Save user query to history
+            await FirestoreService.save_message(telegram_id, 'user', user_query)
+
             # Use async generation if available, otherwise sync
             response = await model.generate_content_async(full_prompt)
+
+            # Save model response to history
+            await FirestoreService.save_message(telegram_id, 'model', response.text)
+
             return response.text
         except Exception as e:
             import traceback
             logging.error(f"AI Generation Error: {e}")
             logging.error(traceback.format_exc())
             return f"Texnik xatolik yuz berdi. (Model: gemini-3-flash-preview) Error: {str(e)}"
+
+    @staticmethod
+    async def generate_quiz(telegram_id):
+        """
+        Generates a dynamic quiz question in JSON format based on the knowledge base.
+        """
+        try:
+            model = genai.GenerativeModel("gemini-3-flash-preview")
+            
+            # For quiz, fetch random chunks instead of everything
+            random_docs = db.collection("knowledge_base").limit(3).get()
+            context_parts = [doc.to_dict().get("text", "") for doc in random_docs]
+            if not context_parts:
+                manuals_context = await AIService.get_system_manuals()
+            else:
+                manuals_context = "\n\n".join(context_parts)
+                
+            user_context = await AIService.get_user_context(telegram_id)
+            
+            prompt = (
+                f"{user_context}\n"
+                f"--- DRIVERS & MANUALS (CONTEXT) ---\n{manuals_context}\n"
+                f"-----------------------------------\n\n"
+                "Sen shu ma'lumotlar asosida bitta test savoli tuzishing kerak. "
+                "Javobni faqatgina quyidagi JSON formatida qaytar, qo'shimcha so'z yozma:\n"
+                "{\n"
+                '  "question": "Savol matni",\n'
+                '  "options": ["A javob", "B javob", "C javob", "D javob"],\n'
+                '  "correct_index": 0,\n'
+                '  "explanation": "Nima mavzuga oid ekanligi va to\'g\'ri javob izohi"\n'
+                "}\n"
+                "Diqqat: correct_index 0 dan 3 gacha bo'lgan butun son bo'lishi kerak."
+            )
+            
+            response = await model.generate_content_async(prompt)
+            text = response.text
+            start = text.find('{')
+            end = text.rfind('}') + 1
+            if start != -1 and end != 0:
+                json_str = text[start:end]
+                quiz_data = json.loads(json_str)
+                return quiz_data
+            else:
+                return None
+        except Exception as e:
+            logging.error(f"Quiz Generation Error: {e}")
+            return None
