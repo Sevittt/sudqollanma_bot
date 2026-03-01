@@ -159,3 +159,22 @@ class FirestoreService:
         except Exception as e:
             logging.error(f"Error getting recent messages: {e}")
             return []
+
+    @staticmethod
+    async def update_user_role(telegram_id, role):
+        """Update a user's role."""
+        if not db: return False
+        try:
+            users_ref = db.collection('users')
+            query = users_ref.where('telegram_id', '==', str(telegram_id)).limit(1).stream()
+            
+            for doc in query:
+                doc.reference.update({
+                    'role': role,
+                    'last_updated_by': 'telegram_bot'
+                })
+                return True
+            return False
+        except Exception as e:
+            logging.error(f"Error updating user role: {e}")
+            return False

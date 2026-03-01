@@ -176,7 +176,9 @@ Bo'lim: {department}
                 history_text += "-----------------------------------\n\n"
             
             full_prompt = (
+                f"! DIQQAT: Foydalanuvchi ma'lumotlari !\n"
                 f"{user_context}\n"
+                f"Yuqoridagi lavozimdan kelib chiqib, aniq, amaliy va faqat uning vakolatiga kiradigan qismlarni tushuntirib javob bering.\n\n"
                 f"--- DRIVERS & MANUALS (CONTEXT) ---\n{manuals_context}\n"
                 f"-----------------------------------\n\n"
                 f"{history_text}"
@@ -219,10 +221,12 @@ Bo'lim: {department}
             user_context = await AIService.get_user_context(telegram_id)
             
             prompt = (
+                f"! DIQQAT: Foydalanuvchi ma'lumotlari !\n"
                 f"{user_context}\n"
                 f"--- DRIVERS & MANUALS (CONTEXT) ---\n{manuals_context}\n"
                 f"-----------------------------------\n\n"
                 "Sen shu ma'lumotlar asosida bitta test savoli tuzishing kerak. "
+                "DIQQAT: Savol qiyinligi va mavzusi foydalanuvchining yuqoridagi lavozimiga (va unga tegishli vazifalarga) mos bo'lishi shart!\n"
                 "Javobni faqatgina quyidagi JSON formatida qaytar, qo'shimcha so'z yozma:\n"
                 "{\n"
                 '  "question": "Savol matni",\n'
