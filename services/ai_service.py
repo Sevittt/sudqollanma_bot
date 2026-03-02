@@ -3,6 +3,7 @@ import config
 from loader import db, model
 import logging
 import json
+import asyncio
 
 SYSTEM_INSTRUCTION = r"""
 Sening roling: O'zbekiston sud tizimi xodimlari uchun "Raqamli Mentor". 
@@ -76,7 +77,7 @@ class AIService:
         """
         try:
             # Generate embedding for the query using Gemini
-            embedding_result = genai.embed_content(
+            embedding_result = await genai.embed_content_async(
                 model="models/text-embedding-004",
                 content=user_query,
                 task_type="retrieval_query",
@@ -159,14 +160,13 @@ Bo'lim: {department}
             
             from services.firestore_service import FirestoreService
 
-            # Fetch relevant knowledge base chunks using Vector Search
-            manuals_context = await AIService.get_relevant_context(user_query, limit=3)
-            
-            # Fetch user-specific context
-            user_context = await AIService.get_user_context(telegram_id)
-            
-            # Fetch recent chat history
-            history = await FirestoreService.get_recent_messages(telegram_id)
+            # Concurrently fetch relevant context, user context, and chat history
+            manuals_context, user_context, history = await asyncio.gather(
+                AIService.get_relevant_context(user_query, limit=3),
+                AIService.get_user_context(telegram_id),
+                FirestoreService.get_recent_messages(telegram_id)
+            )
+
             history_text = ""
             if history:
                 history_text = "--- OLDINGI SUHBAT TARIXI ---\n"
@@ -211,14 +211,21 @@ Bo'lim: {department}
             model = genai.GenerativeModel("gemini-3-flash-preview")
             
             # For quiz, fetch random chunks instead of everything
+            # In a real async environment with Firestore, you might use async client here too.
+            # Given db is likely sync based on usage above, we leave it.
             random_docs = db.collection("knowledge_base").limit(3).get()
             context_parts = [doc.to_dict().get("text", "") for doc in random_docs]
-            if not context_parts:
-                manuals_context = await AIService.get_system_manuals()
-            else:
-                manuals_context = "\n\n".join(context_parts)
-                
-            user_context = await AIService.get_user_context(telegram_id)
+
+            async def get_manuals():
+                if not context_parts:
+                    return await AIService.get_system_manuals()
+                else:
+                    return "\n\n".join(context_parts)
+
+            manuals_context, user_context = await asyncio.gather(
+                get_manuals(),
+                AIService.get_user_context(telegram_id)
+            )
             
             prompt = (
                 f"! DIQQAT: Foydalanuvchi ma'lumotlari !\n"
