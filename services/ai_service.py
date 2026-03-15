@@ -1,6 +1,6 @@
-import google.generativeai as genai
+from google import genai
 import config
-from loader import db, model
+from loader import get_db, init_gemini
 import logging
 import json
 
@@ -32,8 +32,8 @@ class AIService:
         context_parts = []
         try:
             # 1. Try Firestore 'articles' (Topic: Guides)
-            if db:
-                articles_ref = db.collection('articles').where('topic', '==', 'guide').limit(3).stream()
+            if get_db():
+                articles_ref = get_db().collection('articles').where('topic', '==', 'guide').limit(3).stream()
                 for doc in articles_ref:
                     data = doc.to_dict()
                     if 'content' in data:
@@ -75,19 +75,20 @@ class AIService:
         Fetch most relevant knowledge chunks using Vector Search.
         """
         try:
+            from google.genai import types
             # Generate embedding for the query using Gemini
-            embedding_result = genai.embed_content(
-                model="models/text-embedding-004",
-                content=user_query,
-                task_type="retrieval_query",
+            embedding_result = init_gemini().models.embed_content(
+                model="gemini-embedding-001",
+                contents=user_query,
+                config=types.EmbedContentConfig(output_dimensionality=768)
             )
-            query_vector = embedding_result['embedding']
+            query_vector = embedding_result.embeddings[0].values
 
             # Use Firestore Vector Search
             from google.cloud.firestore_v1.vector import Vector
             from google.cloud.firestore_v1.base_vector_query import DistanceMeasure
 
-            results = db.collection("knowledge_base").find_nearest(
+            results = get_db().collection("knowledge_base").find_nearest(
                 vector_field="embedding",
                 query_vector=Vector(query_vector),
                 distance_measure=DistanceMeasure.COSINE,
@@ -152,11 +153,6 @@ Bo'lim: {department}
         Includes user context for personalized responses.
         """
         try:
-            model = genai.GenerativeModel(
-                model_name="gemini-3-flash-preview", 
-                system_instruction=SYSTEM_INSTRUCTION
-            )
-            
             from services.firestore_service import FirestoreService
 
             # Fetch relevant knowledge base chunks using Vector Search
@@ -190,7 +186,13 @@ Bo'lim: {department}
             await FirestoreService.save_message(telegram_id, 'user', user_query)
 
             # Use async generation if available, otherwise sync
-            response = await model.generate_content_async(full_prompt)
+            response = await init_gemini().aio.models.generate_content(
+                model=config.GEMINI_MODEL,
+                contents=full_prompt,
+                config=genai.types.GenerateContentConfig(
+                    system_instruction=SYSTEM_INSTRUCTION
+                )
+            )
 
             # Save model response to history
             await FirestoreService.save_message(telegram_id, 'model', response.text)
@@ -208,10 +210,8 @@ Bo'lim: {department}
         Generates a dynamic quiz question in JSON format based on the knowledge base.
         """
         try:
-            model = genai.GenerativeModel("gemini-3-flash-preview")
-            
             # For quiz, fetch random chunks instead of everything
-            random_docs = db.collection("knowledge_base").limit(3).get()
+            random_docs = get_db().collection("knowledge_base").limit(3).get()
             context_parts = [doc.to_dict().get("text", "") for doc in random_docs]
             if not context_parts:
                 manuals_context = await AIService.get_system_manuals()
@@ -237,7 +237,10 @@ Bo'lim: {department}
                 "Diqqat: correct_index 0 dan 3 gacha bo'lgan butun son bo'lishi kerak."
             )
             
-            response = await model.generate_content_async(prompt)
+            response = await init_gemini().aio.models.generate_content(
+                model=config.GEMINI_MODEL,
+                contents=prompt,
+            )
             text = response.text
             start = text.find('{')
             end = text.rfind('}') + 1

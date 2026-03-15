@@ -1,0 +1,15 @@
+.gcloudignore
+.git
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv
+env
+venv
+.idea
+.vscode
+.gemini
+# DO NOT ignore serviceAccountKey.json as it is needed for the bot
+# serviceAccountKey.json 
