@@ -19,8 +19,9 @@ async def on_startup(bot: Bot):
 
 async def on_shutdown(bot: Bot):
     if config.WEBHOOK_URL:
-        await bot.delete_webhook()
-        logging.info("❌ Webhook o'chirildi")
+        # Webhookni o'chirmaymiz. Bu Cloud Run "scale-to-zero" bo'lganda
+        # Telegram hali ham xabarlarni yuborishda davom etishi uchun kerak.
+        logging.info("❗️ Konteyner o'chmoqda (scale-to-zero), lekin Webhook manzili saqlab qolindi.")
 
 def setup_handlers_and_middlewares():
     # Register middleware (order matters: error handler first, then throttle)

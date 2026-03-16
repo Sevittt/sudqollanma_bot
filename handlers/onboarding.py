@@ -8,6 +8,7 @@ from aiogram.types import (
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from services.firestore_service import FirestoreService
+from firebase_admin import firestore
 import logging
 
 class OnboardingState(StatesGroup):

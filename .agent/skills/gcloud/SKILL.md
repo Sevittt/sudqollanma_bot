@@ -25,7 +25,7 @@ cmd /c "gcloud run deploy sudqollanmabot ^
   --timeout 600 ^
   --concurrency 80 ^
   --service-account 660835097321-compute@developer.gserviceaccount.com ^
-  --set-env-vars BOT_TOKEN=8484081250:AAFPhUCTW4HTY23PEyWwQmJPEUC2NIs3Zwg,GEMINI_API_KEY=AIzaSyADwxg3eKsX3bs-hwH8Ke7rvaYgLr3wrHw,GEMINI_MODEL=gemini-2.5-flash,WEBHOOK_URL=https://sudqollanmabot-660835097321.europe-west4.run.app,FIREBASE_CREDENTIALS=serviceAccountKey.json"
+  --set-env-vars BOT_TOKEN=8484081250:AAFPhUCTW4HTY23PEyWwQmJPEUC2NIs3Zwg,GEMINI_API_KEY=AIzaSyADwxg3eKsX3bs-hwH8Ke7rvaYgLr3wrHw,GEMINI_MODEL=gemini-2.5-flash,WEBHOOK_URL=https://sudqollanmabot-660835097321.europe-west4.run.app"
 ```
 
 > [!IMPORTANT]
