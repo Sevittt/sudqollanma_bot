@@ -9,7 +9,7 @@ Backend: Google Cloud Functions yoki Google Cloud Run (Server sotib olish shart 
 
 Database: Cloud Firestore (Mavjud loyihaga ulanadi).
 
-AI: Google Gemini 1.5 Flash (Tez va arzon javoblar uchun).
+AI: Google Gemini 2.5 Flash (Tez va arzon javoblar uchun).
 
 🛠️ 2-BOSQICH: QADAMMA-QADAM AMALGA OSHIRISH
 1. Ro'yxatdan o'tish (BotFather)
