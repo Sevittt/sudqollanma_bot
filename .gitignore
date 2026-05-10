@@ -15,3 +15,9 @@ env/
 .idea/
 .vscode/
 *.swp
+
+# Data & Media
+data/videos/
+data/jib-sud-uz/vids/
+data/ms-sud-uz/vids/
+data/xatolik-vids/

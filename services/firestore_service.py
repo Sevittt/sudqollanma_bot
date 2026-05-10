@@ -435,3 +435,159 @@ class FirestoreService:
             logging.error(f"Error saving quiz attempt: {e}")
             return False
 
+    # ─── Court Selection Methods ──────────────────────────────────
+    @staticmethod
+    async def get_unique_regions() -> list:
+        """Firestore courts kolleksiyasidan unique regionlar ro'yxatini olish."""
+        if not get_db(): return []
+        try:
+            docs = get_db().collection('courts').stream()
+            regions = set()
+            for doc in docs:
+                data = doc.to_dict()
+                region = data.get('region', '')
+                if region:
+                    regions.add(region)
+            # Toshkent shahri/viloyati birinchi, qolganlari alifbo tartibida
+            sorted_regions = sorted(regions)
+            priority = ["Toshkent shahri", "Toshkent viloyati"]
+            result = [r for r in priority if r in sorted_regions]
+            result += [r for r in sorted_regions if r not in priority]
+            return result
+        except Exception as e:
+            logging.error(f"Error getting regions: {e}")
+            return []
+
+    @staticmethod
+    async def get_courts_by_region_and_type(region: str, court_type: str) -> list:
+        """Berilgan hudud va sud turi bo'yicha sudlar ro'yxatini olish."""
+        if not get_db(): return []
+        try:
+            docs = get_db().collection('courts')\
+                      .where('region', '==', region)\
+                      .where('courtType', '==', court_type)\
+                      .order_by('courtName')\
+                      .stream()
+            courts = []
+            for doc in docs:
+                data = doc.to_dict()
+                data['id'] = doc.id
+                courts.append(data)
+            return courts
+        except Exception as e:
+            logging.error(f"Error getting courts by region/type: {e}")
+            return []
+
+    @staticmethod
+    async def update_court_info(telegram_id, court_data: dict) -> bool:
+        """Foydalanuvchining sud ma'lumotlarini Firestorega yozish."""
+        if not get_db(): return False
+        try:
+            tg_id = FirestoreService._normalize_tg_id(telegram_id)
+            users_ref = get_db().collection('users')
+            query = users_ref.where('telegram_id', '==', tg_id).limit(1).stream()
+            for doc in query:
+                doc.reference.update({
+                    'courtName': court_data.get('courtName', ''),
+                    'courtType': court_data.get('courtType', ''),
+                    'region': court_data.get('region', ''),
+                    'position': court_data.get('position', ''),
+                    'last_updated_by': 'telegram_bot',
+                })
+                logging.info(f"Court info updated for {tg_id}: {court_data}")
+                return True
+            return False
+        except Exception as e:
+            logging.error(f"Error updating court info: {e}")
+            return False
+
+
+    @staticmethod
+    async def get_resources_by_type(resource_type=None):
+        if not get_db(): return []
+        try:
+            query = get_db().collection('resources')
+            if resource_type:
+                query = query.where('type', '==', resource_type)
+            docs = query.stream()
+            results = []
+            for doc in docs:
+                data = doc.to_dict()
+                data['id'] = doc.id
+                results.append(data)
+            return results
+        except Exception as e:
+            logging.error(f'Error getting resources: {e}')
+            return []
+
+    @staticmethod
+    async def get_knowledge_base_articles(category=None, limit=10):
+        if not get_db(): return []
+        try:
+            query = get_db().collection('knowledge_base')
+            if category:
+                query = query.where('category', '==', category)
+            query = query.limit(limit)
+            docs = query.stream()
+            results = []
+            for doc in docs:
+                data = doc.to_dict()
+                data['id'] = doc.id
+                results.append(data)
+            return results
+        except Exception as e:
+            logging.error(f'Error getting articles: {e}')
+            return []
+
+    @staticmethod
+    async def get_faqs_by_category(category=None):
+        if not get_db(): return []
+        try:
+            query = get_db().collection('faqs')
+            if category:
+                query = query.where('category', '==', category)
+            docs = query.stream()
+            results = []
+            for doc in docs:
+                data = doc.to_dict()
+                data['id'] = doc.id
+                results.append(data)
+            return results
+        except Exception as e:
+            logging.error(f'Error getting FAQs: {e}')
+            return []
+
+    # ─── Course Methods ───────────────────────────────────────────
+    @staticmethod
+    async def get_courses():
+        """Fetch all published courses."""
+        if not get_db(): return []
+        try:
+            query = get_db().collection('courses')\
+                      .where('isPublished', '==', True)\
+                      .order_by('order')\
+                      .stream()
+            results = []
+            for doc in query:
+                data = doc.to_dict()
+                data['id'] = doc.id
+                results.append(data)
+            return results
+        except Exception as e:
+            logging.error(f'Error getting courses: {e}')
+            return []
+
+    @staticmethod
+    async def get_course_by_id(course_id):
+        """Fetch a specific course by its Firestore ID."""
+        if not get_db(): return None
+        try:
+            doc = get_db().collection('courses').document(course_id).get()
+            if doc.exists:
+                data = doc.to_dict()
+                data['id'] = doc.id
+                return data
+            return None
+        except Exception as e:
+            logging.error(f'Error getting course by id {course_id}: {e}')
+            return None

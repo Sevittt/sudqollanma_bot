@@ -26,17 +26,20 @@ class AIService:
     @staticmethod
     async def get_system_manuals():
         """
-        Fetch manual content from local JSON, Firestore, and Markdown files.
+        Fetch manual content from Firestore knowledge_base and Markdown files.
         """
         context_parts = []
         try:
-            # 1. Try Firestore 'articles' (Topic: Guides)
+            # 1. Firestore 'knowledge_base' kolleksiyasidan (articles emas!)
             if get_db():
-                articles_ref = get_db().collection('articles').where('topic', '==', 'guide').limit(3).stream()
-                for doc in articles_ref:
+                kb_ref = get_db().collection('knowledge_base').limit(5).stream()
+                for doc in kb_ref:
                     data = doc.to_dict()
-                    if 'content' in data:
-                        context_parts.append(f"Guide: {data.get('title', 'Untitled')}\n{data['content']}")
+                    # Field 'content' ishlatiladi (text emas)
+                    content = data.get('content', data.get('text', ''))
+                    if content:
+                        title = data.get('title', 'Maqola')
+                        context_parts.append(f"Qo'llanma: {title}\n{content[:3000]}")
 
             # 2. Recursive Markdown File Search in 'data' directory
             import os
@@ -53,41 +56,35 @@ class AIService:
                             except Exception as read_err:
                                 logging.warning(f"Failed to read manual {file}: {read_err}")
 
-            # 3. Legacy JSON Fallback (if needed)
-            if not context_parts:
-                try:
-                    with open('data/system_manuals.json', 'r', encoding='utf-8') as f:
-                        manuals = json.load(f)
-                        for m in manuals:
-                            context_parts.append(f"System: {m['system']}\nInstruction: {m['content']}")
-                except FileNotFoundError:
-                    pass
-
             return "\n\n".join(context_parts)
         except Exception as e:
             logging.error(f"Error fetching manuals: {e}")
             return ""
 
+
     @staticmethod
     async def get_relevant_context(user_query, limit=3):
         """
-        Fetch most relevant knowledge chunks using Vector Search.
+        RAG: 'rag_chunks' kolleksiyasidan Vector Search orqali eng mos chunk'larni topadi.
+        Bu kolleksiya upload_knowledge.py tomonidan to'ldiriladi (text + embedding maydonlari).
+        Fallback: knowledge_base maqolalarini oddiy o'qish.
         """
         try:
             from google.genai import types
-            # Generate embedding for the query using Gemini
+
+            # Query embedding — upload_knowledge.py dagi MODEL bilan bir xil bo'lishi SHART
             embedding_result = init_gemini().models.embed_content(
-                model="gemini-embedding-001",
+                model="gemini-embedding-exp-03-07",
                 contents=user_query,
                 config=types.EmbedContentConfig(output_dimensionality=768)
             )
             query_vector = embedding_result.embeddings[0].values
 
-            # Use Firestore Vector Search
+            # Firestore Vector Search — faqat 'rag_chunks' kolleksiyasi
             from google.cloud.firestore_v1.vector import Vector
             from google.cloud.firestore_v1.base_vector_query import DistanceMeasure
 
-            results = get_db().collection("knowledge_base").find_nearest(
+            results = get_db().collection("rag_chunks").find_nearest(
                 vector_field="embedding",
                 query_vector=Vector(query_vector),
                 distance_measure=DistanceMeasure.COSINE,
@@ -97,19 +94,21 @@ class AIService:
             context_parts = []
             for doc in results:
                 data = doc.to_dict()
-                if 'text' in data:
-                    context_parts.append(data['text'])
+                # 'rag_chunks' da matn 'text' maydonida saqlanadi
+                content = data.get('text', '')
+                if content:
+                    context_parts.append(content[:3000])
 
             if not context_parts:
-                logging.warning("Vector search returned no results. Extension might be processing.")
-                # Fallback to older heavy method if empty
+                logging.warning("Vector search natija bermadi. Fallback: knowledge_base.")
                 return await AIService.get_system_manuals()
 
             return "\n\n...[Vector Chunk]...\n\n".join(context_parts)
         except Exception as e:
-            logging.error(f"Vector search failed (Index missing or extension mismatch?). Error: {e}")
-            # Fallback to classic heavy method if vector search fails
+            logging.error(f"Vector search xatosi: {e}")
+            # Fallback: knowledge_base maqolalaridan oddiy o'qish
             return await AIService.get_system_manuals()
+
 
     @staticmethod
     async def get_user_context(telegram_id):
@@ -202,7 +201,7 @@ Bo'lim: {department}
             import traceback
             logging.error(f"AI Generation Error: {e}")
             logging.error(traceback.format_exc())
-            return f"Texnik xatolik yuz berdi. (Model: gemini-3-flash-preview) Error: {str(e)}"
+            return f"Texnik xatolik yuz berdi. (Model: {config.GEMINI_MODEL}) Xato: {str(e)}"
 
     @staticmethod
     async def generate_quiz(telegram_id):
@@ -210,9 +209,14 @@ Bo'lim: {department}
         Generates a dynamic quiz question in JSON format based on the knowledge base.
         """
         try:
-            # For quiz, fetch random chunks instead of everything
+            # knowledge_base dan random chunks olish (text emas, content)
             random_docs = get_db().collection("knowledge_base").limit(3).get()
-            context_parts = [doc.to_dict().get("text", "") for doc in random_docs]
+            context_parts = []
+            for doc in random_docs:
+                data = doc.to_dict()
+                content = data.get('content', data.get('text', ''))
+                if content:
+                    context_parts.append(content[:2000])
             if not context_parts:
                 manuals_context = await AIService.get_system_manuals()
             else:

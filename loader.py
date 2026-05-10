@@ -25,14 +25,20 @@ def get_db():
     
     try:
         if not firebase_admin._apps:
-            if config.FIREBASE_CREDENTIALS:
-                cred = credentials.Certificate(config.FIREBASE_CREDENTIALS)
+            import os
+            cred_path = config.FIREBASE_CREDENTIALS  # 'serviceAccountKey.json'
+            
+            if cred_path and os.path.exists(cred_path):
+                # Local development: JSON fayl bor
+                cred = credentials.Certificate(cred_path)
                 firebase_admin.initialize_app(cred)
-                logging.info("Firebase initialized successfully using Certificate.")
+                logging.info("Firebase initialized: Certificate (local dev).")
             else:
-                logging.info("FIREBASE_CREDENTIALS missing. Attempting Application Default Credentials.")
-                firebase_admin.initialize_app()
-                logging.info("Firebase initialized successfully using ADC.")
+                # Cloud Run / GCP: ADC — service account avtomatik ruxsatga ega
+                firebase_admin.initialize_app(options={
+                    'projectId': 'educationapp-4780a'
+                })
+                logging.info("Firebase initialized: ADC (Cloud Run / GCP).")
         
         _db = firestore.client()
         return _db

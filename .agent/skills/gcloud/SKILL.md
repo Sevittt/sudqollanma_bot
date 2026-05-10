@@ -16,16 +16,17 @@ Agar bot `Container import failed` yoki `Token is invalid` (NoneType) xatolarini
 cmd /c "gcloud builds submit --tag europe-west4-docker.pkg.dev/educationapp-4780a/cloud-run-source-deploy/sudqollanmabot:stable"
 ```
 
-### Bosqich B: Cloud Run Deploy (Image orqali)
+> [!IMPORTANT]
+> **.gcloudignore** faylida `data/` papkasi **ALBATTA** kiritilishi kerak!
+> Aks holda 1.3 GB video/PDF fayllar ham yuboriladi va build sekinlashadi.
+> `data/`, `*.pdf`, `*.xlsx`, `populate_*.py` — bular .gcloudignore da bo'lishi shart.
+
+### Bosqich B: Cloud Run Deploy (Haqiqiy tokenlar bilan)
+
+⚠️ `.env` faylidan haqiqiy qiymatlarni ko'chirib ishlatish kerak:
+
 ```powershell
-cmd /c "gcloud run deploy sudqollanmabot ^
-  --image europe-west4-docker.pkg.dev/educationapp-4780a/cloud-run-source-deploy/sudqollanmabot:stable ^
-  --region europe-west4 ^
-  --memory 1Gi ^
-  --timeout 600 ^
-  --concurrency 80 ^
-  --service-account 660835097321-compute@developer.gserviceaccount.com ^
-  --set-env-vars BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN,GEMINI_API_KEY=YOUR_GEMINI_API_KEY,GEMINI_MODEL=gemini-2.5-flash,WEBHOOK_URL=https://sudqollanmabot-660835097321.europe-west4.run.app"
+cmd /c "gcloud run deploy sudqollanmabot --image europe-west4-docker.pkg.dev/educationapp-4780a/cloud-run-source-deploy/sudqollanmabot:stable --region europe-west4 --memory 1Gi --timeout 600 --concurrency 80 --service-account 660835097321-compute@developer.gserviceaccount.com --set-env-vars BOT_TOKEN=<.env dan BOT_TOKEN>,GEMINI_API_KEY=<.env dan GEMINI_API_KEY>,GEMINI_MODEL=gemini-3.1-flash-lite-preview,WEBHOOK_URL=https://sudqollanmabot-660835097321.europe-west4.run.app,FIREBASE_CREDENTIALS=serviceAccountKey.json"
 ```
 
 > [!IMPORTANT]

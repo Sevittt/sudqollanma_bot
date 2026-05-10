@@ -12,4 +12,22 @@ venv
 .vscode
 .gemini
 # DO NOT ignore serviceAccountKey.json as it is needed for the bot
-# serviceAccountKey.json 
+# serviceAccountKey.json
+
+# Exclude large data folders (PDFs, videos — used by populate scripts only, not the bot)
+data/
+*.pdf
+*.xlsx
+*.xls
+
+# Exclude populate/ETL scripts (not needed in production container)
+populate_*.py
+pdf_to_md.py
+upload_knowledge.py
+list_models.py
+read_excel.py
+
+# Exclude local dev artifacts and docs
+bot_reja*.txt
+PROJECT_PASSPORT.md
+README.md

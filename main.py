@@ -8,7 +8,7 @@ from aiogram.webhook.aiohttp_server import SimpleRequestHandler, setup_applicati
 
 import config
 from loader import bot, dp
-from handlers import onboarding, helpdesk, quizzes, commands, stats
+from handlers import onboarding, helpdesk, quizzes, commands, stats, resources, kb_articles, courses
 from handlers.middleware import ThrottlingMiddleware, ErrorHandlerMiddleware
 
 async def on_startup(bot: Bot):
@@ -29,23 +29,35 @@ def setup_handlers_and_middlewares():
     dp.message.middleware(ThrottlingMiddleware(rate_limit=1.0))
     
     # Register routers (order matters!)
-    dp.include_router(onboarding.router)   # 1. Onboarding (/start, contact)
-    dp.include_router(commands.router)      # 2. Commands (/help, /about, /profile, /reset)
-    dp.include_router(stats.router)         # 3. Stats (/stats, button)
-    dp.include_router(quizzes.router)       # 4. Quizzes (/quiz, button)
-    dp.include_router(helpdesk.router)      # 5. Helpdesk (catch-all text) — MUST be last!
+    dp.include_router(onboarding.router)    # 1. Onboarding (/start, contact)
+    dp.include_router(commands.router)       # 2. Commands (/help, /about, /profile, /reset)
+    dp.include_router(stats.router)          # 3. Stats (/stats, button)
+    dp.include_router(quizzes.router)        # 4. Quizzes (/quiz, button)
+    dp.include_router(resources.router)      # 5. Resources (/qollanma, PDF fayllar)
+    dp.include_router(kb_articles.router)    # 6. Knowledge base (/maqolalar, /faq)
+    dp.include_router(courses.router)        # 7. Courses (🎓 Kurslar)
+    dp.include_router(helpdesk.router)       # 8. Helpdesk (catch-all text) — MUST be last!
 
 async def set_bot_commands():
-    # Set bot commands visible in Telegram menu
-    await bot.set_my_commands([
-        BotCommand(command="start", description="Botni ishga tushirish"),
-        BotCommand(command="help", description="Buyruqlar ro'yxati"),
-        BotCommand(command="profile", description="Profil ma'lumotlari"),
-        BotCommand(command="quiz", description="Raqamli bilim testi"),
-        BotCommand(command="stats", description="Statistika"),
-        BotCommand(command="reset", description="Suhbat tarixini tozalash"),
-        BotCommand(command="about", description="Bot haqida"),
-    ])
+    """BotFather commands ro'yxatini avtomatik o'rnatish."""
+    commands_list = [
+        BotCommand(command="start",      description="Botni ishga tushirish"),
+        BotCommand(command="help",        description="Yordam va buyruqlar"),
+        BotCommand(command="profile",     description="Mening profilim"),
+        BotCommand(command="quiz",        description="Bilim testini boshlash"),
+        BotCommand(command="qollanma",    description="PDF qo'llanmalar va fayllar"),
+        BotCommand(command="maqolalar",   description="Bilimlar bazasi va maqolalar"),
+        BotCommand(command="faq",         description="Ko'p so'raladigan savollar"),
+        BotCommand(command="stats",       description="Mening statistikam"),
+        BotCommand(command="reset",       description="Suhbat tarixini tozalash"),
+        BotCommand(command="about",       description="Bot haqida ma'lumot"),
+    ]
+    try:
+        from loader import bot as _bot
+        await _bot.set_my_commands(commands_list)
+        logging.info(f"✅ Bot commands o'rnatildi: {len(commands_list)} ta buyruq")
+    except Exception as e:
+        logging.warning(f"Bot commands o'rnatishda xatolik: {e}")
 
 async def start_polling():
     logging.info("♻️ Polling rejimida ishga tushirilmoqda...")
