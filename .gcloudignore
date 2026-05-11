@@ -31,3 +31,9 @@ read_excel.py
 bot_reja*.txt
 PROJECT_PASSPORT.md
 README.md
+CLAUDE.md
+
+# Exclude dev-only directories (not needed in production)
+scratch/
+.agent/
+scripts/
