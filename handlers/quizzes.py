@@ -71,10 +71,13 @@ async def _show_quiz_list(message: Message, state: FSMContext):
 
 @router.callback_query(F.data.startswith("quiz_pick_"))
 async def pick_quiz(callback: CallbackQuery, state: FSMContext):
+    try:
+        await callback.answer()
+    except Exception:
+        pass
     quiz_id = callback.data.replace("quiz_pick_", "")
     await callback.message.edit_text("⏳ Savollar yuklanmoqda...")
     await _start_specific_quiz(callback.message, state, quiz_id)
-    await callback.answer()
 
 
 async def start_specific_quiz_from_deeplink(message: Message, state: FSMContext, quiz_id: str):
@@ -165,6 +168,10 @@ async def _show_question(message, question, question_number, total_questions):
 
 @router.callback_query(F.data.startswith("quiz_ans_"))
 async def check_answer(callback: CallbackQuery, state: FSMContext):
+    try:
+        await callback.answer()
+    except Exception:
+        pass
     data = await state.get_data()
     questions = data.get("questions", [])
     current_idx = data.get("current_index", 0)
@@ -174,7 +181,6 @@ async def check_answer(callback: CallbackQuery, state: FSMContext):
             "❌ Test ma'lumotlari topilmadi.\n"
             "Yangi test boshlash uchun /quiz ni bosing."
         )
-        await callback.answer()
         await state.clear()
         return
 
@@ -282,10 +288,11 @@ async def check_answer(callback: CallbackQuery, state: FSMContext):
         )
         await state.clear()
 
-    await callback.answer()
-
 
 @router.callback_query(F.data == "quiz_restart")
 async def quiz_restart(callback: CallbackQuery, state: FSMContext):
-    await callback.answer()
+    try:
+        await callback.answer()
+    except Exception:
+        pass
     await _show_quiz_list(callback.message, state)
