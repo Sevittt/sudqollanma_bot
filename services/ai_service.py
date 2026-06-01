@@ -1,4 +1,6 @@
+# pyrefly: ignore [missing-import]
 from google import genai
+import asyncio
 import config
 from loader import get_db, init_gemini
 import logging
@@ -65,16 +67,31 @@ class AIService:
     @staticmethod
     async def get_relevant_context(user_query, limit=3):
         """
-        RAG: 'rag_chunks' kolleksiyasidan Vector Search orqali eng mos chunk'larni topadi.
-        Bu kolleksiya upload_knowledge.py tomonidan to'ldiriladi (text + embedding maydonlari).
-        Fallback: knowledge_base maqolalarini oddiy o'qish.
+        Kontekst qidiruv zanjiri:
+          1. WikiService → Vector Search (cosine, threshold=0.25) — tezkor wiki qatlami
+          2. Topilmasa: 'rag_chunks' Vector Search — mavjud RAG mantiq
+          3. RAG natijasi bor bo'lsa: fon rejimida wiki sahifa yaratiladi
+          4. RAG ham bo'sh bo'lsa: knowledge_base fallback
+
+        Wiki qatlami xato bersaham, asosiy RAG ishlashda davom etadi.
         """
+        # ── 1. Wiki qatlami ──────────────────────────────────────────────────────
         try:
+            from services.wiki_service import WikiService
+            wiki_context = await WikiService.search(user_query)
+            if wiki_context:
+                return wiki_context
+        except Exception as e:
+            logging.error(f"Wiki search xatosi (RAG ga o'tiladi): {e}")
+
+        # ── 2. RAG fallback: rag_chunks Vector Search ────────────────────────────
+        try:
+            # pyrefly: ignore [missing-import]
             from google.genai import types
 
             # Query embedding — upload_knowledge.py dagi MODEL bilan bir xil bo'lishi SHART
             embedding_result = init_gemini().models.embed_content(
-                model="gemini-embedding-exp-03-07",
+                model="gemini-embedding-2",
                 contents=user_query,
                 config=types.EmbedContentConfig(output_dimensionality=768)
             )
@@ -100,13 +117,27 @@ class AIService:
                     context_parts.append(content[:3000])
 
             if not context_parts:
+                logging.warning("Wiki miss → RAG fallback")
                 logging.warning("Vector search natija bermadi. Fallback: knowledge_base.")
                 return await AIService.get_system_manuals()
 
-            return "\n\n...[Vector Chunk]...\n\n".join(context_parts)
+            rag_context = "\n\n...[Vector Chunk]...\n\n".join(context_parts)
+
+            # ── 3. Fon rejimida wiki sahifa yaratish ─────────────────────────────
+            try:
+                from services.wiki_service import WikiService
+                loop = asyncio.get_running_loop()
+                loop.create_task(WikiService.build_page(user_query, rag_context))
+            except RuntimeError:
+                pass  # Running loop yo'q — wiki fon vazifasi o'tkazildi
+            except Exception as wiki_err:
+                logging.error(f"Wiki build_page task xatosi: {wiki_err}")
+
+            return rag_context
+
         except Exception as e:
             logging.error(f"Vector search xatosi: {e}")
-            # Fallback: knowledge_base maqolalaridan oddiy o'qish
+            # ── 4. Oxirgi fallback: knowledge_base ───────────────────────────────
             return await AIService.get_system_manuals()
 
 

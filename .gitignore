@@ -21,3 +21,13 @@ data/videos/
 data/jib-sud-uz/vids/
 data/ms-sud-uz/vids/
 data/xatolik-vids/
+
+# PDFs and Videos in data folders recursively
+**/data/**/*.pdf
+**/data/**/*.mp4
+**/data/**/*.webm
+**/data/**/*.wmv
+**/data/**/*.avi
+**/data/**/*.mov
+**/data/**/*.MOV
+

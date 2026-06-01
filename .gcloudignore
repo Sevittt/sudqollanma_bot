@@ -14,11 +14,21 @@ venv
 # DO NOT ignore serviceAccountKey.json as it is needed for the bot
 # serviceAccountKey.json
 
-# Exclude large data folders (PDFs, videos — used by populate scripts only, not the bot)
 data/
+sudqollanma_bot/data/
 *.pdf
 *.xlsx
 *.xls
+
+# PDFs and Videos in data folders recursively
+**/data/**/*.pdf
+**/data/**/*.mp4
+**/data/**/*.webm
+**/data/**/*.wmv
+**/data/**/*.avi
+**/data/**/*.mov
+**/data/**/*.MOV
+
 
 # Exclude populate/ETL scripts (not needed in production container)
 populate_*.py
