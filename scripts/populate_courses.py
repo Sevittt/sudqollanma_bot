@@ -71,7 +71,7 @@ def build_courses() -> list[dict]:
         "title": "E-SUD (E-XSUD) Tizimi — Asosiy Kurs",
         "description": "Sud xodimlarini E-XSUD tizimida bosqichma-bosqich ishlashga o'rgatuvchi to'liq kurs",
         "difficulty": "beginner",
-        "estimatedHours": 3,
+        "estimatedMinutes": 180,
         "hasCertificate": True,
         "targetRole": ["clerk", "secretary", "judge"],
         "tags": ["esud", "e-xsud", "sud", "jinoat"],
@@ -124,7 +124,7 @@ def build_courses() -> list[dict]:
         "title": "E-SUD — Xatoliklarni Bartaraf Etish",
         "description": "E-XSUD tizimida eng ko'p uchraydigan texnik muammolar va ularni hal qilish yo'llari",
         "difficulty": "intermediate",
-        "estimatedHours": 1,
+        "estimatedMinutes": 60,
         "hasCertificate": False,
         "targetRole": ["clerk", "it_admin"],
         "tags": ["esud", "xatolik", "troubleshooting", "kesh", "tiket"],
@@ -163,7 +163,7 @@ def build_courses() -> list[dict]:
         "title": "E-XAT va Axborot Xavfsizligi",
         "description": "Elektron xat almashish tizimi, attestatsiyaga tayyorgarlik va raqamli xavfsizlik asoslari",
         "difficulty": "intermediate",
-        "estimatedHours": 1.5,
+        "estimatedMinutes": 90,
         "hasCertificate": True,
         "targetRole": ["all"],
         "tags": ["exat", "xavfsizlik", "attestatsiya", "security"],
@@ -192,7 +192,7 @@ def build_courses() -> list[dict]:
         "title": "IT Ko'nikmalar va EDO Tizimi",
         "description": "MS Office asoslari, umumiy IT savodxonlik va elektron hujjat aylanishi (EDO)",
         "difficulty": "beginner",
-        "estimatedHours": 1,
+        "estimatedMinutes": 60,
         "hasCertificate": False,
         "targetRole": ["all"],
         "tags": ["it", "edo", "office", "ms-word", "ms-excel"],
@@ -216,11 +216,6 @@ def build_courses() -> list[dict]:
         ]
     })
     
-    # Fix estimatedHours to estimatedMinutes as expected by Dart
-    for c in courses:
-        if "estimatedHours" in c:
-            c["estimatedMinutes"] = int(float(c.pop("estimatedHours")) * 60)
-
     return courses
 
 
