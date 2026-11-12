@@ -46,4 +46,4 @@ CLAUDE.md
 # Exclude dev-only directories (not needed in production)
 scratch/
 .agent/
-scripts/
+# scripts/
