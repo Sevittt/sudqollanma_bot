@@ -2,8 +2,11 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 import config
 from loader import get_db
+import hashlib
 import logging
+from datetime import datetime, timezone
 from google.cloud.firestore_v1 import Increment
+from services import gamification
 
 class FirestoreService:
     @staticmethod
@@ -11,32 +14,129 @@ class FirestoreService:
         """Ensure telegram_id is always a string for consistent queries."""
         return str(telegram_id)
     
+    # ─── Yagona profil ────────────────────────────────────────────
+    # Asosiy kalit — ilovadagi Firebase Auth uid. Telegram ID unga
+    # telegram_links/{telegram_id} = {uid} orqali bogʻlanadi (bitta Telegram —
+    # bitta profil). Faqat botdan foydalanuvchilar users/tg_<telegram_id>
+    # profilini oladi; ilovadan ulansa bogʻlanish ilova uid siga koʻchadi.
+
+    @staticmethod
+    def _bot_uid(telegram_id) -> str:
+        return f"tg_{FirestoreService._normalize_tg_id(telegram_id)}"
+
+    @staticmethod
+    def _user_ref(telegram_id):
+        """Telegram ID boʻyicha profil hujjati havolasi (yoki None)."""
+        db = get_db()
+        tg_id = FirestoreService._normalize_tg_id(telegram_id)
+        link = db.collection('telegram_links').document(tg_id).get()
+        if link.exists and link.to_dict().get('uid'):
+            return db.collection('users').document(link.to_dict()['uid'])
+
+        # Bogʻlanishdan oldingi eski yozuvlar (avto-ID, telegram_id maydoni)
+        users_ref = db.collection('users')
+        for value in (tg_id, int(tg_id) if tg_id.isdigit() else None):
+            if value is None:
+                continue
+            for doc in users_ref.where('telegram_id', '==', value).limit(1).stream():
+                return doc.reference
+        return None
+
     @staticmethod
     async def get_user(telegram_id):
-        """Fetch user by Telegram ID from 'users' collection."""
+        """Fetch the single profile for this Telegram ID."""
         if not get_db(): return None
         try:
-            tg_id = FirestoreService._normalize_tg_id(telegram_id)
-            users_ref = get_db().collection('users')
-            query = users_ref.where('telegram_id', '==', tg_id).limit(1).stream()
-            for doc in query:
-                data = doc.to_dict()
-                data['id'] = doc.id
-                return data
-            
-            # Fallback: try as int (legacy data may have int telegram_id)
-            query2 = users_ref.where('telegram_id', '==', int(telegram_id)).limit(1).stream()
-            for doc in query2:
-                data = doc.to_dict()
-                data['id'] = doc.id
-                # Fix the data type while we're at it
-                doc.reference.update({'telegram_id': tg_id})
-                return data
-            
-            return None
+            ref = FirestoreService._user_ref(telegram_id)
+            if ref is None:
+                return None
+            snap = ref.get()
+            if not snap.exists:
+                return None
+            data = snap.to_dict()
+            data['id'] = snap.id
+            return data
         except Exception as e:
             logging.error(f"Error getting user: {e}")
             return None
+
+    @staticmethod
+    async def link_with_code(code, telegram_id):
+        """
+        Ilovadagi "Telegramʼni ulash" kodini qabul qiladi (functions:
+        createTelegramLinkCode). Holat: linked | already | expired | invalid |
+        other_account | error. Eski tg_ profil birlashtirish uchun saqlanadi.
+        """
+        if not get_db(): return 'error'
+        try:
+            db = get_db()
+            tg_id = FirestoreService._normalize_tg_id(telegram_id)
+            code_ref = db.collection('telegram_link_codes').document(str(code).strip().upper())
+            link_ref = db.collection('telegram_links').document(tg_id)
+
+            @firestore.transactional
+            def _link(tx):
+                code_snap = code_ref.get(transaction=tx)
+                if not code_snap.exists:
+                    return 'invalid'
+                uid = code_snap.to_dict().get('uid')
+                expires_at = code_snap.to_dict().get('expiresAt')
+                user_ref = db.collection('users').document(uid) if uid else None
+                link_snap = link_ref.get(transaction=tx)
+                user_snap = user_ref.get(transaction=tx) if user_ref else None
+
+                if expires_at is None or expires_at <= datetime.now(timezone.utc):
+                    tx.delete(code_ref)
+                    return 'expired'
+                if user_snap is None or not user_snap.exists:
+                    return 'invalid'
+
+                previous = link_snap.to_dict().get('uid') if link_snap.exists else None
+                if previous == uid:
+                    tx.delete(code_ref)
+                    return 'already'
+                if previous and not previous.startswith('tg_'):
+                    return 'other_account'
+
+                tx.set(link_ref, {
+                    'uid': uid,
+                    'previousUid': previous,
+                    'linkedAt': firestore.SERVER_TIMESTAMP,
+                })
+                tx.update(user_ref, {
+                    'telegram_id': tg_id,
+                    'telegramLinkedAt': firestore.SERVER_TIMESTAMP,
+                })
+                tx.delete(code_ref)
+                return 'linked'
+
+            status = _link(db.transaction())
+            if status == 'linked':
+                FirestoreService._merge_previous_profile(db, tg_id)
+            return status
+        except Exception as e:
+            logging.error(f"Error linking Telegram with code: {e}")
+            return 'error'
+
+    @staticmethod
+    def _merge_previous_profile(db, tg_id):
+        """Ulashdan keyin shu Telegram ning avvalgi bot profilini ilova profiliga qoʻshadi."""
+        try:
+            link = db.collection('telegram_links').document(tg_id).get().to_dict() or {}
+            uid = link.get('uid')
+            sources = [link['previousUid']] if link.get('previousUid') else []
+            # Migratsiyadan oldingi avto-ID yozuvlar
+            for value in (tg_id, int(tg_id) if tg_id.isdigit() else None):
+                if value is None:
+                    continue
+                for doc in db.collection('users').where('telegram_id', '==', value).stream():
+                    if doc.id != uid and doc.id not in sources:
+                        sources.append(doc.id)
+            for src_id in sources:
+                FirestoreService.merge_profile(src_id, uid)
+        except Exception as e:
+            # Ulash bajarilgan; birlashtirish keyin migratsiya skripti bilan takrorlanishi mumkin
+            logging.error(f"Error merging previous profile for {tg_id}: {e}")
 
     @staticmethod
     async def get_user_by_phone(phone_number):
@@ -56,10 +156,24 @@ class FirestoreService:
 
     @staticmethod
     async def create_user(user_data):
-        """Create a new user document."""
+        """
+        Faqat botdan foydalanuvchi uchun users/tg_<telegram_id> profilini va
+        telegram_links bogʻlanishini yaratadi. Profil allaqachon boʻlsa False.
+        """
         if not get_db(): return None
         try:
-            get_db().collection('users').add(user_data)
+            db = get_db()
+            tg_id = FirestoreService._normalize_tg_id(user_data['telegram_id'])
+            uid = FirestoreService._bot_uid(tg_id)
+            if FirestoreService._user_ref(tg_id) is not None:
+                return False
+            batch = db.batch()
+            batch.create(db.collection('users').document(uid), dict(user_data, telegram_id=tg_id))
+            batch.create(db.collection('telegram_links').document(tg_id), {
+                'uid': uid,
+                'linkedAt': firestore.SERVER_TIMESTAMP,
+            })
+            batch.commit()
             return True
         except Exception as e:
             logging.error(f"Error creating user: {e}")
@@ -67,77 +181,147 @@ class FirestoreService:
 
     @staticmethod
     async def link_telegram_to_phone(phone_number, telegram_id, full_name):
-        """Link Telegram ID to an existing user or create new."""
+        """
+        Telefon raqamini Telegram profiliga yozadi. Boshqa hisoblarga telefon
+        orqali bogʻlanmaydi: ilova hisobiga ulash faqat bir martalik kod bilan.
+        """
         if not get_db(): return "error", None
         try:
-            tg_id = FirestoreService._normalize_tg_id(telegram_id)
-            users_ref = get_db().collection('users')
-            query = users_ref.where('phoneNumber', '==', phone_number).limit(1).stream()
-            
-            found_doc = None
-            for doc in query:
-                found_doc = doc
-                break
-            
-            if found_doc:
-                found_doc.reference.update({
-                    'telegram_id': tg_id,
-                    'last_updated_by': 'telegram_bot'
-                })
-                return "linked", found_doc.to_dict()
-            else:
-                new_user = {
-                    'phoneNumber': phone_number,
-                    'telegram_id': tg_id,
-                    'firstName': full_name,
-                    'xp': 0,
-                    'level': 1,
-                    'role': 'user',
-                    'quiz_correct': 0,
-                    'createdAt': firestore.SERVER_TIMESTAMP,
-                    'last_updated_by': 'telegram_bot'
-                }
-                get_db().collection('users').add(new_user)
-                return "created", new_user
+            ref = FirestoreService._user_ref(telegram_id)
+            if ref is not None:
+                ref.update({'phoneNumber': phone_number, 'last_updated_by': 'telegram_bot'})
+                data = ref.get().to_dict()
+                return "linked", data
+            new_user = {
+                'phoneNumber': phone_number,
+                'telegram_id': FirestoreService._normalize_tg_id(telegram_id),
+                'firstName': full_name,
+                'xp': 0,
+                'level': 'levelBeginner',
+                'role': 'user',
+                'quiz_correct': 0,
+                'createdAt': firestore.SERVER_TIMESTAMP,
+                'last_updated_by': 'telegram_bot'
+            }
+            if not await FirestoreService.create_user(new_user):
+                return "error", None
+            return "created", new_user
         except Exception as e:
             logging.error(f"Error linking user: {e}")
             return "error", None
 
     @staticmethod
-    async def add_xp(telegram_id, amount):
-        """Atomically add XP to user."""
-        if not get_db(): return False
+    async def award_quiz(telegram_id, quiz_id, score, total):
+        """
+        Test uchun XP ni ilova serveridagi qoidalar bilan beradi (awardXp callable):
+        70% dan o'tilsa +20, 100% bo'lsa +70, bitta test uchun bir marta
+        (users/{id}/xp_awards belgisi ilova bilan umumiy).
+        Qaytaradi: (berilgan XP, holat) — holat: awarded | duplicate | not_eligible | no_user | error.
+        """
+        action = gamification.quiz_action(quiz_id, score, total)
+        if not action:
+            return 0, 'not_eligible'
+        if not get_db():
+            return 0, 'error'
         try:
-            tg_id = FirestoreService._normalize_tg_id(telegram_id)
-            users_ref = get_db().collection('users')
-            query = users_ref.where('telegram_id', '==', tg_id).limit(1).stream()
-            
-            for doc in query:
-                doc.reference.update({
-                    'xp': Increment(amount),
-                    'last_updated_by': 'telegram_bot'
-                })
-                return True
-            return False
+            user = await FirestoreService.get_user(telegram_id)
+            if not user:
+                return 0, 'no_user'
+            db = get_db()
+            return FirestoreService._award_quiz_to(
+                db, db.collection('users').document(user['id']), quiz_id, action)
         except Exception as e:
-            logging.error(f"Error adding XP: {e}")
-            return False
+            logging.error(f"Error awarding quiz XP: {e}")
+            return 0, 'error'
+
+    @staticmethod
+    def _award_quiz_to(db, user_ref, quiz_id, action):
+        """Bitta test uchun mukofot tranzaksiyasi (ilova xp_awards kaliti bilan)."""
+        key = gamification.quiz_dedup_key(quiz_id)
+        award_ref = user_ref.collection('xp_awards').document(
+            hashlib.sha256(key.encode('utf-8')).hexdigest())
+        points = gamification.quiz_points(action)
+
+        @firestore.transactional
+        def _award(tx):
+            snap = user_ref.get(transaction=tx)
+            if award_ref.get(transaction=tx).exists:
+                return 0, 'duplicate'
+            after = gamification.apply_quiz_award(
+                gamification.counters_of(snap.to_dict() or {}), action, points)
+            tx.create(award_ref, {
+                'key': key,
+                'action': action,
+                'points': points,
+                'source': 'telegram_bot',
+                'createdAt': firestore.SERVER_TIMESTAMP,
+            })
+            tx.update(user_ref, {
+                'xp': after['xp'],
+                'level': gamification.calculate_level(after),
+                'quizzesPassed': after['quizzes_passed'],
+                'totalQuizzesAced': after['quizzes_aced'],
+                'lastActivity': firestore.SERVER_TIMESTAMP,
+                'last_updated_by': 'telegram_bot',
+            })
+            return points, 'awarded'
+
+        return _award(db.transaction())
+
+    # Bot profilidan ilova profiliga, agar u yerda boʻsh boʻlsa, koʻchiriladigan maydonlar
+    MERGE_FILL_FIELDS = ('phoneNumber', 'courtName', 'courtType', 'region', 'position',
+                         'digital_level', 'competency_score', 'firstName', 'fullName')
+
+    @staticmethod
+    def merge_profile(src_id, dst_id):
+        """
+        Bot profilini (src) ilova profiliga (dst) birlashtiradi:
+        test urinishlari dst ga oʻtadi, XP ilova qoidalari bilan urinishlardan
+        qayta hisoblanadi (dst da bor mukofotlar takrorlanmaydi), boʻsh maydonlar
+        toʻldiriladi, src `mergedInto` bilan belgilanadi (oʻchirilmaydi).
+        Takror chaqirilsa hech narsa qilmaydi. Qaytaradi: berilgan XP yoki None.
+        """
+        db = get_db()
+        src_ref = db.collection('users').document(src_id)
+        dst_ref = db.collection('users').document(dst_id)
+        src = src_ref.get().to_dict()
+        dst = dst_ref.get().to_dict()
+        if src is None or dst is None or src.get('mergedInto') or src_id == dst_id:
+            return None
+
+        attempts = list(db.collection('quiz_attempts').where('userId', '==', src_id).stream())
+        for a in attempts:
+            a.reference.update({'userId': dst_id, 'mergedFrom': src_id})
+
+        awarded = 0
+        actions = gamification.best_quiz_actions([a.to_dict() for a in attempts])
+        for quiz_id, action in actions.items():
+            points, _ = FirestoreService._award_quiz_to(db, dst_ref, quiz_id, action)
+            awarded += points
+
+        fill = {f: src[f] for f in FirestoreService.MERGE_FILL_FIELDS
+                if src.get(f) not in (None, '') and dst.get(f) in (None, '')}
+        if gamification.to_int(src.get('quiz_correct')):
+            fill['quiz_correct'] = Increment(gamification.to_int(src.get('quiz_correct')))
+        if fill:
+            dst_ref.update(fill)
+        src_ref.update({'mergedInto': dst_id, 'mergedAt': firestore.SERVER_TIMESTAMP})
+        logging.info(f"Merged profile {src_id} -> {dst_id}: {len(attempts)} attempts, +{awarded} XP")
+        return awarded
 
     @staticmethod
     async def increment_quiz_correct(telegram_id, count=1):
         """Atomically increment correct quiz answer count."""
         if not get_db(): return False
         try:
-            tg_id = FirestoreService._normalize_tg_id(telegram_id)
-            users_ref = get_db().collection('users')
-            query = users_ref.where('telegram_id', '==', tg_id).limit(1).stream()
-            for doc in query:
-                doc.reference.update({
-                    'quiz_correct': Increment(count),
-                    'last_updated_by': 'telegram_bot'
-                })
-                return True
-            return False
+            ref = FirestoreService._user_ref(telegram_id)
+            if ref is None:
+                return False
+            ref.update({
+                'quiz_correct': Increment(count),
+                'last_updated_by': 'telegram_bot'
+            })
+            return True
         except Exception as e:
             logging.error(f"Error incrementing quiz count: {e}")
             return False
@@ -147,17 +331,15 @@ class FirestoreService:
         """Save the user's digital competency level."""
         if not get_db(): return False
         try:
-            tg_id = FirestoreService._normalize_tg_id(telegram_id)
-            users_ref = get_db().collection('users')
-            query = users_ref.where('telegram_id', '==', tg_id).limit(1).stream()
-            for doc in query:
-                doc.reference.update({
-                    'digital_level': level,
-                    'competency_score': score,
-                    'last_updated_by': 'telegram_bot'
-                })
-                return True
-            return False
+            ref = FirestoreService._user_ref(telegram_id)
+            if ref is None:
+                return False
+            ref.update({
+                'digital_level': level,
+                'competency_score': score,
+                'last_updated_by': 'telegram_bot'
+            })
+            return True
         except Exception as e:
             logging.error(f"Error saving competency: {e}")
             return False
@@ -205,20 +387,20 @@ class FirestoreService:
 
     @staticmethod
     async def update_user_role(telegram_id, role):
-        """Update a user's role."""
+        """Update a user's role (faqat ilovadagi lavozimlar; admin berilmaydi)."""
+        if not gamification.is_allowed_role(role):
+            logging.warning(f"Rejected role update to {role!r} for {telegram_id}")
+            return False
         if not get_db(): return False
         try:
-            tg_id = FirestoreService._normalize_tg_id(telegram_id)
-            users_ref = get_db().collection('users')
-            query = users_ref.where('telegram_id', '==', tg_id).limit(1).stream()
-            
-            for doc in query:
-                doc.reference.update({
-                    'role': role,
-                    'last_updated_by': 'telegram_bot'
-                })
-                return True
-            return False
+            ref = FirestoreService._user_ref(telegram_id)
+            if ref is None:
+                return False
+            ref.update({
+                'role': role,
+                'last_updated_by': 'telegram_bot'
+            })
+            return True
         except Exception as e:
             logging.error(f"Error updating user role: {e}")
             return False
@@ -251,8 +433,8 @@ class FirestoreService:
                 member_since = "Noma'lum"
             
             return {
-                'xp': user.get('xp', 0),
-                'level': user.get('level', 1),
+                'xp': gamification.to_int(user.get('xp')),
+                'level': gamification.level_id(user),
                 'quiz_correct': user.get('quiz_correct', 0),
                 'message_count': message_count,
                 'member_since': member_since,
@@ -413,9 +595,9 @@ class FirestoreService:
             
             tg_id = FirestoreService._normalize_tg_id(telegram_id)
             
-            # Find the user's Firebase UID from their telegram_id
+            # Profil kaliti: ulangan boʻlsa ilova uid si — natija ilovada ham koʻrinadi
             user = await FirestoreService.get_user(telegram_id)
-            user_id = user.get('uid', tg_id) if user else tg_id
+            user_id = user['id'] if user else tg_id
             
             attempt_data = {
                 'userId': user_id,
@@ -483,20 +665,18 @@ class FirestoreService:
         """Foydalanuvchining sud ma'lumotlarini Firestorega yozish."""
         if not get_db(): return False
         try:
-            tg_id = FirestoreService._normalize_tg_id(telegram_id)
-            users_ref = get_db().collection('users')
-            query = users_ref.where('telegram_id', '==', tg_id).limit(1).stream()
-            for doc in query:
-                doc.reference.update({
-                    'courtName': court_data.get('courtName', ''),
-                    'courtType': court_data.get('courtType', ''),
-                    'region': court_data.get('region', ''),
-                    'position': court_data.get('position', ''),
-                    'last_updated_by': 'telegram_bot',
-                })
-                logging.info(f"Court info updated for {tg_id}: {court_data}")
-                return True
-            return False
+            ref = FirestoreService._user_ref(telegram_id)
+            if ref is None:
+                return False
+            ref.update({
+                'courtName': court_data.get('courtName', ''),
+                'courtType': court_data.get('courtType', ''),
+                'region': court_data.get('region', ''),
+                'position': court_data.get('position', ''),
+                'last_updated_by': 'telegram_bot',
+            })
+            logging.info(f"Court info updated for {telegram_id}: {court_data}")
+            return True
         except Exception as e:
             logging.error(f"Error updating court info: {e}")
             return False

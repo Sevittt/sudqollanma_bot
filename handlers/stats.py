@@ -3,7 +3,18 @@ from aiogram.filters import Command
 from aiogram.types import Message
 from services.firestore_service import FirestoreService
 from handlers.onboarding import get_main_menu
+from services import gamification
 import logging
+
+# Ilova darajalari uchun belgi
+LEVEL_EMOJI = {
+    "levelBeginner": "🥉",
+    "levelIntermediate": "🥉",
+    "levelAdvanced": "🥈",
+    "levelSpecialist": "🥈",
+    "levelExpert": "🥇",
+    "levelMaster": "🏆",
+}
 
 router = Router()
 
@@ -20,24 +31,17 @@ async def stats_command(message: Message):
         return
 
     xp = stats.get('xp', 0)
-    level = stats.get('level', 1)
+    level = stats.get('level', 'levelBeginner')
     quiz_count = stats.get('quiz_correct', 0)
     message_count = stats.get('message_count', 0)
     member_since = stats.get('member_since', "Noma'lum")
 
-    if level >= 10:
-        rank_emoji, rank_title = "🏆", "Ustoz"
-    elif level >= 7:
-        rank_emoji, rank_title = "🥇", "Tajribali"
-    elif level >= 4:
-        rank_emoji, rank_title = "🥈", "O'rganuvchi"
-    else:
-        rank_emoji, rank_title = "🥉", "Yangi"
+    rank_emoji = LEVEL_EMOJI.get(level, "🥉")
+    rank_title = gamification.level_label(level)
 
     await message.answer(
         f"📊 <b>Sizning statistikangiz</b>\n\n"
-        f"{rank_emoji} Unvon: <b>{rank_title}</b>\n"
-        f"📈 Daraja: {level} ({xp} XP)\n\n"
+        f"{rank_emoji} Daraja: <b>{rank_title}</b> ({xp} XP)\n\n"
         f"━━━━━━━━━━━━━━━━━━\n"
         f"🧠 Testlar: {quiz_count} ta to'g'ri javob\n"
         f"💬 Savollar: {message_count} ta suhbat\n"

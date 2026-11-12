@@ -3,6 +3,7 @@ from aiogram.filters import Command
 from aiogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from services.firestore_service import FirestoreService
 from handlers.onboarding import get_main_menu, ROLE_NAMES
+from services import gamification
 import logging
 
 router = Router()
@@ -69,13 +70,18 @@ async def profile_command(message: Message):
     name = user.get('firstName', "Noma'lum")
     role = user.get('role', 'user')
     role_display = ROLE_NAMES.get(role, role)
-    xp = user.get('xp', 0)
-    level = user.get('level', 1)
+    xp = gamification.to_int(user.get('xp'))
+    level_id = gamification.level_id(user)
+    level = gamification.level_label(level_id)
     court = user.get('courtName', 'Belgilanmagan')
     phone = user.get('phoneNumber', 'Belgilanmagan')
 
-    xp_for_next = (level * 100) - xp
-    progress_pct = min(100, int((xp % 100) / 100 * 100))
+    next_xp = gamification.next_level_threshold(level_id)
+    if next_xp:
+        xp_for_next = max(0, next_xp - xp)
+        progress_pct = min(100, int(xp / next_xp * 100))
+    else:
+        xp_for_next, progress_pct = 0, 100
     progress_bar = "█" * (progress_pct // 10) + "░" * (10 - progress_pct // 10)
 
     await message.answer(
@@ -85,9 +91,9 @@ async def profile_command(message: Message):
         f"🏛 Sud: {court}\n"
         f"📱 Telefon: {phone}\n\n"
         f"━━━━━━━━━━━━━━━━━━\n"
-        f"📊 <b>Daraja {level}</b> — {xp} XP\n"
+        f"📊 <b>{level}</b> — {xp} XP\n"
         f"[{progress_bar}] {progress_pct}%\n"
-        f"Keyingi darajagacha: {max(0, xp_for_next)} XP\n"
+        f"Keyingi darajagacha: {xp_for_next} XP\n"
         f"━━━━━━━━━━━━━━━━━━\n\n"
         f"💡 Test yechib XP to'plang!",
         reply_markup=get_main_menu()

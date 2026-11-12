@@ -8,6 +8,7 @@ from aiogram.types import (
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from services.firestore_service import FirestoreService
+from services import gamification
 from firebase_admin import firestore
 import logging
 
@@ -100,6 +101,16 @@ COURT_TYPES = {
 }
 
 
+LINK_MESSAGES = {
+    'linked': "✅ Telegram ilovadagi profilingizga ulandi. Botdagi testlar va XP endi shu profilga yoziladi.",
+    'already': "✅ Telegram allaqachon shu profilga ulangan.",
+    'expired': "⌛ Ulash havolasining muddati tugagan. Ilovada qaytadan «Telegramʼni ulash» ni bosing.",
+    'invalid': "❌ Ulash havolasi yaroqsiz. Ilovada qaytadan «Telegramʼni ulash» ni bosing.",
+    'other_account': "⚠️ Bu Telegram boshqa ilova hisobiga ulangan. Yordam uchun administratorga murojaat qiling.",
+    'error': "⚠️ Ulashda xatolik yuz berdi. Birozdan soʻng qayta urinib koʻring.",
+}
+
+
 @router.message(CommandStart())
 async def start_command(message: Message, state: FSMContext):
     telegram_id = message.from_user.id
@@ -107,6 +118,14 @@ async def start_command(message: Message, state: FSMContext):
 
     args = message.text.split()
     deeplink_arg = args[1] if len(args) > 1 else None
+
+    if deeplink_arg and deeplink_arg.startswith("link_"):
+        status = await FirestoreService.link_with_code(deeplink_arg[len("link_"):], telegram_id)
+        await message.answer(LINK_MESSAGES.get(status, LINK_MESSAGES['error']),
+                             reply_markup=get_main_menu() if status in ('linked', 'already') else None)
+        if status in ('linked', 'already'):
+            return
+        user = await FirestoreService.get_user(telegram_id)
 
     if user and deeplink_arg and deeplink_arg.startswith("quiz_"):
         quiz_id = deeplink_arg.replace("quiz_", "")
@@ -116,8 +135,8 @@ async def start_command(message: Message, state: FSMContext):
 
     if user:
         name = user.get('firstName', 'Hamkasb')
-        level = user.get('level', 1)
-        xp = user.get('xp', 0)
+        level = gamification.level_label(gamification.level_id(user))
+        xp = gamification.to_int(user.get('xp'))
         role = user.get('role', 'user')
 
         if role == 'user':
@@ -472,6 +491,11 @@ async def handle_position_selection(message: Message, state: FSMContext):
 @router.callback_query(F.data.startswith("setrole_"))
 async def set_role_callback(callback: CallbackQuery, state: FSMContext):
     role_key = callback.data.split("_", 1)[1]
+    # callback_data mijoz tomonidan soxtalashtirilishi mumkin: faqat ilova lavozimlari
+    if not gamification.is_allowed_role(role_key):
+        logging.warning(f"Rejected setrole {role_key!r} from {callback.from_user.id}")
+        await callback.answer("Bunday lavozim yoʻq.", show_alert=True)
+        return
     friendly_name = ROLE_NAMES.get(role_key, role_key)
     tg_id = callback.from_user.id
 
@@ -484,7 +508,7 @@ async def set_role_callback(callback: CallbackQuery, state: FSMContext):
             'fullName': callback.from_user.full_name,
             'role': role_key,
             'xp': 0,
-            'level': 1,
+            'level': 'levelBeginner',
             'quiz_correct': 0,
             'createdAt': firestore.SERVER_TIMESTAMP,
             'last_updated_by': 'telegram_bot'

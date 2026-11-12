@@ -4,6 +4,7 @@ from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKe
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from services.firestore_service import FirestoreService
+from services import gamification
 import logging
 
 router = Router()
@@ -109,14 +110,19 @@ async def _start_specific_quiz(message: Message, state: FSMContext, quiz_id: str
         questions=questions,
         current_index=0,
         total_correct=0,
-        total_xp=0,
         quiz_id=quiz_id,
         quiz_title=quiz_title
     )
 
+    if quiz_id in gamification.PRACTICE_QUIZ_IDS:
+        xp_rule = "Bu mashq testi — XP berilmaydi."
+    else:
+        xp_rule = (f"{gamification.QUIZ_PASS_PERCENT}% dan oʻtsangiz <b>+{gamification.XP_QUIZ_PASS} XP</b>, "
+                   f"hammasi toʻgʻri boʻlsa <b>+{gamification.quiz_points('quiz_aced')} XP</b>.")
+
     await message.edit_text(
         f"📝 <b>{quiz_title}</b>\n\n"
-        f"Jami {total_q} ta savol. Har bir to'g'ri javob = <b>+10 XP</b>\n\n"
+        f"Jami {total_q} ta savol. {xp_rule}\n\n"
         f"Boshlang! 👇",
         parse_mode="HTML"
     )
@@ -188,7 +194,6 @@ async def check_answer(callback: CallbackQuery, state: FSMContext):
         ans_idx = int(callback.data.split("_")[-1])
         current_q = questions[current_idx]
         total_correct = data.get("total_correct", 0)
-        total_xp = data.get("total_xp", 0)
         total_q = len(questions)
 
         correct_answer = current_q.get("correctAnswer", "")
@@ -210,8 +215,7 @@ async def check_answer(callback: CallbackQuery, state: FSMContext):
 
         if is_correct:
             total_correct += 1
-            total_xp += 10
-            result_line = "✅ <b>To'g'ri!</b> (+10 XP)"
+            result_line = "✅ <b>To'g'ri!</b>"
         else:
             result_line = f"❌ <b>Noto'g'ri.</b> To'g'ri javob: {correct_label} {correct_answer}"
 
@@ -220,18 +224,30 @@ async def check_answer(callback: CallbackQuery, state: FSMContext):
         if next_idx >= total_q:
             await state.clear()
 
-            if total_xp > 0:
-                await FirestoreService.add_xp(callback.from_user.id, total_xp)
+            quiz_id = data.get("quiz_id", "bot_quiz")
+            awarded, award_status = await FirestoreService.award_quiz(
+                callback.from_user.id, quiz_id, total_correct, total_q)
             if total_correct > 0:
                 await FirestoreService.increment_quiz_correct(callback.from_user.id, total_correct)
 
             await FirestoreService.save_quiz_attempt(
                 telegram_id=str(callback.from_user.id),
-                quiz_id=data.get("quiz_id", "bot_quiz"),
+                quiz_id=quiz_id,
                 quiz_title=data.get("quiz_title", "Bot testi"),
                 score=total_correct,
                 total_questions=total_q
             )
+
+            if award_status == 'awarded':
+                xp_line = f"💰 XP: <b>+{awarded} XP</b>"
+            elif award_status == 'duplicate':
+                xp_line = "💰 XP: bu test uchun XP avval olingan"
+            elif quiz_id in gamification.PRACTICE_QUIZ_IDS:
+                xp_line = "💰 XP: mashq testi uchun berilmaydi"
+            elif award_status == 'not_eligible':
+                xp_line = f"💰 XP: oʻtish uchun kamida {gamification.QUIZ_PASS_PERCENT}% kerak"
+            else:
+                xp_line = "💰 XP: hozir hisoblab boʻlmadi"
 
             pct = (total_correct / total_q) * 100
             if pct >= 80:
@@ -256,7 +272,7 @@ async def check_answer(callback: CallbackQuery, state: FSMContext):
                 f"{result_emoji} <b>{data.get('quiz_title', 'TEST')} YAKUNLANDI</b>\n\n"
                 f"📊 Natija: <b>{total_correct}/{total_q}</b>\n"
                 f"🎯 Foiz: {pct:.0f}%\n"
-                f"💰 Yig'ilgan XP: <b>+{total_xp} XP</b>\n\n"
+                f"{xp_line}\n\n"
                 f"{result_text}\n\n"
                 f"📱 Ko'proq testlar uchun ilovaga kiring!",
                 reply_markup=app_button,
@@ -273,8 +289,7 @@ async def check_answer(callback: CallbackQuery, state: FSMContext):
 
             await state.update_data(
                 current_index=next_idx,
-                total_correct=total_correct,
-                total_xp=total_xp
+                total_correct=total_correct
             )
 
             import asyncio
