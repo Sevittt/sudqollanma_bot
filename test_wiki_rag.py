@@ -20,8 +20,8 @@ import sys
 import os
 import logging
 
-# .env faylini to'g'ri papkadan yuklash
-_env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sudqollanma_bot", ".env")
+# .env faylini to'g'ri papkadan yuklash (skript joylashgan papkadan)
+_env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
 if os.path.exists(_env_path):
     from dotenv import load_dotenv
     load_dotenv(_env_path)
@@ -122,15 +122,34 @@ TEST_CONTEXT = (
 async def test_build_page():
     logger.info("\n=== TEST 3: WikiService.build_page() ===")
     try:
-        from services.wiki_service import WikiService, _build_slug
+        from services.wiki_service import WikiService
+        from loader import get_db
 
-        slug = _build_slug(TEST_QUERY)
-        logger.info(f"  Yaratilayotgan slug: '{slug}'")
         logger.info(f"  So'rov: '{TEST_QUERY}'")
 
         await WikiService.build_page(TEST_QUERY, TEST_CONTEXT)
-        ok(f"build_page() xatosiz tugadi (slug='{slug}')")
-        return slug
+        
+        # Firestore yozilishi va adversarial review yakunlanishi uchun biroz kutamiz
+        logger.info("  Adversarial review va Firestore yozilishi uchun 3s kutilmoqda...")
+        await asyncio.sleep(3)
+
+        db = get_db()
+        docs = list(db.collection("wiki_pages").where("source_query", "==", TEST_QUERY).limit(1).stream())
+        
+        if docs:
+            slug = docs[0].id
+            ok(f"build_page() xatosiz tugadi va topildi (slug='{slug}')")
+            return slug
+        else:
+            # logs dan approved tekshirish
+            logs = list(db.collection("wiki_log").where("trigger_query", "==", TEST_QUERY).limit(1).stream())
+            if logs:
+                log_data = logs[0].to_dict()
+                if not log_data.get("approved", False):
+                    fail(f"build_page() rad etildi: {log_data.get('reviewer_feedback')}")
+                    return None
+            fail("build_page() xatosiz tugadi, lekin Firestore da hujjat topilmadi")
+            return None
     except Exception as e:
         fail("build_page()", e)
         return None
@@ -181,23 +200,28 @@ async def test_firestore_check(slug):
 
 # ── TEST 5: WikiService.search() ──────────────────────────────────────────────
 
-async def test_search():
+async def test_search(slug):
     logger.info("\n=== TEST 5: WikiService.search() ===")
+    if not slug:
+        skip("search() — build_page muvaffaqiyatsiz bo'lgani uchun o'tkazib yuborildi")
+        return
     try:
         from services.wiki_service import WikiService
+        from loader import get_db
 
-        # Hozir yaratilgan test sahifasini qidirish
-        result = await WikiService.search(TEST_QUERY)
+        db = get_db()
+        doc = db.collection("wiki_pages").document(slug).get()
+        title = doc.to_dict().get("title", TEST_QUERY) if doc.exists else TEST_QUERY
+
+        logger.info(f"  Qidirilayotgan sarlavha: '{title}'")
+        result = await WikiService.search(title)
 
         if result:
             logger.info(f"  Hit! Content uzunligi: {len(result)} belgi")
             logger.info(f"  Birinchi 200 belgi:\n    {result[:200]}")
             ok("search() — wiki hit topildi va qaytdi")
         else:
-            skip(
-                "search() — miss (wiki_pages vector index yaratilmagan yoki "
-                "cosine distance > 0.25). Firestore Console da vector index tekshiring."
-            )
+            fail("search() — miss! Vector search sahifani topa olmadi (threshold yoki index xatosi)")
     except Exception as e:
         err_str = str(e)
         if "FAILED_PRECONDITION" in err_str or "index" in err_str.lower():
@@ -263,11 +287,28 @@ async def test_fire_and_forget():
 async def cleanup(slug):
     if not slug:
         return
-    logger.info(f"\n=== CLEANUP: test hujjatini o'chirish ===")
+    logger.info(f"\n=== CLEANUP: test ma'lumotlarini o'chirish ===")
     try:
         from loader import get_db
-        get_db().collection("wiki_pages").document(slug).delete()
+        from firebase_admin import firestore
+        
+        db = get_db()
+        # 1. wiki_pages dan o'chirish
+        db.collection("wiki_pages").document(slug).delete()
         logger.info(f"  wiki_pages['{slug}'] o'chirildi")
+        
+        # 2. wiki_index dan tozalash
+        db.collection("wiki_meta").document("wiki_index").update({
+            f"topics.{slug}": firestore.DELETE_FIELD
+        })
+        logger.info(f"  wiki_index'dan '{slug}' olib tashlandi")
+        
+        # 3. wiki_log dan o'chirish
+        logs = list(db.collection("wiki_log").where("slug", "==", slug).stream())
+        for log in logs:
+            log.reference.delete()
+        logger.info(f"  wiki_log dan '{slug}' ga tegishli audit yozuvlari o'chirildi")
+        
     except Exception as e:
         logger.warning(f"  Tozalash xatosi (muhim emas): {e}")
 
@@ -289,7 +330,7 @@ async def main():
         else:
             slug = await test_build_page()
             await test_firestore_check(slug)
-            await test_search()
+            await test_search(slug)
             await test_full_chain()
 
         await test_fire_and_forget()

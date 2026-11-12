@@ -87,6 +87,7 @@ def main():
         dp.shutdown.register(on_shutdown)
 
         app = web.Application()
+        
         webhook_requests_handler = SimpleRequestHandler(
             dispatcher=dp,
             bot=bot,

@@ -12,6 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
 from loader import get_db, init_gemini
+import config
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -56,14 +57,18 @@ def chunk_by_section(text: str, max_size: int = 1200, overlap: int = 150) -> lis
 
 async def get_embedding(
     text: str,
-    model: str = 'gemini-embedding-2',
+    model: str = None,
     max_retries: int = 5,
 ) -> list[float] | None:
     """
-    Gemini Embedding 2 orqali vektor generatsiya qiladi.
+    Gemini Embedding orqali vektor generatsiya qiladi.
+    Model config.EMBEDDING_MODEL dan olinadi — rag_chunks bilan muvofiqlik saqlanadi.
     Rate limit (429) bo'lsa exponential backoff bilan qayta urinadi.
     """
     import asyncio
+
+    if model is None:
+        model = config.EMBEDDING_MODEL
 
     client = init_gemini()
     if not client:
@@ -75,7 +80,7 @@ async def get_embedding(
             result = client.models.embed_content(
                 model=model,
                 contents=text,
-                config=types.EmbedContentConfig(output_dimensionality=768)
+                config=types.EmbedContentConfig(output_dimensionality=config.EMBEDDING_DIM)
             )
             return result.embeddings[0].values
         except Exception as e:

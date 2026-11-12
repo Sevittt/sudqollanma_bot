@@ -34,7 +34,7 @@ class AIService:
         try:
             # 1. Firestore 'knowledge_base' kolleksiyasidan (articles emas!)
             if get_db():
-                kb_ref = get_db().collection('knowledge_base').limit(5).stream()
+                kb_ref = get_db().collection('knowledge_base').limit(config.KB_FALLBACK_LIMIT).stream()
                 for doc in kb_ref:
                     data = doc.to_dict()
                     # Field 'content' ishlatiladi (text emas)
@@ -89,11 +89,11 @@ class AIService:
             # pyrefly: ignore [missing-import]
             from google.genai import types
 
-            # Query embedding — upload_knowledge.py dagi MODEL bilan bir xil bo'lishi SHART
-            embedding_result = init_gemini().models.embed_content(
-                model="gemini-embedding-2",
+            # Query embedding — config.EMBEDDING_MODEL rag_chunks bilan bir xil bo'lishi SHART
+            embedding_result = await init_gemini().aio.models.embed_content(
+                model=config.EMBEDDING_MODEL,
                 contents=user_query,
-                config=types.EmbedContentConfig(output_dimensionality=768)
+                config=types.EmbedContentConfig(output_dimensionality=config.EMBEDDING_DIM)
             )
             query_vector = embedding_result.embeddings[0].values
 
@@ -117,8 +117,7 @@ class AIService:
                     context_parts.append(content[:3000])
 
             if not context_parts:
-                logging.warning("Wiki miss → RAG fallback")
-                logging.warning("Vector search natija bermadi. Fallback: knowledge_base.")
+                logging.warning("Wiki miss → RAG fallback → knowledge_base fallback")
                 return await AIService.get_system_manuals()
 
             rag_context = "\n\n...[Vector Chunk]...\n\n".join(context_parts)
