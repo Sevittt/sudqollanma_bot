@@ -450,6 +450,16757 @@
 
 
 ---
+## 📖 CANON-INSTALL-GUIDE-PRINTER
+*(Manba: canon-install-guide-printer.pdf)*
+
+Windows 
+Printer Driver 
+Installation Guide 
+USRMA-2846-00 2017-09 en 
+Copyright CANON INC. 2017 
+Contents 
+Introduction ....................................................................................................................................................... 2 
+How to Use the Manual ............................................................................................................................................. 3 
+Notations Used in the Manual ................................................................................................................................ 4 
+Disclaimers ............................................................................................................................................................... 5 
+Copyright .................................................................................................................................................................. 6 
+Trademarks .............................................................................................................................................................. 7 
+System Requirements ................................................................................................................................ 9 
+Before Use ......................................................................................................................................................... 11 
+Installing ............................................................................................................................................................ 13 
+Installing from the Supplied CD-ROM/DVD-ROM ....................................................................................................... 14 
+Installing after Downloading from the Canon Website .............................................................................................. 26 
+Installing to Use WSD .............................................................................................................................................. 34 
+Setting Up a Print Server ...................................................................................................................... 43 
+Configuring Settings on the Print Server Computer .................................................................................................. 44 
+Installing Drivers via the Print Server (Client Settings) .............................................................................................. 49 
+Updating and Uninstalling .................................................................................................................. 52 
+Updating ................................................................................................................................................................ 53 
+Uninstalling ............................................................................................................................................................ 57 
+Troubleshooting ........................................................................................................................................... 62 
+Deleting the USB Class Driver .................................................................................................................................. 66 
+Appendix ............................................................................................................................................................. 69 
+Connecting the Printer to a Computer ..................................................................................................................... 70 
+Connecting via Wired LAN .................................................................................................................................... 71 
+Connecting via Wireless LAN ................................................................................................................................ 72 
+Connecting via USB ............................................................................................................................................. 74 
+Basic Windows Operations ...................................................................................................................................... 75 
+I 
+Introduction 
+Introduction .......................................................................................................................................................... 2 
+How to Use the Manual ......................................................................................................................................... 3 
+Notations Used in the Manual .......................................................................................................................... 4 
+Disclaimers ............................................................................................................................................................. 5 
+Copyright ............................................................................................................................................................... 6 
+Trademarks ............................................................................................................................................................ 7 
+Introduction 
+1 
+Introduction 
+23ES-000 
+How to Use the Manual(P. 3)  
+Disclaimers(P. 5)  
+Copyright(P. 6)  
+Trademarks(P. 7)  
+Introduction 
+2 
+How to Use the Manual 
+23ES-001 
+This explains things that you need to know in order to use this manual. 
+Notations Used in the Manual(P. 4)  
+Introduction 
+3 
+Notations Used in the Manual 
+23ES-003 
+This explains symbols and settings used in this manual. 
+Symbols Used in This Manual 
+In this manual, explanations of items and operations that must be followed while using the driver are set forth 
+the symbols that indicate the following. 
+Indicates operational requirements and restrictions. Be sure to read these items carefully to operate the 
+product correctly, and avoid damage to the product. 
+Indicates a clarification of an operation, or contains additional explanations for a procedure. Reading these 
+notes is highly recommended. 
+About Settings 
+In this manual, setting names displayed on the computer screen are represented as shown in the following 
+examples. 
+Example: 
+[Print] 
+[OK] 
+Introduction 
+4 
+Disclaimers 
+23ES-006 
+The information in this document is subject to change without notice. 
+CANON INC. MAKES NO WARRANTY OF ANY KIND WITH REGARD TO THIS MATERIAL, EITHER EXPRESS OR 
+IMPLIED, EXCEPT AS PROVIDED HEREIN, INCLUDING WITHOUT LIMITATION, THEREOF, WARRANTIES AS TO 
+MARKETABILITY, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OF USE OR NON-INFRINGEMENT. 
+CANON INC. SHALL NOT BE LIABLE FOR ANY DIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY 
+NATURE, OR LOSSES OR EXPENSES RESULTING FROM THE USE OF THIS MATERIAL. 
+Introduction 
+5 
+Copyright 
+23ES-007 
+Copyright CANON INC. 2017 
+No part of this publication may be reproduced, transmitted, transcribed, stored in a retrieval system, or 
+translated into any language or computer language in any form or by any means, electronic, mechanical, 
+magnetic, optical, chemical, manual, or otherwise, without the prior written permission of Canon Inc. 
+Introduction 
+6 
+Trademarks 
+23ES-008 
+Microsoft, Windows, and Windows Vista are either registered trademarks or trademarks of Microsoft 
+Corporation in the United States and/or other countries. 
+macOS is a trademark of Apple Inc. 
+Other product and company names herein may be the trademarks of their respective owners. 
+Introduction 
+7 
+System Requirements 
+System Requirements ..................................................................................................................................... 9 
+System Requirements 
+8 
+System Requirements 
+23ES-009 
+The following system environment is required to install printer drivers. 
+OS 
+●Windows Vista 
+●Windows 7 
+●Windows 8.1 
+●Windows 10 
+●Windows Server 2008 
+●Windows Server 2008 R2 (64-bit version only) 
+●Windows Server 2012 (64-bit version only) 
+●Windows Server 2012 R2 (64-bit version only) 
+●Windows Server 2016 
+Computer 
+A computer running one of the above operating systems 
+  
+●For information about support for the latest operating systems and service packs, visit the Canon website 
+( http://www.canon.com/ ). 
+System Requirements 
+9 
+Before Use 
+Before Use ............................................................................................................................................................ 11 
+Before Use 
+10 
+Before Use 
+23ES-00A 
+●The functions that you can use may vary according to the following conditions. 
+- The device you are using and its settings 
+- The firmware version of the device 
+- The option structure 
+- The driver version 
+- The computer environment you are using 
+●When printing from a Windows Store app, because you cannot display the print settings screen of the driver, 
+the number of functions you can set is limited. 
+●The screen content, procedures, etc. displayed and described in the manual may differ from those actually 
+displayed. 
+●In this manual, examples using Windows 7 (32-bit version) are explained. 
+Before Use 
+11 
+Installing 
+Installing ............................................................................................................................................................... 13 
+Installing from the Supplied CD-ROM/DVD-ROM ............................................................................................... 14 
+Installing after Downloading from the Canon Website .................................................................................... 26 
+Installing to Use WSD .......................................................................................................................................... 34 
+Installing 
+12 
+Installing 
+23ES-00C 
+This section explains how to install a printer driver on your computer and how to set up the printer so that it is ready 
+to print. The printer driver is software that you need to use the printer. Read this section and install the printer driver 
+correctly. 
+◼Installing from the Supplied CD-ROM/DVD-ROM 
+Install the printer driver from the User Software CD-ROM/DVD-ROM that is supplied with the printer. Perform the 
+setup procedure, from connecting the printer and your computer to installation of the printer driver.  
+Installing 
+from the Supplied CD-ROM/DVD-ROM(P. 14)  
+◼Installing after Downloading from the Canon Website 
+The latest printer driver versions are available for downloading from the Canon website. Download a printer driver if, 
+for example, the drivers on the CD-ROM/DVD-ROM do not support the operating system of your computer.  
+Installing after Downloading from the Canon Website(P. 26)  
+  
+Adding a WSD Network Printer 
+If you are using Windows Vista/7/8.1/10/Server 2008/Server 2012/Server 2012 R2/Server 2016, you can use WSD 
+(Web Services on Devices) to add a network printer.  
+Installing to Use WSD(P. 34)  
+Installing 
+13 
+Installing from the Supplied CD-ROM/DVD-ROM 
+23ES-00E 
+Perform the setup procedure, from connecting the printer and your computer to installation of the printer driver. If 
+you are connecting the printer and a computer via wired LAN or wireless LAN, read the notes in  
+Things to Check 
+before Starting (Wired LAN)(P. 71) or  
+Things to Check before Starting (Wireless LAN)(P. 72) before starting. 
+1 If you are making a USB connection, turn OFF the printer. 
+●The printer may not be recognized if you install the printer driver with the printer turned ON. Always turn 
+OFF the power before installing. 
+2 Log on to the computer with an administrator account. 
+3 Insert the User Software CD-ROM/DVD-ROM into the drive on the computer. 
+4 Click [Easy Installation]. 
+●If your computer does not support [Easy Installation] or if you want to manually install the file for 
+displaying the portal site of the User's Guide and the other software, click [Custom Installation]/ 
+[Installation]. 
+●If the above screen does not appear  
+Displaying the [Software Programs/Manuals Setup] 
+Screen(P. 76)  
+●If [AutoPlay] is displayed, click [Run MInst.exe]. 
+Installing 
+14 
+5 Click [Install]. 
+If you clicked [Custom Installation]/[Installation] in step 4 
+Select the programs to install to your computer, and click [Install]. 
+Installing 
+15 
+6 Read the License Agreement and click [Yes] to agree. 
+7 If the Printer Status Window screen is displayed, install the Printer Status Window. 
+Installing 
+16 
+1 
+Click [Start]. 
+2 
+Click [Yes]. 
+8 Install the printer driver. 
+Wired LAN or Wireless LAN Connection 
+1 
+Select [Standard], select the [Reactivate Printers in the Sleep Mode and Search] check box, and click 
+[Next]. 
+●If you are using the printer in an IPv6 environment, click [Detailed Settings]  
+ select [Standard TCP/IP 
+Port]  
+ click [OK]. 
+About [Detailed Settings] 
+You can select the port type. 
+[MFNP Port] (only for IPv4 environment) 
+This is a port that enables automatic detection of the printer's IP address. Even if the IP address of the 
+printer is changed, the connection between the printer and computer will be maintained, provided that 
+they belong to the same subnet. Therefore, you do not need to add a new port every time the IP address 
+is changed. If you are using the printer in an IPv4 environment, choose this setting. 
+[Standard TCP/IP Port] 
+This is a standard Windows port. Whenever the IP address of the printer is changed, a new port must be 
+added. 
+2 
+Select check box for the printer that you want to install from the [Printer List]. 
+Installing 
+17 
+●If you want to use the printer in an IPv6 environment, click the [IPv6 Devices] tab. 
+If the [Select Process] screen is displayed 
+If a printer driver is already installed, the [Select Process] screen is displayed before the [Select Printers to 
+Install] screen. For your printer, the selection made here makes no difference for the setup process. 
+Simply click [Next]. 
+If the [IPv6 Devices] tab is not displayed 
+Return to the previous screen, and click [Detailed Settings]  
+ select [Standard TCP/IP Port]. 
+If the printer that you want does not appear in [Printer List] 
+Problems with the Wired LAN/Wireless LAN Connection(P. 62)  
+3 
+Select the [Set Printer Information] check box, and click [Next]. 
+Installing 
+18 
+4 
+Set the printer information as necessary, and click [Next]. 
+[Printer Name] 
+Change the printer name as necessary. 
+[Set as Default] 
+Select the check box if you want to use your printer as your default printer. 
+[Use as Shared Printer] 
+Select the check box if you want to share the printer (using the computer where you are performing the 
+installation as a print server).  
+Setting Up a Print Server during Printer Driver Installation(P. 47)  
+5 
+Check the printer information in [Printer List for Driver Installation], and click [Start]. 
+Installing 
+19 
+ Installation of the printer driver starts. 
+USB Connection 
+1 
+Select [USB Connection], and click [Next]. 
+2 
+Click [Yes]. 
+3 
+When the following screen appears, connect the computer and the printer with a USB cable (  
+Connecting via USB(P. 74) ), and turn ON the printer. 
+Installing 
+20 
+ Installation of the printer driver starts. 
+If installation does not start  
+Problems with the USB Connection(P. 64)  
+9 Install the file for displaying the portal site of the User's Guide. 
+●If you are performing [Custom Installation]/[Installation] with the [Manuals] check box cleared, proceed to 
+step 10. 
+1 
+Click [Install]. 
+●If you want to change the installation destination, click [Browse] and select your desired location. 
+ Installation of the file for displaying the portal site of the User's Guide starts. 
+2 
+Click [Exit]. 
+Installing 
+21 
+10 Read the information in the following screen carefully, click [Accept] or [Do Not 
+Accept]. 
+If you click [Accept], the Product Extended Survey Program is installed. 
+●The Product Extended Survey Program is a program to send basic information related to installation 
+and usage of the printer to Canon every month for 10 years. It does not send any other information, 
+including your personal information. You can uninstall the Product Extended Survey Program at any 
+time.  
+Uninstalling the Product Extended Survey Program(P. 59)  
+11 Click [Next]. 
+Installing 
+22 
+12 Select the [Restart Computer Now (Recommended)] check box, and click [Restart]. 
+  
+Installing 
+23 
+◼Checking the Results of the Installation 
+If the printer driver has been installed correctly, an icon for the installed printer will be displayed in the printer 
+folder (  
+Displaying the Printer Folder(P. 75) ). 
+If the file for displaying the portal site of the User's Guide has been installed correctly, a shortcut icon for that file 
+will be displayed on the desktop. 
+If the icon is not displayed 
+●Uninstall the printer driver (  
+Uninstalling Printer Drivers(P. 57) ) and repeat the setup from the beginning. 
+●If the shortcut icon for the User's Guide is not displayed (that is, the icon for the installed printer alone is 
+displayed), perform the procedure for installing the file for displaying the portal site of the User's Guide alone. 
+1 
+Insert the User Software CD-ROM/DVD-ROM into the drive on the computer. 
+●If the [Software Programs/Manuals Setup] screen does not appear  
+Displaying the [Software 
+Programs/Manuals Setup] Screen(P. 76)  
+●If [AutoPlay] is displayed, click [Run MInst.exe]. 
+2 
+Click [Custom Installation]/[Installation]. 
+3 
+Select the [Manuals] check box and click [Install]. 
+Installing 
+24 
+4 
+Read the License Agreement and click [Yes] to agree. 
+5 
+Click [Install]. 
+●If you want to change the installation destination, click [Browse] and select your desired location. 
+ The installation begins. 
+6 
+Click [Exit]. 
+7 
+Click [Next]  
+ [Exit]. 
+Installing 
+25 
+Installing after Downloading from the Canon Website 
+23ES-00F 
+Install the printer driver after downloading the latest version from the Canon website. 
+1 Log on to the computer with an administrator account. 
+2 Download the printer driver from the Canon website ( http://www.canon.com/ ). 
+●For more information about how to download the printer driver, see the driver download page for your 
+printer. 
+3 Unzip the downloaded file. 
+4 If you are making a wired LAN or wireless LAN connection, connect the printer to the 
+computer. 
+Connecting via Wired LAN(P. 71)  
+Connecting via Wireless LAN(P. 72)  
+5 If you are making a USB connection, turn OFF the printer. 
+●The printer may not be recognized if you install the printer driver with the printer turned ON. Always turn 
+OFF the power before installing. 
+6 If the Printer Status Window is included in a downloaded folder, open the Printer 
+Status Window folder. 
+●If the Printer Status Window is not included, proceed to step 10. 
+32-bit operating system 
+[Printer_Status_Window]  
+ [uk_eng]  
+ [32BIT] folders of the downloaded file 
+64-bit operating system 
+[Printer_Status_Window]  
+ [uk_eng]  
+ [x64] folders of the downloaded file 
+If you do not know whether to specify the 32-bit version or the 64-bit version for Windows Vista/7/8.1/10/ 
+Server 2008/Server 2012/Server 2012 R2/Server 2016, see  
+Checking the Bit Architecture(P. 76) . 
+7 Double-click "Setup.exe." 
+8 Read the License Agreement and click [Yes] to agree. 
+9 Install the Printer Status Window. 
+Installing 
+26 
+1 
+Click [Start]. 
+2 
+Click [Yes]. 
+10 Open the folder where the printer driver is stored. 
+32-bit operating system 
+[UFRII]  
+ [uk_eng]  
+ [32BIT] folders of the downloaded file 
+64-bit operating system 
+[UFRII]  
+ [uk_eng]  
+ [x64] folders of the downloaded file 
+If you do not know whether to specify the 32-bit version or the 64-bit version for Windows Vista/7/8.1/10/ 
+Server 2008/Server 2012/Server 2012 R2/Server 2016, see  
+Checking the Bit Architecture(P. 76) . 
+11 Double-click "Setup.exe." 
+12 Read the License Agreement and click [Yes] to agree. 
+Installing 
+27 
+13 Install the printer driver. 
+Wired LAN or Wireless LAN Connection 
+1 
+Select [Standard], select the [Reactivate Printers in the Sleep Mode and Search] check box, and click 
+[Next]. 
+●If you are using the printer in an IPv6 environment, click [Detailed Settings]  
+ select [Standard TCP/IP 
+Port]  
+ click [OK]. 
+About [Detailed Settings] 
+You can select the port type. 
+[MFNP Port] (only for IPv4 environment) 
+This is a port that enables automatic detection of the printer's IP address. Even if the IP address of the 
+printer is changed, the connection between the printer and computer will be maintained, provided that 
+they belong to the same subnet. Therefore, you do not need to add a new port every time the IP address 
+is changed. If you are using the printer in an IPv4 environment, choose this setting. 
+[Standard TCP/IP Port] 
+This is a standard Windows port. Whenever the IP address of the printer is changed, a new port must be 
+added. 
+2 
+Select check box for the printer that you want to install from the [Printer List]. 
+●If you want to use the printer in an IPv6 environment, click the [IPv6 Devices] tab. 
+Installing 
+28 
+If the [Select Process] screen is displayed 
+If a printer driver is already installed, the [Select Process] screen is displayed before the [Select Printers to 
+Install] screen. For your printer, the selection made here makes no difference for the setup process. 
+Simply click [Next]. 
+If the [IPv6 Devices] tab is not displayed 
+Return to the previous screen, and click [Detailed Settings]  
+ select [Standard TCP/IP Port]. 
+If the printer that you want does not appear in [Printer List] 
+Problems with the Wired LAN/Wireless LAN Connection(P. 62)  
+3 
+Select the [Set Printer Information] check box, and click [Next]. 
+Installing 
+29 
+4 
+Set the printer information as necessary, and click [Next]. 
+[Printer Name] 
+Change the printer name as necessary. 
+[Set as Default] 
+Select the check box if you want to use your printer as your default printer. 
+[Use as Shared Printer] 
+Select the check box if you want to share the printer (using the computer where you are performing the 
+installation as a print server).  
+Setting Up a Print Server during Printer Driver Installation(P. 47)  
+5 
+Check the printer information in [Printer List for Driver Installation], and click [Start]. 
+Installing 
+30 
+ Installation of the printer driver starts. 
+USB Connection 
+1 
+Select [USB Connection], and click [Next]. 
+2 
+Click [Yes]. 
+3 
+When the following screen appears, connect the computer and the printer with a USB cable (  
+Connecting via USB(P. 74) ), and turn ON the printer. 
+Installing 
+31 
+ Installation of the printer driver starts. 
+If installation does not start  
+Problems with the USB Connection(P. 64)  
+14 Select the [Restart My Computer Now] check box, and click [Restart]. 
+  
+◼Checking the Results of the Installation 
+If the printer driver has been installed correctly, an icon for the installed printer will be displayed in the printer 
+folder (  
+Displaying the Printer Folder(P. 75) ). 
+Installing 
+32 
+If the icon is not displayed 
+Uninstall the printer driver (  
+Uninstalling Printer Drivers(P. 57) ) and repeat the installation from the 
+beginning. 
+Installing 
+33 
+Installing to Use WSD 
+23ES-00H 
+If you are using Windows Vista/7/8.1/10/Server 2008/Server 2012/Server 2012 R2/Server 2016, you can print by using 
+the WSD (Web Services on Devices) protocol. If you want to use WSD, first install the printer driver and then add a 
+network printer. 
+Installing a Printer Driver(P. 34)  
+Adding a Network Printer(P. 39)  
+Installing a Printer Driver 
+1 Log on to the computer with an administrator account. 
+2 Open the printer folder.  
+Displaying the Printer Folder(P. 75)  
+3 Click [Add a printer] or [Add Printer]. 
+4 Click [Add a local printer]. 
+Installing 
+34 
+5 Check that [LPT1] is selected under [Use an existing port], and click [Next]. 
+6 Click [Have Disk]. 
+Installing 
+35 
+7 Click [Browse]. 
+8 Specify the folder where the printer driver is stored, select the Inf file, and click 
+[Open]. 
+Installing 
+36 
+●Specify the folder where the printer driver is stored as follows. 
+32-bit operating system 
+Specify [UFRII]  
+ [uk_eng]  
+ [32BIT]  
+ [Driver] folders of the CD-ROM/DVD-ROM or downloaded file. 
+64-bit operating system 
+Specify [UFRII]  
+ [uk_eng]  
+ [x64]  
+ [Driver] folders of the CD-ROM/DVD-ROM or downloaded file. 
+If you do not know whether to specify the 32-bit version or the 64-bit version  
+Checking the Bit 
+Architecture(P. 76)  
+9 Click [OK]. 
+10 Select your printer, and click [Next]. 
+11 Change the printer name as necessary, and click [Next]. 
+Installing 
+37 
+The installation starts. 
+12 Select [Do not share this printer], and click [Next]. 
+●If you want to share the printer, make sharing settings for the printer added with  
+Adding a Network 
+Printer(P. 39) . (  
+Configuring Settings on the Print Server Computer(P. 44) ) 
+13 Click [Finish]. 
+Installing 
+38 
+An icon for the installed printer is displayed in the printer folder. 
+  
+Adding a Network Printer 
+1 Open the network folder. 
+Windows Vista/Server 2008 
+[Start]  
+ select [Network]. 
+Windows 7/Server 2008 R2 
+[Start]  
+ [Computer]  
+ select [Network]. 
+Windows 8.1/Server 2012/Server 2012 R2 
+Right-click the lower-left corner of the screen  
+ [File Explorer]  
+ select [Network]. 
+Windows 10/Server 2016 
+Installing 
+39 
+Click [ 
+]  
+ [File Explorer]  
+ select [Network]. 
+2 Right-click the newly added printer icon, and click [Install]. 
+Installation for using WSD is complete when an icon for the printer is added to the printer folder. 
+  
+Deleting Unneeded Printer Icons 
+When you have finished installing the network printer, the icon added in step 13 of  
+Installing a Printer 
+Driver(P. 34) is no longer needed. To delete the icon, right-click it and select [Remove device] or [Delete] 
+ click [Yes]. 
+Installing 
+40 
+Installing 
+41 
+Setting Up a Print Server 
+Setting Up a Print Server ............................................................................................................................. 43 
+Configuring Settings on the Print Server Computer ......................................................................................... 44 
+Installing Drivers via the Print Server (Client Settings) .................................................................................... 49 
+Setting Up a Print Server 
+42 
+Setting Up a Print Server 
+23ES-00J 
+You can lessen the burden on computers that request printing services by setting up a print server. You can also use 
+the print server to install printer drivers on other computers, so that users of those computers do not need to install 
+the printer driver from the CD-ROM/DVD-ROM. 
+◼Configuring Settings on the Print Server Computer 
+Configure printer sharing settings on the computer that you want to use as the print server.  
+Configuring Settings 
+on the Print Server Computer(P. 44)  
+◼Installing Drivers via the Print Server (Client Settings) 
+You can use the print server to install printer drivers on other computers (clients) on the same network. This allows all 
+of the computers to share the same printer.  
+Installing Drivers via the Print Server (Client Settings)(P. 49)  
+Setting Up a Print Server 
+43 
+Configuring Settings on the Print Server Computer 
+23ES-00K 
+Configure printer sharing settings on the computer that you want to use as the print server. The following procedure 
+assumes that you have already installed the printer driver on the computer that you plan to use as the print server. If 
+you have not installed the printer driver already, see  
+Setting Up a Print Server during Printer Driver 
+Installation(P. 47) . 
+●It may not be possible to install printer drivers over the network if the client computers and the print server 
+use different versions of the operating system (32-bit or 64-bit). 
+●Consult your network administrator if you want to set up a print server in a domain environment. 
+1 Log on to the computer with an administrator account. 
+2 Open the printer folder.  
+Displaying the Printer Folder(P. 75)  
+3 Right-click the icon of the printer you are setting up and click [Printer properties] or 
+[Properties]. 
+4 Click the [Sharing] tab, select [Share this printer], and enter the share name. 
+Setting Up a Print Server 
+44 
+If [Change sharing options] is displayed 
+Click [Change sharing options]. 
+5 Install additional drivers as necessary. 
+●During the procedure explained in  
+Installing Drivers via the Print Server (Client Settings)(P. 49) , this 
+step is necessary if you want to use the print server to install printer drivers on computers that use different 
+processor versions (32-bit or 64-bit) of the operating system. 
+1 
+Click [Additional Drivers]. 
+2 
+Select the additional drivers, and click [OK]. 
+Setting Up a Print Server 
+45 
+●Select additional drivers as follows, according to the operating system of the print server. 
+Print Server 
+Additional Drivers 
+32-bit OS 
+Select [x64]. 
+64-bit OS 
+Select [x86] under [Processor]. 
+If you do not know whether to specify the 32-bit version or the 64-bit version for Windows Vista/7/8.1/10/ 
+Server 2008/Server 2012/Server 2012 R2/Server 2016, see  
+Checking the Bit Architecture(P. 76) . 
+3 
+Insert the User Software CD-ROM/DVD-ROM into the drive on the computer. 
+●If you want to use printer drivers downloaded from the Canon website, download the additional 
+drivers (printer drivers for processor versions that are different from that of the print server). 
+When the [Software Programs/Manuals Setup] screen is displayed, click [Exit]. 
+4 
+Click [Browse]. 
+5 
+Specify the folder where the additional drivers are stored, select the Inf file, and click [Open]. 
+Setting Up a Print Server 
+46 
+●Specify the folder where the additional drivers are stored as follows. 
+ When the print server uses a 32-bit OS 
+Specify [UFRII]  
+ [uk_eng]  
+ [x64]  
+ [Driver] folders of the CD-ROM/DVD-ROM or downloaded file. 
+ When the print server uses a 64-bit OS 
+Specify [UFRII]  
+ [uk_eng]  
+ [32BIT]  
+ [Driver] folders of the CD-ROM/DVD-ROM or downloaded 
+file. 
+6 
+Click [OK]. 
+Installation of the additional driver starts. Wait until you are returned to the [Sharing] tab. 
+6 Click [OK]. 
+  
+◼Setting Up a Print Server during Printer Driver Installation 
+If you are using a printer connected by wired LAN or wireless LAN, you can set up a print server at the time when you 
+install the printer driver. To set the computer onto which you are installing the print driver as a print server, select [Use 
+as Shared Printer] in the [Printer Information] screen, which is displayed when you install the printer driver. 
+If you are using a printer connected by USB, you cannot set up a print server at the time when you install the 
+printer driver. Set up the print server after installing the printer driver, by using the procedure described above. 
+For the complete installation procedure, see  
+Installing(P. 13) . 
+Setting Up a Print Server 
+47 
+[Printer Information] screen 
+[Use as Shared Printer] 
+When this is selected, the computer onto which you are installing the printer driver is designated as a print 
+server. 
+[Shared Name] 
+Enter the name of the shared printer. 
+[Drivers to Add] 
+Click to install additional drivers. During the procedure explained in  
+Installing Drivers via the Print Server 
+(Client Settings)(P. 49) , additional drivers are necessary if you want to use the print server to install printer 
+drivers on computers that use different processor versions (32-bit or 64-bit) of the operating system. 
+LINKS 
+Installing Drivers via the Print Server (Client Settings)(P. 49)  
+Setting Up a Print Server 
+48 
+Installing Drivers via the Print Server (Client Settings) 
+23ES-00L 
+You can use the print server to install printer drivers for a shared printer on other computers (clients) on the same 
+network. Because the printer drivers are installed via the print server, users of the other computers do not need to use 
+the printer's CD-ROM/DVD-ROM. 
+1 Log on to the computer with an administrator account. 
+2 Open [Windows Explorer] or [File Explorer]. 
+Windows Vista/7/Server 2008 
+[Start]  
+ select [All Programs] or [Programs]  
+ [Accessories]  
+ [Windows Explorer]. 
+Windows 8.1/Server 2012/Server 2012 R2 
+Right-click the lower-left corner of the screen  
+ select [File Explorer]. 
+Windows 10/Server 2016 
+Click [ 
+]  
+ [File Explorer]. 
+3 Select the print server from [Network] or [My Network Places]. 
+●To display a computer on the network, you may need to enable [Network discovery] (  
+Enabling [Network 
+discovery](P. 75) ) or search for the computer on the network. 
+If the print server is not discovered  
+Problems via the Print Server(P. 64)  
+4 Double-click the shared printer. 
+Setting Up a Print Server 
+49 
+5 Follow the instructions on the screen to install the printer drivers. 
+It may not be possible to install printer drivers via the print server if the client computers and the print server 
+use different processor versions (32-bit or 64-bit) of the operating system. In this case, install additional 
+drivers on the print server.  
+Configuring Settings on the Print Server Computer(P. 44)  
+Setting Up a Print Server 
+50 
+Updating and Uninstalling 
+Updating and Uninstalling ......................................................................................................................... 52 
+Updating .............................................................................................................................................................. 53 
+Uninstalling ......................................................................................................................................................... 57 
+Updating and Uninstalling 
+51 
+Updating and Uninstalling 
+23ES-00R 
+This section explains how to update and uninstall printer drivers. It also explains how to uninstall the Product 
+Extended Survey Program. 
+◼Updating 
+You can update installed printer drivers to the latest versions.  
+Updating(P. 53)  
+◼Uninstalling 
+When you no longer need installed printer drivers or the Product Extended Survey Program, you can uninstall (delete) 
+them.  
+Uninstalling(P. 57)  
+Updating and Uninstalling 
+52 
+Updating 
+23ES-00S 
+Proceed as follows to download the latest printer driver from the Canon website and update the printer driver 
+installed on your computer. 
+1 Log on to the computer with an administrator account. 
+2 Download the printer driver from the Canon website ( http://www.canon.com/ ). 
+●For more information about how to download the printer driver, see the driver download page for your 
+printer. 
+3 Unzip the downloaded file. 
+4 Open the folder where the printer driver is stored. 
+32-bit operating system 
+[UFRII]  
+ [uk_eng]  
+ [32BIT] folders 
+64-bit operating system 
+[UFRII]  
+ [uk_eng]  
+ [x64] folders 
+If you do not know whether to specify the 32-bit version or the 64-bit version for Windows Vista/7/8.1/10/ 
+Server 2008/Server 2012/Server 2012 R2/Server 2016, see  
+Checking the Bit Architecture(P. 76) . 
+5 Double-click "Setup.exe." 
+6 Read the License Agreement and click [Yes] to agree. 
+Updating and Uninstalling 
+53 
+7 Select [Custom], and click [Next]. 
+8 Select [Update Existing Printer Drivers], and click [Next]. 
+Updating and Uninstalling 
+54 
+9 Check the printer information in [Printer List for Driver Installation], and click [Start]. 
+Updating of the printer driver starts. 
+10 Select [Restart My Computer Now], and click [Restart]. 
+Updating and Uninstalling 
+55 
+Updating and Uninstalling 
+56 
+Uninstalling 
+23ES-00U 
+When you no longer need installed printer drivers or the Product Extended Survey Program, you can uninstall them to 
+delete them from your computer. 
+Uninstalling Printer Drivers(P. 57)  
+Uninstalling the Product Extended Survey Program(P. 59)  
+Uninstalling Printer Drivers 
+1 Log on to the computer with an administrator account. 
+2 Display [Programs and Features] or [Add or Remove Programs].  
+Displaying 
+[Programs and Features] or [Add or Remove Programs](P. 77)  
+3 Select the printer driver that you want to uninstall, and click [Uninstall/Change] or 
+[Change/Remove]. 
+ The uninstaller starts. 
+If you cannot find the printer driver that you want to uninstall 
+Start the uninstaller from the User Software CD-ROM/DVD-ROM or from the printer driver file that you 
+downloaded. 
+1 
+Insert the User Software CD-ROM/DVD-ROM into the drive on the computer. 
+●To start the uninstaller from a printer driver file that you downloaded, carry out the following step. 
+2 
+Open the folder where the uninstaller is stored. 
+Updating and Uninstalling 
+57 
+32-bit operating system 
+[UFRII]  
+ [uk_eng]  
+ [32BIT]  
+ [misc] folders of the CD-ROM/DVD-ROM or downloaded file 
+64-bit operating system 
+[UFRII]  
+ [uk_eng]  
+ [x64]  
+ [misc] folders of the CD-ROM/DVD-ROM or downloaded file 
+If you do not know whether to specify the 32-bit version or the 64-bit version for Windows Vista/7/8.1/10/ 
+Server 2008/Server 2012/Server 2012 R2/Server 2016, see  
+Checking the Bit Architecture(P. 76) . 
+3 
+Double-click "UNINSTAL.exe." 
+4 Select the printer that you want to uninstall, and click [Delete]. 
+If you click [Cleanup], then all files, directory information and other data related to all printers are deleted, 
+not only for the selected printer but for all printers in the list. Normally you should use [Delete] to uninstall 
+printer drivers. Click [Cleanup] when no printer is displayed in the list. 
+5 Click [Yes]. 
+Updating and Uninstalling 
+58 
+The uninstall starts. 
+●When the following screen appears, click [Yes] or [Yes To All]. 
+6 Click [Exit]. 
+  
+Uninstalling the Product Extended Survey Program 
+1 Log on to the computer with an administrator account. 
+2 Display [Programs and Features] or [Add or Remove Programs].  
+Displaying 
+[Programs and Features] or [Add or Remove Programs](P. 77)  
+3 Select [Canon Laser Printer/Scanner/Fax Extended Survey Program], and click 
+[Uninstall] or [Remove]. 
+Updating and Uninstalling 
+59 
+4 Click [OK]. 
+Updating and Uninstalling 
+60 
+Troubleshooting 
+Troubleshooting ............................................................................................................................................... 62 
+Deleting the USB Class Driver ............................................................................................................................. 66 
+Troubleshooting 
+61 
+Troubleshooting 
+23ES-00W 
+If you encounter problems during installation of the printer driver, see the following sections before contacting Canon. 
+Problems with the Wired LAN/Wireless LAN Connection(P. 62)  
+Problems with the USB Connection(P. 64)  
+Problems via the Print Server(P. 64)  
+Problems with the Wired LAN/Wireless LAN Connection 
+ The printer that you want does not appear in [Printer List]. 
+●Click [Search Again] to search for the printer on the network. 
+  
+●When you connect the printer to a computer via wireless LAN, check whether the printer is properly 
+installed and ready to connect to the network. 
+Cannot Connect to the Wireless LAN(P. 62)  
+  
+Cannot Connect to the Wireless LAN 
+  
+ Check the status of your computer. 
+●Have the settings of the computer and the wireless router been completed? 
+●Are the cables of the wireless router (including the power cord and LAN cable) correctly 
+plugged in? 
+●Is the wireless router turned ON? 
+If the problem persists even after checking the above: 
+Troubleshooting 
+62 
+●Turn OFF all of the devices, and then turn them ON again. 
+●Wait for a while, and try again to connect to the network. 
+  
+  
+Check whether the printer is turned ON. 
+●If the printer is turned ON, turn it OFF, and then turn it back ON. 
+  
+  
+Check the installation site of the printer and the wireless router. 
+●Is the printer too far from the wireless router? 
+●Are there any obstacles such as walls between the printer and the wireless router? 
+●Are there any appliances such as microwave ovens or digital cordless phones that emit ra 
+waves near the printer? 
+  
+  
+Reset the wireless LAN settings. 
+When you need to manually set up the connection 
+If the wireless router is set up as described below, enter the required information manually. 
+●The stealth function is enabled. 
+●ANY connection refusal* is enabled. 
+●The automatically generated WEP key (hexadecimal) is selected. 
+* A function in which the wireless router refuses the connection if the SSID of the device to be connected is set to 
+"ANY" or is blank. 
+When you need to change the settings of the wireless router 
+If the wireless router is set up as described below, change the settings of the router. 
+●MAC address filtering is enabled. 
+Troubleshooting 
+63 
+●When only IEEE 802.11n is used for the wireless communication, WEP is selected or the WPA/WPA2 
+encryption method is set to TKIP. 
+  
+Problems with the USB Connection 
+ Installation does not start. 
+●Is the printer turned ON? 
+●Are the printer and the computer connected correctly via a USB cable? 
+Connecting via USB(P. 74)  
+●Was the printer turned ON before you installed the printer driver? If so, turn OFF the printer and unplug 
+the USB cable, and then reinstall the printer driver. 
+Installing(P. 13)  
+Always turn ON the printer when the following screen is displayed. 
+  
+●Exchange the USB cable. If the USB cable is a long one, exchange it for a shorter one. 
+●If you are using a USB hub, connect the printer directly to your computer using a USB cable. 
+●First delete the USB class driver, and then reinstall the printer driver. 
+Deleting the USB Class Driver(P. 66)  
+Installing(P. 13)  
+  
+Problems via the Print Server 
+ You cannot find the print server to connect to. 
+●Are the print server and computer connected correctly? 
+Troubleshooting 
+64 
+●Is the print server running? 
+●Do you have user rights to connect to the print server? If you are not sure, consult the print server's 
+administrator. 
+●Is [Network discovery] enabled? (Windows Vista/7/8.1/10/Server 2008/Server 2012/Server 2012 R2/Server 
+2016) 
+Enabling [Network discovery](P. 75)  
+Troubleshooting 
+65 
+Deleting the USB Class Driver 
+23ES-00X 
+Delete the USB class driver when it is not possible to install the printer driver correctly when using a USB connection. 
+Note that even if you delete the USB class driver, it will be installed again automatically when you connect the printer 
+and your computer with a USB cable. 
+1 Connect the printer and your computer with a USB cable (  
+Connecting via 
+USB(P. 74) ), and turn ON the printer. 
+2 Log on to the computer with an administrator account. 
+3 Display [Device Manager].  
+Displaying [Device Manager](P. 77)  
+4 Double-click [Universal Serial Bus controllers]. 
+5 Right-click [USB Printing Support], and click [Uninstall]. 
+Troubleshooting 
+66 
+Be careful to delete [USB Printing Support] only, and never delete any other devices or device drivers 
+Windows may not operate properly if you delete other devices or device drivers. 
+If [USB Printing Support] is not displayed 
+[USB Printing Support] is not displayed if the USB class driver is not installed properly. In this case, close 
+[Device Manager] without doing anything further. 
+6 Click [OK]. 
+7 Close [Device Manager]. 
+8 Unplug the USB cable, and restart your computer. 
+LINKS 
+Connecting via USB(P. 74)  
+Troubleshooting 
+67 
+Appendix 
+Appendix ............................................................................................................................................................... 69 
+Connecting the Printer to a Computer .............................................................................................................. 70 
+Connecting via Wired LAN .............................................................................................................................. 71 
+Connecting via Wireless LAN .......................................................................................................................... 72 
+Connecting via USB ........................................................................................................................................ 74 
+Basic Windows Operations ................................................................................................................................. 75 
+Appendix 
+68 
+Appendix 
+23ES-00Y 
+The Appendix provides information you should know, such as how to connect the printer to your computer. See it as 
+necessary. 
+Connecting the Printer to a Computer(P. 70)  
+Basic Windows Operations(P. 75)  
+Appendix 
+69 
+Connecting the Printer to a Computer 
+23ES-010 
+There are three ways to connect the printer to a computer: via wired LAN, via wireless LAN, and by using a USB cable. 
+Select the connection method that best suits your communication environment and devices. 
+Connecting via Wired LAN 
+Connect the 
+printer to a 
+router via a LAN 
+cable.  
+Connecting via 
+Wired 
+LAN(P. 71)  
+Connecting via Wireless LAN 
+The printer and 
+the router are 
+connected 
+wirelessly (via 
+radio waves), so 
+you do not need 
+a LAN cable.  
+Connecting via 
+Wireless 
+LAN(P. 72)  
+Connecting via USB 
+Connect the 
+printer to a 
+computer via a 
+USB cable.  
+Connecting via 
+USB(P. 74)  
+  
+The supported connection methods differ depending on the printer you are using. See the "User's Guide" for 
+information about the supported connection methods. 
+Appendix 
+70 
+Connecting via Wired LAN 
+23ES-011 
+Connect the printer to a computer via a wired router. Use a LAN cable to connect the printer and the router. 
+Things to Check before Starting (Wired LAN)(P. 71)  
+Things to Check before Starting (Wired LAN) 
+●Have the computer and the router 
+been connected correctly via a LAN 
+cable? For more information, see the 
+instruction manuals for the devices 
+you are using, or contact the 
+manufacturer. 
+  
+●Have the network settings been 
+completed on the computer? If the 
+network has not been set up properly, 
+you will not be able to use the printer 
+on the wired LAN network, even if you 
+perform the rest of the procedure 
+below. 
+When switching the connection method from wireless LAN to wired LAN 
+You need to uninstall the currently installed printer driver, configure the wired LAN connection, and then 
+reinstall the printer driver. 
+●The printer does not come with a router or LAN cable. Have them ready as necessary. Use a Category 5 or 
+higher twisted pair cable for the LAN. 
+●Make sure that there are ports available on the router to connect the printer and the computer. 
+●See the "User's Guide" for the Ethernet types supported by the printer. 
+●Wired LAN and wireless LAN cannot be used at the same time. 
+●If you are using the printer in your office, consult your network administrator. 
+Appendix 
+71 
+Connecting via Wireless LAN 
+23ES-012 
+Connect the printer to a computer via a wireless router. The printer and the router are connected wirelessly (via radio 
+waves), so you do not need a LAN cable. 
+Things to Check before Starting (Wireless LAN)(P. 72)  
+Things to Check before Starting (Wireless LAN) 
+●Have the computer and the router 
+been connected properly? For more 
+information, see the instruction 
+manuals for the devices you are 
+using, or contact the manufacturer. 
+  
+●Have the network settings been 
+completed on the computer? If the 
+network has not been set up 
+properly, you will not be able to use 
+the printer on the wireless LAN 
+network, even if you perform the rest 
+of the procedure below. 
+Risk of Information Leak 
+If the printer is connected to an unsecured network, your personal information might be leaked to a third party 
+because radio waves used in wireless communication can go anywhere nearby, even beyond walls. Use wireless 
+LAN connection at your own discretion and at your own risk. 
+Wireless LAN Security Standards 
+See the "User's Guide" for information about the security standards supported by the printer. 
+●The printer does not come with a wireless router. Have the router ready as necessary. 
+●The wireless router must conform to the IEEE 802.11b/g/n standards and be able to communicate in the 2.4 
+GHz band. For more information, see the instruction manual for your wireless router or contact the 
+manufacturer. 
+●Wired LAN and wireless LAN cannot be used at the same time. When using a wireless LAN connection, do 
+not connect a LAN cable to the printer. Doing so may cause a malfunction. 
+●If you are using the printer in your office, consult your network administrator. 
+Appendix 
+72 
+After switching the connection method from wired LAN to wireless LAN 
+You need to uninstall the currently installed printer driver, and then reinstall it. 
+Appendix 
+73 
+Connecting via USB 
+23ES-013 
+Connect the printer to a computer with a USB cable. Connect the flat connector of the USB cable ( 
+) to the 
+computer, and connect the square connector ( 
+) to the printer. 
+  
+●If your printer does not come with a USB cable, you will need to provide your own cable separately. 
+●Make sure that the USB cable you use has the following mark. 
+●If a Plug and Play automatic setup screen like the one shown below is displayed when you connect the USB 
+cable, click [Close] or [Cancel] to close it. 
+LINKS 
+Deleting the USB Class Driver(P. 66)  
+Appendix 
+74 
+Basic Windows Operations 
+23ES-015 
+Displaying the Printer Folder(P. 75)  
+Enabling [Network discovery](P. 75)  
+Displaying the [Software Programs/Manuals Setup] Screen(P. 76)  
+Checking the Bit Architecture(P. 76)  
+Displaying [Programs and Features] or [Add or Remove Programs](P. 77)  
+Displaying [Device Manager](P. 77)  
+  
+◼Displaying the Printer Folder 
+Windows Vista 
+[Start]  
+ select [Control Panel]  
+ [Printer]. 
+Windows 7/Server 2008 R2 
+[Start]  
+ select [Devices and Printers]. 
+Windows 8.1/Server 2012/Server 2012 R2 
+Right-click the lower-left corner of the screen  
+ select [Control Panel]  
+ [View devices and printers]. 
+Windows 10/Server 2016 
+Windows Control Panel  
+ select [View devices and printers]. 
+Windows Server 2008 
+[Start]  
+ select [Control Panel]  
+ double-click [Printers]. 
+  
+◼Enabling [Network discovery] 
+If you are using Windows Vista/7/8.1/10/Server 2008/Server 2012/Server 2012 R2/Server 2016, enable [Network 
+discovery] to view the computers on your network. 
+Windows Vista 
+[Start]  
+ select [Control Panel]  
+ [View network status and tasks]  
+ under [Network discovery], select [Turn 
+on network discovery]. 
+Windows 7/Server 2008 R2 
+[Start]  
+ select [Control Panel]  
+ [View network status and tasks]  
+ [Change advanced sharing settings]  
+under [Network discovery], select [Turn on network discovery]. 
+Windows 8.1/Server 2012/Server 2012 R2 
+Right-click the lower-left corner of the screen  
+ select [Control Panel]  
+ [View network status and tasks]  
+[Change advanced sharing settings]  
+ under [Network discovery], select [Turn on network discovery]. 
+Windows 10/Server 2016 
+Windows Control Panel  
+ select [View network status and tasks]  
+ [Change advanced sharing settings] 
+ under [Network Discovery], select [Turn on network discovery]. 
+Windows Server 2008 
+[Start]  
+ select [Control Panel]  
+ double-click [Network and Sharing Center]  
+ under [Network discovery], 
+select [Turn on network discovery]. 
+  
+Appendix 
+75 
+◼Displaying the [Software Programs/Manuals Setup] Screen 
+If your computer does not display the [Software Programs/Manuals Setup] screen after you insert the CD-ROM/DVD- 
+ROM, follow the procedure below. This following example uses "D:" as the name of the CD-ROM/DVD-ROM drive. The 
+CD-ROM/DVD-ROM drive name may be different on your computer. 
+Windows Vista/7/Server 2008 
+[Start]  
+ enter "D:\MInst.exe" in [Search programs and files] or [Start Search]  
+ press the [ENTER] key on the 
+keyboard. 
+Windows 8.1/Server 2012/Server 2012 R2 
+Right-click the lower-left corner of the screen  
+ select [Run]  
+ enter "D:\MInst.exe"  
+ click [OK]. 
+Windows 10 
+Enter "D:\MInst.exe" in [Type here to search]  
+ click [D:\MInst.exe] in the displayed results. 
+Windows Server 2016 
+Enter "D:\MInst.exe" in [Search Windows]  
+ click [D:\MInst.exe] in the displayed results. 
+  
+◼Checking the Bit Architecture 
+If you are not sure whether your computer is running 32-bit or 64-bit Windows, follow the procedure below to check. 
+1 Display [Control Panel]. 
+Windows Vista/7/Server 2008 
+[Start]  
+ select [Control Panel]. 
+Windows 8.1/Server 2012/Server 2012 R2 
+Right-click the lower-left corner of the screen  
+ select [Control Panel]. 
+Windows 10/Server 2016 
+Display Windows Control Panel. 
+2 Display [System]. 
+Windows Vista/7/8.1/10/Server 2008 R2/Server 2012/Server 2012 R2/Server 2016 
+Click [System and Security] or [System and Maintenance]  
+ [System]. 
+Windows Server 2008 
+Double-click [System]. 
+3 Check the bit architecture. 
+32-bit operating systems 
+[32-bit Operating System] is displayed. 
+64-bit operating systems 
+[64-bit Operating System] is displayed. 
+Appendix 
+76 
+  
+◼Displaying [Programs and Features] or [Add or Remove Programs] 
+Windows Vista/7/Server 2008 R2 
+[Start]  
+ [Control Panel]  
+ select [Uninstall a Program]. 
+Windows 8.1/Server 2012/Server 2012 R2 
+Right-click the lower-left corner of the screen  
+ [Control Panel]  
+ select [Uninstall a Program]. 
+Windows 10/Server 2016 
+Click [ 
+]  
+ [Settings]  
+ [Apps] or [System]  
+ [Apps & features]. 
+Windows Server 2008 
+[Start]  
+ select [Control Panel]  
+ double-click [Programs and Features]. 
+  
+◼Displaying [Device Manager] 
+Windows Vista/7/Server 2008 R2 
+[Start]  
+ [Control Panel]  
+ [Hardware and Sound] or [Hardware]  
+ select [Device Manager]. 
+Windows 8.1/Server 2012/Server 2012 R2 
+Right-click the lower-left corner of the screen  
+ [Control Panel]  
+ [Hardware and Sound]  
+ select [Device 
+Manager]. 
+Windows 10/Server 2016 
+Windows Control Panel  
+ [Hardware and Sound] or [Hardware]  
+ select [Device Manager]. 
+Windows Server 2008 
+[Start]  
+ select [Control Panel]  
+ double-click [Device Manager]. 
+Appendix 
+77 
+This Font Software is licensed under the SIL Open Font License, 
+Version 1.1. 
+This license is copied below, and is also available with a FAQ at: 
+http://scripts.sil.org/OFL 
+----------------------------------------------------------- 
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007 
+----------------------------------------------------------- 
+PREAMBLE 
+The goals of the Open Font License (OFL) are to stimulate worldwide 
+development of collaborative font projects, to support the font 
+creation efforts of academic and linguistic communities, and to 
+provide a free and open framework in which fonts may be shared and 
+improved in partnership with others. 
+The OFL allows the licensed fonts to be used, studied, modified and 
+redistributed freely as long as they are not sold by themselves. The 
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved 
+names are not used by derivative works. The fonts and derivatives, 
+however, cannot be released under any other type of license. The 
+requirement for fonts to remain under this license does not apply to 
+any document created using the fonts or their derivatives. 
+DEFINITIONS 
+"Font Software" refers to the set of files released by the Copyright 
+Holder(s) under this license and clearly marked as such. This may 
+include source files, build scripts and documentation. 
+"Reserved Font Name" refers to any names specified as such after the 
+copyright statement(s). 
+"Original Version" refers to the collection of Font Software 
+components as distributed by the Copyright Holder(s). 
+"Modified Version" refers to any derivative made by adding to, 
+deleting, or substituting -- in part or in whole -- any of the 
+components of the Original Version, by changing formats or by porting 
+the Font Software to a new environment. 
+"Author" refers to any designer, engineer, programmer, technical 
+writer or other person who contributed to the Font Software. 
+PERMISSION & CONDITIONS 
+Permission is hereby granted, free of charge, to any person obtaining 
+a copy of the Font Software, to use, study, copy, merge, embed, 
+modify, redistribute, and sell modified and unmodified copies of the 
+Font Software, subject to the following conditions: 
+SIL OPEN FONT LICENSE 
+78 
+1) Neither the Font Software nor any of its individual components, in 
+Original or Modified Versions, may be sold by itself. 
+2) Original or Modified Versions of the Font Software may be bundled, 
+redistributed and/or sold with any software, provided that each copy 
+contains the above copyright notice and this license. These can be 
+included either as stand-alone text files, human-readable headers or 
+in the appropriate machine-readable metadata fields within text or 
+binary files as long as those fields can be easily viewed by the user. 
+3) No Modified Version of the Font Software may use the Reserved Font 
+Name(s) unless explicit written permission is granted by the 
+corresponding Copyright Holder. This restriction only applies to the 
+primary font name as presented to the users. 
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font 
+Software shall not be used to promote, endorse or advertise any 
+Modified Version, except to acknowledge the contribution(s) of the 
+Copyright Holder(s) and the Author(s) or with their explicit written 
+permission. 
+5) The Font Software, modified or unmodified, in part or in whole, 
+must be distributed entirely under this license, and must not be 
+distributed under any other license. The requirement for fonts to 
+remain under this license does not apply to any document created using 
+the Font Software. 
+TERMINATION 
+This license becomes null and void if any of the above conditions are 
+not met. 
+DISCLAIMER 
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF 
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT 
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE 
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL 
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM 
+OTHER DEALINGS IN THE FONT SOFTWARE. 
+         
+SIL OPEN FONT LICENSE 
+79 
+
+
+---
+## 📖 EXCEL 2021 FOR BEGINNERS
+*(Manba: Excel 2021 for Beginners.pdf)*
+
+Excel 2021 for Beginners 
+A Step by Step Practical Guide on How to Use and Master Microsoft Excel’s Features, Functions, 
+and Formulas 
+John Bradley 
+© Copyright 2021 John Bradley- All rights reserved. 
+The content contained within this book may not be reproduced, duplicated or transmitted without direct written 
+permission from the author or the publisher. 
+Under no circumstances will any blame or legal responsibility be held against the publisher, or author, for any 
+damages, reparation, or monetary loss due to the information contained within this book. Either directly or 
+indirectly. You are responsible for your own choices, actions, and results. 
+Legal Notice: 
+This book is copyright protected. This book is only for personal use. You cannot amend, distribute, sell, use, quote 
+or paraphrase any part, or the content within this book, without the consent of the author or publisher. 
+Disclaimer Notice: 
+Please note the information contained within this document is for educational and entertainment purposes only. All 
+effort has been executed to present accurate, up to date, and reliable, complete information. No warranties of any 
+kind are declared or implied. Readers acknowledge that the author is not engaging in the rendering of legal, 
+financial, medical or professional advice. The content within this book has been derived from various sources. 
+Please consult a licensed professional before attempting any techniques outlined in this book. 
+By reading this document, the reader agrees that under no circumstances is the author responsible for any losses, 
+direct or indirect, which are incurred as a result of the use of the information contained within this document, 
+including, but not limited to, — errors, omissions, or inaccuracies. 
+TABLE OF CONTENTS 
+TABLE OF CONTENTS 
+INTRODUCTION 
+Official release date? 
+Microsoft Office 2021 new features 
+How is Microsoft Office 2021 different from Microsoft 365? 
+CHAPTER ONE- GETTING STARTED 
+How to Open Microsoft Excel 
+For Windows 8.1 
+For Windows 10 
+Exiting Excel 2021 
+Excel’s Start Screen 
+Turn off the Start screen 
+Excel’s Ribbon User Interface 
+How to change the Ribbon Display Options 
+The Quick Access Toolbar 
+Understanding the Worksheet 
+How to customize your Excel environment 
+CHAPTER TWO- USING YOUR WORKSHEET 
+How to Create a New Workbook 
+Enter data 
+Copying or Moving a Worksheet 
+How to drag and drop the worksheet 
+Saving Your Document 
+How pin your favorite save location 
+How to Recover Your Document Using Auto-save 
+How to share an excel workbook 
+CHAPTER THREE- CELL 
+Understanding the Cell 
+How to select a cell and a cell range 
+Cell Content 
+How to insert content 
+How to delete/clear cell content 
+How to delete cells 
+How to copy and paste cell content 
+How to access more paste options 
+How to cut and paste cell content 
+How to drag and drop cells 
+How to use the fill handle 
+Cell Borders 
+How to add a cell border 
+Modifying the Column, Row and Cell In the Worksheet 
+How to modify column width 
+How to AutoFit column width 
+How to modify row height 
+How to modify all rows or columns 
+Inserting and Hiding Cells 
+How to insert rows 
+How to hide and unhide a row/column 
+Wrapping Text and Merging Cells 
+How to wrap text in cells 
+How to merge cells using the Merge & Center command 
+How to Change the Worksheet Theme Color and Effects 
+How to change theme fonts 
+How to change theme effects 
+CHAPTER FOUR- FORMULAS AND FUNCTIONS 
+Basic Terms in Excel 
+Time-Saving Ways to Insert Data into Excel 
+1. Simple insertion: Typing a formula inside the cell 
+2. Using Insert Function Option from Formulas Tab 
+3. Selecting a Formula from One of the Groups in Formula Tab 
+CHAPTER FIVE- MS EXCEL TEXT FUNCTION 
+Excel TEXT Function Format Codes 
+How to Use TEXT Function with Formula Examples 
+Concatenate text and number (or date) in a custom format 
+Other Excel Text Functions 
+Excel LEFT function 
+RIGHT function 
+TRIM function - quick way to remove extra spaces 
+CHAPTER SIX- MS EXCEL LOGIC FUNCTION 
+Using the AND Function 
+Excel AND function - common uses 
+Using the OR Function In Excel 
+IF function with nested OR 
+Using the XOR Function 
+Using the NOT Function In Excel 
+CHAPTER SEVEN- FUNCTIONS OF DATE AND TIME 
+Excel DATE Function 
+Excel TODAY function 
+Shortcuts to get today's date 
+Excel NOW Function 
+Excel DATEVALUE function 
+Excel DAY function 
+Excel WEEKDAY Function 
+Excel DATEDIF function 
+CHAPTER EIGHT- COUNTING FUNCTION 
+COUNT function 
+COUNT(range) 
+The COUNTA function 
+How Do I Use COUNTIF? 
+INTRODUCTION 
+Microsoft Excel is the world's most popular spreadsheet program with millions of users. Excel and other 
+spreadsheet tools are excellent for data processing, analysis, and visualization because they can sort, filter, format, 
+and display data in one place. Is it possible to calculate an average score automatically? How do I collect contact 
+information for a trip? Or can you help students with lab research reports? Then Excel is an essential tool for you 
+and your students!  
+Data is everywhere, and our job is to understand it. Interact in real-time with colleagues and students using the free 
+online version of Excel or the extended desktop app. Excel also has natural language, data analysis, and practical 
+tools to help you quickly understand your data.  
+Official release date? 
+Microsoft 365's Corporate Vice President announced that Office 2021 would be available to users later this year. 
+This means that it may be become available anytime between now and the end of 2021. However, prior releases 
+have given us a good guess on when to expect it. Office 2019 and 2016 were both released in September of their 
+respective years, so a similar timeline appears to be in the works. 
+Microsoft Office 2021 new features 
+Microsoft has released the first details about the upcoming edition of Office, including an updated user interface, 
+new tools that allow users to modify data more efficiently in Excel, and other improvements. 
+The release of this program has been discussed in depth. This program has been separated from Microsoft's cloud- 
+based productivity suite, Microsoft 365. The core applications are the same in both; however, Office is available as 
+a one-time purchase while Microsoft 365 is available as a subscription-based service. 
+Office 2021 will improve the performance of the suite's applications. There are also new accessibility features like 
+Dark Word Mode that Microsoft hasn't revealed yet. When customers use Office on their laptops, this option can 
+help save energy and reduce screen brightness. Microsoft provided little details about the enhancements to other 
+Office products that this version will provide. Still, it did tell The Verge that Excel will get two new features that 
+will make working with spreadsheets easier and faster. 
+The first is known as a dynamic array, and it enhances Excel's data analysis capability. Compressing a single cell in 
+the spreadsheet may cause formatting concerns for complex business calculations that provide several results. The 
+dynamic array automatically groups the results into a single cell. 
+Excel also comes with a feature called XLOOKUP, which allows you to search for data in a single row of the 
+worksheet instead of displaying the entire spreadsheet, which is helpful in complex documents with many similar 
+items. 
+How is Microsoft Office 2021 different from Microsoft 365? 
+Outside of the pricing arrangement, the most important distinction between both programs is the intended use. 
+Employees who don't have regular Internet access and can't benefit from Microsoft 365's cloud-based capabilities 
+typically have Office installed on their devices. For example, computers needed to control factory manufacturing 
+facilities can operate in an isolated network for security reasons.  
+Office 2021 will be available in multiple versions; the consumer and small business versions will be released at the 
+same price as the current version of Office, while large businesses will pay a 10% premium. Another change that 
+may affect business users is that Microsoft will only support Office 2021 for five years rather than the previous 
+seven years. Customers will need to upgrade ahead of time to receive software updates. 
+There are several ways in which you can get Microsoft Excel. You can head to the closest computer store and ask 
+for the software version. Or, you can download it from Microsoft's website, but you'll need to buy a license key to 
+use it. 
+CHAPTER ONE- GETTING STARTED 
+How to Open Microsoft Excel 
+You can launch Excel just like any other Windows program. The following steps will work with Windows XP, 
+Vista, and 7. 
+Press the Windows button to display your Start Menu, go to “ All Programs,” and then click on 
+“Microsoft Excel” to launch it 
+For Windows 8.1 
+Press the Windows button to display your Start Menu, search for Excel, and then click on 
+“Microsoft Excel” when it appears on the list 
+For Windows 10 
+Press the Windows key on your keyboard, open the list of apps on your device and then scroll 
+down to the “E” section.  
+Click on Excel to launch it.  
+Or, press the Windows key and then use the search field to locate it quickly.  
+To make it easier to launch the app, you can also pin an Excel icon to the Windows 10 taskbar. 
+Head to the Excel icon, right-click on it, and then tap on “Pin to Taskbar.” 
+Exiting Excel 2021 
+If you are done with your work, make sure it is saved before shutting down the program: 
+Press Alt+F4 on your keyboard to close it. 
+Or, head to the Excel icon on the taskbar, right-click on the icon and then tap on “Close 
+Window.” 
+If you try to close the program without saving your work, the program will alert you telling you 
+to save your changes. Before closing the program, click on the Save button or click on “Don’t 
+Save” to exit the program without saving your last changes . 
+Excel’s Start Screen 
+When you first run this program, it will show you the default startup screen, which looks like the one below. 
+The left panel contains a list of all your recently opened files.  
+Clicking on "Open Other Workbooks" will send you to the Backstage view where you can open 
+any of your existing excel document. 
+On the right panel, you'll see a list of standard templates available in Excel. If none of them are 
+what you're looking for, simply type in the keyword you're looking for. 
+Most of the popular phrases can also be found below the bar. Excel will begin searching for 
+templates in your selected category. 
+Simply use the shortcut "Ctrl + N" to create a new document or Click on "Blank Workbook."  
+Turn off the Start screen 
+If the start screen gets in your way and you'd like to skip it, here's how:  
+Open Excel. Go to File, go to Options, and then uncheck "Show the Start screen when this 
+application starts." That's it!  
+Repeat the same steps to turn on the Start screen. 
+Excel’s Ribbon User Interface 
+The Ribbon gives shortcuts to commands. A command is an action performed by the user. Creating a new 
+document, printing a document, and so on are examples of commands. Let's take a closer look at each component of 
+the Ribbon. 
+Start button: Here, you can create a new document, save your work, print, and access other 
+commands. 
+Tabs: Tabs are used to organize similar commands. Basic instructions such as formatting data to 
+make it easier to browse, sort, and identity specific data in the table are performed on the "Home" 
+tab. 
+Bars: Bars are used to group similar commands. The Font ribbon bar, for example, is used to 
+change your font style, font size, color font, bold font, and more. 
+How to change the Ribbon Display Options 
+Although the Ribbon is designed to respond to your current work, you can minimize it if you feel it takes up too 
+much screen space. 
+Click on the "Ribbon Display Options" arrow and then select one of the options from the menu. 
+Auto-hide Ribbon: This will hide the Ribbon and turn your workbook to full- 
+screen. 
+Show Tabs: When this option is enabled, all command groups will be hidden 
+when not in use, although tabs remain visible. Click on a tab to bring up the 
+Ribbon. 
+Show Tabs and Commands: This is the default excel option, and it maximizes the 
+Ribbon, showing all your tabs and commands. 
+The Quick Access Toolbar 
+With this option, you'll have access to general commands regardless of the tab you're on. Default commands such as 
+Save, Undo, and Repeat. Other commands can be added as needed. Here's how to do that:  
+Click on the drop-down arrow to the right of the Quick Access Toolbar to open a list of 
+commands. 
+Select a command from the list or click on “More Commands” to view other available options. 
+That’s it! 
+Understanding the Worksheet 
+A worksheet is a set of columns and rows. Cells are formed at the intersection of a column and row. Data is 
+recorded in cells. Letters are used to mark columns, while numbers are used to label rows. 
+The term "workbook" refers to a collection of worksheets. The Excel workbook comes with three cells by default. 
+As needed, you can delete or add new worksheets. Change the worksheet's name from Sheet1 to something more 
+practical, such as Test score or Shopping Budget. 
+How to customize your Excel environment 
+I prefer my Excel theme to look dark. But you can customize your theme color to blue or any other color. Let's get 
+on with giving your workbook a unique look.  
+1. How to customize the ribbon 
+Now, here's how to delete or add useful tabs to your ribbon:  
+First, go to the ribbon start button or the Save icon, click on Options, and click on the "Customize 
+Ribbon" option. 
+Next, go to the Main tab options, unmark any tab you don't want to use, and click "OK" to save. 
+Your ribbon should look different now. 
+2. 
+How to add custom tabs 
+Now, let’s say we need a new tab named “Shop101” on the ribbon. Here’s how to create the tab and assign a 
+command to it:  
+Right-click on the Ribbon/Save button, click on “Customize the Ribbon,” head to the “Main 
+Tabs” option, and then click on “New Tab” 
+Next, select your new tab, and then using the Rename button, rename it to Shop101 
+Select the New Group (Custom) under Shop101, click on the Rename button and then change the 
+name to "My Commands" 
+Now, check the middle panel for the commands you want to add. 
+Select the “All chart types” command, click on the Add button, and then click OK to save. That’s 
+it. Your ribbon should look like this” 
+3. 
+Setting the color theme 
+Click on File or click on the Ribbon button and then go to Options. 
+Next, look for the “Office Theme” option, click on its drop-down arrow, and then select your 
+preferred color. 
+Click the OK button to save. 
+4. 
+Settings for formulas 
+This option allows you to change the behavior of Excel when dealing with formulas. It can configure settings such 
+as autocomplete when inputting formulas, changing the cell referencing style, using numbers for both columns and 
+rows, etc. 
+To make an option active: 
+Check the box next to it. 
+Remove the checkmark from the checkbox to disable an option. 
+Avoid using formulas that contain many variables. 
+Break them down into smaller and manageable results. 
+5. 
+Proofing settings 
+This option alters the text that has been typed into Excel. It allows you to customize things like the dictionary 
+language  
+used  
+when  
+checking  
+for  
+grammatical  
+errors,  
+dictionary  
+suggestions,  
+etc. 
+CHAPTER TWO- USING YOUR WORKSHEET 
+How to Create a New Workbook 
+Doing this is very easy. First, open Excel, press Ctrl+N and then start inputting your data. 
+To create a workbook from a template, click on File, click on New, select a template, and start 
+inputting your data. 
+To insert a worksheet, click on the Plus icon  
+ next to the name of your worksheet at the 
+bottom. Or, click on Home, go to Insert, and then click on Insert Sheet. 
+If you prefer giving your worksheet a unique name, then double-click on the sheet’s name to 
+rename it. 
+To delete a worksheet, right-click on the Sheet tab and then select Delete from the options. That’s 
+it!  
+Enter data 
+Click on a cell, type in your data, and then press the ENTER key. Press ALT+ENTER on your 
+keyboard to enter data on a new line in a cell 
+To enter a date range, such as days, or months, enter the first value in a cell and enter the next 
+value in the next cell to form a pattern.  
+If you’d like to form a series with the data entered in the cell, insert the first two values in the first 
+two cells and drag the cell. E.g., type A and B in the first two cells if you want the series A, B, C, 
+D, E...,. 
+Drag the fill handle of the cell containing the starting value. Fill the range by moving the handle 
+across it. Drag down or to the right to fill in ascending order. Drag up or to the left to fill in 
+descending order. 
+If the series doesn’t auto-fill, click on the box close to the cell’s handle and then select “Fill 
+Series.” 
+Copying or Moving a Worksheet 
+Excel allows you to copy or move your current spreadsheet even after creating it. You can use the “Move or Copy” 
+dialog box to improve accuracy. With the steps below, you can export/save one or more worksheets. 
+Head to the Home tab, click on “Format,” and then click on “Move or Copy Sheet.”  
+Next, select the worksheet's location. Note that the workbook you wish to move the worksheet to 
+must be open for it to appear in this list. 
+Next, select a specific location where you want the sheet to appear in the selected workbook. 
+Click on the "Create a copy" box and then click OK. If this check box is not selected, the 
+worksheet will be deleted from its current location as it's been moved to the selected workbook. 
+That's it! 
+How to drag and drop the worksheet 
+First, click on the sheet tab to select it, and then drag it to its new location. Release the mouse to 
+set the sheet in its new location. 
+Note that using this process to move your sheet won’t leave duplicates behind when you are 
+done. 
+Saving Your Document 
+You can easily save an existing document by using the shortcut "Ctrl+S," or you can follow the steps below:  
+Click on File, click on Save As, and then select your preferred location to save the File. Or, you 
+can click on "Add a Place" if you can't find your preferred location. 
+If you selected "Computer" as your location, all you have to do is browse a preferred location to 
+save the File.  
+How pin your favorite save location 
+There is an option in Excel that allows you to "pin" or bookmark the position of your saved workbook. As a result, 
+you'll have easy access to your workbook, and you'll be able to pin more than one workbook. 
+Click on File, click on "Save As," and then select the location where you last saved your 
+workbook. 
+Look under "Recent folders" and then click on your preferred location.  
+Next, click on the pushpin image that appears to pin that folder. The image will now display the 
+Pin icon  
+. 
+Click on the pin icon  
+ again to unpin a location. 
+How to Recover Your Document Using Auto-save 
+Let’s assume you are in a rush to go on a date and you weren’t patient enough to save your work before clicking on 
+the Exit button. Then you realize it will take hours to recreate your work. Fortunately, Excel can restore your files if 
+the workbook was open for at least 10mins and if it created an Auto-Recover version. Here’s how: 
+First, make sure the autosave option has been enabled in settings. 
+Head to the Start screen, click on “Open Other Workbooks,” and then click on “Recover Unsaved 
+Workbooks.” Here, you’ll find all your unsaved workbooks that Excel recently saved 
+Click on a workbook and then click on Open. Excel will automatically delete any unsaved 
+workbook after 4 days. 
+How to share an excel workbook 
+Head to the Review tab, click on “Share Workbook,” and then check the “Allow changes by more 
+than one user at the same time” box that appears on the screen. This will also allow you to merge 
+the workbook’s check box on the Editing tab. 
+Or, you can click on Advanced, select your preferred “track changes” settings, and then click OK. 
+Next, press the shortcut “Ctrl + S” on your keyboard to save the Excel file. If done correctly, the 
+word [Shared] will appear next to the workbook's name. 
+Now, you can share this Excel file with your friends or colleagues. 
+Note. If Microsoft Excel won't allow you to share a workbook, it's probably because:  
+Tables and XML maps in workbooks can't be shared. Before sharing your Excel file, make sure 
+to convert your tables to ranges and delete the XML maps. 
+Some privacy settings are enabled. You need to turn them off. 
+Click on File, go to Options, go to "Trust Center," and then click on "Trust 
+Center Settings"  
+Now, head to "Privacy Options" and then uncheck the "Remove personal 
+information from file properties on save" option 
+CHAPTER THREE- CELL 
+Understanding the Cell 
+When working with Excel, you must enter data or content into cells. Columns are marked with letters (A, B, C, D), 
+and rows are marked with numbers (1, 2, 3, 4). Each cell has its name or cell address, depending on the column and 
+row. In the following example, the selected cell passes through column B and row 4, so the cell address is C4. 
+The cell address is also displayed in the name box at the top corner, and selecting a cell highlights the cell row and 
+column headers. 
+You can also choose several cells at once. A cell range is a collection of cells. For example, If I select cells A2, A3, 
+A4, down to A8, the cell range will be written as A2:A8. The screenshot below shows some examples 
+Cell Range A2:A8 
+Cell Range A1:E1 
+If your spreadsheet's columns are labeled with numbers rather than letters, you'll need to change Excel's default 
+reference style. 
+How to select a cell and a cell range 
+Click on a cell to select it and then input your data or edit the cell content. The selected cell will 
+have borders around it. The column/row headings of the cell will be highlighted. I have selected 
+the cell C5 in the example below. 
+Now, if you’d like to select a larger group of cells (cell range), here’s how:  
+Click on a cell, drag the mouse to highlight all cells you want to select, and then release the 
+mouse. That’s it! I used the cell range C1:G10 for this example. 
+Cell Content 
+Each cell contains text, formatting, formulas, and functions. 
+Text: you can input letters, numbers, and dates into a cell 
+Formatting attributes: You can use formatting attributes in cells to change the appearance of 
+characters, numbers, and dates. For example, a percentage can be written as 0.30 or just 30%. 
+You can even edit the text color or the cell background color. 
+Formulas and functions: these features are used to calculate cell values. In the example below, 
+SUM(B2:B4) adds the values in each cell in the range B2:B4 and then displays the total in cell 
+B5. 
+How to insert content 
+Select a cell, type your data and then press the Enter key on your keyboard. The content of the 
+cell and the formula bar will be displayed. You can also use the formula bar to enter and edit cell 
+content. I used cell C6 for this example, and I typed “Sports” into the cell. 
+How to delete/clear cell content 
+First, select the cell, then head to the Home tab and click on the Clear command. 
+Next, click on “Clear Contents” to delete/ clear the cell contents. That’s it! 
+I used the cell range A3:C3 in the screenshot below 
+Press the “Delete” key to delete multiple cells at once. Press the Backspace key to clear the 
+contents of one cell at once 
+How to delete cells 
+When you delete an entire cell, the cells below it will move to replace the deleted cell. 
+Select the cell(s), head to the Home tab, and then click on the Delete command. The cells below 
+will replace the deleted cell. 
+How to copy and paste cell content 
+Excel allows you to copy and paste data from one cell to another, saving you time and effort. 
+Select the cell(s), head to the Home tab, and click on “Copy.” 
+Or, use the keyboard shortcut Ctrl+C. I used cell C6 for this example. 
+Next, select the cell(s) where you want to paste the content and then press the shortcut Ctrl+V on 
+your keyboard or click on the Paste command in the Home tab. That’s it 
+I used cell C9:C14 for this example. A dashed box will surround the duplicated cell(s). 
+How to access more paste options 
+You can also use other paste options, which can be pretty helpful when working with cells that contain formulas or 
+formatting. To access this, head to the Home tab and click on the drop-down arrow next to the Paste command 
+Instead of clicking on the ribbon to select a command, you can quickly access commands by right-clicking them. 
+Just right-click the mouse and then select the cell you want to format. You will see a drop-down menu with various 
+commands that are also available on the ribbon. 
+How to cut and paste cell content 
+This feature allows you to move content between cells. Here is how: 
+Select the cell(s), press “Ctrl+X,” or right-click the mouse and select the Cut command.  
+Next, click on the cells you want to copy the content into and then use the shortcut Ctrl+V or 
+right-click on the mouse and select the Paste command. That’s it. 
+How to drag and drop cells 
+The drag and drop feature allows you to move contents within a cell without cutting or copying them. 
+Select the cell(s), and then move the mouse to the edge of the cell box until the mouse changes to 
+4 pointed arrows.  
+Click and drag the cells to a new location.  
+Release the mouse to drop the content of the cell in its new location. 
+How to use the fill handle 
+Let’s say you typed 15 into a cell, and then you want to auto-fill the number 15 in another adjacent cell. Using the 
+fill handle is another good alternative 
+First, select the cell(s) and then move the mouse to the edge of the cell box until the fill handle 
+appears.  
+Select the cells you want to fill by clicking and dragging the fill handle and then release the 
+mouse to fill the selected cells. 
+Cell Borders 
+You can add and remove borders from your cell. To give your borders a new look, you can add styles, thickness, 
+colors and change the layout of your borders. 
+How to add a cell border 
+First, select the cell(s), and then head to the Font group in the Home tab.  
+Tap on the drop-down arrow next to Border  
+ and then select your preferred border style.  
+If you don’t find your preferred border style, then click on “More Borders,” look under 
+“Line and Color,” and then click on your preferred line style and color. 
+You can also click on “Draw Border” and then use the pen to draw borders around the cell 
+If a page break separates a cell and you need to apply an inside border on a border that appears on only one page. 
+Here’s how to do it:  
+Select the rows on both sides of the page break, click on the drop-down arrow next to Border and 
+then click on “More Borders.” 
+Next, click on the Inside button  
+ under “Presets,” look under Border  
+, and then click on 
+the vertical Border to remove it.  
+Modifying the Column, Row and Cell In the Worksheet 
+The rows/columns of your new workbook have the same height and width. Fortunately, you can edit them, which 
+also includes wrapping textual content and merging cells. 
+How to modify column width 
+First, click on the column header (e.g., click on column A), and then hover the mouse over the 
+column until the mouse pointer changes to a double-arrow. Note, a thin line will appear when you 
+are increasing/decreasing your row/column. 
+Next, click and then drag the mouse to increase or decrease the column width. The column’s 
+width will change when you release the mouse. 
+If the column is too tiny for numerical values, the cell will display pound signs. Increase the 
+column’s width to make the data visible. 
+Your cell should look like this: 
+How to AutoFit column width 
+The AutoFit feature allows you to set a column's width to fit its content automatically. 
+Move the mouse pointer to the column heading and then position the pointer to the column row 
+until the cursor turns into a double arrow. 
+Next, double-click the mouse to fit the column's content automatically. 
+You can also automatically adjust the width/height of multiple columns/rows at the same time. 
+Select the columns, head to the home tab, and click on "AutoFit Column Width."  
+How to modify row height 
+Move the mouse pointer over the row line and position it until the cursor becomes a double 
+arrow. 
+Next, click and then drag the mouse to increase or decrease the row height. That's it! 
+Your cell should look like this: 
+How to modify all rows or columns 
+You can change the height and width of each row and each column simultaneously instead of adjusting the size of 
+the rows and columns individually. This way, you can easily set a uniform size for each row/column in your 
+worksheet. 
+First, click on the “Select All” button to select every cell in the worksheet. 
+Move the mouse over the row line and then position it until the cursor becomes a double arrow. 
+Next, click and drag the mouse to increase or decrease the row height for the entire worksheet.  
+Inserting and Hiding Cells 
+How to insert rows 
+Let’s say I need a new row between rows 6 and 7. So, I’ll select row 7 for this example. Select the 
+row heading below where you want the new row to appear, head to the Home tab, and click on 
+Insert. That’s it 
+A paintbrush icon will appear next to the newly inserted cells. Use this button to change the 
+formats of these cells. To access other options, hover your mouse over the icon, then click the 
+drop-down arrow. 
+Repeat the same steps to insert a new column.  
+Note that you must select the entire row or column when inserting new rows and columns. 
+Simply click on the row/column heading to select them. The Insert command will only insert a 
+new cell only if a cell in the row or column is selected. 
+How to hide and unhide a row/column 
+Select the columns/rows you want to hide, right-click the mouse, and then click on Hide. That’s it! The green line 
+indicates the hidden column 
+Now, let’s say I chose to hide column D, to unhide it, select columns C and F, right-click on the 
+mouse, and then click on Unhide. The hidden column should appear on the list. 
+Wrapping Text and Merging Cells 
+If a single cell is filled with too much cell content, you can wrap the text or merge the cell rather than resizing the 
+column. Wrapping text changes the row height, allowing cell contents to be displayed on several lines. Merging 
+allows you to combine two or more empty cells into a single large cell. 
+How to wrap text in cells 
+First, select the cells, head to the Home tab, and then click on “Wrap Text.” This will wrap the 
+text in the selected cells.  
+Click on “Wrap Text” again to unwrap the text.  
+How to merge cells using the Merge & Center command 
+Select the cell range you want to merge, head to the Home tab, and then click on “Merge & 
+Center”  
+The text will be centered and the selected cells will be merged. I used cells A1:G1 for this 
+example 
+If you’d like to access other merge options, then click on the drop-down arrow next to the “Merge & Center.” From 
+here, you can choose from any of the following commands:  
+Merge & Center: This will center your text and merge the selected cells into one cell. 
+Merge Across: This will simultaneously merge the selected cells into larger cells and keep each 
+row separate  
+Merge Cells: This will only merge the selected cells into one cell. 
+Unmerge Cells: This will unmerge the selected cells. 
+How to Change the Worksheet Theme Color and Effects 
+When changing colors, note that your color choice will affect the available colors in the color picker and the colors 
+you've used in your workbook. If you'd like to give your worksheet a new look, here's how to do that 
+First, head to the "Page Layout" tab, click on Themes and select your preferred theme. You can 
+change your selected theme's fonts, colors, and effects as needed. You can also make it your 
+default theme for all your new workbooks. 
+Next, click on Colors to change the theme color and then select your preferred color set.  
+Click on "Customize Colors" to create a new color set. 
+Click on "More Colors" to create a new color and then enter color numbers on the Custom tab or 
+select your preferred color on the Standard tab. 
+Next, click on the name box, type a name for the new color set, and click on Save.  
+You can check the Sample box for a preview of all your changes. 
+Now to save all your color changes, head to the "Page Layout" tab, click on Themes, and then 
+click on "Save Current Theme." 
+How to change theme fonts 
+Changing the theme font allows you to change all of your text at once. To make this work, make sure your text is 
+formatted with Body and Heading fonts. 
+Head to the "Page Layout" tab, click on Fonts, select your preferred font set, and click on 
+"Customize Fonts" to create a new font set. Make sure you save your new font when you are 
+done. 
+Now to save your customized theme fonts, head to the "Page Layout" tab, click on Themes and 
+then click on "Save Current Theme." 
+How to change theme effects 
+Head to the "Page Layout" tab, click on Effects and select your preferred effects. Note that you 
+can't customize a set of effects. 
+CHAPTER FOUR- FORMULAS AND FUNCTIONS 
+Basic Terms in Excel 
+For beginners to master financial analysis, they must first understand the basic Excel formulas. Microsoft Excel is 
+widely regarded as the industry standard for data analysis software. Microsoft is one of the most popular companies 
+among investment bankers and financial analysts in terms of data processing, financial modeling, and spreadsheets. 
+There are two main calculation methods in Excel: formulas and functions. 
+A formula is an expression that works with values in a cell(s). For example, =C1+C2 +C3 calculates the sum of the 
+values in cells C1 through C3. 
+Functions are predefined formulas. They do away with the time-consuming manual entering of formulas by 
+providing human-friendly names. For instance, the Function =SUM will command excel to add up all of the cells' 
+values from C1 to C3. 
+Formulas practical exercise 
+Now let's look at an easy example using Formulas:  
+Open the Excel program, create a new workbook, and then enter the data shown in the image 
+below 
+Now, let's write the formula that calculates the subtotal. Set the focus to cell E5 and then enter the 
+following formula "=C5*D5" 
+Here, "C5*D5" multiplies the values of cell addresses C5 and D5 using the arithmetic operator 
+multiplication (*).  
+Press the Enter key. You will get the following result 
+Now, select all the cells in column E to get the total using the same formula 
+Time-Saving Ways to Insert Data into Excel 
+There are five typical ways to insert basic Excel formulas while evaluating data. Each method has its advantage. 
+1. 
+Simple insertion: Typing a formula inside the cell 
+Pasting basic Excel formulas is as easy as entering a formula in a cell or formula bar. Usually, it starts with an equal 
+sign, followed by the name of the Function. 
+Excel will display a function tip when you start typing the name of the Function. You'll be able to make your 
+selection from the list that appears. Don't, however, hit the Enter key! As an alternative, press the Tab key to 
+continue inserting other options. You may end up with an error if you hit the Enter key. You can quickly fix this by 
+selecting the cell again and completing your Function in the formula bar. 
+2.  
+Using Insert Function Option from Formulas Tab 
+Using Excel's "Insert Function" dialog box, you can fully control the insertion of functions. To do this, go to the 
+"Formulas" tab and then click on the "Insert function." The functions required for financial analysis are provided in 
+the dialog box. 
+3. 
+Selecting a Formula from One of the Groups in Formula Tab 
+This option is for users who want quick access to their favorite functions. To access this menu, head to the 
+"Formulas tab" and then select your preferred group. Click on this tab to display a list of functions and then select 
+your preferred option. Or, click on "More Functions" to access other options. 
+CHAPTER FIVE- MS EXCEL TEXT FUNCTION 
+If you're working with worksheets, you'll undoubtedly have to deal with numbers. You may require the TEXT 
+function in Excel at some point. TEXT is a function that converts a numeric number to a text string in a predefined 
+format. 
+The syntax for this function is - TEXT(value, format_text) 
+Where: 
+Value – This is simply the numeric value to be converted to text. 
+Format_text – this is the format you'd like to use. It comes in the form of a format code 
+surrounded by quote marks. e.g. "dd/mm/yy". 
+For example, the formula in the screenshot below was used to retrieve the date "2 August 2021." 
+Insert the formula “=TEXT(B2, "mmmm d, yyyy")” and then press the “Tab” key on your keyboard. 
+Note that the results of text formulas cannot be used in other calculations because the results are converted into 
+strings. You can save the original values if you want them (just keep them out of sight) and then use them in other 
+calculations. 
+Excel TEXT Function Format Codes 
+While this function has a simple syntax, as you've just seen, the most challenging aspect is figuring out how you're 
+going to place your numbers the way you want. For the most part, the TEXT function takes Excel's numeric format 
+codes. To help you understand better, here's a list of some commonly used codes. 
+Codes 
+Description 
+Format code example 
+# 
+Extra zeros will be ignored in this 
+digit placeholder. 
+#.## up to two decimal places are displayed 
+If you type 5.5457, it will be displayed as 5.55. 
+, (comma) 
+Thousands separator. 
+###,###.##. displays a thousand separator and 
+2 decimal places 
+If you type 300000, it will be displayed as 
+300,000.00 
+? 
+Insignificant zeros are not displayed 
+by a digit placeholder that leaves a 
+space for them but does not display 
+them. Commonly used to align 
+decimal points in a column of 
+numbers. 
+#.??- The decimal points in a 
+column are aligned and displayed 
+to a maximum of two decimal 
+places. 
+0 
+Insignificant zeros are displayed in a 
+digit placeholder. 
+#.00- 2 decimal places are always shown. 
+If you type 4.6 in the referenced cell, it will be 
+displayed as 4.60. 
+How to Use TEXT Function with Formula Examples 
+TEXT application in Excel may seem restricted because you can quickly change the presentation of numbers using 
+the "Format Cells" dialog box, which is opened via the cell's context menu or the keyboard shortcut (Ctrl + 1). With 
+the help of additional Excel functions, however, the situation is different. Hopefully, the following examples can 
+help you come up with creative ideas. 
+Concatenate text and number (or date) in a custom format 
+When preparing summary sheets or reports, you may want to explain to your users what each statistic represents in 
+addition to calculating totals, percentages, etc. Use the CONCATENATE function to connect text and numbers, and 
+then use the TEXT function to display the number (or date) exactly how you want it. 
+Example 1. Format numbers inside a text string 
+For example, suppose you use the following formula to calculate the total based on the unit price in cell A3, the 
+quantity in cell B3, and the discount percentage in cell C3: = A3 * B3 * (1-C3). It should display a numerical result 
+and some explanation. I suggest using easy words that won't make things complicated for you. You can use 
+language like "your price." Additionally, it must include the currency sign, a comma, and two decimal. 
+You can do this by specifying the above calculation in the first argument of the TEXT function, adding suitable 
+formatting codes in the second parameter, and using the CONCATENATE function to concatenate the text formula 
+with the string, 
+="Your price is "&TEXT(A3*B3*(1-C3), "$###,###.00") 
+Or 
+= CONCATENATE("Your price is ",TEXT(A3*B3*(1-C3), "$###,###.00")) 
+Take a look at the screenshot below 
+Example 2. Combine text and date in the desired format 
+When using the TODAY () or NOW () function to return the current date, you may want to write it with some text 
+so that no one is confused about which day the date belongs. If you concatenate a text and a date the usual way- 
+=CONCATENATE("Today is ", TODAY()), you may end with an error like "Today is 31217". 
+For example, using the TODAY function in the Text formula with the format code "dddd d mmm, yyyy" returns a 
+string that looks like this: "Today is Thursday 19 Aug, 2021." The following is the complete formula: 
+=CONCATENATE("Today is ", TEXT(TODAY(), "dddd d mmm, yyyy")) 
+Then press the Enter or TAB key 
+3. 
+Add leading zeros to numbers with variable lengths 
+You may already know that Microsoft Excel deletes leading zeros before numbers in cells. This is fine in most 
+cases, but what if you want to keep preceding zeros? For example, to display 6-digit numbers with leading zeros, 
+use the following formula (where C2 is the original number): 
+=TEXT(C2,"0000000") 
+As seen in the screenshot, our text formula adds as many leading zeros as are required to produce a 6-digit string 
+(remember, the result of the TEXT function is always a text string, even if it Looks like a number). 
+Compared to other Excel functions, the TEXT function is easy to grasp, and you'll have no trouble incorporating it 
+into your spreadsheets. If a Text formula fails to work, it's almost often due to entering an improper format code in 
+the format text argument. 
+Also, note that the formula depends on your language/region. For example, this formula, TEXT(A2, "mm/dd/yy"), 
+will work perfectly for English users, but German users may have an invalid value. You will need to change the 
+format codes to "t" instead of "d" and "j" instead of "y" because "day" in German is "tag" and year is "Jahr." m" is 
+fine because the German word for month begins with an "m" (Monat). So, in German Excel, the above formula will 
+read as follows: =TEXT(A2; "mm/tt/jj") 
+Also, keep in mind that the List Separator in European countries is usually set to semicolon rather than a comma. 
+Therefore ";" should be used to separate the formula's arguments. 
+Other Excel Text Functions 
+In addition to TEXT, Excel also provides several other functions you can use to process text values. Some are used 
+to convert text to numbers and vice versa, while others are used to manipulate text strings directly. 
+Excel LEFT function 
+The Left function is a commonly used Text Function that allows you to extract specific characters from the left side 
+of a text string. In Excel, the LEFT function returns the required number of characters (substrings) from the 
+beginning of a string. The syntax of the LEFT function is as follows: 
+LEFT(text, [num_chars]) 
+Where: 
+The text is the text string from which you want to extract the substring. This usually refers to a 
+cell with text in it. 
+Num_chars (optional) – this is the number of characters to extract. 
+If num_chars is left blank, it defaults to 1, which means a Left formula will only 
+yield one character. 
+A Left formula will return the entire text if the num_chars is larger than the 
+overall length of the text. 
+For example, the syntax “=LEFT(B2, 4)” will extract the first four characters from the text in cell B2. The 
+screenshot below shows the result: 
+Use the LEFT function in conjunction with the VALUE function if you are dealing with a numeric dataset and want 
+the LEFT function to return a number. 
+1.    Using the Left function to extract a substring before a specific character 
+The text string preceding a specific character may be of interest in some instances. It's possible, for example, to 
+retrieve only the first names or country codes in a cell. The only problem is that each name and code has a different 
+number of characters, so you can't just put a predefined value in the num_chars argument of your Left formula like 
+we did in the previous example. 
+If a space separates the first and last names, the problem is solved by specifying the position of the space character 
+in the string, which can be done quickly using the SEARCH or FIND functions. 
+Use the following formula- LEFT(B2, SEARCH(" ", B2)) to do this. 
+Note that trailing spaces can cause a lot of problems, so get rid of them by subtracting 1 from the Search formula 
+result (not visible in cells) 
+=LEFT(B2, SEARCH(" ", B2)-1) 
+Finally, this generic formula can be used to create a substring that comes before any other character: 
+LEFT(string, SEARCH(character, string) - 1) 
+2. 
+How to remove the last N characters from a string 
+Finally, this generic formula can be used to create a substring that comes before any other character: 
+LEFT(string, SEARCH(character, string) - 1) 
+2.    How to remove the last N characters from a string 
+To  
+do  
+so,  
+combine  
+the  
+LEFT  
+and  
+LEN  
+functions  
+like  
+this:  
+LEFT(string,  
+LEN(string)  
+- 
+number_of_chars_to_remove) 
+The formula works like this: the LEN function gets the total number of characters in a string, then you subtract the 
+number of characters you don’t need from the total length, and the LEFT function returns the remaining characters. 
+For example, to remove the last 5 characters from a text in B2, use this formula: 
+=LEFT(B2, LEN(B2)-5) 
+This example is demonstrated in the screenshot below. 
+3.    How to force the LEFT function to return a number 
+As you know, even if you only want the first few digits of a number, the LEFT function always outputs text. 
+Because of this, you will not be able to use the results of the formulas on the left in calculations or other Excel 
+functions that work with numbers. 
+So, how do we make the LEFT function produce a number instead of a string of text? Wrap it in the VALUE 
+function, which converts a string expressing a number to a number, as shown below: 
+VALUE(LEFT()) 
+Use the following formula to extract the first two characters from the string in B2 and convert the result to numbers: 
+=VALUE(LEFT(B2,2)) 
+Your result will look like this: 
+RIGHT function 
+Excel's RIGHT function returns the specified number of characters from the end of a text string. The RIGHT 
+function has the following syntax: 
+RIGHT(text, [num_chars]) 
+When num_chars is not specified, the string's last character is returned (default). 
+All characters are returned if num_chars exceeds the total number of characters in 
+the string. 
+If num_chars is a negative number, a Right formula returns the #VALUE! Error. 
+For example, the following formula- "=RIGHT(B2, 4)" is used to extract the last 4 characters from the string in cell 
+B2. The result will look like this: 
+Note: Even if the initial value of the RIGHT function is a number, it always returns a text string. Combine the 
+VALUE function with the Right formula to make it generate a number. 
+1. 
+How to use the RIGHT function to get a substring that comes after a specific character 
+A substring can be extracted using the SEARCH or FIND functions to find a character's position, subtracting it 
+from the total length of the original string supplied by the LEN function, and pulling that many characters off its 
+rightmost end. 
+RIGHT(string, LEN(string) - SEARCH(character, string)) 
+Let's assume cell B2 contains the first and last name separated by a space, and you'd like to move the last name to 
+another cell in the spreadsheet. Take the generic formula above and substitute B2 for string and " " (space) for a 
+character, and you get: 
+=RIGHT(B2,LEN(B2)-SEARCH(" ",B2)) 
+To retrieve a substring following any other character, use the following formula =RIGHT(B2,LEN(B2)- 
+SEARCH("-",B2)) to extract the substring that comes after a hyphen. 
+TRIM function - quick way to remove extra spaces 
+Are your algorithms behaving weirdly? Or do you keep getting just zeros when you add two columns of numbers? 
+And why is your Vlookup formula, which appears correct, throwing so many N / A errors? All these issues and 
+more are all caused by unnecessary spaces in your cells 
+1. TRIM function - remove extra spaces  
+The TRIM function removes extra spaces from a text. It removes all leading, trailing, and middle spaces except for 
+one space between words. The syntax for the TRIM function- “TRIM(text)” is the easiest one could imagine. 
+For example, use the following formula =TRIM(B2) to remove spaces in cell B2. Your cell should look like this:  
+That’s it! 
+A combination of the TRIM function and CLEAN can be used to remove line breaks and non-printing characters. 
+For example, use this formula- =TRIM(CLEAN(B2)) to remove spaces, line breaks, and other unwanted characters 
+from cell B2 
+2. 
+How to remove leading spaces in a numeric column 
+As you can see, the TRIM function in Excel has successfully removed all extra spaces from the text data column, 
+but what if your data is numeric? At first glance, the TRIM function seems to have done its job. If you take a closer 
+look, you will find that trimmed values do not behave like numbers. Here are some examples of abnormalities: 
+Even if you apply numeric formatting to cells, the original column with leading spaces and 
+trimmed numbers will be left-aligned, and normal numbers will be right-aligned by default. 
+Excel shows COUNT on the status bar only if two or more cells with trimmed numbers are 
+selected. It will also show SUM and AVERAGE for numbers. 
+When the SUM formula is applied to the trimmed cells, the result is zero. 
+When searching for numbers, trimmed values appear as text strings. To fix this, multiply the trimmed values by one 
+(use the Paste Special> Multiple options to multiply all the numbers at once). 
+Enclosing the TRIM function in VALUE, as shown below, is a better option. 
+=VALUE(TRIM(B2)) 
+This formula will remove any leading and trailing spaces, turning the resulting value into a number. Your cell 
+should look like this: 
+3. 
+How to remove only leading spaces (Left Trim) 
+We'll use a slightly more complex formula to keep all the spaces in between: 
+=MID(B2,FIND(MID(TRIM(B2),1,1),B2),LEN(B2)) 
+To find the first text character in any, string using this formula requires the use of FIND, MID, and TRIM together. 
+Your cell should look like this: 
+Tip. The "Trim Spaces" tool can also be used to remove spaces from the ends of cells. There isn't a simple Excel 
+formula for deleting leading and trailing spaces while maintaining a large number of gaps between words 
+simultaneously. 
+CHAPTER SIX- MS EXCEL LOGIC FUNCTION 
+Four logical functions are available in Excel to work with the logical values- AND, OR, XOR and NOT. Logic 
+functions in Excel return TRUE or FALSE when their arguments are evaluated, just like logical operators do. A 
+summary of each logical function is provided in the following table to assist you in selecting the right formula for 
+your tasks. 
+Function 
+Description 
+Formula Example 
+Formula Description 
+NOT 
+Returns the argument's logical 
+value in reverse. To put it another 
+way, if the argument is FALSE, 
+TRUE is returned, and vice versa. 
+=NOT(A2>=10) 
+If a value in cell A1 is 
+more than or equal to ten, 
+the  
+formula  
+yields 
+FALSE;  
+otherwise,  
+it 
+returns TRUE. 
+OR 
+If any argument evaluates to 
+TRUE, this function returns 
+TRUE. 
+=OR(A2>=10, B2<5) 
+If A2 is higher than or equal to 10 
+and B2 is less than 5, or both 
+conditions are met, the formula 
+returns  
+TRUE.  
+The  
+formula 
+returns FALSE if neither of the 
+conditions are met. 
+XOR 
+All arguments are combined into 
+a logical Exclusive Or. 
+=XOR(A2>=10, B2<5) 
+If A2 is higher than or equal to 10 
+and B2 is less than 5, the formula 
+returns  
+TRUE.  
+The  
+formula 
+returns FALSE if neither of the 
+conditions  
+is  
+met  
+or  
+both 
+conditions are met. 
+AND 
+Checks a number of conditions 
+and returns true if all of them 
+evaluate to true. 
+=AND(B2>=10, C2<5) 
+The formula returns TRUE if the 
+value in cell B2 is greater than or 
+equal to 10 and the value in cell 
+C2 is less than 5, otherwise 
+FALSE. 
+Microsoft Excel also has three other "conditional" functions: IF, IFERROR, and IFNA, in addition to the four 
+logical functions listed above. 
+Using the AND Function 
+The AND function is very useful for testing multiple conditions and making sure they are all met. Technically the 
+AND function tests the specified condition and returns TRUE if all conditions evaluate to TRUE. Otherwise, it 
+returns FALSE. The syntax for the AND function in Excel is: 
+AND(logical1, [logical2], …) 
+Where logical represents the condition you want to test, which can be TRUE or FALSE. 
+The first (logical1) condition is required; the other conditions are optional. Now let’s take a deeper dive into this 
+function. 
+Formula 
+Description 
+=AND(A2="Laptop", B2>C2) 
+If A2 contains "Laptop" and B2 is greater than C2, the result will be 
+TRUE; otherwise, FALSE. 
+=AND(B2>21, B2=C2) 
+If B2 is more than 21 and B2 equals C2, the result will be TRUE; 
+else, FALSE. 
+=AND(A2="Laptop", B2>=32, B2>C2) 
+If A2 contains the word "Laptop," B2 is greater 
+than or equal to 32, and B2 is greater than C2, the 
+result is TRUE; otherwise, the result is FALSE. 
+Now, use the screenshot below to create a similar worksheet and then input the formulas listed in the table above. 
+Your results will return TRUE or FALSE 
+Excel AND function - common uses 
+The AND function alone is not fascinating, and its application is limited. In addition, you can combine the AND 
+function with other Excel functions, such as the IF function. For example, you can add one of the AND functions 
+above inside the IF function and get a result similar to this: 
+=IF(AND(A2="Laptop", B2>C2), "Real", "Fake") 
+Using the OR Function In Excel 
+As with the AND function, Excel's OR function compares two values or statements; however, the OR function 
+returns TRUE when one of the arguments is TRUE and FALSE when all arguments are false. The syntax for this 
+function is: 
+OR(logical1, [logical2], …) 
+As you can see, it is very similar to the AND function. Now let's look at some examples. 
+Formula 
+Description 
+=OR(A2="Keyboard", A2="Laptop") 
+If A2 contains "Keyboard" or "Laptop," it returns TRUE; otherwise, 
+it returns FALSE. 
+=OR(B2>=32, C2>=18) 
+Returns TRUE if B2 is more than or equal to 32 and FALSE if B2 is 
+less than or equal to 18. 
+=OR(B2=" ", C2="") 
+Returns true if B2 or C2 or both are blank; otherwise, returns 
+FALSE. 
+Create a worksheet similar to the one shown below, and then enter the formulas from the table above. Your answers 
+will either be TRUE or FALSE. 
+IF function with nested OR 
+Here’s an example of the OR function combined with the IF function 
+=IF(OR(B2>30, C2>20), "Real", "Fake") 
+Using the XOR Function 
+The XOR function is a logical Exclusive OR function. The XOR function has the same syntax as the OR function- 
+XOR(logical1, [logical2],…) 
+The first logical statement (Logical 1) is required, and the rest are optional. You can test up to 200 conditions in a 
+single formula that are evaluated to either TRUE or FALSE. The formulas below will give you a better 
+understanding of this function: 
+Formula 
+Result 
+Description 
+=XOR(3>1, 5<2) 
+TRUE 
+Because the first argument is TRUE and the 
+second argument is FALSE, the result is TRUE. 
+=XOR(3<1, 5<2) 
+FALSE 
+Returns FALSE because both arguments are 
+FALSE. 
+=XOR(3>1, 5>2) 
+FALSE 
+Because both arguments are TRUE, the result is 
+FALSE. 
+In case you are still confused, consider the following example. Assuming you have a table of Students and their 
+results for the last two grades. You want to know which student will move to the next class on the following 
+conditions: 
+Students who passed Grade 1 and 2 advance to the next class automatically and won’t have to 
+repeat any class. 
+Students who failed both Grade 1 and 2 will leave the school  
+Students who passed only Grade 1 or 2 will have to sit for another exam to determine if they 
+move to the next class. 
+A simple XOR formula- =XOR(B2="Passed", C2="Passed") will give you the following result: 
+You can get better results by nesting this XOR function into the IF formula: 
+=IF(XOR(B2="Passed", C2="Passed"), "Yes", "No") 
+Using the NOT Function In Excel 
+This function has a straightforward syntax- NOT(logical) 
+This function reverses the value of its argument. In other words, the NOT function returns FALSE if an argument is 
+TRUE and vice versa. For example, both formulas below return TRUE: 
+=NOT(FALSE) 
+=NOT(3*3=4) 
+So you might ask, why would anyone want such weird results? In some cases, knowing when a condition fails is 
+more important than knowing when a condition occurs. For example, let's say you want to leave out Acer laptops 
+from a list of laptops you made. I hope this example helps: =NOT(C2="Acer") 
+As you may know, there are several ways to do things in Excel. To test several conditions in a single formula, use 
+the NOT function in conjunction with the AND or OR function. For example, if you want to exclude Acer and Dell 
+models, the formula would go like: 
+=NOT(OR(C2="acer", C2="dell")) 
+And if you'd rather not have an Acer laptop, while an Acer charger may be considered, then combine the NOT 
+function with the AND function: 
+=NOT(AND(C2="acer", B2="charger")) 
+The NOT function is often used to reverse the behavior of another function. For example, you can create the 
+ISNOTBLANK formula by combining the NOT and ISBLANK functions. 
+As you know, the =ISBLANK() will return TRUE if a cell is blank. The NOT function will reverse the result to 
+FALSE: =NOT(ISBLANK(B1)) 
+Then you can go ahead and create nested IF statements using NOT / ISBLANK functions for your tasks: 
+=IF(NOT(ISBLANK(C2)), C2*0.15, "No profit :(") 
+In plain English, the formula instructs Excel to perform the following actions: For each additional sale, multiply the 
+number in C2 by 0.15 if the field C2 is not empty. Whenever C2 is left blank, the message "No profit will be 
+displayed on the screen. 
+CHAPTER SEVEN- FUNCTIONS OF DATE AND TIME 
+Using this function is as easy as it sounds. You can address complex issues by merging several functions into one 
+formula. 
+Date functions 
+Description 
+DATE 
+This is the main function 
+TODAY 
+Returns the current date 
+NOW 
+Returns 
+DATEVALUE 
+Converts a text date into a date format 
+TEXT 
+Converts a date to a text value 
+DAY 
+Returns the day of the month 
+MONTH 
+returns the month of a specified date 
+EDATE 
+Returns a date N months before or after the start date 
+DATEDIF 
+Returns the difference between two dates 
+YEARFRAC 
+Calculates the fraction of the year between 2 dates 
+Excel DATE Function 
+DATE(year, month, day) returns a date's serial number depending on the values you provide. 
+If you're going to work with dates in Excel, the DATE function is a must-know. Because other Excel date functions 
+may not always recognize dates entered in text format, this is an important factor. You should use the DATE 
+function to supply dates when performing date calculations in Excel to ensure accurate results. 
+The Excel DATE function appears easy at first glance, but this tutorial points out several specificities. Here are a 
+few DATE formula examples: 
+=DATE(2021, 8, 20) - returns a serial number corresponding to 20-August-2021. 
+=DATE(YEAR(TODAY()), MONTH(TODAY()), 1) - returns the first day of the current year and month. 
+=DATE(2021, 8, 21)+5 - adds 5 days from August 20, 2021. 
+Excel TODAY function 
+The TODAY() function returns today's date. The following formula can be entered in a cell whenever you need to 
+know the current date. 
+=TODAY() 
+It's also possible to use this function in more complex formulas and calculations. Enter the following formula in a 
+cell to subtract 5 days to the current date: 
+=TODAY()-7 
+Use this formula to add 20 weekdays to today's date, excluding weekends: 
+=WORKDAY(TODAY(), 20) 
+Shortcuts to get today's date 
+Ctrl + ; to get today’s date 
+Ctrl + Shift + ; to get the current time 
+To enter the current date and time: Ctrl + ; then Space and then Ctrl + Shift + ;  
+Excel NOW Function 
+The NOW() function returns the current date and time. It has no counter-arguments, just like TODAY. The 
+following formula- =NOW() displays the current date and time in your worksheet. 
+This function refreshes the returned value each time a worksheet is recalculated, as does TODAY. Press Shift+F9 to 
+force the active worksheet to perform a recalculation, which will update your NOW formula's value.  
+Excel DATEVALUE function 
+In this case, DATEVALUE(date_text) will convert a date to a number that represents a date. 
+There are several date formats that the DATEVALUE function can handle. You can use this function to convert 
+"text dates" into the Date format. Listed below are a few examples of simple DATEVALUE formulas. 
+=DATEVALUE("20-August-2021") 
+=DATEVALUE("8/21/2021") 
+=DATEVALUE("august 20, 2021") 
+Excel DAY function 
+Day(serial number) returns an integer from 1 to 31, representing a day of the month. The day you are trying to 
+retrieve is represented by a serial number. Cell references, dates provided with the DATE function, and formula 
+returns can all be used. Here are a few examples: 
+=DAY(B2) - returns the day of the date in B2 
+=DAY(DATE(2021,8,23)) - returns the day of 23-August-2021 
+=DAY(TODAY()) - returns the day of today's date 
+This same format can also be used for the MONTH and YEAR function. E.g. 
+=MONTH(B2) 
+=MONTH(TODAY()) 
+=YEAR(B2) 
+=YEAR(TODAY()) 
+Excel WEEKDAY Function 
+A date is sent to the WEEKDAY(serial number,[return type]) function, which produces a number from Sunday 
+through Saturday. Date, cell reference, or date returned by another function can all be used as Serial_number. 
+Return_type (optional) specifies which day of the week should be treated as the first day of the week.  
+As an example, have a look at this WEEKEND formulas. 
+=WEEKDAY(B2) - This function returns a Sunday since the first day of the week corresponds to a date in cell B2 
+(Sunday) (default). 
+=WEEKDAY(B2, 2) - The day of the week that corresponds to the date in cell B2 is returned; the week starts on 
+Monday. 
+=WEEKDAY(TODAY()) - This function returns the day of the week for today. The week begins on Sunday. 
+The WEEKDAY function can help you differentiate workdays and weekdays and sort, filter, and highlight them. 
+Excel DATEDIF function 
+The DATEDIF(start date, end date, unit) function is used to determine the difference between two dates. When 
+computing the date difference, the period to use depends on the letter you supply as the last argument: 
+=DATEDIF(B2, TODAY(), "d") - calculates the difference in days between B2 and today's date. 
+=DATEDIF(B2, B5, "m") - The number of complete months between B2 and C2 is returned. 
+=DATEDIF(B2, B5, "y") - The number of complete years between B2 and C2 is returned. 
+CHAPTER EIGHT- COUNTING FUNCTION 
+This function counts cells, as the name suggests. But wait, there's more to it! To perform different counting tasks, 
+Excel has five different COUNT types: 
+COUNT 
+COUNTA 
+COUNTABLANK 
+COUNTIF 
+COUNTIFS 
+I am only going to treat a few of these functions. 
+COUNT function 
+The COUNT function accepts comma-separated values as inputs. In this case, the function will return the total 
+number of the numeric values specified. The syntax is as follows: 
+=COUNT(value1,[value2],…) 
+Usage: 
+The COUNT function is used to find the total number of values in a parameter that contains multiple values. 
+COUNT(range) 
+This function counts the number of cells in a range. As you can see, the number of cells in range A2:A6 can be 
+determined using =COUNT(A2:A6). To use this function, you must supply only numeric values. 
+The COUNTA function 
+Cells that contain data, i.e., non-empty values, are counted using this function. The syntax is as follows: 
+=COUNTA(value1,[value2],…) 
+The values can be in any range. For example 
+As shown in the screenshot above, since C2 to C6 are all non-empty cells, =COUNTA(C2:C6) counts the number 
+of cells with data. 
+How Do I Use COUNTIF? 
+The COUNTIF function counts the number of cells that meet a specific requirement. Here's how the syntax is 
+written- =COUNTIF(range,criteria)  
+Range- where a range of cells can be given. To give an example, let's say cell A2:A6 
+Criteria- is a condition on the function that must be met. For example: ">50", A1 
+Usage: 
+You can use the COUNTIF function to check whether a string matches the criterion.  
+For example, If you want to find out how many times the name "John" appears, use the formula 
+=COUNTIF(B2:B6, "John"). 
+You can also use the COUNTIF to count cells that contain text- 
+Counting text-only cells are easy. We use "*" as our condition. 
+The asterisk or '*' symbol can be used to find any number of characters. When using '*' as a wildcard, you can 
+match any number of characters. 
+In the range, D2 to E12, the function =COUNTIF(D2:E6, "*") counts the number of text-filled cells. Wildcard 
+characters are helpful when it comes to counting cells that contain a specific word or letters. Take a look at the 
+following example. 
+The = COUNTIF (D2: E6, "*") function runs in the range D2 to E6 and counts cells that contain text. 
+Here are a few examples to help you understand better 
+Logical operation 
+Formula example 
+Description 
+Less than “<” 
+=COUNTIF(B1:B10,”<10”) 
+Count the number of values in a cell 
+that are lesser than 20 
+Less than or equal to “<=” 
+=COUNTIF(B1:B10,”<=20”) 
+Count the number of values in a cell 
+that are lesser than or equal to 20 
+Greater than “>” 
+=COUNTIF(B1:B10,”>20”) 
+Count the number of value in each cell 
+that are greater than 20 
+Greater than or equal to 
+“>=” 
+=COUNTIF(B1:B10,”>=20”) 
+Count the number of values for each 
+cell that are greater than or equal to 20 
+Equal to “=” 
+=COUNTIF(B1:B10,”=20”) 
+Count if the values in cells are equal to 
+20 
+Not equal to “!=” 
+=COUNTIF(B1:B10,”<>20”) 
+Count the number of values for each 
+cell that are not equal to 20 
+With the basics of these formulas, you can now expand your knowledge by addressing real-life tasks and creating 
+smart complex formulae for your worksheets 
+
+
+---
+## 📖 FIRST-AIDDIAGNOSISOFAFAULTYPERSONALCOMPUTER
+*(Manba: First-AidDiagnosisofaFaultyPersonalComputer.pdf)*
+
+Achievers J. Sci. Research  
+  
+volume 2, Issue 1, July 2019 - p. 1 - 4  
+ACHIEVERS JOURNAL OF SCIENTIFIC RESEARCH  
+Open Access Publications of Achievers University, Owo.  
+Available online at www.achieversjournal.org  
+  
+First-Aid Diagnosis of a Faulty Personal Computer  
+   
+1  
+2  
+3  
+E. O. Oyekanmi , S. A. Oluwadare and S.O.Ekundayo  
+1, 3 Department of Mathematical Sciences, Achievers University, Owo, Nigeria  
+2 Department of Computer Science, Federal University of Technology, Akure  
+  
+1  
+Corresponding author: Email:ezekny@yahoo.com  
+  
+Abstract  
+First-aid is literally used as emergency medical treatment for persons who are ill or injured and it is given before  
+a more thorough medical attention can be obtained. Whether one is dealing with one's dad's decade-old  
+computer or one's own custom-built gaming rig, troubleshooting computer problems are a part of everyday life.  
+Before making that $50 support call in getting technical support from the expert, one can actually fix it by  
+oneself. This paper uses experts' opinion survey of information technology support engineers on the most  
+common personal computer (PC) problems in the business and how they are fixed. It found that most computer  
+users do not give computer security a second thought. Besides, failure to take some simple steps often results  
+in identity theft or worse problems. It identifies practical directions that can be adopted on a regular basis which  
+can allow computers to run at its optimal speed.  
+  
+Keywords- First-aid, diagnosis, faulty, personal computer  
+  
+INTRODUCTION  
+Most computer users often rely on information from  
+the Internet, friends, or computer repair companies  
+for solutions to help their computer perform better.  
+Often, the complaint is either the computer is running  
+so slow or cannot start up normally or its programs  
+could not open or the system has virus. The above  
+descriptions often lead to the purchase of programs  
+that are designed, on the surface, to remedy a wide  
+variety of problems and usually require the services  
+of a computer professional to install and run [1].  
+The suggested problems could be as a result of:  
+A. Accumulation of spyware, adware or viruses.  
+B. The computer user “did something wrong”  
+and/or “deleted something”.  
+C. A download from the Internet could result to  
+  
+some problem.  
+D. A program which was either incorrectly installed  
+  
+or not completely installed.  
+  
+While some of these problems may exist on  
+the computer, users can take hope that most of these  
+problems are reversible by using tools that are  
+available within the computer system [1].  
+  
+Justice (2013) affirms that people are not  
+born knowing how to troubleshoot and maintain  
+  
+  
+computers; they acquire it through experience and  
+exposure to technology. Many professionals in the  
+technical industry learn their trade through long  
+periods of exploration, trial and error, and research  
+in their fields. However, one does not need years of  
+experience to perform basic maintenance chores  
+that can increase the lifespan of one's hardware but  
+only need basic activities that can be done to  
+maintain a computer [2].  
+  
+The purpose of this paper is to present the  
+basic approaches to solving computer problems by  
+using diagnostic tools that exist on a PC that is using  
+windows operating system.  
+OVERVIEW OF COMPUTER SYSTEM  
+Computers work through an interaction of hardware  
+and software. Hardware refers to the parts of a  
+computer that can be seen and touched, including  
+the case and everything inside it. The most  
+important piece of hardware is a tiny rectangular  
+chip inside the computer called the central  
+processing unit (CPU), or microprocessor.  
+Sometimes it is referred to as the “computer  
+brain"—the part that translates instructions and  
+performs calculations. Hardware items such as  
+monitor, keyboard, mouse, printer, and other items  
+are often called hardware devices, or devices [3].  
+  
+  
+  
+1  
+Achievers J. Sci. Research  
+  
+Software refers to the instructions, or  
+programs, that tell the hardware what to do. A typical  
+example of it is Microsoft Word used for word  
+processing. The operating system (OS) is also  
+software that manages your computer and the  
+devices connected to it. Two well-known operating  
+systems are Windows and Macintosh operating  
+system because it often comes with the computer  
+system from the factory. 73% of computer users use  
+Windows operating system, 17% use Mac while the  
+rest use Linux operating system. It is the operating  
+system that control other programs installed on a  
+system. The inter relationship of hardware,  
+operating system, application software, and user is  
+shown in Figure 1  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+Figure.1: Operating system as intermediary  
+between Application software and hardware.  
+  
+The three major works of operating system  
+in computer are as follows:  
+A. Allocation of resources: The OS determines  
+  
+what computer resources (CPU, Radom Access  
+Memory (RAM or memory), disks, input and  
+output devices) a program would need and  
+allocate it to run the program.  
+B. Schedule of operations: The OS is responsible  
+  
+for scheduling programs so as to use system  
+resources efficiently.  
+C. Monitoring system activities: Some of the  
+  
+important activities of the Operating System  
+(OS) include:  
+1) Security: By means of password and similar  
+  
+other techniques, preventing unauthorized  
+access to the programs and data.  
+  
+2) Control over system performance:  
+  
+Recording delays between request for a  
+service and response from the system.  
+3) Job accounting: Keeping track of time and  
+resources used by various jobs and users.  
+4) Error detecting aids: Production of dumps,  
+traces, error messages and other  
+debugging and error detecting aids.  
+5) Coordination between other software and  
+  
+users: Coordination and assignment of  
+compilers, interpreters, assemblers and  
+other software to the various users of the  
+computer systems [4, 5].  
+COMMON FAULTS IN PERSONAL COMPUTER  
+There are thousands of problems that PC could  
+have, from an endless list of possible error  
+messages to various hardware failures. Research  
+shows that even the most stable, secure machine is  
+not safe from buggy software, failing hardware, or  
+even the occasional loose wire [6, 7]. Most of those  
+problems may fall within these categories:  
+A. Lockups and Freezes: This occurs when  
+computer halt and displays an error message  
+that is utterly indecipherable to most computer  
+users. Lockups can be caused by buggy  
+software, or a system running out of memory.  
+B. Slow Performance: This could occur as a result  
+of accumulated useless files or applications  
+deleted from the computer. These files form all  
+kinds of junk thereby degrading system  
+performance. Ironically, antivirus and anti-  
+malware software, while vital to the health of a  
+computer, can slow down a PC's performance.  
+Low hard drive space or not enough RAM in the  
+machine can also cause computer errors and  
+slow down the machine.  
+C. Strange Noises: A lot of noise coming from  
+  
+one's computer as a result of either hardware  
+malfunction or a noisy fan constitutes a strange  
+noise.  
+D. Overheating: This occurs when computer's  
+  
+components generate excessive heat during  
+operation.  
+E. Slow Internet: Slow Internet browser  
+  
+performance occurs usually when browsers  
+cookies is filled up.  
+F. Dropped Internet Connections: Dropped  
+  
+Internet connections can be very frustrating. It  
+could be as a result of viruses, a bad network  
+card or modem, or a problem with the driver.  
+G. Windows not Booting: This occurs when  
+  
+  
+2  
+Achievers J. Sci. Research  
+  
+computer suddenly shuts off or has difficulty in  
+starting. It could have a failing power supply.  
+H. Abnormally Functioning Operating System or  
+Software: This occurs when the operating  
+system or other software is either unresponsive  
+or is acting up.  
+  
+These and many more are the various faults  
+or problems that are usually faced by computer  
+users. The next section of this paper explains the  
+basic first-aids as a means of preventive  
+maintenance inspection to preserve the reliability of  
+the personal computers (Pcs).  
+  
+BASIC FIRST-AID MAINTENANCE FOR FAULTY  
+PERSONAL COMPUTER  
+  
+A.  
+Perform Windows Update: It is advisable for  
+one to stop the usage of computers with  
+insecure or outdated operating systems.  
+Anytime one uses computer with old versions of  
+Microsoft windows, one is putting it at risk. These  
+updates repair certain bugs discovered after  
+time, reduce the security vulnerability of your  
+system and add functionality to one's operating  
+system [8, 9].  
+B. Use anti-spyware and anti-virus software: An  
+  
+accumulation of spyware can severely slow  
+down one's PC, leading it to crash, or behave  
+abnormally. Antivirus software works based on  
+known viruses. Most anti-virus programs run in  
+the background and scan all incoming e-mails,  
+downloaded files, etc. Hence, it is not required to  
+run a scan unless you suspect your computer is  
+infected. To be on the safe side, run a full system  
+scan once a month [8, 9].  
+C. Perform Disk check: This procedure determines  
+  
+the integrity of hard drive. It verifies files & folders  
+on the hard drive. While it is checking, it will  
+describe any actions it takes and the windows  
+closes once it is finished. Disk check should be  
+done once in every three months [1, 9].  
+D. Removal  of unnecessary Programs: Many  
+  
+computers store a large number of programs  
+which are never used. These programs can be  
+removed from control panel. However, any  
+programs that start out with “Windows” should  
+be left alone and also any programs that refer to  
+equipment you have installed or your Anti-virus  
+program should be left alone. If you are not sure  
+as to which are the equipment programs, do not  
+remove it [1, 8].  
+  
+E. Disk Defragmentation: This procedure  
+  
+rearranges the files on the hard drive so that  
+they are accessed more efficiently by the  
+computer. Over the long run, a disorganized  
+hard drive can eventually crash and obliterate  
+all stored data [1, 9].  
+F. Use a firewall: A firewall simply tries to block  
+  
+hackers from entering or using one's computer.  
+As a frequent Internet user, it is imperative that  
+one have the Windows Firewall enabled to  
+protect one's computer from hackers [8].  
+G. Hardware Upgrades: When computers are  
+running slow, much of the problem can be  
+traced to a Random Access Memory (RAM)  
+overload. Memory controls the speed and the  
+accessibility of user actions and programs  
+running (simultaneously) on the computer.  
+Whenever a program or a piece of equipment is  
+installed, the software that is installed with it  
+places a terminate and stay resident (T.S.R.)  
+program that can be memory resident. This  
+means that it stays and stored in memory.  
+Therefore, the more programs and equipment  
+you have, the more memory is being used. The  
+ways by which one can prevent this is by  
+upgrading the memory equipment to higher  
+size or 'free-up' the memory. [1, 9]  
+H. Power laptops down before travelling: Hard  
+  
+drive failure can occur when moving parts get  
+jammed and out of alignment. Make sure to  
+power down laptops before you slip them in a  
+bag and head to a new location. This prevents  
+jostling of moving parts while the computer is  
+on. Computers can also overheat in a backpack  
+or purse, if they are not properly switched off or  
+put to sleep. Disasters can be avoided if one  
+always power down one's computer before  
+commuting especially laptops [2].  
+I.  
+Do not keep battery-powered devices plugged  
+in: Many people make the mistake of leaving  
+their electronic devices constantly plugged in,  
+even when the battery is full. This is the fastest  
+way to kill it. The best way to maintain a battery  
+is to charge it up, unplug it, and use the power  
+until it is empty [2].  
+J. Create backups: Diskettes are no longer in use  
+  
+for backup - a Compact Disk Recordable (CD-  
+R) drive can help quickly backup important data  
+(700  MB per disc or equivalent to 485  
+diskettes). Digital Video Disk (DVD) recordable  
+drives are also available (~7 times as much as a  
+  
+  
+3  
+Achievers J. Sci. Research  
+  
+CD or equivalent to 3200 diskettes) Other  
+options include external Universal Serial Bus  
+(USB) hard drives to store all data- documents,  
+photos, music. Cloud service can also be used  
+in backups [2, 8].  
+K.  
+Use complex passwords: User error can  
+quickly lead to computer problems, especially if  
+several people share a machine. Whether at  
+work or at home use complex passwords (and  
+never write them down). Using a password  
+longer than 8 characters can greatly reduce the  
+chance that someone will guess your password  
+[2, 8].  
+L.  
+Enlist the support of experts: All these  
+maintenance procedures can be scary. Hackers  
+and even unexpected problems with security  
+  
+  
+  
+  
+REFERENCES  
+[1] Seager Enterprises 2006, 5-Step  
+  
+Computer Maintenance Tutorial Windows  
+XP, accessed 20 November,  
+2013.http://www.seagerent.com/Files/5Ste 
+pMaintTut.pdf  
+  
+[2] Justin C. 2013, A Beginner's Guide to  
+  
+Basic Computer Maintenance, standard  
+madness, accessed 20 November 2013.  
+http://www.standardmadness.com/a-  
+beginners-guide-to-basic-computer-  
+maintenance.htm'  
+[3] Microsoft 2013, Introduction to computers,  
+  
+accessed 20 November 2013.  
+http://windows.microsoft.com/en-  
+us/windows-vista/introduction-to-  
+computers.htm  
+  
+[4] Overview of Computer Systems 2003,  
+  
+accessed 20 November, 2013  
+http://www.cs.armstrong.edu/liang/commo 
+n/wwwComputerBasics.pdf  
+  
+[5] tutorialspoint 2012,Operating System -  
+  
+Overview, accessed 24 November 2013.  
+  
+patches could potentially mess up one's  
+system rendering it unusable. It may also be  
+time consuming to update or download and  
+installations can take hours. It is not a crime to  
+enlist the assistance of experts. There are  
+many companies that specialize in providing  
+home user support [8].  
+  
+CONCLUSION  
+This paper presented basic steps for  
+troubleshooting and solving PC problems and  
+faults. It features the common windows-based  
+computer faults and the preventive maintenance  
+inspection from support engineers to reduce  
+maintenance costs of PC and increases its overall  
+performance.  
+  
+  
+  
+  
+  
+http://www.tutorialspoint.com/operating_s 
+ystem/os_overview.htm  
+  
+[6] AOL 2013,Computer Problems and PC  
+  
+Errors, accessed 24 November 2013  
+http://computercheckup.aol.com/articles/c 
+omputer-problems/  
+  
+[7] Kushal Tomar 2012, 'Top 10 Most  
+  
+Common Computer Problems', techblog,  
+weblog post 6 May, accessed 24  
+November  
+2013,http://techblog.cosmobc.com/2012/0  
+5/06/top-10-common-computer-problems/  
+  
+[8] Society of Diagnostic Medical  
+  
+Sonography 1999, 10 Steps to Protecting  
+Your Computer, accessed 11 November  
+2013.  
+http://www.sdms.org/resources/computer.  
+as  
+  
+[9] Hotweazel.com 2007, How to Maintain a  
+  
+Healthy Computer, accessed 11  
+November 2013.  
+http://www.hotweazel.com/documentation/ 
+computer_health_vista.pdf  
+  
+  
+  
+  
+  
+  
+  
+4 
+
+
+---
+## 📖 HP-INSTALL-GUIDE-PRINTER
+*(Manba: hp-install-guide-printer.pdf)*
+
+HP LaserJet 5 Printer 
+Getting Started Guide 
+Printer Setup 
+© Copyright Hewlett-Packard 
+Company 1996 
+All Rights Reserved. 
+Reproduction, adaptation, or 
+translation without prior written 
+permission is prohibited, except 
+as allowed under the copyright 
+laws. 
+Publication number 
+C3916-90919 
+First edition, April 1996 
+Warranty 
+The information contained in 
+this document is subject to 
+change without notice. 
+Hewlett-Packard makes no 
+warranty of any kind with 
+regard to this material, 
+including, but not limited to, 
+the implied warranties or 
+merchantability and fitness for 
+a particular purpose. 
+Hewlett-Packard shall not be 
+liable for errors contained herein 
+or for incidental or consequential 
+damaged in connection with the 
+furnishing, performance, or use 
+of this material. 
+Hewlett-Packard Company 
+11311 Chinden Boulevard 
+Boise, Idaho 83714 
+Installation Checklist 
+Congratulations on your purchase of the HP LaserJet 5 Printer! 
+This Getting Started Guide will help you set up and install your new 
+printer. Complete, in order, the steps in the checklist. Each step is 
+detailed on the following pages with easy-to-follow directions.  
+ I 
+Installation Checklist  
+Step 1.  Check the package contents. 
+Page 2 
+Step 2.  Remove the internal packaging. 
+Page 3 
+Step 3.  Prepare a location for the printer. 
+Page 5 
+Step 4.  Locate the printer parts. 
+Page 6 
+Step 5.  Install the toner cartridge. 
+Page 9 
+Step 6.  Load paper into Tray 2. 
+Page 10 
+Step 7.  Load paper into Tray 1. 
+Page 11 
+Step 8.  Attach the power cord. 
+Page 12 
+Step 9.  Change the language (optional). 
+Page 13 
+Step 10. Test the printer operation. 
+Page 14 
+Step 11. Select a printer interface and cable. 
+Page 15 
+Step 12. Attach a cable. 
+Page 17 
+Step 13. Install the printing software. 
+Page 18 
+Step 14. Test printer to verify setup is complete. 
+Page 20 
+A list of common questions is located at the back of this guide for help 
+in problem solving with printer and software setup.  
+EN 
+Getting Started Guide 1 
+Step 1. Check the Package Contents 
+Locate each item listed below: 
+A 
+HP LaserJet 5 printer 
+B 
+Tray 2 
+C 
+Documentation package (containing the Getting Started Guide, User’s Manual, and 
+other useful documentation) 
+D 
+A Control Panel Overlay translated to your language (outside U.S. and Canada only) 
+E 
+Printer Software 
+F 
+Toner Cartridge (inside protective bag) 
+G 
+Power cord 
+Note 
+A parallel cable is not included in the package contents. See Chapter 1 
+of the printer User’s Manual for ordering information. 
+If you need 5.25 inch software disks, refer to “Printer Drivers by Mail” 
+located on the HP Support pages in the front of the printer User’s Manual. 
+2 Getting Started Guide 
+EN 
+Step 2. Remove the Internal Packaging 
+Note 
+Save all packing material. You may need 
+to repack your printer at a later date. 
+1 Remove the shipping bag and tape 
+from the printer. 
+2 Open the printer by lifting up the 
+front of the top door. 
+3 Remove the cardboard and foam 
+packing pieces from inside the printer. 
+4 Open Tray 1 by pulling down on the 
+top center of the door. 
+5 Remove the cardboard from inside 
+Tray 1. 
+Continued on next page. 
+EN 
+Getting Started Guide 3 
+6 Slide Tray 2 out of the printer. 
+7 Remove the packing material from 
+inside Tray 2 (press down on the 
+orange plastic piece and pull it 
+straight out). 
+4 Getting Started Guide 
+EN 
+Step 3. Prepare a Location for the Printer 
+Location Requirements for your Printer 
+• A sturdy, level surface for placement 
+• No exposure to direct sunlight or chemicals 
+• Adequate space for: 
+ (A) opening Tray 2 
+ (B) opening Tray 1 
+ (C) opening the top door  
+ (D) opening the rear door 
+ (E) allowing air circulation 
+• Adequate power supply (see your User’s 
+Manual) 
+• A stable environment— no abrupt 
+temperature or humidity changes 
+• Relative humidity 20% to 80% 
+• A well-ventilated room 
+• Room temperature 50° to 91° F (10° to 32.5° C) 
+EN 
+Getting Started Guide 5 
+Step 4. Locate the Printer Parts 
+The following illustrations give the location and names of the key 
+printer parts. 
+A 
+Top door 
+E 
+250-sheet Tray 2 
+B 
+Output bin 
+F 
+Tray 1 paper width guide 
+C 
+Control panel and display 
+G 
+Tray 1 and extension 
+D 
+ON/OFF power switch 
+H 
+Envelope Feeder access cover location 
+(shown with cover removed) 
+Front/right side view (with Tray 1 open) 
+6 Getting Started Guide 
+EN 
+A 
+Toner cartridge guides 
+F 
+Right side cover (opened) 
+B 
+Paper access door 
+(for paper jam removal) 
+G 
+250-sheet Tray 2 
+C 
+Top door (opened) 
+H 
+Tray 1 release point (pull to open) 
+D 
+Toner cartridge location 
+(shown with cartridge removed) 
+I 
+Transfer Roller removal tool 
+E 
+SIMM slots access door 
+J 
+Serial Number label 
+Top/right side view with top door open and toner cartridge removed 
+EN 
+Getting Started Guide 7 
+A 
+Rear access cover latch 
+(Press down to release) 
+E 
+Serial port 
+B 
+Rear access cover 
+F 
+Serial Infrared port  
+(HP IR Adapter Required) 
+C 
+Serial number label 
+G 
+Parallel port 
+D 
+Power cable connector 
+H 
+I/O (MIO) slot 
+Rear/left side view 
+8 Getting Started Guide 
+EN 
+Step 5. Install the Toner Cartridge 
+1 Open the printer by lifting up the 
+front of the top door. Remove the 
+toner cartridge from its bag and save 
+the packaging for possible cartridge 
+storage. 
+2 Shake the cartridge to distribute the 
+toner evenly inside the cartridge. 
+Avoid tipping the cartridge on end. 
+3 Locate the sealing tape tab on the left 
+end of the cartridge. Carefully bend 
+the tab back and forth until it 
+separates from the cartridge. 
+4 Pull the tab firmly to remove the 
+entire length of the tape (22 in. / 
+56 cm). Avoid touching any black on 
+the tape (this is loose toner). 
+Note 
+If the tab breaks, grasp the tape and pull it 
+out of the cartridge.  
+If toner gets on your clothing, wipe it off 
+with a dry cloth and wash clothing in cold 
+water.  
+5 Position the cartridge with the arrow 
+facing into the printer. Slide the 
+cartridge in until it clicks into place. 
+Close the door. 
+Note 
+If the top door does not close, the 
+cartridge is not installed correctly. 
+Remove and reinstall the cartridge. 
+EN 
+Getting Started Guide 9 
+Step 6. Load Paper into Tray 2 
+Tray 2 holds about 250 sheets of 20# 
+(75g/m2) paper. 
+1 Slide Tray 2 out of the printer. 
+2 Load up to 250 sheets of paper into 
+the tray. Do not fill above the arrows 
+on the left rear. Keep the paper 
+below the tabs in the rear of the tray. 
+3 Make sure that the paper is flat in the 
+tray at all four corners. The paper 
+should fit under the front left metal 
+holder. 
+4 Slide Tray 2 back into the printer. 
+Note 
+See the sections on letterhead and duplex 
+printing in Chapter 4 of the User’s 
+Manual for proper media orientation for 
+specific jobs. 
+Caution 
+Do not remove the tray while the printer 
+is printing. This could cause a paper jam. 
+10 Getting Started Guide 
+EN 
+Step 7. Load Paper into Tray 1 
+Tray 1 allows you to automatically feed up 
+to 100 sheets of paper or manually feed one 
+sheet at a time. Tray 1 can be used for 
+standard and odd-sized papers, envelopes, 
+labels, and transparencies.  
+To load Tray 1: 
+1 Open Tray 1 by pulling down on the 
+top center of the door. 
+2 Pull out the tray extension until it 
+clicks into place. 
+3 Slide the paper width guide to the far 
+right side of the tray. 
+4 Place paper in the tray. The paper 
+should be flush left, under the arrows 
+on the paper guide tabs.  
+Note 
+See the sections on letterhead, envelope, 
+and duplex printing in Chapter 4 of the 
+User’s Manual for proper media 
+orientation for specific jobs. 
+5 If necessary, slide the paper width 
+guide to the left until it lightly 
+touches the stack of paper without 
+bending the paper. 
+EN 
+Getting Started Guide 11 
+Step 8. Attach the Power Cord 
+1 Locate the power switch on the front 
+of the printer. Make sure the power 
+switch is off (O). 
+2 Connect the power cord between the 
+printer and a grounded power strip or 
+an AC outlet. 
+3 Switch the printer on (I). 
+4 After the printer warms up, the 
+display will read READY. 
+Note 
+The printer automatically switches to a 
+PowerSave mode after 30 minutes of 
+inactivity. (PowerSave is an 
+adjustable/optional setting. Refer to 
+Chapter 8 in the User’s Manual for 
+instructions on changing the time setting 
+or turning PowerSave off.) If the display 
+reads POWERSAVE ON, press [Go] to return 
+to the READY message.  
+If the printer displays an error message, 
+see Chapter 7 of the User’s Manual.  
+12 Getting Started Guide 
+EN 
+Step 9. Change the Language (optional) 
+Follow these steps to change the control 
+panel language from English to a 
+language of your choice. 
+1 Switch the printer off (O). Place the 
+Control Panel Overlay (translated to 
+your language) onto the control panel 
+and snap into place. 
+2 Hold down [Select] while switching 
+the printer on (I). 
+The message, CONFIG LANGUAGE, briefly 
+appears in the display. After completing a 
+self test the printer will display 
+LANG=ENGLISH.  
+3 Press [- Value +] to scroll through the 
+available display languages.  
+4 Press [Select] save your display 
+language as the new default. An 
+asterisk will appear in the right side 
+of the display. 
+5 Press [Go] to return to a READY 
+display message.  
+EN 
+Getting Started Guide 13 
+Step 10. Test the Printer Operation 
+Print a configuration page (also known as 
+self test) and menu map to make sure your 
+printer is operating correctly. 
+1 Make sure the printer is on and the 
+READY message is displayed. 
+2 Press [Menu] until the display reads 
+TEST MENU. 
+3 Press [Item] until the display reads 
+SELF TEST. 
+4 Press [Select] to print. The display 
+will scroll the message PRINTING 
+CONFIGURATION PAGE. 
+5 The configuration page (A) shows 
+how your printer is configured. The 
+menu map (B) is a useful reference 
+for locating menu items. 
+5 
+1 
+2 
+3 
+4 
+14 Getting Started Guide 
+EN 
+Step 11. Select a Printer Interface and Cable  
+The HP LaserJet 5 printer supports three different interface connections: 
+Parallel (A), Serial (C), and an IrDA serial infrared (B). An MIO slot (D) is 
+provided for adding an optional HP JetDirect (or compatible) card. 
+JetDirect is used to directly connect printers with a network.  
+Parallel Port (A) 
+The IEEE-1284 standard parallel port (compatible with Bi-Tronics 
+parallel and Centronics parallel) provides enhanced capabilities, such as 
+bi-directional communication between the computer and printer, and 
+faster transmission of data. 
+Use the parallel interface when you: 
+• Want the fastest transfer of data to your printer. 
+• Send a lot of graphic information or soft fonts to the printer. 
+• Position your printer less than 10 feet (3 meters) from your computer. 
+Note 
+For best results use a high quality IEEE-1284 compliant parallel cable. See 
+Chapter 1 of the User’s Manual for ordering information. 
+Figure 1-1 
+EN 
+Getting Started Guide 15 
+Serial (9-pin) Port (C) 
+The printer supports a 9-pin RS-232C serial interface. Serial interfaces 
+provide increased flexibility in locating the printer, but are generally slower 
+than paralel interfaces. 
+Use a serial interface when you: 
+• Have a computer that does not have an available parallel interface. 
+• Have a printer that is positioned more than 10 feet (3 m) from your 
+computer. (The RS-232C serial interface can support printers located up to 
+50 feet away.) 
+• Are using a serial printer-sharing device. 
+IrDA Serial Infrared Port (B) 
+The printer supports an 8-pin “wireless” infrared serial interface. An 
+optional HP IR Adapter must be purchased separately. (See Chapter 1 
+of the User’s Manual for ordering information.) 
+Use an Infrared interface when: 
+• Your portable equipment (like a laptop or notebook computer) is 
+equipped with an infrared transmitter. 
+See Chapter 4 of the User’s Manual for further information on the 
+optional HP infrared adapter. 
+MIO Slot (D) 
+The printer comes with an MIO slot designed to support optional HP 
+JetDirect cards or compatible MIO cards from other companies. (See 
+Chapter 1 of the User’s Manual for ordering information.) 
+Use a JetDirect card when: 
+• The printer is used as a network printer. 
+• Multiple network operating systems and/or protocols are using the 
+printer at the same time. 
+16 Getting Started Guide 
+EN 
+Step 12. Attach a Cable 
+Note 
+Make sure your computer and printer are 
+switched off (O) before attaching a cable. 
+Be careful to install cables securely and 
+right side up. 
+To Install a Bi-Tronics Parallel 
+Cable 
+1 Plug the cable into both the computer 
+and printer ports.  
+2 Use the wire clips to attach the cable 
+to your printer.  
+Switch your computer and printer on (I). 
+To Install a Serial Cable: 
+1 Plug the cable into both the computer 
+and printer ports. 
+2 Secure the cable screws. 
+Switch your computer and printer on (I). 
+Note 
+For serial cable installation, baud rate, pacing, 
+and DTR polarity need to be set from the 
+control panel. See Appendix E of the User’s 
+Manual for more information. 
+EN 
+Getting Started Guide 17 
+Step 13. Install the Printing Software 
+Before you use this printer with your software applications, you must 
+install printing software. (Please review the “HP Software Product 
+License” in Appendix F of the User’s Manual.) For more information on 
+software components see Chapter 2 of the User’s Manual. 
+Note 
+If you use DOS programs also, see the following page. 
+Installing the MS Windows Printing System 
+The installation program for the MS Windows Printing System will install all 
+of the components needed for printing in a MS Windows environment 
+(version 3.1 and later). 
+Locate the disks titled HP LaserJet 5 Printing System for Microsoft® 
+Windows, and insert Disk 1 into drive A. 
+For Windows 3.1 
+1 Close all running applications. In the Windows Program Manager 
+screen, pull down the File menu. 
+2 Select the Run command. 
+3 Type A:SETUP in the command line box and click OK on the screen or 
+press Enter on your keyboard. 
+4 Follow the instructions on the screen to complete the installation.  
+For Windows 95 
+1 Click on Start. Select Settings. Select Printers. 
+2 Double Click on Add Printer. 
+3 Follow the instructions on the screen to complete the installation. 
+Note 
+Network utilities, such as JetAdmin are available through the Custom 
+Setup option during software installation. 
+18 Getting Started Guide 
+EN 
+Installing the DOS Printing Software 
+Each DOS software application requires a separate printer driver. This 
+installation program will install printer drivers and utilities for the 
+following DOS applications: 
+• WordPerfect (versions 5.1 and 6.0) 
+• Lotus 1-2-3 (versions 2.3, 2.4, 3.1, 3.4, and 4.0) 
+Note 
+If your DOS application is not listed, please contact your DOS 
+application vendor to obtain a printer driver.  
+If you are waiting to receive a driver for the HP LaserJet 5 printer, you 
+can substitute a driver for a similar HP LaserJet printer. These substitute 
+drivers allow you to use your HP LaserJet 5 printer but may not support 
+all of the printer’s features. 
+To install the DOS printing software: 
+1 Locate the disk titled DOS Application Utilities and Drivers and insert it 
+into your drive. 
+2 At the DOS prompt type A:SETUP and press [Enter] on your 
+keyboard. 
+3 Follow the instructions on the screen. 
+See Chapter 2 for more information on DOS printing software. 
+EN 
+Getting Started Guide 19 
+Step 14. Test Printer to Verify Setup 
+The easiest way to verify that the installation has been completed 
+successfully is to print a test file from a software application. 
+1 Make sure the printer is on (I) and the printer display reads READY or 
+POWERSAVE ON. 
+2 Load a software application of your choice (from either MS Windows or 
+DOS). 
+3 Make sure you have selected the LaserJet 5 driver within your 
+application. 
+4 Open or create a simple document. 
+5 Print the document.  
+If the test file prints, installation is now complete. If nothing printed, 
+use the following procedure to verify that the computer and printer are 
+connected properly. 
+1 Make sure the printer is on (I) and the printer display reads READY or 
+POWERSAVE ON. 
+2 From a DOS prompt type C:\DIR >PRN and press Enter on the 
+keyboard.  
+3 Press Go . The page should contain your directory listing. 
+If the directory listing printed but the test file above did not, repeat the 
+software installation procedures (Step 12). If nothing printed, go to the 
+problem solving questions on the following pages. 
+20 Getting Started Guide 
+EN 
+Common Questions about Setup 
+Test the Printer Operation 
+• What should I do if a blank page printed when I tried to print a self test? 
+Make sure that you have removed the toner cartridge sealing tape and 
+that the toner cartridge is installed correctly. 
+• What should I do if the paper jammed when I tried to print a self test? 
+Check for packing materials still in the printer (see Step 2). 
+Printer Difficulties 
+• What should I do if my printer will not print the test file or the directory 
+listing in Step 14? 
+Repeat the installation steps in this guide.  
+• Be sure you have removed all packing materials (Step 2). 
+• Be sure the toner cartridge is installed correctly and that the sealing 
+tape was removed (Step 5). 
+• Verify that the cables are the correct type (Step 11). 
+• Be sure that all cable connections are secure, connected securely, 
+with the right side up (Step 12). 
+For further assistance: 
+1 Consult your User’s Manual (see Chapter 7, “Solving Printer 
+Problems”). 
+2 Call the HP Dealer where you purchased your HP LaserJet 5 
+printer. 
+3 See the HP Support pages at the front of your User’s Manual for 
+customer service information. 
+EN 
+Getting Started Guide 21 
+22 Getting Started Guide 
+EN 
+
+
+---
+## 📖 MICROSOFT OFFICE
+*(Manba: Microsoft Office.pdf)*
+
+MICROSOFT OFFICE 365 
+FOR BEGINNERS 
+The Complete Step By Step Guide On How To Master And Use The 
+Power Of Office 365 For Beginners & Seniors With Word, Excel, 
+Powerpoint, Onedrive, Tips & Tricks 
+By 
+Alan McDonald 
+© Copyright 2024 Alan McDonald 
+All rights reserved. No part of this book shall be reproduced, stored in a retrieval 
+system, or transmitted by any means, electronic, mechanical, photocopying, recording, 
+or otherwise, without written permission from the publisher. Although every precaution 
+has been taken in the preparation of this book, the publisher and author assume no 
+responsibility for errors or omissions. Nor is any liability assumed for damages 
+resulting from the use of the information contained herein. 
+Table of Contents 
+INTRODUCTION 
+CHAPTER ONE 
+WHAT IS MICROSOFT 
+THE MICROSOFT GRAPH 
+WINDOWS 10 BECOMES THE MOST POPULAR DESKTOP OS 
+WHAT’S NEW IN MICROSOFT 365 
+SERVICES AND STORAGE IN THE CLOUD 
+HOW TO CREATE A NEW USER AND E-MAIL ADDRESS IN MICROSOFT 
+365 
+IMPORTING  
+SEVERAL  
+USERS  
+INTO  
+MICROSOFT  
+365 
+SIMULTANEOUSLY 
+MANAGING USERS IN MICROSOFT 36 
+CHAPTER TWO 
+HOW TO GET MICROSOFT OFFICE 365 FOR FREE 
+ADOPTING OFFICE ONLINE 
+INCORPORATING OFFICE MOBILE APPS 
+WORKING WITH OFFICE 365 FOR SCHOOLS 
+CREATING A JOINT ACCOUNT 
+CLAIM YOUR TRIAL NOW! 
+IMPORTING PREVIOUS VERSIONS OF MICROSOFT OFFICE 
+TRYING ALTERNATIVES 
+CHAPTER THREE 
+WHAT APPS ARE INCLUDED WITH MICROSOFT 365 
+WHAT IS SHAREPOINT 
+CHAPTER FOUR 
+HOW TO SET UP ONEDRIVE FOR BUSINESS 
+HOW TO USE MICROSOFT STREAM (MS STREAM) 
+WHAT IS MICROSOFT STREAM 
+USE OF MICROSOFT STREAM AND ITS ADVANTAGES 
+HANDLING VIDEO UPLOADS AND MANAGEMENT 
+GUIDELINES FOR MAKING THE MOST OF MICROSOFT STREAM 
+CHAPTER FIVE 
+HOW TO CREATE AND EDIT DOCUMENTS WITH MICROSOFT OFFICE 
+HOW TO SAVE A MICROSOFT DOCUMENT 
+HOW TO ATTACH FILE TO AN EMAIL 
+HOW TO INCLUDE AN ATTACHMENT IN AN EMAIL IN OUTLOOK 2013 
+HOW TO INCLUDE AN ATTACHMENT IN AN EMAIL IN OUTLOOK 2010 
+HOW TO ATTACH FILES TO AN EMAIL IN MAC OUTLOOK 
+CHAPTER SIX 
+HOW TO CUSTOMIZE OR CREATE NEW STYLES 
+HOW TO CREATE A POWERPOINT PRESENTATION 
+MAKING A BRAND-NEW POWERPOINT 
+MAKING THE TITLE SLIDE 
+NEW SLIDE INSERTION 
+MODIFYING SLIDE PRESENTATIONS 
+IMPLEMENTING CHANGES 
+PRESENTATION TESTING AND SAVING 
+CHAPTER SEVEN 
+HOW TO USE MICROSOFT OFFICE 365 CLOUD STORAGE 
+MAKING USE OF MICROSOFT'S OFFICE 365 CLOUD STORAGE 
+CHAPTER EIGHT 
+HOW TO MAKE A SPREADSHEET IN EXCEL 
+CHAPTER NINE 
+TIPS AND TRICKS 
+INTRODUCTION 
+The History Of Microsoft Office 365: The Early Days 
+Over the last decade, Microsoft 365 has transformed tremendously, going from being a 
+standard software suite to an intelligent cloud platform. Its trip has included the 
+following significant landmarks: 
+Embracing Cloud Computing 
+Office, Windows, and Servers were among Microsoft's products that started moving 
+toward a cloud-first strategy in 2012. Microsoft was able to maintain its competitive 
+edge by strategically adopting cloud computing. 
+The Launch Of Office 365 
+Along with web-based Office programs, Exchange, SharePoint, and Lync were all made 
+available in 2011 with Office 365. What this meant was that solutions for cooperation 
+and productivity could now be subscribed to. 
+Expanding After Work 
+In 2017, Microsoft renamed 365 to better represent its expansion outside Office 
+programs. Upgraded artificial intelligence capabilities, Windows 10, and Enterprise 
+Mobility Security were all part of the package. 
+Consistent Release Of Updates 
+Updates and new features are released to Microsoft 365 users many times a year. In 
+comparison to more conventional software releases, this enables more rapid innovation. 
+Cross-Product Integration With Microsoft 
+To provide customers and businesses with a unified set of products, Microsoft 365 is 
+highly integrated with Azure cloud, Dynamics 365, Power Platform, and Teams. 
+Maintaining Compliance And Security 
+Microsoft 365's security and compliance features are regularly updated to tackle new 
+threats and adapt to requirements like GDPR. 
+Market-Related Products And Services 
+Microsoft has released 365-based solutions tailored to the education, nonprofit, retail, 
+and healthcare sectors. 
+Over the years, Microsoft 365 has grown into a comprehensive cloud-based suite of 
+products and services. Although the original Office programs are still well-liked, 
+productivity is no longer the exclusive focus. Digital transformation, insight unlocking, 
+and team empowerment can all be achieved with the help of Microsoft 365, a strategic 
+platform. 
+CHAPTER ONE 
+WHAT IS MICROSOFT 
+In the summer of 2017, Microsoft introduced 365, an umbrella offering of software and 
+services for enterprises. The purpose of this article is to explain what Microsoft 365 is 
+in case anybody is still confused. Officials from Microsoft (who go by the acronym 
+"M365") define the package as Office 365 bundled with Windows 10 and Enterprise 
+Mobility. 
+Update: Microsoft launched a consumer version of 365 in March 2020. Plans for Office 
+365 have been superseded by that service, which is distinct from the commercial plans. 
+Not only does it have Office products, but it also contains OneDrive for cloud storage, 
+Outlook, Family Safety (including iOS and Android apps), and Teams for Families. 
+New consumer-targeted financial templates for Excel and Word style checks enabled by 
+AI are also part of it. 
+THE MICROSOFT GRAPH 
+Business, Enterprise, and Education editions of Microsoft Graph are all part of 
+Microsoft 365. The Business plan, which includes Office 365, begins at 
+$20/user/month. However, my Microsoft contact informed me that "Pricing varies based 
+on factors such as seat volume and total services provided by the Microsoft partner 
+involved in the sale." 
+WINDOWS 10 BECOMES THE MOST POPULAR DESKTOP OS 
+All the data you generate by using Office programs, the Microsoft Edge web browser, 
+and Microsoft's mobile apps (such as the Office apps for iOS and Android) is part of 
+the Microsoft Graph, which is used by Microsoft 365. Aside from that, there are other 
+inputs including LinkedIn company data, Azure Active Directory information, web- 
+indexing data from Bing, Outlook.com email, and SharePoint. 
+But that information is just the beginning of the Graph. The addition of Microsoft's 
+artificial intelligence and machine learning makes it stand out. The updated grammar- 
+learning features in Word are a good illustration of this. The ability to learn patterns of 
+language and provide additional kinds of corrections is a feature of cloud services. "I 
+saw fog in the air" is preferable to "I saw the fog in the air," for instance since it is 
+supported by a large body of evidence demonstrating the proper use. 
+Graph isn't limited to Microsoft applications; developers may use Graph APIs to create 
+proactive and intelligent apps that leverage Azure cloud services. A business may use 
+the APIs to create a unique control panel for administrators, for instance. 
+WHAT’S NEW IN MICROSOFT 365 
+One might argue that every new feature in Windows 10 or Office 365 is a new feature in 
+Microsoft 365 as they are both part of the same package. Insider Risk Management is a 
+brand-new service-exclusive function. This makes use of AI to keep an eye out for 
+potentially dangerous scenarios, such as when an employee leaves and downloads 
+confidential company information. It scans for both harmful and benign security flaws. 
+Half of the firms surveyed had suffered insider breaches in the last year, and 90% of 
+those organizations felt susceptible to insider risk, hence the protection is crucial. 
+New to Microsoft 365 is Advanced Audit, which is linked. The following features are 
+added by this Enterprise feature: 
+The current 90-day retention period for user audit activities will be 
+extended to a full year. 
+Making the Management Activity API more accessible in terms of 
+bandwidth 
+Investigational access to key events 
+An Android phone's picture gallery, alerts, and messages may be seen on Windows 10's 
+Your Phone app, a desktop window. Although Microsoft has not yet successfully 
+integrated Your Phone with iOS, the mobile device management features of Microsoft 
+365 are compatible with iPhones. Since Apple restricts access to its operating system 
+features more, Android is likely to have more functionality. That being said, a Microsoft 
+representative assured us that Your Phone would be compatible with iOS in due time. 
+THE OFFICE SUITE AND M365 
+Office 365 is very important to M365. If there is a change to the Microsoft Graph data 
+for your business, the adaptive cards that show in the Teams and Outlook messages will 
+update accordingly. An expenditure report might be approved by management directly 
+on a card. Using Microsoft Pay, you may also pay bills with a card. As you can see from 
+the buttons on the card below, they are both adaptable and actionable. 
+Mobile 
+Microsoft 365 offers mobile device management features in addition to the 
+aforementioned interactions with mobile apps. Aside from Windows tablets and PCs, IT 
+personnel may also deliver app and security settings to iOS and Android devices. 
+Automatic deployment is only available on Windows 10 computers; it is not available 
+on mobile operating systems. It is possible to establish platform-specific security rules. 
+SERVICES AND STORAGE IN THE CLOUD 
+For those times when you don't have your device on hand, Microsoft provides 
+OneDrive, an online storage and sharing service. They also make sure you have access 
+to all of the Office web programs. Users of Microsoft 365 also get access to Microsoft 
+Teams and the same 1 terabyte of cloud storage space in OneDrive as subscribers to 
+Office 365. In addition, they get SharePoint team intranet sites that may be customized. 
+SECURITY 
+Advanced Threat Protection, remote wiping, App protection (which limits copying or 
+saving proprietary data in mobile apps), Windows Defender Exploit Guard, and 
+unlimited cloud archiving for Exchange email are all part of Microsoft 365's more 
+robust security features compared to a basic Office 365 subscription. 
+HOW TO CREATE A NEW USER AND E-MAIL ADDRESS IN 
+MICROSOFT 365 
+Our control panel and Microsoft's control panel both allow you to create new users. 
+You get to decide. 
+Here are the procedures to take using the control panel we provided: 
+1. Find "Microsoft 365" under "My Products"; if you have more than one 
+tenancy, choose the one that best fits your needs. 
+2. Go to the left-hand menu and choose "Users." 3. 
+3. The "+Add" button may be used to add a new user. 
+4. Please provide your user name and choose an email address. 
+5. Verify the addition of the user. 
+6. Make a note of the temporary passcode. The user may set a new 
+password whenever he logs in. 
+7. The "Grant a license to this user" option allows you to automatically add 
+a license. 
+8. To choose a license, go to the "Grant license" page, click the drop-down 
+menu, and then confirm your choice. 
+Pro Tip: make sure you have several backups for your accounts and activate them all. 
+By doing so, you can keep your data safe. Not everything that can be restored is backed 
+up by Microsoft. 
+IMPORTING SEVERAL USERS INTO MICROSOFT 365 
+SIMULTANEOUSLY 
+Before any one on your team can use Microsoft Office online, they must first create a 
+user account. If you need to add a lot of users who will all have the same license, you 
+may do so in bulk by importing a CSV (comma-separated values) file or an Excel 
+spreadsheet. 
+Allow me to show you the way: 
+1. Access your admin module by logging in at https://admin.microsoft.com. 
+2. Choose "Users" > "Active users" from the admin center. 
+3. Choose "Add multiple users." 
+4. Get a.csv file started. 
+Tip: An example file that you may use to input your data is available for optional 
+download on the "Create and upload a file" panel. The column headings in your 
+spreadsheet should match the sample precisely (e.g., User Name, First Name, etc.). Put 
+"Jack Johnson" and "jack@mycompany.com" as the user names and screen names for 
+each user. 
+5. Locate the CSV file on your hard drive and click the "Browse" button. 
+6. Click "Check" once you've chosen your file. If an issue arises with the 
+file, the panel will display this. Additionally, a log file will be generated 
+and made available for download if desired. 
+7. Under the "Set user options" section, you may choose the license type to 
+give to each user and change their login status. 
+8. In the "Display Results" section: 
+Select whether you want the output delivered to you or the users; in 
+this case, the passwords will be sent in plain text. 
+The total number of users and whether or not extra licenses are 
+required for some of those users may be seen here. 
+9. At this point, your users are ready to begin using the Microsoft 365 
+services. 
+MANAGING USERS IN MICROSOFT 36 
+You may also manage the users you've established using your Microsoft 365 admin 
+account. 
+One way to handle user management is as follows: 
+1. Access the admin module: visit https://admin.microsoft.com 
+2. Select the "Manage" tab. 
+3. Access the "Active users" section by navigating to the "Users" menu. 
+4. After choosing a user, a drop-down menu will appear; from there, you 
+may choose: 
+Password removal 
+Oversee equipment licences 
+Control responsibilities 
+Users who export 
+Take charge of many email accounts 
+Change the username 
+Oversee teams 
+Keep track of information 
+Update the current login status 
+CHAPTER TWO 
+HOW TO GET MICROSOFT OFFICE 365 FOR FREE 
+One of the most widely used productivity suites globally is Microsoft Office, which is 
+currently called Microsoft 365. There are alternatives to paying for Office if you need 
+to open, edit, or create documents in the Office format. If you are a student or teacher, 
+your school may provide you with a free account that allows you to use the Office web 
+and mobile applications to create and edit documents online. We'll go over the steps for 
+accessing a shared account with a relative, finding an older version to download, and 
+starting a free trial. If they don't cut it, we'll walk you through some more programs that 
+are compatible with Office files. 
+Important Information 
+Online and mobile app versions of Microsoft 365 are available for free. 
+A free account with Microsoft is required. 
+Your school may be able to provide you with a free copy of Office if you 
+are a teacher or student. 
+Verify whether you or someone you know has access to Microsoft 365 
+Family. 
+Alternatively, you may test out Office for free for a month. 
+ADOPTING OFFICE ONLINE 
+1. Make Your Way To The Microsoft 365 Homepage. 
+You may download Microsoft Office applications like Word, Excel, and PowerPoint for 
+free from their website. You can still do almost all of your needs without installing or 
+paying for anything, even if these versions aren't quite as strong as the desktop ones. To 
+see what online applications are available, go to Office Online. 
+You can't make or change styles, utilize gridlines or rulers, personalize 
+the spellcheck dictionary, or open or edit documents secured by 
+passwords in the online Word edition. 
+2. Use Your Existing Microsoft Account Or Create A New One For 
+Free. 
+To begin using Office programs online, you will need to create a Microsoft account if 
+you do not already have one. Use the "Sign in" or "Sign up for free" buttons to access 
+the site. To sign in or register for an account, just follow the on-screen instructions. 
+Microsoft OneDrive, their cloud storage service, comes with 5 GB of 
+storage space with the basic free account. With the online Microsoft 365 
+suite, OneDrive will be the default location for all of your documents. 
+3. Choose The Web App That Best Suits Your Needs. 
+The Microsoft 365 web interface will load when you log in. In the main dashboard 
+area, you'll see the Create New header, and from there you may pick an app from the 
+left-hand toolbar or the list of possibilities. 
+Make a new Word document, for instance, by clicking the "Document" tile 
+that displays the Word symbol. 
+Your OneDrive account will be automatically populated with any 
+documents you generate. But if you go to the File menu, choose Save as, 
+and then Download a Copy, you may also save them to your computer. 
+By transferring them to OneDrive and then using the corresponding app, 
+you may access documents in the online edition of Microsoft 365. 
+You can control who may see and make changes to your documents by 
+using the Share function. 
+INCORPORATING OFFICE MOBILE APPS 
+1. Get The Microsoft 365 Applications For Your iOS, Android, Or 
+Windows Device. 
+If you own an Android or iOS device, you may download Microsoft Office for free. 
+You may find them in the App Store for iOS or the Google Play Store for Android. The 
+applications provide basic editing and creative tools in their free editions. You may 
+unlock more sophisticated features with an Office 365 subscription. 
+2. Approve The Office Applications' Access To Your Device's Storage. 
+Permission to access your device's storage may be requested when you first open the 
+applications. Permit access for the sake of simple file saving and loading. 
+3. Connect To Onedrive By Signing In With Your Microsoft Account. 
+When you first start the app, you'll be asked to sign in using your Microsoft account. 
+You may skip this if you don't want to, but if you do, you'll get 5 GB of storage on 
+OneDrive and be able to sync Office documents across all of your devices. 
+You can still send a copy or store it on your smartphone using the iPhone 
+Forward Share button, but you won't be able to save your papers when 
+you don't sign in. 
+Not being logged in could potentially cause the keyboard to malfunction. 
+4. You May Open Files From Other Places By Tapping The Folder Icon. 
+Files saved on your smartphone, files saved in cloud services like Dropbox or Google 
+Drive, files saved in your OneDrive, and many more may be accessed. For example, 
+Word can open DOC, DOCX, and TXT files, among all the commonly used formats 
+supported by the Office suite. 
+On the Home screen, you may see recently saved documents from your 
+OneDrive if you're signed in. 
+5. To Start A New Document, Click The Plus Sign. 
+Press the plus sign and then choose an option from the New screen to start a new 
+document. You have the option of starting with a new document or selecting one of 
+several pre-made templates. 
+6. Formatting Tools May Be Accessed Using The Buttons Located At 
+The Top. 
+The formatting frame may be accessed by pressing the pencil-shaped "A" button. From 
+the well-known Office tabs in this frame, you may choose basic formatting and editing 
+tools. You can see the available tabs by tapping the "Home" button. To see all of the 
+possibilities, just scroll up and down the formatting frame. 
+You may obtain quick-access formatting tools by swiping the bar above 
+the open keyboard to the left or right. 
+7. Select "Save" To Save The Changes. 
+With your login information, your document will be automatically saved at certain 
+intervals. A quick save may be made by tapping the Save button that appears, or by 
+tapping the Menu button in the top left corner and selecting "Save" at any point. 
+WORKING WITH OFFICE 365 FOR SCHOOLS 
+1. To Begin, Go To The Website For Office 365 Education. 
+Students and faculty at participating schools are eligible to get Office 365 at no cost. 
+Every one of Microsoft's desktop Office applications—Word, Outlook, 
+PowerPoint, Excel, OneNote, Teams, Access, and Publisher—are 
+available in the Education edition of Microsoft 365. 
+Get in touch with your school's IT help desk if you have any questions 
+about the free Office for Education program. 
+2. To Begin, Provide Your School Email Address. 
+Put your school's email address into the box at the top of the Office 365 Education 
+website. Beside the text box, you should see a blue Get Started button; click on it. 
+3. Come On, Choose One: I'm An Educator Or A Pupil. 
+The next step is for Microsoft to try to confirm your account. 
+An alternative login option or contact information about your school's IT 
+department will be shown to you if Microsoft is unable to confirm that the 
+email address you provided is still valid at your school. 
+4. Microsoft 365 May Be Downloaded On Your PC. 
+Just provide your school ID and password when prompted to access your Education 
+account if you qualify. The next step is to install Microsoft 365 by following the on- 
+screen prompts. The Office applications will be at your disposal without cost until you 
+either graduate or depart from the institution. 
+CREATING A JOINT ACCOUNT 
+1. Ask Around To See If Anybody You Know Has A 365 Family 
+Membership. 
+Up to five additional individuals may use a Microsoft 365 Family membership at the 
+same time. This is a simple method to get free access to the Office applications if you 
+know someone who has a subscription. 
+All users on the shared plan get access to 1 terabyte of OneDrive storage 
+space. 
+2. Instruct Them To Go to The Sharing Page To Log In. 
+Your  
+loved  
+one  
+may  
+begin  
+sharing  
+with  
+you  
+by  
+going  
+to 
+https://account.microsoft.com/services/office/sharing. Pick "Start Sharing" when they've 
+logged in. 
+3. Get Them To Choose Anything From The Share Office Drop-Down. 
+A pop-up window will appear, allowing them to send you an email invitation to share. 
+Another option is for them to copy the sharing link and then send it to you by email or 
+text. 
+4. Enter Your Microsoft Account Credentials And Click The Share 
+Link. 
+To access the You're Invited page, just click the sharing link or email invitation that you 
+get. To begin using Office 365, click Get Started and then follow the on-screen prompts. 
+To sign up for your free Microsoft account, you'll need to provide the 
+email address that your relative used to invite you. 
+5. Get Microsoft 365 Installed On Your PC. 
+The Microsoft 365 Family page will load when you log in with the shared account. You 
+may get the Office suite for free by clicking the Install Office button. 
+Assuming your relative keeps sharing their membership with you, you'll 
+have access for as long as their subscription is ongoing. 
+Account owners have the option to discontinue sharing with you 
+whenever they choose. 
+CLAIM YOUR TRIAL NOW! 
+1. Try Out Microsoft 365 Risk-Free For 30 Days With The Trial. 
+Downloading the free trial version of Microsoft 365 will provide you with one month 
+of access to the Office suite. This contains the most recent editions of all Office 
+products, including Word, Excel, PowerPoint, and Outlook. If you're looking for a free 
+trial of Office, your sole option is Microsoft 365. 
+A valid credit card is required to sign up for the free trial, but the first 
+payment won't be charged until the beginning of the second month. You 
+may avoid costs and make full use of the trial if you cancel before the end 
+of the first month. 
+2. Go Over To The Website For The Office Trial. 
+Visit the official Office website to obtain the trial version. To access the trial page, go 
+to https://www.microsoft.com/en-us/microsoft-365/try. 
+3. Hit The "Try It Out For A Month At No Cost" Option. 
+The registration procedure will start with this. 
+4. Your Microsoft Account Or A New One May Be Used To Log In. 
+Your Microsoft account login will be requested. You may sign in using any email 
+address associated with Hotmail, Live.com, or Outlook.com. Or, you can establish an 
+account at no cost. The trial cannot be accessed without first creating an account. 
+5. Type In A Legitimate Credit Card Number. 
+For the trial to begin, you'll have to provide a debit or credit card number. If you do not 
+cancel before the trial's conclusion, the monthly Office 365 cost will be charged to this 
+card, however, it will not be charged immediately. 
+6. Get The Office 365 Setup File. 
+A link to download Office 365 will be sent to you when you create an account and 
+submit your payment card information. Just a few seconds should pass throughout the 
+installation process since the installer is rather tiny. 
+7. Once You've Downloaded The Installer, Run It. 
+To start the real installation of Office, launch the installer when it has downloaded. 
+Before the download starts, you may have to log in to your Microsoft account again. 
+If you wish to install certain Office products, you may do so during the 
+installation process. Selecting unused applications may save up both time 
+and space on your hard disk. You have the option to reinstall them at a 
+later time in case you need them. 
+Having a sluggish internet connection will make the installation procedure 
+even more time-consuming. 
+In the Start menu, you should see all of your recently installed Office 
+products. The full functionality of the applications is at your disposal 
+throughout the trial period. 
+You may use your Microsoft account on any device to access the full 
+versions of Office programs during the free trial. 
+IMPORTING PREVIOUS VERSIONS OF MICROSOFT OFFICE 
+1. Keep In Mind That There Are No Freeware Versions Of Office 
+No desktop version of Office has ever been made freely available by Microsoft. 
+Nevertheless, if you still have the original product key or license, you may be able to 
+use an older version of Office. 
+2. If You Already Possess An Earlier Version, You May Download It 
+From The Microsoft Website. 
+You may be able to reinstall Office using your Microsoft account if you've ever had a 
+copy before. Only Office versions that were associated with your Microsoft account 
+will be able to use this. To begin: 
+Go on to account.microsoft.com/billing/orders where you may 
+In the Ordered within dropdown menu, choose All available. 
+Choose Product key/install when you've located the previous Office 
+version you want to reinstall. Just follow the on-screen prompts. 
+To start installing Office, click Install and then follow the on-screen 
+instructions. 
+3. Exercise Caution While Installing Office From A Cracked File. 
+You may get the whole Office suite, or just certain programs, from several websites 
+where you can download them for free. But it's possible these services aren't legitimate 
+or safe. You should have solid anti-malware software installed on your PC before trying 
+them. 
+You may find many versions of Office on Archive.org. For each version 
+of Office, you can find the product key or serial number on the download 
+page. You may try using it instead. Find what you need by searching the 
+software archive for "Microsoft Office": Here is the link to the software. 
+TRYING ALTERNATIVES 
+1. Compare The Many Desktop Office Alternatives. 
+You can get most of Office's features—and some that Office doesn't—from several other 
+apps. You can open and edit Office documents and many more open formats with any of 
+these apps. These three suites—FreeOffice, OpenOffice, and LibreOffice—are the most 
+widely used. 
+When compared to OpenOffice and LibreOffice, FreeOffice is the most 
+user-friendly and powerful solution. Try FreeOffice or LibreOffice if 
+you're an Office whiz. 
+2. Get The Program. 
+You may get the installer for the desired software once you've made a decision. 
+3. Launch The Setup Program. 
+After that, you'll be able to pick and choose whatever productivity apps to install. To 
+save time and space on your hard drive, install just the ones you want to use. 
+4. Learn How To Use Your New Software. 
+The aforementioned three alternatives to Office are all fully functional software 
+products with distinct user interfaces and functionality. That being said, you should be 
+prepared for a learning curve, particularly if you're coming from an Office background. 
+5. Think Of Office Apps That You Can Use On The Web. 
+The need to install productivity apps on your computer is decreasing as Internet 
+solutions get more sophisticated. There are several web-based productivity suites that 
+you may use in addition to the applications mentioned before. You may edit and upload 
+Office documents using any of these services. 
+Among the web-based choices, Google Docs stands out. With Google 
+Docs, Sheets, and Slides, you can create and modify presentations, 
+spreadsheets, and documents online. Wherever you save your papers, 
+you'll have access to them all via Google Drive. You may use Google 
+Docs with any Gmail account. Refer to Instructions for creating and 
+modifying documents are available in Google Drive. 
+There is another Office alternative that runs on the cloud: Zoho. 
+Compared to Google Docs, its interface is a lot more like Office. 
+Documents, spreadsheets, and presentations may be created, much as in 
+Google Docs. 
+If you're looking for an online alternative to Microsoft Office, OnlyOffice 
+has you covered for document, spreadsheet, and presentation creation. 
+CHAPTER THREE 
+WHAT APPS ARE INCLUDED WITH MICROSOFT 
+365 
+Whether you're a startup, an established firm, or a global powerhouse, Microsoft 365 is 
+an excellent choice for your digital transformation needs. 
+With the support of a suite of applications, web apps, hosted emails, and online storage 
+via Sharepoint and Onedrive, your whole team can work together seamlessly using 
+Microsoft's cloud hosting system. 
+Even if Zoho and Google are constantly innovating, Microsoft is still at the top of the 
+game and gives your team access to familiar apps with great features. 
+As this is the part that usually ensures your team works better together by simplifying 
+and streamlining typical operations, we are going to be concentrating on the 
+applications today. 
+We get a lot of questions about the applications that are part of Microsoft 365 for 
+business. The answer is that a broad variety of add-ons are available, but the Standard 
+and Premium business subscriptions come with all the traditional Microsoft Office apps 
+—mobile, online, and desktop—fully installed and kept up to date. Office 365 for 
+Business includes Outlook, Word, Excel, PowerPoint, and OneNote on the web and 
+mobile. 
+Here is a comprehensive list of all the applications that are automatically included in 
+the regular and premium packages: 
+☐    Word 
+☐    Excel 
+☐    Outlook 
+☐    Powerpoint 
+☐    OneNote 
+☐    OneDrive 
+☐    Sharepoint 
+☐    Microsoft Teams 
+☐    Exchange 
+☐    Microsoft Lists 
+☐    Microsoft Forms 
+☐    Access 
+☐    Publisher 
+☐    Microsoft Defender 
+However, these applications are our favorites: 
+The OneNote Program 
+Taking notes is a breeze using OneNote. I think that goes without saying. However, you 
+may also attach files and exchange notes with coworkers without ever leaving the app. 
+To take your note-taking to the next level, record audio, snap pictures, or capture screen 
+captures and insert them directly into your notes. 
+For reasons that should be readily apparent, the software excels on touchscreens and 
+tablets, and its well-structured design will ensure that you never again misplace that 
+crucial piece of information you took down during a client meeting. 
+The Outlook Program 
+When it comes to Windows email clients, Outlook is very much in a league of its own. 
+In addition to automatically sorting your inbox, the app lets you set up item notifications 
+for particularly relevant emails and even @certain colleagues to let them know about 
+upcoming assignments or essential changes. 
+The program works well with other Microsoft applications including the calendar 
+feature, which adds or edits events mentioned in emails automatically. One of our 
+favorite features is the ability to transmit a copy of a Microsoft Team chat. 
+A custom email domain may be created using the Microsoft 365 for Business package. 
+The Publisher Program 
+When you need to produce a visually appealing paper for customers but don't have 
+design skills, Publisher is a wonderful tool to use. 
+This program is available as a desktop application with the other Business 365 
+subscriptions, but it is not part of the business basics bundle. 
+Newsletters, brochures, calendars, email layouts, and a whole lot more are all within 
+your reach with the extensive library of themes. Stunning reports will be yours in no 
+time at all with this user-friendly program. 
+The Access Program 
+When it comes to managing databases inside the Microsoft 365 suite, Access is where 
+it's at. Instantaneously save and organize a plethora of data sources. 
+By enabling simple app creation, it becomes easy to build an app even if you don't 
+know how to code. Having this on hand will be invaluable when your firm expands and 
+you begin to tackle those pesky jobs and fill in those process gaps. 
+You may access a range of data sources in a familiar, understandable manner thanks to 
+the app's integration with them. 
+The Teams Program 
+Instant chat, calling, online meetings, and file sharing are all part of Microsoft Teams. 
+Teams, the pinnacle of telecommunications, make it simple to stay in contact with your 
+staff using any internet-connected device. No matter how far away your employees are, 
+you can be certain that they are always just an SMS away. In addition, there is a vast 
+collection of plugins that may be used to add further features, such as the ability to hold 
+themed quizzes or recognize good work. 
+You may personalize your Microsoft 365 experience and stay up-to-date with the latest 
+applications by using the app store. You may attach any additional work-related 
+applications, such as Slack or Photoshop, using this function. 
+WHAT IS SHAREPOINT 
+Businesses can quickly access, organize, and share information using SharePoint, a 
+web-based collaboration tool. Many companies utilize it as a platform to organize their 
+digital papers and assets. Office 365 offers SharePoint as a cloud service in addition to 
+its on-premises counterpart. 
+Site creation, content management, document library and list creation, and real-time 
+collaboration are all possible with SharePoint. Communication, project management, 
+and teamwork tools are also available. 
+WHAT IS OFFICE 365 
+Access all of Microsoft's Office apps—Word, Excel, PowerPoint, and Outlook— 
+through a subscription-based cloud service called Office 365. Services like SharePoint, 
+Yammer, and Skype for Business are also a part of it. Office 365 may be accessed from 
+any device with an internet connection and is offered as a subscription for both personal 
+and commercial use. 
+Files such as documents, spreadsheets, presentations, and more may be accessed, 
+stored, and shared across all devices with Office 365. Users may also chat with 
+coworkers and work together on papers in real-time. 
+HOW CAN YOU MAKE THE MOST OF SHAREPOINT WITH OFFICE 365? 
+There are several advantages to using SharePoint inside Office 365. With it, users may 
+save, retrieve, and collaborate on files from any internet-connected device. Users may 
+converse with coworkers and work together on papers in real-time. 
+Businesses that need to manage several projects and work with various teams will find 
+SharePoint to be an appropriate solution. It offers solutions for both project management 
+and team communication. With its built-in security safeguards and frequent upgrades, 
+SharePoint is also dependable and safe. 
+THE SHAREPOINT APP IN OFFICE 365: WHAT ARE ITS LIMITATIONS? 
+Office 365's SharePoint does have certain restrictions. For instance, because of the 
+2GB file size restriction, it is not ideal for big files. Another challenge for companies 
+who need to connect their apps is that SharePoint does not accept custom coding. 
+Another drawback is that SharePoint cannot be installed on-premises, so businesses 
+who want this feature will have to seek an alternative. Last but not least, SharePoint is a 
+complicated technology that may need extensive training for optimal usage. 
+HOW TO SET UP SHAREPOINT IN OFFICE 365 
+Office 365 makes setting up SharePoint a breeze. Accessing SharePoint requires first 
+logging into the Office 365 site. There you may choose an existing SharePoint site to 
+utilize or build a new one. The next step is to add users, adjust settings, and personalize 
+the site according to your requirements. 
+After you've built and configured your SharePoint site, you can begin managing 
+documents and collaborating with coworkers. By including your themes, web elements, 
+and applications, you may completely transform the appearance of your SharePoint site. 
+When it comes to online document management and collaboration, Microsoft SharePoint 
+is hard to beat. A lot of companies utilize it so their employees may stay in touch and 
+exchange files from almost anywhere in the world. Users can safely store and share 
+many types of material online using SharePoint in Office 365. More than that, it offers a 
+safe space for people to talk to one another and collaborate. 
+1. Log In To Office 365. 
+You must log into your Office 365 account before you can configure SharePoint inside 
+Office 365. After logging into Office 365, you may get to the SharePoint homepage via 
+the main menu. You may begin configuring and administering your SharePoint site from 
+this point. 
+2. Set Up A Sharepoint Site. 
+You may start a new SharePoint site when you're logged into Office 365. Just go to 
+SharePoint's main page and look for the "+ Create Site" button. In this section, you may 
+choose a template and give your site a name. After all of the necessary forms have been 
+filled out, you can proceed to build the site by clicking the "Create" button. 
+3. Include Users And Groups. 
+After you've set up your SharePoint site, you can begin adding people to it. Locate the 
+"People and Groups" option over on the left to do this. Entering email addresses or user 
+names allows you to add people and groups to the site. 
+4. Provide Access. 
+Setting permissions for users and groups is the next step after adding them to your site. 
+Locate the "Site Permissions" menu item on the page's left side and click on it. The 
+"Full Control" and "Read-Only" permission levels are only two examples of what may 
+be configured here for individual users and groups. 
+5. Build A Document Library. 
+A document library may be set up once user and group permissions have been 
+established. Select "Libraries" from the menu on the left side of the page to accomplish 
+this. Just type in a name and choose a template to start building your document 
+collection. 
+6. Insert Files Into The Library 
+You can add files to a document library after you've built it. Just go to the library page 
+and look for the "Add Files" button. Files saved on your PC or in OneDrive may be 
+uploaded here. 
+7. Distribute The Collection Of Documents 
+Your document library may be shared with other users after you've added files to it. Just 
+go to the library's website and look for the "Share" option. To share the library with 
+other people, just input their email addresses below. 
+8. Establishing A Team Site 
+A team site may be set up once the document library has been shared. To access this, go 
+to the page's left side and look for the "Team Sites" tab. Inputting a name and choosing a 
+template allows you to establish a team site here. 
+9. App Integration With The Team Site 
+Apps may be added to a team site after it has been built. Find the "Apps" tab on the left 
+side of the website and click on it to access this. You may integrate various applications 
+like calendars, to-do lists, wikis, and more in this section. 
+10.  
+Make The Team Site Public 
+You may invite other people to utilize your team site once you've added applications to 
+it. To do this, go to the team site and look for the "Share" button. The email addresses of 
+people you want to provide access to the team site may be entered here. 
+CHAPTER FOUR 
+HOW TO SET UP ONEDRIVE FOR BUSINESS 
+With Office 365, OneDrive for Business is immediately activated and prepared to 
+receive web-based file storage requests when users visit 
+The office 365 website is at lesley.edu. To enable automatic file syncing, you may also 
+install OneDrive for Business on your PC. 
+1. Press the Start icon on your computer. 
+2. You may access OneDrive for Business by scrolling down the menu. An 
+app start dialog box asking for a URL link will appear. 
+3. Keep that window open and go to http://www.lesley.edu/office365 in 
+your preferred web browser. To use OneDrive, go to Lesley's login page 
+and click on the square. 
+4. After you've highlighted the URL in the URL bar, right-click on it and 
+choose Copy from the menu that appears. 
+5. In the dialogue box that was left open in step #2, paste the URL. Finally, 
+click the Sync Now button. 
+6. After you paste the URL and click on Sync Now, you will be prompted to 
+provide your Lesley credentials. 
+7. Select "Show my files..." is an option that, when clicked, displays all of 
+your synced OneDrive files on your computer. 
+Everything is now ready for your OneDrive account. This folder allows you to upload 
+files and directories to the cloud simply by dragging and dropping them. In future 
+sessions, you may reach the OneDrive for Business folder by opening the documents 
+folder and locating it under the Favorites menu. 
+HOW TO USE MICROSOFT STREAM (MS STREAM) 
+Microsoft Stream was renamed in 2017 after its 2016 debut as Office 365 Video. That 
+way, it may be better integrated with other Microsoft products, which would enhance 
+the user experience. Since then, we've been listening to our users and responding to 
+their feedback by adding new features and improving old ones. 
+For companies looking to harness the power of video, it has become an indispensable 
+tool in recent times. Stream makes it easy to upload any kind of video, including 
+recordings of meetings, trainings, and presentations. To ensure compatibility and ease of 
+use, the platform accepts many file types. Stream also offers cloud storage, so you won't 
+need any other devices to watch your films. 
+Microsoft Stream's thorough search system is one of its notable features. Artificial 
+intelligence can automatically create subtitles and transcribe movies. Simply searching 
+for certain terms or phrases, makes it simple to find specific information inside a film. 
+To top it all off, Stream has strong security features to shield private video files. To 
+ensure that only authorized users may see or edit certain videos, administrators can 
+regulate access rights. Adding watermarks is another option to prevent illegal 
+distribution. 
+WHAT IS MICROSOFT STREAM 
+Improve your teamwork and communication with Microsoft Stream, a video-sharing 
+platform. Secure video uploading, viewing, and sharing is now possible thanks to its 
+integration with Microsoft Office 365. 
+Companies may use Stream for: 
+☐    Streamline communication across teams and departments 
+☐    Improve training programs 
+☐    Increase information exchange. 
+Stream also has safety measures. Data security measures include access restriction, use 
+monitoring, and encryption protocol enforcement by administrators. 
+To get the most out of Stream, consider these suggestions: 
+Make separate channels for various subjects or divisions. 
+Videos should have closed captioning enabled. 
+Inviting viewers to leave comments on videos promotes teamwork and the 
+sharing of information. 
+Stream may help organizations improve communication, increase productivity, and 
+engage their employees. 
+USE OF MICROSOFT STREAM AND ITS ADVANTAGES 
+Among its many advantages, Microsoft Stream is an effective tool. It improves user 
+collaboration and video content management. 
+Quickly Sort And Locate Videos: With Microsoft Stream, users can 
+easily sort and locate videos. 
+Enhance Collaboration: Make Teamwork Easier by Using the Platform 
+to Share, Comment, and Discuss Videos. 
+Sharing Confidential Information: Encryption keeps sensitive data 
+protected from prying eyes. 
+Transcription And Translation: Automated video transcription and 
+translation for cross-cultural teams. 
+Mobile Accessibility: You may watch videos on the go with the mobile 
+app. 
+Effective Search: Use sophisticated search to quickly find relevant 
+videos. 
+You may connect Microsoft Stream to SharePoint and Teams. In addition, customers 
+may gauge the performance of their content with the aid of its analytics tool. 
+GETTING STARTED WITH MICROSOFT STREAM 
+Here are five essential things to keep in mind when you begin using Microsoft Stream: 
+☐    Enter the login information for your Office 365 account. 
+☐    The capabilities of uploading, sharing, and managing are user-friendly. 
+☐    Look for channels or videos that interest you. 
+☐    Share thoughts and opinions with coworkers by commenting on and enjoying 
+videos. 
+☐    Make it your own by adjusting the parameters to your liking. 
+On top of that, there are other specifics: 
+☐    Several video formats are compatible with Microsoft Stream. These include 
+MP4, MOV, WMV, and AVI. 
+☐    To make videos more accessible, automatic transcription is one option. 
+The best way to ensure that only authorized teams or departments have access to 
+sensitive information is to set up private channels for that purpose. 
+HANDLING VIDEO UPLOADS AND MANAGEMENT 
+☐    Enter your login information to access your Microsoft Stream account. 
+☐    To begin, go to the page's header and look for the "Create" button. 
+☐    "Upload a video" is the option to choose from the menu that appears. 
+☐    Select the video file you want to upload by clicking the "Browse" button. 
+☐    Click "Upload" to start when you're ready! 
+Now let's have a look at some fantastic tools for handling video files: 
+Limit access by setting permissions. 
+Create channels for your video library. 
+For better accessibility, consider adding descriptions or captions. 
+To keep tabs on how engaged viewers are, Microsoft Stream also offers 
+statistics and insights. 
+Apply this information to make data-driven choices. 
+Harness the power of Microsoft Stream: 
+Make compelling movies. 
+Make better use of your time. 
+Seize the opportunity! Join this exciting platform now! Use it to your advantage to get 
+access to superior collaboration tools. 
+SORTING AND CLASSIFYING VIDEO FILES 
+A crucial component of video organization is tagging. Labels that provide information 
+about the content are called tags. This facilitates the search for certain themes or 
+subjects. To make your videos more discoverable, tag them appropriately. 
+Metadata is an additional classification system. Information such as the title, 
+description, length, and uploader's information are included in it. Finding movies 
+becomes much simpler when these areas are filled out correctly. 
+This is a real-life example that shows why it's important to sort and label videos. A 
+corporation's training videos number in the hundreds and are stored on several systems. 
+It was a pain to find them. After implementing Microsoft Stream and its metadata and 
+tags, however, staff members were able to locate necessary materials in a matter of 
+seconds. Both time and productivity were enhanced by this. 
+WORKING TOGETHER AND DISTRIBUTING FILMS 
+Quickly Disseminate: Microsoft Stream makes it easy to share movies 
+with coworkers. 
+Control Access: Managing Who Can View Your Videos Is Easy With 
+Permissions. Ensure the security of sensitive data. 
+Interactive: Engage team members by using likes, comments, and 
+discussion threads to solicit input. 
+Capture And Upload: You can record videos using your phone's camera 
+or webcam and then post them to Stream. 
+Searchable: Find videos fast with the help of robust search capabilities. 
+Get more done in less time. 
+Analytical Tools: Monitor interaction and get insight into patterns in 
+viewing. Choose video material based on data. 
+Anecdote: When people used to work on movies together, they had to 
+physically send each other burned DVDs or USBs. It is now easier and 
+quicker than ever before thanks to digital technologies like Microsoft 
+Stream. 
+SUPERIOR CAPABILITIES AND PERSONALIZATION CHOICES 
+Microsoft Stream provides sophisticated safety options. Organizational videos may 
+have their privacy settings adjusted by administrators. Only authorized individuals may 
+access sensitive material because of this. Access to certain movies may be granted 
+based on user-defined permissions. Data security is improved as a result of this. 
+You may do powerful searches on the platform. Video content, including faces, spoken 
+phrases, and keywords, may be searched. Time is saved and productivity is increased. 
+Companies may make their player unique. They need to include trademarks and color 
+palettes. As a result, the brand's visual identity is strengthened and becomes more 
+consistent. 
+Appropriate privacy settings should be specified by administrators. Permissions for 
+users should also be defined. In this manner, sensitive information may be securely 
+stored while allowing access only when necessary. 
+Make sure that people include keywords when they post videos. This makes them more 
+searchable in the future. 
+Organizations may reap the benefits of Microsoft Stream's customization options and 
+capabilities by implementing these tips effectively. An enhanced user experience, safer 
+data, and more efficient work are the outcomes of this. 
+GUIDELINES FOR MAKING THE MOST OF MICROSOFT 
+STREAM 
+Use these guidelines to get the most out of Microsoft Stream. Get your purpose clear 
+before you use it. Make sure your information is tailored to the purpose, whether it's 
+training, knowledge sharing, or announcements. 
+Second, arrange your videos into categories using channels and groups. Users will have 
+easier access and search capabilities as a result of this. 
+Furthermore, make use of the capabilities provided by Microsoft Stream. If you want 
+people to be able to access and search inside your movies, you should transcribe them. 
+To further engage visitors and collect input, try using interactive elements such as 
+quizzes and surveys. 
+Finally, remember to focus on the audio and lighting while you record videos. If you 
+want to enjoy watching, you need a good TV with clear pictures and good sound. 
+CHAPTER FIVE 
+HOW TO CREATE AND EDIT DOCUMENTS WITH 
+MICROSOFT OFFICE 
+With Office 365TM, you can create and modify presentations, spreadsheets, and text 
+documents that you can save to your Documents and Media collection. After making 
+changes in Office 365TM, be sure to preserve your work by checking the document in 
+the Documents and Media Library. 
+Enabling the connection between your DXP installation and Microsoft Office 365TM is 
+a prerequisite before beginning. 
+Proof Of Identity 
+Signing in with your Microsoft account is required the first time you use Office 365TM 
+to create or update Documents and Media. This is a one-time step since it connects your 
+OneDriveTM to your DXP account. 
+There are only three simple steps to disconnect your accounts: 
+1. Navigate to Account Settings by clicking on your profile. 
+2. Press on Applications on the General tab. 
+3. Next to OneDriveTM, click the "Revoke" button. 
+A relationship with OneDriveTM has been severed. 
+Creating Files 
+1. To access the Content & Data → Documents and Media section, open 
+the Product Menu, click on your Site's name, and then browse to that 
+section. 
+2. To include a certain kind of Office 365TM document in your Document 
+Library, just click the "Add" button and choose the appropriate option: 
+The following are trademarks: 
+Word 
+Excel 
+PowerPoint. 
+Picking one of these choices will bring up a new window where you can type in the 
+name of the document. 
+3. After you've given the document a name in the Title area, hit the Save 
+button. After you click the Save button, DXP will create a temporary file 
+in the Documents and Media folder and connect it to the new Office 
+365<® file. Once you click on an Office 365TM file, your browser will 
+open it in a new window where you may edit it. 
+4. To write your document, use the Office 365TM editor. 
+5. Preserve or remove your modifications to DXP: 
+After logging in, the file is saved to Documents and Media and subsequently 
+removed from Office 365TM. The format of the saved file is determined by the 
+document type that you choose in step two. 
+Format: Word (.docx) by Microsoft 
+Presentation:.pptx, Microsoft PowerPointTM 
+Word: Excel, created by Microsoft® (.xlsx) 
+Cancel Final Payment: Eliminates the Office 365TM file and all of its modifications. 
+Editing Files 
+Here are some examples of document and media file formats that are compatible with 
+Office 365TM: 
+The following file extensions are used: .doc, .docx, .docm, .dot, .dotx, .dotm, .html, .txt, 
+.rtf, .odt, and .ppt, .pptm, .pps, .ppsx, .ppsm, .pot, .potx, and .potm. 
+Formats supported by Office 365TM for editing include spreadsheets (.xls, .xlsx, .xlsm, 
+.xlt, .xltx, .xltm, .ods, .csv, .tsv, .txt, .tab): 
+1. Go to the library's Documents and Media folder and find the file. 
+2. In Office 365, go to the file's Actions icon (Actions) and then choose 
+Edit. Here, the file is checked out automatically, its contents are 
+transferred to a new Office 365TM file, and you are directed to that file. 
+3. Make changes to the file using Office 365TM. Following the steps 
+outlined above for file creation is identical to the editing procedure. 
+HOW TO SAVE A MICROSOFT DOCUMENT 
+Important Information 
+To create a new file, go to the "File" menu and choose the "Save As" 
+option. 
+Pressing Control + S (Windows) or Command + S (Mac) or clicking the 
+disk icon (toolbar) will immediately save any changes made to an existing 
+document. 
+Turn on AutoSave in Office 365 to have your changes saved to the cloud 
+at regular intervals. 
+1. Using This Feature, You May Provide The File's Name And Location. 
+Go to the File menu once you've made a new Word document, and then choose Save As. 
+A popup will appear, asking you to give the file a name and choose an area on your hard 
+drive or in your connected cloud storage account to save it. Use the file extension drop- 
+down option at the window's bottom to choose an extension (e.g., .docx, .pdf, or .xml). 
+Pick Save after that. 
+To access the Save As window on a Mac, press ↑+ ⌘ Command+s, or 
+press F12 on a Windows keyboard. 
+The Save As box will appear when you use the Save command to save a 
+document for the first time. 
+If you're saving the document locally, you may rename it, change its 
+format, or move it to a different folder by using the Save As command. 
+Nevertheless, some versions of Word may need you to use Save a Copy 
+rather than Save as Original when saving documents to OneDrive or 
+another cloud service. 
+2. Make Use Of This Feature To Commit Changes To An Already- 
+Existing Document. 
+Once you have your document open, go to the top of the screen and click on the File 
+menu. Next, hit the "Save" button. We will store any modifications you have made to 
+your file recently. 
+3. You May Save Your Changes With Only One Click With This Option. 
+You can find the Quick Access Tool Bar on the right side of your document window, 
+right at the top. You may save your work by clicking the Save button, which resembles a 
+square floppy disk from the 1980s. 
+4. You Can Quickly Save Your Most Recent Modifications Using These 
+Keyboard Shortcuts. 
+If this is your first time saving a document, you may also open the Save As window by 
+pressing the Save key on your keyboard. Press Control + s on a Windows computer. 
+Press the combination of ⌘ Command+s on a Mac. 
+5. Cloud-Based Document Storage Is The Only One That Supports 
+Autosave. 
+You won't need to manually save anymore using Word's AutoSave function in Office 
+365. Having an account with OneDrive, Box, or SharePoint is a must for using it, 
+however. Automated Saving: 
+Locate the Quick Access Toolbar in the upper right corner of your 
+document window and locate the toggle button for AutoSave. Click on 
+that. 
+An upload window to a cloud storage service will appear. Feel free to 
+give it a different name as well. Using the drop-down option labeled 
+"Place," choose the spot that suits you best. 
+If you want to use the default location, click Upload. If you want to use a 
+different place, choose Choose Location from the Place menu. 
+6. By default, Word Saves Most Documents As .Docx Files. 
+If you want to keep your document compatible with earlier versions of Word, you can 
+save it as a .doc file, but there are other options as well, such as .pdf or .txt. 
+This may be accomplished by going to the File menu and then selecting 
+Save As for any documents that are stored locally on your computer. 
+Choose the format you want to use in the File Format dropdown option 
+that is located toward the bottom of the Save As window. 
+The Save a Copy command, which is likewise found in the File menu, 
+should be used instead of AutoSave if your document has that feature 
+activated. In the File Format drop-down option located at the window's 
+bottom, choose the desired file type. 
+Please confirm your selection by clicking Save. 
+After you choose the format, you may be asked to Export the file instead 
+of Save it if it's a certain format, like.pdf. 
+7. A New Copy Of Your Document Will Be Made When You Choose 
+This Option. 
+To save both the current and previous versions of your work while making edits, this is 
+a great choice. Go to the File menu in Word, then choose Save a Copy to create a 
+duplicate of your document. Rename the duplicate even though it will remain in the 
+same folder as the original. In the Save a Copy box, locate the Save button and click on 
+it. 
+8. Word allows You To Modify Its Default Save Settings If You Don't 
+Like Them. 
+Choose Options from the File menu on a Windows PC, and then click Save. 
+To save changes in Word on a Mac, go to the main menu, choose Preferences, and 
+finally, choose Save. Then you'll be able to personalize things like: 
+Your Word documents' default format 
+How often does Word save data with AutoRecover? 
+The location of the AutoRecover files 
+The standard setting for where documents are stored (e.g., a folder on 
+your computer or a cloud storage service). 
+HOW TO ATTACH FILE TO AN EMAIL 
+One or more files may be attached to any message, whether you're writing a new 
+message, responding to an existing one, or forwarding it. 
+Tip: As you attach files to emails in Outlook, the program remembers which ones 
+you've been working on lately and proposes them. 
+1. Select Attach File from the Message or Insert menu in any message— 
+new, reply, or forwarded. 
+2. Among Recent Items, Browse Web Locations, and Browse This PC, 
+choose the file you want to open. 
+3. A copy of this file is attached to your message and will be sent along with 
+it. 
+HOW TO INCLUDE AN ATTACHMENT IN AN EMAIL IN 
+OUTLOOK 2013 
+1. Pick Attach File in a fresh message. 
+2. Choose the file you want to attach from your computer's file system. 
+3. Pick Insert. 
+4. A copy of this file is attached to your message and will be sent along with 
+it. 
+HOW TO INCLUDE AN ATTACHMENT IN AN EMAIL IN 
+OUTLOOK 2010 
+1. Make up a fresh message. React to a current message by selecting Reply, 
+Reply All, or Forward. 
+2. Select Attach File from the Include group in the Message tab of the 
+message window. 
+3. Choose the file you want to attach by browsing its location. 
+4. Pick Insert. 
+5. A copy of this file is attached to your message and will be sent along with 
+it. 
+Tip: You may attach files to your messages using the instructions found on the Insert tab 
+in the Include group. Another option is to just drag and drop files into the message 
+window from your computer's directories. 
+HOW TO ATTACH FILES TO AN EMAIL IN MAC OUTLOOK 
+These steps apply to all versions of Outlook for Mac, including Microsoft 365, Outlook 
+2019, Outlook 2016, and Outlook 2011. 
+1. You may attach a file to your message by going to the Message tab and 
+then clicking the paper clip symbol. 
+2. Find and choose the object you want to attach. 
+Another way to include files in an email is to drag and drop them from your computer's 
+desktop or Finder into the message body. 
+Limitation On File Size Issue 
+If the size of the attachment is more than 20 MB, Outlook will not transmit the message. 
+An error notice will be shown if the attachment size is very huge. 
+CHAPTER SIX 
+HOW TO CUSTOMIZE OR CREATE NEW STYLES 
+Using styles, you may uniformly apply a predefined set of formatting options to your 
+whole page. If you're looking for formatting options that aren't accessible in Word's 
+built-in styles and themes, you can always change an existing style to make it work for 
+you. Styles applied to headers, paragraphs, lists, etc., allow you to adjust formatting 
+(such as font size, color, and text indentation). Another way to add a new style to your 
+document is to pick the formatted text and then go to the Styles gallery. 
+You may find the styles discussed in this post in the Styles gallery, which is a visual 
+menu on the Home page. Pick out the text you want to format, and then go to the Styles 
+gallery to choose the desired style. See Word's "Apply a style to text" for additional 
+information. 
+Alter A Preexisting Design 
+There are two options available to you when editing an existing style in the Styles 
+gallery: 
+Make changes to a style so that it conforms to the formatting of your 
+document. 
+The Modify Style dialog box allows you to manually modify a style. 
+Make Changes To A Style So That It Conforms To The Formatting Of Your 
+Document. 
+You may modify the formatting of existing styled text in your project and then apply it to 
+a style from the Styles gallery. 
+1. Find the styled text in your document, such as Heading 1. 
+The highlighted style will appear in the Styles gallery when you choose text 
+with an applied style. 
+2. Apply your desired formatting styles to the chosen text. 
+For Heading 1, for instance, you may want to alter the point size from 16 to 
+14. 
+3. You may modify an existing style by right-clicking on it in the Styles 
+group on the Home tab. Then, choose Update [Style Name] to Match 
+Selection from the menu that appears. 
+Note: After you specify a new style, any text using that style will instantly update to 
+reflect it. 
+The Modify Style Dialog Box Allows You To Manually Modify A Style. 
+Rather than modifying the text in your document, you may make changes to a style 
+directly in the Styles gallery. 
+1. Select a style from the Styles gallery on the Home page, then right-click 
+on it to modify. 
+2. You may modify the font style, size, color, alignment, line spacing, and 
+indentation, among other formatting options, under the Formatting section. 
+3. You may make the style change work just for this document or for all 
+papers going forward. 
+Make A Fresh Look By Modifying The Document's Formatting 
+One way to add formatting to your document is by selecting text and then creating a new 
+style in the Styles gallery. 
+1. Select the text you want to apply a new style to by right-clicking on it. 
+2. Pick Styles from the tiny toolbar that pops up, and then choose Create a 
+Style. 
+3. Click OK to create a new style. In the dialog box that appears, name your 
+style. 
+You can now see your updated look in the Styles section of the gallery. 
+Important: To make your new style visible in all future Word documents, right-click on 
+it in the Styles gallery, choose Modify, and finally, at the bottom of the dialog box, 
+choose New documents based on this template. 
+HOW TO CREATE A POWERPOINT PRESENTATION 
+Important Information 
+No matter your level of expertise, using a template makes it simple to 
+produce eye-catching presentations. 
+Simply click and drag the edges of the images you want to use to change 
+their size. 
+Slides or even specific components, like as text blocks or bullet points, 
+may have animated transitions added to them. 
+MAKING A BRAND-NEW POWERPOINT 
+1. Get PowerPoint Going. 
+Launch PowerPoint by clicking or double-clicking its icon, which looks like an orange 
+box with a white "P" on top. Doing so will take you to the PowerPoint templates 
+website. 
+Using the internet is an alternative to the desktop version for those who do 
+not have a Microsoft Office 365 subscription. To access the web-based 
+version, visit https://powerpoint.office.com/. 
+While a PC with a bigger screen, mouse, and keyboard makes making 
+presentations much simpler, the mobile app does the job as well. 
+2. Choose A Template. 
+Select the desired template by clicking on it. A window will open on it. 
+If you would like not to utilize a template, you may skip this step by 
+selecting the Blank option located on the top left of the page. 
+3. Pick A Topic If You Can. 
+You may alter the color scheme and/or theme of your template by clicking on one of the 
+colored boxes in the lower-right corner of the window. Many templates provide various 
+options for these. 
+If the template you've chosen doesn't come with any themes, you may skip 
+this step. 
+4. Click On Create. 
+Put it in the corner of the window on the bottom right. After you do this, PowerPoint 
+will generate your presentation based on the template you choose. 
+MAKING THE TITLE SLIDE 
+1. Make Sure You Know How The Title Slide Should Look. 
+The title slide of your PowerPoint presentation, in contrast to the rest of the slides, 
+should include no material whatsoever, except for the title and subtitle. If you're making 
+a PowerPoint, this is essential. 
+Skipping this step is OK if your PowerPoint presentation does not include 
+an elaborate title slide. 
+2. Give It A Name. 
+Start by typing in your title in the big text box located in the center of the first slide. 
+If you go to the orange ribbon at the top of the window and click on the 
+Home tab, you'll see options to modify the font and size of the text. 
+3. Put The Subtitle On It. 
+To change the subtitle, find the little text box under the title and click on it. 
+Feel free to leave this field blank if that's more your style. 
+4. Sort The Text Boxes Underneath The Titles. 
+To move a title box around a slide, put your mouse pointer over one of its borders, and 
+then click and drag the box. 
+Another way to change the size of a text box is to click and drag one of its 
+corners. 
+NEW SLIDE INSERTION 
+1. Select Insert From The Menu. 
+The PowerPoint window has it at the very top. A new toolbar will appear close to the 
+window's top. 
+In Mac OS X, the Home tab is where you should be clicking. 
+2. Press The "New Slide" Button. 
+You'll find it on the toolbar's far left. A menu with drop-down options will show up 
+when you do this. 
+To access Android 7 on a Mac, locate the New Slide icon in the toolbar 
+and click the drop-down arrow that appears. 
+To insert a new text slide, click the white slide-shaped box that is located 
+above this choice. 
+3. Choose A Slide Style. 
+Select it from the drop-down menu and then click "Add to Presentation": 
+Title Slide 
+Title and Content 
+Section Header 
+Two Content 
+Comparison 
+Title Only 
+Blank 
+Content with Caption 
+Picture with Caption 
+4. Slides That You Believe Will Be Necessary May Be Added. 
+A few slides added at the beginning will give you a sense of the presentation's structure 
+as you go along, but you can always add more as needed. 
+5. Slides May Be Repositioned As Required. 
+Click and drag the preview box of a slide in the left-hand column of the PowerPoint 
+window to reposition it once your presentation has more than one slide. 
+The title slide, being the first slide in the presentation, should naturally be 
+located at the top of the left-hand column. 
+MODIFYING SLIDE PRESENTATIONS 
+1. Navigate To A Slide. 
+To update a slide, find it in the preview list and click on it in the left column. Clicking 
+this will bring up the slide in the main window of the presentation. 
+2. Locate A Text Field. 
+You can add text to a slide if you've chosen one with a text box. 
+This step and the two that follow it may be skipped if the slide template 
+you've chosen does not include text boxes. 
+3. Embellish The Slide With Text. 
+Type what is required after clicking the text box. 
+In PowerPoint, text boxes may automatically style much of your text (by 
+adding bullet points, for example) depending on the content's context. 
+By selecting Notes from the drop-down menu at the bottom of each slide, 
+you have the option to add text that will not be included in the 
+Presentation but will remain visible on your screen. 
+4. Style The Text On The Slide. 
+After you've chosen the text you want to edit, go to the "Font" part of the toolbar to 
+examine your text formatting choices. If needed, click the Home tab. 
+By selecting the current font's name and then clicking on your desired font, 
+you may change the font of the chosen text. 
+To adjust the font size, click the numbered drop-down box and choose an 
+appropriate number, either bigger or lower, depending on your 
+preference. 
+From this page, you may also alter the color, bold, italic, underlining, and 
+many other formatting options. 
+5. Display Images On The Slide. 
+Select an image to include on your slide by clicking the Pictures icon in the toolbar once 
+you've clicked the Insert tab. 
+6. Reorganize The Contents Of The Slide. 
+You can click and drag elements around the slide, much like your title slide. 
+Particularly useful for resizing images is the ability to click and drag the 
+image's corners. 
+7. Do This Again For All Of The Presentation Slides. 
+Moving on to the next step is possible when you have made all of the slides for your 
+presentation. 
+Always make sure that your slides are clean and uncluttered. Limit the 
+quantity of text on each slide to no more than 33 words. 
+IMPLEMENTING CHANGES 
+1. Navigate To A Slide. 
+To add a transition to a specific slide in PowerPoint, find it in the left-hand column and 
+click on it. 
+2. Navigate To The Transitions Section. 
+The PowerPoint window has it at the very top. The Transitions toolbar, located at the 
+window's very top, will be opened. 
+3. Choose A Transition From The Ones That Are Provided. 
+In the middle of your presentation, you may see a list of various transitions; using them 
+will make your slide appear in an engaging and attention-grabbing way. 
+4. See A Changeover In Action. 
+To preview a transition while it runs on your slide, click on it in the window's upper- 
+right corner. 
+5. Choose A Transition. 
+To confirm that a transition is chosen, click on it. You may choose the transition to 
+utilize for the current slide. 
+6. Slide Content Should Have A Transition Included. 
+After choosing the desired material (such as an image or a bullet point) on the slide, go 
+to the Animations tab in the main window, and then choose the desired transition. 
+Slide content will animate according to the sequence in which transitions 
+are assigned. To illustrate the point, consider an animated slide with a 
+picture and a title. In this case, the photo will take precedence over the 
+title. 
+You may automate the progression of your presentation by setting each 
+slide to Advance and adjusting the pace of each transition to match your 
+speech. the third 
+PRESENTATION TESTING AND SAVING 
+1. Go Over Your Powerpoint Presentation. 
+After you've added most of the material to your PowerPoint presentation, go over each 
+slide to make sure nothing is missing. 
+2. Next, Choose The Slide Show Option. 
+Located at the very top of the window is this tab. When you do this, the Slide Show 
+toolbar will popup. 
+3. Start With The First Click. 
+On the toolbar, you may see it in the far left corner. Slide show view will appear when 
+you launch your PowerPoint presentation. 
+4. Scroll Through The Slideshow Four Times. 
+The presentation may be advanced and rewound using the arrow keys on the left and 
+right. 
+Press the Esc key to exit the presentation. 
+5. Before Moving Further, Make Any Required Revisions. 
+After you've finished browsing through the presentation, make any necessary edits (such 
+as adding missing facts or removing unwanted stuff) and save. 
+6. You Should Save Your Powerpoint Presentation. 
+Your presentation will be saved as a file, and any machine running Windows or Mac 
+with PowerPoint installed may open it: 
+Windows users may double-click after selecting File, then Save. On this 
+computer, choose a place to store your presentation, give it a name, and 
+then hit the store button. 
+To save a presentation on a Mac, go to File > Save As..., then type the 
+name of the presentation into the "Save As" form. Then, choose a folder to 
+save to by choosing the "Where" box and then click Save. 
+CHAPTER SEVEN 
+HOW TO USE MICROSOFT OFFICE 365 CLOUD 
+STORAGE 
+You can safely save your files in the cloud with Microsoft Office 365 and access them 
+from any device, at any time. It offers a full-featured platform for collaboration and 
+productivity thanks to its compatibility with the Microsoft Office suite. However, the 
+question remains: how precisely can one make use of this cloud storage system? 
+Just drop your files into the appropriate cloud folders to begin using Microsoft Office 
+365 Cloud Storage. Then, no matter what device you use, these files will be 
+automatically synced so that you always have the most recent version. The cloud storage 
+option enables easy collaboration and real-time changes, which boosts efficiency and 
+productivity in your everyday chores, whether you're working on a paper, a 
+presentation, or spreadsheets. 
+File sharing and management are made easy with Microsoft Office 365 Cloud Storage. 
+The first step is to access OneDrive from your Office 365 account. You may organize 
+your data, create folders, and upload files here. To send a file to someone else, all you 
+have to do is pick it, click the "Share" button, and then input their email addresses. For 
+extra safety, you may also establish permissions. With Office 365 Cloud Storage, your 
+data is protected, easily accessible, and can be managed from any location. 
+USING MICROSOFT OFFICE 365 CLOUD STORAGE TO SAFELY STORE 
+AND ACCESS YOUR FILES 
+Store your files safely and conveniently in the cloud with Microsoft Office 365 and 
+access them from any device, at any time. It has grown in importance as a tool for 
+people and companies alike due to its robust features and easy compatibility with 
+Microsoft Office. Learn everything you need to know about optimizing your file 
+management and collaboration processes with Microsoft Office 365 Cloud Storage in 
+this article. 
+1. Managing File Uploads And Organization 
+Importing and organizing your files is a crucial first step in making the most of 
+Microsoft Office 365 Cloud Storage. Either utilize the app's built-in upload function or 
+just drag and drop files into the cloud storage interface. After the files have been 
+uploaded, you may sensibly arrange them by creating folders and subfolders. 
+Effective file management relies on a well-organized file system. Make use of folders to 
+organize your files according to projects, departments, or anything else that works for 
+your workflow. To take file structure and searchability to the next level, you may add 
+information like tags or descriptions. 
+Additionally, you can discover the files you need quickly using the advanced search 
+tools offered by Microsoft Office 365 Cloud Storage. File names, keywords, and even 
+custom characteristics may be used for searches. This makes sure that no matter how 
+much data you keep in the cloud, you will always be able to easily find what you need. 
+Tools For Working Together And Sharing 
+Microsoft Office 365 Cloud Storage is all about teamwork and sharing. By offering 
+them access rights, you may simply share folders and files with customers, coworkers, 
+or business partners. To protect sensitive information, you may choose a time limit for 
+when the shared link will no longer be active and decide whether or not recipients can 
+access or make changes to the files you've sent them. 
+On top of that, you can work together on files in real-time using Microsoft Office 365 
+Cloud Storage. Any modifications made by one user are immediately reflected across 
+all devices in the shared document. This makes it easy for teams to work together 
+smoothly by removing the need to manually update files and making sure that everyone 
+is using the most recent version. 
+Adding the ability to remark on certain sections of a file facilitates feedback and 
+ideation inside the document itself, which further improves cooperation. Efficacious 
+communication and cooperation are fostered by notifications and email alerts that keep 
+everyone informed about the changes and conversations taking place in the shared files. 
+Cooperation With Office By Microsoft 
+Integrating with the rest of Microsoft's Office suite is a breeze with Microsoft Office 
+365 Cloud Storage. Documents saved on the cloud may be accessed, edited, and saved 
+immediately from inside programs such as Word, Excel, and PowerPoint. 
+All of your hard work is automatically backed up and available from any device when 
+you save documents straight to cloud storage as you work. This ensures that your data 
+will never be lost because of an accident or malfunctioning equipment. Furthermore, 
+you can easily sync your files across several devices, guaranteeing that you can access 
+the most recent version whenever you need it. 
+In addition, you may work on files with other people who use various Microsoft Office 
+apps thanks to the integration. Take Excel as an example. You can make a spreadsheet, 
+upload it to the cloud, and then use Excel Online to let others make changes and give 
+you comments. This adaptability guarantees interoperability across various Office apps 
+and facilitates collaboration with disparate teams. 
+Protecting Personal Information 
+Data privacy and security are major considerations while using cloud storage. You can 
+be certain that your files and critical information are well-protected with Microsoft 
+Office 365 Cloud Storage and its many capabilities. 
+Before anything else, be assured that your data is safe with Microsoft since they use 
+strong encryption techniques for both transport and storage. To prevent unauthorized 
+individuals from accessing your data, we use encryption methods and protocols that are 
+widely used in the industry. Also, your files are safe in the Microsoft data centers 
+because of the stringent physical access restrictions and other security measures. 
+My second point is that you can decide who may see what files and folders inside your 
+account. To ensure that only authorized users can see, change, or share your files, you 
+have the option to set permissions. To further guarantee that no unauthorized individuals 
+may access your cloud storage, you have the option to use multi-factor authentication. 
+Lastly, ISO 27001 and GDPR are only a few of the certifications and standards that 
+Microsoft abides by. Having your files kept and managed in a compliant and secure way 
+is reassuring since they are subject to stringent privacy and security compliance 
+requirements. 
+2. Recovering From Backups 
+Data backup and recovery is another critical component of data security. If you 
+inadvertently remove a file, you may restore it from an earlier version thanks to 
+Microsoft Office 365 Cloud Storage's automated backup feature. 
+Microsoft has solid disaster recovery procedures in place to restore data in the case of 
+hardware failure or other unanticipated events. Doing so will safeguard your data and 
+make their restoration a breeze. Data security and integrity are paramount to Microsoft, 
+which is why they routinely back up their systems and have a strategy in place for 
+disaster recovery. 
+3. Sophisticated Functionality And Interfaces 
+In addition to the standard file-sharing and storage capabilities, Microsoft Office 365 
+Cloud Storage provides several useful extras that may boost your efficiency even more. 
+You can sync your files so you can access them offline, for example. To work on certain 
+files or folders even when you don't have internet access, you may choose to have them 
+synchronized to your local device. The moment you connect to the internet, all of your 
+edits will be synchronized to the cloud. 
+Another great thing about Microsoft Office 365 Cloud Storage is that it works with all 
+of Microsoft's major productivity apps, including SharePoint and Teams. As a result, 
+you can streamline your process and increase team productivity via effortless 
+collaboration and file sharing inside these platforms. 
+In addition, the sophisticated search features allow you to easily identify certain 
+information or keywords inside files by searching for them based on content within the 
+files themselves. 
+Connectivity And Extensions From Other Parties 
+The capabilities of Microsoft Office 365 Cloud Storage may be expanded with the help 
+of third-party connectors and add-ons. One way to improve efficiency and teamwork is 
+to combine cloud storage with other applications, such as CRMs or project management 
+software. 
+Advanced file analytics, automated processes, and smooth connectivity with other cloud 
+storage providers are just a few examples of the extra features and capabilities that add- 
+ons may bring. You may personalize the cloud storage solution to fit your needs by 
+choosing from a variety of connectors and add-ons. 
+STORAGE OPTIMIZATION AND EFFICIENT MANAGEMENT 
+You should optimize and manage your storage effectively as your use of Microsoft 
+Office 365 Cloud Storage increases. Make the most of your cloud storage with these 
+helpful hints: 
+Free up storage space by reviewing files regularly and removing those 
+that aren't needed. 
+You may limit the sync to only the folders and files you require on each 
+device by using selective sync. 
+To make space and boost speed, think about putting older files in storage 
+that aren't used often. 
+Make the most of your storage space by compressing files. 
+Your cloud storage can stay organized, efficient, and performing at its best if you follow 
+these steps. 
+MAKING USE OF MICROSOFT'S OFFICE 365 CLOUD 
+STORAGE 
+One of the many cloud-based productivity tools offered by Microsoft Office 365 is 
+cloud storage. Using Microsoft Office 365 Cloud Storage effectively is as follows: 
+To Access Your Storage: Open the "OneDrive" or "SharePoint" app after 
+logging into your Microsoft Office 365 account. 
+To upload files from your device to your cloud storage, just click the 
+"Upload" button. The alternative is to use the app's built-in drag-and-drop 
+functionality. 
+Linking Documents: If you want your local storage and the cloud to sync 
+automatically, install the OneDrive sync client. The most recent versions 
+of your files will be automatically saved in the cloud. 
+Pressing the "Share" button when you right-click on a folder or file will 
+create a shareable link. For extra safety, you may establish password 
+protection and determine who can access what. 
+Document Collaboration: Files in Microsoft Office 365 Cloud Storage 
+may be edited by several users at the same time. Sharing files in real time 
+allows others to see, modify, and comment on them. 
+CHAPTER EIGHT 
+HOW TO MAKE A SPREADSHEET IN EXCEL 
+BUILDING AN ELEMENTARY SPREADSHEET 
+1. Open Microsoft Excel. 
+It's in the Applications folder on macOS or the Start menu on Windows. A prompt to 
+create or choose a document will appear when the program opens. 
+You can make a simple spreadsheet using the free online edition of 
+Microsoft Office at https://www.office.com if you don't have a 
+commercial version of the software. Enter your Microsoft account details 
+and then locate Excel in the list of icons. 
+2. To Start A New Workbook, Click The "Blank Workbook" Button. 
+The document containing your spreadsheet(s) is called a workbook. On the tab at the 
+bottom of the page, you can see that this produces a blank spreadsheet named Sheet1. 
+To construct more complicated spreadsheets, you may add new sheets by 
+clicking the plus sign next to the first one. You may switch between 
+spreadsheets using the tabs at the bottom. 
+3. Learn Your Way Around The Spreadsheet. 
+At first glance, the spreadsheet seems to be structured with hundreds of rectangular 
+cells arranged in columns and rows. Somethings to keep in mind with this design: 
+The spreadsheet has numerical labels for each row and alphabetical 
+labels for each column. 
+The address format for each cell is the letter of the column followed by 
+the number of the row. Take cell A1 in the first row, the first column (A) 
+as an example. Its address is A1. Cell B3 in row 3 of column B has the 
+address B3. 
+4. Please Input The Requested Info. 
+You may begin typing in any cell with just a single click. To go to the next cell in the 
+row or the next cell in the column, use the Tab or Enter key, respectively, after you're 
+done with that cell. 
+In addition to what you see in the column, the information in the bar 
+across the top of the spreadsheet also updates as you input. For inputting 
+lengthy lines of data or formulae, you may make use of this bar, which is 
+named the Formula Bar. The third 
+You may return the pointer to an editable state by double-clicking on a 
+cell that already contains data. As an alternative, you may edit the formula 
+bar directly after clicking the cell. 
+Pressing Del after clicking a cell will remove all of its contents. Without 
+affecting the data in other columns or rows, this sets the cell to be blank. 
+Press Ctrl (PC) or ⌘ Cmd (Mac) as you click each cell you want to 
+remove, followed by Del, to erase several cell values simultaneously. 
+Use the right-click menu to insert a new blank column between two 
+existing ones; just hover your mouse over the letter above the column you 
+want to insert the new one after, and then click Insert. 
+To insert a new blank row between two existing rows, find the 
+appropriate area in the table and right-click the row number. Then, choose 
+Insert from the menu. 
+5. Examine The Features That Are Accessible For More Complex 
+Applications. 
+Accessing data and doing calculations based on mathematical formulae are two of 
+Excel's most valuable capabilities. An Excel function is the "action" that is included in 
+every formula you construct. The formula always starts with an equal (=) sign followed 
+by the name of the function, such as =SUM, =LOOKUP, or =SIN. Parameters should 
+then be input inside parenthesis (). To get a feel for the many Excel features at your 
+disposal, follow these steps: 
+At the very top of the page, you should see the Formulas tab. In the 
+"Function Library" panel, you can see several icons in the application's 
+toolbar located at the top. Once you're familiar with the interface, 
+navigating the library is a breeze with those icons. 
+To access the Insert Function, which also shows a fx, click on the icon. 
+On the bar, it ought to be the top icon. You may search for specific 
+functions or explore them by category in the Insert Function screen that 
+appears when you do this. 
+Go to the "Or select a category" drop-down menu and pick a category. 
+One of the predefined categories is "Most Recently Used." For example, 
+to access the math functions, you can pick Math & Trig. 
+The syntax and explanation of each function may be seen by clicking on 
+them in the "Select a function" window. To get additional information 
+about a function, just click on the "Help" button. 
+Once you have finished browsing, click Cancel. 
+6. After Making All Of Your Changes, Remember To Save The File. 
+Choose "Save As" from the File menu in the upper left corner to save the file. You 
+should be able to choose between saving the file to your PC or OneDrive in most 
+versions of Excel. 
+View the "Creating a Home Inventory from Scratch" technique to observe 
+the application of this knowledge now that you have a grasp of the 
+fundamentals. 
+MAKING YOUR HOME INVENTORY 
+1. Open Microsoft Excel. 
+It's in the Applications folder on macOS or the Start menu on Windows. When you 
+launch the app, you'll see a screen that lets you create or access a workbook. 
+2. Give Each Column A Name. 
+Assume for a moment that we are cataloging the belongings in our house. We should 
+perhaps also note the room it is in and the brand and model of the object, in addition to 
+its name. To ensure that our data is properly labeled, we will save row 1 for the column 
+headings. 
+Enter "Item" into cell A1. Everything in this column will be listed. 
+Fill in the location information in cell B1. Here we may access the room 
+where the object is located. 
+Enter "Make/Model" into column C1. In this column, we will provide the 
+model and maker of the item. 
+3. Fill Up Each Row With Your Products. 
+Data entry into the rows should be a breeze now that we've labeled the columns. There 
+should be a row for each item and a column for each piece of information. 
+As an example, if you have an Apple Cinema 30-inch M9179LL and are 
+listening to it on your workplace HD monitor, you may enter "HD 
+monitor" in A2 (the Item column), "Office" in B2 (the Location column), 
+and so on. 
+On the rows that follow, please list any more products. Simply select the 
+cell you want to remove and then hit the Del key. 
+Select Delete from the context menu after right-clicking a letter or number 
+to erase an entire column or row. 
+You may have seen that when you enter an excessive amount of text into a 
+cell, it will spill over into the next column. Column resizing to 
+accommodate text is the solution. After you've positioned the cursor so it 
+becomes two arrows and is above row 1, double-click on the line that 
+connects the columns. 
+4. Make A Drop-Down Menu Out Of The Column Headings. 
+Imagine you've made a comprehensive inventory of your house, but you'd want to 
+restrict access to only the objects kept in your office. To choose an entire row, click the 
+1 in the top left corner of row 1, and then follow these steps: 
+At Excel's top, you should see the Data tab. 
+Tap the Filter icon (a funnel) on the toolbar. Each column header now has 
+a little arrow. 
+The filter menu may be accessed by clicking the Location drop-down 
+menu (in B1). 
+Select "Office" and deselect all other boxes as we are only interested in 
+office-related topics. 
+Select OK. Items in the specified room will now be shown only. This 
+works with all data types and columns. 
+Once again, choose "Select All" from the menu, and then click OK to 
+restore everything. 
+5. Alter The Spreadsheet's Appearance By Selecting The Page Layout 
+Option. 
+After entering your data, you may personalize it by changing the colors, fonts, and lines. 
+To that end, consider the following: 
+To format certain cells, just choose them. Simply clicking on a row's digit 
+or a column's letter will select that whole row or column. For multiple 
+row or column selections, hold down Ctrl (on a PC) or Cmd (on a Mac). 
+To access and choose a color theme, click Colors in the "Themes" section 
+of the toolbar. 
+To access the font library, choose Fonts from the menu. 
+6. Be Sure To Save Your Work. 
+Click the File menu in the upper left corner of the spreadsheet and choose Save As 
+when you've arrived at a decent stopping place. 
+MAKING A PRESET MONTHLY BUDGET 
+1. Launch The Excel Spreadsheet. 
+It's in the Applications folder on macOS or the Start menu on Windows. When you 
+launch the app, you'll see a screen that lets you create or access a workbook. 
+Using the in-built Excel template to compile a budget is covered in this 
+approach. For many spreadsheet formats, you may choose from hundreds 
+of available templates. Check out https://templates.office.com/en- 
+us/templates-for-excel for a complete catalog of official templates. 
+2. Look For The "Simple Monthly Budget" Form.  
+Get your monthly budget in order with the help of this free official Microsoft template. 
+Typically, it may be located by going to the top search box, entering Simple Monthly 
+Budget, and then hitting the Enter key. 
+3. After That, Choose The Simple Monthly Budget Form And Hit The 
+Create Button. 
+This makes use of an existing spreadsheet template to generate a whole new one. 
+Downloading could be the better option. 
+4. To Input Your Income, Go To The Monthly Income Tab. 
+As you go down the page of the spreadsheet, you will see that it has three tabs: 
+Summary, Monthly Income, and Monthly Expenses. This is the second tab you'll need to 
+click. For the sake of argument, let's pretend that Acme and wikiHow both contribute to 
+your income: 
+The Income 1 cell may be highlighted by double-clicking on it. Just write 
+wikiHow and delete the cell's contents. 
+Make a note of what's in the Income 2 field by double-clicking it, then 
+type Acme. 
+To calculate your monthly wikiHow income, find the "Amount" heading 
+and enter your income into the first box (which should show "2500" by 
+default). The monthly revenue from "Acme" should be entered in the field 
+directly below. 
+You may clear the other cells (for "Other" and "$250") by clicking on 
+them and pressing Del if you don't have any additional revenue. 
+The rows below the existing ones allow you to enter additional revenue 
+sources and amounts. 
+5. To Input Your Monthly Costs, Click On The Corresponding Tab. 
+Locate it at the very bottom of the spreadsheet, on the third tab. When you double-click 
+a cell with a cost or amount already entered, you may edit its value. 
+Take the case of a $795 monthly rent as an example. Make a note of the 
+amount that is already entered as "$800," delete it, and then enter 795. 
+Suppose you are exempt from paying any student loan installments. All 
+you have to do is hit the Del key on your keyboard and click the $50 next 
+to "Student Loans" in the "Amount" column to remove it. Repeat for every 
+other cost. 
+When you right-click on a row and choose Delete, you may remove it in 
+its entirety. 
+To add a new row, choose the desired position below the current row and 
+right-click on it. Then, choose Insert from the context menu. 
+In the "Amounts" column, make sure there aren't any unnecessary sums 
+that will be automatically included in your budget. 
+6. To See Your Budget On A Visual, Click The Summary Tab. 
+The tab's graphic will change automatically to show your income vs. spending after 
+you've submitted your data. 
+If the calculations don't happen immediately, use F9 on your keyboard. 
+The Summary will reflect any modifications made to the Monthly 
+Expenses and Monthly Income tabs. 
+7. Be Sure To Save Your Work. 
+Click the File menu in the upper left corner of the spreadsheet and choose Save As 
+when you've arrived at a decent stopping place. 
+CHAPTER NINE 
+TIPS AND TRICKS 
+1. For Automatic File Saving, Use Onedrive. 
+Microsoft Office's cloud storage solution, OneDrive, debuted in 2007 and is compatible 
+with both Microsoft 365 and other Microsoft products. Once activated, the service 
+saves documents to the cloud automatically whenever changes are made, saving users 
+the tedious task of saving work manually. 
+The redesigned OneDrive in Microsoft 365 is very useful since, not only does it 
+provide access to all files from any device, but it also keeps numerous versions of a 
+document, letting you compare them closely and track the progress of certain projects. 
+Nothing is worse than having hours of hard work on a document lost in an instant 
+because of a bug, power loss, or user mistake. OneDrive eliminates the possibility of 
+such and gives you the confidence to keep working without interruption. Plus, according 
+to Microsoft, OneDrive comes with 5 GB of free storage. 
+2. There Is No Better Shortcut Tool Than The Tell Me Feature 
+Using the "Tell Me What To Do" feature in the upper right of the user interface is a great 
+method to enhance efficiency and save time while using Microsoft Office. Shortcuts are 
+a certain way to save time. The 2016 edition of the Tell Me Feature to Microsoft Office 
+functions as a universal shortcut. 
+Microsoft Office's Tell Me tool is a handy text box that will instantly pull up what's 
+required, whether it's a term, research piece, or specialized function. Use the Smart 
+Lookup feature to locate obscure articles, alter font styles, trim photographs, include 
+tables, and organize layout ideas. With its very user-friendly design, the Tell Me feature 
+is an incredibly useful tool that will help you save a ton of time and energy while 
+staying completely on track. 
+3. Use The Share Button To Stay In Contact 
+Whether you're drafting scripts or novels or overseeing the most recent job project, a 
+good workflow requires prompt document sharing. Organization and efficiency in the 
+workplace depend critically on having everyone on the same page. Everyone who uses 
+Microsoft Office for the first time should take advantage of the practical Share button 
+instead of using antiquated ways like emailing or faxing. 
+Instantly upload a document to OneDrive, AirDrop, Dropbox, email, or any other third- 
+party service that uses cloud storage to keep files in one convenient, easily accessible 
+space by tapping the share button in the top right corner of the app. This way, you can 
+quickly share a document with a colleague, friend, or mentor. Using the Microsoft 
+Office share button is as easy as it sounds. It works with the greatest cloud storage and 
+eliminates the need to manually browse and upload files, so you can keep working 
+without worrying about whether a document was received correctly. 
+4. Words To Locate And Replace Without Difficulty 
+For outstanding writing, editing and improving one's vocabulary are of utmost 
+importance. It becomes better as the word bank and usage get greater. One of the most 
+useful editing shortcuts in Microsoft Office is Find & Replace, which saves a lot of 
+time compared to digging through a dusty thesaurus. Pressing Ctrl + Shift + H will bring 
+up the Find & Replace tool. 
+When it shows up, type in the word or words you want to change using the Find & 
+Replace tool. Then, once you choose a word or phrase from a drop-down menu, the 
+software will immediately substitute it with the one you choose. This feature will save a 
+ton of time and effort, much like the helpful applications that every college student 
+should have, such as a digital thesaurus that can be used for better writing. You may 
+change languages, bold and italicize text, and more using the additional capabilities that 
+come with Find & Replace, making it much easier to edit without any outside aid. 
+5. Make The Shortcut Menu Your Own 
+One method to remain focused and increase productivity is to have many customizable 
+features that you can access with the click of a button. Thankfully, the Quick Access 
+Toolbar has a useful downward arrow that you may use to quickly alter the Shortcut 
+Menu in Microsoft Office. 
+By default, the Quick Access Toolbar includes shortcuts to Print, Save, Undo, and more. 
+However, you can customize the toolbar by clicking the downward arrow and adding 
+the commands you wish. Save the instructions to the toolbar and rearrange them as 
+needed; this works on mobile devices as well as desktop versions of Windows. When 
+you tailor the shortcut menu to your exact specifications and physical layout, Microsoft 
+Office makes it simple to remain organized, orderly, and productive, whether you're 
+indenting lines, spacing text, or organizing word lists, among other chores. 
+6. Options To Customize Auto-Correct 
+Unfortunately, Microsoft Office has a feature that auto-corrects papers even when it's 
+not needed. Inconvenient and time-consuming to resolve, you may customize the 
+program's auto-correct settings to make the procedure easier by going to the 
+AutoCorrect Options in the Tools menu. 
+When you get the hang of using the app, you may enhance your writing by manually 
+erasing any auto-corrected word or phrase that's getting in the way of your productivity, 
+frustrating you, and preventing you from being creative. A useful tool is a great method 
+to remove unnecessary and undesirable changes to a working document; nothing is 
+worse than having a word or phrase changed when there shouldn't be a correction at all. 
+With this easy approach, you can stay focused on what you're doing and avoid annoying 
+distractions. 
+7. Simplify Documents Using Styles 
+When it comes to careers, first impressions are crucial. Possessing a well-written and 
+polished résumé increases one's employability. Documents may be easily formatted 
+with Microsoft Office's Styles tool, allowing them to seem more professional. Under the 
+Home menu, you'll see the Styles choice. 
+Instead of using the default font that comes with Microsoft Office, you may use the 
+Styles tool to apply pre-designed fonts, sizes, colors, and headers as you write. To 
+make a document stand out, you may use the Styles tool to automatically size, color, and 
+space several headers. It will store your changes and save you a ton of time. By 
+applying styles to chosen text, you may improve the readability and flow of your work 
+without lifting a finger. 
+8. Spike Can Cut And Paste Multiple Items At Once 
+Contents other than text, such as tables, charts, photos, etc., may need to be organized 
+for specific tasks. With Microsoft Word's Spike tool, you can copy all the cuttable text 
+to the clipboard and then paste it wherever you like. This is a great trick for cutting and 
+pasting several objects at once. Although it may look different in the future, the Office 
+365 app is functional and efficient. 
+Microsoft states that "The Spike is similar to the actual physical spike used in many 
+restaurants: when you have paid your bill, it's stuck on the spike with other paid bills." 
+The Spike tool is even more useful for finishing multimedia projects quickly since it 
+consolidates all the material that has to be cut and pasted into one spot. This area may 
+be utilized across several documents. A bonus is that the tool will copy and paste 
+whatever you've pinned to the Spike—all you have to do is type "Spike" into the text 
+field. 
+9. Split View Makes Editing Easier 
+Whether you're using Windows or an iPad, there will always come a moment when you 
+need to edit numerous sections of a document, and this is especially true for long 
+research papers and student theses. Microsoft Office's Split View feature, located on the 
+View ribbon, allows users to easily and quickly modify several sections of a single 
+document without having to go through each section one by one. 
+One great trick is the Split View feature, which allows you to see two or more 
+workbooks at once, split sheets into panes, and highlight two or more paragraphs at 
+once; this makes it easy to edit one while referring to the other. Various window layout 
+choices, such as Tiled, Vertical, Horizontal, and Cascade, let users concentrate on 
+different portions of a page simultaneously. 
+10.  
+Make Ribbons Your Own For Added Ease 
+Whatever program you're using, whether it's Word, PowerPoint, or Excel to convert 
+images to a table, there may be times when you need a function that you can't seem to 
+find or access readily enough to complete your assignment. To get around this, you may 
+rearrange the ribbons in Microsoft Office such that the ones you want to use most often 
+are at the top of the page. 
+You may rearrange the ribbons to put commands like Alignment and Bullet Lists in one 
+place, and tabs like Home, Insert, Draw, and Design in another. You can even categorize 
+commands like Fonts and Clipboards. The tool lets you bring a plethora of choices to 
+the forefront, and you can even import and export them inside each program to save 
+time. Even though the changes can't be transferred across Microsoft applications (like 
+Word and Excel), personalizing the ribbons would undoubtedly increase efficiency and 
+output. 
+
+
+---
+## 📖 MICROSOFT POWERPOINT 2024
+*(Manba: Microsoft PowerPoint 2024.pdf)*
+
+MICROSOFT OFFICE 
+365 2024 
+Your Essential Guide to Productivity and Collaboration. Learn How to Use 
+Microsoft Office 365 to Create Documents, Presentations, Spreadsheets, 
+Excel, PowerPoint, and More and to Collaborate with Others Effectively. 
+Kent Peterson 
+Microsoft Office 365 2024 
+Copyright © 2024 by Kent Peterson 
+All Rights Reserved. 
+No part of this book may be reproduced, stored in a retrievable system, transmitted in any form, or by 
+any means, electronic, mechanical, photocopying, recording, or otherwise, without prior written 
+permission from the author. 
+Table of Contents 
+CHAPTER ONE 
+INTRODUCTION 
+Getting Started 
+The Home Screen 
+How to Use the Microsoft 365 Homescreen 
+Microsoft 365 2024 Office apps 
+CHAPTER TWO 
+MICROSOFT WORD 
+Creating Word Document 
+The Word Interface 
+Formatting Tools 
+Other Actions 
+CHAPTER THREE 
+MICROSOFT ACCESS 
+What is a Database? 
+How to Create a Database in Access 
+How to Add Data to a Table 
+How to Set Data Types, Validation Rules, and Input Masks 
+How to Set Table Relationships 
+How to Create Queries 
+How to Create Forms 
+How to Create Reports 
+CHAPTER FOUR 
+MICROSOFT POWERPOINT 
+Creating a New Presentation 
+The PowerPoint Interface 
+Formatting your Presentation 
+PowerPoint Shortcuts 
+CHAPTER FIVE 
+MICROSOFT EXCEL 
+The Microsoft Excel Interface 
+Worksheet Actions 
+Cell Actions 
+CHAPTER SIX 
+MICROSOFT OUTLOOK 
+Getting Started 
+Creating and Sending Email 
+Managing Email 
+Contacts and Tasks 
+Calendar 
+CHAPTER SEVEN 
+MICROSOFT TEAMS 
+How to use Microsoft Teams 
+CHAPTER EIGHT 
+MICROSOFT ONE NOTE 
+How to create and open notebooks 
+How to add and format notes 
+How to share on Notes 
+CHAPTER NINE 
+MICROSOFT ONEDRIVE 
+Uploading Files 
+Organizing and Managing Your Files 
+Sharing and Collaborating with OneDrive 
+Syncing and Backing Up with OneDrive 
+CHAPTER TEN 
+MICROSOFT PUBLISHER 
+How to use Publisher's pre-designed templates to create publications 
+How to precisely layout and style text, pictures, borders, calendars, and more 
+How to publish your publications 
+How to use Publisher's sharing features 
+CHAPTER ELEVEN 
+MICROSOFT VISIO 
+Choosing a template and a stencil 
+Creating and editing diagrams 
+Dragging and dropping shapes 
+Connecting shapes with connectors 
+Adding text, colors, styles, themes, and variants 
+Using alignment, spacing, containers, and layers 
+Saving, exporting, and printing diagrams 
+Sharing and co-authoring diagrams 
+Displaying diagrams 
+CHAPTER TWELVE 
+MICROSOFT SHAREPOINT 
+Sign in to SharePoint 
+Create or join a site 
+Customize your site 
+Add and manage content 
+CONCLUSION 
+Chapter One 
+Introduction 
+Microsoft Office 365 is a cloud-based subscription service that provides 
+access to various applications and services to enhance productivity and 
+collaboration in different settings. Some of the benefits of using Microsoft 
+Office 365 are: 
+●            It allows users to work from anywhere, anytime, and on any 
+device, as long as they have an internet connection and a valid 
+subscription. 
+●       It offers a range of applications and services that can suit different 
+needs and preferences, such as Word, Excel, PowerPoint, Outlook, 
+OneNote, OneDrive, Teams, SharePoint, and more. 
+●            It enables users to collaborate and communicate with others in 
+real-time, using features such as co-authoring, chat, video 
+conferencing, and file sharing. 
+●            It ensures security and compliance, using advanced encryption, 
+multi-factor authentication, and data loss prevention to protect user 
+data and privacy. 
+●       It provides automatic updates and backups, so users always have 
+the latest versions of the applications and services, and their data is 
+always safe and accessible. 
+Getting Started 
+To get started with Microsoft Office 365, you need to follow these steps: 
+1. First, launch the app. When you do, you will be ushered into the app's 
+Home screen. 
+2. At the Home Screen, click on the Signup tab to sign up for an Office 365 
+account if you don't already have one. Having an account synchronizes your 
+work across all the apps. You can choose from different plans depending on 
+your needs and budget. You can also get a free trial for one month. 
+3. If you already have an account, sign in with your account. You can access 
+all your Office apps and services using the same account. To sign in, enter 
+your email address and password when prompted. 
+4. Explore and use Office apps and services. You can create, edit, and share 
+documents, spreadsheets, presentations, emails, notes, and more with Office 
+apps. You can also use online services such as OneDrive, SharePoint, and 
+Teams to store, sync, and collaborate with others. 
+The Home Screen 
+The home screen is the first thing you see when you access Microsoft 365. 
+It gives you quick and easy access to everything you need to use the app. 
+The Microsoft 365 home screen uses a card-based interface, where each 
+primary page within the admin center has its card. A card is a rectangular 
+tile that summarizes information or actions related to a specific topic or 
+function. For example, the Dashboard card shows you an overview of your 
+Microsoft 365 environment, such as the number of active users, licenses, 
+devices, etc. The User card lets you manage user accounts, groups, roles, 
+and settings. The Billing card lets you view and pay your invoices, change 
+your subscription plan, and add or remove licenses. 
+You can see all the available cards on the home screen by scrolling 
+horizontally or vertically. You can also customize the home screen by 
+adding, removing, resizing, and rearranging the cards according to your 
+preferences and needs. To do so, you can use the Edit button on the top 
+right corner of the home screen or right-click on any card and select the 
+appropriate option. 
+How to Use the Microsoft 365 Homescreen 
+The Microsoft 365 home screen is designed to help you get things done 
+faster and easier. Here are some tips on how to use the home screen 
+effectively: 
+●       Explore the different cards and see what they offer. You can click 
+on any card to open its full page to find more details and options. 
+For example, if you click on the Settings card, you can access 
+various settings for your Microsoft 365 organization, such as 
+domains, security, privacy, compliance, etc. 
+●            Check for updates and notifications on the home screen. Some 
+cards may display a badge or a banner to indicate something new or 
+essential for you to see or do. For example, the Dashboard card may 
+show you a banner that says "Welcome to Microsoft 365" if you are 
+a new user or a badge that says "1 alert" if an issue requires your 
+attention. 
+●       Access support and feedback from the home screen. If you need 
+help or have a question, use the Help button on the top right corner 
+of the home screen or the Support card in the bottom left corner. 
+You can also use the Feedback button on the bottom right corner of 
+the home screen to share your opinions and suggestions with 
+Microsoft. 
+Microsoft 365 2024 Office apps 
+The Microsoft Office 365 applications include: 
+●       Word: A word processor that allows you to create, edit, and share 
+documents. 
+●            Excel: A spreadsheet application that lets you perform 
+calculations, analyze data, and create charts and graphs. 
+●       PowerPoint: A presentation application that enables you to create, 
+edit, and deliver slideshows. 
+●            Outlook: An email and calendar application that helps you 
+manage your communications and schedule. 
+●       OneNote: A note-taking application that captures, organizes, and 
+syncs your notes across devices. 
+●       OneDrive: A cloud storage service that gives you access to your 
+files from anywhere and syncs them with your devices. 
+●       Teams: A collaboration and communication platform that allows 
+you to chat, call, and video conference with your colleagues and 
+partners. 
+●            SharePoint: A web-based platform that enables you to create, 
+manage, and share sites, documents, and content. 
+●       Access: A database application that allows you to create, edit, and 
+query relational databases. 
+●       Publisher: A desktop publishing application that helps you create, 
+design, and print professional-quality publications. 
+Chapter Two 
+Microsoft Word 
+Microsoft Word is a word processor that allows you to create and share 
+engaging documents. It is useful for many purposes, such as writing essays, 
+reports, letters, resumes, newsletters, etc. You can also use Microsoft Word 
+to design and format your documents with various features. 
+Creating Word Document 
+To create a document in Microsoft Word, follow these steps: 
+●       Open Microsoft Word on your device. You can either click the 
+Word icon on your desktop, taskbar or start menu or search for 
+Word in the search box. 
+●       Choose how you want to start your document. You can either 
+create a blank document or use a template that has a predefined 
+layout, style, and format. 
+●       To create a blank document, click on the Blank document option 
+on the left side of the screen. To use a template, click on the More 
+Templates option on the right side of the screen and browse through 
+the categories or search for a specific template. 
+The Word Interface 
+The interface of Word consists of several elements that provide access to 
+the features and functions. 
+1. The Start Screen 
+When you open Word for the first time, you will see the Start Screen, which 
+gives you several options to start working on your document. You can: 
+●       Start a new blank document by clicking on the Blank document 
+icon. 
+●            Start with a template by choosing one from the list or clicking 
+More Templates for more options. 
+●       Access your recently edited documents by clicking on one of the 
+documents from the list or clicking on More Documents to see more 
+options. 
+●       Access your pinned documents by clicking on the Pinned tab and 
+choosing one of the documents from the list. 
+●       Access your shared documents by clicking on the Shared with Me 
+tab and choosing one of the documents from the list. 
+●       Open a document from your computer or cloud by clicking on the 
+Open tab and browsing to the document's location. 
+You can access the Start Screen anytime by clicking the File tab and 
+choosing New or Open. 
+2. The Quick Access Toolbar 
+The Quick Access Toolbar is a small toolbar that appears at the top left 
+corner of the Word window. It contains some of the most commonly used 
+commands, such as Save, Undo, Redo, and Print. You can customize the 
+Quick Access Toolbar by adding or removing commands you use 
+frequently. To do that, click the drop-down arrow next to the toolbar and 
+choose the commands you want to add or remove. You can also move the 
+Quick Access Toolbar below the Ribbon by clicking the drop-down arrow 
+and choosing Show Below the Ribbon. 
+3. The Title Bar 
+The Title Bar is the horizontal bar at the top of the Word window. It 
+displays the current document's name and the program's name. It also 
+contains some buttons that allow you to minimize, maximize, restore, or 
+close the Word window. 
+4. The Ribbon 
+The Ribbon is the main toolbar that appears below the Title Bar. It contains 
+different tabs that group related commands and features. The tabs are: 
+●            Home: This tab contains the general features you need to work 
+with your document, such as formatting, editing, copying, pasting, 
+and finding and replacing text. 
+●            Insert: This tab allows you to insert various elements into your 
+document, such as pages, tables, pictures, shapes, charts, and links. 
+●            Draw: This tab provides basic tools to draw anything on your 
+document, such as pens, pencils, highlighters, erasers, and rulers. 
+You can also use this tab to convert your drawings into shapes or 
+text. 
+●            Design: This tab enables you to change the theme, style, and 
+feeling of your document, such as colors, fonts, effects, and borders. 
+●       Layout: This tab helps you to adjust the layout and page setup of 
+your document, such as margins, orientation, size, columns, and 
+breaks. 
+●       References: This tab assists you in adding references and citations 
+to your document, such as tables of contents, footnotes, endnotes, 
+bibliographies, and captions. 
+●       Mailings: This tab allows you to create and print envelopes and 
+labels and to perform mail merge tasks, such as creating 
+personalized letters, emails, or labels for a list of recipients. 
+●       Review: This tab lets you review and proofread your document, 
+such as checking spelling and grammar, adding comments, tracking 
+changes, and comparing documents. 
+●       View: This tab lets you change the view and appearance of your 
+document, such as zooming in or out, splitting the window, showing 
+or hiding the ruler, gridlines, or navigation pane, and switching 
+between different views, such as print layout, web layout, outline, or 
+draft. 
+Some tabs, such as Draw, Mailings, and Review, may not appear by default, 
+depending on your version of Word and your settings. You can enable or 
+disable these tabs by clicking on the File tab, choosing Options, and 
+selecting Customize Ribbon. 
+Some other tabs, such as Table Tools, Picture Tools, and Chart Tools, may 
+appear only when you select a specific element in your document, such as a 
+table, a picture, or a chart. These tabs provide additional features and 
+options for working with the selected element 
+5. The Tell Me Feature 
+The Tell Me feature is a helpful tool that helps you find the features and 
+commands you need in Word. It is at the right end of the Ribbon, next to the 
+View tab. It has a text box with a light bulb icon and the words Tell me 
+what you want to do. To use this feature, type what you want in the text 
+box, such as insert a table, change the font size, or print the document. 
+Word will then suggest some relevant commands or features that match 
+your query. You can click on the suggested command or feature to apply it 
+to your document or click on the More button to see more options. 
+6. The Document Area 
+The Document Area is the large area below the Ribbon where you can type 
+and edit your document. It shows the content of your document as it will 
+appear on the printed page. You can use the mouse or the keyboard to 
+navigate and select text in the Document Area. You can also use the scroll 
+bars on the right and bottom sides of the Document Area to move up, down, 
+left, or right in your document. 
+7. The Insertion Point 
+The Insertion Point is the blinking vertical line indicating where the text 
+you type will appear in the Document Area. You can move the Insertion 
+Point by clicking on the desired location with the mouse or using the arrow 
+keys on the keyboard. You can also use the Home, End, Page Up, and Page 
+Down keys to move the Insertion Point to the beginning or end of a line or 
+the previous or next page. 
+8. The Status Bar 
+The Status Bar is the horizontal bar at the bottom of the Word window. It 
+displays some information and options related to your document, such as 
+the page number, the word count, the zoom level, and the view mode. You 
+can customize the Status Bar by right-clicking on it and choosing the items 
+you want to display or hide. 
+9. The View Buttons 
+The View Buttons are located at the right end of the Status Bar. They allow 
+you to switch between different views of your document, such as: 
+●       Print Layout: This view shows how your document will look 
+when printed. It is the default view in Word. 
+●       Web Layout: This view shows how your document will look on 
+a web browser. 
+●       Read Mode: This view optimizes your document for reading on 
+the screen. It hides the Ribbon and the Status Bar and shows the 
+document in a column layout with larger fonts and less clutter. 
+●       Outline: This view shows the structure and hierarchy of your 
+document. It helps organize and outline your document, especially 
+for long and complex documents. 
+●            Draft: This view shows your document in a simple and basic 
+layout. It is useful for editing and formatting your document, 
+especially for documents that contain a lot of text. 
+10.  
+The Zoom Slider 
+The Zoom Slider is located at the right end of the Status Bar, next to the 
+View Buttons. It allows you to zoom in or out of your document, which 
+means changing the text size and images on the screen. You can drag the 
+slider to the left or right to zoom out or in or click the plus or minus buttons 
+to zoom in or out by 10%. You can also click on the percentage number to 
+open the Zoom dialog box, where you can choose a specific zoom level or 
+fit the document into the window. 
+Formatting Tools 
+The formatting tools in Microsoft Word are: 
+●            Font: This tool allows you to change the font type, size, color, 
+style, and effects of your text. To use this tool, select the text you 
+want to format and click on the Font dialogue box launcher on the 
+Home tab. You can also use the shortcut keys Ctrl+B for bold, 
+Ctrl+I for italic, Ctrl+U for underline, and Ctrl+Shift+< or 
+Ctrl+Shift+> for changing the font size. 
+●            Paragraph: This tool allows you to change the alignment, 
+indentation, spacing, and bullets or numbering of your paragraphs. 
+To use this tool, select the paragraph or paragraphs you want to 
+format and click on the Paragraph dialog box launcher on the Home 
+tab. You can also use the shortcut keys Ctrl+L for left alignment, 
+Ctrl+R for right alignment, Ctrl+E for center alignment, Ctrl+J for 
+justify alignment, Ctrl+M for increasing indentation, Ctrl+Shift+M 
+for decreasing indentation, Ctrl+1 for single spacing, Ctrl+2 for 
+double spacing, and Ctrl+5 for 1.5 spacing. 
+●       Styles: This tool allows you to apply predefined formatting sets to 
+your text, such as headings, titles, quotes, etc. To use this tool, select 
+the text you want to format and click on the Styles gallery on the 
+Home tab. You can also use the shortcut keys Alt+Ctrl+1 for 
+heading 1, Alt+Ctrl+2 for heading 2, Alt+Ctrl+3 for heading 3, etc. 
+●            Page Layout: This tool allows you to change the margins, 
+orientation, size, columns, breaks, and background of your pages. 
+To use this tool, click on the Page Layout tab and choose the options 
+you want from the Page Setup, Page Background, and Page 
+Columns groups. You can also use the shortcut keys Alt+P+M for 
+margins, Alt+P+O for orientation, Alt+P+S for size, Alt+P+C for 
+columns, Alt+P+B for breaks, and Alt+P+G for background. 
+●       Insert: This tool allows you to insert various elements into your 
+document, such as tables, pictures, shapes, charts, symbols, headers, 
+footers, page numbers, etc. To use this tool, click on the Insert tab 
+and choose the options you want from the Tables, Illustrations, Add- 
+ins, Media, Links, Text, and Symbols groups. You can also use the 
+shortcut keys Alt+N+T for table, Alt+N+P for picture, Alt+N+SH 
+for shape, Alt+N+C for chart, Alt+N+U for symbol, Alt+N+H for 
+header, Alt+N+F for footer, Alt+N+NU for page number, etc. 
+●       References: This tool allows you to add citations, bibliographies, 
+footnotes, endnotes, indexes, tables of contents, captions, and cross- 
+references to your document. To use this tool, click on the 
+References tab and choose the options you want from the Table of 
+Contents, Footnotes, Citations & Bibliography, Captions, Index, and 
+Table of Authorities groups. You can also use the shortcut keys 
+Alt+S+T for table of contents, Alt+S+F for footnote, Alt+S+E for 
+endnote, Alt+S+I for insert citation, Alt+S+B for bibliography, 
+Alt+S+A for add caption, Alt+S+X for insert index, Alt+S+G for 
+mark citation, etc. 
+●            Mailings: This tool allows you to create and print envelopes, 
+labels, letters, and emails for multiple recipients using mail merge. 
+To use this tool, click on the Mailings tab and choose the options 
+you want from the Create, Start Mail Merge, Write & Insert Fields, 
+Preview Results, and Finish groups. You can also use the shortcut 
+keys Alt+M+E for envelopes, Alt+M+L for labels, Alt+M+S for 
+start mail merge, Alt+M+H for highlight merge fields, Alt+M+P for 
+preview results, Alt+M+F for finish & merge, etc. 
+●       Review: This tool allows you to check the spelling, grammar, and 
+readability of your document, as well as add comments, track 
+changes, compare documents, and protect your document. To use 
+this tool, click on the Review tab and choose the options you want 
+from the Proofing, Language, Comments, Tracking, Changes, 
+Compare, and Protect groups. You can also use the shortcut keys F7 
+for spelling & grammar, Alt+R+L for language, Alt+R+C for new 
+comment, Alt+R+T for track changes, Alt+R+A for accept change, 
+Alt+R+R for reject change, Alt+R+M for compare, Alt+R+P for 
+protect document, etc. 
+●       View: This tool allows you to change how you see your document, 
+such as zooming, splitting, arranging, and switching windows, as 
+well as showing or hiding the ruler, gridlines, navigation pane, and 
+document map. To use this tool, click on the View tab and choose 
+the options you want from the Document Views, Show, Zoom, 
+Window, and Macros groups. You can also use the shortcut keys 
+Alt+W+Q for zoom, Alt+W+S for split, Alt+W+R for ruler, 
+Alt+W+G for gridlines, Alt+W+N for navigation pane, Alt+W+D 
+for document map, Alt+W+W for switch windows, Alt+W+M for 
+macros, etc. 
+Other Actions 
+●       To start a new document, click the File tab and select New. You 
+can choose from various templates or start with a blank document. 
+●       To open an existing document, click the File tab and select Open. 
+You can browse your computer or cloud storage for the document 
+you want to open. 
+●       To save a document, click the File tab and select Save. You can 
+also use the keyboard shortcut Ctrl+S (Windows) or Command+S 
+(Mac). If you are saving the document for the first time, you will 
+need to enter a name and a location for the document. 
+●       To print your document, click the File tab and select Print. You 
+can adjust the print settings, such as the number of copies, the 
+orientation, the margins, and the paper size. You can also preview 
+your document before printing it. 
+Chapter Three 
+Microsoft Access 
+Microsoft Access is a database management program that allows you to 
+store, organize, and manipulate data in various ways. You can use Access to 
+create tables, forms, queries, and reports for your data. 
+What is a Database? 
+A database is a collection of organized and structured data so you can easily 
+access, analyze, and update it. A database can store different data types, 
+such as text, numbers, dates, images, or files. A database can also have 
+multiple tables, like separate spreadsheets storing related data. 
+For example, you want to create a database for a small library. You might 
+have a table for books, a table for authors, and a table for borrowers. Each 
+table would have fields, like columns in a spreadsheet, that store specific 
+information about each record, like rows in a spreadsheet. 
+How to Create a Database in Access 
+To create a new database in Access, you can either use a blank database or a 
+template. A blank database gives you more flexibility and control over your 
+design, while a template provides a ready-made structure and sample data. 
+To create a blank database, follow these steps: 
+●       Open Access and click on Blank Database. 
+●       Enter a name for your database and choose a location to save it. 
+●       Click on Create. 
+To create a database from a template, follow these steps: 
+●       Open Access and click on New. 
+●       Choose a category and select a template that suits your needs. 
+●       Enter a name for your database and choose a location to save it. 
+●       Click on Create. 
+How to Add Data to a Table 
+You can type, copy and paste, import, or link data from another source to 
+add data to a table. You can also rename, move, or delete fields and records. 
+To type data in a table, follow these steps: 
+●       Open the table in Datasheet View by double-clicking on it in the 
+Navigation Pane. 
+●       Click on the cell where you want to enter data and start typing. 
+●       Press Tab or Enter to move to the next cell or record. 
+●       To add a new record, click on the New Record button at the bottom 
+of the table or press Ctrl + +. 
+To copy and paste data in a table, follow these steps: 
+●       Open the table in Datasheet View by double-clicking on it in the 
+Navigation Pane. 
+●       Select the cells or records you want to copy and press Ctrl + C or 
+right-click and choose Copy. 
+●       Click on the cell where you want to paste the data and press Ctrl + 
+V or right-click and choose Paste. 
+To import data in a table, follow these steps: 
+●       Open the table in Datasheet View by double-clicking on it in the 
+Navigation Pane. 
+●       Click on the External Data tab and choose the data source, such as 
+Excel, Text File, or Access. 
+●       Follow the steps in the Import Wizard to select the File, specify the 
+options, and match the fields. 
+●       Click on Finish. 
+To link data in a table, follow these steps: 
+●       Open the table in Datasheet View by double-clicking on it in the 
+Navigation Pane. 
+●       Click on the External Data tab and choose the data source, such as 
+Excel, Text File, or Access. 
+●       Follow the steps in the Link Wizard to select the File, specify the 
+options, and match the fields. 
+●       Click on Finish. 
+To rename a field in a table, follow these steps: 
+●            Open the table in Design View by right-clicking on it in the 
+Navigation Pane and choosing Design View. 
+●       Click on the field name you want to change and type a new name 
+in the Field Name box. 
+●       Press Enter or click on another field to save the change. 
+To move a field in a table, follow these steps: 
+●            Open the table in Design View by right-clicking on it in the 
+Navigation Pane and choosing Design View. 
+●       Click on the field name you want to move and drag it to a new 
+position in the Field List. 
+●       Release the mouse button to drop the field. 
+To delete a field in a table, follow these steps: 
+●            Open the table in Design View by right-clicking on it in the 
+Navigation Pane and choosing Design View. 
+●       Click on the field name you want to delete, press Delete, or right- 
+click and choose Delete Rows. 
+●       Click on Yes to confirm the deletion. 
+To delete a record in a table, follow these steps: 
+●       Open the table in Datasheet View by double-clicking on it in the 
+Navigation Pane. 
+●       Click on the record selector, which is the gray box to the left of the 
+record, and press Delete or right-click and choose Delete Record. 
+●       Click on Yes to confirm the deletion. 
+How to Set Data Types, Validation Rules, and Input Masks 
+You can set data types, validation rules, and input masks for your fields to 
+ensure data accuracy and consistency. Data types specify the kind of data 
+that a field can store, such as text, number, date, or currency. Validation 
+rules define a field's criteria, such as a range, format, or list of values. Input 
+masks provide a template for entering data, such as a phone number, a 
+postal code, or a social security number. 
+To set data types, validation rules, and input masks for your fields, 
+follow these steps: 
+●            Open the table in Design View by right-clicking on it in the 
+Navigation Pane and choosing Design View. 
+●       Click on the field you want to modify and choose a data type from 
+the Data Type drop-down list in the Field Properties section. 
+●       To set a validation rule, enter an expression in the Validation Rule 
+box and a message in the Validation Text box. For example, to limit 
+the values of a field to between 1 and 10, you can enter `>=1 And 
+<=10` in the Validation Rule box and `Enter a value between 1 and 
+10` in the Validation Text box. 
+●       To set an input mask, click on the ... button next to the Input Mask 
+box and follow the steps in the Input Mask Wizard to select or 
+create a mask. For example, to create a mask for a phone number, 
+you can choose the `(999) 000-0000` mask from the list and click 
+Next. 
+How to Set Table Relationships 
+To establish connections between your tables, you can set table 
+relationships, such as one-to-one, one-to-many, or many-to-many. Table 
+relationships help avoid data duplication, ensure data consistency, and 
+enable data analysis. For example, in a library database, you might have a 
+one-to-many relationship between the authors table and the books table, 
+meaning that one author can write many books, but each book can have 
+only one author. 
+To set table relationships, follow these steps: 
+●       Click on the Database Tools tab and choose Relationships. 
+●            If you have not added any tables to the Relationships window, 
+click Show Table and select the tables you want to relate. Click on 
+Add and then Close. 
+●       To create a relationship, drag the field you want to relate from one 
+table to the corresponding field in another. For example, to create a 
+relationship between the author's table and the books table, drag the 
+AuthorID field from the author's table to the AuthorID field in the 
+books table. 
+●       An Edit Relationships dialog box will appear. You can choose the 
+type of relationship, such as one-to-one, one-to-many, or many-to- 
+many, from the Type drop-down list. You can also check the 
+Enforce Referential Integrity box to prevent invalid data entry or 
+deletion. You can also check the Cascade Update Related Fields box 
+to update the related fields automatically when you change the 
+primary key value. You can also check the Cascade Delete Related 
+Records box to delete the related records automatically when you 
+delete the primary key value. 
+●       Click on Create to establish the relationship. You will see a line 
+connecting the two tables, with a symbol indicating the type of 
+relationship, such as 1 for one-to-one, infinity for one-to-many, or 
+infinity-infinity for many-to-many. 
+●       To edit or delete a relationship, right-click on the line and choose 
+Edit Relationship or Delete. 
+How to Create Queries 
+You can create queries to filter, sort, group, calculate, or modify data in 
+your tables. Queries are like questions you ask your database; the results are 
+displayed in a datasheet. You can also use queries to create new tables and 
+update or delete existing data. 
+To create a query, follow these steps: 
+●       Click on the Create tab and choose the type of query you want to 
+create, such as Select Query, Crosstab Query, Make Table Query, 
+Update Query, or Delete Query. 
+●       If you choose Select Query, the Query Design window will open. 
+You can add the tables or queries you want to use as the data source 
+by clicking Show Table and selecting them. Click on Add and then 
+Close. 
+●            To add fields to the query, drag them from the Field List to the 
+Design Grid. You can also double-click on the fields or type them in 
+the Field row. 
+●            To specify criteria for the query, enter them in the Criteria row 
+under the corresponding fields. You can refine your criteria by using 
+expressions, functions, operators, or parameters. For example, to 
+filter the books by genre, you can enter `="Science Fiction"` in the 
+Criteria row under the Genre field. 
+●            Choose Ascending or Descending from the Sort row under the 
+corresponding fields to sort the query results. For example, you can 
+choose Ascending from the Sort row under the Title field to sort the 
+books by title. 
+●       To run the query, click the Run button on the Design tab or press 
+F5. You will see the query results in a datasheet. 
+●            To save the query, click the Save button on the Quick Access 
+Toolbar or press Ctrl + S. Enter a name for the query and click OK. 
+You will see the query in the Navigation Pane. 
+How to Create Forms 
+You can create forms to view, add, edit, or delete data in your tables. Forms 
+are like windows that display your data in a user-friendly and interactive 
+way. You can use different types of controls, such as text boxes, combo 
+boxes, list boxes, buttons, or labels to enhance your forms. You can also use 
+form properties, events, and macros to customize your forms. 
+To create a form, follow these steps: 
+●       Click on the Create tab and choose the form you want to create, 
+such as Form, Form Design, Blank Form, Multiple Items, or Split 
+Form. 
+●       If you choose Form, Access will create a form based on the table 
+or query you selected or opened. You can modify the form layout 
+and design using the tools on the Form Layout and Form Design 
+tabs. 
+●            If you choose Form Design, Access will open a blank form in 
+Design View. You can add the tables or queries you want to use as 
+the data source by clicking Property Sheet and choosing them from 
+the Record Source drop-down list. You can also add fields to the 
+form by dragging them from the Field List to the form. You can also 
+add controls to the form using the Design tab tools. 
+●            If you choose Blank Form, Access will open a blank form in 
+Layout View. You can add fields to the form by dragging them from 
+the Field List to the form. You can also add controls to the form 
+using the Design tab tools. 
+●            If you choose Multiple Items, Access will create a form that 
+displays multiple records in a datasheet-like format. You can modify 
+the form layout and design using the tools on the Form Layout and 
+Form Design tabs. 
+●       If you choose Split Form, Access will create a form that displays a 
+single record in a form view and multiple records in a datasheet 
+view. You can modify the form layout and design using the tools on 
+the Form Layout and Form Design tabs. 
+To save the form, click the Save button on the Quick Access Toolbar or 
+press Ctrl + S. Enter a name for the form and click OK. You will see the 
+form in the Navigation Pane. 
+How to Create Reports 
+You can create reports to summarize and display your data professionally 
+and attractively. Reports are like documents that show your data in a 
+formatted and printed layout. You can use different sections, groups, sorts, 
+totals, charts, or graphics to enhance your reports. You can also customize 
+your reports by using report properties, events, and macros. 
+To create a report, follow these steps: 
+●       Click on the Create tab and choose the type of report that you want 
+to create, such as Report, Report Design, Blank Report, Report 
+Wizard, or Labels. 
+●       If you choose Report, Access will create a report based on the table 
+or query you selected or opened. You can modify the report layout 
+and design using the tools on the Report Layout and Report Design 
+tabs. 
+●            Access will open a blank report in Design View if you choose 
+Report Design. You can add the tables or queries you want to use as 
+the data source by clicking Property Sheet and choosing them from 
+the Record Source drop-down list. You can also add fields to the 
+report by dragging them from the Field List to the report. You can 
+also add controls to the report using the Design tab. 
+●            Access will open a blank report in Layout View if you choose 
+Blank Report. You can add fields to the report by dragging them 
+from the Field List to the report. You can also add controls to the 
+report using the Design tab tools. 
+●            If you choose Report Wizard, Access will guide you through 
+creating a report based on your choices. You can select the fields, 
+grouping levels, sorting order, layout, style, and title for your report. 
+You can also preview the report before finishing the wizard. 
+●       If you choose Labels, Access will help you create labels for your 
+data, such as mailing labels, name tags, or stickers. You can select 
+the label type, size, font, and alignment. You can also preview the 
+labels before finishing the wizard. 
+To save the report, click the Save button on the Quick Access Toolbar or 
+press Ctrl + S. Enter a name for the report and click OK. You will see the 
+report in the Navigation Pane. 
+Chapter Four 
+Microsoft PowerPoint 
+PowerPoint is a presentation software that allows you to create and deliver 
+slideshows, animations, videos, and more. You can use PowerPoint to 
+communicate ideas, showcase data, or tell a story. Here are some steps to 
+get started with PowerPoint: 
+Creating a New Presentation 
+●       To create a new presentation, select File> New and choose a blank 
+presentation or a template that suits your needs. You can also use 
+the Design Ideas feature to get suggestions for layouts and styles 
+based on your content. 
+●       To add slides, select Home> New Slide and choose a layout from 
+the gallery. You can also reorder, duplicate, or delete slides from the 
+Slides pane on the left side of the screen. 
+●       Select a placeholder on the slide to add text and type your content. 
+You can format your text using the tools on the Home tab, such as 
+font, size, color, alignment, and more. 
+The PowerPoint Interface 
+But before you start designing your slides, you must familiarize yourself 
+with the PowerPoint interface. The interface is the main area where you can 
+access all the features and options of the program. 
+The components of the interface include: 
+1. The Start Screen 
+You will see the Start Screen when you open PowerPoint for the first time. 
+You can create a new presentation, choose a template, or open a recent file. 
+2. The Ribbon 
+The Ribbon is the long horizontal bar at the top of the PowerPoint window. 
+It contains various tabs like Home, Insert, Design, Transitions, Animations, 
+and more. Each tab has different groups of commands that are related to a 
+specific task. For example, the Home tab has Clipboard, Slides, Font, 
+Paragraph, Drawing, and Editing groups. 
+Some groups have a small arrow in the bottom-right corner called the 
+dialog launcher. Clicking on it will open a dialog box with more options for 
+that group. 
+You can customize the Ribbon by adding or removing tabs, groups, and 
+commands. To do this, right-click on any tab and select Customize the 
+Ribbon. You can also minimize the Ribbon by clicking the arrow in the 
+upper-right corner, next to the question mark icon. 
+3. The Quick Access Toolbar 
+The Quick Access Toolbar is a small toolbar above the Ribbon. It has some 
+of the most commonly used commands, such as Save, Undo, Redo, and 
+Start Slide Show. You can add more commands to the Quick Access 
+Toolbar by clicking the drop-down arrow and selecting the ones you want. 
+4. The Slide Pane 
+The Slide Pane is the large area in the center of the PowerPoint window. It 
+shows a preview of the selected slide, where you can edit the content and 
+format the objects. You can also add animations, transitions, and other 
+effects to your slide from the Ribbon. 
+5. The Thumbnails Pane 
+The Thumbnails Pane is the vertical strip on the left side of the PowerPoint 
+window. It shows a miniature version of each slide in your presentation, 
+numbered in the order they appear. You can use the Thumbnails Pane to 
+navigate, rearrange, add, delete, duplicate, or hide slides. 
+6. The Notes Pane 
+The Notes Pane is the area below the Slide Pane. It holds notes for the 
+presenter to read while delivering the presentation. You can type your notes 
+in the Notes Pane or use the Notes Page View to see a larger version of the 
+notes and the slide. 
+7. The Status Bar 
+The Status Bar is the horizontal bar at the bottom of the PowerPoint 
+window. It displays information about the presentation, such as the slide 
+number, the zoom level, the theme name, and the spelling and grammar 
+status. It also has buttons to switch between different views, such as 
+Normal, Slide Sorter, Reading View, and Slide Show. 
+Formatting your Presentation 
+●       Select the Insert tab to add pictures, shapes, icons, or other objects, 
+and choose what you want to insert. You can resize, rotate, crop, or 
+format your objects using the tools on the Format tab that appear 
+when selecting an object. 
+●       To add animation, video, or audio, select the Animations tab and 
+choose an effect from the gallery. You can also adjust the 
+animation's timing, duration, and trigger using the Animation Pane. 
+Select the Insert tab and choose Video or Audio to insert a video or 
+audio file. You can also trim, loop, or mute your media using the 
+tools on the Playback tab that appears when you select a media file. 
+●       Select the Slide Show tab to present your slideshow and choose 
+From Beginning or From Current Slide. You can also use the 
+Presenter View to see your notes, a timer, and a preview of the next 
+slide. To add captions or subtitles to your presentation, select the 
+Subtitle Settings button and choose the language and position of the 
+subtitles. 
+●       To share your presentation with others, select the Share button on 
+the top right corner of the window. You can invite others to view or 
+edit your presentation online or save it as a PDF, video, or other file 
+format. 
+PowerPoint Shortcuts 
+Below are useful shortcuts for PowerPoint and how to use them in different 
+scenarios. 
+●       Create a new presentation: Ctrl+N 
+●       Open an existing presentation: Ctrl+O 
+●       Save a presentation: Ctrl+S 
+●       Close a presentation: Ctrl+W or Ctrl+F4 
+●       Cut selected text, object, or slide: Ctrl+X 
+●       Copy selected text, object, or slide: Ctrl+C 
+●       Paste cut or copied text, object, or slide: Ctrl+V 
+●       Undo the last action: Ctrl+Z 
+●       Redo the last action: Ctrl+Y 
+●       Insert a hyperlink: Ctrl+K 
+●       Insert a new comment: Ctrl+Alt+M 
+●       Start a presentation from the beginning: F5 
+●       Start a presentation from the current slide: Shift+F5 
+●       End the presentation: Esc 
+●       Perform the next animation or advance to the next slide: N, Enter, 
+Page down, Right arrow key, Down arrow key, or Spacebar 
+●       Perform the previous animation or return to the previous slide : P, 
+Page up, Left arrow key, Up arrow key, or Backspace 
+●       Display a blank black slide, or return to the presentation from a 
+blank black slide: B or Period (.) 
+●       Display a blank white slide, or return to the presentation from a 
+blank white slide: W or Comma (,) 
+●       Hide the pointer and navigation buttons: Ctrl+H 
+●       Zoom in : Ctrl+Plus sign (+) 
+●       Zoom out : Ctrl+Minus sign (-) 
+●       Zoom to fit: Ctrl+Alt+O 
+●       Open the Font dialog box: Ctrl+T 
+●       Apply bold formatting to the selected text: Ctrl+B : 
+You can use the following shortcuts to create, edit, and organize your 
+slides in PowerPoint. 
+●       Insert a new slide: Ctrl+M 
+●       Duplicate the selected slide: Ctrl+D 
+●       Delete the selected slide: Delete 
+●       Move the selected slide up: Ctrl+Up arrow key 
+●       Move the selected slide down: Ctrl+Down arrow key 
+●       Go to the next slide: Page down 
+●       Go to the previous slide: Page up 
+●             Go to a specific slide number: Type the slide number and press 
+Enter 
+●       Switch between Normal view, Slide Sorter view, and Slide Show 
+view: F6 
+●       Switch between Outline and Slide panes: Ctrl+Shift+Tab 
+You can use the following shortcuts to insert, format, and manipulate 
+objects and text in your slides. 
+●       Select all objects or text: Ctrl+A 
+●       Group the selected objects: Ctrl+G 
+●       Ungroup the selected group: Ctrl+Shift+G 
+●       Align the selected objects to the left: Ctrl+L 
+●       Align the selected objects to the center: Ctrl+E 
+●       Align the selected objects to the right: Ctrl+R 
+●       Align the selected objects to the top: Ctrl+Shift+T 
+●       Align the selected objects to the middle: Ctrl+Shift+M 
+●       Align the selected objects to the bottom: Ctrl+Shift+B 
+●       Distribute the selected objects horizontally: Ctrl+Shift+H 
+●       Distribute the selected objects vertically: Ctrl+Shift+V 
+●       Rotate the selected object to the right: Alt+Right arrow key 
+●       Rotate the selected object to the left: Alt+Left arrow key 
+●       Flip the selected object horizontally: Ctrl+H 
+●       Flip the selected object vertically: Ctrl+V 
+●       Increase the font size of the selected text: Ctrl+Shift+> 
+●       Decrease the font size of the selected text: Ctrl+Shift+< 
+●       Change the font color of the selected text: Ctrl+Shift+C 
+●       Change the fill color of the selected object: Ctrl+Shift+F 
+●       Change the outline color of the selected object: Ctrl+Shift+O 
+●       Apply or remove italic formatting to the selected text: Ctrl+I 
+●       Apply or remove underline formatting to the selected text: Ctrl+U 
+●             Apply or remove strikethrough formatting to the selected text: 
+Ctrl+Shift+X 
+●       Copy the formatting of the selected object or text: Ctrl+Shift+C 
+●       Paste the formatting to another object or text: Ctrl+Shift+V 
+●       Insert a picture: Alt+N, P 
+●       Insert a shape: Alt+N, SH 
+●       Insert a text box: Alt+N, X 
+●       Insert a SmartArt graphic: Alt+N, M 
+●       Insert a chart: Alt+N, C 
+●       Insert a table: Alt+N, T 
+●       Insert an equation: Alt+N, E 
+●       Insert a symbol : Alt+N, U 
+●       Insert a header or footer: Alt+N, H 
+You can use the following shortcuts to control your slide show during 
+the presentation. 
+●       Start the presentation in Presenter View: Alt+F5 
+●       Pause or resume the presentation: S or Plus sign (+) 
+●       Go to the next slide without playing the transition: Shift+Enter. 
+●              Go to the previous slide without playing the transition: 
+Shift+Backspace 
+●       Go to the first or last slide: Home or End 
+●       Display the context menu: Shift+F10. 
+●       Display the shortcut menu: Ctrl+Shift+F10. 
+●       Display the All Slides dialog box: Ctrl+S. 
+●       Display the Speaker Notes: Ctrl+H 
+●       Display the Slide Show Help dialog box: F1 
+●             Switch to the pen, eraser, or highlighter tool: Ctrl+P, Ctrl+E, or 
+Ctrl+I 
+●       Change the pen color: Ctrl+Shift+P 
+●       Erase the annotations: E 
+●       Hide or show the ink annotations: Ctrl+M 
+●       Use the laser pointer: Ctrl+L 
+●       Use the magnifier: Ctrl+Alt+M 
+●       Exit the magnifier: Esc 
+●       Switch between the magnifier and the pointer: Ctrl+M 
+●       Switch between the windowed and full-screen mode: Alt+Enter 
+●       Switch to a different program: Alt+Tab 
+Chapter Five 
+Microsoft Excel 
+Microsoft Excel helps you perform various tasks with data. Excel can help 
+you perform various tasks, such as budgeting, forecasting, reporting, 
+charting, etc. 
+The Microsoft Excel Interface 
+1. The Ribbon 
+The Ribbon is the Home for all commands and menus in Excel. It is located 
+at the top of the Excel window and consists of several tabs, each containing 
+a group of related commands. For example, the Home tab contains 
+commands for formatting, editing, and copying cells; the Insert tab contains 
+commands for inserting charts, tables, and pictures; the Formulas tab 
+contains commands for creating and managing formulas and functions; and 
+so on. 
+You can customize the Ribbon by adding or removing tabs, groups, and 
+commands according to your preferences and needs. To do this, right-click 
+on any tab and select Customize the Ribbon. In the dialog box, you can 
+check or uncheck the tabs, groups, and commands you want to show or hide 
+on the Ribbon. You can also create your tabs and groups and add commands 
+from the list on the right. 
+2. The Formula Bar 
+The formula bar allows you to enter and edit information in a cell. It is 
+located below the Ribbon and above the worksheet. The formula bar 
+displays the cursor's current location, the cell's name or range, and the value 
+or formula of the cell. For example, if you select cell A1 and type 10, the 
+formula bar will show A1 | 10. 
+You can use the formula bar to enter simple or complex formulas, functions, 
+and references in a cell. A formula is an expression that calculates a value 
+based on the values in other cells. A function is a predefined formula that 
+performs a specific calculation or operation. A reference refers to a cell or a 
+range of cells by using their names or addresses. For example, if you want 
+to calculate the sum of the values in cells B1 to B10, you can enter the 
+formula =SUM(B1:B10) in the formula bar. 
+Some of the most commonly used functions in Excel are: 
+SUM: Calculates the sum of a group of values 
+AVERAGE: Calculates the average of a group of values 
+IF: Tests a condition and returns one value if true and another 
+value if false 
+VLOOKUP: Looks up a value in a table and returns a 
+corresponding value from another column 
+COUNTIF: Counts the number of cells that meet a specific 
+criterion 
+3. The Worksheet 
+The worksheet is the main work area in Excel, where you can enter and 
+manipulate data. It comprises cells displayed in a grid created by the 
+intersection of rows and columns. Each cell can contain a value, a formula, 
+a function, or a reference. You can identify a cell by its address, which 
+consists of the column letter and the row number. For example, the cell in 
+the top-left corner of the worksheet is called A1. 
+You can select, format, Copy, move, delete, and sort cells, rows, and 
+columns in a worksheet. To select a cell, click on it. To select a range of 
+cells, drag the mouse over them or use the Shift and arrow keys. To format 
+a cell or a range of cells, use the commands on the Home tab, such as fonts, 
+colors, borders, alignment, and number formats. To copy or move a cell or a 
+range of cells, use the Cut, Copy, and Paste commands on the Home tab or 
+the right-click menu. To delete a cell or a range of cells, use the Delete 
+command on the Home tab or the right-click menu. To sort a range of cells, 
+use the Sort command on the Data tab or the right-click menu. 
+4. The Status Bar 
+The status bar is where you can see useful information about your 
+workbook, such as the current status, the number of sheets, the zoom level, 
+and the view options. It is located at the bottom of the Excel window and 
+consists of several icons and indicators. For example, the Ready indicator 
+shows that Excel is ready to accept your input, the Sheet indicator shows 
+the name and number of the active sheet, the Zoom slider allows you to 
+adjust the magnification of the worksheet, and the View buttons allow you 
+to switch between different views, such as Normal, Page Layout, and Page 
+Break Preview. 
+The status bar can also display information about the current selection, such 
+as the selected cells' sum, average, count, minimum, and maximum. To 
+customize the status bar, right-click on it, check or uncheck the information, 
+and view the options you want to show or hide. 
+Worksheet Actions 
+1. Create or open a workbook: A workbook is an Excel file 
+containing one or more worksheets and tabs that store your data. 
+Click Blank Workbook on the Excel home screen to create a new 
+workbook. To open an existing workbook, click Open Other 
+Workbooks and browse for the File you want. 
+2. Enter and format your data: To enter data in a worksheet, click 
+on a cell and type the value you want. You can use the arrow 
+keys, the Tab key, or the mouse to move between cells. You can 
+also copy and paste data from other sources, such as another 
+workbook, a website, or a text file. To format your data, use the 
+buttons on the Ribbon Home tab, which is the toolbar at the top 
+of the window. You can change your data's font, size, color, 
+alignment, and style. You can apply borders, shading, and 
+conditional formatting to make your data more readable and 
+attractive. 
+3. Use formulas and functions to perform calculations: Excel can 
+help you perform various calculations and operations on your 
+data using formulas and functions. A formula is an expression 
+that starts with an equal sign (=) and uses operators, constants, 
+cell references, and functions to calculate a value. A function is a 
+predefined formula that performs a specific task, such as SUM, 
+AVERAGE, IF, VLOOKUP, and more. To enter a formula, click 
+on a cell and type the formula you want. You can use the buttons 
+on the Formulas tab of the Ribbon to insert functions, names, and 
+other elements into your formulas. You can also use the AutoSum 
+button on the Home tab to add the values in a range of cells 
+quickly. 
+5. Create and customize charts and graphs to visualize your 
+data: Excel can help you create and customize various charts and 
+graphs to display your data and trends. To create a chart, select 
+the data you want to include and click on the Insert tab of the 
+Ribbon. You can choose from charts such as column, bar, line, 
+pie, scatter, histogram, and more. You can also use the 
+Recommended Charts button to see some suggestions based on 
+your data. To customize your chart, use the buttons on the Chart 
+Tools tabs that appear when you click on the chart. You can 
+change the chart type, layout, style, title, legend, axes, and labels. 
+You can also use the Format tab to change your chart elements' 
+colors, shapes, effects, and fonts. 
+6. Organize and summarize your data using tables and pivot 
+tables: Excel can help you organize and summarize your data 
+using tables and pivot tables. A table is a range of data that has 
+headers and can be formatted, sorted, filtered, and analyzed. A 
+Pivot Table is a unique table that can aggregate and rearrange 
+data from a source table or an external data source. To create a 
+table, select the data you want to include and click the Table 
+button on the Insert tab. To create a PivotTable, click on the 
+PivotTable button on the Insert tab and choose your PivotTable's 
+data source and location. You can then use the fields, filters, 
+rows, columns, and values areas to drag and drop the data you 
+want to include in your Pivot Table. You can also use the buttons 
+on the PivotTable Tools tabs to change your PivotTable's design, 
+layout, and options. 
+7. Save and share your workbook: To save your workbook, click 
+on the File tab and select Save or Save As. You can choose a 
+location to save your Files, such as on your computer or 
+OneDrive. You can also choose a file format like .xlsx, .csv, .pdf, 
+and more. To share your workbook, click the Share button on the 
+File tab. You can send your workbook as an attachment or a link 
+via email, OneDrive, SharePoint, or Teams. You can also control 
+the permissions and access levels of the recipients. You can also 
+co-author and edit your workbook with others in real-time using 
+Excel for the web, desktop, or mobile app. You can also comment 
+and chat with others within the workbook and track the changes 
+and history of the document. 
+Cell Actions 
+Cells are the basic units of data in Excel, where you can enter, format, 
+calculate, and manipulate information. Cells are organized into rows and 
+columns; each cell has a unique address based on location. Knowing how to 
+perform different actions on cells in Excel can help you work more 
+efficiently and effectively with your data. 
+1. Entering Data 
+One of the most essential actions on cells in Excel is entering data. You can 
+enter data manually or automatically, depending on your needs. To enter 
+data manually, you can: 
+●       Select a cell or a range of cells where you want to enter data. 
+●       Type the data using your keyboard. You can enter text, numbers, 
+dates, times, formulas, or functions. 
+●       Press Enter to confirm the data and move to the next cell, or press 
+Tab to confirm the data and move to the right. 
+To enter data automatically, you can: 
+●            Use the AutoFill feature to fill a series of cells with data that 
+follows a pattern, such as dates, numbers, or text. To use AutoFill, 
+select the cell or cells that contain the data you want to fill, drag the 
+fill handle (the small square at the bottom right corner of the 
+selection) to the direction and length you want, and release the 
+mouse button. 
+●            Use the Flash Fill feature to fill a series of cells with data that 
+matches the pattern of another column, such as extracting names, 
+emails, or phone numbers. To use Flash Fill, enter the data you want 
+to fill in the first cell of the column, press Enter, and then press Ctrl 
++ E to fill the rest of the column. 
+●       Use the Data Validation feature to restrict the type of data entered 
+in a cell or a range of cells, such as numbers, dates, text, or a list of 
+values. To use Data Validation, select the cell or cells where you 
+want to apply the validation, go to the Data tab, click Data 
+Validation, and choose the criteria and options you want. 
+2. Formatting 
+Another common action on cells in Excel is formatting. Formatting can 
+change the appearance and behavior of the data in the cells, such as the 
+font, color, alignment, number format, etc. Formatting can make your data 
+more readable, consistent, and professional. 
+To format cells in Excel, you can: 
+●            Use the formatting tools on the Home tab, such as Font, 
+Alignment, Number, Styles, etc. To use these tools, select the cell or 
+cells you want to format and click the tool you want. You can also 
+use the Format Cells dialog box to access more formatting options 
+by right-clicking the selection, choosing Format Cells, or pressing 
+Ctrl + 1. 
+●            Use the conditional formatting feature to apply formatting rules 
+based on the value or condition of the cells, such as highlighting, 
+data bars, color scales, or icons. To use conditional formatting, 
+select the cell or cells you want to format, go to the Home tab, click 
+Conditional Formatting, and choose the rule you want. You can also 
+create your own rules by clicking New Rule or Manage Rules. 
+●       Use the cell styles feature to apply a set of formatting attributes to 
+a cell or a range of cells, such as titles, headings, data, or themes. To 
+use cell styles, select the cell or cells you want to format, go to the 
+Home tab, click Cell Styles, and choose the style you want. You can 
+also create your styles by clicking New Cell Style. 
+3. Calculation 
+One common action on cells in Excel is calculation. Calculation can 
+perform mathematical operations and analysis on the data in the cells, such 
+as addition, subtraction, multiplication, division, average, sum, count, etc. 
+Calculation can help you find answers, insights, and trends from your data. 
+To perform calculations on cells in Excel, you can: 
+●       Use formulas to calculate the value of a cell based on the values of 
+other cells, constants, or operators. To use formulas, select the cell 
+where you want to enter the formula, type the equal sign (=), and 
+then type the formula using the cell references, constants, and 
+operators you want. You can also use the Formula Builder to help 
+you create formulas by clicking the fx button next to the formula bar 
+or pressing Shift + F3. 
+●       Use functions to calculate the value of a cell based on a predefined 
+calculation, such as SUM, AVERAGE, COUNT, IF, VLOOKUP, 
+etc. To use functions, select the cell where you want to enter the 
+function, type the equal sign (=), and then type the name of the 
+function and the arguments you want. You can also use the Insert 
+Function dialog box to help you find and insert functions by 
+clicking the fx button next to the formula bar or pressing Shift + F3. 
+●       Use the AutoSum feature to quickly calculate the sum of a range of 
+cells, such as a row, a column, or a table. To use AutoSum, select 
+the cell where you want to enter the sum, go to the Home tab, click 
+AutoSum, and confirm the range you want to sum. You can also use 
+other functions like AVERAGE, COUNT, MAX, or MIN by 
+clicking the drop-down arrow next to the AutoSum button. 
+4. Copying, Moving, and Deleting 
+Another set of actions on cells in Excel is copying, moving, and deleting. 
+Depending on your needs, these actions can help you rearrange, duplicate, 
+or remove the data in the cells. 
+To copy, move, or delete cells in Excel, you can: 
+●       Use the cut, Copy, and paste commands to move or duplicate the 
+data from one cell or range of cells to another. To use these 
+commands, select the cell or cells you want to cut or copy, go to the 
+Home tab, click Cut or Copy, select the destination cell or cells, and 
+click Paste. You can also use the keyboard shortcuts Ctrl + X, Ctrl + 
+C, and Ctrl + V or the right-click menu to perform these commands. 
+You can also use the Paste Special option to paste only specific 
+aspects of the data, such as the values, the formulas, the formatting, 
+etc. 
+●       Use the drag-and-drop method to move or duplicate the data from 
+one cell or range of cells to another. To use this method, select the 
+cell or cells you want to move or copy, hover the mouse pointer 
+over the edge of the selection until it becomes a four-headed arrow, 
+and drag the selection to the destination cell or cells. Hold the Ctrl 
+key while dragging the selection to copy the data instead of moving 
+it. 
+●       Use the delete command to remove the data from one cell or range 
+of cells. To use this command, select the cell or cells you want to 
+delete, go to the Home tab, click Delete, and choose the option you 
+want. You can also use the keyboard shortcut Delete or the right- 
+click menu to perform this command. You can also use the Clear 
+option to clear only specific aspects of the data, such as the values, 
+the formulas, the formatting, etc. 
+Chapter Six 
+Microsoft Outlook 
+Microsoft Outlook is a popular email and calendar application that can help 
+you manage your personal and professional communication, schedule, and 
+tasks. Whether you want to send an email, create an event, or organize your 
+contacts, Outlook can help you do it quickly and efficiently. 
+Getting Started 
+Before you can use Outlook, you need to have an account. Here are the 
+steps to do that: 
+●       Create an account: If you don't yet have one, you can create one 
+for free at outlook.com. Click on the Create an Account tab on the 
+Homescreen. You will need to provide some basic information, such 
+as your name, email address, and password. You can also choose a 
+custom domain name for your email address, such as 
+yourname@outlook.com. 
+●       Sign in: Once you have created an account, you can sign in with 
+your account credentials. You may need to verify your identity with 
+a code sent to your phone or email. You can also stay signed in or 
+sign out after each session. 
+Creating and Sending Email 
+One of the main functions of Outlook is to send and receive email 
+messages. Here are the steps to create and send an email using Outlook: 
+●            Open a new message: Do this by clicking the New Message 
+button on the top left corner of the app. Alternatively, you can use 
+the keyboard shortcut Ctrl+N on Windows or Command+N on 
+MacOS. 
+●       Add recipients: Type the email address of the person or people 
+you want to send the message to in the To field. You can also add 
+recipients in the Cc (carbon copy) or Bcc (blind carbon copy) fields 
+if you want to send the message to multiple people without 
+revealing their email addresses to each other. You can also select 
+recipients from your contacts list by clicking the To button next to 
+the field and choosing the contacts you want to add. 
+●            Add a subject: Type a brief and descriptive summary of your 
+message in the Subject field. This will help the recipient know what 
+your message is about and decide whether to open it or not. 
+●            Compose your message: Type your message's content in the 
+email's main body. Use the formatting tools on the top of the 
+message window to change your text's font, size, color, alignment, 
+and style. You can also insert emojis, symbols, tables, pictures, 
+links, and other elements to enhance your message. 
+●       Add attachments: If you want to send a file, such as a document, 
+image, or video, along with your message, attach it by clicking the 
+Attach button at the top of the message window. You can attach a 
+file from your device, your OneDrive cloud storage, or other online 
+sources. You can also drag and drop files from your device to the 
+message window to attach them. 
+●       Add a signature: If you want to add a personalized signature to 
+your message, click the Signature button at the top of the message 
+window. You can create and edit your signature in the signature 
+dialog box. You can also choose to automatically add your signature 
+to every message you send or to specific messages only. 
+●            Send your message: When you are done composing your 
+message, send it by clicking on the Send button on the top left 
+corner of the message window. Alternatively, you can use the 
+keyboard shortcut Ctrl+Enter on Windows or Command+Enter on 
+MacOS. 
+Managing Email 
+Outlook also helps you organize, sort, and filter your email messages to 
+keep your inbox clean and clutter-free. Here are some ways to manage your 
+email using Outlook: 
+●       Use folders: You can create folders to store and categorize your 
+messages according to different criteria, such as sender, topic, or 
+date. Create a new folder by right-clicking on any existing folder 
+and choosing New folder. You can also rename, delete, or move 
+folders by right-clicking on them and choosing the appropriate 
+option. You can drag and drop messages from your inbox to any 
+folder to which you want to move them. 
+●       Use categories: Assign and use categories to label and group your 
+messages according to different criteria, such as priority, status, or 
+project. You can create and edit categories by clicking the 
+Categorize button at the app's top and choosing All categories. You 
+can also assign a category to a message by clicking the Categorize 
+button and choosing the category you want to apply. You can filter 
+your messages by category by clicking the Filter button at the app's 
+top and choosing Categorized. 
+●            Use rules: Create and use rules to automate specific actions on 
+your messages, such as moving, deleting, or forwarding them, based 
+on certain conditions, such as sender, subject, or attachment. Create 
+and edit the rules by clicking the Rules button at the app's top and 
+choosing Manage Rules & alerts. You can also run a rule on a 
+message by clicking the Rules button and choosing the rule you 
+want to apply. 
+●            Use flags: Use flags to mark and remind yourself of important 
+messages you need to follow up on or act on. Flag a message by 
+clicking on the Flag icon next to the message in your inbox or by 
+right-clicking on the message and choosing Flag. You can also set a 
+due date and a reminder for your flagged message by right-clicking 
+on the flag icon and choosing the appropriate option. You can view 
+your flagged messages by clicking on the Tasks button on the 
+bottom left corner of the app and choosing Flagged items. 
+Contacts and Tasks 
+Outlook also helps you create, edit, and delete contacts and tasks to keep 
+track of your personal and professional network and goals. Here are the 
+steps to do that: 
+●       Create a contact: You can create a new contact by clicking on the 
+People button on the bottom left corner of the app and choosing 
+New Contact. After doing this, enter the name, email address, phone 
+number, and other details of the person you want to add to your 
+contacts list. You can also add a picture, a note, or a category to 
+your contact. Save your contact by clicking the Save & Close button 
+in the top left corner of the contact window. 
+●       Edit a contact: Edit an existing contact by clicking on the People 
+button on the bottom left corner of the app and choosing the contact 
+you want to edit. You can change any information or details of your 
+contact as you wish. You can save your changes by clicking the 
+Save & Close button on the top left corner of the contact window. 
+●       Delete a contact: You can delete an existing contact by clicking 
+on the People button on the bottom left corner of the app and 
+choosing the contact you want to delete. Delete your contact by 
+clicking the Delete button on the top of the app or pressing the 
+Delete key on your keyboard. You can also restore a deleted contact 
+by clicking on the Deleted Items folder on the left side of the app 
+and choosing the contact you want to restore. Click on the Restore 
+button on the top of the app or drag and drop the contact to the 
+Contacts folder. 
+●       Create a task: Create a new task by clicking the Tasks button on 
+the bottom left corner of the app and choosing New task. Enter the 
+name, due date, priority, and task status you want to add to your 
+tasks list. You can also add a note, a category, or a reminder to your 
+task. Save your task by clicking the Save & Close button in the top 
+left corner of the task window. 
+●       Edit a task: Edit an existing task by clicking on the Tasks button 
+on the bottom left corner of the app and choosing the task you want 
+to edit. Change any information or details of your task as you wish. 
+Save your changes by clicking the Save & Close button on the top 
+left corner of the task window. 
+●            Delete a task: Delete an existing task by clicking on the Tasks 
+button on the bottom left corner of the app and choosing the task 
+you want to delete. Then click the Delete button on the app's top or 
+press the Delete key on your keyboard. 
+●       Restore a task: You can restore a deleted task by clicking on the 
+Deleted Items folder on the left side of the app and choosing the 
+task you want to restore. Then click the Restore button on the app's 
+top or drag and drop the task to the Tasks folder. 
+Calendar 
+Outlook also helps you create, edit, and delete events and appointments to 
+effectively manage your time and schedule. Here are the steps to do that: 
+●            Create an event: Create a new event by clicking the Calendar 
+button on the bottom left corner of the app and choosing New 
+Event. Then, enter the name, location, start and end times, and event 
+recurrence you want to add to your calendar. You can also add a 
+note, a category, or a reminder to your event. Save your event by 
+clicking the Save & Close button on the top left corner of the event 
+window. 
+●       Edit an event: Edit an existing event by clicking on the Calendar 
+button on the bottom left corner of the app and choosing the event 
+you want to edit. You can change any information or details of your 
+event as you wish. Save your changes by clicking the Save & Close 
+button on the top left corner of the event window. 
+●            Delete an event: Delete an existing event by clicking on the 
+Calendar button on the bottom left corner of the app and choosing 
+the event you want to delete. Then click the Delete button on the 
+app's top or press the Delete key on your keyboard. 
+●            Restore an event: Restore a deleted event by clicking on the 
+Deleted Items folder on the left side of the app and choosing the 
+event you want to restore. Then click the Restore button on the app's 
+top or drag and drop the event to the Calendar folder. 
+Chapter Seven 
+Microsoft Teams 
+Microsoft Teams is a collaboration app that helps you and your team stay 
+informed, organized, and connected. Whether working remotely, in the 
+office, or on the go, Teams lets you chat, create teams and channels, share 
+files, use apps, and more. Here is a brief article on how to use Microsoft 
+Teams: 
+How to use Microsoft Teams 
+1. Sign in to Teams 
+To sign in to Teams, enter your Microsoft 365 username and password. You 
+can also use your phone number or Skype ID if you have one. 
+2. Chat with someone or a group 
+Teams lets you chat with anyone in your organization, one-on-one or in a 
+group. You can also chat with people outside your organization if they have 
+a Teams account. 
+To start a chat, select Chat on the left side of the app and then click New 
+Chat. Type the name or email address of the person or group you want to 
+chat with. You can also add a subject line to give some context to your chat. 
+To send a message, type in the box at the bottom of the chat and press Enter. 
+You can also use the formatting options to add emojis, stickers, gifs, 
+attachments, and more. 
+To make a call or start a video meeting, click the audio or video icon at the 
+top right of the chat. You can also share your screen or add more people to 
+the chat. 
+3. Create a team and channels 
+A team is a collection of people, conversations, files, and tools related to a 
+specific topic, project, or department. A channel is a discussion within a 
+team dedicated to a subtopic, task, or theme. 
+To create a team, select Teams on the left side of the app and then click Join 
+or Create a Team. You can choose from templates such as Class, Staff, 
+Project, or Event. Or you can create a team from scratch. 
+To create a channel, go to the team you want and click More options > Add 
+channel. You can name the channel, add a description, and choose the 
+privacy settings. You can also create a channel from an existing chat by 
+clicking More options > Create a channel from this chat. 
+4. Share files and apps 
+Teams lets you share files and apps with your teammates in a chat or a 
+channel. You can upload files from your device, OneDrive, SharePoint, or 
+other cloud storage services. You can also use apps like Word, Excel, 
+PowerPoint, Forms, Planner, and more. 
+To share a file or an app, go to the chat or channel you want and click the 
+paperclip icon or the app icon at the bottom of the message box. You can 
+also drag and drop files from your device or copy and paste links from the 
+web. 
+To access the files and apps you have shared or received, go to the Files or 
+Apps tab at the top of the chat or channel. You can also find them in the 
+Files section on the left side of the app. 
+5. Join or schedule a meeting 
+Teams lets you join or schedule meetings with anyone in your organization 
+or even outside your organization if they have a Teams account. You can 
+also join or schedule live events, webinars, or trainings. 
+To join a meeting, go to the Calendar section on the left side of the app and 
+find the meeting you want to join. You can join a meeting from a chat or a 
+channel by clicking the Join button. 
+To schedule a meeting, click New Meeting in the Calendar section. You can 
+add a title, a location, a start and end time, and a description. You can invite 
+people, add a channel, and set a recurrence. 
+To start a meeting, go to the Calendar section and find your scheduled 
+meeting. You can also start a meeting from a chat or a channel by clicking 
+the Meet Now button. 
+Use the controls at the bottom of the meeting window to manage a meeting. 
+You can mute or unmute yourself, turn your camera on or off, share your 
+screen or content, raise your hand, chat with participants, and more. 
+Chapter Eight 
+Microsoft One Note 
+Microsoft OneNote is a digital notebook that lets you create, organize, and 
+share notes across multiple devices. Whether you want to jot down ideas, 
+plan a project, capture information, or collaborate with others, OneNote can 
+help you do it all. 
+How to create and open notebooks 
+To use OneNote, you must sign in with a personal, work, or school account. 
+You can sign in from the OneNote app on your Windows, Mac, iOS, 
+Android device or web browser. 
+To create a new notebook, click the + Notebook button on the app or the 
+web. You can choose a name and a color for your notebook and select a 
+location to save it. You can save your notebook on OneDrive, a cloud 
+storage service that lets you access your notes from anywhere. 
+To open an existing notebook, click the Notebooks button on the app or the 
+web. You will see a list of notebooks that you have created or that have 
+been shared with you. You can also open a notebook from OneDrive by 
+navigating to the folder where it is stored and clicking or tapping on it. 
+How to add and format notes 
+Each notebook in OneNote consists of sections, pages, and tabs. Sections 
+are like chapters in a book, pages are like pages in a book, and tabs are like 
+subpages within a page. You can use sections, pages, and tabs to organize 
+your notes by topic, project, or category. 
+To add a new page or section to a notebook, click or tap the + Page or + 
+Section button. You can choose a name and a color for your page or section 
+and drag and drop it to rearrange it. 
+You can also insert various types of content, such as images, audio, video, 
+links, tables, and files. To insert content, click or tap the Insert tab on the 
+app or the web and select the type of content you want to add. 
+You can use styles, fonts, colors, and tags to format your notes. To format 
+your notes, click or tap the Home tab on the app or the web and select the 
+options you want to use. 
+How to share on Notes 
+OneNote lets you share your notes with others and collaborate on them in 
+real-time. You can share a notebook or a page with others via email, link, or 
+invitation. You can also edit and comment on shared notes and view the 
+history and changes of shared notes. 
+To share a notebook or a page with others, click or tap the Share button on 
+the app or the web. 
+Chapter Nine 
+Microsoft OneDrive 
+Microsoft OneDrive is a cloud storage service that allows you to store, 
+access, share, and sync your files and folders across different devices. 
+OneDrive can help you to keep your files safe, collaborate with others, and 
+access your files from anywhere. 
+Compulsory, you must have a Microsoft account to use OneDrive. Create 
+one if you don't have one, then sign in with your account. 
+Uploading Files 
+To upload files and folders to OneDrive, you can use any of the methods 
+below: 
+●            On a web browser, click the Upload button and select Files or 
+Folder. Then, choose the files or folders you want to upload and 
+click Open. 
+●       On a desktop app, drag and drop the files or folders you want to 
+upload to the OneDrive folder on your computer. 
+●            On a mobile app, tap the Add button and select Upload. Then, 
+choose the files or folders you want to upload and tap Done. 
+Organizing and Managing Your Files 
+To organize and manage your files and folders in OneDrive, you can use the 
+following features: 
+●            Create new folders by clicking the New button and selecting 
+Folder. Then, enter a name for the folder and click Create. 
+●            Rename files or folders by right-clicking them and selecting 
+Rename. Then, enter a new name and click OK. 
+●       Move or copy files or folders by right-clicking them and selecting 
+Move to or Copy to. Then, choose a destination folder and click 
+Move or Copy. 
+●       Delete files or folders by right-clicking them and selecting Delete. 
+Then, click Delete again to confirm. 
+●       Sort files or folders by clicking the Sort by button and selecting 
+criteria, such as Name, Size, or Date modified. 
+●       Search files or folders by entering a keyword in the Search box and 
+pressing Enter. 
+Sharing and Collaborating with OneDrive 
+OneDrive allows you to share your files and folders with others by sending 
+a link or inviting specific people. You can also set different permissions and 
+options for sharing, such as view, edit, and expiration. To share files or 
+folders with OneDrive, follow these steps: 
+1.    Select the files or folders you want to share and click the Share button. 
+2.    Choose how you want to share: 
+●       To send a link, click Anyone with the link and copy the link. Then, 
+paste the link in an email, message, or social media post and send it 
+to the people you want to share with. 
+●            To invite specific people, click Specific people and enter their 
+email addresses. Then, click Send. 
+3. To change the permissions and options for sharing, click the More 
+options button and select the settings you want. For example, you can: 
+●             Allow or prevent editing by checking or unchecking the Allow 
+editing box. 
+●            Set an expiration date by clicking the Set expiration link and 
+choosing a date. 
+●       Require a password by clicking the Set password link and entering 
+a password. 
+●       Remove access by clicking the Manage access link and the X icon 
+next to the person or link you want to remove. 
+OneDrive also allows you to collaborate with others on your files and 
+folders, using features such as comments, version history, and co-authoring. 
+To collaborate with OneDrive, use the following features: 
+●            Add comments to files or folders by right-clicking them and 
+selecting Comment. Then, enter your comment and click Post. You 
+can also reply to or delete comments by clicking the Reply or Delete 
+buttons. 
+●       View the version history of files or folders by right-clicking them 
+and selecting Version history. Then, you can see the changes made 
+by different users, restore a previous version, or delete a version by 
+clicking the Restore or Delete buttons. 
+●       Co-author files or folders by opening them in the online or desktop 
+versions of Microsoft Office apps, such as Word, Excel, or 
+PowerPoint. Then, you can see the changes made by other users in 
+real-time, chat with them, or save the file to OneDrive. 
+Syncing and Backing Up with OneDrive 
+OneDrive allows you to sync your files and folders between OneDrive and 
+your local devices to access them offline and keep them updated. To sync 
+files and folders with OneDrive, you need to use the OneDrive desktop app. 
+To sync files and folders with OneDrive, follow these steps: 
+1.    Open the OneDrive app and sign in with your Microsoft account. 
+2.    Click the OneDrive icon in the taskbar and select Settings. 
+3.    Click the Account tab and click the Choose Folders button. 
+4.    Select the files and folders you want to sync and click OK. 
+5.      To change the sync settings, click the Network tab and adjust the 
+settings you want. For example, you can: 
+●       Limit the upload or download speed by moving the sliders. 
+●       Pause or resume syncing by clicking the Pause syncing or Resume 
+syncing buttons. 
+●       Choose how to handle files or folders that are deleted or renamed 
+by clicking the Confirm deletions or Confirm renames buttons. 
+OneDrive also allows you to backup your files and folders to OneDrive 
+using features such as File History and Personal Vault. To backup files and 
+folders with OneDrive, use the following features: 
+1. File History: This feature allows you to backup your files and folders 
+from your Windows PC to OneDrive. To use File History, follow these 
+steps: 
+●       Open the Settings app on your PC and click Update & Security. 
+●       Click the Backup tab and click the Add a Drive button. 
+●       Select OneDrive as the drive and click OK. 
+●       Turn on the Automatically back up my files switch and click the 
+More Options link. 
+●       Choose the files and folders you want to backup and how often 
+you want to backup by clicking the Add a folder or Back up my 
+files buttons. 
+2. Personal Vault: This feature allows you to backup your files and folders 
+to a secure and encrypted folder in OneDrive. To use Personal Vault, follow 
+these steps: 
+●       Open OneDrive on your device and sign in with your Microsoft 
+account. 
+●       Click the Personal Vault folder and click the Unlock button. 
+●       Verify your identity using a password, PIN, or fingerprint. 
+●            Drag and drop the files or folders you want to backup to the 
+Personal Vault folder. 
+●       Lock the Personal Vault folder by clicking the Lock button. 
+OneDrive also allows you to restore your files and folders from OneDrive 
+using features such as Recycle Bin and Restore your OneDrive. To restore 
+files and folders with OneDrive, use the following features: 
+1. Recycle Bin: This feature allows you to restore the files and folders you 
+deleted from OneDrive. To use Recycle Bin, follow these steps: 
+●       Open OneDrive on your device and sign in with your Microsoft 
+account. 
+●            Click the Recycle Bin folder and select the files or folders you 
+want to restore. 
+●       Click the Restore button and click OK. 
+2. Restore your OneDrive: This feature allows you to restore your files 
+and folders to a previous state in case of accidental changes or deletion. To 
+use Restore your OneDrive, follow these steps: 
+●       Open OneDrive on your device and sign in with your Microsoft 
+account. 
+●       Click the Settings button and select Options. 
+●       Click the Restore your OneDrive link and choose a date and time 
+to restore. 
+●       Click the Restore button and click OK. 
+Chapter Ten 
+Microsoft Publisher 
+Microsoft Publisher is a desktop publishing software that lets you create 
+and share professional-quality publications for print, online, or email. 
+Whether you want to create a newsletter, a brochure, a postcard, or a flyer, 
+Publisher has the tools and templates you need to get started quickly and 
+easily. 
+How to use Publisher's pre-designed templates to create 
+publications 
+One of the easiest ways to create publications with Publisher is to use its 
+pre-designed templates. Here are the steps to use Publisher's templates: 
+●       Open Publisher and click on the File tab. 
+●       Click on New and browse the categories of templates available. 
+You can also search for a specific template by typing a keyword in 
+the Search for online templates box. 
+●       Select the template that you want to use and click on Create. The 
+template will open in Publisher with placeholder text and pictures 
+you can replace with your content. 
+●       To edit the text, click on the text box and type your text. You can 
+also change the font, size, color, and style of the text using the 
+Home tab. 
+●       To edit the pictures, click on the picture and use the Picture Tools 
+tab to crop, resize, rotate, or apply effects to the picture. You can 
+also replace the picture with your picture by right-clicking on the 
+picture and selecting Change Picture. 
+●       To add more elements to your publication, such as shapes, borders, 
+or calendars, use the Insert tab and select the element you want to 
+insert. You can also use the Design tab to change your publication's 
+color scheme, font scheme, or page background. 
+●       To preview your publication, click on the File tab and select Print. 
+You can also use the Zoom slider or the Page Navigation pane to 
+view different parts of your publication. 
+How to precisely layout and style text, pictures, borders, 
+calendars, and more 
+Publisher gives you a lot of control over the layout and style of your 
+publications. You can use the following tools and options to adjust your 
+elements precisely: 
+●       The rulers, gridlines, and guides help you align and position your 
+elements on the page. You can show or hide them by clicking on the 
+View tab and checking or unchecking the Ruler, Gridlines, or 
+Guides boxes. You can also customize the settings of the rulers, 
+gridlines, and guides by clicking on the Page Design tab and 
+selecting Layout. 
+●       The align, distribute, group, and rotate tools help you arrange and 
+manipulate your elements on the page. You can access them by 
+selecting the elements you want to adjust and clicking the Format 
+tab. You can also use the Arrange group to change your elements' 
+order, alignment, or rotation. 
+●       The size and position tools help you change the dimensions and 
+location of your elements on the page. You can access them by 
+selecting the elements you want to adjust and clicking the Format 
+tab. You can also use the Size and Position dialog boxes to enter the 
+exact values for your elements' width, height, and position. 
+●       The margin, column, and row tools help you change the spacing 
+and layout of your text and tables on the page. You can access them 
+by selecting the text box or table you want to adjust and clicking the 
+Format tab. You can also use the Margins, Columns, and Rows 
+dialog boxes to enter the exact values for your text and tables' 
+margin, column, and row settings. 
+How to publish your publications 
+Publisher gives you a flexible publishing option to choose the best format 
+for your audience, whether print, online, or email. Here are the steps to 
+publish your publications: 
+●       Click on the File tab and select Export. 
+●       Choose the format that you want to use for your publication. You 
+can use either PDF/XPS, E-mail, HTML, or Pack and Go. 
+●       Click on Create or Save to publish your publication in the format 
+that you have chosen. 
+How to use Publisher's sharing features 
+Publisher also has some sharing features that require OneDrive, OneDrive 
+for Business, or SharePoint, which are cloud-based services that let you 
+store and access your files online. 
+To use these features, you must have a Microsoft account and sign in to 
+Publisher. You also need to subscribe to OneDrive, OneDrive for Business, 
+or SharePoint or use the free versions of these services with limited storage 
+and functionality. 
+You can access these features by clicking the File tab and selecting Save, 
+Share, or Present Online. 
+Chapter Eleven 
+Microsoft Visio 
+Microsoft Visio is a diagramming app that you can use to create flow 
+charts, network diagrams, floor plans, and much more. Whether you need to 
+visualize a process, a system, a space, or a data set, Visio can help you turn 
+complex information into clear and engaging diagrams. 
+Choosing a template and a stencil 
+A template is a pre-designed diagram that you can customize to fit your 
+needs. A stencil is a collection of shapes you can drag and drop onto your 
+diagram. Visio has hundreds of templates and stencils for different 
+diagrams, such as business, engineering, education, and more. You can 
+browse and search for templates and stencils in the File tab under New. 
+To choose a template and a stencil, follow these steps: 
+●       Click the File tab and select New. 
+●       Browse or search for the template you want and click on it. 
+●       Select the stencil you want and click Create. 
+Creating and editing diagrams 
+Once you have chosen a template and a stencil, you can start creating and 
+editing your diagram. You can drag and drop shapes onto the canvas, 
+connect them with connectors, and add text, colors, styles, themes, and 
+variants to make your diagram more attractive and informative. You can 
+also use alignment, spacing, containers, and layers to organize and format 
+your diagram. You can also insert pictures, icons, charts, and other objects 
+to enhance your diagram. 
+Dragging and dropping shapes 
+Shapes are the essential elements of your diagram. You can drag and drop 
+shapes from the stencil onto the canvas and resize, rotate, and move them as 
+you like. You can also copy, paste, duplicate, and delete shapes. 
+To drag and drop shapes, follow these steps: 
+●            Select the shape you want from the stencil and drag it onto the 
+canvas. 
+●       Release the mouse button to drop the shape. 
+●       To resize the shape, drag the handles on the sides or corners of the 
+shape. 
+●       To rotate the shape, drag the green handle on the top of the shape. 
+●       To move the shape, drag it to a new location on the canvas. 
+Connecting shapes with connectors 
+Connectors are lines that link shapes together and show the relationship 
+between them. You can use different connectors, such as straight, curved, or 
+angled, and add arrows, labels, and colors. You can also use dynamic 
+connectors that adjust automatically when you move the shapes. 
+To connect shapes with connectors, follow these steps: 
+●       Select the connector tool from the Home tab under Tools. 
+●            Click on the first shape you want to connect and drag the 
+connector to the second shape. 
+●       Release the mouse button to connect the shapes. 
+●             To change the connector type, right-click on the connector and 
+select Connector Types. 
+●       To add arrows, labels, or colors to the connector, use the Home tab 
+options under Shape Styles. 
+Adding text, colors, styles, themes, and variants 
+You can add text to your shapes and connectors to provide more 
+information and clarity to your diagram. You can also change the colors, 
+styles, themes, and variants of your shapes and connectors to make your 
+diagram more appealing and consistent. 
+To add text, follow these steps: 
+●       Select the shape or connector to which you want to add text and 
+double-click on it. 
+●       Type the text you want and press Enter. 
+●       To format the text, use the options on the Home tab under Font. 
+To change the colors, styles, themes, and variants, follow these steps: 
+●       Select the shape or connector you want to change or press Ctrl+A 
+to select all. 
+●       To change the color, use the Fill and Outline options on the Home 
+tab under Shape Styles. 
+●       Use the Quick Styles option on the Home tab under Shape Styles 
+to change the style. 
+●            To change the theme, use the Themes option on the Design tab 
+under Themes. 
+●       To change the variant, use the Variants option under the Design 
+tab. 
+Using alignment, spacing, containers, and layers 
+You can use alignment, spacing, containers, and layers to organize and 
+format your diagram. Alignment and spacing help you arrange your shapes 
+and connectors neatly and orderly. Containers help you group and label 
+related shapes and connectors. Layers help you manage the visibility and 
+order of your shapes and connectors. 
+To use alignment and spacing, follow these steps: 
+●       Select the shapes and connectors you want to align and space them 
+or press Ctrl+A to select all. 
+●       To align the shapes and connectors, use the Align option on the 
+Home tab under Arrange. 
+●       To space the shapes and connectors, use the Position option on the 
+Home tab under Arrange. 
+To use containers, follow these steps: 
+●       Select the shapes and connectors you want to group and label or 
+press Ctrl+A to select all. 
+●       Use the Container option on the Insert tab under Diagram Parts to 
+add a container. 
+●       To change the style of the container, use the Quick Styles option 
+on the Home tab under Shape Styles. 
+●       To add a label to the container, double-click on the container and 
+type the text you want. 
+To use layers, follow these steps: 
+●       Use the Layer Properties option on the Home tab under Editing to 
+add a layer. 
+●       To assign shapes and connectors to a layer, select them and use the 
+Assign to Layer option on the Home tab under Editing. 
+●            To manage the visibility and order of the layers, use the Layer 
+Settings option on the Home tab under Editing. 
+Inserting pictures, icons, charts, and other objects 
+You can insert pictures, icons, charts, and other objects to enhance your 
+diagram. Pictures and icons can add visual interest and context to your 
+diagram. Charts can show data and trends related to your diagram. Other 
+objects, such as hyperlinks, comments, and shapes from other stencils, can 
+add more functionality and interactivity to your diagram. 
+To insert pictures, icons, charts, and other objects, follow these steps: 
+●       Use the Pictures option on the Insert tab under Illustrations 
+●       to insert a picture. 
+●       Use the Icons option on the Insert tab under Illustrations 
+●       to insert an icon. 
+●       Use the Chart option on the Insert tab under Illustrations to insert a 
+chart. 
+●            To insert other objects, use the options on the Insert tab under 
+Links, Comments, and Add-Ons. 
+Saving, exporting, and printing diagrams 
+You can save your diagram as a Visio file (.vsdx) or another file type, such 
+as PDF, PNG, or SVG. You can export your diagram as a web page (.htm) 
+or data (.csv). You can also print your diagram on paper or as a PDF. 
+To save, export, and print diagrams, follow these steps: 
+●       Use the Save or Save As option on the File tab under Save to save 
+your diagram. 
+●            To export your diagram, use the Export option on the File tab 
+under Export. 
+●            Use the Print option on the File tab under Print to print your 
+diagram. 
+Sharing and co-authoring diagrams 
+You can share your diagram via email, OneDrive, Teams, or SharePoint. 
+You can also co-author and comment on diagrams with others. Sharing and 
+co-authoring diagrams can help you collaborate and communicate more 
+effectively with your team. 
+To share and co-author diagrams, follow these steps: 
+●       To share your diagram via email, use the Share option on the File 
+tab under Share. 
+●       To share your diagram via OneDrive, Teams, or SharePoint, use 
+the Save to Cloud option on the File tab under Save. 
+●       To co-author and comment on diagrams with others, use the Co- 
+authoring and Comments options on the Review tab under 
+Collaboration. 
+Displaying diagrams 
+You can display your diagram in presentation mode or Visio Viewer. 
+Presentation mode allows you to show your diagram in full screen, with 
+zooming and panning features. Visio Viewer allows you to view your 
+diagram in a web browser without installing Visio. 
+To display diagrams, follow these steps: 
+●       Use the Presentation Mode option on the View tab under Show to 
+display your diagram in presentation mode. 
+●       To display your diagram in Visio Viewer, use the Open in Visio 
+Viewer option on the File tab under Open. 
+Chapter Twelve 
+Microsoft Sharepoint 
+Microsoft SharePoint is a platform that allows you to create websites, 
+manage content, collaborate with others, and leverage collective 
+knowledge. 
+Sign in to SharePoint 
+You must sign in to your Microsoft 365 account or your organization's 
+SharePoint Server site to access SharePoint. You can use any web browser, 
+such as Microsoft Edge, Internet Explorer, Google Chrome, or Mozilla 
+Firefox. Once you sign in, you will see the SharePoint start page, where you 
+can access your existing sites, create new sites, or search for content and 
+people. 
+Create or join a site 
+To create a site, click Create site on the SharePoint start page, and choose 
+either Team site or Communication site. A team site is a collaborative space 
+where you can work with others on files and apps, while a communication 
+site is a showcase space where you can broadcast information to a large 
+audience. 
+Alternatively, you can join a site someone else has created and invited you 
+to. You will receive an email invitation with a link to the site. You can also 
+find and follow sites that interest you on the SharePoint start page under the 
+Following or Frequent tabs. 
+Customize your site 
+Once you have a site, you can customize it to suit your needs and 
+preferences. You can change the look and feel of your site by choosing a 
+theme, a logo, and a layout. You can also add, remove, or rearrange web 
+parts, which are the building blocks of your site. Web parts allow you to 
+display different types of content, such as text, images, videos, documents, 
+lists, calendars, charts, and more. 
+To edit your site, click Edit on the top right corner and use the toolbox on 
+the left to add or modify web parts. You can also drag and drop web parts to 
+rearrange them on your site. 
+Add and manage content 
+One of the main benefits of SharePoint is that you can store and manage 
+your content in a centralized and secure location. You can upload, 
+download, edit, share, and sync files and folders in your site's document 
+library, a web page displaying your documents. You can also create and 
+manage lists and web parts that store and display data in rows and columns. 
+Lists can help you track tasks, issues, contacts, events, etc. To add content 
+to your site, click New on the top left corner and choose either File, Folder, 
+List, Page, or App. To manage your content, select the item you want to 
+work on and use the command bar or the ellipses (...) menu to perform 
+actions like open, edit, share, delete, or move. 
+Conclusion 
+Microsoft 365 apps are more than just productivity tools. They are 
+integrated apps and services that let you create, collaborate, and share your 
+best work across devices and platforms. Whether you need to work from 
+home, connect with your team, or learn remotely, Microsoft 365 has a plan 
+that suits your needs. You can also enjoy the benefits of cloud storage, 
+security, and support with Microsoft 365. 
+With Microsoft 365, you can access the latest Word, Excel, PowerPoint, 
+Outlook, and more versions, as well as new apps and features that enhance 
+your creativity and productivity. Microsoft 365 is the ultimate solution for 
+your personal and professional needs. Try it for free today, or upgrade to a 
+premium plan to unlock more benefits. Microsoft 365 is the future of work. 
+Are you ready to join it? 
+  
+Your gateway to knowledge and culture. Accessible for everyone.  
+  
+Official Telegram channel  
+  
+Z-Access  
+  
+https://wikipedia.org/wiki/Z-Library 
+z-library.sk       z-lib.gs         z-lib.fm       go-to-library.sk 
+This file was downloaded from Z-Library project 
+
+
+---
+## 📖 WINDOWS 10 2021
+*(Manba: Windows 10 2021.pdf)*
+
+  
+  
+  
+  
+  
+Windows 10: 2021 Complete Guide to 
+Use Microsoft OS. 10 Helpful Tips and 
+Tricks to Master your PC 
+  
+CONTENTS: 
+  
+  
+Introduction 
+What is Windows 10? 
+Cut to the chase 
+Windows 10 Anniversary Update 
+Any Windows 10? 
+Why is it called the Anniversary Update? 
+How much will it cost? 
+How do I download Windows 10 Anniversary Update? 
+Do I need to download the Anniversary Update from Microsoft? 
+How much RAM is required? 
+What are the features of Windows 10? 
+New Start Menu 
+Modern Aero 
+Windows Hello 
+Windows 10 S 
+Multiple user accounts 
+Windows Hello and virtual desktops 
+Accelerated mode 
+Smarter notifications 
+Worth mentioning 
+Chapter 1 Basic settings for Windows 10 
+How to use the taskbar for Windows 10? 
+How to move apps between Windows 7 and Windows 10 manually 
+How to move apps between Windows 7 and Windows 10 using the flight 
+bundle 
+How to use a flight bundle to transfer Windows 7 apps to Windows 10 
+How to stop your PC switching operating systems 
+How to stop your PC using Windows Updates 
+How to turn off Windows Updates and uninstall programs 
+How to turn off the Windows Store 
+How to change your power options 
+How to switch your location 
+How to find out what apps are running in the background 
+How to change the screen saver 
+How to run different fonts on a computer 
+How to adjust screen brightness 
+How to turn on battery saving mode 
+How to run a super fast PC program 
+How to stop the Windows media utility from creating the CD creation 
+option 
+How to send a file to an email address or cloud storage service 
+How to close unwanted programs 
+How to stop Windows 10 keeping track of everything you do 
+Icons for apps in Windows 10 
+To stop your computer tracking where you are 
+How to start hiding your programs 
+To stop being logged into Windows 
+To stop Microsoft tracking the websites you visit 
+Change the default search provider 
+To clear out unwanted files 
+To clear out unused apps 
+Open a command prompt 
+Be careful what you install 
+Check Windows Update 
+Use a quick Windows Password 
+Windows 10 freebies 
+Windows 10 is out 
+McAfee 
+Chapter 2 Installation and drivers 
+How to install Windows 10? 
+Downloading the update 
+Tailor-made for you 
+Be prepared to upgrade 
+Be safe 
+Getting storage space cheap 
+Windows 10 offers an inexpensive way of backing up your PC 
+How to install drivers for Windows 10? 
+What hardware are you looking to install drivers for? 
+Where to get the drivers 
+Windows 10 drivers 
+PC components 
+What else can you do to make installing new drivers easier? 
+Chapter 3 Windows Store 
+What is Windows Store in Windows 10? 
+What is the difference between Universal Windows Platform and 
+Windows Store? 
+How to download applications from Windows Store 
+There are a few other tricks and commands to be able to upload the app 
+to Windows Store: 
+Dropbox UWP App 
+How to use Windows Store in Windows 10? 
+How to uninstall apps from the Windows Store? 
+How to uninstall apps from the Windows Store that you have not paid 
+for 
+How to use Microsoft Edge in the Windows Store? 
+How to uninstall extensions from the Microsoft Edge browser? 
+How to uninstall Chrome extensions from the Microsoft Edge browser? 
+How to uninstall Dropbox extensions from the Microsoft Edge browser? 
+How to uninstall iCloud Drive extensions from the Microsoft Edge 
+browser? 
+How to uninstall Chrome extensions from the Microsoft Edge browser? 
+How to uninstall Dropbox extensions from the Microsoft Edge browser? 
+How to uninstall iCloud Drive extensions from the Microsoft Edge 
+browser? 
+How to uninstall Chrome extensions from the Microsoft Edge browser? 
+How to uninstall third-party Google extensions from the Microsoft Edge 
+browser? 
+Windows 10 privacy settings 
+How to clear your browsing history in Windows 10 
+Is it easier to manage your privacy settings in Windows 10? 
+What are the best free Windows 10 web browsers? 
+Chapter 4 Windows Hello 
+What is Windows Hello in Windows 10? 
+I want to use Windows Hello to log in. Can I use a camera instead? 
+How do I set up facial recognition on my PC? 
+How do I sign in to Windows Hello on a Windows 10 Mobile phone? 
+How do I sign in to Windows Hello on a Windows 10 PC? 
+How do I set up facial recognition on a Windows 10 Mobile device? 
+Windows 10 Mobile devices with face recognition 
+Chapter 5 Cortana 
+What is Cortana in Windows 10? How can I customize my chatbot? 
+Sign up for the Microsoft Store. 
+Set up Cortana’s skills. 
+Set up Cortana’s Notebook. 
+Set up Cortana’s Notebook. 
+Set up Cortana’s Notebook. 
+How to manage notes in the Windows 10 
+How to set up Cortana’s Notebook in Office 365 
+How to use Cortana in Outlook and OneNote 
+Chapter 6 Microsoft Office 365 
+What is Office 365 for Windows 10? 
+Office 365 for Windows 10 
+Another option for Windows users 
+What is Office 365 for Windows 10? 
+Paul Thurrott and WalkingCat 
+What is Microsoft 365? 
+How to use Office 365 for Windows 10? 
+Levels of OneDrive for Business 
+Leverage Office 365 for Business 
+Verdict 
+Chapter 7 Customization Settings 
+What are privacy settings for Windows 10? 
+What are my current privacy settings for Windows 10? 
+What information is Microsoft collecting? 
+How does Microsoft collect data? 
+What data is Microsoft collecting? 
+How can I check whether or not Microsoft has collected my data? 
+When can Microsoft collect data? 
+Which of Microsoft's services are included in the Windows 10 October 
+2018 Update? 
+How can I control how Microsoft uses my data? 
+Useful Microsoft privacy controls 
+What about Microsoft Health? 
+What about VPN support? 
+What about Microsoft's new online surveillance transparency report? 
+What does Microsoft do with your data? 
+What are privacy settings for Windows 10? 
+How do I make Windows 10 update automatically? 
+How do I uninstall Windows 10? 
+How do I delete or clear my browsing history in Windows 10? 
+How do I check what software is installed on my PC? 
+How do I access my location in Windows 10? 
+How can I configure multiple monitors with Windows 10? 
+How do I mute the microphone in Windows 10? 
+Do I have to create an account on my PC before using Microsoft Edge? 
+How do I open Microsoft Edge with a mouse? 
+How do I force stop an app in Windows 10? 
+How do I force quit an app in Windows 10? 
+How do I use Cortana in Windows 10? 
+How can I customize the appearance of the Start menu in Windows 10? 
+How do I use Cortana in Windows 10? 
+What can I do in Windows 10’s Game Bar? 
+How do I use the Game bar in Windows 10? 
+What can I do with Windows 10’s Story Remix? 
+Does Windows 10 let me automatically sign-in? 
+How do I turn on Windows 10’s SmartScreen filter? 
+How do I access Quick Access, and how can I remove it? 
+Is there a built-in Privacy Center in Windows 10? 
+Is there an app for improving privacy and security in Windows 10? 
+Is there a setting to restrict website tracking? 
+Customizing Privacy 
+Windows Defender 
+How to customize the taskbar for Windows 10? 
+Magnifier in Windows 10 
+The Pop-up blocker in Windows 10 
+Optimize power consumption in Windows 10 
+Change the default desktop theme in Windows 10 
+Blue light in Windows 10 
+System tray icon customization in Windows 10 
+Take the power management shortcut from Settings 
+Turn off your privacy setting in Windows 10 
+Enable your microphone in Windows 10 
+Enable/disable Cortana's suggested follow-up messages in Windows 10 
+Reset your Bluetooth device 
+Turn on Windows Defender in Windows 10 
+Set a custom folder background in Windows 10 
+Toggle off AutoPlay settings in Windows 10 
+Toggle off third-party system tray add-ons in Windows 10 
+Disable Winlogon in Windows 10 
+Disable Special Command Queuing in Windows 10 
+Disable Skype and Microsoft Band's sensors 
+Disable the wireless connection dialog in Windows 10 
+Remove Google Chrome and add Microsoft Edge 
+Access your setup files in Windows 10 
+Adjust the language settings in Windows 10 
+Disconnect your battery 
+Find and uninstall known issues in Windows 10 
+Disable Cortana 
+Configure an access pattern 
+Change your lock screen picture 
+Restart your Windows 10 PC 
+How to set regional settings for Windows 10? 
+Improve search results by region 
+Find a better file manager 
+How to uninstall Windows 10 
+Chapter 8 About notification center 
+What is the notification center for Windows 10? 
+How to tell which of your apps run in the background? 
+How to connect to the Internet on your PC 
+How to change your ringtone 
+How to use Cortana? 
+How to enable or disable notifications? 
+How to adjust your text size and clarity 
+How to enable or disable Cortana on your PC 
+How to change the keyboard's size 
+How to make multiple windows in Windows 10 
+How to clear the Startup Directory on Windows 10 
+How to adjust the color depth on the Windows 10 screen 
+How to restore your previous wallpaper on Windows 10 
+How to adjust the size of apps on the Start Menu 
+How to change the transparency of a document in Windows 10 
+How to activate the pen in Windows 10 
+How to copy and paste in Windows 10 
+How to use multiple monitors with Windows 10 
+How to turn on Taskbar notifications 
+How to stop/start using Cortana 
+How to enable the Windows Hello Security Camera 
+How to change your background in Windows 10 
+How to use a Virtual Keyboard on Windows 10 
+How to get the best out of Cortana 
+How to change your default browser 
+How to turn on the Show Me More Button 
+How to pin apps to the taskbar 
+How to quickly install apps from the Store 
+How to hide apps without uninstalling them 
+How to stop watching TV shows in the background 
+How to hide downloaded apps from your Start menu 
+How to make the Control Panel smarter 
+How to hide the 'Find My Phone' button 
+How to turn off notifications on the Lock Screen 
+How to turn off screen recording 
+How to hide PC updates 
+How to hide from the Start menu (the latest version of Windows 10) 
+How to set up a desktop shortcut 
+How to pin app shortcuts to Start menu 
+How to pin Apps to taskbar 
+How to use ShellNotification 
+Why we love it 
+How to change your default search engine 
+How to manage your Bluetooth devices 
+How to hide or hide a tablet from the Windows 10 Start menu 
+How to change the scrolling behaviour of the Start menu 
+How to show the app list and the search box at the same time 
+How to manage multiple Word documents with multiple clicks 
+How to make Cortana your default assistant 
+How to hide the Share charm 
+How to choose your accent 
+You can also change the font 
+How to edit Microsoft Word's colour palette 
+How to open PDFs in Microsoft Word 
+How to turn on the camera and microphone 
+How to disable the 'goodbye' app 
+How to select Windows Insider builds 
+How to show the next Windows 10 preview build 
+How to sign out of Windows Insider Preview builds 
+How to set up Cortana 
+How to create a custom address bar 
+How to disable the Groove Music Pass 
+How to turn off Groove Music Pass 
+How to force Windows 10 to ask for your sign-in password 
+How to disable Windows 10 getting notifications about your day 
+How to force Windows 10 to clear notifications 
+How to force Windows 10 to hide your most recently used apps 
+How to turn off Windows 10 reminding you to log in 
+How to turn off Windows 10 learning your location 
+How to stop Windows 10 tracking your behavior 
+How to stop Windows 10 recording every command you type 
+How to force Windows 10 to use your desktop background 
+How to enable Windows 10's security features 
+How to turn on Windows 10's facial recognition features 
+How to turn off Windows 10's speech recognition 
+How to use the Windows 10 Search charm 
+How to turn off the Windows 10 assistant 
+How to activate a picture-in-picture mode 
+How to activate a picture-in-picture mode on a Surface device 
+How to activate an always-on display 
+How to turn off 'Cortana suggestions' 
+How to turn off multiple Cortana suggestions 
+How to turn off the Windows 10 Calculator 
+How to change default apps 
+How to turn off the Smart Screen Recorder 
+How to turn off the Windows Aero Glass feature 
+How to turn off the Custom icons feature 
+How to turn off multiple notifications 
+How to clear all notifications 
+How to manage notifications from your favorite apps 
+How to turn off the 'Open Windows Store with Windows' command 
+How to manage apps installed from the Windows Store 
+How to manage apps installed from the 'Get Windows 10' app 
+How to manage apps on your external hard drive 
+How to enable app syncing 
+How to clear hidden files and folders 
+How to delete the Cortana icon from the taskbar 
+How to change the size of your windows 
+Using Windows 10 
+Setting up Windows 10 
+Read and write files 
+How to protect Windows 10? 
+Windows 10 Mobile 
+Windows 10 
+But what if the apps to be blocked don't have a download option? 
+Windows Phone 
+Windows 10 and the Microsoft Edge browser 
+Download Windows 10 Anniversary update with updates 
+Chapter 9 Cloud Storages 
+What is Dropbox for Windows 10? 
+What is Box for Windows 10? 
+What is Google Drive for Windows 10? 
+Useful Tools for Business Travelers 
+Evernote Business: Office 365 and Web App Alternatives 
+Offsite Collaboration Tools 
+Communication 
+Open-Plan Offices 
+Benefits of Virtual Offices 
+Chapter 10 Search in Windows 10 
+What is the search on Windows 10? 
+What is the search box search history? 
+How to edit the Windows 10 search history 
+How to delete the Windows 10 search history 
+How to control Cortana 
+How to send an Alexa command to Cortana 
+How to set up a display on Windows 10? 
+How to enable priority notifications? 
+How to turn off notifications on Windows 10? 
+How to choose which app notifications are important? 
+How to quickly fix notifications? 
+How to use Cortana for Windows 10 notifications 
+How to set up custom alerts 
+How to filter notifications 
+How to mute notifications 
+Chapter 11 Desktop settings 
+How to set up a desktop on Windows 10? 
+How to choose a default desktop on Windows 10 
+How to access the hidden Apps menu in Windows 10 
+How to adjust desktop’s window size in Windows 10 
+Adjust window and webcam controls in Windows 10 
+How to right-click in Windows 10 
+How to open Cortana with your voice in Windows 10 
+How to save specific apps in Windows 10 
+How to send email with the taskbar in Windows 10 
+How to use Cortana on the Windows taskbar 
+How to write notes with the Windows taskbar 
+How to use Quick Access for Cortana 
+How to use File Explorer on the Windows taskbar 
+How to find the clipboard and share the contents 
+How to edit text on the Windows taskbar 
+How to browse the Windows taskbar 
+How to set up a desktop on Windows 10? 
+How to install a Linux desktop on Windows 10? 
+How to set up a virtual desktop on Windows 10? 
+Conclusion 
+What are the advantages of Windows 10? Why should businesses make 
+the switch? 
+Is it possible to upgrade from an older operating system to Windows 10? 
+Can I migrate data? 
+What are the benefits of the unified product offering? 
+How does Windows 10 provide new security tools to protect corporate 
+data? 
+How can I use Windows 10 with my existing devices? 
+What are the versions of Windows 10? 
+Is Windows 10 available in other languages? 
+Can I access the Windows 10 Creators Update before I install Windows 
+10 Creators Update? 
+Can I upgrade my Windows 7 or Windows 8.1 device to Windows 10? 
+When will I get the Windows 10 Creators Update? 
+How long will it take to install the Creators Update on a PC? 
+When will the Windows 10 Creators Update be available for my device? 
+How do I check to see if my device is compatible? 
+Which versions of Windows 10 are supported? 
+When will my device be released to the Windows Insider Program? 
+Will I get access to a free Windows 10 Creators Update upgrade offer for 
+my device? 
+I want to upgrade to Windows 10 Creators Update today! Where can I 
+get it? 
+Can I upgrade from Windows 10 Anniversary Update? 
+Which versions of Windows 10 are supported? 
+Can I download and install Windows 10 Home or Windows 10 
+Enterprise? 
+Will I get updates for the versions of Windows 10 I already have? 
+How do I get Windows 10 Creators Update on a tablet? 
+Can I upgrade from an old version of Windows 10? 
+Bring your own device to the workplace 
+How are other businesses using it? 
+Box 
+Handy 
+Dropbox Business 
+Samba 
+  
+Introduction 
+  
+  
+What is Windows 10? 
+  
+  
+If you’re reading this, and you’re also reading another article on our sister 
+site, it probably won’t come as too much of a surprise to you that we at 
+Windows IT Pro are big fans of Windows 10. Not only does the operating 
+system provide an alternative to Mac or Linux for those of us that love 
+Windows, but it’s also incredibly powerful and is definitely worth the 
+upgrade. 
+  
+Windows 10 packs in a ton of power, from mobile to desktop and 
+everything in-between. And with more than 500 million machines already 
+on the list, it’s safe to say Microsoft has done pretty well for itself in terms 
+of its popularity. And while it’s a much-needed step forward for Microsoft’s 
+desktop operating system, it’s easy to see why a number of people will be 
+tempted by the upgrade to Windows 10 for mobile. 
+  
+There are various versions of Windows 10, with various numbers of 
+changes available – the aforementioned Creators Update, Anniversary 
+Update, Fall Creators Update – but the one that’s often talked about is the 
+Creators Update, as it contains the Windows Mixed Reality Platform and 
+support for Xbox One S and Xbox One X. 
+  
+While Microsoft has confirmed it’ll be the final version of Windows 10, it’s 
+safe to say that it’s a strong contender for the best Windows version ever. 
+  
+  
+Cut to the chase 
+  
+  
+What is it? Microsoft’s latest version of Windows 10, which was released 
+on 18 April 2017 
+  
+Microsoft’s latest version of Windows 10, which was released on 18 April 
+2017 When is it out? You can upgrade to Creators Update now, or be 
+adventurous and wait until April 25 
+  
+You can upgrade to Creators Update now, or be adventurous and wait until 
+April 25 What can I do with it? Windows Mixed Reality, easy file transfers 
+and more 
+  
+The version of Windows 10 that’s available to you and has been called 
+‘Creators Update’ is the one that you can get on the Windows 10 PC you 
+currently own. So if you’ve got a brand new machine, head over to the 
+Windows Store and you’ll be able to download the software for free. 
+  
+But that’s not the only way to get Windows 10 Creators Update – you can 
+also upgrade from Windows 10 Home or Windows 10 Pro, or Windows 10 
+S, which is the cheapest way to get Windows 10 right now, through the free 
+upgrade. 
+  
+But if you’re running an older version of Windows 10, including Windows 
+7, 8 or 8.1, then you’ll be stuck on the older ‘Summer Update’, which was 
+released in 2015 and has been tweaked since then. That version of Windows 
+10 is still being offered free though, so if you’re running Windows 7, then 
+it’s time to start thinking about moving off the old platform. 
+  
+  
+Windows 10 Anniversary Update 
+  
+  
+As mentioned earlier, Windows 10 is an ongoing project, and while it’s not 
+expected to completely replace the operating system for the next few years, 
+it’s expected to gain support for new features and functionality regularly. 
+  
+Windows 10’s Creators Update is the version that first introduced the 
+Windows Mixed Reality Platform, which is the first time Microsoft has 
+supported a platform built using virtual reality technology. Creators Update 
+was also the version that brought Windows Hello to the desktop, making it 
+easier to log into your machine by using the Windows Hello biometric 
+security system. 
+  
+The Windows 10 Anniversary Update will give Microsoft’s operating 
+system support for Xbox One S and Xbox One X consoles. On top of that, 
+the Anniversary Update will bring support for web pages to display with a 
+usable keyboard and mouse, according to Microsoft. 
+  
+Sadly the Anniversary Update isn’t available in the final form, but it’s a 
+reasonable assumption that Microsoft is still tweaking it before it’s released. 
+The Anniversary Update will be the last one released before Microsoft plans 
+to release the next version of Windows 10. 
+  
+  
+Any Windows 10? 
+  
+  
+Windows 10 is available on a variety of different devices, which range from 
+phones to desktops, tablets, 2-in-1 laptops and even Microsoft’s own 
+Surface computers. 
+  
+Some of these are coming to an end as Windows 10 itself has reached the 
+end of its support lifecycle. For that reason, it may be a good idea to 
+upgrade to a newer version of Windows 10, such as Windows 10 Home or 
+Pro. 
+  
+The best way to find out which version of Windows 10 you have is by 
+typing Windows 10 on the Microsoft website into the search box. 
+  
+  
+  
+  
+  
+  
+Why is it called the Anniversary Update? 
+  
+  
+Windows 10 is the first version of Windows to be released to the public in 
+more than a decade. The original Windows, which came out of a project 
+codenamed Bullrun, went on sale back in October, 95. 
+  
+To mark the anniversary of Windows, Microsoft decided to name the first 
+major update to the operating system the ‘Anniversary Update’, and this 
+caused a bit of a brouhaha, with some people saying it smacked of a 
+marketing ploy or of making a product just one year old. 
+  
+Microsoft has also claimed that this is the first version of Windows 10 that’s 
+designed for devices running ARM processors, and a range of Windows 10 
+machines running on ARM have been announced over the last year, 
+including a new device from Asus, the Asus NovaGo, which uses a 
+Qualcomm Snapdragon 850 processor. 
+  
+Hardware is going to be key in the future, so if you’re currently using a PC 
+or laptop with an Intel or AMD CPU, it may be worth upgrading. You may 
+also be able to find a better deal, or even return an old laptop and get a new 
+one running Windows 10 Pro. 
+  
+Microsoft is planning to kill off Windows 10 Enterprise and Windows 10 
+Education, so if you use those, you’ll have to upgrade to Windows 10 Pro, 
+or buy a new computer with Windows 10 Pro. 
+  
+For the pro users, Microsoft also offers the Ultimate Performance Edition 
+for those who need the best performance. 
+  
+Also, if you plan to buy a new PC or laptop running Windows 10, Microsoft 
+offers a free download of the official Windows 10 ‘scratch drive’ so you can 
+install the operating system on a drive that is as small as 4GB. 
+  
+Windows 10 Home is a student version of Windows 10 that is cheaper than 
+its equivalent Pro version. 
+  
+  
+How much will it cost? 
+  
+  
+The Microsoft Windows 10 Anniversary Update will be available as a free 
+upgrade to those running Windows 10 version 1607 or later, including 
+Windows 7 and 8.1. 
+  
+Windows 10 Pro, Home and Enterprise will also be available for a 
+discounted price of £99 ($120/AU$160), which is around $10 (around 
+£7/AU$14) cheaper than the normal version of Windows 10. 
+  
+This version of Windows 10 is only available for desktop PCs, and is not 
+suitable for laptops, 2-in-1 devices or tablets. 
+  
+Those who are still running Windows XP and Windows 7 are unable to 
+upgrade, as the dates for support for those versions of Windows have 
+already passed. 
+  
+With this in mind, you may want to consider buying a new laptop or PC, or 
+at least upgrading an old one with Windows 7 or 8.1. 
+  
+There’s also the chance that the Windows 10 Anniversary Update will be 
+offered as a free download, so long as you can download Windows 10 Pro. 
+  
+Windows 10 users who upgrade to this version of the operating system 
+before April 17, 2018 will be able to get the Anniversary Update as a free 
+upgrade. 
+  
+  
+  
+  
+How do I download Windows 10 Anniversary Update? 
+  
+  
+You can download the Windows 10 Anniversary Update from Microsoft’s 
+website. 
+  
+However, if you're running a Windows 7 or Windows 8.1 PC, it may be best 
+to wait until the official launch of the Anniversary Update in the summer, 
+when the website will probably be updated. 
+  
+If you’re looking for a quick download, there’s a brand new tool available 
+called the Windows 10 Anniversary Update Fast ring that's likely to 
+download Windows 10 in the background and ask you to confirm its 
+installation when it’s complete. 
+  
+The reason for this method is to make sure the OS is installed properly, and 
+you don’t encounter any problems during or after the installation. 
+  
+  
+Do I need to download the Anniversary Update from Microsoft? 
+  
+  
+Microsoft hasn’t shared specific details about how the Anniversary Update 
+will work for you, but it does say that the OS is designed to automatically 
+find any devices that need updating, rather than you having to go through 
+the setup process to complete the installation. 
+  
+It will also automatically download and install any drivers that may be 
+required, such as from the manufacturers. 
+  
+  
+How much RAM is required? 
+  
+  
+Some of the other features Microsoft added with the Windows 10 
+Anniversary Update include Cortana and improvements to Windows Ink. 
+  
+So whether you’re using a 2-in-1 laptop, a desktop PC, or a traditional 
+computer, the Anniversary Update is likely to give you plenty of new 
+features. 
+  
+  
+What are the features of Windows 10? 
+  
+  
+Now that you know what Windows 10 is and what it can do, let’s dive into 
+some features you can expect to see in the operating system. 
+  
+  
+New Start Menu 
+  
+  
+The Start Menu has been around for more than 20 years, and it’s still the 
+only way to launch Windows. But for years, Microsoft has been doing its 
+best to convince users to just use Windows apps and the Start menu’s 
+functionality has dwindled over the years. You could say that Microsoft is 
+kind of copying Apple and its new High Sierra menu. With Windows 10 S, 
+Microsoft is changing that. 
+  
+Starting with the first Windows 10 S build, the Start menu has been cleaned 
+up and simplified so you can see what you want and the icons are much 
+bigger. 
+  
+The new Start menu also lets you search Windows for all sorts of things, 
+such as desktop programs, important files, programs that don’t work, etc. 
+  
+  
+Modern Aero 
+  
+  
+When Microsoft made Windows 7 available for free, a lot of people thought 
+it would die. When Windows 8 was released, many said it was a massive 
+failure. But Windows 10 has proven that Microsoft still knows how to make 
+a good operating system. 
+  
+Windows 10 will include Aero Peek, which gives you a glimpse at the 
+desktop whenever you’re in a new app or if you’re pressing a button in a 
+program. It also includes the modern Aero look, which looks great. 
+  
+  
+Windows Hello 
+  
+  
+Microsoft is bringing Windows Hello facial recognition technology to 
+Windows 10. It’s similar to Apple’s Face ID, only instead of using your face 
+to unlock your phone or your laptop, Windows 10 will be able to identify 
+your face in photos and even in a photo taken by someone else. 
+  
+  
+Windows 10 S 
+  
+  
+Windows 10 S is a brand new version of Windows 10 that can only run 
+software from the Windows Store. This is similar to Chrome OS’s security, 
+so you won’t be able to install regular versions of Windows on your 
+Windows 10 S device. If you want to switch from Windows 10 S to 
+Windows 10 Pro, you can do that. 
+  
+You’ll be able to buy a laptop or a tablet with Windows 10 S pre-installed 
+starting in May. But, starting July 29, you can purchase a Microsoft Surface 
+Laptop or Surface Pro 4 with Windows 10 S pre-installed. 
+  
+Windows Hello should automatically recognize your face and iris as you 
+unlock your Windows 10 S device. And while you can’t use regular 
+Windows apps, you can use other UWP apps like the Cortana voice 
+assistant, Windows Ink, Outlook Mail and Calendar, and Microsoft Edge. 
+  
+Desktop Windows apps are still missing from the Windows Store, so we 
+don’t know how this new version of Windows 10 S will work with 
+traditional Windows desktop apps. 
+  
+  
+Multiple user accounts 
+  
+  
+With Windows 10 S, you can set up your account as a guest account and 
+switch between accounts. If you have another Windows 10 S device that 
+you’re upgrading to, you can set up guest accounts on that PC so you can 
+use your standard user accounts. 
+  
+  
+Windows Hello and virtual desktops 
+  
+  
+Microsoft is making Windows Hello available on more devices. There will 
+now be a physical button that lets you log into Windows 10 using a 
+fingerprint reader or iris scanner. 
+  
+The company is also adding virtual desktops to Windows 10 S. You’ll be 
+able to switch between windows by clicking the multitasking icon in the 
+corner of the desktop. 
+  
+And when you get a notification, you’ll be able to move the app window 
+you want, and the rest will move with it. 
+  
+  
+Accelerated mode 
+  
+  
+If you want to go faster, you can set Windows 10 S to run in a restricted 
+mode that automatically moves less important programs down the stack. It 
+will move everything else up the stack. 
+  
+The apps will launch faster, so apps won’t have to wait for the system to 
+wake up. 
+  
+  
+Smarter notifications 
+  
+  
+In Windows 10, you can see a history of notifications you’ve received in the 
+Action Center. You can even clear the notifications and see a list of them. 
+  
+Starting with Windows 10 S, notifications will show a brighter color 
+background and more prominent information on each notification, including 
+what app sent it. When you tap on a notification, you’ll be able to dismiss it 
+and move on. 
+  
+  
+Worth mentioning 
+  
+  
+If you’re already using Windows 10 Pro, you’ll be able to upgrade your 
+Windows 10 Pro device to Windows 10 S. But, you can’t upgrade to 
+Windows 10 S from Windows 10 Pro. 
+  
+You can also upgrade your Windows 10 Pro device to Windows 10 Pro 
+without buying a new PC. 
+  
+Microsoft is also releasing a free firmware update for Windows 10 Pro, that 
+should fix the bug that caused the Redstone 3 update to fail on some 
+devices. The firmware update is being released in stages, so not everyone 
+will be able to download it immediately. 
+Chapter 1 Basic settings for Windows 10 
+  
+  
+How to use the taskbar for Windows 10? 
+  
+  
+It was only last week when TechRadar told you how to move your favourite 
+Windows apps to Windows 8.1. What’s more, you can still easily move 
+them to Windows 10 – though the process is a little more complicated. 
+  
+There are two ways to move apps between Windows 7 and Windows 10. 
+You could do it manually, or you could use something known as a ‘flight 
+bundle’. 
+  
+You may also find you're prompted to update Windows 10, even if you’ve 
+got the Update & Recovery Toolbox installed 
+  
+  
+How to move apps between Windows 7 and Windows 10 manually 
+  
+  
+If you don't have the Toolbox, you'll have to download the manual process, 
+which involves downloading a .Net file (Explorer.net.dll), moving it to a 
+folder on your PC, then moving that folder to your desired system folder. 
+  
+  
+How to move apps between Windows 7 and Windows 10 using the 
+flight bundle 
+  
+  
+If you want to use a "bundled" app, such as MSN Weather, which is 
+included with Windows 10, you'll need to install a flight bundle. This lets 
+you switch between Windows versions without having to manually move 
+files. Here's how to do it. 
+  
+First, open the Windows Store, then press the Windows key. Choose Store > 
+New > Program and choose Microsoft Flight Bundle and Microsoft Office 
+AIR. 
+  
+Afterwards, choose Install, then click Next. Choose Allow the installation 
+of apps not already installed on your system. 
+  
+After that, click Next. You can now pick the program you want to install. 
+Just remember, it will need to be installed alongside your other Windows 
+software. 
+  
+Click Install, then browse to your System Tray folder, then press Windows 
+key and ‘R’ to make the flight bundle appear. Click Run, and then choose 
+OK when it’s done installing. 
+  
+Once your flight bundle is installed, you can switch back to your old 
+operating system by pressing Windows key and ‘R’. 
+  
+Alternatively, there's an online tool to help you do it (here's a guide to 
+download it). It's a little outdated and doesn't always work as well as it 
+should, but it gets the job done. 
+  
+  
+How to use a flight bundle to transfer Windows 7 apps to Windows 10 
+  
+  
+The updated flight bundle that Microsoft ships with Windows 10 doesn’t let 
+you transfer all your apps to your new PC. You can't move apps that you 
+haven't already downloaded to your PC, for example, and it won’t let you 
+uninstall other apps. 
+  
+However, there’s an easier method. You can download and install an app 
+called AirSwitch to switch back and forth. 
+  
+Downloading the Windows app is as easy as downloading a zip file – 
+follow the on-screen instructions to extract the downloaded file to an 
+executable folder on your computer, then run it. 
+  
+Once the Windows app is installed, your Windows 7 apps will appear 
+alongside your Windows 10 ones. 
+  
+Then, with the Windows app open, click the Air switch icon in the lower- 
+left of the window. After a brief pause, you'll be asked to choose which 
+operating system you'd like to move to. 
+  
+Once you’ve done that, click on the app you want to run on your PC and 
+select AirSwitch and make your choice. 
+  
+The app will then start switching the apps back and forth automatically. 
+Don't worry if it takes a while to switch between operating systems – you 
+can leave it running to keep switching them as your other apps load. 
+  
+  
+How to stop your PC switching operating systems 
+  
+  
+When AirSwitch is installed, it automatically stops the process of switching 
+operating systems when you’re done using your computer. But if you want 
+it to continue switching between operating systems as you use Windows 7, 
+you need to find another way to disable this feature. 
+  
+You can do that by first uninstalling AirSwitch. 
+  
+Next, make a copy of the uninstalled version of the app, and then launch it 
+and copy the hidden file '_airswitch.cfg' – a .txt file that’s used by 
+AirSwitch – to the same location. Then, go to Settings > Update & Security 
+> Windows Update, then select Restart Now > Reset this PC > Restart Now. 
+  
+It may not be immediately obvious where AirSwitch is installed, but if 
+you've followed this step, it should be at the bottom of the list. 
+  
+If it isn't, click the X on the first line of Windows Update and Windows 10 – 
+it'll get moved down the list automatically. After a moment, your computer 
+will reboot and AirSwitch will automatically be deleted. 
+  
+This will also apply to all the apps you previously installed on your PC. 
+Your installed apps will now show up in the Windows Store – they won’t 
+reappear as a tab on the taskbar, however. 
+  
+Microsoft publishes a support document that lists all the changes made in 
+Windows 10 to prevent apps from running when you’re switching operating 
+systems. 
+  
+With AirSwitch switched off, your computer won’t be able to switch 
+between Windows 7 and Windows 10, so you’ll need to find another way to 
+switch back and forth. 
+  
+  
+How to stop your PC using Windows Updates 
+  
+  
+Windows Update is often a good idea. If you download updates to your PC 
+regularly, they can keep you safe from malicious software that’s 
+accidentally downloaded by people you don't know, as well as preventing 
+you from accidentally loading programs you don’t want to install. 
+  
+But Windows Update is also often an annoyance – you’ll often receive 
+multiple updates all at once that will slow your PC, and you might be faced 
+with many updates that are fine but you aren’t sure you want to install them. 
+  
+There’s a reason you’re probably turning Windows Update off. You can turn 
+off Windows Updates in the Windows 10 Settings app, under Settings > 
+Update & security > Windows Update > Turn off automatic updates. 
+  
+While you're there, you'll also be able to turn off 'Feature updates to your 
+PC', the way Windows Update has become known. This is useful if you 
+want to switch operating systems but don’t want to use a different version 
+of Windows. 
+  
+  
+How to turn off Windows Updates and uninstall programs 
+  
+  
+This next trick doesn’t actually require you to turn Windows Update off – it 
+just makes it a lot less annoying. 
+  
+If you want, you can disable Windows Update entirely and uninstall 
+programs you don't need via the Control Panel. 
+  
+Visit the Control Panel, then look for the Windows Update option. 
+  
+Click on 'Turn Windows features on or off', then uncheck all the boxes. 
+  
+On the next page, look for the ‘Install system and driver updates’ box. 
+Select this option and then click on 'Turn automatic updates on or off'. 
+  
+You can now save time and get rid of the Windows Update notifications, 
+and only be presented with the updates you want to install when you do. 
+  
+  
+How to turn off the Windows Store 
+  
+  
+If you’re using Windows 10 but prefer to use apps you don’t have 
+downloaded, the Windows Store can often help out with this. 
+  
+Select the ‘All apps’ option on the ‘Windows Store’ menu. From here, you 
+can filter the list by app name, date installed, country or region, version, and 
+price. 
+  
+It’s possible to filter the list by app name, date installed, country or region, 
+version, and price 
+  
+You can also look for apps you’ve already downloaded, or see which apps 
+are free to download. 
+  
+  
+How to change your power options 
+  
+  
+You may be tempted to turn on and off your PC to save a bit of power when 
+you’re not using it, but this can cause problems. Windows 10 usually 
+chooses the best power setting for your computer, but if you find it’s too 
+low, you can choose something else by going into the Windows 10 power 
+settings menu. 
+  
+On the ‘System’ tab, select Advanced power settings. You can then change 
+your power options, like whether your PC will turn off after 30 minutes of 
+inactivity. 
+  
+This is useful if you want to be able to go to sleep with your PC still on, but 
+still wake up to a PC that’s turned on and ready to work. 
+  
+  
+How to switch your location 
+  
+  
+You can’t change your device’s location, but you can change what your 
+device looks like, thanks to a setting in Windows 10’s People Hub. 
+  
+This can be found under Settings > Accounts > Other. Check 'Show my 
+accounts profile picture' and you’ll be able to select your favorite picture 
+from a Windows Store, Windows Store app, or image from a website. 
+  
+Switching your location and profile picture can make it easier for people to 
+find you 
+  
+Once selected, your picture will be shown as your profile picture in the 
+People Hub. It’ll also appear in Skype, for example. 
+  
+  
+How to find out what apps are running in the background 
+  
+  
+If you want to know what apps are running in the background, go into 
+Settings > Accounts > Other and then choose 'Connected apps'. 
+  
+If you select ‘Internet’, you can see what's running in the background, but if 
+you select 'Other' you’ll only see what’s running locally, like your PC or 
+phone, as well as the apps you have installed from the Windows Store. 
+  
+  
+How to change the screen saver 
+  
+  
+If you want to set your screensaver in Windows 10, head into Settings > 
+Personalisation > Screen saver, then select 'Choose a screen saver’. You can 
+change the duration, set a new picture, and choose from a range of different 
+backgrounds. 
+  
+  
+How to run different fonts on a computer 
+  
+  
+In Windows 7, 8, and 10, there are a number of different fonts you can 
+choose for different applications, but you may not know how they work. 
+  
+On your computer, go to Settings > General and open Fonts. 
+  
+Windows 10's Font options let you choose and tweak fonts to make them 
+easier to read 
+  
+You can then select the fonts for which you want to use your computer, 
+including company fonts like the Logos font used in Microsoft Office. You 
+can also disable any fonts you don’t want to use. 
+  
+  
+How to adjust screen brightness 
+  
+  
+Whether you have your PC on battery power or not, the brightness can be 
+too low, particularly if it’s been dark for a while. 
+  
+In Windows 10, just click the 'Brightness' menu in the menu bar to adjust 
+the brightness. It’s usually the quickest way to change the brightness 
+setting. 
+  
+  
+How to turn on battery saving mode 
+  
+  
+Many people use Windows 10 as a daily driver, and aren’t always near a 
+plug socket. If this is you, you may find that battery saving mode is useful 
+for when you’re out and about. 
+  
+It can cut back on your Windows 10’s power consumption when your PC 
+isn’t in use, and the effect will last between 20 and 90 minutes. You can turn 
+it on with a button within the power settings menu. 
+  
+  
+How to run a super fast PC program 
+  
+  
+We all love to browse the internet, but sometimes, even browsing can be too 
+much for our computers. 
+  
+This is especially true if we’re using a poor internet connection, and there 
+are a range of tools that can help us speed up websites, download large files, 
+or even compress them for us. 
+  
+  
+How to stop the Windows media utility from creating the CD creation 
+option 
+  
+  
+It can be annoying when Windows creates an option called CD creation that 
+you can’t choose to remove, especially if you’re playing a CD. To do this, 
+click on the ‘System’ tab and then click 'Turn Windows features on or off'. 
+  
+The 'CD Creation' option is available in Windows 10's media features 
+  
+Now, right-click on the drive that has the CD creation option and select 
+'Uninstall features'. 
+  
+  
+How to send a file to an email address or cloud storage service 
+  
+  
+Sometimes you just need to send a file to someone quickly, and you don’t 
+have to send it to them through the mail, or ask someone to download it for 
+you. 
+  
+With some Windows 10 apps, you can send files to a recipient through 
+email, web links, or even send them using Microsoft Outlook. 
+  
+  
+How to close unwanted programs 
+  
+  
+You might want to leave some programs running, just to keep your 
+computer running smoothly, but sometimes they can be a waste of your 
+time. 
+  
+It can be hard to know how to close the programs you don’t need, so if you 
+want to save some time, it’s worth doing so. 
+  
+How to close unwanted programs is useful if you're finding it difficult to 
+keep your Windows 10 running smoothly 
+  
+You can do this in Windows 10 by clicking 'Start', then right-clicking on the 
+program you want to close, then selecting 'Close' from the context menu. 
+  
+  
+How to stop Windows 10 keeping track of everything you do 
+  
+  
+You'll soon see your computer start tracking all the apps you run, the 
+websites you visit, and even your web searches, but you can change the way 
+this data is tracked in Windows 10. 
+  
+  
+Icons for apps in Windows 10 
+  
+  
+Click on the Start menu and you'll see your own app icons, which you can 
+change to more relevant icons, depending on your own preferences. 
+  
+  
+To stop your computer tracking where you are 
+  
+  
+Click on 'Start', then click 'Settings' on the left-hand side. Now, click 
+'General' and you'll find an option called 'Accounts'. 
+  
+Click 'Accounts' to choose your Microsoft account, then click 'Change' 
+under 'Account Settings' to change the privacy setting. 
+  
+How to start hiding your programs 
+  
+  
+By default, Windows 10 keeps track of all the apps you run and how you 
+navigate between them. 
+  
+To stop this, click on the Start menu and click 'Start'. Then, click on the 
+'Apps and Features' tab, then click 'My apps & features' and 'App settings'. 
+  
+Click on 'Mute app activity' to stop the operating system logging what apps 
+you run. 
+  
+  
+To stop being logged into Windows 
+  
+  
+If you don't want Windows 10 tracking your movements around the 
+internet, you can turn this off, too. 
+  
+Click 'Settings' on the left-hand side of the Start menu. Now, click on 
+'Privacy and safety'. 
+  
+Under 'Web browsing' click 'Limit the websites you view online' to stop 
+your browsing history being logged by Microsoft. 
+  
+  
+To stop Microsoft tracking the websites you visit 
+  
+  
+You can set up an app to remind you of important things like your dentist 
+appointment 
+  
+To stop Windows 10 tracking what websites you visit, there are a couple of 
+apps you can use. 
+  
+First, if you're worried about online tracking, install Privacy Badger. This 
+free anti-tracking app blocks tracking cookies, so Microsoft's data- 
+collecting cookies won't work in your browser. 
+  
+Alternatively, you can install Ghostery, which is a free browser extension 
+that can also block cookies and trackers. 
+  
+  
+Change the default search provider 
+  
+  
+In Windows 10, you can change the default search provider, so you'll have 
+to use Google when you use Windows. 
+  
+To change this, click 'Settings' on the Start menu. Now, click 'Search'. 
+  
+Click 'Switch default search provider' to use Google or Bing. 
+  
+You can also set up a toolkit which will search for your terms automatically 
+when you start typing, and then offers them in a selection of default search 
+providers. 
+  
+To create a toolkit, right-click on the search bar, click 'Properties', and select 
+'Toolkit settings'. 
+  
+Now, click 'Change search provider' and select a search engine. Then, click 
+'OK' to apply the changes. 
+  
+To save system resources, try turning 'Storage Sense' on 
+  
+When you start using your computer, Windows uses up all your hard disk 
+space. 
+  
+To reduce your computer's usage, you can turn 'Storage Sense' on. This 
+enables Windows to delete files it knows are duplicates, unused or 
+unwanted. 
+  
+To turn 'Storage Sense' on, click 'Settings', then click 'Storage'. 
+  
+Now, click on 'Manage your storage', click 'Change', then click 'Use more 
+storage' to set how much space you want Windows to reserve for your 
+content and files. 
+  
+  
+To clear out unwanted files 
+  
+  
+Just as you clear out temporary files after you've finished editing a 
+document, Windows can do this, too. 
+  
+To clear out temporary files, click 'Start', then click 'Options', then click 
+'Turn off unnecessary temporary files'. 
+  
+  
+To clear out unused apps 
+  
+  
+Windows 10 knows how many apps you have installed, and how much 
+space they take up. To see a list of everything you've got installed, click 
+'Settings', then click 'Apps and Features' and 'App settings'. 
+  
+You can then search for apps, and click 'Turn off unused apps'. 
+  
+For all the latest tech news from the UK, France and around the world, don't 
+miss The Sun's tech page. 
+  
+Why is the Microsoft Edge browser only available on Windows 10? The 
+new Edge browser is a massive upgrade to the clunky and popular Internet 
+Explorer that most Windows users are familiar with. Unlike IE, however, 
+Edge is designed to run across your PC, phone and tablet, and has numerous 
+unique features. You can choose to see tabs in a more familiar fashion by 
+clicking the charm on the top-left of the browser. Click 'Cast to my screen' 
+to get access to your Bluetooth and other nearby devices, while the 'Speed 
+Dial' lets you organise favourites easily. You can also search across the web 
+using the 'Google' or Cortana voice commands. 'Continue on PC' offers a 
+link to your preferred web page, and 'Continue on phone' is for browsing on 
+your phone. The new Microsoft Edge browser is a massive upgrade to the 
+clunky and popular Internet Explorer that most Windows users are familiar 
+with. Unlike IE, however, Edge is designed to run across your PC, phone 
+and tablet, and has numerous unique features. You can choose to see tabs in 
+a more familiar fashion by clicking the charm on the top-left of the browser. 
+Click 'Cast to my screen' to get access to your Bluetooth and other nearby 
+devices, while the 'Speed Dial' lets you organise favourites easily. You can 
+also search across the web using the 'Google' or Cortana voice commands. 
+'Continue on PC' offers a link to your preferred web page, and 'Continue on 
+phone' is for browsing on your phone. Just in case you want to stick with 
+the default settings, you can always switch back to IE by clicking 'Apply 
+adjustments' and choosing 'Choose default search engine' and 'Apply'. 
+  
+  
+Open a command prompt 
+  
+  
+Type 'cmd' into the Start menu search box, and then press Enter. 
+  
+Type in 'download', then press Enter. 
+  
+When you've completed the downloads, type in 'wmic' and press Enter. 
+  
+This opens a tool that allows you to start, stop, stop and restart your system. 
+  
+To uninstall an app, just delete it 
+  
+To uninstall an app from your computer, just delete it. 
+  
+Simply click 'My Computer', then click 'Reboot system now', and it will be 
+gone from your hard drive. 
+  
+It might appear again, however, if you reboot your computer. 
+  
+  
+Be careful what you install 
+  
+  
+There are hundreds of millions of users of Windows 10 - and that means 
+there's lots of software out there to download. 
+  
+Some of it is great, and some of it's not. 
+  
+If you go out and download an app, you'll want to make sure you know 
+exactly what it does, especially if it's supposed to make your PC run faster. 
+  
+Also, be careful to choose the right version of the app for your PC - if you 
+install one that is out of date, you'll lose any custom settings that you've got. 
+  
+Remember you can click 'details' at the bottom to make sure you've got the 
+latest version. 
+  
+  
+Check Windows Update 
+  
+  
+It's also a good idea to check with Windows Update to make sure you're not 
+missing anything. 
+  
+Keep your computer current with the latest updates to your Windows. 
+  
+Follow our blog on Facebook and Twitter if you'd like to keep up to date 
+with how Windows 10 is performing. 
+  
+Use a quick Windows Password 
+  
+  
+By default, you can use Windows 7 and Windows 8, as well as Windows 
+10, to log in to your PC. 
+  
+By default, you can use Windows 7 and Windows 8, as well as Windows 
+10, to log in to your PC. However, if you're a heavy user, it's better to use a 
+password or PIN, rather than to remember a long, complicated username 
+and password combination. 
+  
+To set one up, just follow these steps: 
+  
+●       Press Windows key + R to open the run dialog. Click 'Change 
+username and password'. Enter a unique, secure password. Click 
+'Continue'. 
+●     Then you can set up a PIN to lock down your PC, as well as a four 
+digit verification code to verify that the password is actually yours. 
+●       If you want to use an audio or facial recognition system, you can 
+also go this route - click 'Advanced Security' in the same window. 
+  
+  
+Windows 10 freebies 
+  
+  
+Here's a selection of the freebies that can be downloaded using the 
+Windows 10 setup tool: 
+  
+Select one of the packages to save it to your PC. You can either manually 
+launch the file, or press 'File...' and browse to the location of the file. 
+  
+It's a good idea to save the Windows 10 setup executable before you start 
+the process, and to let it automatically check for updates while you're not 
+using it. 
+  
+If you need help, head over to the Microsoft Store's Support site for PC and 
+Mac for more assistance. 
+  
+  
+Windows 10 is out 
+  
+  
+Now that you've installed Windows 10, you can start using it. 
+  
+Microsoft will email you when updates are available, and will keep you up- 
+to-date with new security and functionality. 
+  
+However, you'll need to check with Windows Update to make sure your 
+computer is up to date. 
+  
+The more you use Windows 10, the more features it can collect about you 
+and your habits - although the free service limits what it will collect. 
+  
+Basically, it can take your phone, tablet, PC, Xbox and more details about 
+you to create your profile. 
+  
+It can then show you recommended articles, games and apps to you. 
+  
+You can opt-out of the setting by clicking 'Settings' and then clicking 
+'Privacy', where you can decide what is collected and how it is used. 
+  
+You can also close off a few of the categories you aren't interested in, such 
+as Timeline - this means it won't keep the basic Windows 10 activities for 
+later. 
+  
+You can also opt-out of some of the aspects, such as advertising - which 
+means you can have the option of having your own ads, but not having ads 
+for other companies, too. 
+  
+But you can also stop all data being used, by changing the activity sharing 
+settings to 'only share data I want with Microsoft'. 
+  
+  
+McAfee 
+  
+  
+It's not just Windows 10 that Microsoft collects your data, its email service 
+is doing the same. 
+  
+Microsoft Mail, Microsoft Exchange, and Microsoft Outlook store a unique 
+cookie to log where you are when you connect to a Microsoft site - it means 
+that Microsoft can help you find your email, your contacts, or your 
+calendar. 
+  
+However, Microsoft suggests that its Outlook.com email service will be a 
+bit more secure, because of some of the tweaks that it has made to keep 
+people's data safe. 
+  
+It has also made the privacy dashboard more convenient, so that you can 
+easily see your personal information, and be aware of what data Microsoft 
+stores about you. 
+  
+First, make sure you're running the latest Windows 10 Creators Update. 
+  
+Microsoft recommends that you do this by opening Windows Update in the 
+Windows 10 Settings menu, clicking 'Check for updates' under 'Change 
+how we update Windows', and clicking 'Update now'. 
+  
+You can also check for updates manually using Microsoft's Windows 
+Update website. 
+  
+Next, head to Microsoft's 'Windows Privacy Dashboard'. 
+  
+Under the 'Settings' tab, click 'Account' in the left-hand column. 
+  
+Under 'Advertising', click 'Settings' next to 'Advertising & advertising 
+capabilities'. 
+  
+Under 'Advertising Identifier', uncheck the box and click 'Apply'. 
+  
+You can also change how Microsoft uses your web browsing history by 
+clicking 'Privacy settings', next to the section on 'Privacy & diagnostic data'. 
+  
+Scroll to the bottom of the page, and click 'Data collection.' 
+  
+Scroll down to the section on 'Web browsing history', and uncheck the box. 
+  
+Under 'Web browsing activity', you can also turn off the setting that reads 
+'We collect information when you visit websites'. 
+  
+When you click 'Save changes', click 'OK'. 
+  
+There is also a more detailed 'Privacy info' section, but we recommend that 
+you read this first, and then go through the other sections. 
+  
+Under the 'Settings' tab, click 'Account' in the left-hand column. 
+  
+Scroll down to the 'Account' page. 
+  
+Scroll down to 'Advertising' in the left-hand column. 
+Scroll down to the 'Web browsing activity' section. 
+  
+Under 'Web browsing history', click 'Edit'. 
+  
+Click the down arrow next to 'Included content' to uncheck 'Following me 
+as I browse websites'. 
+  
+Under 'Go back' click 'View web history'. 
+  
+Then click 'Save changes' to apply changes. 
+  
+If you want a bit more of a mobile protection solution, the McAfee mobile 
+app is more streamlined than the McAfee LiveSafe product. 
+  
+It uses email to update the mobile app, so you don't have to go looking for a 
+link in the app. 
+  
+You'll also find more security features in the mobile app, such as 'Secure 
+Contacts', where you can use your secure network to transfer documents 
+between you and contacts - so you can scan a document into the app, and 
+the app can then scan it to check that it is accurate. 
+  
+On the next screen, you can also connect with anyone on your Secure 
+Contacts. 
+  
+McAfee is able to download and send pictures and attachments over the 
+Secure Contacts if you scan a picture in. 
+  
+The app will then send an alert to the contacts that you've attached your file 
+to, and when they tap on the image, it will open. 
+  
+The app also allows you to share documents via email, or Wi-Fi Direct. 
+  
+The app can also find a hidden service on your computer or phone, called 
+the 'Dell Unknown Source', which can expose any connected computer, 
+tablet or phone to hacking attacks. 
+  
+The app will locate this, and warn you that your mobile data connection is 
+being used, or perhaps even initiate a protection plan. 
+  
+All of this can be turned off in the 'Security Options' section. 
+  
+You can download the app on Android and iOS. 
+  
+In the mobile app, you can download and send files over the Secure 
+Contacts 
+Chapter 2 Installation and drivers 
+  
+  
+How to install Windows 10? 
+  
+  
+Windows 10 is a brand new version of Microsoft's operating system which 
+promises to offer a host of new features and enhancements. It will also 
+deliver huge performance improvements to PCs and consoles alike. 
+  
+PC and laptop owners with Windows 7 will need to install a patch first if 
+they want to be ready for the upgrade. Microsoft is offering a free security 
+patch which will fix any issues you might have before you install the 
+upgrade. 
+  
+Microsoft has released details of how you can prepare your PC and transfer 
+your files ahead of the free upgrade. You can also read more about the new 
+features included in Windows 10. 
+  
+  
+Downloading the update 
+  
+  
+Windows 10 has been available for a couple of months now and you should 
+be well aware that you can upgrade any Windows PC that is still in a beta or 
+trial mode. 
+  
+You will need to first download the Windows 10 release candidate – this is 
+an early version of the operating system that has not yet been signed off by 
+Microsoft. It's different from the version of Windows 10 that is intended to 
+replace your current system and will contain bugs and unfinished features 
+that you may not be pleased with. 
+  
+Microsoft has a page set up so that you can find out if your Windows PC is 
+ready for the Windows 10 release candidate. 
+  
+Once you have downloaded and installed the release candidate of Windows 
+10, you will have a file called update.windows.com or wushowhide.msc 
+which you can launch from the Taskbar to see if any options are displayed 
+for your PC, but not actually install anything. 
+  
+  
+Tailor-made for you 
+  
+  
+To download Windows 10 Home or Windows 10 Pro in the first place you 
+will need to register with Microsoft in order to ensure that the system is 
+properly backed up before it's installed. 
+  
+Microsoft can then send updates as and when they are released which 
+means that your system will continue to get the latest software updates, 
+while you should have no worry about whether you are getting the latest 
+version of Windows 10 as long as you regularly install the updates 
+Microsoft issues. 
+  
+We already know that there are some big changes coming to Windows 10 in 
+the future. Microsoft has already said that it wants to remove the start 
+button in favour of the start screen. It has also changed how the desktop is 
+displayed, splitting it into two sections, the right-hand side is for apps and 
+the left-hand side is for programs. 
+  
+Thanks to a partnership with Dell, Windows 10 Pro PCs can be upgraded to 
+Windows 10 Pro x64, which gives you access to the 64-bit version of the 
+operating system. 
+  
+  
+Be prepared to upgrade 
+  
+  
+If you are worried that you might encounter problems with Windows 10 
+after you have installed it, you should make a backup copy of your system 
+and any important files that you use regularly. There is also the option to 
+use virtualisation software to run your Windows 7 or 8 PC in a way that 
+enables it to continue to run even if Windows 10 is installed on the hard 
+drive. 
+  
+Also, consider using virtualisation software to run your Windows 10 PC in 
+a way that enables it to continue to run even if Windows 10 is installed on 
+the hard drive. 
+  
+However, if you want to ensure that you can carry on using your existing 
+system and all of your current files when Windows 10 is installed you can 
+download Windows 7 or Windows 8.1 virtualisation software. 
+  
+To avoid running into problems, make sure you are backed up as well as 
+possible. 
+  
+We have compiled a list of the best free backup software that you can use to 
+back up your PC before upgrading to Windows 10, along with some handy 
+tips on how to back up your PC and ensure that you can get on with using it 
+after Windows 10 is installed. 
+  
+  
+Be safe 
+  
+  
+It’s also a good idea to back up all of your important files on a regular basis. 
+Using online tools is one option, but another is to use a memory stick to 
+back up everything you have on your system. However, it is important to be 
+careful with which memory sticks you use and how you store your data. 
+  
+Some of the top brands of memory sticks are reliable, but they can be easily 
+lost or damaged, especially if you do not handle them properly. 
+  
+The WD DriveStation Plus is a brilliant portable device that can be used to 
+store your photos, videos and music. It can also be used to back up your 
+files on a USB stick. 
+  
+Getting storage space cheap 
+  
+  
+Getting cheap storage space for your PC can be difficult if you have no 
+hardware to back up. There are a couple of reasons why this can be the 
+case. The first is that if you have no PC to back up, you don't need to buy 
+much storage space. 
+  
+  
+Windows 10 offers an inexpensive way of backing up your PC 
+  
+  
+The second reason is that the cost of storage space has gone up, particularly 
+if you are backing up files that you will no longer use after you have moved 
+to Windows 10. However, it's still possible to get storage space for your 
+Windows 7 or 8 PC for very little money if you are prepared to change a 
+few of your habits. 
+  
+You might be surprised that your old 2TB hard drive will actually be 
+sufficient if you want to store photos, videos and games for a long time. 
+You can get the drive for just £30. You can also easily get SSD drives for 
+less than £100 that are fast enough to create a bootable Windows 7 or 8.1 
+virtual machine that you can run on a regular computer. 
+  
+You can also use the free CopyPad software to save screenshots. You can 
+save images to the local drive in a location that is easily accessible without 
+software running on your PC. 
+  
+  
+How to install drivers for Windows 10? 
+  
+  
+This task can be a real headache, but there is a simple solution. We’re going 
+to walk you through the steps to install drivers for Windows 10 drivers for a 
+number of specific Windows hardware. 
+  
+  
+What hardware are you looking to install drivers for? 
+  
+  
+Before we dive into our guide, let’s understand what the hardware devices 
+you’re going to need drivers for are. 
+  
+●     X99 – Intel’s high-end enthusiast brand 
+●     Intel X299 – Intel’s high-end enthusiast brand 
+●     Airmont – Intel’s high-end enthusiast brand 
+●     Skylake/Kaby Lake – AMD’s high-end enthusiast brand 
+●     AMD Threadripper – AMD’s high-end enthusiast brand 
+●     Corsair DDR4 – Corsair’s high-end enthusiast brand 
+  
+  
+Where to get the drivers 
+  
+  
+In our opinion, it’s easiest to get drivers for your specific hardware devices 
+on AMD’s Driver Hub. You can either download the OBSE application to 
+your computer, or you can use AMD’s client application to download driver 
+downloads. You will need to download the AMD Client Pro application 
+(recommended) in order to be able to install the driver via the client. 
+  
+To install the software, run the application and select ‘Download’ on the top 
+right-hand corner, choose your download, and wait a few minutes for it to 
+download the content. 
+  
+Once the application is downloaded, select the application, right-click, and 
+select ‘install’. 
+  
+Once the installation is completed, you can click ‘Create’ to store the 
+drivers. 
+  
+  
+Windows 10 drivers 
+  
+  
+Since Windows 10 is the most recent version of Windows, all you need to 
+do is download the latest driver release. Alternatively, you can go to AMD 
+Driver Hub, click ‘Get Driver’, select your motherboard brand, and 
+download the latest driver. Once the driver is installed, you’re all set. 
+  
+  
+PC components 
+  
+  
+AMD CPUs 
+  
+If you’re on the hunt for AMD processors, we recommend checking out the 
+relevant AMD product page. Alternatively, you can go to the manufacturer’s 
+dedicated product website. 
+  
+AMD GPU lineup 
+  
+Since the Ryzen range of processors is fairly new, we’ll refer to the AMD 
+Radeon lineup. 
+  
+If you have any experience with AMD APUs, you will know that you need 
+to have the latest driver in order to get them to perform. The latest AMD 
+driver is available on the AMD driver hub, just click ‘Download’. 
+Alternatively, you can go to AMD Driver Hub, click ‘Get Driver’, select 
+your AMD APU and driver release version, and wait a few minutes for the 
+download to complete. 
+  
+AMD Threadripper lineup 
+  
+The Threadripper lineup is very different to AMD’s mainstream offerings. 
+AMD’s high-end processor features 64-threads and support for X399 
+motherboards, and generally requires a water block and better cooling 
+solutions. The driver is available on the AMD driver hub, just click 
+‘Download’. Alternatively, you can go to AMD Driver Hub, click ‘Get 
+Driver’, select your Intel X299, Core X series, and Thread Ripper 
+processor, and wait a few minutes for the download to complete. 
+  
+  
+What else can you do to make installing new drivers easier? 
+  
+  
+Windows 10 – This is the newest version of Windows, and you will notice 
+that Windows Update is not being updated automatically with new drivers, 
+which is a huge time saver. There are several ways to get Windows 10 to 
+automatically check for new updates and download and install driver 
+releases. 
+  
+An easy way to check for updates is to head to the Settings menu in 
+Windows 10, select ‘Update & Security’, and then ‘Check for Updates’. 
+  
+If you don’t want to wait, you can go to the Settings menu in Windows 10, 
+select ‘Update & Security’, click ‘Check for Updates’, click ‘Get it now’, 
+and then check for updates in Windows Update. Once the new driver is 
+downloaded, your computer will automatically install it. 
+  
+If Windows Update is not automatically updating, you can manually go to 
+the Windows Update portal, and search for Windows 10 to get the latest 
+drivers. 
+  
+If you’re using Ubuntu, you can check for updates using the following 
+commands: 
+  
+●     sudo apt-get update 
+●     sudo apt-get upgrade 
+  
+There’s also the official ‘Ubuntu Software’ repository, which provides 
+direct links to the drivers, so check this out to see if a new version of the 
+driver is available. 
+  
+That’s it – we hope you’ve found this guide useful. Now that you know how 
+to install new drivers, you’ll have all the functionality and peace of mind 
+you need when purchasing a new graphics card. Best of luck! 
+Chapter 3 Windows Store 
+  
+  
+What is Windows Store in Windows 10? 
+  
+  
+Windows Store is a new Windows operating system application store which 
+allows third party applications to be offered to users to download directly 
+on a personal computer or a Windows tablet or PC. For instance you can 
+access Windows Store for your Xbox One console and access any Microsoft 
+Store content. For general purpose computing the download link is placed 
+in the App –> Software center section of the device. By default, all the apps 
+will have a simple “Get” button which allows the user to download the 
+program. 
+  
+  
+What is the difference between Universal Windows Platform and 
+Windows Store? 
+  
+  
+The Windows Store can be accessed on any type of device, including any 
+laptop, tablet, and even smartphones like the Lumia series, using this 
+application. The app in question is universal. This means, the app can run 
+on any type of device, regardless of whether it is a PC or a tablet. 
+  
+Universal app means that the apps will work on the platform whether it is a 
+PC, a phone or a Xbox One. 
+  
+Universal Windows Platform also means that the apps will be developed to 
+work on all types of devices, not only the tablets, but also any kind of 
+laptop, laptop, laptop, laptop, etc. The application will work only on the 
+Surface hardware, only on the Windows 10 desktop, but also on the Xbox 
+One console, on the Windows Phone, and so on. 
+  
+So if you are looking to create an app that will work on any device, 
+Universal Windows Platform (UWP) is the best platform to go with. 
+  
+Ableton Live is one of the first apps to offer UWP. Here are few of the first 
+apps which have been developed for UWP: 
+  
+●     Sound Recorder 2 (Embrace Windows 10 and WP8.1) 
+●     AVG Cleaner (MobiLgas) 
+●     Bing (Light Blue Screen of Death) 
+●     Impala (Maxthon) 
+●     UC Browser (Opera Max) 
+●     Facebook (Core i3 version) 
+●     Skype (VLC) 
+●     WPS Office (PDF) 
+●     Netflix (Beta) 
+●     Xbox Music Beta (UWP) 
+●     YouTube Beta (UWP) 
+●     Skype News (Microsoft Edge) 
+●     Netflix (Beta) (UWP) 
+  
+  
+How to download applications from Windows Store 
+  
+  
+The fastest and the easiest way to download the apps from Windows Store 
+is to use an app store account. 
+  
+To create an app account, click the “Windows Store” section from the Start 
+menu, select “Get an App Developer” and sign in to a Microsoft account if 
+you have one. 
+  
+The above process will take you to the “Registering a New Application” 
+section and you can choose to create a UWP app or not to do that. 
+  
+It may also be useful to sign in to Xbox Live if you are interested in 
+releasing your Xbox One applications for the Windows Store. 
+  
+Please note: Creating the app store account will create an app in the 
+“Developers Hub” section on the “Windows Store” so make sure that this is 
+not a primary profile. This will create the app under the default user 
+account, and you will have to manually assign the app to your own. 
+  
+  
+There are a few other tricks and commands to be able to upload the 
+app to Windows Store: 
+  
+  
+Right click on the “Developers Hub” on the Start menu and select 
+“Settings” then “Microsoft account” 
+  
+and select “Settings” then “Microsoft account” Under the “My Microsoft 
+account” section click “Manage sign in settings” and select the Microsoft 
+account to which you want to upload the app. 
+  
+Select the Microsoft account to which you want to upload the app. From the 
+“Manage application access settings” menu, select the “Sign in to…” option 
+and you will see a drop down box with “My apps” and you need to select it. 
+  
+You will see a drop down box with “My apps” and you need to select it. 
+Now click the “Upload this app” and the app will be sent to the device. 
+  
+The app will be sent to the device. Click the “Create a product” option and 
+select “Windows 10 Apps” 
+  
+Now select “Windows 10 Apps” When the account is created click the 
+“Create My product” option, you will be directed to the product control 
+panel where you will be able to name the app and customize its icon. 
+  
+Select “My product” option, you will be directed to the product control 
+panel where you will be able to name the app and customize its icon. You 
+can download and build the app using Visual Studio Express 2015, and run 
+the application with the associated installer. 
+  
+Dropbox UWP App 
+  
+Dropbox is probably the most popular cloud storage service right now and 
+the Windows Store is no different. Here are a few of the first apps for UWP: 
+  
+1. Skype for Desktop (Exclusive) 
+2. Chrome 
+3. Microsoft Edge 
+4. YouTube 
+5. Google Play 
+6. Skype 
+7. Hulu Plus 
+8. Amazon Prime Video 
+9. Line2UWP (Exclusive) 
+10.                   Netflix (Beta) (UWP) 
+11.                   Xbox Music Beta (UWP) 
+12.                   Xbox Video (UWP) 
+13.                   YouTube (Beta) (UWP) (UWP Beta) 
+14.                   Skype News (Microsoft Edge) 
+  
+  
+How to use Windows Store in Windows 10? 
+  
+  
+To install and use the Windows Store in Windows 10 you have to follow 
+this: 
+  
+●       Step 1: You will need to enable all of the necessary third-party 
+software in Windows 10 for it to run in the background. Open the 
+Settings app. In the Search bar, type ‘Apps and features’ and click on 
+it. Click the switch ‘Allow apps from the Store to run in the 
+background’. 
+●       Step 2: Open the Start menu. Right-click the Search button. Click 
+Settings. Click the ‘App Store’. Click ‘Manage applications in the 
+background’. Tick the box ‘Allow apps from the Store to run in the 
+background’. Click ‘OK’. 
+●       Step 3: As soon as you click on a Windows Store app, the Store 
+notification bar will appear on the bottom-right of the desktop. Click 
+the ‘X’ button in this notification to dismiss it. You will see the app 
+install itself and its icon on the Start screen, and will be able to 
+launch it. 
+●       Step 4: If the Windows Store offers you a free trial version of an 
+application, you can click on the ‘X’ button to dismiss the 
+notification, and still get to the trial. You can click the ‘X’ on the 
+notification when you are ready to download the full version of the 
+software, if it is free of charge. 
+  
+  
+How to uninstall apps from the Windows Store? 
+  
+  
+To uninstall an app from the Windows Store, you will need to make sure 
+that you have already paid for the software. For example, the free iTunes 
+app is only available in the Windows Store. 
+  
+Once you have decided to uninstall the app, simply select ‘X’ to dismiss the 
+notification, then click on the ‘X’ again to dismiss the uninstall process. If 
+you have already purchased the software, you will be redirected to the 
+Microsoft Store where you can make a purchase of the software. 
+  
+  
+How to uninstall apps from the Windows Store that you have not paid 
+for 
+  
+  
+Sometimes you will be sent to a page saying that the app you want to 
+uninstall has already been paid for. This is a red herring, as it only means 
+that you are in the trial period. You can still uninstall the app without paying 
+anything. 
+  
+Tap on the notification. Once you have downloaded the full version of the 
+app, click on the ‘X’ button to dismiss the uninstall process. 
+  
+How to use Microsoft Edge in the Windows Store? 
+  
+  
+The Microsoft Edge browser has its own category on the Windows Store. 
+To access it, type ‘Cortana’ in the search bar, and select ‘Cortana and 
+Windows Store’ from the results. This will open the ‘Shop’ in the Microsoft 
+Edge browser, from where you can search for and install extensions. 
+  
+The Store can be accessed by going to ‘Cortana’ in the search bar, and 
+tapping on the ‘Shop’ link. 
+  
+  
+How to uninstall extensions from the Microsoft Edge browser? 
+  
+  
+To uninstall a Microsoft Edge extension, go to the ‘Cortana’ section in the 
+Microsoft Edge browser, and click on the ‘Elements’ tab. If an extension is 
+not already listed here, tap on the ‘X’ button to dismiss the notification. 
+  
+  
+How to uninstall Chrome extensions from the Microsoft Edge browser? 
+  
+  
+The Chrome browser offers a similar sort of functionality to Microsoft 
+Edge, as it has its own Store section. To access it, click on the ‘Shop’ tab, 
+and select ‘Extensions’. The Chrome Store will open, where you can search 
+and install Chrome Extensions. 
+  
+You can also uninstall Chrome extensions through the Chrome browser, just 
+as you can with Microsoft Edge. 
+  
+  
+  
+  
+How to uninstall Dropbox extensions from the Microsoft Edge 
+browser? 
+  
+  
+The Microsoft Edge browser offers a similar sort of functionality to the 
+Google Chrome browser. To access it, tap on the ‘Shop’ tab, and select 
+‘Dropbox’. The Microsoft Edge Store will open, where you can search and 
+install Dropbox Extensions. 
+  
+You can also uninstall Dropbox extensions through the Windows Store, just 
+as you can with Microsoft Edge. 
+  
+  
+How to uninstall iCloud Drive extensions from the Microsoft Edge 
+browser? 
+  
+  
+The Microsoft Edge browser offers a similar sort of functionality to the 
+Google Chrome browser. To access it, tap on the ‘Shop’ tab, and select 
+‘iCloud’. The Microsoft Edge Store will open, where you can search and 
+install iCloud Extensions. 
+  
+You can also uninstall iCloud Drive Extensions through the Windows Store, 
+just as you can with Microsoft Edge. 
+  
+  
+How to uninstall Chrome extensions from the Microsoft Edge browser? 
+  
+  
+The Chrome browser offers a similar sort of functionality to the Microsoft 
+Edge browser. To access it, click on the ‘Shop’ tab, and select ‘Chrome’. 
+The Microsoft Edge Store will open, where you can search and install 
+Chrome Extensions. 
+  
+You can also uninstall Chrome extensions through the Chrome browser, just 
+as you can with Microsoft Edge. 
+  
+  
+How to uninstall Dropbox extensions from the Microsoft Edge 
+browser? 
+  
+  
+The Microsoft Edge browser offers a similar sort of functionality to the 
+Google Chrome browser. To access it, tap on the ‘Shop’ tab, and select 
+‘Dropbox’. The Microsoft Edge Store will open, where you can search and 
+install Dropbox Extensions. 
+  
+You can also uninstall Dropbox extensions through the Windows Store, just 
+as you can with Microsoft Edge. 
+  
+  
+How to uninstall iCloud Drive extensions from the Microsoft Edge 
+browser? 
+  
+  
+The Microsoft Edge browser offers a similar sort of functionality to the 
+Google Chrome browser. To access it, click on the ‘Shop’ tab, and select 
+‘iCloud’. The Microsoft Edge Store will open, where you can search and 
+install iCloud Extensions. 
+  
+You can also uninstall iCloud Drive Extensions through the Windows Store, 
+just as you can with Microsoft Edge. 
+  
+  
+How to uninstall Chrome extensions from the Microsoft Edge browser? 
+  
+  
+The Chrome browser offers a similar sort of functionality to the Microsoft 
+Edge browser. To access it, tap on the ‘Shop’ tab, and select ‘Chrome’. The 
+Microsoft Edge Store will open, where you can search and install Chrome 
+Extensions. 
+  
+You can also uninstall Chrome extensions through the Chrome browser, just 
+as you can with Microsoft Edge. 
+  
+Which third-party Google extensions are compatible with Microsoft Edge? 
+Chrome extensions are compatible with Microsoft Edge in different ways. 
+For example, Google Keep, the company’s whiteboard-like note-taking app, 
+is fully compatible with Microsoft Edge, while Google Docs, the 
+company’s word processing service, isn’t. 
+  
+To see all extensions compatible with Microsoft Edge, go to the Microsoft 
+Edge Store, and check off the box next to the extension you’d like to install. 
+  
+You can also download the extensions directly from Microsoft’s site, as 
+well as link them to your Microsoft account. Just go to the extensions’ 
+product page, and click on ‘Get a Link’ to get started. 
+  
+However, a number of Microsoft’s extensions are not compatible with 
+Microsoft Edge. 
+  
+One example is the Microsoft Keyboard (Windows, macOS, and Linux). 
+That extension works perfectly on Mac and Linux, but not on Windows. In 
+fact, Microsoft has removed the Microsoft Keyboard extension from its 
+store. 
+  
+  
+How to uninstall third-party Google extensions from the Microsoft 
+Edge browser? 
+  
+  
+The Google Chrome extension launcher (known as the Chrome Web Store) 
+is a more straightforward and efficient way to download and install 
+extensions on your Microsoft Edge browser. 
+  
+To access it, click on the ‘All Categories’ tab, and click ‘Search Chrome 
+Web Store’. The All Categories section will open, where you can search and 
+install extensions. 
+  
+Click ‘Search Google’ under the ‘Extensions’ section, and search the rest of 
+the Chrome Web Store for any extension you’d like to install. Click ‘Get 
+Extension’ to download it. 
+  
+You can uninstall Chrome extensions from the Chrome Web Store, just as 
+you can with Microsoft Edge. 
+  
+  
+Windows 10 privacy settings 
+  
+  
+Microsoft Edge offers a number of privacy features. However, it’s worth 
+making sure you’ve enabled the settings you’re looking for. 
+  
+On the Microsoft Edge Settings page, head over to ‘Privacy’, and check 
+‘Block address bar from collecting information’, and ‘Block background 
+applications from collecting information’. These are both settings which 
+only affect Edge, not other applications. 
+  
+The Block background applications section will block programs from 
+running in the background, thus preventing them from seeing anything that 
+you don’t want them to see. 
+  
+Head back to the ‘Privacy’ page, and check ‘Turn on advanced privacy 
+settings’. This will enable you to clear your browsing history, history of 
+searches, and location history – all three of these are things you can’t see in 
+the Microsoft Edge Settings page. 
+  
+The ‘Clear browsing history’ option will clear everything by clearing your 
+browsing history. 
+  
+Finally, head back to the ‘Advanced Privacy Settings’ page, and click 
+‘Restrict website data’. Here you can tell Edge to only show your address 
+bar in non-flash video windows, disable advertising, and prevent Edge from 
+keeping track of how many times you’ve visited sites. 
+  
+  
+How to clear your browsing history in Windows 10 
+  
+  
+There are two ways to clear your browsing history in Windows 10. The first 
+is to open your Settings app, and click on ‘Accounts & Privacy’. 
+  
+In the left-hand panel, click on ‘Microsoft Edge’. From there, click on 
+‘View browsing history’. This will show you a list of your most visited 
+websites, plus a clickable link to clear your browsing history. 
+  
+The other method is to open the ‘Operating System’ app, and go to 
+‘Accounts & Privacy’. From there, click on ‘Device Settings’. 
+  
+Click on ‘Privacy’ and ‘Clear browsing history’. 
+  
+  
+Is it easier to manage your privacy settings in Windows 10? 
+  
+  
+Yes. However, you can download Firefox by visiting this page. It’s free, and 
+the open source software means it is harder to break or go viral. 
+  
+Plus, Firefox doesn’t use third-party extensions, and is easier to use than 
+Edge. 
+  
+Also, it has its own web browser, so if you prefer to browse the internet on 
+another computer, you can switch from Edge. 
+  
+  
+  
+  
+What are the best free Windows 10 web browsers? 
+  
+  
+There are three very popular free web browsers in use on Windows 10: 
+  
+Anti – The oldest browser on the list, Anti is a bit limited, but offers the 
+most features out of all the free Windows 10 browsers. 
+  
+Mozilla Firefox – You can use Firefox without paying for it, but the default 
+installation will remove its Add-ons, such as Newsvine, Adobe Reader and 
+Flash, which you might want to download again. 
+  
+Firefox has also integrated Pocket, a service that enables you to save and 
+access content you want to read later, but don’t necessarily want to open. 
+  
+The rest are: 
+  
+Bing (Microsoft) – This browser is supported by Microsoft, which gives it 
+the advantage of being the most well known. But it doesn’t offer any social 
+media integration. 
+  
+Chrome (Google) – Google’s browser is better than others in this list. It’s 
+fast and lightweight, which is handy when you have more than a few tabs 
+open. But it doesn’t have the same selection of add-ons as Firefox. 
+  
+Safari (Apple) – Safari is perhaps the most dependable browser on 
+Windows 10, but some users prefer Chrome’s speed. 
+Chapter 4 Windows Hello 
+  
+  
+What is Windows Hello in Windows 10? 
+  
+  
+Windows Hello is a security feature that uses biometrics, specifically face 
+recognition, to sign-in to your PC or tablet. Using sensors, Windows Hello 
+processes your face to help you log in to your PC or tablet with greater 
+security and confidence. 
+  
+If you don’t have a biometric security product such as an iris scanner, face 
+scanner, fingerprint scanner, or USB security key (the companies offer a 
+range of USB security keys), you can also use Windows Hello face 
+recognition to unlock a PC, tablet, or phone, or access secure content. 
+  
+There are four available face recognition security options in Windows 10, 
+allowing you to configure how Windows Hello facial recognition works. 
+  
+Facial recognition for Windows Hello is built into Windows 10 Anniversary 
+Update. To enable facial recognition in your Windows 10 PC or tablet, go to 
+Settings > Accounts > Sign-in options > Face recognition and make your 
+selection. 
+  
+You have three options for how Windows Hello facial recognition works: 
+  
+Simple – To use facial recognition in most cases you don’t need to use a 
+PIN or password. Just hold the front facing camera up to your face and 
+Windows Hello will verify your identity. The device won’t wake unless you 
+agree. It’s simple, convenient, and safer than typing in a PIN or password. 
+  
+To use facial recognition in most cases you don’t need to use a PIN or 
+password. Just hold the front facing camera up to your face and Windows 
+Hello will verify your identity. The device won’t wake unless you agree. It’s 
+simple, convenient, and safer than typing in a PIN or password. Perfect 
+camera To use facial recognition in most cases you will need to use the 
+camera on your device. If you want to enable Windows Hello facial 
+recognition on a device that has a screen, a keyboard, or does not have a 
+camera, you will need to use a PIN or password. You will need to unlock 
+Windows Hello with a PIN or password to authenticate your face. For 
+example, on a tablet or laptop with a screen, you can unlock it using a PIN 
+or password. Once Windows Hello is active on the device and your face has 
+been saved in the camera, you will need to unlock your device with a PIN 
+or password. 
+  
+To use facial recognition in most cases you will need to use the camera on 
+your device. If you want to enable Windows Hello facial recognition on a 
+device that has a screen, a keyboard, or does not have a camera, you will 
+need to use a PIN or password. You will need to unlock Windows Hello 
+with a PIN or password to authenticate your face. For example, on a tablet 
+or laptop with a screen, you can unlock it using a PIN or password. Once 
+Windows Hello is active on the device and your face has been saved in the 
+camera, you will need to unlock your device with a PIN or password. 
+Perfect lens – When you want to use facial recognition with a Windows 
+Hello-enabled device that does not have a camera, you can use a lens or a 
+camera from another Windows 10 PC or tablet. Windows Hello will 
+activate facial recognition on that device and log you in. You can choose to 
+enable Windows Hello facial recognition on a Windows 10 PC or tablet 
+using a lens or a camera. 
+  
+Note: While the available options are simple and convenient, there are some 
+cases when you may not be able to use facial recognition and a PIN or 
+password. For example, you might have a screen on your PC or tablet that’s 
+too thick to allow you to use a camera and still use a keyboard or a screen to 
+type. There may also be cases when you don’t own a computer, tablet, or 
+laptop with a camera. 
+  
+  
+  
+  
+  
+I want to use Windows Hello to log in. Can I use a camera instead? 
+  
+  
+When you use facial recognition to log in, you can choose from one of the 
+three facial recognition options when you’re setting up Windows Hello on a 
+new device or when you already have a device set up. 
+  
+If you want to use facial recognition to log in, you’ll need to have a device 
+that’s able to use facial recognition to authenticate you. This may include a 
+touchscreen PC, a mouse and keyboard-equipped tablet, or a phone that’s 
+not capable of using facial recognition. If you don’t own any of these 
+devices, you will be prompted to use a PIN or password. 
+  
+If you set up facial recognition on a Windows 10 PC, you will be prompted 
+to use a PIN or password when you try to sign in. If you are on a desktop 
+PC or a tablet and you are not on a keyboard, you’ll be asked to use a PIN 
+or password to sign in to Windows Hello. 
+  
+  
+How do I set up facial recognition on my PC? 
+  
+  
+You can add facial recognition to a Windows 10 PC by adding a face. You 
+will need to create a user account for your new user. You can do this in a 
+few different ways. 
+  
+●     Step 1: Find and open the Start Menu. Click the Run command and 
+then click “Windows features.” 
+●       Step 2: Type “add a device” in the search box and then click the 
+result. 
+●     Step 3: Click “new device.” 
+●     Step 4: Use the “add a user” link to create a new Windows 10 PC 
+user. 
+●       Step 5: For Windows Hello, you will be asked to enter your 
+Windows 10 PC’s login credentials. For example, on a Windows 10 
+laptop with a keyboard and screen, you can enter your Microsoft 
+account credentials. 
+●     Step 6: After you have been authenticated, you will be able to add 
+your face to Windows Hello. 
+●     Step 7: Click “OK.” 
+●     Step 8: Follow the instructions to enable the feature. 
+●     Step 9: At this point, you will be asked to log in. You’ll also be asked 
+to give your PC a name. Click “Log In” to sign in. 
+●     Step 10: Then click “OK.” You’ll then be able to use Windows Hello 
+on the new PC. 
+  
+Once you add a face to your Windows 10 PC, you can also use Windows 
+Hello to sign in with a mouse or keyboard. 
+  
+If you want to use a camera, you can set up facial recognition by choosing 
+one of the three face recognition options when you’re setting up Windows 
+Hello on a new device or when you already have a device set up. 
+  
+If you set up facial recognition on a Windows 10 PC, you will be prompted 
+to use a PIN or password when you try to sign in to Windows Hello. 
+  
+  
+How do I sign in to Windows Hello on a Windows 10 Mobile phone? 
+  
+  
+Windows 10 Mobile users can use face recognition to log in to Windows 
+Hello on a PC with a fingerprint reader. To sign in, you’ll be prompted to 
+use a PIN or password. To set up facial recognition, you’ll need to create a 
+new device, either by adding a device or logging in to a Windows 10 
+Mobile device with your Microsoft account. 
+  
+If you set up facial recognition on a Windows 10 Mobile phone, you will be 
+prompted to use a PIN or password when you try to sign in to Windows 
+Hello on Windows Hello. 
+  
+If you add a lens or camera to your Windows 10 Mobile device, you will be 
+prompted to set up facial recognition when you log in to Windows Hello. 
+  
+To sign in to Windows Hello, you’ll also be asked to provide your Windows 
+10 PC’s credentials. This means that if you use a USB-C or Bluetooth 
+mouse and keyboard, you’ll also be asked to enter your PC’s password 
+when you want to sign in. 
+  
+  
+How do I sign in to Windows Hello on a Windows 10 PC? 
+  
+  
+Step 1: On a PC, log in to Windows Hello. 
+  
+Step 2: Choose the face recognition option under “options” and “lock 
+screen options.” 
+  
+Step 3: For mobile devices that have Windows Hello, you’ll be prompted to 
+enter your Windows 10 PC’s credentials. 
+  
+Step 4: For mobile devices that don’t have Windows Hello, you’ll be 
+prompted to add a lens or camera to your device. 
+  
+Step 5: After you have been authenticated, you will be able to use your face 
+to sign in to Windows Hello. 
+  
+If you want to use facial recognition to log in, you’ll need to use a PIN or 
+password on a Windows 10 PC. 
+  
+If you add a lens or camera to your Windows 10 Mobile device, you will be 
+prompted to set up facial recognition when you log in to Windows Hello. 
+  
+  
+How do I set up facial recognition on a Windows 10 Mobile device? 
+  
+  
+On your device, tap the “Face” icon. 
+  
+Choose “Facial Recognition” from the “Face” menu. 
+  
+Step 1: Add a lens or camera. 
+  
+Step 2: Make sure to select a device that has a face recognition option. 
+  
+Step 3: After you have been authenticated, you will be able to use your face 
+to sign in to Windows Hello. 
+  
+Step 4: Once you have been authenticated, you will be able to use your face 
+to sign in to Windows Hello. 
+  
+If you add a lens or camera to your Windows 10 Mobile device, you will be 
+prompted to set up facial recognition when you first sign in to Windows 
+Hello. 
+  
+If you add a lens or camera to your Windows 10 PC, you will be prompted 
+to set up facial recognition when you first log in to Windows Hello. 
+  
+To log in to Windows Hello, you’ll also be asked to provide your Windows 
+10 PC’s credentials. This means that if you use a USB-C or Bluetooth 
+mouse and keyboard, you’ll also be asked to enter your PC’s password 
+when you want to sign in. 
+  
+  
+Windows 10 Mobile devices with face recognition 
+  
+  
+As of this writing, there are only four Windows 10 Mobile devices that have 
+the facial recognition option — the Lumia 950 and 950 XL, the Lumia 650 
+and 650 XL, and the HP Elite X3. All of these devices use facial recognition 
+via the front-facing camera to log into Windows Hello — you simply 
+unlock the device, then type your PIN or password and facial recognition is 
+enabled. 
+  
+But the Lumia 950 and 950 XL, the Lumia 650 and 650 XL, and the HP 
+Elite X3 feature optional support for face recognition via the rear-facing 
+camera, as well — that is, you can use your face to unlock the phone, but 
+you can also use the rear camera to enable Windows Hello authentication, 
+just as you would on a PC. 
+  
+The Lumia 950 and 950 XL, for example, support face recognition via the 
+rear camera on supported devices: 
+  
+Surface Pro 4 and Surface Book, if you purchase Microsoft’s updated 
+version of the tablet with Microsoft’s updated version of the tablet with an 
+integrated fingerprint sensor, the Surface Pro 4 with the Microsoft B118 
+Surface Pen, the Surface Pro 4 with Surface Dial, and the Surface Book 
+with Detachable Keyboard 
+  
+Lumia 950 and 950 XL devices with face recognition support, if you 
+purchase the Lumia 950 with Microsoft’s updated version of the tablet with 
+Microsoft’s updated version of the tablet with an integrated fingerprint 
+sensor, the Lumia 950 with Microsoft’s updated version of the tablet with 
+an integrated fingerprint sensor, the Lumia 950 with Microsoft’s updated 
+version of the tablet with an integrated fingerprint sensor, the Lumia 950 
+XL with Microsoft’s updated version of the tablet with an integrated 
+fingerprint sensor, and the Microsoft Lumia 640 (XL) or Lumia 640 
+(Standard) 
+  
+The Surface Pro 4 and Surface Book, if you purchase the Surface Pro 4 with 
+Microsoft’s updated version of the tablet with an integrated fingerprint 
+sensor, the Surface Pro 4 with Surface Dial, and the Surface Book with 
+Detachable Keyboard 
+  
+The Lumia 640 (Standard) devices with face recognition support, if you 
+purchase the Lumia 640 (Standard) with Microsoft’s updated version of the 
+tablet with Microsoft’s updated version of the tablet with an integrated 
+fingerprint sensor, the Lumia 640 with Microsoft’s updated version of the 
+tablet with an integrated fingerprint sensor, and the Microsoft Lumia 640 
+(XL) or Lumia 640 (Standard) 
+  
+Microsoft already took this extra step to support face recognition via the 
+rear camera on Lumia phones by adding an option to allow the feature via 
+the settings menu, but you had to turn on the option yourself, so Microsoft 
+is making it the default by enabling facial recognition via the camera on all 
+Windows 10 Mobile devices with the front-facing camera. 
+  
+But why not include it right off the bat? Well, this allows you to be alerted 
+if someone else tries to use your phone or tablet with a trusted face. A 
+trusted face can be determined using your device’s IR system, and if it’s in 
+range of a new person, you’ll get a notification that lets you know. When 
+this happens, the option to disable face recognition can be found in the 
+settings menu, too. 
+  
+Now, whenever a new phone or tablet with the Windows Hello facial 
+recognition camera or fingerprint sensor comes along, it’ll automatically be 
+supported. It’s up to users, though, to enable facial recognition on Windows 
+Hello-enabled devices, if they want to, and it’s an interesting change. 
+Chapter 5 Cortana 
+  
+  
+What is Cortana in Windows 10? How can I customize my chatbot? 
+  
+Microsoft Cortana is now available to everyone who already has Windows 
+10 installed, as well as to new Windows 10 Mobile users. If you don’t have 
+a Microsoft account, you can set one up and set it up once you create your 
+Windows 10 account. After setting it up, click the Cortana button on the 
+taskbar, and you’ll be able to use Cortana to get your favorite music, watch 
+a favorite TV show, or shop for new clothes using Bing. 
+  
+  
+Sign up for the Microsoft Store. 
+  
+  
+To set up Cortana, you will need to create an account but to use it for 
+software updates and apps, you also need to connect your Microsoft 
+Account to a Microsoft Store account. To sign up, log in to your Microsoft 
+Account, click on the down-arrow button on the top right side of the page, 
+then click Sign in to Microsoft Store and follow the instructions. Signing in 
+will generate a new link in your address book, and when you click on that, 
+Cortana will be able to access your data. 
+  
+After setting up an account, the next step is to add Microsoft Store so that 
+Cortana can make purchases in the store. Go to your Microsoft account 
+settings and click on the blue Create a Microsoft Account button. On the 
+next screen, click on the Select a User button and add a Microsoft account. 
+This will add Cortana as an app to the Microsoft Store. 
+  
+  
+  
+  
+  
+Set up Cortana’s skills. 
+  
+  
+Once you have signed into your Microsoft account and have Cortana 
+installed, go to the Cortana app on your Windows 10 laptop or PC. You will 
+see a new screen with an orange Reminder card. The orange Reminder card 
+will be Cortana’s “Actions” card, which is where she will do things for you. 
+On this card, look for the “Enable Skills” link. If you click on this link, you 
+can enable a set of Microsoft-provided “skills.” 
+  
+After clicking on “Enable Skills,” click on the “Next” button. When the 
+next screen appears, click on “Continue to Next.” 
+  
+On the next screen, click “Next” again, and then “Enable Devices.” Click 
+on “Continue to Next,” and then “Allow Cortana to sync with my 
+accounts.” 
+  
+Next, click “Continue to Next,” and then on the “Finish” button. You will 
+be prompted to confirm the change on the first screen that pops up. After 
+clicking on “Confirm,” your apps will be activated. 
+  
+Next, click on the orange Reminder card again, and then click “Finish.” You 
+will be taken back to the Cortana app’s home screen. Click on the card that 
+says “Reminders,” which will show you the reminders in your To-Do list, 
+and you will be able to add a reminder. 
+  
+  
+Set up Cortana’s Notebook. 
+  
+  
+In the Cortana Notebook’s first page, click the menu button in the upper 
+right-hand corner of the notebook. You will be taken to a page where you 
+can select “Add a reminder” or “Save a note.” Click the “Create” button to 
+start a new note, and then a note card will be displayed. Click the “More 
+actions” button at the bottom of the page to modify the note. To add a 
+specific time in the note, you can either type it in the search box on the card 
+or click the “Add calendar entry” link, which will automatically show you a 
+calendar entry. You can add a title to the note by clicking the “Save” button. 
+Click the “Save” button again when you are finished, and your note will be 
+saved in the Notebook. 
+  
+You can click on the menu button again to get back to the Cortana 
+Notebook home page. Click on the “Clipboard” button, and a list of all your 
+recently copied items will be displayed. You can click on the search button 
+to open the search box and look for a specific note, and then select it to 
+open it in the Notebook. You can also click on the cog icon at the top right- 
+hand corner of the screen to open the Cortana Notebook’s settings page. 
+Click on the gear icon at the top right-hand corner of the page to access the 
+Notebook’s settings. 
+  
+  
+Set up Cortana’s Notebook. 
+  
+  
+On the Notebook page, click on the “More actions” link. A list of things 
+Cortana can do will appear. Select the “Create a new reminder” option, and 
+then a new Cortana Note will open where you can input the reminder. Click 
+on the “Add calendar entry” link. This will open a search box, where you 
+can enter the name of a calendar entry. You can add a title to the note by 
+clicking the “Save” button. Click the “Save” button again when you are 
+finished. Your note will be saved in the Notebook. 
+  
+  
+Set up Cortana’s Notebook. 
+  
+  
+On the Notebook page, click on the “More actions” link. A list of things 
+Cortana can do will appear. Select the “Create a new reminder” option. This 
+will open a new Cortana Note where you can input the reminder. Click the 
+“Add calendar entry” link. This will open a search box, where you can enter 
+the name of a calendar entry. You can add a title to the note by clicking the 
+“Save” button. Click the “Save” button again when you are finished. Your 
+note will be saved in the Notebook. 
+  
+  
+How to manage notes in the Windows 10 
+  
+  
+1. Choose the notes you want to manage in the “Create a new Note” section 
+in the Cortana Notebook. 
+  
+2. Click on the three dots in the upper right-hand corner of the screen. Click 
+“Settings.” You will then see three tabs that are labeled, “Notes,” “Notes for 
+me,” and “Manage notes.” Click on the “More actions” link, and then click 
+on the “Manage notes” link. You will then see a page that is divided into 
+two sections. 
+  
+3. Click on the “Create new note” section in the “Create a new note” 
+section. A new Notebook page will appear, where you can enter the 
+information needed to create a new note. To add a specific time in the note, 
+you can either type it in the search box on the card or click the “Add 
+calendar entry” link, which will automatically show you a calendar entry. 
+  
+You can click on the menu button again to get back to the Cortana 
+Notebook home page. Click on the “Clipboard” button to get back to the 
+Clipboard’s menu. Click on the “Search” button to open the Search box and 
+look for a specific note, and then select it to open it in the Notebook. Click 
+on the cog icon at the top right-hand corner of the page to open the 
+Notebook’s settings page. Click on the gear icon at the top right-hand 
+corner of the page to access the Notebook’s settings. 
+  
+  
+How to set up Cortana’s Notebook in Office 365 
+  
+  
+1. Go to the Office 365 website. 
+  
+2. Click the green “Activate” button that is at the bottom-right of the page. 
+Click on “Search for and sign in to Office 365” in the dialog box that 
+appears. You will see a list of Office 365 services to choose from, including 
+Outlook, Exchange, Skype for Business, SharePoint Online, and OneDrive 
+for Business. 
+  
+3. Choose Outlook, and then click “Next.” You will then see a section 
+labeled, “Sign in with an email address.” You can enter an existing 
+Microsoft account or sign in to a new one. Click “Next” on this screen. 
+  
+4. Click on “Show me what I am getting.” This will open the Account page, 
+where you can enter a name for your Office 365 domain, the owner’s email 
+address, and the password. You can also enter an Office 365 Home, 
+Personal, or University Domain if you have one. Click “Next.” 
+  
+5. You will see a “Your Account Settings” section that says “Enable 
+Notebook,” with a link to click on. You can enter an email address and then 
+click “Continue.” This will take you to a page that says, “Next: Enable Sync 
+so other people can see what you are doing.” Click “Next.” 
+  
+6. Click “Next: Set up Cortana.” Click “Next.” You will see a screen that 
+says, “How do you use Cortana?” Click “Next” on this screen. 
+  
+7. Click “Next: Sync notes to OneDrive.” This will open a page that says, 
+“Sign in with an email address.” You can enter an existing Microsoft 
+account or sign in to a new one. Click “Continue” on this screen. 
+  
+8. Click on the cog icon at the top right-hand corner of the page to open the 
+Notebook’s settings page. Click on the gear icon at the top right-hand 
+corner of the page to open the Notebook’s settings. 
+  
+  
+  
+  
+How to use Cortana in Outlook and OneNote 
+  
+  
+1. Go to Outlook. 
+2. Click on the green “Sign in” button that is located at the bottom-right 
+of the screen. 
+3. Choose “Sign In with your Microsoft account.” Click “Continue.” 
+You will then see a page with a link to click on to sign in to 
+Outlook.com. Click on the link. 
+4. You will then see a page that says, “Sign in to Outlook.com with your 
+Microsoft account.” Click on the link. You will be taken to a page 
+that says, “Your sign in has been saved. If you change your account 
+settings in the future, your sign in will also change. To change your 
+login and password, go to the Account tab at the top right of 
+Outlook.com.” 
+5. Click on the gear icon at the top right-hand corner of the page to open 
+the Notebook’s settings page. Click on the gear icon at the top right- 
+hand corner of the page to open the Notebook’s settings. 
+6. Click on the cog icon at the top right-hand corner of the page to open 
+the Notebook’s settings page. Click on the cog icon at the top right- 
+hand corner of the page to open the Notebook’s settings. 
+7. Click “Cortana Notebook.” Click “Next.” You will see a page that 
+says, “How do you use Cortana?” Click “Next” on this screen. 
+8. Click “Next: Sync Notes to OneDrive.” This will open a page that 
+says, “Sign in with an email address.” You can enter an existing 
+Microsoft account or sign in to a new one. Click “Continue.” You 
+will then see a page that says, “Next: Sync Notes to OneDrive.” This 
+will open a page that says, “Sign in to Outlook.com with your 
+Microsoft account.” Click on the link. You will then see a page that 
+says, “Sign in to Outlook.com with your Microsoft account.” Click 
+on the link. You will then see a page that says, “Sign in to 
+Outlook.com with your Microsoft account.” Click on the link. You 
+will then see a page that says, “Sign in to Outlook.com with your 
+Microsoft account.” Click on the link. 
+9. Click on the cog icon at the top right-hand corner of the page to open 
+the Notebook’s settings page. Click on the cog icon at the top right- 
+hand corner of the page to open the Notebook’s settings. 
+10.                   Click “Cortana Notebook.” Click “Next.” This will open a 
+page that says, “How do you use Cortana?” Click “Next” on this 
+screen. 
+11.                   Click “Next: Sync Notes to OneDrive.” This will open a page 
+that says, “Sign in with an email address.” You can enter an existing 
+Microsoft account or sign in to a new one. Click “Continue.” You 
+will then see a page that says, “Next: Sync Notes to OneDrive.” This 
+will open a page that says, “Sign in to Outlook.com with your 
+Microsoft account.” Click on the link. You will then see a page that 
+says, “Sign in to Outlook.com with your Microsoft account.” Click 
+on the link. 
+12.                   Click “Next: Sync Notes to OneDrive.” This will open a page 
+that says, “Sign in to Outlook.com with your Microsoft account.” 
+Click “Continue.” You will then see a page that says, “Next: Sync 
+Notes to OneDrive.” This will open a page that says, “Sign in to 
+Outlook.com with your Microsoft account.” Click on the link. You 
+will then see a page that says, “Sign in to Outlook.com with your 
+Microsoft account.” Click on the link. 
+13.                   Click on the cog icon at the top right-hand corner of the page 
+to open the Notebook’s settings page. Click on the cog icon at the top 
+right-hand corner of the page to open the Notebook’s settings. 
+14.                   Click “Cortana Notebook.” Click “Next.” You will see a page 
+that says, “How do you use Cortana?” Click “Next” on this screen. 
+15.                   Click on the cog icon at the top right-hand corner of the page 
+to open the Notebook’s settings page. Click on the cog icon at the top 
+right-hand corner of the page to open the Notebook’s settings page. 
+16.                                   Click “Masks,” then click on “Recents.” Click “Show 
+advanced options.” Click “Change account settings” to open the 
+OneDrive page. Click the link “You must sign in to add custom 
+backgrounds for Cortana.” Click the link “Sign in to OneDrive” to 
+sign in to Outlook.com with your Microsoft account. 
+17.                   Click “Next” on this screen. 
+18.                   Click “Incoming device updates” to open the “Send mail or 
+read mail on this computer” page. Click “Click here to continue.” 
+19.                   Click “Continue” on this screen. 
+20.                   Click “Next” on this screen. 
+21.                   Click “Verify your credentials.” Click “Verify your account.” 
+Click “Next.” 
+22.                   Click “Finish.” This will open a page that says, “Get started.” 
+Click on the link. This will open a page that says, “Sign in to 
+OneDrive with your Microsoft account.” Click on the link. You will 
+then see a page that says, “Your free storage is over.” Click 
+“Remove” to remove all of your free storage space. You will then see 
+a page that says, “Cortana Notebook is available for download.” 
+Click “Download” to start the download. You will then see a page 
+that says, “Cortana Notebook is available for download.” Click 
+“Download” to start the download. 
+23.                   Once the download has completed, you will see the download 
+box appear at the bottom of the screen. Click on the box to download 
+the files. Once the download has completed, you will see the 
+download box appear at the bottom of the screen. Click on the box to 
+download the files. 
+24.                   The “get started” page will appear. Click on the “Cortana 
+Notebook” link to open the file manager. Click on “Cortana 
+Notebook.” Click on “Start install” and then “Finish.” This will open 
+a page that says, “Cortana Notebook installation finished.” Click the 
+link at the bottom left of the page. This will open a page that says, 
+“You can continue using Cortana.” Click “Continue.” This will open 
+a page that says, “Cortana Notebook requirements updated.” Click 
+“Update” to install the new “Cortana Notebook” on the computer. 
+Click “Update” to install the new “Cortana Notebook” on the 
+computer. 
+25.                   Click on the link to “Set up Cortana Notebook.” Click “Next.” 
+26.                   Click “Next” on this screen. 
+27.                   Click “Next” on this screen. 
+28.                   Click “Next” on this screen. 
+29.                   Click “Finish.” 
+30.                   This will open a page that says, “Your Cortana Notebook is 
+now ready for use.” Click “Continue” to continue using Cortana. 
+31.                   Click “Set up Cortana Notebook.” 
+32.                   This will open a page that says, “Set up Cortana Notebook.” 
+Click “Next” on this screen. 
+33.                   Click “Next” on this screen. 
+34.                   Click “Next” on this screen. 
+35.                   Click “Next” on this screen. 
+36.                   Click “Finish.” 
+37.                   This will open a page that says, “Your Cortana Notebook is 
+now ready for use.” Click “Continue” to continue using Cortana. 
+Chapter 6 Microsoft Office 365 
+  
+  
+What is Office 365 for Windows 10? 
+  
+  
+Microsoft’s new Office 365 for Windows 10 actually isn’t really new – it’s 
+actually an add-on to Office 365. It’s a service that lets users access the 
+same Office 365 applications, programs, online storage and online sync 
+features with their Windows 10 devices without requiring a separate 
+Windows 10 desktop OS or even a full Windows 10 license. It’s free to use, 
+and as long as you have a valid Office 365 subscription it also includes free 
+Microsoft account email, calendar, chat and instant messaging (and is 
+otherwise identical to what Office 365 provides for Windows 10 users). 
+  
+  
+Office 365 for Windows 10 
+  
+  
+Multiple users can access a copy of Microsoft Office on each other’s 
+devices for the same subscription – whether that’s a single device, or an 
+entire household. If you’re an Office 365 subscriber, it’s also available for 
+use on your smartphone or tablet with Office 365 for Windows 10 Mobile, 
+without installing an Office 365 desktop app (for mobile devices that still 
+have older versions of Office, Office 365 for Windows 10 Mobile also 
+supports Windows Phone 8.1 and above). 
+  
+Office 365 ProPlus Office apps, including Word, Excel, PowerPoint and 
+OneNote, are installed from the Windows Store. For Word, Excel, 
+PowerPoint and OneNote, users can choose to install the full suite, or just 
+the respective apps. 
+  
+Office 365 storage allows users to store documents, presentations and 
+photos offline, synchronize content between devices, and create and view 
+documents in a mobile-friendly, ‘SLIM’ version. 
+  
+The best of Microsoft’s productivity apps – including OneDrive, 
+Outlook.com and Lync, Skype and Yammer – are included with Office 365. 
+  
+This is more or less what you get with a free trial of Office 365 for 
+Windows 10, as well. There’s not a lot new here. It’s basically a way to 
+replace an Office license with a free subscription that includes a copy of 
+Word, Excel, PowerPoint and OneNote on up to 10 different devices. It’s 
+not an attractive offer to most users, as it doesn’t offer an extended license 
+for offline use or SLIM formatting. It does, however, avoid the locked- 
+down user experience of Windows 10 Mobile, and provides one less barrier 
+for the majority of Windows users to using Microsoft’s Office suite. 
+  
+Office 365 for Windows 10 will also work well with some programs that 
+aren’t available from the Windows Store, including older versions of 
+Microsoft Word and Excel. Users of those older apps can install the Office 
+2013 desktop suite, which will also be included with Office 365 for 
+Windows 10, and use the full Office experience including Office Word, 
+Excel and PowerPoint, and the free applications that shipped with Office 
+2013. 
+  
+Note that Office 365 for Windows 10 does not include OneDrive. If you’re 
+an Office 365 subscriber, you will get access to OneDrive storage in 
+Windows 10 with Office 365, so you don’t need to switch to another cloud 
+storage service to use OneDrive in Windows 10. 
+  
+  
+Another option for Windows users 
+  
+  
+Microsoft has also made Office 2016 available for Windows 8.1 users, 
+which was released in July 2015, and does offer the same Office 365 add-on 
+features. It’s not quite as attractive an offer, though, as it lacks OneDrive 
+storage, or even offline editing of Office documents. 
+  
+Office 2016 users can also purchase a perpetual license for Office 2016 for 
+$119.99 (around £86 / AU$140), which is cheaper than Microsoft’s 
+standalone price for the software, but does include a one-year Office 365 
+subscription. 
+  
+For those interested in acquiring Office 2016 without committing to an 
+Office 365 subscription, you can download it from the Microsoft Store here, 
+and find all the information you’ll need here. You can also purchase a copy 
+directly from the Office.com website, or from a number of different 
+resellers. Office 2016 for Windows 7 and 8.1 will be available on July 30th. 
+  
+Rollout of Office 2016 for Windows will vary from country to country, so 
+you might have to wait a while for Microsoft’s apps to reach you. You can 
+learn more in Microsoft’s Office 2016 rollout FAQ. 
+  
+  
+What is Office 365 for Windows 10? 
+  
+  
+Microsoft is slowly building up its Office 365 ecosystem for Windows 10. 
+Last October, the company announced that it would include support for 
+Hangouts chat in Skype for Business, the premium calling and conferencing 
+service that debuted with the latest version of Windows 10. 
+  
+In March, Microsoft announced that Office 365 Groups, its popular 
+enterprise social networking platform, would be available for Windows 10. 
+In addition to Groups, Microsoft will release "Office 365 for Teams" as part 
+of the rollout, and that offering will integrate with Microsoft's Teams chat 
+app, currently available only on Android and iOS. 
+  
+And in December, Microsoft revealed that the latest version of Outlook for 
+Windows 10 would support the company's messaging platforms, including 
+Skype, Yammer and Microsoft Teams. 
+  
+  
+  
+Paul Thurrott and WalkingCat 
+  
+  
+The new Office 365-only features in Windows 10 Enterprise will be 
+included in Word, Excel, PowerPoint and Outlook, though not all features 
+will be available in all Office 365 subscribers, the company said. Microsoft 
+is also opening up free versions of Word, Excel and PowerPoint to some 
+Office 365 subscribers, though the new features will be automatically 
+disabled. 
+  
+Office 365 users who don't have a subscription to the Home, Personal or 
+University plans will be able to get the free features when they upgrade to 
+Windows 10 Enterprise, Microsoft said. For Office 365 ProPlus customers, 
+the free features will be made available after Windows 10 is rolled out. 
+  
+Hints about Office 365 for Windows 10 have leaked ahead of the operating 
+system's release. In January, Microsoft told Business Insider that a new 
+version of Word and Excel for Windows 10 would be released in the 
+coming months. 
+  
+In May, former Microsoft senior software engineer Paul Thurrott published 
+details about how Microsoft's Office 365 for Windows 10 would work. 
+  
+This isn't the first time Microsoft has cut support for one operating system 
+and built a version of its software to work better on another. In December 
+2014, Microsoft released a preview of Windows 10 with special support for 
+Windows Phone, the company's mobile operating system. 
+  
+  
+What is Microsoft 365? 
+  
+  
+Microsoft's new push into the world of cloud services began in September, 
+when it launched a new service called Microsoft 365, aimed at centralizing 
+a customer's cloud services and solutions. 
+  
+"Microsoft 365 delivers the world's most trusted and comprehensive 
+integration of productivity, communication, security and data," Microsoft's 
+corporate vice president for Office 365 Scott Guthrie wrote in a blog post. 
+  
+Microsoft's concept for the service, similar to that of other leading cloud 
+providers such as Amazon Web Services (AWS) and Google, is that 
+customers can avoid having to manage multiple servers and keep their data 
+within a single infrastructure. 
+  
+The first version of Microsoft 365 — which is aimed at businesses — 
+included support for Microsoft Teams, its messaging app; Dynamics 365, a 
+cloud-based service for customer relationship management; and Windows 
+10 Enterprise. 
+  
+Guthrie promised that Microsoft 365 will grow over time, and a second 
+version of the software will be released in March. The version released in 
+March will include support for the Teams app, Office 365 for Education and 
+Enterprise Mobility + Security, Microsoft's package of device management 
+tools, analytics tools and identity and access management features. 
+  
+Earlier this week, Microsoft announced it would bring Microsoft 365's 
+unified customer experience across Windows 10 devices, Office 365 and 
+Dynamics 365 to devices running iOS and Android, and preview versions 
+of the software will be released later this year. 
+  
+  
+How to use Office 365 for Windows 10? 
+  
+  
+When you sign up for Office 365, you will automatically be granted access 
+to both Office 2016 and Office 365 for Windows 10 (formerly known as 
+Office Home & Student). However, it is important to note that at the time of 
+writing, Office 2016 is only available in one edition, while Office 365 for 
+Windows 10 is available in the two editions: Home & Business and 
+Enterprise. 
+  
+Any other editions of Office are available only to those organisations which 
+choose to sign up for these additional services separately. For Office 365 
+Home and Business, you get a choice of Mac or PC desktop versions, while 
+you get to choose between several different Mac or PC operating systems. 
+Microsoft offers three different editions for Windows 10: the Home edition, 
+the Personal edition and the Business edition. 
+  
+Both the Home & Business and Enterprise editions include apps for word 
+processing, spreadsheet and presentation editing and they allow you to 
+collaborate with others to edit documents and spreadsheets from your 
+devices and desktops. All you need to do to get up and running is set a 
+password. These password settings can be managed from the Office 365 
+admin center, and most users will have to set up a Microsoft account before 
+you can use the service. 
+  
+Office 365 provides a range of extras as well. Microsoft Maps, Power BI 
+and Bing Maps are included as standard, and OneDrive offers 2TB of 
+storage on a standalone basis for free. For those who need additional 
+storage, OneDrive also includes 100GB of free storage for OneDrive for 
+Business, and it is also available for Windows 10 in its mobile editions. If 
+you own Office 365 or have access to it through an Office 365 subscription, 
+you will get access to a number of additional extras, such as ebooks, cloud 
+storage, Skype for Business, data backups and client to cloud data 
+migration. 
+  
+One thing to bear in mind is that you can't create and share documents in 
+the cloud without an Office 365 subscription. However, there are 
+exceptions. If you are a teacher and your school or college has subscribed to 
+Office 365, you are still allowed to share documents and edit them in the 
+cloud. If you are using an iPhone, iPad or Android smartphone, then you 
+can use OneDrive for Android, a cloud storage service based on the cloud 
+storage service used by OneDrive. You can read all about OneDrive for 
+Android on the Microsoft website. 
+  
+  
+Levels of OneDrive for Business 
+  
+  
+If you use Office 365 for Business, you can benefit from the extra support 
+for SaaS-based applications, which is where Microsoft's mobile and PC 
+Office apps are built. You get five devices per user, and it is possible to 
+have the devices managed and controlled from a central console on a PC. 
+The console allows you to manage what applications can be used on which 
+devices, and you can even block certain applications or cloud services from 
+being used on certain devices. 
+  
+  
+Leverage Office 365 for Business 
+  
+  
+If you have an existing business, you can use the tools that come with the 
+Office 365 Business Premium subscription, which is available for an 
+introductory price of US$8.25 (£6.30) per user per month (billed annually). 
+If you have a big organisation, you will likely need the Enterprise Plus 
+option, which is available for US$19.99 per user per month (billed 
+annually). 
+  
+The Business Premium plan offers email integration, Microsoft SharePoint, 
+support for marketing automation, online tools, advanced security and a 
+number of other features. To get the full benefits of Business Premium, you 
+will also need to purchase an Office 365 Small Business Premium plan, 
+which is available at an introductory price of US$4.99 (£3.75) per user per 
+month (billed annually). 
+  
+However, if you do not use the tools included in the Business Premium 
+plan, you will be able to upgrade to the Business Essentials plan, which is 
+available at an introductory price of US$3.99 (£2.80) per user per month 
+(billed annually). This gives you basic management tools, with the option of 
+upgrading to the Enterprise option if you need it. 
+  
+Verdict 
+  
+  
+Microsoft is one of the most innovative companies around, and while the 
+company may have begun its journey with the classic Office products, its 
+latest offerings prove that it is as innovative as it is productive. OneDrive is, 
+in our view, the most innovative part of Office 365, and as a result it is the 
+only cloud service that has so many features that we could include in our 
+best cloud storage services ranking. It's easy to use and the service can back 
+up your files on a one-way basis, which means you never have to worry 
+about things being lost in transit. 
+  
+OneDrive uses a file sharing mechanism that makes it easy to share 
+documents, but it also has an intriguing file sync service, which is a great 
+alternative to Dropbox and Google Drive. If you're not a fan of Dropbox or 
+Google Drive, Microsoft is arguably the best alternative. If you're keen to 
+see a full list of the best cloud storage services, you can check out our latest 
+round-up of the best cloud storage services. 
+Chapter 7 Customization Settings 
+  
+  
+What are privacy settings for Windows 10? 
+  
+  
+Windows 10 users can manage their privacy settings on a device-by-device 
+basis to decide whether to share their location data. On a device, you can set 
+the privacy preferences to share certain information only with certain apps 
+or only with certain contacts. 
+  
+This is helpful when you're in transit to remember that Cortana needs 
+permission to access your location. On a device with the "Charm" 
+command, you can turn the settings on or off. 
+  
+You can change your privacy settings on a machine by clicking the My 
+Settings icon and clicking the Privacy tab. 
+  
+On a Windows 10 device with a modern ARM processor, you can turn off 
+the reporting of processor usage. To do so, press Windows key + X. 
+  
+  
+What are my current privacy settings for Windows 10? 
+  
+  
+Generally speaking, the settings for privacy and security are one and the 
+same. Your privacy settings for each of these tabs are the same on all 
+devices you use with Windows 10. 
+  
+  
+What information is Microsoft collecting? 
+  
+  
+Microsoft collects data that's related to what you do with your device. That 
+data helps the company to "deliver experiences, tools, and updates that keep 
+you connected, entertained, productive, and safe," Microsoft says in its 
+privacy policy. 
+  
+For example, when you open the Maps app, Microsoft collects data related 
+to your start location and navigation needs. You can change those options 
+under Settings > Privacy > Location Services in Windows 10. You can also 
+uncheck the "When using a location-based service, require your location." 
+  
+With Microsoft On Demand, the company can collect data related to apps 
+and the services that are installed on your device. You can change the 
+settings in Settings > Privacy > Update & security > Developer options to 
+allow Microsoft to collect data in the following ways: 
+  
+When you open an app that has Microsoft On Demand installed, Microsoft 
+collects certain information. To change the settings, you can click the 
+Update All button at the bottom of this screen. 
+  
+To add another option, you can click the pencil icon in the bottom left 
+corner of this screen. Select Options. Scroll down to the "Content that 
+Microsoft collects and your choice" section, and click "Change settings for 
+On-Demand services." 
+  
+  
+How does Microsoft collect data? 
+  
+  
+Microsoft collects data in a few different ways. On a device, you can click 
+the Windows key + I icon to turn off Cortana, the Cortana digital assistant. 
+  
+Cortana collects data such as what you're doing with your PC, your search 
+queries, your calendars, and the apps you've used on your PC. To turn off 
+Cortana, click the Windows key + I icon and click "Turn off Cortana." 
+  
+Microsoft doesn't collect data if you don't interact with the Windows 10 
+Home, Education, or Professional editions. For the other editions, click the 
+Action Center icon in the upper right corner of the taskbar and select 
+Settings > System > Language & input. Click "Users & profiles." Select 
+"Current user." Click the "Turn on"button. 
+  
+To block Microsoft's use of Cortana on your Windows 10 Home, Education, 
+or Professional edition, click the Cortana icon on the taskbar and select "Set 
+up Cortana." Click "Apps with your Microsoft account" to disable those 
+apps. When you're done, select "Done." 
+  
+You can also change your privacy settings on a Windows 10 device by 
+clicking the My Settings icon and clicking the Privacy tab. On a machine 
+with a modern ARM processor, you can turn the settings on or off. 
+  
+  
+What data is Microsoft collecting? 
+  
+  
+A Microsoft spokesperson said that "our products do not collect the content 
+of what you are doing on your device, nor do they listen to what you are 
+saying. Our products listen to what you are telling them to do, such as 
+saying "OK, Cortana" or "Hey, Cortana." On devices that do not have this 
+capability, you will not see 'Hey Cortana' as a command. If you do say 'Hey 
+Cortana,' the application you are using will hear the command and display a 
+notification asking if you'd like to use 'Hey Cortana' to continue." 
+  
+  
+How can I check whether or not Microsoft has collected my data? 
+  
+  
+To find out, open Cortana and click "Talk to me." Click the gear icon in the 
+lower right corner of the screen. Click the Privacy tab. Click the Change 
+settings for "Microsoft services." In the "General" section, find the setting 
+for "Microsoft data collection." Click Edit. 
+  
+Scroll down to the "Web usage data" section and click "Change settings." 
+Click the "Don't collect" button. Click "OK" to save the changes. 
+  
+To find out what data Microsoft has collected about me, open Cortana and 
+click the gear icon in the lower right corner of the screen. Click the Privacy 
+tab. Click the Change settings for "Microsoft services." In the "General" 
+section, find the setting for "Web browsing activity" and click "Change 
+settings." Click the "Don't collect" button. Click "OK" to save the changes. 
+  
+  
+When can Microsoft collect data? 
+  
+  
+Microsoft has different privacy settings for different users. If you're an 
+enterprise user or signed up for Microsoft's corporate email services, you 
+can't opt out of Microsoft's email service or Skype Lite. 
+  
+  
+Which of Microsoft's services are included in the Windows 10 October 
+2018 Update? 
+  
+  
+Microsoft Edge, the company's browser, is included in the Windows 10 
+October 2018 Update. For enterprise users, Microsoft Office 365 is 
+included, and both offer a unified experience across Office apps (Word, 
+PowerPoint, Excel) and OneNote. The update also supports Windows 
+Mixed Reality headsets for the first time. 
+  
+Windows Ink, Microsoft's pen and touch interface, is included in the update, 
+but some Microsoft applications don't support Microsoft Ink. Games like 
+Minecraft, Minecraft: Pocket Edition, and Forza Horizon 4 have Microsoft- 
+integrated inking functions. You can use Microsoft's note-taking app 
+OneNote for Android and iOS. 
+  
+Microsoft Skype Translator uses speech and photo recognition to 
+understand spoken words and image sequences for spoken language 
+translation. 
+  
+  
+How can I control how Microsoft uses my data? 
+  
+  
+Microsoft collects your data for its purposes and has safeguards to protect 
+your privacy. You can control your own information by changing your 
+settings. To turn off the capability for Cortana, you can go to "Settings" > 
+"Speech, inking, & typing." In the General tab, under "Advanced settings," 
+check the box marked "Turn off my microphone." For the setting for "Web 
+browsing activity," you can find it in the Privacy tab. Under "Web browsing 
+history," the setting is "Off." Check the box marked "Don't collect" for the 
+"Web browsing activity" setting. For the setting for "Location services," 
+you can find it in the Privacy tab. Under "Location services and accuracy," 
+you can find the setting under "How can you turn off your location." Click 
+the checkbox marked "Use location services." 
+  
+  
+Useful Microsoft privacy controls 
+  
+  
+Web browser: Edge: There is a useful privacy control for the web browser, 
+Edge. When you click the gear icon in the lower right corner of Edge, you'll 
+see a list of privacy options. Select "No cookies by default." This prevents 
+Microsoft's servers from recording your data. 
+  
+Email: If you're signing up for an email account, look for the section titled 
+"Account preferences." The Privacy tab will let you control which 
+Microsoft services are allowed to read your email messages. Some 
+Microsoft applications have a more useful setting: Cortana can read your 
+messages and create reminders, but Skype Lite can't do that. To control 
+Cortana's reading of your email, go to "Settings" > "Cortana." In the 
+Account tab, select "Autocomplete to include only me." Click the checkbox 
+labeled "Do not autocomplete me when I appear in your daily briefing." 
+Click "Save changes." To control Skype, go to "Settings" > "Notifications 
+& habits." Under "How can you turn off Skype Lite's location tracking?" 
+make sure you click "Don't collect data." 
+  
+  
+What about Microsoft Health? 
+  
+  
+This Microsoft Health service was introduced as an iPhone app in March 
+2014. It is not included with the October 2018 Update. 
+  
+  
+What about VPN support? 
+  
+  
+Microsoft offers a Windows VPN service for corporate use. You can use it 
+with multiple users on one computer for remote access. 
+  
+  
+What about Microsoft's new online surveillance transparency report? 
+  
+  
+Microsoft released an online surveillance transparency report in March 
+2018 to put an end to government mass surveillance of the internet and 
+citizens' online activities. 
+  
+  
+What does Microsoft do with your data? 
+  
+  
+Security and privacy are built into every part of Microsoft products. Follow 
+these tips to protect your privacy: 
+  
+Stay informed, click here to subscribe to TechRepublic's Microsoft Weekly 
+newsletter. Subscribe 
+  
+All laptops are not created equal, and if you need a portable device to get 
+work done, a Windows 10 notebook should be near the top of your list. 
+Here are the best Windows 10 notebooks for 2018. 
+  
+Microsoft's latest Surface Book 2 features a flexible design and Intel's 
+eighth-generation Core processors. This makes it a good device for mobile 
+workers. 
+  
+  
+What are privacy settings for Windows 10? 
+  
+  
+You can control who sees your PC from the Privacy section of the Windows 
+10 Settings app. When you turn on privacy settings, you can select a 
+category of people who are allowed to install updates, apps, and share your 
+files with you. You can also use a list of people you’ve added through 
+Windows Hello for extra security. 
+  
+Finally, you can set your PC to have a feature called “Personalization,” 
+which provides you with a more personalized experience with Cortana, 
+changing things like lock screen background images. You can turn it on or 
+off through the same Privacy section of Windows 10. 
+  
+  
+How do I make Windows 10 update automatically? 
+  
+  
+Windows 10 lets you control when updates are installed. You can choose to 
+have updates automatically installed, but you can also manually check for 
+updates. This gives you more control over when updates are installed, and it 
+gives you more time to test whether a specific update is compatible with 
+your PC before you let it run. 
+  
+If you want to update automatically, you can use the update settings to 
+make sure Windows is automatically installed on a regular schedule. 
+  
+To update automatically, just open the Windows 10 Settings app, then tap 
+“Update & security” to get to the settings screen. 
+  
+You can also select “Get updates automatically” and choose which updates 
+you want to install on your computer. To check for updates, check for 
+updates manually in the Control Panel or the Settings app. To find the 
+Control Panel, search for “Control Panel” and click the search button. The 
+first result should be the “Control Panel” app that can check for updates. 
+Click on “Check for updates” and follow the prompts to install new 
+software. 
+  
+  
+How do I uninstall Windows 10? 
+  
+  
+You can uninstall all of the programs you install from the Windows Store. 
+Just select the program you want to uninstall and press the “X” key on your 
+keyboard to uninstall it. 
+  
+You can also uninstall individual pieces of software by using the 
+“Uninstall” button in the Control Panel or using the Taskbar tool. 
+  
+When you uninstall software, you can tell the system it is uninstalled by the 
+notification that pops up. 
+  
+  
+How do I delete or clear my browsing history in Windows 10? 
+  
+  
+Microsoft recommends that you create a “Backup to disk before deleting 
+browsing history.” To do this, you can open Settings > Privacy > Ad 
+Settings > Internet Explorer, then select the “Clear Browsing History” 
+option in the “History” section. You can also delete browsing history from 
+your PC using the “Delete history” option in the “Privacy” section of the 
+Settings app. 
+  
+If you plan on using the Internet Explorer browser, you can use the “Clear 
+browsing history” feature. Simply open Settings > Internet Explorer > 
+Privacy > Clear history and interests. 
+  
+  
+How do I check what software is installed on my PC? 
+  
+  
+If you don’t like all the default applications you’ve installed on your PC, 
+you can easily check the list of apps that Windows 10 installed. You can 
+open the Settings app, then go to “Update & security” to check for new 
+versions of the programs. You can also change the default apps in the 
+Settings app. 
+  
+You can also go to the “Get apps” page in the Control Panel and look for 
+programs that come pre-installed on your computer, or find apps from the 
+Windows Store. 
+  
+  
+How do I access my location in Windows 10? 
+  
+  
+Windows 10 lets you enable a “location history” feature that shows where 
+you’ve been. You can check this information in the Privacy settings, and 
+you can turn it off completely. This is particularly useful if you want to 
+know when you’ve traveled to different places. 
+  
+If you want to see your location history, open the Privacy section of the 
+Settings app, then select the “Location” option. 
+  
+  
+  
+How can I configure multiple monitors with Windows 10? 
+  
+  
+Windows 10 comes with a few features that let you use multiple monitors in 
+Windows. With the displays activated, you can go to System > Displays to 
+get to the following settings: 
+  
+●     Set up secondary displays. 
+●     Set up and disable curved screens. 
+●     Make changes to your display. 
+●     Make changes to your secondary display settings. 
+  
+  
+How do I mute the microphone in Windows 10? 
+  
+  
+On some devices, Windows 10 will automatically mute the microphone 
+when you’re speaking into it or clicking on a textbox. In this case, you will 
+need to enable “Mute mic with button” under Settings > Devices > System. 
+  
+  
+Do I have to create an account on my PC before using Microsoft Edge? 
+  
+  
+No. You can use Microsoft Edge browser with your default account without 
+a second sign-in. 
+  
+  
+How do I open Microsoft Edge with a mouse? 
+  
+  
+To use Microsoft Edge with a mouse, click the “Type” button in the address 
+bar, then select “Open with mouse” from the pop-up menu. 
+  
+  
+How do I force stop an app in Windows 10? 
+  
+  
+If you want to force stop an app on your PC, you can hold down the 
+Windows key on your keyboard, then click the Start button, then select 
+“Settings.” From there, select “Apps and features” and then select 
+“Applications.” 
+  
+You can also click the All Apps button on the list and select “Don’t run this 
+app.” 
+  
+  
+How do I force quit an app in Windows 10? 
+  
+  
+To force quit an app, click on the Windows key in the Start Menu, then 
+click “Power & settings” (with the arrow pointing down) and then select 
+“Windows 10 settings.” Click on the “Power options” button and choose 
+“Force quit apps.” 
+  
+  
+How do I use Cortana in Windows 10? 
+  
+  
+Cortana can help you find information using machine learning, but it can 
+also show you personalized recommendations based on your personal 
+interests. You can use Cortana to find information such as weather, news, 
+and sports, or you can use it to take notes or find information on the Web. 
+You can also use it to send email or make phone calls, set reminders, check 
+and manage your calendar, find files on your PC, read aloud text messages 
+and web pages, and more. 
+  
+  
+  
+  
+How can I customize the appearance of the Start menu in Windows 10? 
+  
+  
+Windows 10 comes with a basic Start menu with a few elements you can 
+customize. You can change the size of the menu, add a background image, 
+choose your wallpaper, or change the default apps you use on the Start 
+menu. 
+  
+  
+How do I use Cortana in Windows 10? 
+  
+  
+Cortana can help you find information using machine learning, but she can 
+also show you personalized recommendations based on your personal 
+interests. You can use Cortana to find information such as weather, news, 
+and sports, or you can use her to send email or make phone calls, set 
+reminders, check and manage your calendar, find files on your PC, read 
+aloud text messages and web pages, and more. 
+  
+  
+What can I do in Windows 10’s Game Bar? 
+  
+  
+Windows 10 has a built-in Game Bar with a ton of features. You can use it 
+to record videos, record your gameplay or take screenshots, use speech to 
+text, and more. 
+  
+  
+How do I use the Game bar in Windows 10? 
+  
+  
+On most PCs, you can use the Xbox button on the front of your Xbox 
+controller to fire up the Game Bar. In this feature, you can record gameplay, 
+take screenshots, and record your audio. 
+  
+  
+What can I do with Windows 10’s Story Remix? 
+  
+  
+Windows 10 comes with Story Remix, a feature that creates slideshows and 
+“stories” based on your photos and videos. These stories are also organized 
+into an album, and you can rearrange the photos, rearrange the order of the 
+slides, or customize the text. You can even add music and special effects to 
+the videos. 
+  
+  
+Does Windows 10 let me automatically sign-in? 
+  
+  
+Yes. Windows 10 automatically logs you in every time you sign into a 
+computer. If you want to turn this feature off, follow these steps: 
+  
+Click the Start button. Click “Programs” in the menu and then click “Sign 
+in & Security.” Select “Advanced,” click the “Change my sign-in 
+information” link, and then choose “Don’t sign in automatically.” Click 
+“Save changes.” 
+  
+  
+How do I turn on Windows 10’s SmartScreen filter? 
+  
+  
+In Windows 10, you can use the SmartScreen filter to help keep you safe 
+online. SmartScreen helps block the distribution of potentially harmful files, 
+apps, and websites. To turn this feature on, follow these steps: 
+  
+Click Start > Settings > Network & Internet. Click “Advanced options” in 
+the left-hand menu. Under “Network and Internet” click the “SmartScreen 
+Filter” link. Turn on the SmartScreen filter by clicking “Turn on” under the 
+“What is this filter?” option and then clicking “Apply.” 
+  
+  
+How do I access Quick Access, and how can I remove it? 
+  
+  
+Windows 10 has a new Quick Access feature that allows you to quickly 
+access apps and documents. If you don’t like Quick Access, you can disable 
+it by following these steps: 
+  
+On the Start menu, click “Settings.” Select “Start” and then click “Change 
+PC settings.” Click the “General” link. Click the “Accounts & Family” link. 
+Click “Accounts & Family settings” under the “Privacy and family 
+settings” section. Click “Accounts and Family” under the “Family and 
+household” section. Select “Advanced account settings.” Click the “Change 
+account settings” link. Select “Edit” under the “Change account settings” 
+section. Click the “Remove” link. 
+  
+  
+Is there a built-in Privacy Center in Windows 10? 
+  
+  
+Yes. If you’d like to view and manage all your privacy settings, you can 
+open Windows 10’s Privacy Center to learn more and manage each privacy 
+setting. The Privacy Center also offers quick access to other privacy-related 
+features. 
+  
+  
+Is there an app for improving privacy and security in Windows 10? 
+  
+  
+Yes. The new Privacy Center app allows you to manage your account, 
+manage your profile and share settings, set up a strong password for your 
+account, and more. The Privacy Center app is available as a free download 
+in the Windows Store. 
+  
+  
+  
+  
+Is there a setting to restrict website tracking? 
+  
+  
+Yes, you can use a privacy-protecting browser like Firefox or Opera to 
+reduce tracking when you surf the web. 
+  
+  
+Customizing Privacy 
+  
+  
+Windows 10 offers a number of privacy features that you can use to make 
+your information private and secure. 
+  
+  
+Windows Defender 
+  
+  
+Windows 10 includes a built-in antivirus program called Windows Defender 
+that scans files, printers, applications, and installed software for suspicious 
+activity. With Windows Defender, you can scan documents for viruses, and 
+view files you’ve saved online for possible threats. You can also turn on 
+Windows Defender to run scans when you reboot your computer or plug 
+your computer into a wireless router, for example. 
+  
+You can manage Windows Defender settings by going to the “Windows 
+Defender Security Center” in the “Start menu.” Here, you can set the 
+default behavior of Windows Defender and change your security settings 
+for Windows Defender. 
+  
+The Privacy section of Windows Defender also offers additional privacy 
+options, such as the option to require a password to open suspicious files or 
+to view sensitive personal data such as contacts and calendar entries. 
+  
+The Virus & Threat Protection section can provide real-time protection 
+against viruses and malware by scanning files and using strong 
+authentication to prevent unauthorized programs from infecting your 
+computer. Windows Defender also has optional extra security options, such 
+as the option to scan files for viruses and malware only when they are 
+opened, or require that you change your password after it’s been created to 
+avoid potentially exposing sensitive data. 
+  
+applications, printers, applications, and installed software for suspicious 
+activity. With Windows Defender, you can scan documents for viruses, and 
+view files you’ve saved online for possible threats. You can also turn on 
+Windows Defender to run scans when you reboot your computer or plug 
+your computer into a wireless router, for example. The section also offers 
+additional privacy options, such as the option to require a password to open 
+suspicious files or to view sensitive personal data such as contacts and 
+calendar entries. You can manage Windows Defender settings by going to 
+the “Windows Defender Security Center” in the “Start menu.” Here, you 
+can set the default behavior of Windows Defender and change your security 
+settings for Windows Defender. The section also offers optional extra 
+security options, such as the option to scan files for viruses and malware 
+only when they are opened, or require that you change your password after 
+it’s been created to avoid potentially exposing sensitive data. The AntiVirus 
+& Threat Protection section of Windows Defender allows you to set the 
+default behavior of Windows Defender, so it runs only when you open a file 
+or program, and lets you choose which programs Windows Defender will 
+scan. You can also add your own security programs to the scan list, which is 
+accessed from the “Start menu” page in Windows Defender. These 
+programs may be used to ensure that other programs don’t automatically 
+run when Windows Defender is enabled. For example, you might want to 
+add anti-malware software to automatically check new programs for 
+potential threats before they launch. 
+  
+Printers, applications, and installed software for suspicious activity. With 
+Windows Defender, you can scan files for viruses, and view files you’ve 
+saved online for possible threats. You can also add your own security 
+programs to the scan list, which is accessed from the “Start menu” page in 
+Windows Defender. These programs may be used to ensure that other 
+programs don’t automatically run when Windows Defender is enabled. For 
+example, you might want to add anti-malware software to automatically 
+check new programs for potential threats before they launch. To prevent 
+updates from automatically installing, go to Settings > Update & security > 
+Windows Defender and click “Turn Off Windows Defender Automatic 
+Update.” (Note: To turn off automatic updates to Windows 10, go to 
+Settings > Update & security > Windows Update > Turn off updates for this 
+PC.) 
+  
+Customers who purchased Windows 10 from Microsoft and still have 
+Windows Defender Antivirus or Windows Defender Essentials on their PC 
+can get a free download of Windows Defender Antivirus. However, this 
+antivirus is only available for PCs that came with Windows 10. To get it, go 
+to Settings > Update & security > Windows Defender and click “Download 
+Windows Defender Antivirus.” 
+  
+PCs running Windows 10 Home, Windows 10 Pro, Windows 10 Enterprise, 
+Windows 10 Education, Windows 10 S, Windows 10 IoT Core, Windows 
+Server 2016, Windows Server 2012 R2, or Windows Server 2016 
+Datacenter, are automatically protected with Windows Defender Advanced 
+Threat Protection. 
+  
+However, we recommend that you keep Windows Defender Antivirus or 
+Windows Defender Essentials on your PC unless you are fully confident in 
+its ability to protect you. Windows Defender Advanced Threat Protection 
+delivers advanced protection that you will receive from Microsoft, 
+including the ability to: 
+  
+Follow device config changes from PCs to embedded devices to mitigate 
+risks to your devices. 
+  
+Install software automatically to block malware and protect devices from 
+being remotely compromised. 
+  
+Block malicious or suspicious content on your device. 
+  
+Get proactive alerts and information about issues that could impact your 
+security, such as device drivers that might have vulnerabilities. 
+  
+Setup in just a few minutes, Windows Defender Advanced Threat 
+Protection prevents and detects threats in real time that could threaten your 
+device, business, or even your PC or organization. 
+  
+One of the most important aspects of protection is detecting new threats, 
+which requires Windows Defender to be constantly updated to detect new 
+and evolving threats. For that reason, we provide free security updates on 
+an ongoing basis. If a security issue is identified, we work with our security 
+partners to roll out a fix for Windows Defender and assist those partners in 
+issuing the update for their products. To learn more, see How to upgrade to 
+the latest Windows 10 security updates. 
+  
+This is why we recommend that you keep Windows Defender Antivirus or 
+Windows Defender Essentials on your PC unless you are fully confident in 
+its ability to protect you. 
+  
+You can turn off automatic updates to Windows Defender. To turn off 
+automatic updates to Windows 10, go to Settings > Update & security > 
+Windows Defender and click “Turn Off Windows Defender Automatic 
+Update.” (Note: To turn off automatic updates to Windows 10, go to 
+Settings > Update & security > Windows Update > Turn off updates for this 
+PC.) 
+  
+  
+How to customize the taskbar for Windows 10? 
+  
+  
+In the Settings app, navigate to System > Personalization > Taskbar and 
+click the Start button to choose a Taskbar Icon color. Also, you can 
+customize the "Action Center," which includes the clock, Wi-Fi status, 
+network icon, Wi-Fi On, and Wi-Fi Off icons, by toggling the items using 
+the same icons color as the taskbar. 
+  
+For the best looking Taskbar, just start by making sure that the taskbar 
+always looks neat and clean. You can hide the arrow and the "Live Tiles" 
+from the Taskbar if you don't use those features. 
+  
+  
+Magnifier in Windows 10 
+  
+  
+The Magnifier feature can be found on Windows 10 under Settings > Ease 
+of Access > Magnifier. It is an on-screen magnifying glass that magnifies 
+text, images, and images that are to the right and below the screen. The tool 
+can be configured to magnify up to 800 percent of normal magnification. 
+  
+Now, let us take a look at how to customize it to your preference. 
+  
+Open the Magnifier window from Settings, click the magnifying glass icon 
+to enable or disable the function. To zoom in, simply press the Home 
+button, and to zoom out, press the Page Down and Page Up buttons. You 
+can set the Magnifier to be activated automatically when you want to use it. 
+To turn it off, just press the Page Down and Page Up buttons. 
+  
+  
+The Pop-up blocker in Windows 10 
+  
+  
+To use the Pop-up blocker in Windows 10, follow these steps. 
+  
+1. Select Device > Devices. 
+  
+2. Under the "General" tab, scroll down to "Disabling notifications for 
+apps," then click on the toggle switch for "Notifications for apps." 
+  
+That's it. You have successfully installed the Pop-up blocker in Windows 
+10. 
+  
+To enable the Pop-up blocker, click on the Pop-up blocker icon on the 
+taskbar or start-menu. 
+  
+  
+Optimize power consumption in Windows 10 
+  
+  
+The Optimize Power Consumption in Windows 10 feature helps users to 
+lower the power consumption of their device. This is done by enabling 
+"Trim any Windows threads for security or efficiency" and also gives the 
+option to disable these power-hungry apps. 
+  
+To get started, head to Settings > System > Power & Temp > Power settings 
+> Advanced. Then, under the "Advanced" tab, look for "Trim any Windows 
+threads for security and efficiency" option under the "Performance" section. 
+  
+  
+Change the default desktop theme in Windows 10 
+  
+  
+Windows 10 comes with a set of default themes that can be changed by 
+Windows 10 users. The default themes include: "Classic," "Metro," and 
+"Light." The themes can be changed by navigating to Settings > 
+Personalization > Themes. 
+  
+To access the customization options, go to Themes, click the menu option, 
+"Change the look of your PC," and select the "Choose default desktop 
+theme" tab. Now, you can select the theme of your choice from the 
+available options. 
+  
+  
+Blue light in Windows 10 
+  
+  
+Windows 10 users can choose the colors for each of the apps to minimize 
+blue light. 
+  
+To enable the blue light filter, head to Settings > System > Display and to 
+turn on the switch under "Blocking blue light during sleep." 
+  
+  
+System tray icon customization in Windows 10 
+  
+  
+The System Tray icon can be customized to highlight additional items, or 
+you can just hide the tray icon completely if you want to. To customize it, 
+go to Settings > System > Icon customization and tick the checkbox next to 
+the tray icon. You can also set up the tray icon to always be displayed and 
+hidden from the background by going to Settings > System > Advanced > 
+Application Icon setting. 
+  
+  
+Take the power management shortcut from Settings 
+  
+  
+If you are a power user, you will know how much you need to boost the 
+performance of your device. The Power Management shortcut in Settings 
+helps you to take the performance settings to the next level. 
+  
+To get started, head to Settings > System > Battery & power saving > 
+Power options. Then, click on "Manage power options" and select the 
+shortcut. 
+  
+This will take you to the menu to tweak the features like overclocking the 
+processor, low power mode, and so on. The Power Management shortcut 
+will turn on only when it is triggered, so you need to hold the Shift key to 
+disable it. 
+  
+  
+  
+  
+Turn off your privacy setting in Windows 10 
+  
+  
+Use the privacy settings in Windows 10 if you want to use Cortana or 
+SkyDrive. But if you do not want anyone to see you use the features, then 
+you need to disable them. Head to Settings > Privacy & safety > Change 
+how you are shown and shared. 
+  
+To switch off "Show me how I'm identified" click the Settings button on the 
+right-hand side and select "Privacy and safety." Then, choose "Adjust 
+privacy and safety." Click the toggle next to "Show how I'm identified." 
+  
+  
+Enable your microphone in Windows 10 
+  
+  
+Windows 10 has improved voice recognition in Cortana. To enable the 
+microphone, go to Settings > Accounts & privacy > click the My accounts 
+button. 
+  
+You will then see "Cortana and related features" and if enabled, you will see 
+a microphone icon in the top-right corner. Click the icon to enable or 
+disable the microphone. 
+  
+  
+Enable/disable Cortana's suggested follow-up messages in Windows 10 
+  
+  
+Cortana in Windows 10 is great and if you use Cortana to suggest follow-up 
+messages to websites and web searches that you complete in the 
+background, then you need to disable the suggested follow-up messages in 
+order to get rid of them. 
+  
+To enable them, head to Settings > Personalization > Cortana and then 
+uncheck the box next to "Send follow-up notifications to websites that you 
+complete in the background." 
+  
+  
+Reset your Bluetooth device 
+  
+  
+To reset your Bluetooth device in Windows 10, head to Settings > System > 
+Bluetooth and then uncheck the box next to "Dangerously low battery." 
+  
+  
+Turn on Windows Defender in Windows 10 
+  
+  
+Windows 10 now has a built-in defense system called Windows Defender. It 
+scans your PC for malicious software, and it gets extra power by default. To 
+turn it on, head to Settings > Update & security > Windows Defender. Then, 
+toggle the switch next to Turn Windows Defender On. 
+  
+  
+Set a custom folder background in Windows 10 
+  
+  
+Windows 10 now lets you choose the background for the Overview screen 
+in Settings > System > Desktop and then select the Type of display you 
+want to set it to. You can also change it in the Taskbar. 
+  
+Windows 10 also allows you to customize your Start menu, which you can 
+access by clicking the Windows logo in the top-right corner and selecting 
+Settings > Personalization > Start. Click on the Start button at the bottom of 
+the Start menu and select Change the look and feel of your Start menu. 
+  
+  
+Toggle off AutoPlay settings in Windows 10 
+  
+  
+Windows 10 now lets you completely disable AutoPlay. Click Start, type 
+accessibility, and click Accessibility. Then, check the box to enable the 
+AutoPlay setting and click the OK button. 
+  
+  
+Toggle off third-party system tray add-ons in Windows 10 
+  
+  
+The Windows 10 Settings app gives you access to a variety of system 
+settings that you can customize to your liking. You can, for instance, turn 
+off the third-party system tray add-ons from here. You can also disable 
+them. Just scroll to the bottom of the list and choose the option you want to 
+adjust. 
+  
+  
+Disable Winlogon in Windows 10 
+  
+  
+Windows 10 lets you completely turn off Winlogon. If you don't want to 
+make the change, you can configure it in Settings > Personalization > 
+Keyboard, and then select "Advanced Configuration." Scroll down to 
+"Winlogon" and click the switch next to it. 
+  
+  
+Disable Special Command Queuing in Windows 10 
+  
+  
+The Winlogon add-on lets you disable Spatial Command Queuing. To 
+disable this, go to Windows Settings > System > Hyper-V and toggle the 
+switch next to "Spatial Command Queuing." 
+  
+  
+Disable Skype and Microsoft Band's sensors 
+  
+  
+Skype and the Microsoft Band's sensors now automatically turn off when 
+you go into your Device manager. To turn this feature off, head to Settings 
+> Apps & features and then select "Manage incompatible apps." In the list, 
+you should see Skype and Microsoft Band. Click on them and then click the 
+Uninstall option. 
+  
+  
+Disable the wireless connection dialog in Windows 10 
+  
+  
+To disable a wireless connection dialog that pops up when you are on a 
+connection that you don't want to let go of, go to Settings > Network & 
+internet > Wi-Fi and toggle the switch next to Network settings. 
+  
+  
+Remove Google Chrome and add Microsoft Edge 
+  
+  
+Microsoft now offers a full-fledged browser built into Windows 10. To 
+access it, just head to Settings > Update & security > Windows Insider 
+Program, then select the toggle next to Get the latest updates from 
+Microsoft and then click Get started. 
+  
+Select Update now and then click "Enable build." 
+  
+  
+Access your setup files in Windows 10 
+  
+  
+Updating Windows 10 to the latest build is quite the process, but thankfully 
+there's a way to download a copy of your files. 
+  
+Open a command prompt or a PowerShell window by clicking on Start and 
+then right-clicking on the Start button and selecting "PowerShell" or 
+"Control Panel," then right-clicking on the dropdown and selecting 
+"Command Prompt" or "Control Panel," and then selecting "Execute. 
+  
+Once in the command prompt, execute the following commands: 
+  
+cd ~\Users\Cisco%20\Documents\Windows 
+  
+md generate-setup-v03.msc 
+  
+These commands will download the Windows 10 user directory, the setup 
+files and your user profiles. 
+  
+Note: If you have already installed Windows 10 you will need to download 
+an alternative installer from the Windows 10 Anniversary Update site. 
+  
+  
+Adjust the language settings in Windows 10 
+  
+  
+Windows 10 allows you to adjust your default language and pick a different 
+one for functions like Cortana and Phone, however there's a key step you 
+need to do before you can do that. 
+  
+First, head to Settings > Languages & input > input methods. Select the 
+Windows key, then switch the input method to the language you want. 
+  
+Next, type a new keyword, for example "watch" and then press Enter to 
+save that selection. 
+  
+  
+  
+Disconnect your battery 
+  
+  
+To completely deplete the battery life on your Windows 10 device, click the 
+device icon on the taskbar and select the battery icon (in the case of a 
+Surface Pro, you can just swipe up). 
+  
+Next, click the "power" icon in the upper-right-hand corner. You should see 
+a screen that asks if you want to "Start (power down)" or "Restore from a 
+backup." Select the latter. 
+  
+Then click the cog icon and select "power off." 
+  
+  
+Find and uninstall known issues in Windows 10 
+  
+  
+If there is an issue with your Windows 10 PC, you can find it listed by 
+following these steps: 
+  
+From the Settings app, click Update & security > Windows Update. 
+  
+  
+Disable Cortana 
+  
+  
+Windows 10 allows you to use Cortana to help you navigate the operating 
+system, but you can disable the feature by following these steps: 
+  
+Open the Cortana search box. Type "Cortana isn't working" and then press 
+Enter. 
+  
+Here is where you can enable Cortana again if you want it back, by entering 
+"Cortana" in the Cortana search box. Then, click the gear icon and select 
+"Allow Cortana to connect to my day." 
+  
+Here is where you can uninstall Cortana again if you want it back, by 
+clicking the gear icon and selecting "Disable Cortana." 
+  
+  
+Configure an access pattern 
+  
+  
+Windows 10 allows you to create an access pattern, which is basically a 
+secret phrase or a string of digits. You can change the pattern from the app 
+or you can go into Settings > Accounts > Other Accounts and set it as your 
+new access pattern. 
+  
+Also, make sure that when you log out of Windows 10 you're not logging 
+out of your browser or another application, or you will lose any preferences 
+you have changed and the previous login password will not work. 
+  
+  
+Change your lock screen picture 
+  
+  
+You have access to the Lock screen so you can set up an image of your 
+choice, which you can change by heading to the Settings app. In the 
+window that pops up, scroll down until you see "Lock screen and security" 
+and then select the image you want to use. 
+  
+Then click "Change lock screen." 
+  
+  
+Restart your Windows 10 PC 
+  
+  
+Windows 10 offers the ability to restart your system at any time. To access 
+this feature, select the Start button > Settings > Update & security > 
+Recovery. 
+  
+When the window opens, scroll down to "Restart now" and click the button 
+to restart your computer. 
+  
+  
+How to set regional settings for Windows 10? 
+  
+  
+Not everyone will want their PC set up in their region of choice, so there 
+are a couple of ways to change the settings to suit. 
+  
+Head into the Settings menu, where you'll find the Windows Subsystem for 
+Linux (WSL) section. Click Change desktop environment: 
+  
+Give yourself a flavour of what's possible, by changing from the United 
+Kingdom to Ireland by clicking Change desktop environment. 
+  
+Windows 10 will default to the region of your choice for your Microsoft 
+account when you click the "Change region" button. 
+  
+Alternatively, you can change your region in-game. 
+  
+If you're playing video games in Windows 10, select the Library tab, choose 
+Video and Movies and then click Settings. There you'll find a section 
+labelled Other services, which allows you to change your region. 
+  
+Just remember to change your region back if you're done. 
+  
+  
+Improve search results by region 
+  
+  
+Windows 10's search features will help you find specific apps or files, but 
+how about those old files that Microsoft deleted from your PC? You can 
+search for those files using Windows 10, but be warned there's a catch: 
+  
+Windows 10 search will return you files you've deleted, but it will only 
+remember the search term you originally used to find the files. If you want 
+to find those deleted files again, you'll need to delete those exact files, or 
+use a search tool that's able to find files by their name. 
+  
+For example, if you tried to delete a folder called Pictures, and searched for 
+Pictures on your PC, Windows 10 would see the folder was deleted, and the 
+search engine would return files it knew to be Pictures. 
+  
+To remove the same folder and search engine, you'll need to find that folder 
+and simply delete it. You may not even need to do that, however: Some 
+third-party software such as Recuva can find files you deleted through 
+Windows' search feature, and restore them. 
+  
+When you do delete a file, Windows 10 will sometimes warn you by 
+displaying a warning message. If the warning is given in a different 
+language from your own, click "Change the language to English". Then 
+click "OK". 
+  
+Windows 10 only saves search history in the US and UK at the moment. 
+Windows 10 will show you an error message if you try to delete your search 
+history. To delete your search history, click "Change the language to 
+English" and then click "OK" 
+  
+The same Windows 10 error message will also appear if you try to remove 
+the search engine. Just click "Change the language to English" and then 
+click "OK". 
+  
+  
+Find a better file manager 
+  
+  
+You'll find a slew of file managers in the Windows Store. Some, such as 
+HyperImage, will require a code before you can download and install it. 
+This is often used to prevent anyone from downloading the file manager 
+and then selling the app on eBay. 
+  
+Other file managers will allow you to access Windows 10's hidden features 
+such as lock screen apps. A popular one is Solid Explorer. Windows 10's 
+keyboard shortcuts are baked in, but to access any of those hidden shortcuts 
+you'll need to have a file manager installed. 
+  
+Even if you're looking for a free file manager that allows you to backup 
+data or switch to another user account, you should check out Data Rescue. 
+It is a free Windows 10 application, but you can upgrade to a premium 
+version which allows for more options and offline support for a small fee. 
+  
+  
+How to uninstall Windows 10 
+  
+  
+Windows 10 is a service, meaning it was built in a very different way from 
+its predecessors so it can be regularly updated with not just fixes but new 
+features too. 
+  
+To uninstall a feature in Windows 10, follow these steps: 
+  
+Open the Start Menu and type 'uninstall a product'. Click 'Uninstall a 
+product'. Click 'Uninstall the product'. Click 'OK' when the uninstall is 
+complete. Close out of the windows. 
+  
+The Windows 10 Creators Update is now available, and you'll be able to 
+download the upgrade to Windows 10 from Microsoft. It will roll out 
+automatically over the coming days, so if you want to check whether it's 
+available for you, click 'Update and recovery' from the Start menu and then 
+click 'Check for updates'. Click 'Get started' to begin the upgrade process. 
+  
+  
+Chapter 8 About notification center 
+  
+  
+What is the notification center for Windows 10? 
+  
+  
+If you have Windows 10 on your PC, the default setting is that your settings 
+and personalization and privacy settings can be saved to the cloud, meaning 
+you'll be able to bring your PC back to a previous state to either reinstall 
+Windows, update your system or just to make your settings as you like 
+them. This option is good if you're used to using the services Microsoft 
+offers like OneDrive and OneNote, for example, and want to simply have 
+access to your files and settings when you're not connected to the internet. 
+  
+You can also set up automatic saving and then just use your machine from 
+the cloud to restore your files, set up new saves when you're using a 
+different device, and so on. If you don't want to use this feature, you can 
+disable it by going to Settings > Privacy > Data Usage, and turning off the 
+button that says "Save Settings to My Data." 
+  
+  
+How to tell which of your apps run in the background? 
+  
+  
+The idea is to limit apps running in the background to prevent resource 
+depletion or interference with other apps on your system. To do this, head 
+over to Settings > Privacy > Background Apps, and you'll see a list of all 
+the background apps running on your machine. If you tap on any of the 
+apps, you can stop them from running in the background, and to minimize 
+your interference, you can also move them to the All Background apps list, 
+which you can find in Settings > Privacy > Advanced. 
+  
+  
+  
+How to connect to the Internet on your PC 
+  
+  
+To connect to the internet from your PC, you'll need to go to Settings > 
+Network & Internet > Connected Devices. There you'll see a list of all the 
+devices on your network, and if you tap one, you can either connect to it, 
+block it, or change its settings. 
+  
+  
+How to change your ringtone 
+  
+  
+Tired of the same obnoxious theme song your system is set to? Not to 
+worry: It's actually quite easy to change it. Head over to Settings > Sounds 
+> Ringtone and you'll be able to pick the sound you'd like to use. 
+  
+  
+How to use Cortana? 
+  
+  
+Cortana, Microsoft's virtual assistant, is now built into the Windows 10 
+operating system. And once you start using Cortana, you'll probably find 
+yourself using it almost constantly, especially if you do a lot of searches on 
+your PC. 
+  
+  
+How to enable or disable notifications? 
+  
+  
+Notifications are critical to Windows 10. They let you know about all kinds 
+of events, like new emails and messages, pending downloads, and other 
+little notifications that appear on your PC's Start menu. They're supposed to 
+keep you in the loop and help you be on top of things, but if you have some 
+trouble with notifications you can set them up to be turned on or off through 
+Settings > System > Notifications. 
+  
+You can turn on or off any notification that appears on the Windows 10 
+Start menu, in the Action Center, or in other places on your computer. You 
+can also set Cortana to remind you about certain things if you want, or set 
+up actions that you can do for certain notifications. If you want to know 
+more about notifications in Windows 10, this guide is good. 
+  
+  
+How to adjust your text size and clarity 
+  
+  
+If you don't like the look of your text on your PC, it might be time to adjust 
+the text size and the clarity. Go to Settings > System > Notifications, and 
+you can adjust your text size and clarity. The same applies to emails: if you 
+find that the email is too small, you can adjust the font size and clarity to 
+make it larger. 
+  
+  
+How to enable or disable Cortana on your PC 
+  
+  
+If you have Cortana enabled on your Windows 10 PC, it means you can use 
+your voice to do almost anything. So you might want to disable it, but if 
+you haven't tried Cortana, you might not want to. 
+  
+To turn it off, just head over to Settings > Cortana, and you'll see a section 
+called "Turn off Cortana." You can also change the settings of the Bing 
+voice assistant, which is also enabled by default on your machine. 
+  
+  
+How to change the keyboard's size 
+  
+  
+This one is fairly self-explanatory. Windows 10 uses the keyboard to send 
+texts, emails, and even file transfers, so if you find that the keyboard takes 
+up too much space on your desktop, it's probably because you're using the 
+full-sized version, which is the default. To change the keyboard's size, go to 
+Settings > Input, and you can change the size of the keyboard. 
+  
+  
+How to make multiple windows in Windows 10 
+  
+  
+Windows 10 lets you have as many windows as you'd like, and it'll 
+automatically shrink the one you're using so you can fit more. To do this, 
+you can click the Windows key and type in the number of windows you 
+want, and the one you select will appear on the screen. Then, click the small 
+square that appears at the bottom of the screen. To exit from the mode, just 
+click the X button. 
+  
+  
+How to clear the Startup Directory on Windows 10 
+  
+  
+Most Windows users have this on, but if you really don't need it, you can 
+clear the Startup Directory. You can find the directory by going to Control 
+Panel > System and Security > Startup. Then, just click on "Turn Off 
+Startup programs." Once it's gone, your PC will start up without any 
+programs installed. 
+  
+  
+How to adjust the color depth on the Windows 10 screen 
+  
+  
+Windows 10 supports a lot of different screen-sizes, and if you have a 
+monitor with a different-sized screen, you might not be able to see 
+everything that you want. That's why Windows 10 supports a whole range 
+of different screen-sizes and color depths. You can adjust the resolution, 
+refresh rate, aspect ratio, and color depth, which means you can adjust the 
+colors on your screen to best fit what you're looking at. 
+  
+How to restore your previous wallpaper on Windows 10 
+  
+  
+If you've been using Windows for a while, you might have noticed that 
+you've had a few different wallpapers that have looked nice on your PC, but 
+then you had to remove them to install updates. If that's been the case, you 
+can just bring those back, but you'll have to turn off a few other things first. 
+  
+First, open Windows 10, and click on the icon on the taskbar that has an 
+ellipse with a line down the middle. Click on Settings > Wallpapers & 
+Brightness, and you'll see a window with options for changing your 
+wallpaper. Now, click on Start Wallpaper, and you'll be able to restore your 
+old wallpaper. 
+  
+  
+How to adjust the size of apps on the Start Menu 
+  
+  
+Apps that you install on your PC will shrink down to a square icon when 
+you have small screens, but they can also be shrunk down and look like 
+little icons if you have a large screen. To make apps look like little icons, go 
+to Settings > Personalization > Start, and you'll be able to drag the app 
+icons up or down. 
+  
+You can also click on the plus sign in the bottom-right corner of any app to 
+resize it. Just click on the plus sign, and it'll shrink the app to the size you 
+want. 
+  
+  
+How to change the transparency of a document in Windows 10 
+  
+  
+There are a lot of settings that you can change to make text and images look 
+a certain way in Windows 10, and you can check out the one that has the 
+best effect for you by going to Settings > Personalization > Calibration, and 
+you'll be able to change the transparency of text and images to see a more 
+realistic image. 
+  
+  
+How to activate the pen in Windows 10 
+  
+  
+Most people have a pen on their Windows PC, but that only works when 
+they've got a stylus that's compatible with Windows 10. If you don't have a 
+compatible stylus, you can't use the pen in Windows 10, which can be 
+annoying. If you want to start using the pen, you need to pair it to your PC, 
+but that can be a long process, but you can also use the pen to navigate in 
+the File Explorer or to write emails in Word. 
+  
+  
+How to copy and paste in Windows 10 
+  
+  
+A lot of people think that they can copy and paste anything they want into 
+the Recents view, but that's not true, and you need to go to the Start menu 
+first. To make this easier, you can add a shortcut to the Windows key. This 
+will make it easier to access the Recents view, and you can also access the 
+favorites, switch apps, open apps that are stored in the Start menu, access 
+your notes, and more. 
+  
+  
+How to use multiple monitors with Windows 10 
+  
+  
+A lot of PC users don't have the most HD screen they can find, but you 
+don't have to stick with the same resolution as your display. You can switch 
+resolutions and you can also adjust the display color or you can put a stand 
+on your monitor to make it easier to work on your PC in front of the TV. 
+  
+  
+  
+  
+  
+How to turn on Taskbar notifications 
+  
+  
+If you have a few PCs, you can all open them together and see what the 
+other person is doing, which can be pretty useful. To do this, you'll need to 
+open each PC, and then open Taskbar notifications. This will open a pop-up 
+that will show the number of notifications you've got from the PC you're 
+currently using. 
+  
+This will probably pop up for every PC you have, so make sure you've got 
+them all in order, and once you've sorted this out, you'll be able to switch 
+between PCs at a click of a button. 
+  
+  
+How to stop/start using Cortana 
+  
+  
+Cortana can take a while to wake up, so many PC users will find it easier to 
+turn it off. To do this, you'll need to go to Cortana on the search bar and 
+then click on 'Turn off.'" 
+  
+  
+How to enable the Windows Hello Security Camera 
+  
+  
+Windows Hello allows you to use biometrics to unlock your PC and login 
+to apps, but the security camera that you'll use to use it isn't natively 
+supported by Windows 10. Instead, you can add a security camera to your 
+PC, and when you use Windows Hello, the camera will be unlocked 
+automatically. To do this, go to Settings > Accounts > Sign-in options > 
+Enrolled devices, and then you'll be able to see all your different devices, 
+from different brands. 
+  
+  
+  
+How to change your background in Windows 10 
+  
+  
+Not everyone uses the same wallpaper, and while you can customize the 
+different parts of Windows 10 to your liking, if you don't want your desktop 
+and Start menu to be too plain, you can change the wallpaper. 
+  
+To change your desktop wallpaper in Windows 10, go to the Start menu and 
+then click the gear icon at the bottom right hand corner of the screen. Select 
+Settings and you'll be able to select one of the 16 different wallpapers, or 
+you can click the 'Add a wallpaper' option and enter your preferred 
+wallpaper. 
+  
+A lot of PC users don't use a desktop wallpaper, and while you can 
+customize the different parts of Windows 10 to your liking, if you don't 
+want your desktop and Start menu to be too plain, you can change the 
+wallpaper. 
+  
+  
+How to use a Virtual Keyboard on Windows 10 
+  
+  
+One of the benefits of the Microsoft keyboard that comes with Windows 10 
+is that it works offline. This means you don't have to worry about the 
+battery running out on your Bluetooth mouse or keyboard, which could be a 
+huge help. If you have a Bluetooth keyboard, you can use this whenever 
+your laptop is running out of juice. 
+  
+To access a virtual keyboard, you need to open the Settings app and go to 
+System > Advanced > Mouse & Keyboards > Bluetooth > Microsoft Keys. 
+  
+You can then select 'A window that displays as a virtual keyboard' and then 
+it'll be used in all of your games and apps that use a virtual keyboard. 
+  
+  
+  
+How to get the best out of Cortana 
+  
+  
+Cortana, as with Google Now, the Windows 10 assistant, has a lot of 
+different functions that you can use, and you can find out everything you 
+need to know on the Cortana section of the Settings app. 
+  
+When you first use Cortana, she'll ask you if you want to use it for 
+providing weather updates, keeping track of events on your calendar, 
+getting traffic updates, setting reminders and more. There are dozens of 
+these useful functions, and you'll be able to use Cortana to access them all 
+in the same way. 
+  
+  
+How to change your default browser 
+  
+  
+If you've got Microsoft Edge installed, you can save yourself some time if 
+you know you don't like to browse the internet using Internet Explorer. You 
+can change your default browser in Windows 10 by going to Settings > 
+System > Default Apps and then clicking the lock to make sure you are able 
+to add or remove them. 
+  
+To change your default browser, open the Settings app and then click 
+System > Default Apps. 
+  
+  
+How to turn on the Show Me More Button 
+  
+  
+If you've got a Samsung Galaxy phone, you're used to having access to a lot 
+of handy shortcuts, but on the PC you don't have a dedicated button for any 
+of them. However, if you're using a Samsung PC, you can turn on the Show 
+Me More Button, and you'll be able to access all the useful shortcuts you've 
+found on the Galaxy phone without even needing to launch an app. 
+  
+All you need to do is open Cortana, right-click the app you're using and 
+select 'Show More Actions'. 
+  
+  
+How to pin apps to the taskbar 
+  
+  
+If you've got a lot of apps installed, sometimes you don't want them to take 
+up so much space. If you want to pin a few of your favourite apps to the 
+taskbar, it's easy to do. 
+  
+To do this, head to Settings > System > Notifications & actions and then 
+select the 'Apps you can pin to the taskbar' option. From there, you'll be 
+able to pick the apps you want to pin to the taskbar. 
+  
+You can also pin apps to the taskbar, just make sure you pin the ones you 
+want, because if you don't it won't be there when you get to your taskbar. 
+  
+  
+How to quickly install apps from the Store 
+  
+  
+It can be annoying to have to click the Store icon every time you want to 
+install an app or game, but if you have Windows 10 you can make it a lot 
+quicker. You can install any apps you want from the Store without having to 
+click the Store icon, or launch the Store app. 
+  
+If you go to the Settings app > Update & security > Windows Update and 
+click the 'Check for updates' button, you'll be able to tell that an update is 
+available. Click 'Update Now' and you'll be ready to install apps from the 
+Store. 
+  
+To install an app from the Store, right-click the Store app in the Start menu 
+and click 'Get' or press 'Hot button' in the app to the Store to launch it. 
+  
+  
+How to hide apps without uninstalling them 
+  
+  
+Sometimes you might only want to install apps from the Store, and 
+sometimes you'll want to uninstall everything from your computer. You can 
+turn this option on or off, but it can sometimes make things a bit confusing 
+because there's a way to make an app/game disappear without uninstalling 
+it, and the two aren't the same. 
+  
+To turn an app's status to 'Hiding' from the Windows 10 taskbar, right-click 
+it and then select 'Disable'. 
+  
+To hide an app from the taskbar, right-click it and then click 'Hide' to the 
+right of its name. 
+  
+  
+How to stop watching TV shows in the background 
+  
+  
+Sometimes you don't want apps to be able to record when you're watching a 
+show, or you don't want a game to be able to listen to what you're saying to 
+your friends. You can do this by heading to Settings > Privacy > Apps & 
+notifications. 
+  
+If you want to stop a game from sending notifications while you're using it, 
+or a video app from watching anything you do, select 'Other' to the top left- 
+hand corner of the Apps & notifications page. Then select 'Game Profiles'. 
+If you only want to stop audio apps from watching, select 'Audio Profiles'. 
+  
+You can also use the same method to hide an app from being able to make 
+changes to your activity feed (or 'Surface info'). 
+  
+If you want to hide an app from accessing your account in the background, 
+or make an app unable to use your location for location services, you can 
+also click the 'Use experimental capabilities' option at the bottom of the 
+Apps & notifications page. 
+  
+  
+How to hide downloaded apps from your Start menu 
+  
+  
+You've downloaded a bunch of apps to the Store, and now you want to 
+move them over to your PC, but how do you do it without moving them out 
+of the Windows Store? That's where the 'Hide downloaded apps' trick 
+comes in. 
+  
+To do this, head to Settings > System > Show all downloaded apps in the 
+Start menu and select 'Hide all downloaded apps'. 
+  
+  
+How to make the Control Panel smarter 
+  
+  
+The Windows 10 Control Panel is an old-school thing that's not very useful 
+now that you can find most things you need just by opening the Start menu. 
+But if you want to make it a little more helpful, you can right-click on a 
+button and then select 'Ask me about this action in the Control Panel'. 
+  
+This will open the Control Panel, allowing you to perform any kind of task 
+you want, without having to open up a different application. 
+  
+  
+How to hide the 'Find My Phone' button 
+  
+  
+The Find My Phone feature works pretty well, but it doesn't look like there's 
+much you can do about the 'Find My Phone' button from Windows 8.1 - it 
+just sits on your taskbar and you can't really get rid of it. 
+  
+To hide the Find My Phone button from the Windows 10 taskbar, go to 
+Settings > System > Taskbar. Then uncheck 'Show taskbar buttons on app 
+and game launch'. 
+  
+  
+How to turn off notifications on the Lock Screen 
+  
+  
+There's a lot to be said for keeping your phone locked when it's not in your 
+pocket, but it's not always the best idea to keep your screen on all the time. 
+If you'd like to cut down on the amount of notifications you get on your 
+Lock Screen, just head to Settings > System > Notifications and set 'Lock 
+screen notifications' to 'Did not receive any notifications'. 
+  
+To turn off notifications entirely, head to Settings > System > Notifications 
+and toggle the box next to 'Show notifications' to 'Off'. 
+  
+  
+How to turn off screen recording 
+  
+  
+Screen recording can be really useful, but it's not always the best idea to 
+leave your device on all the time and record things without fully charging it 
+first. 
+  
+To turn off screen recording, go to Settings > System > Devices > Turn off 
+Screen recording. 
+  
+  
+How to hide PC updates 
+  
+  
+Windows 10 comes with a really neat feature that can keep your PC up to 
+date, without needing you to do anything at all. Called Windows Update, 
+this feature will ping you if it's time for an update, and then tell you when 
+the update has started. 
+  
+If you don't like that feature (or you find it a bit annoying), you can disable 
+it in Settings > Update & security > Windows Update > Advanced options. 
+Uncheck the box that says 'Let Windows update my computer 
+automatically'. 
+  
+  
+How to hide from the Start menu (the latest version of Windows 10) 
+  
+  
+The latest version of Windows 10 has improved the way you can hide 
+unwanted apps and settings in the Start menu, and you can find out how to 
+do it by opening the Start menu, heading to the My activities section, and 
+finding 'Choose what to show in Start'. Then simply check the box next to 
+'Hide desktop apps' and you're all set. 
+  
+Head back to your Start menu and you'll now see no apps in the list. 
+  
+  
+How to set up a desktop shortcut 
+  
+  
+If you don't like the idea of the Windows 10 Start menu and you're looking 
+for a solution, you can set a desktop shortcut for all the things you want to 
+access from the Start menu. 
+  
+To do this, right-click the tile of an app you don't want to see, right-click 
+again and select 'Set up desktop shortcut'. You can then pin that app to your 
+taskbar and, of course, that app will still show up on the Start menu. 
+  
+  
+  
+  
+  
+  
+How to pin app shortcuts to Start menu 
+  
+  
+To pin an app shortcut to the Windows 10 Start menu, open the Start menu 
+and right-click an app. Then click 'Pin this app to start menu' and you can 
+pin that app to the Start menu. 
+  
+You can also drag an app tile onto the Start menu to pin it - just make sure 
+you save it. 
+  
+  
+How to pin Apps to taskbar 
+  
+  
+If you find that you want to have multiple programs open at the same time, 
+or you just want to make sure you see the program you're using more easily, 
+you can pin applications to the taskbar (more on this below). To pin an app, 
+go to Settings > System > Panel > Taskbar. Then set the Taskbar app 
+properties to 'Pin apps on taskbar' and choose your app of choice. 
+  
+  
+How to use ShellNotification 
+  
+  
+Windows 10 now has a really handy feature called ShellNotification that 
+makes your taskbar more useful. 
+  
+You can enable ShellNotification by heading to Settings > System > 
+Notifications & actions. From there you can toggle on 'Enable 
+ShellNotification' to receive notifications for Shell commands in the top 
+right corner of the screen. 
+  
+  
+  
+Why we love it 
+  
+  
+One of our favourite new features in Windows 10 is ShellNotification, and 
+if you're not using it, you should be. There's a number of benefits to this 
+feature, which you can read about here. 
+  
+  
+How to change your default search engine 
+  
+  
+If you're not a fan of Microsoft's Bing search engine (a huge chunk of 
+Windows 10 users aren't, in fact), you can change it to another search 
+engine. 
+  
+Open Settings > Search and click 'Advanced Search settings' and then scroll 
+down to the search engine tab. Once you've found the search engine you 
+want to change to, click 'Change search engine' and then click 'Change'. 
+  
+  
+How to manage your Bluetooth devices 
+  
+  
+Microsoft makes it really easy to manage your connected devices, including 
+wireless mice, keyboards and speakers, and you can do it from the Settings 
+app. 
+  
+To find out more about the various options available, click the Devices 
+heading on the left side of the Settings app. Here you can quickly manage a 
+number of connected devices. You'll also find options for shutting down 
+devices or automatically deleting them from your PC. 
+  
+  
+  
+  
+  
+How to hide or hide a tablet from the Windows 10 Start menu 
+  
+  
+If you don't want people to see the 'newest' apps in the Start menu, you can 
+hide your tablet. This is very similar to hiding your laptop from the Start 
+menu, but you'll need to boot your tablet in a special way first. 
+  
+Simply drag a tray icon from the settings page of Windows 10, into your 
+Start menu. From here, just drag this icon to the left of the tile of the 
+'recently used apps'. 
+  
+To close the tray, just hit 'X' and the tray icon will be gone forever. This 
+works for the latest version of Windows 10 as well as its predecessor, but 
+it's a bit of a pain and we much prefer Microsoft's way of hiding the Surface 
+from its latest Start menu. 
+  
+  
+How to change the scrolling behaviour of the Start menu 
+  
+  
+Some of us prefer to have all the tiles scroll up and down as they would if 
+they were displayed in a real desktop operating system, while others prefer 
+them to stop on the next tile and stay there. You can change this with a 
+simple setting in Windows 10. 
+  
+To change this behaviour, click the Start button and right-click it. Then click 
+'Change Desktop Scrolling behaviour' and then choose your preferred 
+behaviour. 
+  
+Right-click Start and choose 'Change desktop scroll behaviour' 
+  
+  
+  
+  
+How to show the app list and the search box at the same time 
+  
+  
+Windows 10 allows you to show the app list and the search box at the same 
+time. This is much better than the single list of apps which is available on 
+Windows 7. You can adjust this setting by clicking the Start button and 
+heading to Settings > System > Appearance > Scrolling. 
+  
+Simply adjust the second option in the list to 'Thumb.' Then click 'OK' and 
+you'll see the app list and search box at the same time. 
+  
+  
+How to manage multiple Word documents with multiple clicks 
+  
+  
+Right-click a Word document in the apps menu and click 'More options' to 
+access the many options available. You can see a number of options to save 
+the document, such as checking any changes you've made and deleting the 
+document entirely. 
+  
+You can also remove a file from the document. To do this, click 'Remove 
+All Items' from the list of options available and then click 'Clear all 
+selections.' 
+  
+  
+How to make Cortana your default assistant 
+  
+  
+Microsoft's personal assistant Cortana now comes with a plethora of 
+personalisation options. Some of these options, such as Cortana's voice and 
+accent, can be changed by clicking the Cortana icon on the taskbar. But 
+some changes are rather more permanent. You can change Cortana's default 
+language to 'English (United States)' and also change the default settings of 
+things like alert sound, text input method, and the option to use your 
+Microsoft account instead of your user account. 
+  
+To make Cortana your default assistant, simply click the Cortana icon on 
+the taskbar, then click the arrow in the top right corner, and choose the 
+option labelled 'Change the default settings.' You can then set Cortana to 
+your preference and click 'OK' when you've made your selection. 
+  
+This only applies to Windows 10 for now, but we expect this to become 
+available for other operating systems in the near future. 
+  
+  
+How to hide the Share charm 
+  
+  
+Cortana and the settings menu now come with a lot of options, so there are 
+a lot of options to be found here. One that's rather less well-known is the 
+option to hide the Share charm. Just open up the search box and click 'Hide 
+the charms' to do this. 
+  
+To use the share feature, you simply click the icon with a star. 
+  
+  
+How to choose your accent 
+  
+  
+If you've been using Microsoft Word for a while, you may have noticed that 
+it now has an accent. In Windows 10, you can change the accent on the 
+emoji in the toolbar to your choice. Simply click the Emoji tab on the 
+ribbon and then click the arrow in the top right corner, and click 'Set the 
+accent.' 
+  
+To access the emoji keyboard, simply open up the Windows 10 search box 
+and type 'emoji' and press enter. The search box should show the emoji 
+options. 
+  
+  
+  
+  
+You can also change the font 
+  
+  
+If you use a different keyboard, the options are slightly different. In 
+Windows 10, the font used for your text in Word will often be set in default 
+'Arial,' but you can change this. Open the Word application and head to 
+Tools > General > Set the fonts in the document to your preferred font. 
+You'll find several options to choose from. 
+  
+  
+How to edit Microsoft Word's colour palette 
+  
+  
+If you'd prefer to see colours that better match your design style, you can 
+change the colour palette used in Microsoft Word. To do this, click the 
+Windows 10 search box and type 'colors.' You'll be presented with a 
+collection of colours that you can download to the document you're working 
+on. 
+  
+  
+How to open PDFs in Microsoft Word 
+  
+  
+Microsoft Word has always had a PDF import tool, but it's somewhat buried 
+under other tools. In Windows 10, you can open a PDF by right-clicking on 
+it, clicking 'Open,' and then selecting 'PDF.' You can also open a PDF from 
+other file types. 
+  
+  
+How to turn on the camera and microphone 
+  
+  
+There's a setting available in the settings menu which can allow you to turn 
+on and off the camera and microphone in Windows 10. To do this, open up 
+the Settings app and click the cog icon in the top-right corner. Scroll down 
+to where it says 'Windows Settings,' and click that. Next, select 'Turn on/off 
+face detection' and then click 'OK.' 
+  
+  
+How to disable the 'goodbye' app 
+  
+  
+By default, Windows 10 does not automatically shut down when you close 
+your laptop. In Windows 10, if you don't like this, you can disable it. 
+  
+Open up the Windows 10 Start menu, select 'Computer' and then click 
+'Control Panel' at the bottom-left. Click 'System and Security' at the top, and 
+click 'Turn Windows features on or off' on the left-hand side of the page. 
+Next, click 'Turn Windows features off.' You can also right-click on the 
+desktop and select 'System' from the menu, but we found that using the 
+System Settings shortcut worked better. 
+  
+By turning it off, you're preventing Windows 10 from closing on its own 
+automatically. 
+  
+  
+How to select Windows Insider builds 
+  
+  
+If you're running Windows 10 Insider Preview Build 15002 or later, you can 
+head to the Settings app and select 'Update & security' in the left-hand 
+column. 
+  
+Click 'Check for updates' at the top of the page, and you'll be presented with 
+the option to 'allow installing updates from an unrecognized source.' Here 
+you can tick 'Don't give me updates from unverified sources.' 
+  
+  
+  
+  
+How to show the next Windows 10 preview build 
+  
+  
+Head to Settings > Update & security > Windows Insider Program. Here 
+you can check to see if you're running the most recent build available in the 
+Insider Preview ring. Click 'Check for updates.' 
+  
+Click 'Check for updates,' and you'll be presented with the option to 'Skip 
+this build.' Click 'Skip,' and you'll be taken to the same page where you 
+were earlier. Click 'Don't delay' to ensure that you receive the latest preview 
+build when the next one is available. 
+  
+  
+How to sign out of Windows Insider Preview builds 
+  
+  
+Although you can't be forced to update your device, if you'd prefer not to be 
+automatically rolled out with new Windows 10 builds, you can choose to 
+opt out. 
+  
+Head to Settings > Update & security > Windows Insider Program. Select 
+'Notify me' and click 'Allow.' 
+  
+Now, click 'Skip,' and the build will be skipped. 
+  
+  
+How to set up Cortana 
+  
+  
+The Windows 10 Anniversary Update makes Cortana smarter than ever, and 
+it's great to have her at your beck and call, just like Apple's Siri. 
+  
+You can change what you're working on by telling Cortana 'open Microsoft 
+Word,' 'open Microsoft Excel,' 'open Microsoft PowerPoint,' 'open 
+Microsoft Paint,' or 'open LibreOffice.' If you tell her to 'set a reminder,' 
+she'll use the service you're signed into to get the task done. 
+  
+You can also tell her 'who to call' or 'what to do.' For example, you can say 
+'add a new contact' or 'search Google for XYZ.' 
+  
+  
+How to create a custom address bar 
+  
+  
+If you prefer a different address bar, you can customise it as you wish. Just 
+head to Settings > Personalisation > and click 'Change the address and 
+search bar.' 
+  
+Select 'Customize the address bar.' You can also scroll down to 'Add a new 
+search engine,' where you can choose a different search engine to use when 
+you use Windows 10. 
+  
+  
+How to disable the Groove Music Pass 
+  
+  
+If you've signed up to the Groove Music Pass in Windows 10, you can't use 
+it without also signing up to Xbox Music Pass. If you don't want to keep 
+Xbox Music Pass, you can disable the Groove Music Pass so you can sign 
+up to Xbox Music Pass instead. 
+  
+To do this, head to Settings > Accounts > Add a new account and select 
+'Groove Music Pass.' Here, you'll see a toggle next to 'Allow Groove Music 
+Pass to be used on Xbox One.' Just toggle this off and you're good to go. 
+  
+To stop Windows 10 getting notifications about your Groove Music Pass, 
+go to Settings > Apps > Notifications & actions and choose 'No Groove 
+Music Pass notifications on Xbox.' 
+  
+  
+How to turn off Groove Music Pass 
+  
+  
+If you don't want to keep the Groove Music Pass, you can simply turn off 
+the option so you never get notifications about it again. Head to Settings > 
+Apps > Notifications & actions and choose 'No Groove Music Pass 
+notifications on Xbox.' 
+  
+  
+How to force Windows 10 to ask for your sign-in password 
+  
+  
+If you've used Windows 7 or 8.1 and don't want to have to enter a password 
+for Windows 10 when you first set it up, you can force Windows 10 to ask 
+you for your sign-in password before you can do anything on your PC. 
+  
+If you're on Windows 10, open the Start menu and type 'activities.' 
+  
+When the app opens, click 'Activity Overview.' 
+  
+Scroll down and click 'Sign in with a Microsoft account.' 
+  
+In the next pop-up, click 'Use default account.' This will bring up a screen 
+that lets you switch between the default Microsoft account and the account 
+you set up for Windows 10. 
+  
+You can now sign in to Windows 10 and continue with your business. 
+  
+  
+  
+  
+  
+  
+How to disable Windows 10 getting notifications about your day 
+  
+  
+If you don't want Windows 10 to send you notifications about your daily 
+schedule, such as reminders about meetings, events, and so on, head to 
+Settings > Personalization > and click 'Activities.' 
+  
+Scroll down to 'Related updates' and uncheck the option called 'Want to 
+send notifications about your day.' 
+  
+  
+How to force Windows 10 to clear notifications 
+  
+  
+Sometimes, you need to get rid of notifications so you can work without 
+them. This is possible if you force Windows 10 to do so by going to 
+Settings > System > Notifications & actions. 
+  
+To change what notifications Windows 10 shows you, head to Settings > 
+System > Notifications & actions and uncheck the 'Show advanced 
+notifications' option. 
+  
+Scroll down and uncheck the 'Show notification events' option, and you 
+should be good to go. 
+  
+  
+How to force Windows 10 to hide your most recently used apps 
+  
+  
+It's important to remember that the Windows 10 lock screen is just a mode 
+that you can customise as you like. You can therefore use it to hide apps you 
+don't want to see. Here's how. 
+  
+Head to Settings > Apps & features and click 'Lock screen background.' 
+  
+Select a photo or image to use for the background and then click 'Apply' 
+when prompted. 
+  
+You'll then be asked to select a wallpaper to use for the lock screen. Make 
+sure that you select 'Full screen' as the wallpaper option. 
+  
+Click 'Save.' 
+  
+To disable the lockscreen wallpaper, head to Settings > Personalization > 
+Lock screen and choose a wallpaper. 
+  
+  
+How to turn off Windows 10 reminding you to log in 
+  
+  
+Windows 10 has another trick up its sleeve that makes you remember to log 
+in and use your account every time you turn your PC on. 
+  
+Just head to Settings > Accounts & password > Sign-in options and uncheck 
+the option that says 'Let Windows send me an email and text message when 
+you turn on your PC so I can confirm that you're signed in.' 
+  
+  
+How to turn off Windows 10 learning your location 
+  
+  
+Windows 10 will learn your location when you sign in to your account and 
+notify you when you're out of range. You can turn this off if you'd like. 
+  
+To turn this off, head to Settings > Privacy > Location and uncheck 'Learn 
+my location.' 
+  
+How to disable Windows 10 showing your friends 
+  
+Want to give yourself some privacy while using Windows 10? Head to 
+Settings > Privacy > Connections and uncheck the option called 'Share my 
+connections.' 
+  
+You won't be able to use Windows 10's various social features if this option 
+is turned on. 
+  
+  
+How to stop Windows 10 tracking your behavior 
+  
+  
+If you're not a fan of Windows 10 spying on you by collecting data about 
+your web searches, browsing history, location, etc., you can always take a 
+few precautions. 
+  
+To turn off Microsoft collecting such data, head to Settings > Privacy > 
+Search. 
+  
+Scroll down to the General section and click 'turn off how Microsoft 
+collects and uses your data.' 
+  
+  
+How to stop Windows 10 recording every command you type 
+  
+  
+It's not so bad for Windows 10 if you want it to record every command you 
+type. However, if you want to stop the OS from always recording all your 
+commands, head to Settings > Privacy > Search and click 'ask Cortana to 
+stop recording this search.'" 
+  
+It's a matter of preference as to whether you want Windows 10 to record 
+your searches and commands or not. 
+  
+  
+How to force Windows 10 to use your desktop background 
+  
+  
+If you prefer using a different desktop background from the default one, 
+you can make sure that's the case. 
+  
+Open Settings > Personalization > Colors and change 'My desktop 
+background' to something else. 
+  
+  
+How to enable Windows 10's security features 
+  
+  
+Windows 10 has some pretty nifty security features, and they're often buried 
+away in the Settings app. However, if you want to access them, head to 
+Settings > Update & security > Windows Update, click 'See updates' in the 
+'Choose when updates are installed' section, and then select 'Check for 
+updates now.' 
+  
+Before downloading and installing any new Windows 10 update, make sure 
+your computer has the latest security updates. You can check your Windows 
+update history at Settings > Update & security > Windows Update. If it says 
+it's at least three months old, then you're good to go. 
+  
+  
+How to turn on Windows 10's facial recognition features 
+  
+  
+Windows 10 has a facial recognition feature which lets it identify users 
+based on their facial recognition patterns. To turn it on, head to Settings > 
+Privacy > Face recognition and toggle it on. 
+  
+  
+  
+  
+How to turn off Windows 10's speech recognition 
+  
+  
+Windows 10's built-in speech recognition features can identify speech and 
+send it to apps like Microsoft Word, but you can disable that if you'd like. 
+Head to Settings > Cortana, click 'Turn on speech recognition,' and then 
+toggle it off. 
+  
+  
+How to use the Windows 10 Search charm 
+  
+  
+Windows 10 users have long complained about the Windows 10 search 
+charm not actually having any search functionality, but a recent update to 
+the app has remedied that problem. 
+  
+To use it, open the app and swipe down from the top of the screen to get to 
+the search charm. 
+  
+From here, you can search for documents, email, contacts, and web content, 
+just as you can on the Microsoft Edge browser on Windows 10. 
+  
+You can also search without touching the screen, thanks to the built-in 
+Cortana virtual assistant. Just say 'Hey Cortana' and it will launch the search 
+feature. 
+  
+If you use the voice command feature, don't use Cortana. 
+  
+  
+How to turn off the Windows 10 assistant 
+  
+  
+The Windows 10 assistant is like a virtual assistant Siri or Google Now, and 
+it works in a very similar way. It can help you with various things, from 
+searching the internet to making your phone calls and launching apps. 
+  
+To turn it off, head to Settings > Personalization > Search and click 'turn off 
+the Microsoft assistant.' 
+  
+  
+How to activate a picture-in-picture mode 
+  
+  
+The picture-in-picture mode is a nifty way of displaying a small window 
+that floats over whatever you're currently using on your Windows 10 
+display. It's especially useful for watching movies, YouTube videos, or other 
+longer video content. 
+  
+You can turn on the feature in Settings > System > Features > Picture-in- 
+picture. 
+  
+  
+How to activate a picture-in-picture mode on a Surface device 
+  
+  
+The picture-in-picture mode is also available on Microsoft's Surface 
+devices, although, unfortunately, the functionality isn't as polished. 
+  
+To activate it, open the app or service and then tap the arrow to the right of 
+the app's name. 
+  
+Then select Picture-in-Picture, which will show a small window over 
+whatever you're using. 
+  
+  
+How to activate an always-on display 
+  
+  
+If you have a Windows 10 laptop, you can toggle on a 'Always on' display. 
+It essentially lets you see certain information on the lock screen, for 
+example, the time, notifications, and even the power settings if you turn on 
+a particular 'Power saver' option. 
+  
+To enable it, head to Settings > Display & Brightness > Always on Display. 
+  
+  
+How to turn off 'Cortana suggestions' 
+  
+  
+The 'Cortana suggestions' feature of Cortana is Microsoft's attempt to keep 
+Cortana listening for your commands, so that she can anticipate what you 
+might want before you even ask for it. For example, if you tell her to 'Set a 
+reminder to call Mom tomorrow at 7pm,' it's a long shot that she'll be able 
+to figure out that 'Mom' is a person and 'Tomorrow' is a date. 
+  
+So, Microsoft recommends that you turn this feature off. To do that, head to 
+Settings > Cortana > And here, you'll find the 'Cortana suggestions' toggle. 
+  
+  
+How to turn off multiple Cortana suggestions 
+  
+  
+If you'd like to turn off Cortana's 'Cortana suggestions,' and toggling the 
+feature off will turn it off across your device, head to Settings > Cortana > 
+Speech and Search. 
+  
+  
+How to turn off the Windows 10 Calculator 
+  
+  
+The calculator on Windows 10 can be a handy tool, especially when making 
+calculations and calculations are essential. However, the calculator can also 
+serve as a master key to your privacy. 
+  
+The calculator shows everything you type into it and then sends it back to 
+Microsoft's servers, as if you'd asked a digital assistant to do it. 
+  
+To disable the calculator, head to Settings > Personalization > Calculator, 
+and then switch off the 'Show calculations and buttons when typing' option. 
+  
+  
+How to change default apps 
+  
+  
+To make sure you only run apps from the Microsoft Store, head to Settings 
+> Apps > Default apps and then click 'Show more apps.' You can then select 
+which of the default apps should be enabled. 
+  
+To limit the default apps, you'll need to turn on the 'Apps from the 
+Microsoft Store only' feature. To do that, go to Settings > Apps & features > 
+Apps that start with 'S' > Windows Store apps, click the 'Apps from the 
+Store only' tab, and then tick 'Use the apps from the Microsoft Store only' 
+box. 
+  
+  
+How to turn off the Smart Screen Recorder 
+  
+  
+The Smart Screen Recorder in Windows 10 is handy if you're watching a 
+video, but it can record everything you're doing, including the keyboard. 
+  
+To disable the feature, head to Settings > Personalization > Settings > 
+Devices > Screen recording, and then switch off the Smart Screen Recorder. 
+  
+  
+How to turn off the Windows Aero Glass feature 
+  
+  
+If you're familiar with Windows Vista or Windows 7, you'll know that Aero 
+Glass is a nice way to give your desktop a unique look, with a window that 
+can pop up, allowing you to interact with it without losing focus on the 
+contents of your main window. 
+  
+In Windows 10, the Aero Glass feature can still be useful, but you can 
+disable it if you want to. To do that, head to Settings > Personalization > 
+Appearance, and then tap the gear icon next to 'Aero Glass'. 
+  
+Scroll down to the bottom of the Aero Glass settings and click 'Disabling' 
+and then toggle it off. 
+  
+  
+How to turn off the Custom icons feature 
+  
+  
+The Windows 8.1 feature that lets you assign a specific set of apps to the 
+Windows Action Center - giving you quick access to tasks such as your Wi- 
+Fi, Bluetooth and battery life - is also in Windows 10. 
+  
+However, the Custom icons feature can be a privacy nuisance if you use 
+third-party apps, and have enabled them to show up in the Action Center. To 
+turn off the feature, you'll need to head to Settings > Personalization > 
+Actions and then tap the cog icon next to Custom icons. 
+  
+Scroll down to the bottom and click 'Turn off,' and then the toggle switch. 
+  
+  
+How to turn off multiple notifications 
+  
+  
+Windows 10 offers a useful way to manage your notification volume. Head 
+to Settings > System > Notifications and then click on the 'Turn off 
+notifications for any app' option. 
+  
+You can also turn off notifications for all apps if you want, and the feature 
+will switch back on when you restart your PC. 
+  
+How to clear all notifications 
+  
+  
+Microsoft lets you clear all of your notifications from the taskbar at once, as 
+long as you have Cortana enabled. To do that, head to Settings > System > 
+Notifications and then tap on Cortana. You can then click on the cog icon 
+next to Clear all notifications and select 'Clear all' or 'Clear on demand.' 
+  
+Tip: If you don't have Cortana, you can always disable the taskbar 
+notification by right-clicking it and going to 'Open menu, taskbar.' Then 
+select 'Taskbar, unhide all notifications.' 
+  
+  
+How to manage notifications from your favorite apps 
+  
+  
+You can access the app notifications directly from the Windows 10 Start 
+menu. Simply click on the app you want and click on the 'more' tab. 
+  
+Then, scroll down and tap 'Remove notifications from this app,' and all of 
+the notifications for the app will be removed. If you open the app you're 
+trying to clear, it'll be blank on the app's app list. 
+  
+  
+How to turn off the 'Open Windows Store with Windows' command 
+  
+  
+The 'Open Windows Store with Windows' command is a nice way to get to 
+your favorite apps that aren't already installed on your PC. However, if you 
+don't need to access the store, you can switch it off. 
+  
+Head to Settings > System > Apps & features > App suggestions, and then 
+choose the 'Ask before installing apps from Windows Store' option. From 
+there, you'll be asked to confirm the 'Open Windows Store with Windows' 
+command is enabled, and you can switch it off from there. 
+  
+  
+How to manage apps installed from the Windows Store 
+  
+  
+If you find yourself with too many apps in the Windows Store, you can now 
+easily manage the apps that are already installed on your PC. To do so, 
+simply head to Settings > System > Apps & features and choose 'Manage 
+apps that install without a reboot.' 
+  
+Scroll down and you'll find the 'install apps automatically' option and click 
+on it. Now, you can allow some apps to automatically install. 
+  
+You can also remove apps you don't want to install automatically by 
+choosing 'Remove this app,' and then clicking 'Remove' on the app. 
+  
+  
+How to manage apps installed from the 'Get Windows 10' app 
+  
+  
+If you don't want to have the Windows Store installed, you can always opt 
+to install a clean version of Windows 10 that doesn't come with the 
+Windows Store, allowing you to install apps and games from the Windows 
+7 or Windows 8.1 app store. However, you'll need to enable the 'Get 
+Windows 10' app before the app will run. 
+  
+Head to Settings > Update & security > Activation settings, and then you 
+can toggle on 'Get Windows 10' app, and then click on the 'Activation' 
+button to activate it. 
+  
+  
+  
+How to manage apps on your external hard drive 
+  
+  
+If you're using an external hard drive, you can also manage your apps. This 
+can be a very handy feature if you only have a small amount of space on 
+your PC and want to try and free it up. To access it, you'll need to open the 
+Start menu and then click on ' apps 'from the left-hand side. 
+  
+Then, click on 'Add an app to Windows' and a list of apps will show up on 
+the right-hand side of the window. When you click on one, a menu should 
+appear on the right-hand side with the option to uninstall the app and 
+manage it from the Windows Store. From there, you can also choose 
+whether or not you want the app to install automatically. 
+  
+  
+How to enable app syncing 
+  
+  
+If you're looking to sync your apps across multiple PCs, you can enable app 
+syncing right from the 'Start' menu. Head to Settings > Apps & features and 
+then click on 'Sync apps.' 
+If you don't see it in the list of apps available, select 'Other,' and then click 
+on the 'Find' icon in the upper right-hand corner. This will open the 'Apps 
+and games' screen. From there, select 'Sync apps' and a list of apps should 
+show up. If the list is empty, check the box labeled 'Allow syncing apps 
+from another PC.' 
+  
+  
+How to clear hidden files and folders 
+  
+  
+If you find that you have a lot of extra files or folders on your PC, you can 
+clear some of them off with a few simple commands. 
+  
+First, open the Start menu and then click on 'Go' on the search box. Next, 
+type 'hidden' in the search box and then click 'Search for hidden files.' When 
+a file with the name of your choosing appears, you can then drag and drop it 
+to the trash. 
+  
+To clear a folder, you'll need to head to 'My Documents' > 'My Pictures' > 
+'Deleted' and then click on the folder you want to delete. 
+  
+You'll also be able to clear files from the Windows Explorer window. Start 
+by clicking 'Go' on the search box, and then type 'cache' in the search box. 
+If the file appears in the 'Recent files' section, you can drag and drop it to 
+the trash. 
+  
+You can also clear a file from Explorer by holding down the Alt or Ctrl key 
+on your keyboard. When the icon appears in the upper right-hand corner of 
+the Explorer window, click on it. A drop-down menu should appear. Click 
+on 'Clean Ransomware' and then click 'OK' when prompted. 
+  
+  
+How to delete the Cortana icon from the taskbar 
+  
+  
+If you have Cortana enabled, you might have noticed that she's hanging out 
+on your desktop in the top-right corner. If so, there's a simple way to 
+remove her from the taskbar. 
+  
+Click on 'Settings' and then click on 'Personalization,' followed by 'Taskbar 
+Settings.' Scroll down until you see the line labeled 'Shelf' and click on 
+'Disable.' 
+  
+If you want to change your desktop background, head over to Settings > 
+Personalization > Colors and then select 'Change Desktop Background.' If 
+you want a different wallpaper, head over to Settings > Personalization > 
+Colors, and then select 'Pick a background from the panel.' 
+  
+  
+How to change the size of your windows 
+  
+  
+Sometimes, you might find that your mouse cursor isn't large enough. To 
+change the size of your windows, just open the Start menu and click on 
+'apps' from the left-hand side. 
+  
+Now, click on 'charms' and then click on the 'window' tab. This will open a 
+small control panel that allows you to select from two control panels. Select 
+the one you want, and then click on 'Choose Size' to save your changes. 
+  
+There are a few other hidden shortcuts that you might find useful, too. 
+  
+For example, the volume controls on your PC can also be adjusted with a 
+simple keyboard shortcut. Instead of clicking the volume controls and 
+selecting the option to adjust the volume, you can instead press the Fn + ` 
+key on your keyboard. 
+  
+If you want to hide certain folders on your computer, you can instead open 
+up your Start menu, search for 'C: and then click on the folder you want to 
+hide. A new option will then appear in the left-hand column of the left-hand 
+side of the Start menu. Select the folder you want to hide, click on 'Choose' 
+to make your changes and then click 'OK.' 
+  
+Likewise, you can even remove certain buttons and keyboard shortcuts. To 
+do so, just right-click on your keyboard and select 'Set as default' followed 
+by 'Disable.'What are apps for Windows 10? 
+  
+The Windows Store is one of the most appealing ways to take advantage of 
+apps available on your phone or tablet. It's also the main way to access 
+Windows 10. Microsoft has done a great job building it out with a wide 
+variety of apps, though there is always room for improvement. 
+  
+The Store has some limitations in terms of what you can download. It's not 
+meant to be a repository for all the apps you may want to use. For instance, 
+the biggest app store in the world does not offer all the apps you could 
+want. Android's App store is roughly the same, in that developers still need 
+to provide a selection of high quality apps. A great deal of the rest of the 
+Windows Store's offerings are low quality apps that are pretty easy to 
+dismiss. 
+  
+There are a few things you can download from the Windows Store for free 
+and can use. The settings app, Windows Defender and Windows Analytics 
+are all available. Windows Mixed Reality seems to be a big part of the 
+Windows Store and you can check out what it's like to use it in our 
+Windows Mixed Reality review. 
+  
+  
+Using Windows 10 
+  
+  
+Using the Microsoft Edge browser with Windows 10 is one of the most 
+convenient ways to use a desktop PC. Windows 10 comes with Microsoft 
+Edge pre-installed. It's the browser of choice for Windows users. It's one of 
+the more powerful browsers on the market and you can find a few other 
+specialized tools built into it. You can view the text of an image, for 
+instance, just by hovering your mouse cursor over the image. This 
+capability makes the Edge browser a bit more powerful than your average 
+browser. 
+  
+Of course, Edge is built into the OS so you don't have to do a thing. 
+However, it will always be available in case you want to perform more 
+advanced tasks such as reading web articles and viewing images. 
+  
+The settings for Edge are fairly self-explanatory. You can turn off features 
+that you don't really need or that aren't useful. For instance, you can turn off 
+the ability to open PDFs, since Microsoft Edge won't open these files. The 
+Edge settings also allow you to change font, background color, and more. 
+  
+Another popular browser for Windows 10 is Mozilla Firefox. Firefox 
+includes a number of extensions such as the Awesomebar extension. You 
+can find plenty of extensions for Firefox on the Windows Store. 
+  
+You can use the Microsoft Edge settings for other things, such as making 
+the browser your default. This will get you the most recent pages and can 
+save you a few steps if you are in the middle of a task. 
+  
+A popular option for other browsers is the Fastest Mobile Networks. This 
+extension will tell you which mobile network is the fastest for you in your 
+area. It will work even if your phone is on a different network, if it has built 
+in location services. It also shows you the data speeds for each network. 
+This is a useful extension if you are not happy with the provider you use. 
+  
+Another extension that you can use to get quick information about any web 
+page is the BetterVPN extension. This is designed to give you a quick 
+overview of what data your particular web browser has accessed. 
+  
+Of course, you can also use your phone as a tablet or as a full-featured 
+laptop, as long as it can handle the workload. The Google Play Store is pre- 
+installed on Android and you can also use a keyboard for typing. 
+  
+  
+Setting up Windows 10 
+  
+  
+You can download the latest version of Windows 10 from the Windows 10 
+Download Center. 
+  
+When you first boot up your computer, it will prompt you to set up a basic 
+user account. This isn't just a username and password; it's the user account 
+that you will use to access many of the options that are hidden behind the 
+Start menu. When you select the "new user" option, you will have to input 
+your username and password. If you haven't done this already, then this will 
+be the first time that you have entered these credentials. They are all 
+optional and they don't have to be correct. You can change this later. 
+  
+Next, you will see a small window with a bunch of different options for 
+setting up your first user account. You can get the Windows desktop. You 
+can sign in to your Windows account. You can change your language. You 
+can change your timezone. You can set up new devices. 
+  
+You can also set up new devices, including printers and other accessories. 
+This part of the setup is actually a bit different than how it is done in 
+Windows 8. In Windows 8, you would connect the printer directly to the 
+computer. You can't do that in Windows 10. Instead, you have to go into the 
+printer drivers settings. 
+  
+If you need help setting up your account, then you can follow the 
+instructions on Microsoft's support page. 
+  
+Windows 10 adds a number of new features, including BitLocker Drive 
+Encryption. BitLocker allows you to lock your disk so that you will need a 
+password to access your files. You can set up BitLocker Drive Encryption 
+from the options screen. You need to enable BitLocker with a password or a 
+verification code. 
+  
+I use a digital notebook for all of my notes, so I can make them as compact 
+as possible. I am not really bothered by the small number of storage drives 
+that I have to work with, so I have never installed a full operating system on 
+them. I would rather them be synced to a cloud service. The Windows 10 
+Creators Update adds the ability to sync documents from a local drive to the 
+cloud. 
+  
+I can see that you will have a lot of options for doing everything that you 
+need to do in Windows 10. 
+  
+The next time that you startup your computer, you will be asked to create 
+your user account. Just make sure that you have entered all of your user 
+account credentials. 
+  
+  
+  
+Read and write files 
+  
+  
+Windows 10 is compatible with a lot of the same file types that you use in 
+Windows 7 and 8. 
+  
+The best way to test this is to browse the Microsoft website and click on the 
+link to your photo library. 
+  
+To share a folder, you would probably want to drag it to the cloud. You will 
+then have a web interface to make the shareable file available to everyone 
+who is connected to your wireless network. 
+  
+You can also share your entire hard drive. 
+  
+This means that you can have as many as 15 drives in a single system, 
+sharing them among other users. There are other sharing options as well, 
+including USB drives, network shares and file exchange programs. 
+  
+  
+How to protect Windows 10? 
+  
+  
+Microsoft also updated its official page for helping Windows 10 users, 
+which is accessed by clicking the gear-shaped arrow icon on the Start Menu 
+and clicking "Update & security." It is easy to find a solution to a particular 
+problem by first checking it from that page. 
+  
+The options for the solution, if any, can be found on the following, 
+especially the ones mentioned in the highlighted areas. 
+  
+  
+  
+  
+Windows 10 Mobile 
+  
+  
+For users of Windows 10 Mobile, the solution includes disabling File 
+Sharing (either the newer Messaging or the older, less useful Windows Live 
+Messaging), as it is also used to keep Skype running even when the phone 
+is offline. Other measures include setting the messaging app to be read-only 
+to prevent it from sending messages with screenshots, and removing shared 
+contacts from the phone's Contacts app. 
+  
+But those steps are time-consuming and the phone will continue working 
+with all the phone contacts and calls. 
+  
+  
+Windows 10 
+  
+  
+Users of Windows 10, which can be installed by just clicking Start > 
+Settings > Update & Security, will find the "Update & security" option 
+which is titled "Stop unwanted telephony and messaging apps." 
+  
+The purpose of this option is to prevent calls and texts from pop-ups or 
+annoying notifications. Microsoft advises the users to block calls, messages, 
+and notifications when they are in Focus mode, which prevents notifications 
+when the phone is in Do Not Disturb mode. 
+  
+The solution is simple. It can be done by pressing the Xbox button and 
+scrolling to Settings > Phone > Calling & messaging, which then lists all 
+the unwanted apps. To block unwanted apps, you will need to click the 
+three vertical dots at the top left corner of the apps that you want to block, 
+as shown in the screenshot below. The results will be shown in the tray at 
+the bottom of the phone's screen. 
+  
+  
+But what if the apps to be blocked don't have a download option? 
+  
+  
+According to The Verge, the apps to be blocked cannot be downloaded 
+because of the App Developers Distribution Agreement Microsoft signed, 
+as well as the universal app licensing policies. You may have to change 
+your phone's settings in order to block unwanted apps, which can be done 
+by clicking on the Apps and features > Add or remove apps, as shown in the 
+screenshot below. 
+  
+Turning on and off unwanted phone notifications is also possible in the 
+same menu, and it is done by selecting the "Apps and features" button and 
+selecting "Notifications" to go into the settings menu. 
+  
+  
+Windows Phone 
+  
+  
+Windows Phone users can install new apps from third-party app stores 
+without any permissions. Windows 10 users can install new apps from 
+third-party app stores without any permissions. 
+  
+To deal with Windows 10's security breach problem, Windows Phone users 
+can install new apps from third-party app stores without any permissions. If 
+you can't do it because of privacy concerns, just make sure you don't 
+download apps from the Windows Store app, as Microsoft says the apps 
+have no source code and therefore do not have a history of bugs and 
+security breaches. 
+  
+That means, to make sure you don't download apps from Windows Store 
+app, you can follow these steps: 
+  
+The first thing to do is to visit the Windows Store app on your phone and 
+look for the most recently updated apps. The ones you want to download 
+will be listed. Choose the app you want to download and click on "Install 
+Now" to install it. Now, remember that it is a universal app so you will be 
+able to install it on any Windows 10 PC. 
+  
+For the ones that require specific permissions from the phone, you can 
+delete the permissions by: 
+  
+Windows Phone users can also download a free app from another app store 
+and install it on their phone, without a phone account. However, this is not 
+recommended and you should only do it for a specific purpose. 
+  
+The Verge report suggests that there is a way to stop some unwanted 
+Windows 10 apps, which is to use the task manager to access the settings of 
+the app. Once the task manager is open, you will see apps that can be 
+uninstalled by right clicking on the icon and selecting the option to 
+uninstall. 
+  
+Download and install the app only when you need it. And then turn off the 
+setting again, as you don't want to lose out on the app for no reason. 
+  
+  
+Windows 10 and the Microsoft Edge browser 
+  
+  
+Microsoft Edge browser is not only simple to use but also keeps pages 
+updated automatically. Microsoft Edge browser is not only simple to use 
+but also keeps pages updated automatically. 
+  
+While downloading an app from an app store, you might have seen an 
+option to be shown recommended web pages. Well, this can be done in 
+Windows 10 Edge browser and you can opt for 'Show me recommended 
+webpages'. This will bring a list of websites from the Windows Store, and 
+most of these websites will be from the websites you have visited before. 
+But it is recommended you don't click on those. 
+  
+This is because it will force the Windows 10 Edge browser to show you 
+those websites, making sure you don't go to another website on your 
+browser that is already linked to your account. As Microsoft Edge browser 
+is quite good, you can also manage the sync data, the way you see in the 
+abovementioned website link, to use those websites, which might be 
+toggled off. 
+  
+  
+Download Windows 10 Anniversary update with updates 
+  
+  
+Microsoft released Windows 10 Anniversary update with new features, 
+upgrades and updates, and if you are stuck in any issue, then follow these 
+steps to download the update: 
+  
+The update is available to download for those who have an enterprise 
+account or Windows Insider Program, which are free of cost, provided that 
+your company has more than 150 devices and 5,000 employees. 
+  
+To download the update, open your Start menu, press the search icon at the 
+right-corner of the Start menu and type 'Update & Security'. 
+  
+Now, click on 'Windows Update' to start the update process. 
+  
+Do note that if you are using Windows 10 Home, Enterprise or Education, 
+then there is no need to download any update. 
+Chapter 9 Cloud Storages 
+  
+  
+What is Dropbox for Windows 10? 
+  
+  
+Dropbox for Windows 10 will allow you to store and access any file you 
+want without having to sign up for Dropbox first. Simply drag and drop any 
+files to a Dropbox folder and you’ll see them appear in the appropriate 
+place, on any Windows device. 
+  
+You’ll be able to stream files to multiple devices at the same time by using 
+the Share Hub, which can also be used as a OneDrive folder on your 
+machine, and you can add friends to a list to view all the files they’re 
+sharing with you. You can add people to the list via a private link. 
+  
+When you have a lot of files, Dropbox may be the best free tool for storing 
+them for easy access when you’re on the go. 
+  
+  
+What is Box for Windows 10? 
+  
+  
+Box for Windows 10 is designed for people who create large amounts of 
+files for public consumption. It will allow you to create and share files up to 
+5 GB in size, making it the ideal solution for both business and individual 
+consumers. 
+  
+Box is an easy way to share files on multiple devices without having to 
+worry about security, or having to worry about them getting corrupted on a 
+single machine. It also allows you to send documents to other Box users via 
+email, making it ideal for companies with several employees who need to 
+collaborate on documents. 
+  
+Box supports file uploads as well as “smart scans”, which will pull images 
+from a camera or image scanner for you to view and use as part of your file. 
+In a similar vein to Dropbox, you can upload files to your Box account and 
+keep them at your desk, so when you need to get them to another person, all 
+you need to do is click on them and let Box do the rest. 
+  
+As with Dropbox, Box can also be accessed via a web app, making it a 
+good solution for people who travel frequently and don’t want to worry 
+about multiple devices. 
+  
+  
+What is Google Drive for Windows 10? 
+  
+  
+Google Drive is the cloud storage solution that everyone who uses Chrome 
+should have. You’ll be able to share documents, photos, videos and much 
+more with other users on the web, no matter their operating system. 
+  
+Google Drive will also sync across your devices, so when you hit the road, 
+you’ll be able to access and share files with your team, even if they’re using 
+their own computers and different operating systems. 
+  
+Google Drive is an excellent solution for freelancers and small businesses, 
+especially if you work remotely, because you can easily find files from 
+people from around the world in one place, even if they’re not using the 
+same email address or the same Gmail account. 
+  
+  
+Useful Tools for Business Travelers 
+  
+  
+Box is a great solution for freelancers and entrepreneurs who travel for 
+work, because it allows them to maintain a secure, clean, cloud-based office 
+on the road. 
+  
+It works on all your devices, and with one click you can open files and then 
+save them to your Box account. It also makes it easy to share files with your 
+team, so they can edit them on any device, and you’ll always know that the 
+files you created will remain secure. 
+  
+Dropbox is also a good option for business travelers, especially if you use 
+Google Drive to share files. 
+  
+One of Dropbox’s key advantages is the fact that you don’t have to pay for 
+any of its premium features. While Dropbox is probably the best free tool 
+for business travelers, you will have to make some sacrifices. 
+  
+Most importantly, Dropbox doesn’t support file sharing over the web, 
+meaning you can’t easily transfer files to other people’s computers without 
+the help of a web browser, which can be a bit inconvenient. 
+  
+Another problem with Dropbox is that it will only work with a single 
+computer, which means that if you use the same computer for business as 
+you do for personal use, you’ll have to pay Dropbox’s premium features if 
+you want to share your files with your friends and family. 
+  
+While Box is also not an app that you can use on different machines, it does 
+support file sharing over the web, which makes it a good option for a digital 
+office that consists of multiple people. 
+  
+Google Drive is the most secure and convenient cloud storage solution for 
+business travelers, because it makes sharing your files easy and is especially 
+well-suited for remote workers. 
+  
+  
+Evernote Business: Office 365 and Web App Alternatives 
+  
+  
+Evernote is a popular web-based productivity tool that allows you to write 
+notes, annotate files, and do a number of other things without leaving the 
+comfort of your computer. 
+  
+Evernote is particularly useful when you are traveling, because you can 
+access your notes from anywhere you can access the internet. You can set it 
+up to synchronize with Dropbox, which means that your files will be 
+accessible from any computer that you use. 
+  
+Evernote is also an excellent tool for business travelers, because it makes it 
+easy to create and share notes, as well as track your spending and track your 
+expenses. You can create a separate notebook to track the expenses you 
+made on a specific trip. 
+  
+By putting all of your expenses in one place, it’s easier for you to determine 
+if you’re doing a good job or if you need to cut costs next time. 
+  
+Of course, it’s important to keep a healthy amount of money in your 
+business bank account so that you can pay bills and other necessary 
+expenses. Fortunately, Evernote Business lets you access your notes and 
+check your accounts on the web, meaning that you can save a lot of time on 
+printing and organizing receipts. 
+  
+PDF Expert is another free tool for business travelers that is really handy 
+for those who use a laptop for their work. You can easily create PDFs from 
+documents and save them into the cloud, making them available to 
+everyone else. 
+  
+Unlike Evernote, PDF Expert is a simple tool that you can use on multiple 
+computers without much effort, so you won’t have to make much of a 
+sacrifice to use it while on the road. 
+  
+SignEasy is an alternative to Google Docs that’s focused exclusively on 
+business. SignEasy makes writing an email, creating an HTML page, and 
+more, a lot easier. 
+  
+Although SignEasy is designed specifically for professionals, it has an 
+intuitive interface that makes it easy for a person to create an email and 
+send it to a colleague. 
+  
+Riseup Notepad and Riseup Notepad Lite are tools that you can use to 
+produce a simple, easy-to-read document without spending a lot of time in 
+order to create it. Riseup Notepad is available for free, but you can pay 
+$3.99 for a special version of the software that you can use on several 
+computers. 
+  
+  
+Offsite Collaboration Tools 
+  
+  
+You can also try to find online tools that can help you stay in touch with 
+your colleagues and be more productive while on the road. In order to do 
+this, you have to consider the fact that your colleagues may be using 
+different tools for communicating, which makes it easier to find tools that 
+everyone will use. 
+  
+Websites like Teamwork.com and Zoho Projects allow people to connect 
+with each other online to work on a project together. Teamwork has a free 
+account option that’s perfect for people who want to collaborate with a 
+small team. Zoho Projects is available on Windows, Mac, iOS, and Android 
+devices and has a free account option that’s perfect for people who just 
+want to create one simple document. 
+  
+Fashionable is another tool for business travelers that allows you to 
+collaborate on tasks while you’re on the road. Fashionable allows you to 
+create PDFs, documents, and more, and share them across your team. 
+  
+Business Review is another tool that you can use to communicate with your 
+team while you’re on the road. Business Review allows you to create 
+private rooms for collaborative work, and it comes with advanced features 
+like search capabilities. 
+  
+VoiceKitr is an app that allows you to stay in touch with your team and 
+share files while you’re on the road. VoiceKitr has a free plan that lets you 
+create and edit documents, and it’s available for both Mac and iOS devices. 
+You can pay $2.99 for a premium version of the app that lets you perform 
+searches and find documents. 
+  
+  
+Communication 
+  
+  
+It’s important to find a tool that’s suitable for both desktop and mobile so 
+that you can easily connect with your team while you’re on the road. Using 
+Skype can be the best option for a lot of people because it’s great for video 
+communication. However, if you need to make high-quality phone calls or 
+video calls, you should go for Skype rather than Skype on the iPhone. 
+  
+Skype on the iPhone has a lot of problems when it comes to high-quality 
+video calls. In addition to the fact that you can’t make high-quality calls, 
+Skype on the iPhone will also be a lot faster if you’re making calls to other 
+Skype users. 
+  
+Skype on the desktop has many more issues than Skype on the iPhone, but 
+you can still use it to make calls to anyone on Skype. Skype on the desktop 
+also comes with features that you won’t get on Skype on the iPhone. 
+  
+Skype can also be used to create a conference call with multiple people. 
+Once the conference call is set up, you can add participants and then start 
+the call. 
+  
+Asana is a project management tool that can help you stay on top of your 
+team’s work. Asana makes it easy for people to communicate with each 
+other, and it’s perfect for people who need to track tasks, share documents, 
+and keep track of time. 
+  
+  
+  
+  
+  
+  
+Open-Plan Offices 
+  
+  
+If you need a workspace where everyone can interact and share ideas, you 
+should consider using a virtual office. Virtual offices can be set up in the 
+cloud, so you can choose to rent them from the provider that you prefer. 
+  
+Virtual offices allow you to create your own work area. Virtual offices let 
+you set up a specific space where you can work on your project without 
+annoying people who have no interest in it. Virtual offices can also be used 
+in collaborative work environments. For example, you can have a virtual 
+office in a co-working space where you can meet with people from different 
+companies. 
+  
+  
+Benefits of Virtual Offices 
+  
+  
+Virtual offices can be used to meet all of the needs of teams who want to 
+collaborate with each other. Virtual offices are great for projects where there 
+are a lot of different members on a team, like creative teams. 
+  
+Virtual offices can also be a great way to form a collaborative work 
+environment where team members who are involved with different projects 
+can meet and work together. 
+  
+Virtual offices can be used for work that involves individuals who work on 
+their own projects. For example, you can use a virtual office to work on 
+your own creative projects. 
+  
+Virtual offices also can be a great tool for collaboration. When a team 
+works together in a virtual office, they can easily share files, especially 
+when it comes to storing documents in the cloud. 
+Chapter 10 Search in Windows 10 
+  
+  
+What is the search on Windows 10? 
+  
+  
+Last week I wrote about what Search should do on Windows 10. In my last 
+post I used the word "pure" several times to indicate that Microsoft was 
+committed to not using this search box to do other things. This is still true, 
+although I have no idea what those other things are. 
+  
+The search box sits at the top of the list of items. It searches the whole 
+operating system, not just documents, and it searches locally and not in the 
+cloud. You can type in a search term and have a search engine automatically 
+display the results. This is the same as a Google search. 
+  
+The search box has four lines of text, at least on Windows 10. If you are 
+doing research, I recommend writing something in the search box for later 
+review. 
+  
+I just set up Cortana as a non-secure search, meaning that my searches are 
+not available to Windows 10 users. 
+  
+If you are using Cortana you have to write what you search for in the search 
+box. I use Windows Ink to write everything I search for, which provides a 
+visual cue to Microsoft about what I search for. If you are using the search 
+box in the Start menu you have to enter your search terms right in the 
+search box. 
+  
+In addition, Cortana remembers my searches. All you have to do is say 
+something like, "Start with search Cortana" or "Start with Cortana" and you 
+can start Cortana without typing in a search query. 
+  
+  
+  
+  
+What is the search box search history? 
+  
+  
+The Windows 10 search history is of little use to me, so I don't have a 
+problem with not using it. If you do, then you have to decide whether to 
+turn it on. 
+  
+To access the search history use "Computer History > Search History" on 
+the context menu, or search history by typing "Computer History" into the 
+search box. You can see the search history on the search history page. 
+  
+Windows 10 search history shows a history of every search that is 
+performed for each computer that has access to Cortana. I think this is a 
+step in the right direction, but it doesn't go far enough. For example, in 
+Windows 8 and 8.1 if you use the search box to start Cortana, there is no 
+search history shown. I don't know why this is. 
+  
+If you are using the search box to launch the built-in search service on 
+Windows 10, Cortana shows a search history of the search that is used. 
+However, if you want to use Google, you have to write the search term in 
+the search box instead of entering it in the context menu. 
+  
+  
+How to edit the Windows 10 search history 
+  
+  
+Sometimes I will search for information on a website and type something 
+like "LinkedIn Job" into the search box. However, I will forget that I used 
+the search box to do this search, and I will forget to add this search term to 
+my Windows 10 search history. This is easy to fix by going to the Windows 
+search history page and saving the search term in a special place, such as 
+"savannahvoice". 
+  
+There is a third-party application, Alexa Edit, that can not only remember 
+and edit the search term, but also remembers the spelling mistakes so that 
+you can correct them later. You need to pay the $10 monthly fee to use it, 
+however. 
+  
+  
+How to delete the Windows 10 search history 
+  
+  
+One downside of Cortana is that it deletes the search history after 15 days. 
+To delete the search history you have to use the Computer History or the 
+search history page. You can easily delete all of your search history by 
+going to the search history page and typing "Remove" on the context menu. 
+  
+Going to the "Get Help" page will give you links to additional help on using 
+Cortana. You can also go to the Cortana FAQ page. 
+  
+In addition, you can also turn on/off the Bing Custom Search Feature. In the 
+search box enter search terms and then click the Custom Search button. 
+  
+This functionality allows you to search the web with Cortana, or any other 
+program that supports search. It's a good idea to turn it off when you want 
+to browse the web without Cortana. 
+  
+  
+How to control Cortana 
+  
+  
+There are two ways to control Cortana. One is to use the search box on the 
+desktop to type a keyword into the search box, and then select Cortana from 
+the drop-down menu. You can also press the Windows-key and type into the 
+search box. 
+  
+If you can't find what you want to do in Cortana, you can run it as a 
+standalone program. This is called Powershell and is available in the 
+Windows 10 directory. You will also need to download and install the 
+Octopus web remote. 
+  
+To launch Cortana as a standalone program, you use the Run as... command 
+with no parameters. 
+  
+Cortana takes advantage of a built-in server. You can type a command on 
+your computer to send a signal to Cortana. Cortana will retrieve the 
+message from the server, and then send back an answer. You can send 
+Cortana commands to perform many actions. 
+  
+  
+How to send an Alexa command to Cortana 
+  
+  
+An Alexa command is exactly the same as an Alexa command. However, 
+when you say an Alexa command to Cortana on your PC, you are sending 
+an Alexa command to the PC. Cortana doesn't use any of the Alexa services, 
+and will not receive a response from Alexa. 
+  
+You can also ask Alexa for advice. For example, you can say "Alexa, what 
+can I do today?" Alexa will respond with answers such as calling a 
+rideshare company or ordering a pizza. However, Alexa is also a smart 
+speaker, which means that it is integrated with Amazon's other services. For 
+example, you can use an Alexa command to order a pizza, as you can on an 
+Echo. 
+  
+  
+How to set up a display on Windows 10? 
+  
+  
+According to Microsoft, a key feature of the new Windows 10 is the ability 
+to show the number of notifications and be able to read them, but by the 
+time you know what it is, they have already gone. 
+  
+There are plenty of ways to display more information or to turn off that 
+information but don't you miss the chance to just glance at your Windows 
+10 phone and see how many notifications there are and what you have 
+missed. 
+  
+However, if you're looking to use this feature on the new Microsoft phone, 
+there is a very easy way to access this option: simply launch the Action 
+Center or App Notifications app. Then go to the Notifications tab and you 
+will see the option to change how many notifications are shown. 
+  
+  
+How to enable priority notifications? 
+  
+  
+The best way to manage all your notifications is to prioritize them. This 
+means you can turn on a notification on your phone and while the phone is 
+in a sleep state, will ignore other notifications, like ones from your email 
+app or social apps. However, it will show up if you read your email. You 
+can change this setting at any time, but it can be a little complicated to do 
+so. 
+  
+Start by launching the Action Center or App Notifications app on your 
+phone. When you open up the app, you will see a new option to change 
+what notifications appear. Click the "Change" button, then go to the 
+"Notifications" tab and click the "Priority" option. Now choose the priority 
+level of the notifications you want to turn on, which can be defined by a 
+third-party service. 
+  
+However, if you do not want to manage the option yourself, you can also 
+choose to manage the Notification priority settings through the Settings app. 
+Go to Settings, then "Notifications & Actions" and you will see a new 
+option in this section. This will let you change the app that you want to 
+access Notification priority through, whether it be through the app that you 
+use or the Notification Center. 
+  
+  
+How to turn off notifications on Windows 10? 
+  
+  
+This is one of the most popular features, not just for mobile devices but also 
+the desktop version of Windows 10. When you have lots of notifications on 
+your phone, you can set them to turn off as soon as you are on your PC, but 
+you also have to choose which notifications you do want to have. 
+  
+There are three different sections on the Notification settings in Windows 
+10 that you need to deal with. The first section will let you know whether 
+you want notifications sent to you by applications. The second section lets 
+you make apps in the Favorites section of the Notification Center. The last 
+section lets you turn off certain app notifications. 
+  
+Firstly, if you want to stop all apps sending you notifications, click the "Get 
+notifications by apps" button on this section. If you want to make specific 
+apps send notifications to you and only you, click the "Give me 
+notifications by apps you choose" button. If you want to turn off all app 
+notifications, just turn off the "Get notifications by apps" button. 
+  
+  
+How to choose which app notifications are important? 
+  
+  
+While it can be very frustrating not having any notifications for certain 
+apps, this does not mean that you can't change which apps send you 
+notifications. The Settings app lets you set apps to send you notifications 
+when you have chosen them. This is done by clicking on the "Apps" icon at 
+the bottom-right of the taskbar. 
+  
+To change which app notifications are important, go to the "Mail, Calendar, 
+and People" section of Settings. From the "Manage my notifications" 
+section, select an app and click "Choose how notifications are delivered." 
+  
+Here you will be presented with the option to "Set notifications from this 
+app." That means you can set that app to send you notifications or you can 
+select "Show me only notifications from the apps I regularly use." 
+  
+  
+  
+  
+How to quickly fix notifications? 
+  
+  
+Another common problem is receiving notifications and immediately 
+forgetting about them, such as when you're in a gaming session. Thankfully, 
+this is easy to fix. 
+  
+From the app notifications section of the Settings app, open up the 
+"Notification settings" section. Here you can turn off notifications for 
+specific apps and apps that you no longer want to receive notifications for. 
+You can also turn off a specific app's notifications entirely by clicking on 
+the "Notifications for apps you don't use" button. 
+  
+If you find that you get too many notifications, you can manage it by going 
+into the "Unread messages" section in Settings. Here you can stop 
+individual apps from sending you notifications. The "Notification history" 
+section shows you all of the app's notifications that you have received. 
+  
+After you turn off specific notifications in this section, you will be able to 
+manage the app notifications you receive and how you receive them. 
+  
+Windows 10 does a great job of managing notifications. You do not have to 
+worry about not receiving a notification or forgetting what you were doing 
+because Windows will remind you of what you were doing by showing you 
+an icon next to the notification in the taskbar. 
+  
+  
+How to use Cortana for Windows 10 notifications 
+  
+  
+Another helpful option is Cortana. Cortana is Microsoft's virtual assistant, 
+which is powered by the intelligence of Bing. Cortana can perform multiple 
+tasks, such as reminding you of appointments, making plans, responding to 
+messages, etc. Cortana's usefulness depends entirely on you, and the way 
+you use it. 
+  
+If you want to know more about how to use Cortana, you can read our 
+article on how to use Cortana in Windows 10. 
+  
+Cortana has quite a few useful features, and notifications are a good place 
+to start. Cortana lets you know when you have new emails or calendar 
+entries in a variety of ways. You can receive a regular notification in the 
+Cortana taskbar, a notification popup, or a reminder in the Action Center. 
+  
+  
+How to set up custom alerts 
+  
+  
+Notifications are great, but not everyone will be excited about receiving a 
+notification every time you do anything. The solution to this is a second 
+method of notifications. You can set up notifications specifically for the 
+apps or websites that you care about. 
+  
+To set up notifications for an app or website, you will need to add it to the 
+"Notification center." From the Notifications section of the Settings app, go 
+to the "Notification center" section and click on an app or website. 
+  
+From the Notifications page you will see a list of all the notifications that 
+the app or website will send you. Select the one you want to customize, and 
+then click "Edit" next to the notification. 
+  
+This next step is very important: right-click on the notification that you 
+want to customize, and choose "Hide notification" from the context menu 
+that appears. This will prevent that notification from being displayed on the 
+Notification center. 
+  
+You can also choose to not have notifications sent to you at all. 
+  
+  
+How to filter notifications 
+  
+  
+Windows 10 does not offer a full-featured, true-screen pop-up notification 
+center like iOS does. You can still get notifications from the Notification 
+center, but not as many. Instead, the Notification center is integrated into the 
+taskbar. 
+  
+To find the Notification center, you will need to right-click on the taskbar 
+and select "Show more notifications" from the context menu that appears. 
+You will see a list of all the notifications that are displayed on the taskbar. 
+Select an app, and then click "Show more notifications" to display even 
+more notifications. 
+  
+  
+How to mute notifications 
+  
+  
+Another feature that Windows 10 does not have is the ability to completely 
+mute all notifications on a particular app. This is a useful feature if you do 
+not wish to see certain notifications for that app. 
+  
+First, search for the app or website that you want to block notifications 
+from. This should give you a list of all the notifications the app or website 
+will send you. Select the notification, and then click the "Hide notification" 
+option to remove it from the list. 
+  
+You can also customize what happens when a notification is removed. To 
+customize this, right-click on the notification that you want to remove, and 
+select "Options" from the context menu that appears. 
+  
+In the "Notification Settings" section, you will see options to allow 
+notifications to reappear, and also to allow you to "Snooze notifications." In 
+other words, you can manually snooze a notification for a set amount of 
+time before it reappears. 
+Chapter 11 Desktop settings 
+  
+  
+How to set up a desktop on Windows 10? 
+  
+  
+Getting started with a desktop is pretty easy. Start from the Get Started with 
+a Desktop page, and click Add a PC. It may take a few minutes to load 
+everything up, but once it’s done, just restart your computer or choose Get 
+Started from the start menu to continue. 
+  
+After you get your first desktop set up, you can work on apps, share files, 
+and more. 
+  
+  
+How to choose a default desktop on Windows 10 
+  
+  
+When you start the first time, you’ll see an empty space on your desktop 
+labeled Default Desktop. Click the default desktop and choose whatever 
+you’d like to be your default desktop. 
+  
+Note that Windows 10 defaults to the Start menu for you automatically so 
+you don’t need to make a decision on this. However, you can change this 
+setting if you prefer to always use the Start menu or your Desktop. 
+  
+  
+How to access the hidden Apps menu in Windows 10 
+  
+  
+You can access the Apps menu by clicking Start > All apps > Apps. You can 
+also access it by pressing Windows Key + A. 
+  
+  
+How to adjust desktop’s window size in Windows 10 
+  
+  
+The default window size in Windows 10 is largest, but you can adjust it in 
+the following ways: 
+  
+●     Change the Size of the computer’s default Window 
+●     Press Windows Key + A, and then click Properties. 
+●     Click Change system settings and then make the adjustments to your 
+liking. 
+  
+  
+Adjust window and webcam controls in Windows 10 
+  
+  
+You can adjust your screen’s desktop size by opening the Notification Area, 
+and then click the System button and then click Show more buttons, and 
+then select Manage windows from the list of available actions. 
+  
+You can also adjust your desktop’s window and webcam controls by 
+opening the Notification Area and clicking System (the button that’s next to 
+Show more buttons), and then click Display settings, and then click Change 
+desktop and settings. 
+  
+To adjust your display, click Settings > Display, and then set the picture size 
+to a lower size. To adjust the size of the window, click the Screen resolution 
+button and make the changes you like. 
+  
+  
+How to right-click in Windows 10 
+  
+  
+Right-clicking on an app or window is simple, and it works just the same in 
+Windows 10 as it does in Windows 7 and 8. Right-click on an app or 
+window and then click the plus (+) button. 
+  
+You can then choose from a range of different actions: 
+  
+Open a window, hide or lock that window, resize that window, or switch to 
+the Home-screen (by right-clicking on an icon or window and selecting 
+More options). 
+  
+You can right-click on an icon or window and select Open as administrator 
+to make your computer more secure. 
+  
+If you right-click on an icon or window and select Show options (or Show 
+full-screen icons), you can resize the window or change the window’s 
+aspect ratio. 
+  
+  
+How to open Cortana with your voice in Windows 10 
+  
+  
+Microsoft’s digital assistant Cortana is one of the coolest features in 
+Windows 10. You can find Cortana in the search box of your taskbar, and 
+you can open it by pressing Windows Key + Cortana. 
+  
+You can ask Cortana to do a lot of things in Windows 10, such as set 
+reminders, make phone calls, check weather forecasts, set timers, and more. 
+You can also set Cortana to open with a specific phrase. For example, if you 
+say, “Hey Cortana, let’s go to Target,” you’ll automatically open Cortana 
+and search Target for deals and other details. You can also learn more about 
+Cortana by reading about its features. 
+  
+  
+How to save specific apps in Windows 10 
+  
+  
+Windows 10 is great because it can open a bunch of different types of 
+applications for you. The list of available apps can be changed by going to 
+the Start menu and then going to Settings > Apps & features, and then 
+clicking the App & features menu. 
+  
+One way to find out what apps are installed is by using the search box in 
+your Start menu, or by clicking the All apps tab of your Windows 10 
+taskbar. 
+  
+  
+How to send email with the taskbar in Windows 10 
+  
+  
+Windows 10 lets you access email with the Windows taskbar. 
+  
+To see the Windows taskbar on the Start menu, just click Start > All apps. 
+Click the Windows taskbar and you’ll see an option called Mail. Click the 
+Mail option to start a new mail message. You can also use Mail to access 
+your Exchange email, and you can read your recent messages by clicking 
+on the message’s thread view (highlighted in red below). 
+  
+  
+How to use Cortana on the Windows taskbar 
+  
+  
+You can use Cortana to do lots of different things with the Windows 
+taskbar, such as find out the weather, access search terms, set alarms, and 
+more. 
+  
+To get Cortana to work, just use the voice command Cortana in Windows 
+10. To launch Cortana, you can say something like “Hey Cortana”. 
+  
+To access search terms, just say, “Hey Cortana, search the web for iPhone.” 
+You can also access “Things to do” by saying “Hey Cortana, what’s the 
+closest Starbucks?” 
+  
+  
+  
+How to write notes with the Windows taskbar 
+  
+  
+If you write notes in Windows 10, you’ll find it easier to do so using the 
+Windows taskbar. 
+  
+All you need to do is start writing a note by clicking the Windows taskbar. 
+You’ll then get a free-form keyboard, a right-click, and a blank space. 
+  
+Once you’re finished writing the note, click the Windows taskbar, then 
+select Edit. You’ll then have the option to save it as a Word or PowerPoint 
+document. 
+  
+  
+How to use Quick Access for Cortana 
+  
+  
+If you don’t want to start typing to access Cortana, you can just use the 
+Quick Access function for her to start working immediately. 
+  
+Click the Windows taskbar and go to Settings > Show quick access for 
+Cortana. 
+  
+Click the Start button, then click Settings > Show quick access for Cortana. 
+  
+Select the General option in the drop-down menu, then click Start. 
+  
+You’ll then be able to use the keyboard shortcut Ctrl + C to start typing the 
+first few letters of a word, and the Cortana logo will show up on your 
+taskbar when you’re done. 
+  
+  
+  
+  
+  
+How to use File Explorer on the Windows taskbar 
+  
+  
+If you’re working in a Windows 10 window, you can use the Windows 
+taskbar to access the file explorer, and if you want to find a particular file, 
+you can even right-click on it and select the File Explorer option. 
+  
+To start a new folder, just start a new Word document or Excel spreadsheet, 
+and then right-click on the file to go to the folder list. To find the particular 
+file you’re looking for, right-click on the name of the file and select File 
+Explorer. 
+  
+  
+How to find the clipboard and share the contents 
+  
+  
+Windows 10 includes a clipboard manager that lets you copy and paste 
+content to and from a number of other applications, but you can also use the 
+Windows taskbar to access the clipboard. 
+  
+To access the clipboard, just right-click on the Windows taskbar. You’ll then 
+see a menu that has options for Copy and Paste. 
+  
+To copy an item to the clipboard, right-click on it. When the keyboard 
+appears, click Paste. 
+  
+To paste an item to the clipboard, then click Copy. 
+  
+  
+How to edit text on the Windows taskbar 
+  
+  
+Sometimes you want to edit text in Windows 10 and you don’t want to open 
+up the correct application. However, you don’t always have the text you 
+want saved on your hard drive. 
+  
+You can edit text directly on the Windows taskbar by opening the system 
+tray (highlighted in red below). Just click on the icon that appears. 
+  
+Then you can click Edit and click the big arrow icon, which has a tiny text 
+editor button on it. 
+  
+You can then type and edit the text you’re looking for. 
+  
+  
+How to browse the Windows taskbar 
+  
+  
+There is some Windows 10 functionality that can’t be accessed from the 
+taskbar. However, it’s still worth knowing how to browse the taskbar so you 
+can check it for apps that can be launched from it. 
+  
+You can right-click on the Start button and select New Windows app, then 
+enter the name of the app you want to launch and click Launch. 
+  
+If you want to browse the Windows taskbar and see all the apps and 
+accessories that you can launch from it, there are also a number of shortcuts 
+you can press. 
+  
+If you want to view the running apps on your taskbar, click on the Start 
+button and then select Settings > Apps & features > Select All apps on the 
+left. 
+  
+If you want to see all of the apps installed on your computer, then click on 
+the Start button and then select Settings > Apps & features > Select All apps 
+on the left. 
+  
+If you want to launch any app installed on your computer, then right-click 
+on the Start button and select Run. This will launch the Run dialogue box, 
+where you can launch any app on your computer that is installed on your 
+system. 
+  
+If you want to search the Windows 10 taskbar for apps and accessories that 
+can be launched from it, just click the Start button and select Search. This 
+will launch the search box. 
+  
+  
+How to set up a desktop on Windows 10? 
+  
+  
+By default, the Start Menu is hidden by default and cannot be seen when 
+you start the OS. To make it visible again, you need to press the Windows + 
+R keys. Doing so will bring up a small window with options such as Add a 
+taskbar widget, Use Fullscreen app, and Set desktop background. 
+  
+It is then up to you to select the Start menu option that will open the Start 
+Menu. Once you click the Start menu, the basic task of setting up a desktop 
+on Windows 10 is over. But there are a couple of advanced things you 
+should know about. 
+  
+Step 1: Go to Settings > Update & security > Activation on your desktop, 
+and select it. 
+  
+Step 2: Go to the next menu on the left-hand side. Then select “Microsoft 
+account.” 
+  
+Step 3: Click “Activate a Microsoft account” to use your Windows account 
+to start and run the desktop. 
+  
+Step 4: If you don’t have one yet, you will have to sign up for one. 
+  
+Step 5: Once you have registered your account, select “Check now.” 
+  
+Step 6: The activation process should start, and it should finish after a few 
+minutes. 
+  
+If you see an error while setting up a desktop on Windows 10, it means that 
+the activation was unsuccessful. Make sure that you check that this message 
+as soon as possible. After that, you can proceed with the next steps. 
+  
+Step 7: Check the “Activation may fail” message if you see it while 
+installing your new desktop. 
+  
+Step 8: Make sure that the files are in the default locations of Windows 10. 
+  
+Step 9: Make sure that the language is set to English. 
+  
+Step 10: You can now go ahead and set up the desktop. In case you have 
+used a 3D printer in the past, you will have to place the files in the 
+designated places. For example, if you have created a 3D model, you will 
+have to place it in a 3D folder in your Desktop folder. 
+  
+  
+How to install a Linux desktop on Windows 10? 
+  
+  
+If you have used Linux, you will know that Linux is a very versatile 
+operating system and you can install it on any machine that runs Microsoft 
+Windows. By using a virtual machine to install a Linux desktop, you will 
+get a very good experience. 
+  
+This article will walk you through the steps of setting up a Linux desktop 
+using a virtual machine. This procedure is for testing purposes only. Linux 
+can be difficult to set up for most users, so proceed at your own risk. 
+  
+Step 1: Go to the option that says “Desktop Environments”. 
+  
+Step 2: Select “Ubuntu” as your Linux desktop of choice. 
+  
+Step 3: Click “Install Ubuntu”. 
+  
+Step 4: A window will pop up with all the required information regarding 
+the installation of Ubuntu. You will need to follow the on-screen 
+instructions to set up your new Ubuntu desktop. 
+  
+Step 5: The installer should detect the installed media of Ubuntu. Just hit 
+“Finish” and you should be ready to go. 
+  
+Step 6: Once you see a “Welcome to Ubuntu” message, it means that the 
+virtual machine has been successfully installed and you can now log into 
+your Ubuntu desktop. 
+  
+Step 7: For now, you can just install Ubuntu and enjoy your new Linux 
+desktop for now. Just make sure that you know your way around the Unity 
+desktop environment before setting it up for yourself. 
+  
+If you have trouble installing the desktop, you can visit the official Ubuntu 
+website to download a 30 day trial version. Once you’ve set up your 
+Ubuntu desktop, you can make the final choice on whether to permanently 
+install it on your system. 
+  
+  
+How to set up a virtual desktop on Windows 10? 
+  
+  
+Like we mentioned above, you can set up a virtual desktop in Windows 10 
+using a virtual machine. This works exactly the same as the virtual machine 
+procedure described above. It is a good option if you do not want to install 
+the Windows desktop on your computer. 
+  
+Step 1: Log into Windows 10. 
+  
+Step 2: Right click the Start button and select “Manage”. 
+  
+Step 3: Click “Desktop”. 
+  
+Step 4: Navigate to the Windows “Software Library”. 
+  
+Step 5: Click on the “Virtual Machines” tab. 
+  
+Step 6: Navigate to the virtual machine in question and click on the 
+“Install” button. 
+  
+Step 7: You will be prompted to enter your Virtual Machine license key. 
+Just click “I Agree” to proceed with the installation. 
+  
+Step 8: Follow the on-screen instructions to complete the installation 
+process. 
+  
+Step 9: You should now be running a virtual Windows 10 desktop. You can 
+now test out the features of the virtual machine. Just make sure that you 
+have downloaded the 30 day trial version of Ubuntu. 
+  
+It would be a good idea to create a folder where you can store your favorite 
+virtual machines. So that you can access it from anywhere in your system. 
+You can call this folder the “Virtual Machine Folder”. 
+  
+Note: You can access the folder from your PC by right clicking on the 
+“Virtual Machine Folder” and selecting “Properties”. 
+  
+  
+Conclusion 
+  
+  
+What are the advantages of Windows 10? Why should businesses make 
+the switch? 
+  
+  
+Windows 10 offers the most benefits for IT professionals by giving them 
+greater control over security and reducing the operating system footprint to 
+30% from around 60%. Also, it has the unique ability to make specific 
+upgrades available for employees when and where they need them. For 
+example, on all devices, upgrading the Windows 8.1 operating system to 
+Windows 10 provides an experience designed to work on a device with a 
+single processor core. 
+  
+This also provides businesses with greater control over which devices their 
+employees use, helping them reduce the risk of data breaches and ensure the 
+latest device security measures are in place. With Windows 10, enterprises 
+also gain greater control over the devices they use to run Office, so you can 
+download those documents for your device without any data being 
+downloaded back to the company. 
+  
+  
+Is it possible to upgrade from an older operating system to Windows 
+10? 
+  
+  
+Yes, as long as the device has an Intel processor and is connected to a 
+network. If it doesn't have an Intel processor or is not connected to the 
+Internet, then an upgrade is not possible. 
+  
+  
+  
+  
+  
+Can I migrate data? 
+  
+  
+Yes. Once you've moved to Windows 10, data and apps will be downloaded 
+automatically, so there is no need to use any of the migration tools in 
+Windows 10. However, when using the migration tool to move large 
+amounts of data, it is essential that you backup all of your important data 
+and apps, and that you perform a complete backup of the system to your 
+local hard drive. 
+  
+  
+What are the benefits of the unified product offering? 
+  
+  
+Windows 10 combines all the platforms and services offered under the 
+Windows and Devices Group to create a user experience designed to 
+enhance productivity, simplify workflows, and ensure compatibility across 
+all devices. With the new Windows 10 operating system, you can also take 
+advantage of new capabilities, including Windows Hello, where you can 
+easily set up secure biometric authentication with your face, fingerprint, 
+iris, or voice. Additionally, Windows 10 provides cloud-based security 
+solutions designed to protect both endpoints and the enterprise. For 
+example, Windows Defender Advanced Threat Protection (ATP) protects 
+against advanced threats, such as zero-day threats and malware. 
+  
+Windows 10 includes over 200 new apps to help you work more efficiently. 
+These include Word, Excel, PowerPoint, OneNote, and Skype. Moreover, 
+Windows 10 includes a number of built-in productivity tools that can help 
+reduce your technical complexity and give you the control you need to 
+deliver a more innovative and intuitive experience for your users. 
+  
+  
+  
+  
+How does Windows 10 provide new security tools to protect corporate 
+data? 
+  
+  
+The new Windows 10 provides new security tools to help protect corporate 
+data. Windows Defender Advanced Threat Protection (ATP) provides 
+actionable threat protection to keep the corporate network secure. Windows 
+Defender Antivirus automatically keeps Windows and apps up to date, 
+while Windows Defender Security Center provides a centralized control 
+panel to help you make quick and simple device changes and configure 
+settings, such as parental controls, file encryption, and the notification 
+system. 
+  
+Other Windows 10 security tools include Windows Defender Application 
+Guard, which helps protect data stored on the device while it is in flight 
+from malware, and Windows Hello, which allows you to set up secure 
+biometric authentication with your face, fingerprint, iris, or voice. 
+  
+Other features include Windows Hello for Business, which extends 
+Windows Hello to allow enterprise users to securely log into their devices 
+via Active Directory and a trusted device. Windows Hello for Business also 
+provides the option to share login information with people in other 
+organizations. 
+  
+  
+How can I use Windows 10 with my existing devices? 
+  
+  
+As you use Windows 10, you can continue to use your devices and get the 
+benefit of free updates to the Windows 10 system as well as the capabilities 
+that they provide, without any interruption to the device. So, for example, if 
+you are using Windows 7 or Windows 8, you can use Windows 10 
+alongside these operating systems and get the benefit of the upgrade to 
+Windows 10. 
+  
+  
+  
+What are the versions of Windows 10? 
+  
+  
+Windows 10 will be offered in three editions: 
+  
+●     Windows 10 Home (free upgrade offer) 
+●     Windows 10 Pro (starting at $49.99) 
+●     Windows 10 Enterprise (starting at $69.99) 
+●       Windows 10 Education (for educational institutions, schools, and 
+businesses) is not included in the free upgrade offer. However, it will 
+be included in the Education license of Windows 10 Enterprise, 
+which costs $39.99 for up to 5 PCs and $79.99 for up to 10 PCs. To 
+purchase the education license, visit www.windows.com/education or 
+call 1-877-WIN-EDU (1-877-378-4336). 
+  
+  
+Is Windows 10 available in other languages? 
+  
+  
+Yes, Windows 10 is available in over 100 languages. To access this 
+language pack, you can visit the Language Store. Additionally, to learn 
+more about the languages available, visit www.microsoft.com/en- 
+us/ebook/com.w7eu. 
+  
+  
+Can I access the Windows 10 Creators Update before I install Windows 
+10 Creators Update? 
+  
+  
+In the U.S., Australia, Canada, China, France, Germany, Hong Kong, Italy, 
+Japan, and Singapore, the Windows 10 Creators Update will be made 
+available on April 11, 2017, and the Windows 10 Creators Update will be 
+available in the second half of 2017. 
+  
+In other countries, the Windows 10 Creators Update will be made available 
+before Windows 10 Creators Update, or on a date to be determined. 
+  
+  
+Can I upgrade my Windows 7 or Windows 8.1 device to Windows 10? 
+  
+  
+Yes. You can upgrade to Windows 10 on a per-device basis, or you can 
+upgrade to Windows 10 as a service. To use the "as a service" option, go to 
+Settings > Update & Security > Windows Update, click the Check for 
+Updates button, and follow the steps for each supported edition of Windows 
+10. 
+  
+  
+When will I get the Windows 10 Creators Update? 
+  
+  
+Windows 10 Creators Update will be released as a feature update. This 
+means that the product will continue to be updated, with some features 
+added, others removed, and the platform and kernel architecture upgraded. 
+Windows 10 Pro edition and Enterprise edition customers will receive the 
+Creators Update on April 11, 2017. 
+  
+  
+How long will it take to install the Creators Update on a PC? 
+  
+  
+This update will require a little more time to install compared to other 
+updates because the Creators Update includes some new features, such as 
+Mixed Reality, as well as some new security technologies. Some features 
+require the system to be rebooted to download the updates, and some 
+require an automatic restart, such as security and kernel updates. We 
+anticipate it will take no more than 20 minutes for the system to completely 
+download, install, and reboot. However, you can begin to install the update 
+now if you wish. When your device is ready to install the Creators Update, 
+run the update setup program by going to Settings > Update & Security > 
+Windows Update > Check for Updates. 
+  
+After you install the update, you will receive a notification to reboot. You 
+can delay the reboot to any time up until the Creators Update has fully 
+installed. 
+  
+  
+When will the Windows 10 Creators Update be available for my 
+device? 
+  
+  
+Windows 10 Creators Update will be released as a feature update. This 
+means that the product will continue to be updated, with some features 
+added, others removed, and the platform and kernel architecture upgraded. 
+The final release of the Windows 10 Creators Update will be available for 
+download and installation to qualifying devices as a free update later this 
+year. 
+  
+Additionally, the Windows 10 Creators Update will be made available to 
+users as a feature upgrade from Microsoft if your device is compatible with 
+the update. 
+  
+  
+How do I check to see if my device is compatible? 
+  
+  
+Visit this page for more details on which devices are compatible with the 
+Windows 10 Creators Update. Devices listed here are supported by the 
+software in the Creators Update. Microsoft announced the Windows 10 
+Creators Update in March 2017, and finalized the feature set in April 2017. 
+Devices listed here are supported by Windows 10 Creators Update. 
+  
+  
+Which versions of Windows 10 are supported? 
+  
+  
+Windows 10 Professional and Windows 10 Enterprise editions are 
+supported on all supported Windows 10 editions and are not listed on this 
+page. However, Windows 10 Education edition is only supported on 
+Windows 10 Home, Windows 10 Education, and Windows 10 Education 
+Insiders. 
+  
+  
+When will my device be released to the Windows Insider Program? 
+  
+  
+We announced that Windows 10 Creators Update will be available in the 
+Windows Insider Program from April 11, 2017, but we are still in the final 
+stages of production. Please continue to stay tuned to Windows Blogs for 
+the latest on the Windows Insider Program. 
+  
+  
+Will I get access to a free Windows 10 Creators Update upgrade offer 
+for my device? 
+  
+  
+No. If you upgrade to Windows 10 Creators Update before the end of the 
+year, your device will automatically be upgraded to the Windows 10 Fall 
+Creators Update. However, if you upgraded from Windows 7 or Windows 
+8.1 to Windows 10 in the previous year, then you will be upgraded to the 
+Windows 10 Creators Update. 
+  
+  
+I want to upgrade to Windows 10 Creators Update today! Where can I 
+get it? 
+  
+  
+You can download and install the Windows 10 Creators Update from the 
+Windows 10 Start Menu. 
+  
+  
+  
+  
+  
+  
+Can I upgrade from Windows 10 Anniversary Update? 
+  
+  
+No. You cannot install or upgrade an existing version of Windows 10. Only 
+devices with the Anniversary Update or later will be eligible for the 
+Windows 10 Creators Update. 
+  
+  
+Which versions of Windows 10 are supported? 
+  
+  
+Windows 10 Mobile is not supported on Windows 10 Home. You will only 
+be able to run the Windows 10 Mobile Creators Update on Lumia 950 and 
+Lumia 950 XL devices, and you will not be able to upgrade these devices to 
+the Windows 10 Creators Update. 
+  
+  
+Can I download and install Windows 10 Home or Windows 10 
+Enterprise? 
+  
+  
+No. You cannot download and install Windows 10 Home or Windows 10 
+Enterprise editions on any of these devices: 
+  
+●     Home Edition devices that use a non- enterprise version of Windows 
+10; 
+●     Laptops that are not a Microsoft Signature Edition device; 
+●       Purchased versions of Windows 10 Professional, Windows 10 
+Education, or Windows 10 Enterprise or are sold without any of these 
+options; 
+●     Low-cost devices running Windows 10 Home; 
+●     Toshiba systems; 
+●       Any Windows 10 devices that are powered by Intel Celeron 
+processor or lower. 
+  
+  
+Will I get updates for the versions of Windows 10 I already have? 
+  
+  
+Yes. Your device will receive regular updates for the Windows 10 versions 
+of your device that are available for you to upgrade. 
+  
+  
+How do I get Windows 10 Creators Update on a tablet? 
+  
+Visit this page for details on which tablets are compatible with the Windows 
+10 Creators Update. 
+  
+  
+Can I upgrade from an old version of Windows 10? 
+  
+  
+No. You will be unable to upgrade to Windows 10 Creators Update from 
+Windows 7 or Windows 8.1. You will not be able to upgrade an installed 
+version of Windows 10 to Windows 10 Creators Update. 
+  
+  
+Bring your own device to the workplace 
+  
+  
+"Bring your own device" or "BYOD" is a phenomenon that has brought 
+mobile business into focus. Apple was the early poster child of BYOD, but 
+its own actions have undermined its position in the workplace. Apple is now 
+suing some of the biggest enterprise storage companies. 
+  
+The idea behind BYOD is that a business's employees can choose their own 
+devices from the market, that they can work wherever they want, that they 
+can tinker with their computers to make them their own. The thinking 
+behind this is that your employees don't necessarily care about your 
+company's design aesthetic or its software preferences. They care about the 
+devices they use to do their job and Microsoft was the first to embrace this 
+model. 
+  
+Over time, Windows 10 also has some clever solutions for this use case. 
+The Windows 10 Creators Update has already dropped a number of new 
+tools to enable business app-makers and the general public to easily design, 
+build, and run their own business apps on the phone. 
+  
+  
+How are other businesses using it? 
+  
+  
+Some businesses will only use Microsoft's software, and that's fine. What's 
+also true is that you can take advantage of the plethora of business features 
+in Windows 10 for all kinds of projects, such as mobile business apps, IoT 
+devices, and document management. Here are some examples of what I call 
+"Windows 10 in a Box," meaning simple business solutions. 
+  
+  
+Box 
+  
+  
+Box, the cloud storage giant, offers software to help your employees backup 
+all of their devices—smartphones and tablets as well as storage and security 
+services. There are cloud-based and on-premises versions of the solution, so 
+you can choose whichever is best for you. 
+  
+  
+Handy 
+  
+  
+Handy is a small and inexpensive ($100 a year) add-on to Android, iOS, 
+and Windows mobile devices. This tool lets you manage every aspect of 
+your mobile device. You can see usage stats, see if it's been reported stolen, 
+and even wipe the device if you suspect it was stolen. 
+  
+  
+Dropbox Business 
+  
+  
+If you use Dropbox, then you know that it also has a business solution for 
+you. Dropbox Business gives you tight security measures for your files and 
+contacts so that only you can access them. It also has mobile apps for 
+Windows and iOS. 
+  
+  
+Samba 
+  
+  
+If you use Microsoft SharePoint to manage business documents, then you 
+know that you need to be able to edit and add to them. Microsoft's Samba is 
+a cross-platform solution that allows you to edit and share documents on 
+Windows, Mac, iOS, Android, and Chrome OS devices. Samba is also able 
+to share files from one device to another, so you can share files between 
+Windows, Mac, iOS, Android, and Chrome OS devices. 
+  
+Again, Microsoft offers an array of tools to help you manage your mobile 
+devices, whether you are using a business app, a plug-in, or the "Windows 
+10 in a Box" approach. The bottom line is that mobile business apps are the 
+best business apps and they're getting better all the time. 
+  
+Your gateway to knowledge and culture. Accessible for everyone.  
+  
+Official Telegram channel  
+  
+Z-Access  
+  
+https://wikipedia.org/wiki/Z-Library 
+z-library.sk       z-lib.gs         z-lib.fm       go-to-library.sk 
+This file was downloaded from Z-Library project 
+
+
+---
+## 📖 WINDOWS-11-USER-GUIDE
+*(Manba: Windows-11-User-Guide.pdf)*
+
+WINDOWS 11 USER GUIDE 
+For All Users 
+THE COMPLETE BEGINNER TO EXPERT USER 
+GUIDE FOR MASTERING AND UNLOCKING THE 
+USE OF WINDOWS 11 OS WITH EASE 
+  
+  
+  
+  
+  
+MATT VIC 
+Copyright © 2022 by Matt Vic 
+All rights reserved. No part of this publication may be reproduced, 
+distributed, or transmitted in any form or by any means, including 
+photocopying, recording, or other electronic or mechanical methods, without 
+the prior written permission of the publisher, except in the case of brief 
+quotations embodied in critical reviews and certain other noncommercial uses 
+permitted by copyright law. 
+CONTENTS 
+CONTENTS 
+INTRODUCTION 
+CHAPTER ONE 
+SPECIFICATIONS AND REQUIREMENTS FOR INSTALLING 
+WINDOWS 11 
+UPGRADING YOUR CURRENT PC TO WINDOWS 11 
+WINDOWS 11 DOWNLOADING AND INSTALLATION PROCESSES 
+UNDENIABLE FEATURES THAT COME WITH WINDOWS 11 
+REPOSITIONING OF THE START AND SEARCH MENU OPTIONS 
+RESTRUCTURING OF FILE EXPLORER 
+MULTIPLE DESKTOPS ACCESSIBILITY WITH ONE MONITOR 
+IMPROVED INTERFACE COHESION 
+REESTABLISHMENT OF THE WIDGETS 
+EXCELLENT ARRANGEMENT WITH THE SNAP FEATURE 
+WINDOWS SCREEN ARE MORE TRANSLUCENT 
+ENHANCEMENT OF MICROSOFT TEAM APPLICATION (TEAM CHAT) 
+CHAPTER TWO 
+GETTING STARTED WITH WINDOWS 11 
+CHOOSING WINDOWS 11 VERSIONS 
+UNLOCKING THE SCREEN AND SIGNING IN TO YOUR COMPUTER 
+CREATING USER ACCOUNT 
+CREATING AND ADDING A NEW MICROSOFT ACCOUNT 
+CREATING AND ADDING OTHER USER ACCOUNTS (FAMILY, FRIEND, AND 
+LOCAL) 
+CREATING USER ACCOUNTS FOR FAMILY AND FRIEND 
+SAFEGUARDING YOUR ACCOUNT AND INFORMATION 
+EXAMINING WINDOWS 11 START MENU 
+OPENING A START MENU APPLICATION AND PROGRAM 
+FINDING SPECIFIC ITEMS ON THE START MENU 
+VIEWING, RETURNING, AND CLOSING A PROGRAM 
+CUSTOMIZING THE START MENU 
+PIN/UNPIN START MENU ITEM 
+REORDERING START MENU ITEMS 
+GET YOUR FOLDER ADDED TO THE START MENU 
+TEMPORARY EXITING FROM THE COMPUTER 
+EXITING FROM THE COMPUTER FOR A LONG PERIOD 
+CHAPTER THREE 
+NAVIGATING AROUND THE DESKTOP AND THE START MENU 
+DUMPING UNNEEDED ITEMS INTO THE RECYCLE BIN 
+APPROACHING THE TASKBAR 
+MINIMIZING WINDOWS TO THE TASKBAR AND RESTORING THEM FROM THE 
+TASKBAR 
+ACCESSING OTHER TASKS WITH THE TASKBAR’S JUMP LIST 
+ACCESSING THE TASKBAR SENSITIVE AREAS 
+NOTIFICATION AND QUICK SETTINGS PANELS 
+ACCESSING NOTIFICATION PANEL 
+ACCESSING THE QUICK SETTINGS PANEL 
+CUSTOMIZING WINDOWS 11 QUICK SETTINGS PANEL 
+PLAYING WITH WIDGETS 
+CUSTOMIZING THE TASKBAR 
+REMOVING THE DEFAULT ICON FROM THE TASKBAR 
+SHIFTING TASKBAR ICON TO THE LEFT SIDE FROM THE CENTER 
+USING VIRTUAL DESKTOP 
+CHAPTER FOUR 
+EXAMINING A TYPICAL DESKTOP WINDOWS 
+PULLING OUT A WINDOW’S TITLE BAR 
+EXAMINING FILE EXPLORER MENU BAR 
+REVIEWING FOLDERS WITH A WINDOW’S ADDRESS BAR 
+QUICK SHORTCUT WITH THE NAVIGATION PANE 
+MOVING WITHIN A WINDOW WITH A SCROLL BAR 
+MOVING WINDOWS AROUND THE DESKTOP 
+MOVING A WINDOWS TO THE TOP OF THE PILE 
+MOVING A WINDOW FROM HERE TO THERE 
+MAKING A WINDOWS FILL THE ENTIRE DESKTOP 
+MAKING WINDOWS BIGGER OR SMALLER 
+PROPERLY LAY TWO WINDOWS SIDE BY SIDE 
+MAKING WINDOWS OPEN TO THE SAME DARN SIZE 
+CHAPTER FIVE 
+MANAGING FOLDERS AND FILES 
+BROWSING THE FILE EXPLORER CABINETS 
+GETTING A BREAKDOWN ON FOLDERS 
+SEEING THE FILES ON A DRIVE 
+CHECKING WHAT IS INSIDE A FOLDER 
+CREATING A NEW FOLDER 
+RENAMING A FILE OR FOLDER 
+SELECTING GROUP OF FILES OR FOLDERS 
+GETTING RID OF A FILE OR FOLDER 
+MOVING OR COPYING AND PASTING FILES AND FOLDERS 
+KNOWING MORE INFORMATION ABOUT FILES OR FOLDERS 
+WORKING WITH FLASH DRIVE AND MEMORY CARD 
+ONEDRIVE YOUR MAIN CLOUD STORAGE 
+SETTING UP ONEDRIVE 
+TWEAKING YOUR ONEDRIVE SETTINGS 
+OPENING, SAVING, AND DELETING FILES WITH ONEDRIVE 
+CUSTOMIZING ONEDRIVE WITH FILES ON DEMAND TO DECIDE THE FILES THAT 
+WILL STAY ON ONEDRIVE, PC OR BOTH 
+GAINING ACCESS TO ONEDRIVE OVER THE NET 
+CHAPTER SIX 
+WORKING WITH APPS, PROGRAMS, AND DOCUMENTS 
+LAUNCHING AN APPLICATION OR PROGRAM 
+OPENING A DOCUMENT 
+SAVING YOUR DOCUMENT 
+SELECTING A PROGRAM FOR OPENING A FILE 
+MOVING HERE AND THERE WITHIN MICROSOFT STORE 
+INSTALLING AN APP FROM THE MICROSOFT STORE APP 
+UNINSTALLING AN APPLICATION 
+CHAPTER SEVEN 
+QUICK ACCESSIBILITY WITH DESKTOP SHORTCUTS 
+COMPLETE INSTRUCTIONS FOR CUTTING, COPYING, AND PASTING 
+SELECTION OF AN ITEM FOR CUTTING AND COPYING. 
+CUTTING, COPYING, AND PASTING THE SELECTED ITEM 
+CHAPTER EIGHT 
+SURFING THE WEB 
+CONNECTING WIRELESSLY TO THE INTERNET 
+BROWSING YOUR IN-BUILT WEB BROWSER (MICROSOFT EDGE) 
+CHOOSING MICROSOFT EDGE HOME PAGE 
+REVISITING YOUR FAVORITE SITE 
+CHANGING THE SEARCH ENGINE FOR FINDING INFORMATION 
+FINDING ALL TYPES OF INFORMATION ON THE INTERNET 
+SAVING ALL TYPES OF INFORMATION FROM THE INTERNET 
+SAVING A PICTURE 
+SAVING A WEBPAGE 
+SAVING TEXT 
+CHAPTER NINE 
+CUSTOMIZE YOUR WINDOWS SETTINGS 
+LOCATING THE RIGHT SWITCH 
+FLIPPING THROUGH WINDOWS 11 SETTINGS SWITCHES 
+ALTERING THE SYSTEM SETTINGS 
+ADJUSTING NOTIFICATION SETTINGS 
+MANAGING, CONNECTING, AND ADJUSTING BLUETOOTH DEVICES AND OTHER 
+DEVICES 
+ADDING A BLUETOOTH DEVICE 
+INSTALLING YOUR PRINTER AND SCANNER 
+PERSONALIZATION (CHANGING THE LOOK AND FEEL OF YOUR COMPUTERS) 
+CUSTOMIZING YOUR DESKTOP BACKGROUND 
+TWEAKING YOUR COMPUTER’S THEME 
+ADDING AND REMOVING APPS 
+ALTERING TIME, DATE, LOCATION, AND LANGUAGE 
+Conclusion 
+INDEX 
+INTRODUCTION 
+Windows has come with the new evolution, the new Operating System (OS) 
+that shockwave the whole world, just as you know that without an Operating 
+System your Computer, Android, Laptop and Tablet devices can’t work in 
+the same way to the car which cannot work without an engine, this signifies 
+the importance of the Operating System (OS) in the life of every computer 
+device. 
+No doubt, Windows is the most preferred and favorite OS with 75% of users 
+in both laptop and desktop computers in the world because it has an amazing 
+interface and its functionality is clear. In pursuit to satisfy customer desire, 
+Microsoft attempted to release a new Operating System known as Windows 
+11 to create an astonishing and incredible interface that will be appreciated by 
+all of its users. 
+Windows 11 announced the release of the popular Operating System on 5th, 
+October 2021 as a replacement over Windows 10 with a lot of changes, 
+development, and functionality simply to improve user experience. 
+Among Windows 11 new changes is improved interface cohesion to replace 
+the outdated and slowing interface of Windows 10, such as the new column 
+layout in the File Explorer which is more user friendly, certain commands are 
+also added to the right-click menus which are Cut, Copy and Paste to make it 
+easier and faster in executing those action. 
+Others features are snapped feature arrangement, repositioning of the start 
+menu and search button, enhancement of the Team Chat, and others. 
+Nevertheless, there have been certain comments from some of the Windows 
+users that the new OS is confusing and frustrating, of course, it ought to, that 
+is what new changes and development brought but do not worry, this user 
+guide get you covered with all the new things you should know about 
+Windows 11 starting from the specification and installation of the OS and to 
+every other aspect you should know whether as an old user who has been in 
+the field for so long or potential user who has never Windows OS. 
+The main purpose of this user guide is to put you on the easiest track for 
+mastering the new Windows 11 OS, kindly pick a copy of this user guide and 
+begin exploration. 
+CHAPTER ONE 
+SPECIFICATIONS AND REQUIREMENTS FOR 
+INSTALLING WINDOWS 11 
+The challenges of most of the Windows users after the release of Windows 
+11 were innumerable and that prompted them to ask multiple questions like, 
+how do I get Windows 11 OS into my PC? Am I eligible to use windows 11 
+? is my PC have the requirement specification for using Windows 11? And 
+many more questions about the installation and usage of Windows 11. 
+To answer all these above questions and as well benefit from the new features 
+that come with Windows 11, check the table below for specifications and 
+requirements you need to have before the installation and exploration of 
+Windows 11 on your PC. 
+SPECIFICATIONS 
+REQUIREMENTS 
+RAM 
+Minimum of 4 GB 
+Storage 
+Minimum of 64 GB of storage device on 
+your PC 
+Processor 
+Minimum of 2 Cores running on a 
+compatible 64-bit processor or 1 GHZ. 
+Display 
+Must have HD (720p) having a display that 
+is more than 9 inches diagonal with a 
+minimum of bit per color channel. 
+Trusted  
+platform 
+module (TPM) 
+Minimum of 2.0 version 
+Graphics Card 
+A later version that has WDDM 2.0 driver 
+or it has compatibility with DirectX12 
+System Firmware 
+Unified Extensible Firmware Interface 
+UEFI with Secure Boot capable 
+The above are the requirement that your PC must have before you can install 
+Windows 11 otherwise, you will have to purchase a new PC before you can 
+enjoy new features that are characterized with Windows 11. 
+There is an alternative means of checking PC eligibility for using Windows 
+11 and that is through the Microsoft PC Health Check App. Microsoft PC 
+Health Check App will give you guides on what you need to have or know 
+before making a step of installing Windows 11. 
+UPGRADING YOUR CURRENT PC TO WINDOWS 11 
+Windows 11 upgrading requirement is a very stringent one compared to 
+previous windows, majorly all PCs sold above three years are not eligible but 
+PCs within and below three years are 80% okay for upgrading. 
+WINDOWS 11 DOWNLOADING AND INSTALLATION 
+PROCESSES 
+There are certain steps you need to take before downloading and installing 
+Windows 11 for an old user of Windows which involves meeting the 
+Windows 11 specification requirement as I have said earlier. The question is 
+how do I check my requirement? That is a good question. All you need to do 
+is to download the PC Health Check for checking Windows 11 requirement 
+options, including downloading and installation of Windows 11. 
+Once you are clarified by the PC Health Check, the next thing is to navigate 
+to the settings and then: 
+v    Tap Windows updates and select Update Windows, if the 
+requirements are satisfied, the PC will begin downloading process, 
+once it is completed, you are good to go with Windows 11. 
+Note: A firm internet connection is required to download and install windows 
+11 into the system. 
+UNDENIABLE  
+FEATURES  
+THAT  
+COME  
+WITH 
+WINDOWS 11 
+There are many amazing and unique features found with the release of the 
+new Windows 11, though Windows generally has exceptional OS when you 
+examine the previous Windows from Windows 10 down to the older version, 
+however, Windows 11 restructured the features with the new approach, 
+upgrade some and release additional features that are not available in the 
+previous version. 
+REPOSITIONING OF THE START AND SEARCH MENU 
+OPTIONS 
+The Start menu has been shifted to the middle compared to the previous 
+Windows where the Start menu always was at the extreme left corner to make 
+its accessibility easier, nevertheless, Windows makes it flexible for any user 
+who finds it difficult to adapt to the new position of the start menu to shift 
+from the Middle into far left where it is used to be in the previous version. 
+The Search box has also been shifted to the top of the screen where you can 
+easily search for documents, applications, and others. 
+RESTRUCTURING OF FILE EXPLORER 
+Windows 11 comes by redesigning the look and appearance of File Explorer, 
+it makes it look astonishingly, the menu bar is reshaped into a finer look by 
+replacing the menu with the various stunning command that is called the new 
+Column Layout. 
+MULTIPLE DESKTOPS ACCESSIBILITY WITH ONE 
+MONITOR 
+This is one of the fantastic features in Windows 10 by pressing (Alt + Tab) to 
+shift and navigate easily among multiple desktops that are opened on your PC 
+but it comes in a wonderful dimension on Windows 11. You can navigate 
+impressively amidst multiple desktops with the new menu that has just been 
+added to the taskbar or you can alternatively press (Alt + Win) to navigate the 
+same manner for navigating with (Alt + Tab) on Windows 10. 
+IMPROVED INTERFACE COHESION 
+There are several complaints about windows users regards the outdated and 
+slowing of Windows Interface, and as a result of that, the Interface of 
+Windows 11 is characterized as an improved version over all the earlier 
+version Interface, for instance, certain options have been added to the right- 
+click menu options such as Cut, Copy, and Paste. 
+REESTABLISHMENT OF THE WIDGETS 
+Gone are those days when Widgets was introduced into the Windows OS 
+which was abandoned when it couldn’t find the correct expression. Widget is 
+now reintroduced into the Windows OS with an amended structure. 
+You can access the Widgets list by clicking on the Widgets in the taskbar 
+menu such as Weather, Calendar, Traffic, and other Widgets, they are all 
+designed in such a way that the Widgets will come only when they are 
+needed and fade when they are not needed. 
+EXCELLENT  
+ARRANGEMENT  
+WITH  
+THE  
+SNAP 
+FEATURE 
+The snapping feature is an existing feature in Windows 10 which makes 
+arrangement and switching within open applications possible, however, 
+Windows 11 has redesigned the snap feature where the arrangement of the 
+applications is more superb by placing two Windows side by side. It gives 
+you the privilege to have four Windows layout on the screen and help you to 
+switch to any of the Windows conveniently. 
+WINDOWS SCREEN ARE MORE TRANSLUCENT 
+Windows 11 screen and applications are more transparent and clearer for 
+sight including the Start menu and Widget menu. 
+ENHANCEMENT OF MICROSOFT TEAM APPLICATION 
+(TEAM CHAT) 
+Microsoft team has gained ground since earlier 2020 and thus Windows 
+realized the essence of it and hence the necessity to restructure the Microsoft 
+Team for greater productivity, for instance, the Microsoft Team Contact has 
+been included in the chat icon which is also in the taskbar, you can as well 
+continue with your recent conversation before you log out and also reply 
+quickly to the pop-up message and many more. 
+CHAPTER TWO 
+GETTING STARTED WITH WINDOWS 11 
+Welcome to the world of Windows 11, permits me to introduce Windows to 
+the starter who has never used Windows before, Windows is the Operating 
+System (OS) developed by Microsoft to allow the users to relate or work with 
+the computer, it is mainly used to run a software, store data, play games, and 
+media, connect to the internet, checking mails, etc. 
+For each Windows there is a different Operating System (OS), each OS has 
+certain information such as Program, Picture, Application, and many more 
+though the information is always different. 
+CHOOSING WINDOWS 11 VERSIONS 
+Many users are not aware that Windows 11 comes in various versions, to be 
+candid, Windows 11 comes in diverse types which are purposely meant for 
+satisfying the preferences of each user. Below are the notes you should 
+examine before jumping into any version of Windows 11: 
+v    Windows Home: this is ideal for the users who need a PC in the 
+house or the shop for small business purposes, about 70% of users will 
+go for Windows Home. 
+v    Windows Pro/Windows Enterprise: these two versions are mainly 
+for business purposes, Windows Pro is for small/medium businesses 
+while Windows Enterprise is for medium/large businesses, a short 
+company may choose between the two versions depending on how 
+much of computer the company will be using and the level of 
+networking of such company. 
+v    Windows 365: this is the Windows version that runs on the cloud, 
+every activity are done on the cloud, it is good for business enterprise 
+that needs faster internet and stable PC. 
+UNLOCKING THE SCREEN AND SIGNING IN TO YOUR 
+COMPUTER 
+The moment you press the power button of your windows 11, you will 
+instantly be provided with the lock screen, then you will have to unlock the 
+screen and sign in to your computer. 
+The question is how do I unlock the screen? By doing either of the following: 
+1. Pressing any “key” on the keyboard to slide away from the lock 
+screen. OR 
+2. Click any side of your “mouse” button. 
+After you have successfully unlocked the screen, you will be transited into 
+the sign-in screen where you are expected to sign in with your 
+Username/Email address then Password/Pin which you will have to do its 
+setup the first time you log on into your new computer. 
+You can as well create a user account for someone else provided you want 
+such person to have access to your PC but not with your data, every user 
+account you created on your PC will be listed in the sign-in screen at the 
+bottom left corner of the screen. 
+CREATING USER ACCOUNT 
+For privacy and secrecy, Windows allows you to create a User account that 
+you will use to sign in to your PC on the lock screen to prevent unauthorized 
+access to your document and information that you stored on the computer. A 
+single computer can have multiple users but their files and documents are 
+kept secured and separated from each other in such a way that “user A” won’t 
+have access to “User B” information (documents and files) because each user 
+has to log on separately onto the PC. There are two ways for creating a user 
+account, they are: 
+1.)             Microsoft Account 
+2.)             Local Account 
+CREATING  
+AND  
+ADDING  
+A  
+NEW  
+MICROSOFT 
+ACCOUNT 
+you can get this account from Microsoft Website which helps you to create 
+an Email and password with Microsoft account which you will be using to 
+log on and as well offers you certain privileges and features such as savings 
+documents into the OneDrive, downloading and installation of the Microsoft 
+application from the Microsoft store and others. Kindly, create a Microsoft 
+account with the following steps: 
+i.  
+If you are just Signing In to your computer for the first time, or you 
+have signed on before but want to create a new Microsoft account 
+which prompts you to navigate to the Account category under Settings 
+or you want to access certain Microsoft applications from the 
+Microsoft Store, the above three commands will speedily take you to 
+Windows 11 sign in options as it is displayed (ii) below. 
+ii.  
+Click on “Microsoft account” and tap the “Continue button” to take 
+you to Add your Microsoft Account screen. 
+iii.  
+if you have gotten a Microsoft account such as Outlook.com, Hotmail, 
+Windows Messenger, and other email addresses, kindly, enter such 
+email address and password and click on the “sign-in” button. These 
+commands will add the account details to the user accounts list of the 
+concerned PC. 
+iv.  
+However, if you haven’t gotten one Microsoft account as I have 
+discusses in (iii) above, you will need to click on the Create one in (iii) 
+above to create an outlook.com email account for you. 
+v.  
+Enter the first and last names into the provided box and click on the 
+“Get a new email address” link, this will create a new Outlook email 
+account. 
+vi.  
+Once you get your email address, enter the password you will like to 
+attach to the email and select your country. 
+vii.  
+Then click on Next and enter your phone number for security reasons 
+or if you are having trouble signing in to your Microsoft account, the 
+Phone number you inserted can help you out. 
+CREATING AND ADDING OTHER USER ACCOUNTS 
+(FAMILY, FRIEND, AND LOCAL) 
+After you have successfully added your user account, Windows 11 permit 
+you to add other categories of the user account as it has always been since the 
+introduction of Windows OS. This section deals with all other categories of 
+the user account you can add to your PC including Local account, though 
+people seldomly use Local account because of its restricted features compares 
+to Microsoft account. 
+CREATING USER ACCOUNTS FOR FAMILY AND 
+FRIEND 
+Anytime you want to create a user account for any of your family members 
+you will need to choose family and other users for other users who are not 
+your relatives such as a friend. To create and add any of the above user 
+accounts, kindly: 
+a. Tap on the “Start” button and select “Settings” from the Start menu to 
+access the settings panel. 
+b. Select the “Account” link on the Settings panel, then click on the 
+“Family & other users” menu under the account headings on the 
+right side. 
+c. To add any family member, click the “Add Account” button beside 
+“Add a Family member”. 
+d. Then insert the “Email Address” of the concerned person into the 
+provided box and tap on the “Next” button to invite the person, 
+however, if the person does not have any email, such person is 
+considered to be an infant, and therefore you will have to create 
+Microsoft account for the person irrespective if the person is an adult 
+or infant, kindly, click on “Create one for a child” and follow the 
+prompt instruction on how to create the Microsoft account, after 
+successful creation of the Microsoft account, such person too will 
+receive the invitation. 
+e. To add other people aside from family members, click on “Add 
+account” beside the “Add other users” in (c) above, in a twinkle of 
+an eye “How will this person sign in” dialog box will be displayed as 
+it is shown in (f) below. 
+f. Enter the Email Address of the next users into the provided box, then 
+click Next and lastly click on the Finish button. The Microsoft 
+account will be transferred into the sign-in screen but not yet validated 
+until the person clicks over it and input his/her password to sign on, if 
+the sign-on is matched, the person will be successfully added to the 
+concerned PC users account list. 
+g. To add a Local account of any categories, kindly click on “I don’t 
+have this person’s sign-in information” in (f) above. 
+h. Select “Add a user without Microsoft Account” which signifies the 
+person you want to add does not have a Microsoft account. 
+i. Then enter the details of the person (Username, Password, and 
+hints) into the screen that comes up to create the account. 
+SAFEGUARDING YOUR ACCOUNT AND INFORMATION 
+Gone are those days when nothing happens to your account details and 
+information, but nowadays certain people have taken it as a job to steal other 
+people information and use it for their advantages or against the person that 
+owns the details, and as a result, every Windows 11 user must safeguard and 
+keep their data and information securely from any unauthorized access. The 
+major way of securing one’s data, and information is by attaching a strong 
+and stringent password to one’s user account sign-on so that it will be very 
+difficult for a third party to have access or use it. As a result, you may go 
+ahead to tweak your password into a strong password that a third party won’t 
+be able to guess. You can either change your Microsoft account or Local 
+account password. For Microsoft account users, kindly find your way to the 
+Microsoft account website by: 
+v    Type ( account.microsoft.com) and log on, after the successful 
+login. 
+v    Click on the “Security” button and select “Change Password”, 
+follow the prompt instruction and click on the Next button to 
+authenticate the process. 
+For local account users, follow the listed step to tweak your account 
+password: 
+i.  
+Tap on the “Start” button and select “Settings” to access the settings 
+panel. 
+ii.  
+Select the “Account” and pick the “sign-in option” from the extreme 
+left edge of the Account section to summon the computer sign-in 
+option. 
+iii.  
+Select the “Password” and click on the “Change” button to tweak 
+your password into a stringent one. 
+iv.  
+Type your “Current Password” into the current password field and 
+click on the “Next” button. 
+v.  
+Type the “New Password” and Retype the same “Password” into 
+new and confirm password respectively. 
+vi.  
+Type a “Hint Password” into the hint box to help you get back your 
+password in case you forget it. 
+vii.  
+Tap on the “Next” button and lastly click on the “Finish” button to 
+confirm the process. 
+  
+EXAMINING WINDOWS 11 START MENU 
+Start menu is simply a gateway into your PC that gives you the privilege to 
+access any applications and favorite program on your PC. The start menu is 
+where all commands reside. The moment you click on the Start button on the 
+taskbar or Windows key on the keyboard, immediately Windows 11 will 
+open up the start menu with the following composition: 
+1. Search Box: this is the search engine, it is located at the topmost part 
+of the Start menu. It can be used to find various things within the PC 
+such as applications, documents, files, folders, and so on. it is the best 
+option for searching anything within the computer especially when 
+you don’t know the exact location where a particular item is located. 
+2. Pinned Apps: the applications that are pinned into the start menu are 
+visible in this section. You can access all the system applications by 
+clicking on “All Apps”. 
+3. Recommended list: this is the list of the documents, videos, Music, 
+and Photo that you have recently opened on your PC, Start menu 
+recommends those lists for you in case, if you want to revisit them for 
+quick access. 
+4. User Account Name & Power button: at the extreme bottom of the 
+Start menu, you will find the User Account name and Power button, 
+User account name is situated on the left side while the Power button 
+is situated on the right. The Power button gives you three (3) options 
+which are Shut down, Sleep, and Restart. 
+OPENING  
+A  
+START  
+MENU  
+APPLICATION  
+AND 
+PROGRAM 
+Start menu can be likened to a gallery of application where user can launch 
+into any program of their choice, however, if the apps you need per time is 
+not in the Pinned applications, kindly click on All Apps and scroll up and 
+down to find an application of your choice to open it on the screen. to 
+launch any application from the Start menu, do well to carry out either of the 
+two methods: 
+v    Mouse your pointer over the application icon you want to open and 
+left-click the mouse on the application. OR 
+v    Use the Up and Down arrow key to move up and down within your 
+device applications on the start screen, strike Enter key over the 
+application that is surrounded by a box to launch such application. 
+FINDING SPECIFIC ITEMS ON THE START MENU 
+Windows 11 makes it possible for every user to search easily for any 
+application, program, document, or whatever things that you need on your PC 
+rather than moving to the search box, you can do that by simply: 
+i.  
+Clicking on the “Start” button to access the Start menu. 
+ii.  
+Then begin to type the “name” of the app, document, or program you 
+want to find on the keyboard. Windows will instantly bring all the apps 
+or documents that match your search. 
+iii.  
+Click on the “app or program” you want and it will be opened on the 
+screen. 
+Note: searching at times will be cumbersome if you don’t know the name of 
+what you are searching for or the first two or three letters that start the name 
+of the item you want to find. 
+VIEWING, RETURNING, AND CLOSING A PROGRAM 
+Have you ever opened multiple applications to an extent that such application 
+overcrowded your desktop, in such a case you need to learn these powerful 
+buttons at the upper right of the Windows and task view button: 
+1. Viewing and Returning to Program: the first button is at the upper 
+right of every window, it helps you to minimize a program from the 
+screen but you can view and return to it anytime you want to access it 
+again. 
+You can easily return to any of the apps you minimize with the first 
+button by clicking on the Task view button to display the miniature view 
+of all the open applications irrespective of whether they are showing or 
+minimized application, then click on the thumbnail of that application you 
+are returning to. 
+2. Closing the Program: the third button is used to close an application, 
+when you click on this button the corresponding program or 
+application attached to this button will be closed and its content will 
+permanently be removed from the task view area, you can as well 
+close any app from the task view area by clicking on the close button 
+of any application. 
+Note: to open a closed program, you need to re-launch such application from 
+the start menu, all apps, taskbar, or desktop depending on where the 
+application is located. 
+CUSTOMIZING THE START MENU 
+The start menu is the location where all computer operations start from and 
+thus it should be structured to suit individual taste, though Microsoft has done 
+well by amazingly fabricating the start menu by shifting the Start menu to the 
+middle bottom of the screen on Windows 11 which is used to be at the 
+extreme left bottom of the screen in the previous windows for easy access of 
+all the applications or documents. Nevertheless, each user has different 
+perspectives of dealing with things which is why Microsoft designed the Start 
+menu to be more flexible and thereby allow each user the privilege to 
+customize the Start menu and Desktop application to suit individual 
+preference. You can shift the Start menu to the far-left side where it is used to 
+stay in the previous version if that is your choice. In short, you can change 
+the arrangement of the Start menu to your fashion, stay tuned as I take you 
+through the processes of customizing one’s Start menu. 
+You can customize the Start menu either by adding (Pin) an application to the 
+start menu or removing (Unpin) any of the pinned items, reordering the Start 
+menu item, and so on. 
+PIN/UNPIN START MENU ITEM 
+Users are permitted to add any item (application, files, folders, program) to 
+the Start menu if it happens to be the one you run often on your PC or your 
+favorite app and as well to remove any item you do not want from the Start 
+menu. Kindly, add any item to the Start menu with the following guides: 
+a. Tap on the “Start” button and navigate to the topmost right side of the 
+start menu to click on “All Apps” and see the list of all the 
+applications on your PC. 
+b. Right-click on the “App” you want to add to the Start menu and select 
+“Pin to Start” from the fly-out list. 
+c. To add an item to the Start menu from the desktop, kindly, right-click 
+the “item” and select “Pin to Start” from the fly-out list as well. 
+d. The above (b & c ) command will automatically add the concern items 
+(app, program, file, folder, etc.) to the start menu 
+Are you tired of seeing a particular item on the Start menu? no need to worry 
+about that, remove (Unpin) such item with the below steps: 
+a. Right-click on any offending item and select Unpin from the fly-out 
+list. 
+REORDERING START MENU ITEMS 
+You may need to put some icons to the top list of the start menu, it may be 
+ideal for some to maintain the middle location in the Start menu depending 
+on how often you use them, and thus you will need to shift such items to the 
+ideal position which can be done by reordering those items. To reorder and 
+shift any of the Start menu items, kindly: 
+i.  
+Place mouse over the concerned item, hold down the left mouse 
+button on it, and drag it to the preferred location within the Start 
+menu area. 
+ii.  
+As soon as you get to the preferred location where you want to place 
+the item, let down the mouse button, immediately the item will come 
+over to the new location while other items that previously stayed in 
+that location will be shifted to another side to create space for the new 
+item. 
+GET YOUR FOLDER ADDED TO THE START MENU 
+You have the option to add any of your folders to the Start menu. Below are 
+the steps for adding a folder into the Start menu: 
+1. Tap on the “Start” button and select “Settings” from the start menu. 
+2. Select “Personalization” from the Settings Panel and pick the “Start” 
+button on the right side. 
+3. then click on the “Folders” menu to access the list of all folders in 
+your device such as pictures, songs, videos, documents, and other 
+folders. 
+4. Switch ON the button beside the folder you want to add to the Start 
+menu. Those folders added will be arranged to the left side of the Start 
+menu. 
+TEMPORARY EXITING FROM THE COMPUTER 
+Exit means to sign out of your computer for a short period perhaps to attend 
+to a certain issue or to visit the restroom. The following are instructions for 
+leaving one’s computer for a short period: 
+i.  
+Tap on the “Start” button to access the Start menu. 
+ii.  
+Click on “User account” at the bottom left of the Start menu and 
+chose any of the following options from the pop-up menu as each 
+option is related to the short period exiting from the computer by the 
+user: 
+a. Change Account Settings: to alter your user accounts settings 
+such as account password, user account photo, and other account 
+settings, click on this option as it is showed you a pathway to 
+one’s account settings. 
+b. Lock: this helps you to lock the screen of your PC and thereby 
+gives you an optimum level of privacy as you work out from 
+your computer to the restroom (shortcut for locking one’s screen 
+“ Window logo + L key”. To Unlock your screen, tap any key 
+on your keyboard then press Enter key. 
+c. Sign out: this option signs you out of the computer, mostly to 
+allow other users of the computer to make use of the computer. 
+When you sign out, the lock screen will appear immediately 
+available for the next user sign-in option. 
+d. Other Account Users: the last option is the name of other 
+people who are also user accounts of the concerned PC. It may 
+happen coincidentally at times that as you want to sign out to go 
+to the restroom, any of other user accounts may be ready to 
+make use of the PC, rather than sign out of the PC, you can 
+allow the person to click on its user account name and input it 
+username to log on which automatically sign you out as well. 
+When you are ready to sign on again, kindly follow the same 
+process by clicking on your user account name and typing your 
+password as well. 
+  
+EXITING FROM THE COMPUTER FOR A LONG PERIOD 
+This mostly happened at the end of the working day in the office or evening 
+when you are about to sleep which means you won’t be needing the PC 
+within two (2) to three (3) hours and above. The following steps are 
+instructions and options for exiting the computer for a long period: 
+1. Tap on the “Start” button to access the Start menu. 
+2. Click the “Power” icon and select the “Exit” option you want from 
+the fly-up list. Examine a hint on each of the exit options before 
+concluding on the one to be chosen. 
+a. Sleep: this puts your PC in a sleep mode and thereby consumes 
+low power, it does not off your PC, it only makes it stay in 
+sleeping mode and then save all your work in the system 
+memory and Hard drive. 
+b. Shut down: to turn your Computer Off, this is the option you 
+have to choose, this option preserves the battery life of the PC 
+by consuming no power during off mode. 
+c. Restart: this simply means to turn Off and On PC 
+instantaneously, it is mostly used when the PC is going through 
+a difficult time, for instance, when your PC is misbehaving or a 
+certain program is running at some issues, Restarting the PC is 
+the best option, at times windows automatically requires users to 
+Restart their PC. 
+CHAPTER THREE 
+NAVIGATING AROUND THE DESKTOP AND 
+THE START MENU 
+The moment you turn On your PC and sign in with your username and 
+password from the log-in screen, the next section is the desktop area. By 
+default, the icon you will see in the desktop area is the Recycle Bin and 
+Taskbar area which includes the Start Button. 
+Windows 11 desktop area is still the same just as the previous Windows, the 
+only change is that of the Start Button which is now at the middle of the 
+screen, however, it can still be shifted to the left side where it is located in the 
+previous Windows versions. 
+To get familiarized with Windows 11 desktop version, I will need to discuss 
+these two important components. 
+1. Recycle Bin: this can simply be called Wastebin for dumping all 
+unneeded folders or documents, nevertheless, just like normal 
+Wastebin, you can get back the items you dumped inside the Wastebin 
+if situations call for it, provided you have not removed such content 
+from the Recycle Bin. 
+Note: As it ever happens to you? Seeing an empty desktop, for instance, 
+when you check your desktop section, all you see is nothing, those folders, 
+and items such as applications and programs you pinned there are nowhere to 
+be found including Recycle Bin icon. No qualm, you can get them back by 
+right-clicking the blank space on your desktop and tapping on the View 
+menu, then placing a mark on the “Show Desktop” check box Icon. 
+2. Taskbar: Taskbar, as its name denotes, is the area where all the tasks 
+or programs live, it begins with the Start button which can help you to 
+launch any program from the Start button, the Search button, Task 
+view, and the Pinned Application, and lastly the notification section. 
+  
+DUMPING UNNEEDED ITEMS INTO THE RECYCLE BIN 
+Recycle Bin is always empty by default but the moment you begin to dump 
+the unwanted file into it, it will begin to fill up. The more you dump a file 
+into the Recycle bin the higher its content becomes. It is usually situated to 
+the top-left of the desktop unless you shift it out from that area. 
+To dump any item to the Recycle Bin, kindly: 
+i.  
+Right-click the offending item and pick Delete from the fly-out list. 
+ii.  
+There will be a pop-up instruction confirming if you truly want to 
+move the offending file to the Recycle Bin, pick Yes to send it there or 
+No to revert the command. 
+Note the following tips to work effectively with the Recycle Bin 
+1. Do you need any item from the item you’ve previously deleted or 
+did you mistakenly delete a particular item? You can quickly 
+restore such back simply by double-clicking the Recycle Bin, then 
+right-click the needed file and select Restore from the fly-out list, this 
+command will send such item back to the exact place it was before it 
+was deleted. 
+2. You can delete an item permanently in two ways, either by deleting 
+such item from the Recycle Bin or by selecting such item, then hold 
+down the Shift key and strike the delete key on the Keyboard, this is 
+otherwise called bypassing the Recycle bin. 
+3. The deleted items that Recycle Bin can keep are the following: the 
+items you have in your folders and desktops. It does not keep 
+something that you deleted from the application, program, Memory 
+Card, Flash Drive, and Phone. 
+APPROACHING THE TASKBAR 
+It is important to know the best way in approaching the taskbar, especially 
+when you have more than one window open on your desktop, most at times 
+Windows can contain four (4) or more programs, such as Microsoft Word, 
+Chrome, and other Internet Browser. 
+If you desire to access and manage multiple open applications with multiple 
+documents? you need to learn how to navigate effectively within the taskbar. 
+The taskbar is located at the bottom of the Windows and displays all your 
+open applications. Below are five (5) ways to keep track and manage multiple 
+programs with the taskbar: 
+1. Add any of your favorite programs whether the start menu, all apps, or 
+desktop to the taskbar by right-clicking the concern program and 
+selecting “Pin To Taskbar” from the fly-out list, such application will 
+be instantly glued to the taskbar. You can as well remove any 
+unwanted program from the taskbar by right-clicking the offending 
+application on the taskbar and selecting “Unpin From Taskbar” from 
+the fly-out list. 
+2. To run any program from the taskbar, click such Program icon on 
+the taskbar and it will come above all other windows, to minimize 
+such program, click its icon on the taskbar again. 
+3. The thin line beneath any of the taskbar icons notifies you that such 
+programs are currently running programs. 
+4. To close any of the running applications with the taskbar, right-click 
+the icon of such program on the taskbar and pick Close from the fly- 
+out list. 
+5. Have you opened a particular application and you are unable to see it 
+on the screen? No qualm, kindly click on the Task View on the 
+taskbar to see the thumbnails of all the running applications, tap on 
+the Thumbnail of the application you want to open up on the screen. 
+MINIMIZING WINDOWS TO THE TASKBAR AND 
+RESTORING THEM FROM THE TASKBAR 
+The moment you opened more than two windows on the desktop, you will 
+experience overcrowding of applications on the desktop, when such a 
+situation occurs, the next solution is to make use of the minimize button at 
+the top right of the desktop to minimize any of the windows you do not need 
+at that moment which you will still need later. 
+The following is the pathway on how to minimize and restore a window: 
+1. Click on Minimize button of a particular application to compress them 
+into the taskbar. 
+2. To Restore a minimized program, click on the icon of such program 
+on the taskbar and it will fill up the screen with the same size it was as 
+at the time you first minimized it. 
+Note: a window that has multiple programs or files, for instance, Chrome and 
+Word, you will need to hover your mouse on the Word Icon and move the 
+mouse to the thumbnail of the particular word document you want to restore, 
+then click on it to restore it. 
+ACCESSING OTHER TASKS WITH THE TASKBAR’S 
+JUMP LIST 
+The jump list contains tasks that you can access with the taskbar by right- 
+clicking on any program from the taskbar whether a running program or not. 
+Jump list shows you recently opened documents or files of the concerned 
+program you right-click and from there you can quickly click on any of the 
+previously visited documents or files, simply by clicking on such documents 
+or files from the Jump list. You will as well have the option to Unpin a 
+program from the Jump list. 
+ACCESSING THE TASKBAR SENSITIVE AREAS 
+It is pertinent to show you all sensitive areas of the taskbar so that you can 
+get acquainted with them and used them effectively: 
+1. Start Button: this is the icon that will help you get started with your 
+PC by giving you the privilege to access all the programs and 
+applications of your PC. 
+2. Search Button: this is the button that makes any program and 
+application easier to find by simply typing the three initial or complete 
+names of such program into the search field, provided you know the 
+complete name of the program, the search engine will quickly bring 
+you the results that match your search, click on the particular one that 
+you need. 
+3. Task View Button: this is the Button you can use to view and access 
+all your currently running applications and program whether the 
+application is on restore or minimize mode. 
+4. Pinned Application: some programs are pinned to the taskbar such as 
+Widget, Team chat, Microsoft Edge, File Explorer, and Mail, you can 
+pin any other apps you want to the taskbar such as Microsoft Word, 
+Chrome, and others. 
+5. Show Hidden Icon: When you click on this icon, it will show you 
+those hidden icons which you can as well access from your PC such as 
+Bluetooth, windows security, safely removing hardware, and others. 
+6. OneDrive: this tells you the status of your OneDrive, whether it is in 
+synchronization status when an arrow is covered around the OneDrive 
+icon or when it is not in synchronization status. 
+7. Network status: this tells you whether the PC is connecting to a 
+network, and the type of network it is connecting with whether wired 
+or wireless network as shown below. A wired network means it is a 
+network connecting with the help of cable while wireless is a network 
+connecting without the use of cable. 
+8. Power Battery and Outlet: The power battery shows you the level of 
+power that is left when you hover your mouse over the power battery 
+icon while the Power Outlet is an indication that your battery is 
+charging or attached to the electrical outlet. 
+9. Volume: this option is designed to help you adjust the volume of your 
+PC, when you click it, it will show you the “Volume slider” and 
+“Quick Action”, kindly drag the Volume slider to the percent of the 
+volume you want. 
+10.           Time/Date: a click on date/time shows you the current 
+monthly calendar and above it is the notification for that month if you 
+have any, you can also right-click the date/time icon to access the 
+date/time setting where you can adjust your date/time if need be. 
+11.           Notification: the small circle beside time and date signifies 
+that there is awaiting notification, whichever number that is in the 
+small circle is the corresponding notification that the user has not 
+checked. 
+12.           Show Desktop: this is the blank space located at the extreme 
+right edge of the taskbar beside the notification icon, it is invisible in 
+Windows 11. You will make it visible by placing your mouse at the 
+blank far-right side until you see show desktop, then click on it to 
+show all the open Windows, if you want to minimize all the open 
+windows as well, you will repeat the same process. 
+NOTIFICATION AND QUICK SETTINGS PANELS 
+Gone are those days in the season of Windows 10 when the notification and 
+quick settings panels were merged into one place called Action center. 
+Windows 11 has restructured Windows 10 Action center completely by 
+breaking it down into two pieces and placing each of them into separate 
+locations, now Windows 11 is having a Notification panel separate from the 
+Quick settings panel. 
+ACCESSING NOTIFICATION PANEL 
+Notification Panel has been removed from the Action center and is placed at 
+the top of the Time/Date, immediately you click on the Time/Date on the 
+taskbar, the calendar will come up with the list of your notification you are 
+having above it, though it will be calendar only if you don’t have any 
+notification, the notification may be meeting schedules, virus updates, latest 
+news, and others notification. 
+You can manage your notification in the following four (4) ways:  
+i.  
+Reacting/Ignoring Notification: the moment a notification flashes in 
+at the bottom left of your screen, you can either click on it and check 
+what is inside or you ignore it without clicking on it, when you ignore 
+it, it will sum up in the notification panel so that you can see it there. 
+ii.  
+Closing any Notification: kindly, click on the (X) icon at the top right 
+of the notification you don’t need anymore. 
+iii.  
+Clearing All Notification: perhaps your notification has been filled up 
+with a notification, get all of them out with a single click on the Clear 
+button. 
+iv.  
+Selecting the Notification type you want to be seen: you can do that 
+by clicking on the 3 dots (…) besides (X) of any notification, then 
+select “Go To Notification Settings” to access the Notification 
+settings panel where you can switch between the On/Off of any of the 
+notification depending on which notification you want to see and the 
+one you don’t want to see. 
+ACCESSING THE QUICK SETTINGS PANEL 
+Windows 11 Quick settings icon is placed above the volume slider, the 
+volume slider comes up immediately you click on the Sound icon that has 
+always been below the notification panel in Windows 10. Below are the three 
+(3) major things you will always find in your quick settings panel, the icons 
+are vary depending on the version of Windows 11, However, the following 
+three (3) icons will always be there: 
+1. Network: it shows you the network information especially your 
+present network connection. 
+2. Bluetooth: this allows you to connect your Pc with other nearby 
+Bluetooth devices for sharing certain items 
+3. Settings Button: a single click on this icon at the bottom right quickly 
+moves you to Windows 11 Settings Panels where all settings reside. 
+CUSTOMIZING WINDOWS 11 QUICK SETTINGS PANEL 
+You can customize your windows 11 by adding or removing certain settings 
+from the Quick settings depending on the type of setting you mostly use and 
+the one you may not use for some months, though some settings have been 
+added to the Quick Settings by default, yet if they are not useful to you, you 
+can remove them from the Quick Settings. Kindly check below steps on 
+adding and removing the Quick settings item: 
+1. Tap on the Volume button to display both volume slider and Quick 
+Setting icons. 
+2. Click on the Pen icon below the Volume slider to access the Editing 
+Quick Settings panel. 
+3. Tap on the Add button to access the Quick Settings list. 
+4. Click the setting you wish to add to the Quick settings and click on 
+Done to save the changes. 
+5. To remove any of the Quick settings icons, click on the Pen icon 
+below the volume slider and tap on the slash icon above the setting 
+you want to remove from the Quick Settings. 
+PLAYING WITH WIDGETS 
+Widgets provide you with updated information such as Sports, World News, 
+Climate/Weather conditions, and so on. To access the widgets, click on the 
+Widgets icon on the taskbar and you will be provided with a Widget panel 
+giving you up-to-date information you can ever get from the internet. 
+You can add more information to your widgets by clicking on the Add 
+Widgets at the bottom of your Widgets panel. 
+CUSTOMIZING THE TASKBAR 
+With Windows 11 you have diverse options to customize your taskbar to 
+your liking, such as Pin/unpin an application to the taskbar, arranging taskbar 
+application, and so on, without much ado, let us quickly customize a taskbar 
+so that it can look the exact way we want it: 
+1. Add any of your favorite programs from the Start menu, all apps, or 
+desktop to the taskbar by: 
+a. right-click the concern program and select “Pin To Taskbar” 
+from the fly-out list, such application will be instantly glued to 
+the taskbar. 
+2. You can as well remove any unwanted program from the taskbar by: 
+a. right-clicking the offending application on the taskbar and 
+selecting “Unpin From Taskbar” from the fly-out list. 
+3. Arranging taskbar program, you can arrange taskbar program by: 
+a. Double-clicking a particular program which you want to shift 
+and drag it to the left or right depending on the area you want to 
+put it. 
+REMOVING THE DEFAULT ICON FROM THE TASKBAR 
+Five programs are added to the taskbar by default. These default programs 
+are added to the taskbar, they are not pinned which means they can’t be 
+unpinned but they can be removed, those apps are the Search button, Task 
+View, Widgets, and Team Chat. The start button is not available for removal 
+which means it can’t be removed as a result of its importance. If you don’t 
+need any of those programs mentioned on the taskbar, kindly remove them 
+by: 
+v    Right-clicking the Taskbar and selecting Taskbar Settings to open 
+the Settings Panel with Taskbar selected. 
+v    At the right side of the Settings Panel under the taskbar section, you 
+will see a list of those default icons, kindly toggle Off the icon you 
+don’t need on the taskbar anymore. 
+SHIFTING TASKBAR ICON TO THE LEFT SIDE FROM 
+THE CENTER 
+Perhaps, you prefer the icon on the left side or you have adapted to seeing it 
+on the taskbar and now it is at the center on Windows 11. Do not worry 
+Windows 11 taskbar is flexible and as a result, you can decide where you 
+want to place the taskbar icon whether on the left side or to remain at the 
+center. Observe the steps below to place the taskbar icon to the left side of the 
+screen: 
+v    Right-clicking the Taskbar and selecting Taskbar Settings to open 
+the Settings Panel with Taskbar selected. 
+v    At the right side of the Settings Panel under the taskbar section, 
+navigate to the taskbar behavior and click the down arrow beside it, 
+then select “Left” to shift the taskbar icon to the left side. 
+USING VIRTUAL DESKTOP 
+Virtual desktops simply mean additional workspace, which is an amazing 
+feature that you can enjoy with the help of task view. it is a way of opening 
+multiple windows/programs across two or more desktops to help the user 
+concentrate and split the workload that may occur from the overcrowded of 
+the multiple windows, for instance, you can have one desktop for your 
+Microsoft Word program which may also have about three or more 
+documents, you can create another desktop for Chrome which may also have 
+two or more files and another desktop for Team chat and email so that each 
+program can work independently without distraction from other open 
+windows. 
+You can open two different programs and put them on one desktop, open 
+another program, and put it on another desktop in such a way that you can 
+switch easily among your running windows/programs. 
+The following are the procedures for using Virtual desktops and managing 
+them: 
+1. Open one or more programs, then click on the “Task View” icon to 
+access the thumbnails of all the open applications. 
+2. Above the taskbar, you will see Desktop 1 And New Desktop, the 
+programs you opened previously are in Desktop 1, click the New 
+Desktop and the new desktop will fill up the screen though with no 
+application. 
+3. Whichever application you open now will go to the new desktop you 
+have just created which will now be named Desktop 2. 
+4. You can create two or more desktops depending on the number of 
+programs and how you want to switch among these programs, you can 
+switch among two or three desktops by clicking on the Task View and 
+selecting the Desktop that has the program you want to open, then 
+click on the thumbnail of the program you want to open from the 
+selected desktop. 
+Note: the more you click the New desktop, the more desktop you will be 
+having across the screen. You can also move any of the open programs from 
+one desktop to another desktop by clicking the task view icon to access the 
+thumbnails of all the opened programs, then drag the program from a source 
+desktop to another desktop. 
+CHAPTER FOUR 
+EXAMINING A TYPICAL DESKTOP WINDOWS 
+Majorly Windows 11 has the same Windows desktop format as the previous 
+Windows version except for File Explorer which has significant differences 
+compared to the previous File Explorer, and as a result, I will be using 
+Windows 11 File Explorer as an example of typical desktop Windows we 
+will be examining. Below is an example of Windows 11 File Explorer with 
+the Quick access at default: 
+PULLING OUT A WINDOW’S TITLE BAR 
+At the topmost part of every window is the title bar which gives you 
+information about the program name and mostly the name of the file, folder, 
+or area of the program where you are at that moment. Below is an example of 
+Window’s title bar. 
+Commit the three techniques to memory as you begin working with 
+Window’s title bar: 
+1. The title bar always gives you information about the concern 
+program, it usually occupies the topmost position and is bolder Than 
+other text. 
+2. It is ideal to find a title bar at the topmost of every program, however 
+certain programs do not have a title bar at all, so when you encounter a 
+program and you are unable to see its title bar, it may certainly not 
+have a title bar. 
+3. At the top right-side of each title bar are these three significant 
+buttons which are in this order Minimize, Restore or Maximize, and 
+Close button. 
+EXAMINING FILE EXPLORER MENU BAR 
+Beneath every Title bar is the Menu bar though the menu bar is always 
+different from program to program. The type of menu that will be associated 
+with a program depends on the major use of that program. Below is the 
+typical example and explanation of the key menu in the File Explorer menu 
+bar: 
+a. Cut: this is used to move an item into the clipboard. 
+b. Copy: copy is designed for copying an item into the clipboard. 
+c. Paste: This is used to paste the content you move or copy to the 
+clipboard into the destination location. 
+d. Rename: perhaps, you want to change the name of your folder, click 
+on this button to initiate such a change. 
+e. Sharing: this is the button to share a particular file or folder with a 
+friend and family. 
+f. Delete: click on this button to send the selected file into the Recycle 
+Bin. 
+g. Sorting and Grouping: this is the option for arranging, sorting, and 
+grouping the files and folders. 
+h. View and Layout option: it helps you to make settings for how to 
+view your files and folders. 
+i. More options: the three dots far upper right grant the user more 
+commands as shown in the image below. 
+Note: you may likely see other menu command aside from the above menu 
+commands, the type of menu commands depend on the kind of operation you 
+are doing on the File Explorer. 
+REVIEWING FOLDERS WITH A WINDOW’S ADDRESS 
+BAR 
+The address bar is always located underneath the Title bar and is mostly 
+designed to give you direction and a pathway to the program you are 
+currently running. You will always find the following part in every File 
+Explorer address bar: 
+1. Backward and Forward buttons: these are your path indicator inside 
+PC folders. The backward button takes you back to the folder you have 
+previously visited while the forward button carries you back if you 
+have moved backward too much. 
+2. Down arrow: this is the drop-down list of the folder you have 
+previously visited, simply click on it for an instant revisit 
+3. Up arrow: this is a ladder button that moves you up one step from the 
+current folder, when you click on it, it takes you up to the next folder. 
+4. Address bar: this is the area that gives you information about your 
+present folder’s address and your current location inside the PC. 
+5. Search Field: this is the field that narrows down your search in the 
+File Explorer. It helps you to quickly search for any item within your 
+PC File Explorer and brings you the result that matches your search 
+without wasting time. 
+QUICK SHORTCUT WITH THE NAVIGATION PANE 
+As it was at the start of Windows OS so it is now in Windows 11, the 
+Navigation pane continues in Windows 11, Navigation pane comprises major 
+zones which you can use to navigate easily within your File Explorer folder 
+such as Quick Access, PC, OneDrive and other depends on what you attach 
+to your PC as at the time of opening your File Explorer. 
+Quick access automatically adds recent documents or folders you have 
+visited for quick revisit into the Recent files and displays it for you as soon as 
+you click on the Quick access, you can as well add some favorite folders or 
+items to the Navigation pane for quick accessibility. To add certain folders 
+and items into your Quick access for quick access, kindly: 
+v    Open the File Explorer from the taskbar and click on this PC. 
+v    Right-click the folder you want to add to the Quick access such as 
+document, music, picture, and select “Pin to Quick access” from the 
+fly-out list. 
+v    Such a folder will instantaneously be pinned to the Quick access 
+Note: you can remove any unwanted folders from the Quick access by right- 
+clicking any of the Quick access items and selecting Unpin from Quick 
+access from the fly-out list. 
+MOVING WITHIN A WINDOW WITH A SCROLL BAR 
+Windows contain two elevator box which moves in the same direction just as 
+the contents of the windows is moving, The two elevator are the vertical 
+scroll bar which helps you to move up and down within the Windows, and 
+the horizontal scroll bar which helps you to move right and left within the 
+Windows, most time the elevator may not be visible, simply hover a mouse 
+over it to make it visible. Whenever you notice that the scroll bar is not 
+available at all even after the hovering of the mouse, it is telling you that all 
+the contents of the windows have been displayed on the screen at once. 
+Note: you can move around speedily by dragging the scroll box inside the 
+scroll bar, the more you drag the faster the content of the concerned windows 
+move, you can release the mouse as soon as you reach the location you are 
+moving to. 
+MOVING WINDOWS AROUND THE DESKTOP 
+This is the section that shows you how to move and fling your windows 
+incredibly around a desktop. There are diverse ways of moving around the 
+desktop such as moving to the top of the file, moving here and there within a 
+desktop, placing windows side by side, Resizing windows size, and other 
+ways of moving around a desktop. 
+MOVING A WINDOWS TO THE TOP OF THE PILE 
+Top of the pile can otherwise be called the Active windows when a window 
+is opened up when a Windows is moving to the top of the pile, it means the 
+minimized windows are restored to the desktop, let us quickly check the two 
+ways fastest ways of moving a Windows to the top of the pile: 
+1. Tap on the “Icon” of the Windows you want to move to the top of the 
+pile from the taskbar and such a window will rise to the top of the 
+desktop. 
+2. Hold down the Alt key and continue to strike the Tab key until the 
+window you need is highlighted on the Desktop window, then release 
+both Alt and Tab key, the highlighted Windows will rise on the 
+desktop. 
+MOVING A WINDOW FROM HERE TO THERE 
+Windows 11 just like the previous Windows allow you to move your 
+windows to any point within the desktop and place it to any spot. The only 
+way of moving Windows here and there is by dragging and dropping its title 
+bar, however dragging and dropping of the title bar may not be possible until 
+you put your Windows in Restore mode when you are in Maximize mode 
+dragging and dropping of a Windows will not work. 
+MAKING A WINDOWS FILL THE ENTIRE DESKTOP 
+This means your Windows will cover up the entire screen. You can make 
+your windows fill the whole desktop by double-clicking its title at the 
+uppermost of the Windows, immediately the Windows will fill up the whole 
+desktop. 
+You can reduce the Windows back to its previous size after it has filled the 
+whole desktop by double-clicking its title bar once more to reduce it back. 
+Note: you can as well make use of the middle button among the three top 
+right buttons to maximize and restore the Windows, when you Maximize it, it 
+will fill the whole desktop, when you restore it, it will reduce back to its 
+previous size. 
+MAKING WINDOWS BIGGER OR SMALLER 
+Making Windows bigger or smaller is all about resizing the windows to your 
+preferred size, to resize any Windows you have to place such Windows into a 
+restore mode with the middle top button because it won’t work in the 
+maximized mode, then do the following; 
+v    Place your mouse at any of the corners or sides of the Windows 
+and wait till the cursor turns into a two-headed arrow. 
+v    Hold down the mouse button as soon as it displays the two-headed 
+arrow, then drag the corner or side to change the Window’s size. 
+v    Release the mouse button as soon as you get your desired size. 
+PROPERLY LAY TWO WINDOWS SIDE BY SIDE 
+This feature works well in Windows 10 and continues in Windows 11 even 
+with additional features, this feature helps you to put two windows side by 
+side without one distracting the other, let's quickly examine how this feature 
+works: 
+a. Drag the Title Bar of one Windows to one side of the desktop. 
+b. drag the Title Bar of the second windows to the other side of the 
+desktop and continue working on each of them separately. 
+c. You can as well place Four Windows on a desktop, though it will 
+work much better on a big desktop compared to a small desktop, to 
+place four windows on the same desktop at a time, kindly drag each 
+Windows to each corner of the desktop. Each Windows automatically 
+resize itself to fill the quarter of the screen. 
+Note: Windows 11 makes it more-easier with the grid feature it brings, it 
+works by hovering your mouse on the Maximize button, then picking the grid 
+type you want, all your open programs will arrange and resize themselves in 
+respect of the grid format you pick. 
+MAKING WINDOWS OPEN TO THE SAME DARN SIZE 
+Windows will open the Programs for you any size it wants but you can cause 
+your PC to always open your windows at any particular size you dictate for it, 
+whenever you dictate a certain size for Windows it automatically commits it 
+to the memory, such as square, rectangle or the whole screen. You can make 
+your Windows open to the same darn size with the following guides: 
+v    Open the Windows and never bother about its size. 
+v    Drag the Window’s corner to the exact size and location where you 
+want it to stay, then release the mouse to maintain the same size and 
+location for the Windows. 
+v    Close the Windows, the PC will automatically commit to memory 
+the darn size of the Windows and the spot it is, then try to open the 
+Windows again at any time, you will notice the Windows will be open 
+in the same size and the location you placed it before you closed it. It 
+will work for the program you used to process it, not on all the opened 
+windows, for instance, if you try it on Microsoft Access, it will only 
+affect Microsoft Access, it won’t affect Chrome. 
+Note: nevertheless, these commands may not work with some Windows, but 
+it works on the majority of Windows. 
+CHAPTER FIVE 
+MANAGING FOLDERS AND FILES 
+BROWSING THE FILE EXPLORER CABINETS 
+File Explorer is the Computer storage container for storing and executing 
+several operations such as copying, moving, deleting, renaming files and 
+folders. You can open the File Explorer and manage it with the following 
+guides: 
+v    Click on the “File Explorer” icon on the taskbar at the bottom of the 
+screen, instantly the File Explorer will open up with the Navigation 
+pane on the left side. 
+v    below the “Main Folder” is the “Recent file list” which comprises 
+the list of the previously visited program and document. You can 
+quickly access any of your recent folders from the recent list rather 
+than starting the Program and be looking up and down for such 
+document, for instance, if you left some work undone on Microsoft 
+Word in the morning, you can quickly access the unfinished task and 
+complete the work with the help of the Recent file list rather than open 
+Microsoft application and looking for the file in the Word documents. 
+v    You can however access all your computer storage mediums by 
+clicking on “This PC” the entire storage of your PC will be opened up 
+including the attached External Devices such as flash drive and disk 
+drive. 
+You can get it right with the File Explorer when you familiarize yourself with 
+the major components of the File Explorer which are: 
+1. Navigation Pane: this is the housing of the computer storage where 
+all the folders reside, it is located at the left side of the File Explorer 
+and contains the list of the storage space on your PC. 
+2. Folders: this is the certain area where specific files or documents are 
+kept, there are main storage folders in the navigation pane such as 
+document, picture, music, and so on, there are subfolders as well, for 
+instance, in the music folder you can have subfolder which you put 
+certain songs into, you will create the subfolder by yourself. 
+3. Devices and Drives: these are the devices or appliances attached to 
+your computer, which serve as external storage, major your storage 
+should live inside your internal folders such as Music, Documents, 
+Pictures, and others but you still need to have that external storage in 
+case, if you need some files and you are not with your PC, such files 
+may be on any of your external storage, external device storage can be 
+any of the following, Flash drive, Camera, Phones, Mp3 players, DVD 
+and so on. 
+GETTING A BREAKDOWN ON FOLDERS 
+A folder simply means a storage area that can be used to store several files, 
+you can as well create another folder inside a folder, such created folder is 
+known as a subfolder. There are Six (6) major folders designed for storing 
+files and items located at the left side of the navigation pane, click on the PC 
+to access those folders, such as Documents, Pictures, Music, Videos, 
+Downloads, and Desktops. 
+It is pertinent to save each item into their corresponding folders otherwise 
+you will find it difficult to locate certain items and your PC will lack 
+orderliness when you dump all the items into a single folder. 
+SEEING THE FILES ON A DRIVE 
+Drive is the external gadget you attach to your computer, it can also be called 
+disk drive such as Flash drive, Phones, Camera, CD/DVD, Scanner and so 
+on, these devices are represented by different icon depending on the type of 
+drive you insert, when you click any drive icon, the content of such drive will 
+open up so that you can see what is inside it 
+However, Windows will always ask you what you want to do with the drive 
+when each drive is first inserted into your PC by giving you a prompt option 
+at the bottom right of the screen. 
+All you need to do is to tap the prompt box, when you tap the prompt box, 
+you will immediately be provided with the “Choose what to do with the 
+Removable disk” dialog box, kindly select the way you want the PC to react 
+with the drive and that is how the PC will be reacting with the drive any time 
+you insert the drive again. 
+Let us assume you choose “Open folder to view files”, with immediate 
+effect windows will open up the content of the concerned drive so that you 
+can see the folders and files you have inside such drive. 
+Perhaps, you have selected an option for your drive and you don’t want the 
+option you selected earlier on anymore, you can change the option you 
+selected earlier by right-clicking on the concerned drive in the navigation 
+pane and selecting the Show more option from the fly-out list, then pick 
+another option you want from the Show more options menu. 
+CHECKING WHAT IS INSIDE A FOLDER 
+Every Windows folder is symbolized by a little folder that is used to save and 
+store different numbers of files. Are you pondering on how to check what 
+you have inside your folder? that is not a problem, below are the instruction 
+on how to see and check the contents of your folder whether the folder you 
+have in the Window desktop or File Explorer: 
+i.  
+Double-click the concern “Folder’s” icon and the content of such 
+folder will spring out. 
+ii.  
+You may have another folder inside the main folder, perhaps that is 
+where an item you need is being kept, kindly, double-click the 
+“subfolder” to see its content as well. 
+iii.  
+Perhaps, you’ve mistaken entered a wrong folder, no problem, find 
+your way out from such folder by clicking on the “tiny backward 
+arrow” at the top left of File Explorer, continue clicking the arrow till 
+it takes you back to the location you just left. 
+iv.  
+Familiarize yourself with the address bar as it provides you with the 
+tracking template of how you are moving from folder to folder and can 
+help you as well to navigate faster from one folder to another by 
+clicking any of the small arrows in the Address bar, it will show you 
+other folders you can quickly jump into. 
+v.  
+You can as well save yourself from the stress of navigating around the 
+File Explorer by typing the “Name Of Folder Or File” to the Search 
+Box in the Start menu, the Search box quickly runs through the PC 
+and brings you the result that matches your searching. 
+vi.  
+Probably you have a long list of file in your folder and scrolling 
+through the list seem a stressful and time-consuming task, kindly, 
+narrow down the list by typing the first two or three letters of the item 
+you are looking for, Windows will quickly jump the list to the list of 
+the item that begins those letters. 
+CREATING A NEW FOLDER 
+Are you tired of piling up different files and documents inside one folder? 
+Then you need to create a new folder so that you can keep each of your files 
+into their corresponding folder without having to miss up files together. 
+Check below guides on how to create a folder with ease: 
+a)  Right-click the actual place inside your folder where you want to place 
+the new folder and click the “New” menu from the fly-out list. 
+b)  Then select “Folder” from the New drop-down list to access a New 
+folder dialog box. 
+c)   A new folder dialog box will jump up, kindly type the New Name you 
+want for the new folder and strike on Enter key for confirmation, and 
+behold you have created a new folder. 
+Note: Windows will restrict you from creating a new folder if you include 
+unwanted letters into the name of the new folder you want to create. The 
+following are the restricted letter you should not include into your folder 
+name ( < > ? / \ * “ : | ). 
+RENAMING A FILE OR FOLDER 
+Don’t worry about any file or folder name that sounds somehow to you, you 
+can do away with an offensive file or folder name by changing such a name. 
+how do I change a file or folder name? that is what am about to do: 
+v    Right-click the file or folder name you want to change and pick 
+Rename from the fly-out menu or the File Explorer menu. 
+v    The previous name will be highlighted, begin to enter a new name 
+and the previous name will be erased. 
+v    Strike Enter key when you are done typing the name or click an 
+empty area within the File Explorer to authenticate the process. 
+Put the following note to memory before changing any file or folder name: 
+1. Don’t try renaming your 6 Main folders name (Desktop, Documents, 
+Downloads, Pictures, Music, and Photos), renaming them can 
+disrupt the activities of your PC and cause serious damage to your 
+Windows. 
+2. Note that renaming file or folder name doesn’t change anything from 
+the content of the concern file or folder, the content of the file or folder 
+remains the same, the only change is the file or folder name. 
+3. Don’t bother renaming any of the opening files or folders because 
+Windows will permit no alteration on the opening folder until you 
+close such a file or folder. 
+SELECTING GROUP OF FILES OR FOLDERS 
+Most times, a group of items can be selected together to perform a certain 
+activity on the group, such as copying, moving, deleting, and renaming, when 
+you select an item individually, it will consume a lot of time and at times 
+stressful. Take a look at the following instructions on how to select a group of 
+items (file or folder): 
+It is pertinent I show you how to select an individual item before 
+selecting a group of items, simply click on Individual file or folder to 
+select it. 
+If you want to select a group of items, hold down the Ctrl key and 
+continue to click each of the files or folders you want to select, as 
+you click on them, they will be highlighted. 
+Probably, you want to select a group of files or folders that are next to 
+each other, you can do that by clicking the first item on the list, then 
+holding down the Shift key and clicking on the last item in the 
+group, immediately, the two items will be selected including those 
+items between them. 
+Note: after the selection of the group of files or folders, you can then do 
+whatever you want on them such as copying, moving, deleting, and 
+renaming. If you need to select all the items in a list, quickly press Ctrl + A 
+for a quick shortcut selection of all the items. 
+GETTING RID OF A FILE OR FOLDER 
+Passage of time can also affect your file or folder because a season will come 
+when they will no longer be needed or relevant, if you want to get rid of any 
+unneeded files or folders, do well to: 
+Right-click the offending item you don’t need anymore and select 
+Delete from the fly-out list or the File Explorer menu. 
+You can as well delete a file or folder by Selecting the offending file 
+or folder, then strike on the Delete key on the keyboard. 
+Note: examine the files or folders you want to delete before deleting, any 
+item deleted will go straight to the Recycle Bin, remember not all the items 
+go to the Recycle Bin, check the earlier Chapter Where I talked about 
+Recycle Bin. If your PC refuses to bring you a warning box before deleting 
+an item, you can reset it by right-clicking the Recycle bin and picking 
+Properties, then place a Mark on the “Display Delete Confirmation Box” 
+check box and strike on the Ok button for authentication. 
+MOVING OR COPYING AND PASTING FILES AND 
+FOLDERS 
+Copying or moving files or folders is what you can’t do without any stress, 
+let me makes it simple by showing you the two best ways of moving or 
+copying a file: 
+Right-clicking Method 
+1. right-click the source file or folder you want to move or copy and 
+select Cut or Copy depending on whether you are moving or copying. 
+2. Move to the destination folder and right-click it, then select paste from 
+the fly-out list to paste the cut or copy item. 
+Drag and drop Method 
+1. Open File Explorer Windows twice and place them beside each 
+other. 
+2. Place the mouse on the file or folder you want to move or copy from 
+the source Windows and hold down the right mouse button. 
+3. Then drag the file to the destination folder in the destination 
+Windows, release the right mouse button as soon as you reach the 
+destination folder, and select Move or Copy from the pop-up list 
+depending on the action you want to carry out. 
+Note: it’s necessary you hold down the right mouse button, if you hold the 
+left mouse button, Windows will be confused as to the action you want to 
+initiate. 
+KNOWING MORE INFORMATION ABOUT FILES OR 
+FOLDERS 
+Each file or folder you create has peculiar information relating to that file or 
+folder only, for instance, the size of the file or folder, the date file or folder 
+was created, whet it was changed last and more information. The information 
+may not be needed all the time but occasionally you will need them to carry 
+out certain operations. To check and see other information aside from your 
+file or folder name, kindly observe the following instructions: 
+1. Right-click the file or folder which you want to get more information 
+about and select Properties from the fly-out list to access full 
+information about such file or folder. 
+2. The General tab is selected by default, you can change the program for 
+opening the concern file or folder by clicking on the change and 
+selecting another program. 
+WORKING WITH FLASH DRIVE AND MEMORY CARD 
+Flash drive and memory cards are the major drives most users use as external 
+storage for their PC, even most Photographers find it easier to connect their 
+Memory card to their Camera than using other drives. 
+Flash Drive: this will simply be attached to one of the USB spots of your 
+PC and it will be ready for use. You can access the flash drive like every 
+other folder of your PC simply by double-clicking the Flash drive icon in the 
+Navigation pane, once the Flash drive is connected you can treat it just like 
+every other folder in the Navigation panel, such as Copying, Moving, and 
+Deleting, however, you should know any file you deleted from Flash drive is 
+gone forever compares to internal storage folder which will be dropped to the 
+Recycle Bin. 
+Memory card: A memory card will be inserted into the card reader, it is with 
+the help of this Card reader that the Memory card will be connected to the 
+PC, you can get the card reader from the electronic store while some 
+organizations supply Card readers to their staff, at the same time some brand- 
+new PC come with the Card Reader. 
+Note: some PC will give you a warning that a flash drive or memory card is 
+corrupted or damaged that you should format it, never format it, you can go 
+ahead to format it, if the Card or Drive is a new one or if you don’t care about 
+the content that is inside it, you can format a Card or Flash drive by right- 
+clicking it and choose Format from the fly-out options. 
+ONEDRIVE YOUR MAIN CLOUD STORAGE 
+OneDrive is the online storage medium designed to help each Windows users 
+manage their files and folders on the net and go, for instance, you can’t take 
+your PC to all the places you go to but with your OneDrive online storage, 
+you can access every of files and folders saved to the OneDrive anywhere, 
+anytime and on any PC with an internet connection, provided you have 
+Microsoft account. any file or item you save to the OneDrive is saved into the 
+two sources which are your PC and the Internet. Another important feature of 
+OneDrive is that it can’t be destroyed like other external storage media like a 
+flash drive, DVDs, Memory Cards, and others which means your files and 
+folders are securely saved without any doubt. 
+OneDrive is placed into the Navigation pane just as every other folder of the 
+PC, it serves as an added advantage to PC users that has low storage capacity 
+as it comes with much capacity with at least 1TB 
+SETTING UP ONEDRIVE 
+OneDrive is inaccessible until you process its setup, the setup begins the 
+moment you click on its icon in the Navigation pane, though you are always 
+permitted to change its setup any time you desire. Follow the instructions 
+listed below to process your OneDrive settings: 
+v    Click on the File Explorer from the taskbar and tap on the OneDrive 
+icon inside the Navigation pane. The opening screen will jump up if 
+it’s the first time accessing OneDrive. 
+v    You may be asked to sign in, mostly if you are using a local account, 
+Microsoft account at times sign in automatically, then input your 
+Microsoft account details (Microsoft account and password) and click 
+on sign in. 
+v    Click on the “Change Location” button if you want to change your 
+OneDrive storage location, otherwise, click the next button. 
+v    You will be asked for the folder you want to synchronize with your 
+PC, select the folder you want to sync with your PC. You have to pick 
+either of the two options to synchronize your PC: 
+a. Make All files and folders in my folder: it means all your 
+OneDrive files and folders are also stored in the PC memory. 
+b. Sync only these folders: this is used to save certain folders into 
+OneDrive and PC memory, most especially an important folder, 
+and when there’s not much space on the PC. 
+v    Click the OK button to authenticate the changes. 
+TWEAKING YOUR ONEDRIVE SETTINGS 
+Your OneDrive settings can be changed at any moment when you feel there’s 
+a need for you to change your OneDrive settings, unless you change your 
+settings, it will remain constant with the settings you initiated the first time. 
+These are the guides for changing one's OneDrive settings: 
+i.  
+Navigate to the taskbar area and right-click the OneDrive icon, then 
+click Help & Settings from the panel that comes out, and last pick 
+Settings from the help and settings menu to access Microsoft 
+OneDrive Window. 
+ii.  
+The Account Tab will be selected by default in the OneDrive 
+Window, tap on Choose folders button to select the folders that will be 
+stored on both your PC and the OneDrive. 
+iii.  
+Select the folders you need on both PC and OneDrive from the sync 
+your OneDrive files to this PC and tap on the OK button for 
+authentication. 
+Breakdown of Microsoft OneDrive Settings Panel: 
+1. Settings tab: placing a checkmark on this check box help to sync 
+automatically any moment you log in to your PC. 
+2. Account tab: just as we had discussed above, it’s used to select your 
+OneDrive folders which you as well want on your PC internal storage, 
+you can as well see the rate of your OneDrive consumption and the 
+available size. 
+3. Backup tab: this is the area for creating a backup for some of your 
+essential folders such as Pictures and documents. 
+4. Network tab: this is used for managing how one’s OneDrive will be 
+syncing. 
+5. Office tab: this is used to manage OneDrive with the documents made 
+by Microsoft Office suite, such as Word, Excel, and other Office suites 
+programs. 
+6. About tab: it gives you more directions on OneDrive, such as 
+troubleshooting, privacy, term of use, and so on. 
+Note: Microsoft grants each Microsoft user a right to free 5gigabytes storage, 
+you can have access to additional storage by paying a monthly fee, this may 
+not be necessary until you exhaust your free 5gigabytes when you notice 
+there is a need for more space. 
+OPENING, SAVING, AND DELETING FILES WITH 
+ONEDRIVE 
+For those users who already have a Microsoft account and have already 
+signed on to their OneDrive, the next activity is to open the OneDrive and 
+perform one or more activities with the OneDrive, you can achieve that by 
+clicking on the File Explorer from the taskbar, then find and click on 
+OneDrive at the left side of File Explorer in the Navigation Pane to Access 
+OneDrive. OneDrive will be opened up with different folders including 
+documents and photos but only two empty folders (documents and photos) if 
+it is your first time signing in to the OneDrive. 
+We must examine two or more operations that you can carry out with your 
+OneDrive in the same manner you treat other folders in Your PC: 
+v    To access and see what your OneDrive folder contains, kindly 
+double-click on such a folder, it will open up and show its contents. 
+v    Save any of your files into OneDrive by selecting OneDrive from 
+Save As Dialog Box and pick any of the OneDrive folders, then save 
+your file. 
+v    Get OneDrive items deleted by right-clicking on the concerned file 
+or folder and selecting Delete from the pop-up menu. Each item you 
+deleted from the OneDrive will also move to the Recycle Bin just like 
+other internal folders of your PC. 
+v    Edit any files or documents in the same manner as editing other 
+storage documents, by double-checking such a file to open it in by the 
+format or program in which such a file is created. 
+Note: the changes you make to any of your OneDrive files when there is no 
+internet connection will be automatically be updated when the internet 
+connection is on. 
+CUSTOMIZING ONEDRIVE WITH FILES ON DEMAND 
+TO DECIDE THE FILES THAT WILL STAY ON 
+ONEDRIVE, PC OR BOTH 
+Windows always display all the files and folders you saved with your 
+OneDrive so that you can access them from your PC even if it is not saved to 
+your PC, though to access those files you may need the availability of the 
+Internet connection. 
+“Files on-demand” is Majorly for the PC user that is having low storage by 
+helping them to manage their OneDrive files effectively and at the same time 
+having full access to specific OneDrive files, accessing certain files may 
+depend on the availability of the Internet and whether Files on Demand is On. 
+Consider the following instructions to ON “Files on Demand” feature for 
+your PC, mostly when your PC is lacking internal storage: 
+i.  
+Navigate to the taskbar notification area and right-click the 
+OneDrive icon, then choose Help & Settings from the panel that 
+comes out, then pick Settings from the help and settings menu to 
+access Microsoft OneDrive Window. 
+ii.  
+The Account Tab will be selected by default in the OneDrive 
+Window, select the Settings Tab and place a mark on the “Save space 
+and Download file as you use them” check box in the Files on 
+Demands section. 
+iii.  
+Tap on the Ok button for authentication, hence all your OneDrive files 
+and folders name will be visible on the PC irrespective of whether they 
+are being saved on the PC or not. 
+However, even though all OneDrive folders are visible on the PC doesn’t 
+mean they are all accessible in the same ways, this is the explanation on three 
+types of OneDrive's Files on Demand as shown below: 
+v     
+Internet accessible alone: this category of a file is only 
+available during the time that you have an internet connection 
+alone.  
+v     
+Momentarily available: this category of files is 
+available on your PC because you open it on your PC with the 
+internet, hence it will be copied to your PC. However, if you 
+need more space on your PC, you can remove it from your PC 
+by right-clicking the concerned file and selecting Free up space 
+to remove it from the PC and retain the OneDrive copy alone. 
+v     
+Consistently available on PC: this category is 
+consistently available on your PC irrespective of whether you 
+have an internet connection or not. 
+Note: you can change any of the above Folder types by right-clicking any of 
+the 3 categories and selecting the following options depending on the current 
+situation of your PC (level of your internal storage) or if the folder or file is 
+your favorite or not: 
+  
+a. View Online: to view and download such a folder or file to 
+your PC with the internet. 
+b. Always Keep OnThis Device: to make the file or folder 
+consistently available on the PC by downloading it and 
+keeping it on your PC internal storage. 
+c. Free Up Space: it removes the file or folder from the PC to 
+create enough space on your PC but retains it on OneDrive. 
+This is an ideal option when you notice you are running out 
+of storage on your PC. 
+Hints: remember it is not necessary to pick “Files on Demands” when you 
+have enough storage on your PC, it is good to pick “Make All Files 
+Available” so that all your OneDrive files will be accessible on the PC even 
+when you don’t have internet connection but when you are battling with 
+storage space do well to pick Files On Demands to effectively manage your 
+OneDrive files along with your PC. 
+GAINING ACCESS TO ONEDRIVE OVER THE NET 
+This is the best feature of OneDrive that no one can argue about, it allows 
+you to access every file and folder you store on your computer over the net 
+when your PC is not within your reach. It means you don’t need to carry your 
+PC all-around before you can access your OneDrive folders and files. You 
+can gain access to each of your OneDrive files on the OneDrive website on 
+your friends, family, colleagues, and others by: 
+v    Entering the https.OneDrive.live.com on your browser to access the 
+OneDrive website. 
+v    Insert your Microsoft account details (Account name and 
+password) to log in to your OneDrive files and folders. The moment 
+you have successfully logged in to the OneDrive website, you can 
+carry out any operation on your files and folders just as can do on your 
+PC such as editing, renaming, Deleting, moving of files, and folders. 
+Note: managing your OneDrive files and folders on your PC is the most 
+awesome thing, nevertheless, when your PC is away from you and you find it 
+necessary to carry out certain operations on your files, do well to make use of 
+the OneDrive website on another person Computer. Do you need to share a 
+file with someone on the Go when you are not with your computer? You can 
+as well right-click the files or folders on the OneDrive website, then select 
+OneDrive from the fly-out menu to access a panel for entering the email 
+address of the recipient, enter the email address, when the receiver clicks on 
+the link, he or she will be able to access the content of the concern file or 
+folder. 
+CHAPTER SIX 
+WORKING WITH APPS, PROGRAMS, AND 
+DOCUMENTS 
+One of the importance of Windows OS is for running an application and 
+program, when you run some application or program you will result in a 
+result call document. This section is designed specifically to take you through 
+all you need to understand in dealing with programs, applications, and 
+documents. 
+LAUNCHING AN APPLICATION OR PROGRAM 
+You haven’t made the best use of your PC until you run one or two 
+applications and programs. You can study the following guides for starting 
+and running an application and program: 
+i.  
+Click on the “Start” button on the taskbar or strike the “Start” button 
+on the keyboard to access the Start Menu. 
+ii.  
+Click on the app or program you want to launch or run provided you 
+can see its icon on the Start menu. 
+iii.  
+Click on the Down button at the Right Side of the Start menu to 
+navigate down to see other applications in the Start menu. 
+iv.  
+If you are yet to see the application you want with the above command, 
+kindly click on the “All Apps” button to access the list of all 
+applications and programs that are installed on your PC. 
+Note: any of the above methods will fetch you your application, perhaps you 
+are still unable to find that particular application you need, kindly navigate to 
+the Search box situated at the upper part of the Start menu and type the name 
+of the application or program, Windows will quickly bring programs that 
+match the names you searched, simply click on the actual program or 
+application you want and it will be opened on the screen. 
+OPENING A DOCUMENT 
+A document is a file stored on your PC with the help of the application or 
+program you used for creating it. In simple terms, a document can also be 
+called a file. These are the instructions for opening your document: 
+a)  Check for the word “File” on the topmost edge of the particular 
+program you are running. You may click on the Alt key to display the 
+menu bar perhaps the menu bar has hidden, nevertheless, you might be 
+running the program that does not have a menu bar, yet it must have a 
+ribbon, kindly tap on the button at the upper left corner to give you a 
+drop-down of the file menu 
+b)  Select “Open” from the File menu drop-down and click on the 
+“Browse” button to access various folders, files, or documents you 
+have stored on your PC. 
+c)   navigate and click on the Document Or File you want to open, then 
+tap on the Open button to display its contents boldly on the screen or 
+double-click on the concerned document to quickly open it up on the 
+screen. 
+Note: your document or file may be enclosed in a folder, double-click on 
+the folder that contains your document, then double-click the file or 
+document to open it up on the screen. 
+Tip: never bother about the name of a file or document, kindly, hover the 
+mouse over it to get its name and detail. 
+SAVING YOUR DOCUMENT 
+Microsoft provides you with diverse options for saving the work you are 
+creating or that you have just created into the hard drive or external 
+storage for safeguarding and protection. All you need to do is to alert the 
+PC to save the work you have created or creating, otherwise, the hours 
+spent on such work will be wasted, nevertheless, Microsoft always 
+displays a confirmation box asking to know if you will like to save your 
+document before Windows eventually close such a program which give 
+you privilege to quickly save your document if you’ve forgotten to save it 
+earlier on. 
+Are you bothered about how to save your work? Keep calm and check the 
+steps below: 
+1)  Click the File menu at the right-top menu and select the Save 
+button, then pick the folder where you will like to put your file or 
+document such as Desktop, OneDrive, or Document. 
+2)  Click on your preferred folder but major people prefer the 
+document folder, never mind the name guessed by Windows, 
+simply begin typing your desired name, and the name suggested by 
+Windows will disappear, tap on the Save button for authentication 
+as soon you are done typing the name. Windows will prompt you to 
+enter a name for the document when you first save a document but 
+you can press Ctrl +S for subsequent saving to incorporate your 
+change into the document without entering any name again, 
+especially if you are working on a very important document. 
+Note: you can press Ctrl + S for a quick shortcut code for saving a document, 
+it is advisable to save your document at first into the internal storage folders 
+such as Desktop, Document, Pictures, Music, then you can transfer them into 
+external storage such as CD, DVD, Flash drive and Phone. 
+Hope you are aware of what “Save As” is all about? This is the command 
+that gives you the privilege of saving a file with a different name and to a 
+different location, mostly when you need to save the new change on your 
+document and at the same time keep the original document intact. Save As 
+feature preserve both the new and original version of the document and also 
+give you the right to save to a different format such as PDF and other 
+formats. 
+SELECTING A PROGRAM FOR OPENING A FILE 
+Windows offer the right to each user to decide the desired program for 
+opening some file because some file can be opened with two or more 
+program. It has been the custom of Windows to open a file with the program 
+from which it’s created which is known as the default program, however, this 
+might not be the preferred program for opening such a file by the user, to sort 
+this issue, users are allowed to dictate the program for opening each file 
+perhaps the default program is not his desire program for opening such a file. 
+To dictate a preferred program for a file that is been opened with an 
+undesired program, do well to study the below steps: 
+A. Right-click the concerned file, and click the Open With menu to see 
+the list of programs that you can use to open the concerned file. 
+B. Click on the Program you will like to use to open the program from 
+the list. 
+C. If you want the program to be the program that will keep on opening 
+the file, you will need to click on the “Choose Another App” button. 
+D. place a mark on the check box beside “Always use this app to open 
+file” to command Window to use the program you selected in opening 
+the concerned file always and click on OK 
+E. Perhaps, you are unable to find the program you want to use for 
+opening the concerned file, kindly, click on “Look for an app in the 
+Microsoft store”, and click the Ok button to access Microsoft Store 
+where you will be provided with a lot of application that you can use 
+for opening the selected application, install the desired program you 
+want for opening the concerned file from the store and it immediately 
+attached itself for opening the selected file. 
+F. However, if it doesn’t work immediately, you can follow step (A-D) 
+to make the newly-downloaded program open the selected file. 
+MOVING HERE AND THERE WITHIN MICROSOFT 
+STORE 
+To enjoy the best of Microsoft, you need to understand how to exploit 
+the Microsoft store and get its application installed on your PC. 
+Managing Microsoft store is just like working with Play store, Apple 
+store and others but it’s more developed and contains Universal 
+applications. This section explicitly explains one or more activities you 
+can carry out with the Microsoft Store. 
+INSTALLING AN APP FROM THE MICROSOFT STORE 
+APP 
+Without any argument, Windows 11 provide you with numerous in- 
+built apps which you can use to make explore the world at large, 
+however, some amazing apps do not come with Windows but which 
+you can get easily from the Windows store. Follow the steps below to 
+install any of your choice applications from the Microsoft store: 
+1. Click on the Microsoft Store icon from the taskbar or Start 
+menu to access Microsoft Store. 
+2. If you have a particular App, Game, Music, and Movies you 
+want to install, kindly type its name or keywords to the Search 
+Box and strike Enter key on the Keyboard, and Windows will 
+instantly find the result that matches your searching, click on 
+the Install button below the actual App or Game you want from 
+the list of application that Windows brings to you to install it. 
+3. You can as well search for more Apps, Gaming, and 
+Entertainment by navigating to the left side of the Microsoft 
+Store and clicking the category you want whether Apps, 
+Gaming or Entertainment. 
+4. If you need to get more information about any app, click on 
+such an app to get the description attached to it. 
+5. The five (5) buttons at the top of your search results help to sort 
+the result according to the sorting button you click such as All 
+results, App only, and others. 
+Note: some apps are free while some are not, when you come across a free 
+app click on the Get button below it to install it, if it is an app with price 
+click on the Attached Price to pay with your Credit card which you must 
+have entered when you are signing up for Microsoft account, otherwise 
+Microsoft will bring back the details for completion immediately you click on 
+any app that has a price. 
+UNINSTALLING AN APPLICATION 
+This simply means removing any of the apps you have on the Start menu and 
+All Apps whether a free or paid app. When you uninstall an application, you 
+simply erase only the application not the documents or contents of the 
+application from the PC. You can uninstall an app when you are running out 
+of storage or when you don’t need the app anymore. To uninstall or remove 
+an application from the Start menu, do well to: 
+v    Look for the app either in the Start menu or All Apps, then right-click 
+the app and select uninstall from the list. 
+Note: the process above temporarily removes the application from the Start 
+menu, there is a process of removing application permanently from the PC 
+which I have treated separately in one of the next chapters ( Adding and 
+Removing Apps) 
+CHAPTER SEVEN 
+QUICK ACCESSIBILITY WITH DESKTOP 
+SHORTCUTS 
+A desktop shortcut is an amazing way of accessing an application, a 
+document, file folder, etc. from the computer desktop. You need to create a 
+shortcut for any icon which you want to access quickly anytime from the 
+desktop, shortcuts are recognized with the little arrow beneath them. 
+When you choose to take a quick route with a desktop shortcut rather than a 
+Start menu, kindly familiarize yourself with ways of doing it as it is stated 
+here below: 
+Apps and Programs: to create a shortcut for any app, you will need to: 
+v    Click on the Start button and move to All App from the start menu. 
+v    Locate the app you want to create a shortcut for, then click and drag 
+it to the desktop, as you are dragging it, you will notice the word 
+“Link” then release the mouse to place it on the desktop. 
+Folders and Documents: to create a shortcut for any of your documents and 
+folder, you will need to: 
+v    Access your File Explorer from the taskbar, then search and right- 
+click the particular folder or document you need on the desktop. 
+v    Click Show More options from the fly-out list and click Send To 
+menu, then select the Desktop (Create Shortcut) from the pop-up list 
+to quickly send the folder shortcut to your desktop. 
+Websites: as you are browsing and you notice a website that you like, you 
+can send it to your desktop by dragging the little icon at the front of the 
+website to the desktop for instant accessibility at another time. 
+Note: you can shift your shortcut here and there within the desktop but before 
+moving any shortcut ensure such a shortcut is not launched on Windows. 
+COMPLETE INSTRUCTIONS FOR CUTTING, COPYING, 
+AND PASTING 
+To make your interaction with Windows 11 more effective, you need to 
+understand how to explore features of cutting/copying and pasting very well. 
+You may need the same image you are seeing in the picture folder inside the 
+web browser, you may need to copy the address you have on the Word 
+process into an address box or from the word document into another 
+document. Either in one way or another, you will need to cut/move and paste 
+an item. Keep calm as this section is deliberately designed to take you 
+through cutting, moving, and pasting an item. 
+SELECTION OF AN ITEM FOR CUTTING AND COPYING. 
+The first action to be taken whenever you need to cut, copy and paste an item 
+is to select the item you want to copy, it can be a file, folder, some words, 
+sentence, paragraph, page, and any other item. let me quickly take you 
+through that process: 
+Files or Folder Selection: click on the concern file or folder to select it, for 
+multiple files or folders, it may be adjacent files or folders or non-adjacent, 
+below is how to select multiple files and folders together 
+1. For adjacent files or folders: if those items are next to each other, 
+kindly tap the first item in the list by holding down the Shift key, 
+and click the last item in the list. This will cause Windows to select 
+all the items from the first item you clicked to the last item you clicked 
+including those items between them. 
+2. For non-adjacent files or folders: if those items are not sitting next to 
+each other, kindly hold down the Ctrl key and begin to select all the 
+items you want to select. 
+Select text from any website, and document: you can select text or group 
+of texts from any website or document by: 
+1. putting the cursor to the start of the texts you want to select and then 
+holding down the mouse button. 
+2. As you hold down the mouse button without releasing it, drag the 
+mouse to the end of the text you want to select and release the mouse 
+button. Every text within the scope of the text you dragged over will 
+be selected. 
+Note: the moment you are done selecting texts, files, or folders, make sure 
+you cut or copy it immediately if you mistakenly press any of the mouse 
+buttons the selection will be canceled. if you mistakenly press another letter 
+as soon as done selecting, the text selected will be replaced with another letter 
+you press after selection, though you can revert it by clicking on Undo or Ctrl 
++ Z. 
+CUTTING, COPYING, AND PASTING THE SELECTED 
+ITEM 
+You need not waste any time after the selection of the items than to Cut or 
+Copy and paste the selected items, to do that, you will need to: 
+v    Right-click the Items you have selected and pick Cut to move the 
+item and Copy to duplicate the item. (when you pick Cut the original 
+item will be taken out from the initial location while Copy retains the 
+original item to the initial location). 
+v    You can quickly use keyboard shortcuts, use Ctrl + X to cut while 
+Ctrl + C to copy. 
+v    Move to any location inside and outside the initial document, folder, 
+website, or any other places and right-click the location where you 
+want to paste the cut or copied item and then select Paste from the fly- 
+out list or use the keyboard shortcut by pressing Ctrl + V. 
+Note: the cut or copied item remains on the clipboard ready to be pasted, you 
+can paste for as many times you want it. It will remain on the clipboard until 
+you copy or cut another item which will replace the earlier item you cut or 
+copied. 
+CHAPTER EIGHT 
+SURFING THE WEB 
+One of the essential things you can’t do without on your PC is to browse the 
+internet, Windows as Operating System is even worthless if you can’t browse 
+your favorite website on it, which is the motive behind releasing of Microsoft 
+Edge with Windows 10, Microsoft Edge is more improved and faster than the 
+one you have known in Windows 10. This chapter exposes you to certain 
+operations you can carry out on the internet whether on Microsoft Edge or 
+others Web browsers and various ways of connecting with the internet. 
+CONNECTING WIRELESSLY TO THE INTERNET 
+Wireless connection allows you to connect your PC to the nearby Wi-Fi 
+connection to browse the internet without a cable connection which is also 
+known as “tethering”. Once you are connected with any of the Wi-Fi 
+connections, your PC is ready to make an exploration over the internet. 
+Are you ready to connect with a nearby Wi-Fi connection either a Private or 
+Public Wi-Fi connection? Then you need to observe the following guides: 
+i.  
+Follow the shortest route by clicking on the “Wi-Fi” icon on the 
+taskbar to access different kinds of connections on your PC (you are 
+likely to see different icons depending on your connectivity). 
+ii.  
+Tap on the “right arrow” beside the Wi-Fi icon to access the list of all 
+the nearby wireless networks, Windows is putting the fastest and 
+strongest network to the top. 
+iii.  
+Look for the network name you want, then click “its name” and strike 
+on the “Connect” button (you may place a mark on the Connect 
+Automatically check the box if it is likely to connect to the same Wi-Fi 
+network again otherwise leave it unchecked). 
+iv.  
+When you click on connect button, one of the following two things 
+will happen either you are connected with the network if it is an 
+unsecured network or you are prompted to enter the password if it is a 
+secured network. It is advisable to click on the network you know by 
+asking the providers the password to their network, connecting to the 
+unknown network is likely to expose you to the danger of giving out 
+essential information which may be used to dupe you. 
+v.  
+Request for the network provider password, then enter the Password 
+into the provided box and strike Enter key, it may be a free network or 
+charges network. 
+BROWSING  
+YOUR  
+IN-BUILT  
+WEB  
+BROWSER 
+(MICROSOFT EDGE) 
+Microsoft Edge is an in-built web browser for Windows that replaces the 
+Internet Explorer browser in the previous Windows version before Windows 
+10. Microsoft Edge has been the favorite web browser for many Windows 
+users because Microsoft's web connection loads quickly and speedily, it 
+displays its contents for the user to see boldly. You can access Microsoft 
+Edge by clicking on its icon on the taskbar but you need to understand its Tab 
+icon option first as it is discussed below: 
+Tab icon: a click on the Tab icon gives you three commands for executing 
+three commands: 
+v    Turn on vertical tabs: Putting tabs vertically to the left side rather 
+than top edge where it used to be. 
+v    Recently closed tabs: Retrieving the tab that you’ve closed recently. 
+v    Add all tabs to collection: Add all your opening tabs to a collection, 
+which you can open again at another time with a single click. 
+As you are browsing over the Microsoft Edge, it will be necessary to know 
+the significant part of Microsoft Edge for easy surfing and navigation as it is 
+explained below, however, the part discussed are related to other web 
+browsers: 
+1)  Tabs action: it represents the tab commands action we 
+discussed above. 
+2)  Tabs: this represents each website you have opened on your 
+browser. 
+3)  Back button: click on this button to take you back to the page 
+you've browsed before. 
+4)  Forward button: this returns you to the place you’ve just left 
+with the back button. The forward button is inactive until you 
+use the back button. 
+5)  Refresh button: click on this button to refresh or reload a page 
+that is not loading well. 
+6)  Address bar: this is the bar or field for typing the address of 
+the website you want to access. You can type whatever you 
+want to find on the internet into this box as well. It represents 
+the address bar of the currently opened tab. 
+7)  Open the new tab: a click on this button adds a separate tab 
+including an address bar which you can use to visit any other 
+website or search for things. 
+8)  Add this page to favorite: this is the icon for adding the 
+current opening page into the favorite list. 
+9)  Favorite: this is the collection of all the website pages you’ve 
+added as the favorite. 
+10)            Collection: this is the reservoir of the group of tabs you 
+saved with the Tab action, when you click on the Collection, it 
+will reveal all the group tabs you saved. 
+11)            Personal: this button helps you to decide whether to 
+sync your favorite website into the Microsoft account 
+12)            Settings and More: this is the button that serves 
+multiple purposes, such as printing the page, opening a new 
+window, changing the concerned website’s text, sharing a site 
+with a friend, and many more options. 
+CHOOSING MICROSOFT EDGE HOME PAGE 
+Microsoft home page is the display page that shows up on the screen the 
+moment you open your Microsoft Edge, Microsoft Edge will always open 
+with Microsoft website by default but you can dictate the Home page you 
+want by selecting any of your favorite websites as the home page. Check 
+below procedure to make any of your favorite websites your Microsoft Edge 
+home page: 
+v    Open your “Microsoft Edge” and click the “Favorite” icon to 
+access your favorite websites. 
+v    Click on the particular favorite website you will like to make as the 
+home page from the list of your favorite website and click on the 
+Settings and More button. 
+v    Select Settings from Settings and More fly-out menu to open 
+Settings tab. 
+v    Click on the “Start, home and new tabs” section then move to the 
+“When Edge starts” category and click on use all open tabs to make 
+the currently open favorite website as your Microsoft Edge home page, 
+then click on the X icon at the topmost of the Microsoft Edge to close 
+the Settings tab. When you check your home page, it must have 
+changed to the new home page, and that is what it will be displayed 
+any time you launch into Microsoft edge. 
+Note: from the home page, you can do all other things just like the default 
+home page and other browsers, for instance, you can browse the internet, 
+enter into the website, search for particular things, and every other thing. 
+REVISITING YOUR FAVORITE SITE 
+The favorite site is worthless until there is a chance of enjoying the same vibe 
+once again. What do you do when you see a favorite site? You save them for 
+another visitation. To add a site into a favorite list, do well to: 
+i.  
+Tap on the “Add this page to Favorite” icon at the right edge of the 
+address bar to access the favorite added box. 
+ii.  
+You can use the same name or edit it to your desired name and click on 
+the Done button to add the page to the favorite list. 
+Note: when it is time to check your favorite place you’ve visited before, you 
+will need to click on the favorite list icon to access the list of all the favorite 
+sites you’ve added, click on the actual one you want to visit back to see that 
+amazing contents once again. 
+Perhaps, the time has gone over the previous favorite site you’ve added into 
+the favorite list, no qualm, you can send it out of the favorite list anytime you 
+see that a certain list is no more interesting to you by right-clicking the 
+offending site’s name and selecting Delete from the fly-out list. 
+CHANGING THE SEARCH ENGINE FOR FINDING 
+INFORMATION 
+Do not forget I told you about how to search for things on the Internet, for 
+more emphasis, you can search for anything by typing whatever you are 
+finding into the Address bar and striking on Enter key to send Windows an 
+errand of finding the meaning of that particular information for you. 
+However, the accuracy and completeness of what you search for depends on 
+the search engine that you use, the default search engine of Microsoft Edge is 
+Bing, it is an amazing search engine, nevertheless, that may not be your 
+preferred search engine or not ideal for a particular item you want to search 
+for, in that case, kindly, change your search engine by mastering the 
+following steps: 
+i.  
+Click on the “Settings and More” button at the upper right corner and 
+select “Settings” from the fly-out list to open Settings on its tab. 
+ii.  
+Tap on the “Privacy, Search, and Services” from the upper left side 
+of the Settings tab to access the Privacy, Search, and Service settings 
+category. 
+iii.  
+Navigate down to the “Service” section and tap on the “Address bar 
+and Search” category to access the Address bar and Search options. 
+iv.  
+Tap on the “Down” arrow beside the Search Engine used in Address 
+Bar and select your desired “Search Engine” from the fly-out list to 
+make it a selected search engine for searching for things on the 
+internet. Close the Settings tab by clicking the X on its right side. 
+FINDING ALL TYPES OF INFORMATION ON THE 
+INTERNET 
+there are various ways for searching for information on the internet, the 
+easiest way is to click on the link information, the moment you click on such 
+link, the internet searches the internet for you in respect of the link 
+information you clicked on. 
+nevertheless, the information that is linkable with a webpage is very few and 
+that prompted me to take you through the process you can take to search for 
+anything on any of your current pages as cited below: 
+i.  
+Double-click on the “Word” which you want to find information about 
+from your webpage to select it (double-click and drag over the group 
+of words you want to select). 
+ii.  
+Right-click the “Selected Word Or Words” and pick “Search the 
+Web For” from the fly-out list. 
+iii.  
+Windows immediately transfer the selected word into the search 
+engine to search the internet and the searching result will be released 
+instantly depending on your network mode. 
+SAVING ALL TYPES OF INFORMATION FROM THE 
+INTERNET 
+You are at ease to save every information you come across on the internet 
+into the folder on your PC, whether it is text, picture, video, and webpage. 
+This section is designed to teach you how to save all the needed information 
+from your PC into your PC folder. 
+SAVING A PICTURE 
+Why are you bothering on how to save an amazing picture you see on the 
+web for your personal use? Do not worry about that, you simply need to: 
+v    Open the concern Picture, right-click the image and select Save 
+Image As from the fly-out list to access Save As dialog box. 
+v    Select the folder you want to use to save the image, then enter the 
+name into the name box and tap on the Save button. 
+  
+SAVING A WEBPAGE 
+Are you amazed about the content of a particular webpage? and you will like 
+to have such webpage into one of your PC folder, no qualm, that’s right, you 
+can do that by: 
+v    Right-clicking the empty area of the concerned webpage and tap on 
+Save As from the fly-out list to access Save as dialog box. 
+v    Select the destination folder and enter its name, then click on the 
+Save button. 
+Note: adding a webpage to the favorite list is different from saving a 
+webpage, the webpage you add to the favorite list may change as soon you 
+click on it from the favorite list, but the saved webpage into any of the PC 
+folder remain constant and unchanged for life. 
+SAVING TEXT 
+This simply means saving a certain proportion of text in your current 
+webpage, saving a text is a little bit different from saving a picture or 
+webpage, check the information on saving text as it is explained below: 
+v    Select the proportion of the text you want to save and right-click it, 
+then pick Copy from the fly-out list. 
+v    Find your way into any of the Word processor applications, 
+preferably Microsoft Word applications, paste the text into the Word 
+processor program and click on the Save icon to access Save As 
+dialog box. 
+v    Save it with any name and strike on the save button to save it into 
+your document folder. 
+CHAPTER NINE 
+CUSTOMIZE YOUR WINDOWS SETTINGS 
+Windows allow you to alter and customize each switch in your Settings Panel 
+to look just as you want, knowing how to change each setting switch is very 
+essential in making Windows work the exact ways you want it. This section 
+will help you discover all Settings Switches and as well customize the 
+settings you want. 
+I will explicitly explain 5 categories of these settings, others have been dealt 
+with in separate chapters within this user guide. 
+LOCATING THE RIGHT SWITCH 
+As it was during the time of the previous Windows version it’s in Windows 
+11 but the arrangements and location of those switches are different. To 
+locate each switch that will be needed for customizing your PC, kindly: 
+1. Tap on the “Start” button to access the start menu. 
+2. Find and tap on the Settings icon from the start menu or click on the 
+Settings icon on the taskbar if it’s pinned to the taskbar. 
+3. Locate your right switch at the right side of the Settings Panel to 
+customize the look, feel, and behavior of your PC. 
+  
+FLIPPING  
+THROUGH  
+WINDOWS  
+11  
+SETTINGS 
+SWITCHES 
+It is pertinent to examine the way to alter each switch of the Settings Panel to 
+have the right Operating System you desire. Find your way to Setting Panels 
+in either of the two ways I described in the previous section and take each 
+switch one after the other, the panel contains 11 Switches. 
+ALTERING THE SYSTEM SETTINGS 
+System Category switch helps you to adjust the screen resolution of your PC 
+and your notification information. 
+TWEAKING YOUR SCREEN RESOLUTION: screen resolution 
+determines the number of resolutions your Windows display on the computer 
+screen, you can either shrink or expand your screen resolution. Follow the 
+listed guide to change the screen resolution of your screen to your desired 
+resolution: 
+i.  
+Click on the “Start” button to access the Start menu and tap on the 
+“Settings” icon from the Start menu to display the Settings panel. 
+ii.  
+At the right side of the Settings panel, click on the “System” category 
+and select “Display” from the System category heading. 
+iii.  
+move scale and layout heading in the Display section and click on the 
+Display down arrow to select a resolution of your choice, the higher 
+the resolution the larger the screen size though when the screen size is 
+much bigger the image and text will be shrink. 
+iv.  
+The resolution will change to the new resolution you selected above 
+but it will wait for your approval by bringing you a confirmation box. 
+you need to click on the Keep Changes to tell Windows of your 
+intention to retain the changes otherwise the changes will be reverted. 
+Note: you should choose the resolution with the word recommended because 
+Windows know the best resolution for your computer screen. 
+MANAGING TWO SCREENS: you can view your desktop screen in any 
+of the following ways by connecting another monitor with your PC with an 
+adapter or cable, then click on the Display section you will see ½ as a result 
+of the two connected screens then click on the down arrow at the lower left to 
+choose any of the following display options: 
+v    Duplicate These Displays: this is the choice for duplicating your 
+desktop on two screens, for instance displaying your desktop screen 
+information on a wall or another desktop for presentation as well. 
+v    Extend These Displays: this option extends your screen information 
+into another desktop so that the two desktops can display the screen 
+information as a whole but in a large format. 
+v    Show only on 1: it is selected when you are preparing the 
+presentation, it shows only on your PC screen and blank the other 
+monitor, then switch to Duplicate These Displays as soon as you are 
+ready for the presentation to display the presentation fully on the two 
+screens. 
+v    Show only on 2: select this option to off your PC screen and show 
+the second screen monitor alone. Anytime you choose any of the four 
+options, you will see a prompt instruction requesting your 
+confirmation on the above changes, kindly click on the “Keep 
+changes” button to authenticate the changes or “Revert” to cancel the 
+changes. 
+CHANGING ORIENTATION AND SCREEN THAT WILL DISPLAY 
+THE START MENU: click on the Orientation down arrow and select 
+Portrait or Landscape orientation, Landscape is the default orientation, 
+however, some users might prefer a Portrait orientation. Then tap on your 
+choice monitor and select the “Make This My Main Check box”. 
+ADJUSTING NOTIFICATION SETTINGS 
+Notification is that quick information that pop-up at the left corner of the 
+screen that gives you certain information about your PC or prevailing news in 
+the world. Windows 11 permit you to make a decision on your Notification 
+and manage them as you want, for instance, you can off the notification, set 
+the time that the notification will come up, and so on. Below are the guides 
+for managing one’s Notification: 
+i.  
+Click the Start button to access the Start menu, then click on the 
+Settings icon to access the Settings Panel. 
+ii.  
+Select System category and pick Notification from the System 
+category heading on the right side. 
+iii.  
+The moment you click on the Notification arrow, you will be provided 
+with the list of the notification you can adjust as explained below: 
+v    Notifications: this button allows you to switch On and Off the 
+notification information, if you like the pop-up information 
+switch it On, otherwise, switch it off. 
+v    Focus Assist: it let you design your notification by picking the 
+time it should pop up, by putting it on silent, and other ways of 
+controlling a notification. 
+v    Notifications from Apps and Other Senders: this is the best 
+choice for many users, it allows users to select specific apps that 
+can send in notifications and restrict other apps. 
+v    Offer suggestions on How I can Set Up My Device: this 
+option reminds you of the information you fail to effect during 
+the process of filling your User Account Information, when you 
+ON it, it reminds you of the information you’ve not yet filled, 
+you can OFF it when you are sure of filling all the information. 
+v    Get Tips and Suggestions When I Use Windows: most users 
+see this notification as a disturbing notification, when you are in 
+that category, do well to switch its button Off and turn the 
+notification off. 
+MANAGING,  
+CONNECTING,  
+AND  
+ADJUSTING 
+BLUETOOTH DEVICES AND OTHER DEVICES 
+Bluetooth and other devices are gadgets that are attached to your PC for 
+effective operation, without all these devices your PC may not operate as it 
+ought to work. 
+ADDING A BLUETOOTH DEVICE 
+Bluetooth device is connected to older PC by plugging it into one of the PC 
+USB ports while most of the new PC comes with an in-built Bluetooth, 
+nevertheless, those PC without in-built Bluetooth device should go to the 
+nearest store to get a Bluetooth device and connect it to their PC USB port. 
+For Tablet users When Bluetooth is connected to your Tablet, it will allow 
+your Tablet to connect with other devices wirelessly such as Speaker, Mouse, 
+and Keyboard. 
+You can as well connect a smartphone with your computer for access to a 
+wireless internet connection with the help of Bluetooth, the process is known 
+as tethering. You can add a Bluetooth to your PC and Tablet with the 
+following guides: 
+1)  Switch On your Bluetooth Device and put it in Pairing Mode. 
+2)  Click on the Start button to access the Start menu, then tap on the 
+Settings icon from the Start menu and click on the Bluetooth and 
+Devices category from the left side of the Settings Panel. 
+3)  Tap on the Add Device button beneath the Bluetooth and Devices 
+section, and ensure to switch On the PC Bluetooth. If you can’t find a 
+Bluetooth switch, it means your device does not have in-built 
+Bluetooth, buy external from the electronic store and attach it to your 
+PC. 
+4)  then tap on the Bluetooth option from the Add a Device window to 
+summon your computer to begin searching for all the nearby Bluetooth 
+devices (if you are unable to see the actual device you want to connect 
+with, simply begin from step 1 again). 
+5)  When you finally see your device name from the available device's 
+name, click its name. 
+6)  At times you may need to enter the passcode on the computer and the 
+concerned device and click or Pair button to initiate the pairing 
+process. Once you are done initiating the pairing mode, click on the 
+View More Devices in (3) above to check if your device name and its 
+icon display there. 
+Note: after you are done, using the Bluetooth, you will need to disconnect it, 
+you can do that by following steps 1-2, then click on the (3) dots beside your 
+device and select disconnect from the fly-out list, be careful not to click on 
+Remove, otherwise, you will need to start from step 1-5 when you need to 
+connect the same device with your computer again. 
+INSTALLING YOUR PRINTER AND SCANNER 
+Printer and Scanner installation has brought many confusions to some 
+because their installation comes in a different dimension as a result of a 
+different manufacturer, nevertheless, you can install your printer or scanner in 
+either of the following ways: 
+v    Certain producer gives out instructions to plug in the Printer or 
+Scanner by dragging its rectangular connector into the rectangular 
+USB port of your PC. The moment you plug in the two devices with 
+the recommended cable, both will be connected but the only 
+obstruction you can have maybe from the tonal, ink cartridges, and 
+paper, or if you don’t put the correct type of paper into the Printer. 
+v    Some producers compulsory the installation of the Printer or Scanner 
+bundled software before you plug in the two devices, otherwise, the 
+Scanner or Printer may be malfunction. 
+Most Printer comes with a user manual, check the Printer or Scanner user 
+manual for the proper approach to its installation, however, if you can’t find 
+installation software for your printer or scanner, then observe the following 
+processes for successful installation of your printer or scanner: 
+i.  
+Connect the Printer to your Computer and switch On the Printer. 
+ii.  
+Find your way to the Settings Panel to choose Bluetooth and Devices 
+category. 
+iii.  
+After selecting the Bluetooth Devices category, move to the right side 
+and select Printer and Scanner. 
+iv.  
+If your Scanner or Printer is plugged into that PC, you will see its 
+name may on the right side of the Settings Panel, then click Add device 
+besides its name or model to get the printer/scanner added to the PC. 
+v.  
+After you are done adding it, click its name and tap on the Manage 
+button to access Managing your Device Windows, then tap on the 
+word “Print a Test Page”. Check what your printer prints to confirm 
+if the installation has been successfully configured otherwise contact 
+your Manufacturer's store. 
+Note: have you gotten a new Printer, then feel free to remove the one you are 
+using by moving to step 3 and tapping on the name of the offending Printer, 
+then pick Remove Device from the fly-out list to remove it from your 
+computer. Windows may bring a prompt box requesting you to uninstall the 
+printer's driver and software, you will need to click Yes if you don’t need the 
+Printer again or No if there’s a chance of using the Printer in the time to 
+come. 
+PERSONALIZATION (CHANGING THE LOOK AND FEEL 
+OF YOUR COMPUTERS) 
+Personalization helps you customize the look of your computer to look 
+exactly the way you want, it helps you change the complete appearance of 
+your PC which includes the color, background, lock screen, and others to 
+ensure your PC look, behaves, and reflect the way you want it. 
+Without much ado, let’s move to the Personalization category and tweak the 
+look of your PC by: 
+Navigating to Settings Panel and tap on Personalization to access all the 
+settings you can use to tweak the appearance of your PC on the right side as it 
+is described below: 
+1)  Background: an option to tweak the color or photo of your desktop 
+screen, some users call it wallpaper. 
+2)  Color: this is used to select the color you will use to frame your 
+background, taskbar, start menu, and Windows app simply by 
+selecting a color from the color gallery. 
+3)  Themes: this helps you to save your color, background, and lock 
+screen settings as a theme so that you can quickly pick the settings 
+next time your background, color, and lock screen as a whole. You can 
+also navigate to the Microsoft Store app and click on Get More themes 
+to download innumerable themes. 
+4)  Lock screen: you can click on this to choose the photo you want to be 
+seen immediately you switch ON your computer, though Windows 
+automatically place a photo into your lock screen you can change it if 
+you desire. 
+5)  Touch Keyboard: this lets you choose various colors for a different 
+area on the onscreen keyboard for the onscreen user and as well 
+change the size of the onscreen keyboard size. 
+6)  Start: it helps you customize your start menu. we have done that in the 
+previous section. 
+7)  Taskbar: it helps to customize the look and arrangements of your 
+taskbar. this has been dealt with in the previous section as well. 
+8)  Fonts: This is used to get more font types downloaded to your PC by 
+moving to Microsoft Store and clicking on Get More fonts to access 
+the list of online fonts that are available. 
+9)  Device Usage: it shows you the pattern of your PC usage in respect to 
+gaming, school, entertainment, and more. 
+CUSTOMIZING YOUR DESKTOP BACKGROUND 
+This also means personalizing your desktop wallpaper by creating a photo 
+and color for your desktop. To alter your desktop background, here are the 
+instructions you have to understand: 
+a. Find your way to the Settings Panel and click on the Personalization 
+category to open the Personalization section. 
+b. Tap on the Background arrow from the Personalization section and 
+select the “Picture” option from the Personalized Your Background 
+fly-out list 
+c. Select a Picture for your PC background list from the available 
+pictures, you may also click on the Browse Photos icon in the Choose 
+a Photo section to see all the Pictures folders on your PC and select the 
+one you like. 
+d. After you’ve decided on the photo you like, you will need to choose 
+any of the fit options for the selected photo, such as Fit, Fill, Span, 
+Center, or Stretch in the section “Choose a fit your desktop 
+image”. You need to experiment with all the fit options to decide the 
+best one for your wallpaper background. Close the Settings Panel to 
+see the new background you just customize. 
+TWEAKING YOUR COMPUTER’S THEME 
+Themes are fabricating backgrounds that you can place over your desktop. 
+There is a collection of themes you can pick to change the appearance of your 
+background. You can as well save your background settings as a theme. To 
+choose any of Windows fabricated themes, kindly: 
+v    Find your way to the Settings Panel and click on the 
+Personalization category. 
+v    Select Theme from the Personalization section at the right side to 
+access the collection of Windows themes, click on the one you like to 
+use for your background. 
+Note: don’t limit yourself to the preformatted Windows theme, you can go 
+ahead and save your amazing background as a theme by clicking on the 
+words “Save Theme” for saving the image you are presently using on the 
+desktop background. If you are not satisfied with all these themes, kindly go 
+ahead to Microsoft Store to download an online theme. 
+ADDING AND REMOVING APPS 
+The Apps in the Settings Panel allow you to manage your apps effectively by 
+completely removing unneeded apps and improving the faulty app. Note that 
+the app you uninstall from the Start menu is only removed from the start 
+menu, its contents remain on the PC, you can remove the app completely by 
+navigating to the App in the Settings Panel. 
+i.  
+Find your way to the Settings Panel by clicking on the Settings icon 
+from the Start menu, then tap on the Apps icon from the Settings 
+categories. 
+ii.  
+Select Apps and Features from the left side of the Apps section to see 
+the list of all the installed programs and apps on your PC. 
+iii.  
+Tap on the More button that three-dot (3) beside an application and 
+select any of the fly-out options depending on what you want to do 
+with the concerned app. 
+v    Advanced options: this option helps you to correct the 
+behavior of your app such as the “Repair” option for repairing 
+the malfunctioning app, if the problem persists, you can click on 
+the Reset option to reset the app by removing and reinstalling it 
+immediately. 
+v    Move: you can move any app from system memory into 
+another drive location to free up space when you are having low 
+storage on your PC memory. 
+v    Uninstall: this is the option that can be used to remove an app 
+permanently from the PC, when you tap on this button and grant 
+Windows permission from the confirmation box, it will cause 
+Windows to remove the app from both PC and the Start menu. 
+Note: deleting the details or files of the app from the navigation pane is just 
+wasting of time though such can create a space within your PC, it doesn’t 
+delete your app, your app remains on your PC until you employ the service of 
+App Category in the Settings Panel. 
+ALTERING TIME, DATE, LOCATION, AND LANGUAGE 
+This is the category that gives you the privilege of changing the time zone if 
+it is different from where you are coming from and also allows you to change 
+your PC location and language with the location and language of the place 
+you are currently. To modify your time, date, language, location, and others, 
+kindly, find your way to the Settings Panel and click on Time and Date 
+category to access the list of settings you can tweak as listed below: 
+v    Date and Time: this is used to adjust your PC time and date. it leads 
+you to the same route when you click the time and date icon on the 
+taskbar. 
+v    Language and Region: it is used to change the language and 
+location of your PC to the new region you’ve just moved to. 
+v    Typing: you are permitted to control your typing behavior by setting 
+it to adjust or highlight incorrect texts. 
+v    Speech: This is used to manage and improve speech settings 
+whenever you are noticing a deficiency in your PC speech recognition. 
+Conclusion 
+I must commend your effort in reaching the end phase of the Windows 11 
+manual training guide. Without any doubt, you should have mastered the in 
+and out of this user guide which gives me the utmost confidence that you 
+must have learned a great deal and lesson about Windows 11. 
+I am of opinion that each chapter and section of this user guide must have 
+helped you to learn a lot on how to explore Windows 11 and navigate around 
+it to make the best result out if, that is my desire, and am glad you did. 
+Do not forget many customers are outside there looking for a friendly user 
+guide that can help them master the use of Windows 11. Your review will 
+help them a lot and will as well promote us to reach every great mind that is 
+outside there. 
+Thanks for recommending this user guide to friends and family. 
+INDEX 
+A 
+A WINDOW’S ADDRESS BAR       63 
+ADDING A BLUETOOTH DEVICE       135 
+ADDING AND REMOVING APPS       144 
+B 
+BROWSING THE FILE EXPLORER CABINETS 71 
+BROWSING YOUR IN-BUILT WEB BROWSER (MICROSOFT EDGE) 
+115 
+C 
+CHANGING ORIENTATION AND SCREEN THAT WILL DISPLAY THE START 
+MENU       132 
+CHOOSING WINDOWS 11 VERSIONS       15 
+CONNECTING WIRELESSLY TO THE INTERNET 
+113 
+CREATING A NEW FOLDER       78 
+CREATING USER ACCOUNTS FOR FAMILY AND FRIEND 
+20 
+currently running programs       45 
+CUSTOMIZING THE START MENU              32 
+CUSTOMIZING THE TASKBAR       55 
+CUTTING, COPYING, AND PASTING THE SELECTED ITEM 
+112 
+D 
+DESKTOP SHORTCUTS       108 
+Devices and Drives       73 
+E 
+EXCELLENT ARRANGEMENT WITH THE SNAP FEATURE 
+14 
+F 
+FILES ON DEMAND       93 
+Focus Assist       134 
+Folders       73 
+G 
+GAINING ACCESS TO ONEDRIVE OVER THE NET 
+96 
+GETTING RID OF A FILE OR FOLDER       80 
+I 
+INSTALLING AN APP FROM THE MICROSOFT STORE APP 
+105 
+INSTALLING YOUR PRINTER AND SCANNER 138 
+L 
+LAUNCHING AN APPLICATION OR PROGRAM 
+99 
+LOCATING THE RIGHT SWITCH       128 
+Lock screen       142 
+M 
+MANAGING TWO SCREENS       131 
+MICROSOFT ACCOUNT       17 
+MICROSOFT EDGE HOME PAGE       117 
+MOVING A WINDOW FROM HERE TO THERE67 
+MOVING OR COPYING AND PASTING FILES AND FOLDERS 81 
+N 
+Navigation Pane       73 
+NOTIFICATION AND QUICK SETTINGS PANELS 
+49 
+Notification Panel       49 
+NOTIFICATION SETTINGS       133 
+Notifications from Apps and Other Senders: 
+134 
+O 
+ONEDRIVE YOUR MAIN CLOUD STORAGE 
+85 
+OPENING A DOCUMENT       100 
+P 
+Pin To Taskbar”       44 
+PIN/UNPIN START MENU ITEM       33 
+Pinned Apps       28 
+PROPERLY LAY TWO WINDOWS SIDE BY SIDE 
+68 
+Q 
+Quick settings icon       51 
+R 
+Recommended list       28 
+REMOVING THE DEFAULT ICON FROM THE TASKBAR 
+56 
+RENAMING A FILE OR FOLDER       78 
+REORDERING START MENU ITEMS       35 
+REVISITING YOUR FAVORITE SITE120 
+S 
+SAFEGUARDING YOUR ACCOUNT AND INFORMATION 
+24 
+SAVING A PICTURE       124 
+SAVING A WEBPAGE       126 
+SAVING ALL TYPES OF INFORMATION FROM THE INTERNET 
+124 
+SAVING TEXT       126 
+SAVING YOUR DOCUMENT       102 
+Search Box       28 
+SELECTING A PROGRAM FOR OPENING A FILE 
+103 
+SELECTION OF AN ITEM FOR CUTTING AND COPYING 
+110 
+SETTING UP ONEDRIVE       85 
+SHIFTING TASKBAR ICON TO THE LEFT SIDE 
+57 
+START AND SEARCH MENU OPTIONS       11 
+T 
+TASKBAR SENSITIVE AREAS       47 
+TEMPORARY EXITING FROM THE COMPUTER 
+37 
+THE NAVIGATION PANE       64 
+THE SAME DARN SIZE       70 
+THE SEARCH ENGINE FOR FINDING INFORMATION121 
+THE WEB       113 
+Touch Keyboard:       142 
+TWEAKING YOUR ONEDRIVE SETTINGS 
+88 
+TWEAKING YOUR SCREEN RESOLUTION 129 
+U 
+UNDENIABLE FEATURES       11 
+UNINSTALLING AN APPLICATION       107 
+UNLOCKING THE SCREEN AND SIGNING IN TO YOUR COMPUTER 15 
+Unpin From Taskbar       44 
+User Account Name & Power button:       28 
+V 
+VIRTUAL DESKTOP       58 
+W 
+WINDOW’S TITLE BAR       61 
+WINDOWS 11 SETTINGS SWITCHES       129 
+Windows 11 upgrading requirement              10 
+WINDOWS SETTINGS       127 
+
+
+---
+## 📖 APPLICATION
+*(Manba: application.pdf)*
+
+Ўзбекистон Республикаси Вазирлар Маҳкамасининг  
+2018 йил 10 майдаги 348-сон қарори билан тасдиқланган  
+электрон рақамли имзо калитининг сертификатини бериш  
+бўйича давлат хизматини кўрсатишнинг маъмурий  
+регламенти 2-иловасига асосан  
+  
+А Н К Е Т А  
+  
+I. Мурожаат мақсади:  
+1-1   
+Электрон рақамли имзо калитининг сертификатини бериш.  
+1-2   
+Электрон рақамли имзо калитининг сертификатининг амал қилишини тўхтатиб  
+туриш.  
+1-3   
+Электрон рақамли имзо калитининг сертификатининг амал қилишини қайта  
+тиклаш.  
+1-4   
+Электрон рақамли имзо калитининг сертификатини бекор қилиш.  
+II. Мурожаат этувчи тўғрисида маълумотлар:  
+2-1 Жисмоний шахс:  
+2-1-1 Фамилияси:  
+  
+2-1-2 Исми:  
+  
+2-1-3 Отасининг исми:  
+  
+2-1-4 Солиқ тўловчининг идентификация рақами (СТИР):  
+  
+2-1-5  
+ Касб-ҳунар коллежи ёки академик лицей ўқувчиси:  
+2-2  
+ Юридик шахс:  
+2-2-1 Юридик шахснинг тўлиқ номи:  
+  
+  
+2-2-2 Солиқ тўловчининг идентификация рақами (СТИР):  
+  
+  
+Изоҳ: 2-2, 2-2-1 ва 2-2-2-бандлар жисмоний шахс - юридик шахс раҳбари ва/ёки вакили сифатида анкета тақдим  
+этганида, 2-1-бандга қўшимча равишда тўлдирилади ва анкетага юридик шахснинг хати (ишончнома) илова  
+қилинади.  
+2-3 ЭРИ ёпиқ калитининг пароли ва анкетани кўриб чиқиш натижаси  
+тўғрисидаги хабарномани юбориш учун мурожаат этувчининг  
+мобиль телефон рақами:  
+  
+III. Қўшимча маълумотлар:  
+3-1 Электрон рақамли имзо калити сертификатининг амал қилишини тўхтатиб  
+туришда/қайта тиклашда/бекор қилишда:  
+3-1-1 Электрон рақамли имзо калитининг сертификати:  
+3-1-1-1 Серияли тартиб рақами:  
+  
+3-1-1-2 Берилган сана:  
+__/__/____й.  
+3-2   
+1) Рўйхатга олиш марказининг оммавий офертаси талаблари ва шартлари билан  
+танишлигимни ва унга риоя этишни ўз зиммамга олишимни тасдиқлайман.  
+2) Давлат хизмати олиш учун тақдим этилаётган ҳужжатлардаги  
+маълумотларнинг ишончлилигини тасдиқлайман.  
+3) Ишончсиз маълумотлар тақдим этилган тақдирда давлат хизмати  
+кўрсатишнинг қонунчиликда белгиланган тартибда рад этилиши мумкинлиги  
+менга маълум.  
+3-3 Мурожаат этувчининг имзоси  
+  
+  
+IV. Хизмат бўйича қайдлар:  
+  
+4-1 Анкетани қабул қилиш санаси ва вақти:     
+__/__/____й. __:__  
+4-2 Анкетанинг уникал рўйхатдан ўтказиш рақами:  
+  
+4-3 Давлат хизматлари маркази ходимининг имзоси, исми  
+ва лавозими  
+  
+  
+
+
+---
+## 📖 E-IMZO MODULIDAN FOYDALANISH BOʼYICHA QOʼLLANMA
+*(Manba: E-IMZO Modulidan foydalanish boʼyicha qoʼllanma.pdf)*
+
+E-IMZO Modulidan foydalanish boʼyicha  
+qoʼllanma  
+1. E-IMZO Modulini Oʼrnatish  
+1. Dastlab E-IMZO modulni quyidagi havola orqali yuklab oling: Yuklab olish  
+  
+2. Modulni administrator nomidan oʼrnatish uchun fayl ustiga sichqonchaning oʼng  
+tugmasini bosib, "Запуск от имени администратора" menyusini tanlang.  
+  
+  
+3. Paydo boʼlgan oynada "Далее" tugmasini bosing.  
+4. Soʼngra "Установить" tugmasini bosing.  
+  
+Keyin "Установить" rasmda koʼrsatilgandek  
+  
+5. Oʼrnatish jarayonini tugatish uchun "Завершить" tugmasini bosing.  
+  
+2. Google Chrome Brauzerini Sozlash  
+1. Google Chrome brauzeri manzil qatoriga quyidagi manzilni kiriting:  
+https://127.0.0.1:64443/  
+  
+2. Xavfsizlik ogohlantirishi chiqqanda "Добавить исключение" tugmasini bosing.  
+  
+3. Yangi darchada "Постоянно хранить это исключение" bandini belgilang va  
+"Подтвердить исключение безопасности" tugmasini bosing.  
+  
+4. Sozlash tugallandi. Endi e-imzo.uz saytiga oʼtib ishni davom ettirishingiz mumkin.  
+  
+
+
+---
+## 📖 INSTRUCTION ONLINE ECP UZ FACEID
+*(Manba: instruction_online_ecp_uz_FaceID.pdf)*
+
+Masofadan turib onlayn usulda E-imzo.soliq.uz veb-sayti orqali elektron  
+raqamli imzo (ERI) kalit sertifikatini olish bo‘yicha  
+QO‘LLANMA  
+  
+Masofadan turib, onlayn usulda E-imzo.soliq.uz veb-sayti orqali elektron  
+raqamli imzo kalit sertifikatini qanday olish mumkin?  
+  
+Dastlab e-imzo.soliq.uz veb-saytininng bosh sahifasidagi “Elektron kalit olish”  
+tugmasi, so‘ngra “Ariza shaklini to‘ldiring” tugmasi bosiladi.  
+  
+  
+  
+  
+Shundan so‘ng Yuridik yoki Jismoniy shaxs maqomi tanlanib, belgilangan  
+maydonlar to‘ldiriladi va keyingi qadamga o‘tiladi.  
+  
+  
+  
+  
+  
+Diqqat!  
+  
+Jismoniy  
+shaxs  
+tegishli  
+oynada  
+belgilangan qatorga 14 raqamdan iborat  
+JSHSHIRni kiritadi.  
+  
+JSHSHIR haqida quyidagi rasm orqali bilib  
+oling!  
+  
+Ko‘rsatilgan telefon raqamiga yuborilgan SMS shaklidagi tasdiqlash kodini  
+kiritib, ariza va telefon raqami tasdiqlanadi.  
+  
+  
+Navbatdagi qadamda ERI kalit fayl nomi shakllangaligini hamda arizaning  
+to‘g‘ri ekanligi tekshirilgach, QR kodni shakllantirish tugmasi bosiladi.  
+  
+  
+  
+  
+Shakllantirilgan QR-kodni, oldindan mobil telefonga sozlangan “Soliq” mobil  
+ilovasining “Elektron raqamli imzo” bo‘limidagi “Elektron kalitni tasdiqlash”  
+tugmasi orqali skanerlang va Face-ID orqali shaxsingizni tasdiqlang.  
+  
+   
+   
+  
+  
+Face-ID orqali ariza ma’lumotlari tasdiqlanganidan so‘ng “Kalit yaratish”  
+tugmasini bosib, ERI kalitga 10 xonali parolni ikki marotaba kiritib ERI kalitni  
+faollashtirishingiz mumkin.  
+Bunda Parol uzunligi kamida 10 ta belgidan iborat bo‘lishi shart. Parolda  
+kamida lotin alifbosidagi 2 ta kichik harf (a–z), 2 ta katta harf (A–Z) hamda 0 dan 9  
+gacha bo‘lgan raqamlar qatnashishi majburiy hisiblanadi.  
+  
+  
+  
+  
+  
+  
+DIQQAT!  
+  
+ERI kalit sertifikatlarini olish uchun yuridik shaxslar va yakka tartibdagi  
+tadbirkorlardan bazaviy hisoblash miqdorining 10% miqdorida, jismoniy shaxslardan esa  
+7% miqdorida yig‘im undiriladi.  
+To‘lovlar bank kassalari yoki elektron to‘lov tizimlari orqali amalga oshirilishi  
+mumkin:  
+  
+(Asos:O‘zbekiston Respublikasi Vazirlar Mahkamasining 10.05.2018 yildagi 348-sonli Qarori.)  
+Qo‘shimcha savollar tug‘ilganda markazning (71) 202-32-32 raqamiga murojaat qiling.  
+
+
+---
+## 📖 TOKEN GUIDE
+*(Manba: token_guide.pdf)*
+
+Требования к защищенному устройству для хранения ключей и  
+сертификатов электронной цифровой подписи Научно- 
+информационного центра «Новые технологии»  
+Защищенное устройство (USB-токен, SAM-карта) должно быть  
+оснащено контроллером безопасности.  
+Защищенное устройство должно поддерживать T=0 и T=1 – протоколы  
+коммуникации и криптографические алгоритмы, 3DES, AES, RSA, SHA-1,  
+SHA-224, SHA-256, ECC over GF(p) и Random number generation и функции  
+шифрования.  
+Защищенное устройство должно соответствовать стандартам Java Card  
+2.2.2 или Java Card 3.0.3, Global Platform 2.1.1 и выше.  
+Защищенное устройство в форм факторе SAM-карты должно иметь  
+размеры ISO/IEC 7810:2003, ID-1 (Standart SIM 1FF) с прорезями для  
+получения размера ISO/IEC 7810:2003, ID-000 (Mini SIM 2FF);  
+Скорость работы алгоритмов защищенного устройства по O’zDSt1092- 
+2009 не должна превышать 600 миллисекунд, скорость работы апплета  
+защищенного устройства не должна превышать 2 секунды, объем памяти,  
+выделяемой для хранения данных, должен быть не менее 100 килобайт и  
+объем оперативной памяти защищенного устройства должен быть не менее 8  
+килобайт.  
+Износостойкость не менее 500,000 циклов перезаписи.  
+Срок хранения данных не менее 10 лет.  
+Интерфейс ISO 7816, CCID.  
+Сопроцессор должен быть доступен Java-апплету для реализации  
+стандарта OzDST 1092:2009 алгоритм II. В SDK должен быть реализован Java- 
+класс BigNumberEx с методами реализующими математику с большими  
+числами и математику на эллиптических кривых.  
+Защищенное устройство должно иметь ATR, внутренний уникальный не  
+менее 18-байтный заводской номер CPLC доступный специальной APDU  
+командой и внешне напечатанный серийный номер в виде баркод и серийный  
+номер в формате BBNNNNNNNNNNNN.  
+Должен быть предоставлен список со связкой CPLC и серийного номера  
+защищенного устройства в электронном формате CSV.  
+Должны быть предоставлены коды аутентификации ENC, MAC, DEK  
+для загрузки скомпилированного Java-апплета в защищенное устройство.  
+Должна быть возможность замены стандартных кодов аутентификации  
+ENC, MAC, DEK на другие.  
+
+
+---
 ## 📖 10 IMZOLANGAN HUJJATLARNI SUD TIZIMI VA TASHQI TASHKILOTLARGA YUBORISH
 *(Manba: 10_Imzolangan_hujjatlarni_sud_tizimi_va_tashqi_tashkilotlarga_yuborish.pdf)*
 
@@ -6964,4 +23715,2698 @@ Android операцион тизимлари учун мўлжалланган 
 Акс ҳолда кейинги видеоконференцияни ташкил этиш имкони бўлмайди.  
   
    
+
+
+---
+## 📖 2. СМС ХАБАР ЮБОРИШ ТИЗИМИДАН ФОЙДАЛАНИШ ТАРТИБИ
+*(Manba: 2. СМС хабар юбориш тизимидан фойдаланиш тартиби.pdf)*
+
+  
+  
+ЎЗБЕКИСТОН РЕСПУБЛИКАСИ  
+ОЛИЙ СУДИ  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+Судья томонидан ишда иштирок этувчи барча  
+иштирокчиларни суд мажлисларининг вақти ва жойи  
+ҳақида “SMS” хабар ҳамда электрон почта манзилига  
+юбориш орқали хабардор қилиш  
+Т А Р Т И Б И  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+2021 йил  
+Мазкур Тартиб Ўзбекистон Республикаси Президентининг 2020 йил  
+3 сентябрдаги “Суд ҳокимияти органлари фаолиятини рақамлаштириш  
+чора-тадбирлари тўғрисида”ги ПҚ-4818-сонли қарори билан тасдиқланган  
+2020-2023 йилларда суд ҳокимияти органлари фаолиятини рақамлаштириш  
+Дастурининг 21-бандида белгиланган вазифа ижроси юзасидан ишлаб  
+чиқилган барча иштирокчиларни суд мажлисларининг вақти ва жойи ҳақида  
+“SMS” хабар ҳамда электрон почта манзилига юбориш орқали хабардор  
+қилиш ахборот тизими билан ишлаш тартиб-қоидаларини белгилайди.  
+1. Судья иштирокчиларни суд мажлисларининг вақти ва жойи ҳақида  
+“SMS” хабар ҳамда электрон почта манзили орқали хабардор қилиш  
+тизимидан фойдаланиш учун қуйидаги доменлар орқали “E-XSUD” ахборот  
+тизимига кирилади:  
+- jib.sud.uz;  
+- fib.sud.uz;  
+- is.sud.uz;  
+- ms.sud.uz;  
+- mib.sud.uz.  
+Қайд этилган тегишли ҳавола орқали судья авторизация ойнасидаги  
+ўзига тегишли бўлган логин ва паролини ҳамда электрон рақамли имзосини  
+киритган ҳолда “E-XSUD” ахборот тизимига киради (1-расм).  
+  
+  
+  
+  
+  
+  
+  
+  
+1-расм.  
+2. “E-XSUD” ахборот тизимига кирилгандан сўнг тегишли суд  
+мажлисига тайинланган иш топилади ва ишни ичига кириб унинг пастки  
+қисмида жойлашган “Чақирув қоғози” тугмаси босилади.  
+“Чақирув қоғози” рукни орқали очилган ойнада “Қўшиш” тугмаси  
+босилади (2-расм).  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+2-расм.  
+  
+3. “Қўшиш” тугмасини босиш орқали очиладиган ойнадан суд чақирув  
+қоғозини иштирокчиларга “SMS” хабар ёки электрон почта манзили  
+орқали хабардор қилиш тартиби танланади.  
+Мазкур ойнада иштирокчиларнинг мобил телефон рақамлари ёки  
+электрон почта манзили (агар бу маълумотлар бир нечта бўлса барчасини  
+киритиш учун "+“ белгиси орқали қўшиб чиқилади) киритилади. Тегишли  
+маълумотлар қайд этилгандан сўнг “Сақлаш” тугмаси босилади (3-расм).  
+  
+3-расм.  
+  
+4. “Сақлаш” тугмаси босилгандан сўнг судья томонидан суд чақирув  
+қоғозини иштирокчиларга “SMS” хабар ёки электрон почта манзили  
+орқали хабардор қилишнинг тегишли тартиби танланганлигига қараб суд  
+чақирув қоғози ахборот тизими автоматик тарзда кўрсатилган манзилларга  
+юборади.  
+Суд чақирув қоғози иштирокчиларга “SMS” хабар ёки электрон почта  
+манзили орқали юборилганлиги ҳақидаги маълумотлар “E-XSUD” ахборот  
+тизимидаги ишни ички қисмининг пастида жойлашган “Чақирув қоғози”  
+рукнида кетма-кетликда сақланиб борилади (4-расм).  
+4-расм.  
+5. Суд чақирув қоғози иштирокчиларга “SMS” хабар орқали юборилган  
+бўлса, “SMS хабар” устунидаги ҳолати деган жойда “Юборилган” мазмунидаги  
+маълумот кўриниб туради (5-расм).  
+  
+5-расм.  
+
+
+---
+## 📖 26. ЭЛЕКТРОН ШАКЛДА КЕЛГАН МУРОЖААТЛАРНИ РЎЙХАТДАН ЎТКАЗИШ ТАРТИБИ
+*(Manba: 26. Электрон шаклда келган мурожаатларни рўйхатдан ўтказиш тартиби.pdf)*
+
+Ахборот тизими орқали келиб тушган электрон мурожатларни  
+суд девонхонасининг шахсий кабинетида  
+рўйхатдан ўтказиш ва рад қилиш  
+ТАРТИБИ  
+  
+  
+Электрон шаклда келиб тушган ариза (шикоят)ларни  
+қабул қилиш ва рўйхатдан ўтказиш тартиби  
+  
+Ахборот тизими орқали келиб тушган ариза (шикоят)лар суд  
+девонхонасининг шахсий кабинети орқали қабул қилинади ва  
+рўйхатдан ўтказилади.  
+1. Ўзбекистон Республикаси Маъмурий жавобгарлик тўғрисида- 
+ги кодекснинг тегишли моддаларида назарда тутилган маъмурий  
+ҳуқуқбузарлик ҳақидаги ишлар (маъмурий органлар томонидан  
+судларга тақдим этиладиган ишлар бундан мустасно)ни судларга  
+ахборот тизими орқали электрон тарзда юборилиши мумкин.  
+1.1. Бунинг учун суд девонхонасининг шахсий кабинетига кириб,  
+“Маъмурий ишлар” рукнидан “Биринчи инстанция ишлари” турини  
+танлаш керак (1-расм).  
+  
+  
+1-расм.  
+1.2.  
+Очилган  
+“Биринчи  
+инстанция  
+ишлари”  
+бўлимида  
+“Электрон қабул”ни танлаб, ичига кириш керак. “Электрон қабул”  
+рукнида судга фуқаролар томонидан электрон шаклда юборилган  
+маъмурий ҳуқуқбузарлик ҳақидаги аризалар рўйхати акс эттирилади  
+(2-расм)  
+  
+  
+2-расм.  
+1.3. Аризалар маъмурий судларга уларни “E-XSUD” ахборот  
+тизими орқали тақдим қилиш Тартиби талабларига мос равишда  
+юборилганлигини текшириш учун ҳар бир аризани ичига кириб  
+текшириш керак.  
+Бунинг учун аризани ичига киргандан сўнг экраннинг пастки  
+қисмида жойлашган “Иш ҳужжатлари” бўлимда ташқи фойдаланувчи- 
+  
+2  
+лар  
+томонидан  
+юборилган  
+ҳужжатларнинг  
+файлларини  
+очиб  
+тўлдирилган маълумотлар билан текширилади (3-расм).  
+  
+3-расм.  
+1.4. Суд девонхонасининг шахсий кабинети орқали электрон  
+шаклда келиб тушган аризадаги маълумотларни тўлдиришда йўл  
+қўйилган хатоликларни бартараф этиш ва қўшимча тўлдирилиши  
+лозим бўлган маълумотларни тўлдириш имконияти мавжуд (4-расм).  
+  
+  
+  
+  
+3  
+  
+4-расм.  
+1.5. Агар ариза ва унга илова қилинган барча файллар тўғри  
+юборилган, шунингдек мазкур аризага тегишли қаторлардаги маълу- 
+мотлар қайд этилганидан кейин “Кирим санаси” қатори тўлдирилиб,  
+“Сақлаш” тугмаси босилади (5-расм).  
+  
+  
+5-расм.  
+2. Фуқаролар  
+ва  
+юридик  
+шахсларнинг  
+бузилган  
+ёки  
+низолашилаётган ҳуқуқлари, эркинликлари ва қонуний манфаатларини  
+ҳимоя қилиш тўғрисидаги, маъмурий ва бошқа оммавий ҳуқуқий  
+муносабатлардан келиб чиқадиган ишлар бўйича ариза (шикоят)лар  
+судларга ахборот тизими орқали электрон тарзда юборилиши мумкин.  
+2.1. Бунинг учун суд девонхонасининг шахсий кабинетига кириб,  
+“Маъмурий низолар” рукнидан “Биринчи инстанция ишлари”  
+турини танлаш керак (6-расм).  
+  
+6-расм.  
+2.2.  
+Очилган  
+“Биринчи  
+инстанция  
+ишлари”  
+бўлимида  
+“Электрон қабул”ни танлаб, ичига кириш керак. “Электрон қабул”  
+рукнида судга фуқаролар томонидан электрон шаклда юборилган  
+оммавий ҳуқуқий муносабатлардан келиб чиқадиган ишлар бўйича  
+ариза (шикоят)лар рўйхати акс эттирилади (7-расм).  
+  
+4  
+  
+7-расм.  
+Жараённинг  
+қолган  
+босқичлари  
+маъмурий  
+ҳуқуқбузарлик  
+юзасидан электрон шаклда келиб тушган аризаларни рўйхатга  
+олишнинг юқорида кўрсатилган тартиби (1.3 - 1.5 ) асосида амалга  
+оширилади.  
+  
+  
+  
+  
+5  
+3. Электрон шаклда келиб тушган мъмурий ҳуқуқбузарлик  
+юзасидан кассация шикоятини қабул қилиш тартиби  
+  
+3.1. Бунинг учун суд девонхонасининг шахсий кабинетига кириб,  
+“Маъмурий ишлар” рукнидан “кассация инстанция ишлари” турини  
+танлаш керак (8-расм).  
+  
+  
+8-расм.  
+  
+3.2.  
+Очилган  
+“Кассация  
+инстанция  
+ишлари”  
+бўлимида  
+“Электрон қабул”ни танлаб, ичига кириш керак. “Электрон қабул”  
+рукнида судга фуқаролар томонидан электрон шаклда юборилган  
+маъмурий ҳуқуқбузарлик ҳақидаги кассация шикоятлари рўйхати акс  
+эттирилади 9-расм)  
+  
+  
+ 9-расм.  
+  
+3.3. Аризалар маъмурий судларга уларни “E-XSUD” ахборот  
+тизими орқали тақдим қилиш Тартиби талабларига мос равишда  
+юборилганлигини текшириш учун ҳар бир аризани ичига кириб  
+текшириш керак.  
+Бунинг учун аризани ичига киргандан сўнг саҳифанинг пастки  
+қисмида  
+жойлашган  
+“Иш  
+ҳужжатлари”  
+бўлимида  
+ташқи  
+фойдаланувчилар томонидан юборилган ҳужжатларнинг файлларини  
+очиб тўлдирилган маълумотлар билан текширилади (10-расм).  
+  
+  
+6  
+  
+10-расм.  
+3.4. Суд девонхонасининг шахсий кабинети орқали электрон  
+шаклда келиб тушган аризадаги маълумотларни тўлдиришда йўл  
+қўйилган хатоликларни бартараф этиш ва қўшимча тўлдирилиши  
+лозим бўлган маълумотларни тўлдириш имконияти мавжуд. Бунда  
+шикоятнинг такрор ва протест қаторларига алоҳида эътибор бериш  
+керак(11-расм).  
+  
+  
+11-расм.  
+3.5. Агар ариза ва унга илова қилинган барча файллар тўғри  
+юборилган, шунингдек мазкур аризага тегишли қаторлардаги маълу- 
+мотлар қайд этилганидан кейин “Кирим санаси” қатори тўлдирилиб,  
+“Сақлаш” тугмаси босилади (12-расм).  
+  
+  
+  
+12-расм.  
+  
+7  
+4. Электрон шаклда келиб тушган оммавий ҳуқуқуий  
+муносабатлар юзасидан апелляция ва кассация шикоятини қабул  
+қилиш тартиби  
+4.1. Бунинг учун суд девонхонасининг шахсий кабинетига кириб,  
+“Маъмурий низолар” рукнидан “Апелляция низолари” ёки  
+“Кассация низолари” турини танлаш керак (13-расм).  
+  
+13-расм.  
+4.2.  
+Очилган  
+“Апелляция  
+низолари”  
+  
+ёки  
+“Кассация  
+низолари”  бўлимида “Электрон қабул”ни танлаб, ичига кириш  
+керак. “Электрон қабул” рукнида судга фуқаролар томонидан  
+электрон шаклда юборилган оммавий низо ҳақидаги апелляция ёки  
+кассация шикоятлари рўйхати акс эттирилади 14-расм)  
+  
+  
+14-расм.  
+Жараённинг кейинги босқичлари “Электрон шаклда келиб  
+тушган мъмурий ҳуқуқбузарлик юзасидан кассация шикоятини  
+қабул қилиш тартиби” даги тартибда (3.3 – 3.5) амалга оширилади.  
+  
+  
+  
+8  
+5.  
+Электрон  
+шаклда  
+келиб  
+тушган  
+иш  
+ва  
+низо  
+материалларини қабул қилиш тартиби  
+5.1. Бунинг учун суд девонхонасининг шахсий кабинетига кириб,  
+  
+а) электрон шаклда келган иш материалларини қабул қилиш  
+учун “Материал” рукнидан “Иш материаллари” турини ва ундан  
+“Биринчи инстанция” ёки “Кассация” турини танлаш керак  
+(15-расм);  
+  
+  
+15-расм.  
+б) электрон шаклда келган низо материалларини қабул қилиш  
+учун “Материал” рукнидан “Низо материаллари” турини ва ундан  
+“Биринчи инстанция”, “Апелляция” ёки “Кассация” турини танлаш  
+керак (16-расм).  
+  
+16-расм.  
+5.2.  
+Очилган  
+тегишли  
+босқич  
+материаллари  
+бўлимидан  
+“Электрон қабул”ни танлаб, ичига кириш керак. “Электрон қабул”  
+рукнида судга фуқаролар томонидан электрон шаклда юборилган суд  
+қарори ижросига доир иш материаллари рўйхати акс эттирилади  
+(17-расм)  
+  
+17-расм.  
+  
+9  
+Жараённинг  
+қолган  
+босқичлари  
+маъмурий  
+ҳуқуқбузарлик  
+юзасидан электрон шаклда келиб тушган аризаларни рўйхатга  
+олишнинг юқорида кўрсатилган тартиби (1.3 - 1.5 ) асосида амалга  
+оширилади.  
+  
+6.  
+Электрон  
+шаклда  
+келиб  
+тушган  
+ариза  
+ва  
+илтимосномаларни қабул қилиш ва рўйхатдан ўтказиш тартиби  
+  
+Ахборот  
+тизими  
+орқали  
+келиб  
+тушган  
+мурожаатлар  
+суд  
+девонхонасининг шахсий кабинети орқали қабул қилинади ва  
+рўйхатдан ўтказилади.  
+Юридик ва жисмоний шахсларнинг судларга электрон шаклда  
+юборилган умумий мазмундаги мурожаатлари ва назорат тартибидаги  
+аризаларни рўйхатга олиш қуйидаги тартибда амалга оширилади:  
+Бунинг учун суд девонхонасининг шахсий кабинетига кириб,  
+“Ҳужжатлар” тугмасини танлаш керак (18-расм).  
+  
+  
+18-расм  
+  
+Очилган “Ҳужжатлар” бўлимида “Электрон қабул қилиш”ни  
+танлаб, ичига кириш керак (19-расм).  
+  
+  
+19-расм  
+  
+“Электрон қабул қилиш” бўлимида судга электрон шаклда  
+юборилган Юридик ва жисмоний шахсларнинг судларга электрон  
+шаклда юборилган умумий мазмундаги мурожаатлари ва назорат  
+тартибидаги аризалар рўйхати акс эттирилади (20-расм).  
+  
+10  
+  
+20-расм  
+  
+  
+Мурожаатлар “Республика маъмурий судларига мурожаатларни  
+“E-XSUD” ахборот тизими орқали тақдим қилиш Тартиби” талабларига  
+мос равишда юборилганлигини текшириш учун ҳар бир мурожаатни  
+ичига кириб текшириш керак.  
+Бунинг учун мурожаатни ичига киргандан сўнг саҳифанинг пастки  
+қисмида жойлашган “Ҳужжатлар” бўлимида ташқи фойдаланувчилар  
+томонидан юборилган ҳужжатларнинг файлларини очиш керак.  
+(21-расм).  
+  
+21-расм  
+Суд двеонхонасининг шахсий кабинети орқали электрон шаклда  
+келиб тушган мурожаатларда йўл қўйилган хатоликлар бартараф этиш  
+ва тўлдирилиши лозим бўлган маълумотларни тўлдириш имконияти  
+мавжуд (22-расм).  
+  
+11  
+  
+  
+22-расм  
+  
+Агар мурожаат ва унга илова қилинган барча файллар тўғри  
+юборилган, шунингдек мазкур мурожаатга тегишли қаторлардаги  
+маълумотлар қайд этилганидан кейин “Рўйхат санаси” майдони  
+тўлдирилади (23-расм).  
+  
+23-расм  
+  
+Юқоридаги барча амаллар бажарилган ҳамда киритилган барча  
+маълумотлар тўлиқ ва ҳаққонийлигига ишонч ҳосил қилингандан сўнг  
+экраннинг пастки қисмида жойлашган “Сақлаш” тугмаси босилади  
+(24-расм).  
+  
+24-расм  
+  
+  
+  
+  
+12  
+7. Электрон кўринишда келиб тушган мурожаатларни рўйхатдан  
+ўтказишни рад қилиш асослари  
+  
+Қуйидаги ҳолатларда мурожаат Тартиб талабларига риоя  
+қилинмасдан юборилган деб ҳисобланади ва рўйхатга олинмасдан  
+девонхона  
+бўлими  
+томонидан  
+мурожаатчига  
+электрон  
+шаклда  
+қайтарилади:  
+- ҳужжатлар сифатсиз сканер қилинганлиги сабабли уларни  
+ўқишни имконияти бўлмаса;  
+- ҳужжатлар тартибсиз ёки тескари сақланганлиги сабабли  
+уларни ўқишни имконияти бўлмаса;  
+- ҳужжат варақлари тўлиқ бўлмаса;  
+- аризага  
+илова  
+деб  
+кўрсатилган  
+ҳужжатлар  
+тўлиқ  
+бириктирилмаган бўлса;  
+- бириктирилган файлда матн мавжуд бўлмаса;  
+- ҳужжатлар мазкур Тартибда назарда тутилган PDF форматида  
+юборилмаган бўлса;  
+- маъмурий  
+орган  
+томонидан  
+шахс(лар)ни  
+маъмурий  
+жавобгарликка тортиш ҳақида мурожаат тақдим этилган бўлса;  
+- суд томонидан ҳали кўриб чиқилмаган айни бир тарафлар  
+ўртасидаги, айни бир предмет тўғрисидаги ва айни бир асослар  
+бўйича мурожаат такроран юборилган бўлса;  
+- ҳужжатлар имзоланмаган бўлса;  
+- ҳужжатлар тегишли маъмурий судга йўлланмаган бўлса;  
+- сканер қилинган бошқа-бошқа мазмундаги ҳужжатлар битта  
+файлга сақланган бўлса (ҳужжатлар номланишига кўра алоҳида  
+файлларга ажратилмаган бўлса);  
+- файлларнинг  
+номлари  
+сақланган  
+ҳужжатларга  
+мувофиқ  
+бўлмаса;  
+- мазкур Тартибда назарда тутилмаган мурожаат келиб тушган  
+бўлса.  
+Мурожаатни девонхона орқали рўйхатдан ўтказишни рад этиш  
+тартиби қуйидаги расмларда кўрсатилган (25-26 расмлар).  
+  
+  
+25-расм.  
+  
+  
+13  
+  
+  
+26-расм.  
+  
+Агарда мурожаат юқорида кўрсатилган асосларнинг бир нечтаси  
+бўйича риоя қилинмай юборилган бўлса, шу асосларни танлаш орқали  
+мурожаат қилувчига қайтариш имконияти мавжуд. Бунинг учун  
+тегишли қайтариш асосларидан бири танланганидан кейин қайтариш  
+асоси рўйхатини қайта очган ҳолда кейинги асосини танлаш керак.  
+Бунда кейинги танланган асослар автоматик тарзда аввалроқ  
+танланган асослар қаторига қўшилади (2-расм). Рад қилинган  
+мурожаатлар Рад этилган бўлимидаги рўйхатда акс этади.  
+  
+  
+  
+  
+
+
+---
+## 📖 ИШЛАРНИ АРХИВГА ТОПШИРИШ, АРХИВДАН ОЛИШ, АРХИВГА ҚАБУЛ ҚИЛИШ ВА ҚАБУЛ ҚИЛИШНИ РАД ЭТИШ ТАРТИБИ 
+*(Manba: Ишларни архивга топшириш, архивдан олиш, архивга қабул қилиш ва қабул қилишни рад этиш тартиби .pdf)*
+
+Ишларни архивга топшириш, архивдан олиш, архивга қабул қилиш ва  
+қабул қилишни рад этиш тартиби  
+1. Ишларни архивга топшириш  
+  
+Натижа қабул қилинган ишларни архивга юбориш учун судья  
+логинидан тизимга кирилади ва  
+а) биринчи инстанция ишлари  
+  
+б) биринчи инстанция низолари  
+  
+в) иш материаллари биринчи инстанция  
+  
+  
+  
+г) низо материаллари биринчи инстанция  
+  
+менюси танланади ва Архивга юбориш рукнига ўтилади. Бу рўйхатда натижа  
+қабул қилинган ҳолатдаги архивга юборишга тайёр ишлар шаклланади. Зарур  
+ишлар рўйхатдан белги қўйиш орқали танланади ва архивга топширилган  
+сана қаторига архивга берилган сана тўлдирилиб «сақлаш» тугмаси  
+босилади.  
+Янги ойнада архивга юборилган ишлар рўйхати очилади  
+  
+2. Ишларни архивдан олиш  
+  
+Ишларни архивдан олиш учун судья логинидан кирилади ва «Архив  
+ишлари» менюсидан «Маъмурий ишлар», «Маъмурий низолар» ёки  
+«Материаллар» рукнига ўтилади.  
+  
+  
+Архивдан олиш бўлимига ўтилади ва «Қўшиш» тугмаси босилади  
+  
+  
+Янги очилган ойнадан иш рақами киритилади ва излаш тугмаси  
+босилади, топилган иш ва архивдан олиш сабаби белгиланиб сақлаш тугмаси  
+босилади.  
+  
+3. Ишларни архивга қабул қилиш ва қабул қилишни рад қилиш  
+  
+Ишларни архивга қабул қилиш учун архив мудири роли берилган  
+фойдаланувчи логинидан тизимга кирилади ва «Архив ишлари» менюсидан  
+«Маъмурий ишлар», «Маъмурий низолар» ёки «Материаллар» рукнига  
+ўтилади. «Қабул қилиш» бўлимига ўтилади  
+  
+судья томонидан архивга юборилган ишлар танланиб, сана танланади ва  
+қабул қилиш тугмаси ёки Сана ва Архивга қабул қилишни рад қилиш сабаби  
+қаторлари тўлдирилиб қайтариш тугмаси танланади.  
+  
+  
+Қабул қилиш рад қилинган ишлар “Қабул қилиш рад этилган”  
+бўлимидаги рўйхатда шаклланади.  
+3. Архивдан олиш сўровини қабул қилиш ва рад этиш  
+  
+Архивдан олиш сўровини қабул қилиш ёки рад қилиш учун архив  
+мудири роли берилган фойдаланувчи логинидан кирилади ва «Архив  
+ишлари» менюсидан «Маъмурий ишлар», «Маъмурий низолар» ёки  
+«Материаллар» рукнига ўтилади. «Архивдан олиш» бўлимига ўтилади ва  
+“Архивдан олинган сана” тўлдирилиб Қабул қилиш тугмаси ёки “Архивдан  
+олиш сўровини рад этиш сабаблари” қаторидан тегишли сабабларни  
+белгилаб Қайтариш тугмаси босилади.  
+  
+  
+Архивдан олиш сўрови қабул қилинганда ушбу иш “Архивдан  
+олинган” бўлимидаги рўйхатда акс этади, рад этилганда эса “Архивдан олиш  
+рад этилган” бўлимидаги рўйхатда акс этади.  
+4. Архивдан олинган ишларни архивга қайтариш  
+  
+Архивдан олинган ишларни архивга қайтариш учун судья логинидан  
+кирилади  
+ва  
+«Архив  
+ишлари»  
+менюсидан  
+«Маъмурий  
+ишлар»,  
+«Маъмурий низолар» ёки «Материаллар» рукнига ўтилади ва “Архивга  
+қайтариш” бўлими танланади. Архивга топширилган сана киритилиб сақлаш  
+тугмаси босилади.  
+  
+  
+
+
+---
+## 📖 ИШЛАРНИ СУДЬЯЛАР ЎРТАСИДА АВТОМАТИК ТАРЗДА ТАҚСИМЛАШ ВА ҚАЙТА ТАҚСИМЛАШ ҲАМДА БИРЛАШТИРИШ ТАРТИБИ (1)
+*(Manba: Ишларни судьялар ўртасида автоматик тарзда тақсимлаш ва қайта тақсимлаш ҳамда бирлаштириш тартиби (1).pdf)*
+
+Электрон дастур орқали ишларни судьялар ўртасида автоматик тарзда  
+тақсимлаш ва қайта тақсимлаш ҳамда бирлаштириш бўйича  
+ҚЎЛЛАНМА  
+ЭСЛАТМА: Назорат инстанцияси суди томонидан янгидан кўриш учун  
+юборилган ишлар, Ўзбекистон Республикасининг Жиноят-процессуал кодексида  
+назарда тутилган ҳолларда ва тартибда бошқа жиноят ишлари бўйича судидан  
+келиб тушган ишлар, шунингдек Олий суд раисининг фармойишига асосан кўриб  
+чиқиш учун юборилган ишлар ҳамда Қорақалпоғистон Республикаси жиноят  
+ишлари бўйича суди, жиноят ишлари бўйича вилоятлар, Тошкент шаҳар  
+судлари томонидан биринчи инстанция суди сифатида кўриб чиқиладиган  
+ишлар ҳам АТИТ Модули орқали автоматик тарзда тақсимланади. Шунингдек,  
+бир  
+ишни  
+бошқасига  
+бирлаштириш  
+учун  
+иш  
+қайта  
+тақсимотга  
+юборилмайди.  
+  
+1. Суд девонхонаси томонидан рўйхатдан ўтказилган ишларини судьялар  
+ўртасида автоматик тақсимлаш учун тегишли инстанция ишлари блокига кириб,  
+“Тақсимлаш” рукнига кирилади. Бу ерда судьялар ўртасида тақсимланмаган  
+ишлар рўйхати чиқади.  
+  
+  
+  
+  
+  
+2. “Тақсимлаш” рукни орқали топилган ишларнинг барчаси белгиланади  
+ва “Автоматик тақсимот” тугмаси босилади. “Автоматик тақсимот” тугмаси  
+босилганда маълум муддат кутилади, чунки электрон дастур ишни қайси судьяга  
+бериши лозимлиги аниқлаш ҳамда ҳисоблаши учун вақт талаб қилади. Шу  
+орқали рўйхатдан ўтказилган ишлар автоматик тарзда судьяларга тақсимланади  
+ва судьянинг шахсий кабинетига бориб тушади.  
+  
+  
+  
+3. Ушбу тизимда қайта тақсимот функцияси мавжуд бўлиб, у фақат  
+қуйидаги ҳолларда амалга оширилади:  
+- иш юритишни судья билмайдиган тилда юритиш зарурияти вужудга  
+келганда;  
+- судьяни рад қилиш ёки ўзини-ўзи рад қилиш қабул қилинганда;  
+- судья меҳнат таътилига кетганда;  
+- судья узоқ муддат касал бўлганда;  
+- судья ўқиш ёки хизмат сафарига кетганда;  
+- судьянинг ваколати муддатидан олдин тугатилганда.  
+Девонхона логин ва пароли орқали электрон дастурга кирилади ва тегишли  
+ўша иш топилади. Ишни ичига кирилганда ишнинг юқори ўнг қисмида “Қайта  
+тақсимотга юбориш” тугмаси мавжуд. Мазкур тугма орқали иш қайта тақсимот  
+учун юборилади.  
+  
+  
+  
+4. Шундан сўнг биринчи инстанция ишлари рукни танланади.  
+  
+  
+  
+5. Юқоридаги “Қайта тақсимот” рукнига кирилади.  
+  
+  
+6. “Қайта тақсимот” рукнида қайта тақсимот учун юборилган ишлар  
+рўйхати кўриниб туради. Бу рўйхатдаги ишларнинг ҳолати ҳам “Қайта  
+тақсимлашда” бўлади.  
+  
+7. Қайта тақсимланадиган ишларнинг рўйхатидан тегишли ишнинг ичига  
+кирилади ва пастки қисмида “Қайта тақсимлаш” номли тугма босилади.  
+  
+  
+  
+8. “Қайта тақсимлаш” номли тугма босилганда очиладиган ойнада қайта  
+тақсимлаш сабаби, иш бошқа судья берилган сана ва қайта тақсимот учун асос  
+бўладиган ҳужжатнинг имзоланган PDF форматидаги электрон шаклини  
+бириктириш қаторлари мавжуд. Мазкур қаторларнинг барчасини тўлдириш  
+мажбурий ҳисобланади. Қаторлар тўлдирилгандан сўнг “Сақлаш” тугмаси  
+босилади.  
+  
+  
+  
+  
+9. Шу билан иш қайтадан “Тақсимлаш” рукнига бориб тушади ва иш  
+белгиланиб “Автоматик тақсимот” тугмасини босиш билан АТИТ модули  
+орқали бошқа судьяга қайта тақсимланади.  
+  
+ АТИТ модули “Имконсизлик даври” классифакаторига киритилган  
+ва имконсизлик даври тугамаган судьяга ишни тақсимламайди.  
+Тақсимлаш чоғида судьяни танлаш мумкин бўлмаган даврни белгилаш  
+суд раисининг буйруғи (фармойиши)га мувофиқ, судьянинг вақтинчалик  
+меҳнатга қобилиятсизлик варақаси, суд ажрими ёки имконсизлик сабабларини  
+изоҳлайдиган бошқа ҳужжатлар билан амалга оширилади.  
+Кадрлар бўйича суднинг масъул ходими судьяга меҳнат таътили (иш ҳақи  
+сақланмаган ҳолда меҳнат таътили) бериш ёки хизмат сафарига ёхуд ўқишга  
+(малака оширишга) юбориш ҳақида буйруқ (фармойиш) чиқарилган куннинг  
+эртасига девонхона мудирига буйруқ (фармойиш) нусхасини АТИТ Модулига  
+“имконсизлик даври” классификаторига тегишли маълумотни киритиш учун  
+тақдим этади.  
+Судьянинг имконсизлик даври меҳнат таътили бошланишидан ўн беш  
+кун олдиндан, хизмат сафарига юборилганда, ўқиш (малака ошириш)га  
+юборилганда ёки иш ҳақи сақланмаган ҳолда таътилга юборилганда эса бу  
+тўғрисидаги буйруқ (фармойиш)нинг нусхаси девонхонага топширилган кундан  
+ҳисобланади.  
+Масалан: Судьяга 1 октябрдан 25 октябргача меҳнат таътили бериш  
+тўғрисида суд раиси буйруғи чиқди. Суд девонхонаси логинидан кирилиб  
+тизимни бошқариш тугмаси орқали имконсизлик даври классификаторига янги  
+ёзув қўшиш қилиб, ушбу судьянинг имконсизлик даври бошланишини 16 ноябрь  
+тугашини эса 25 октябрь қилиб киритилади.  
+Судьянинг ишда бўлмаган даврининг бошидан судьяга иш тақсимлаш  
+тўхтатилади ва судья ишга чиққан биринчи кундан тикланади.  
+Судьянинг вақтинчалик меҳнатга қобилиятсизлиги туфайли ишларни  
+(материалларни) тарқатилиши судья кетганидан бошлаб биринчи уч иш куни  
+давомида тўхтатилмайди ва судья ишга чиққан куннинг ўзида қайта тикланади.  
+Иш вақти давомида суднинг кадрлар билан ишлаш ходими, судьянинг  
+меҳнатга лаёқатсиз эканлиги тўғрисида маълумотга эга бўлиб, ушбу маълумотни  
+АТИТ Модулига киритиш учун девонхона мудирига тақдим этади.  
+Мазкур тартиб электрон дастур орқали қуцидагича амалга оширилади:  
+Суд девонхонаси логин ва пароли билан кирилади ва очилган ойнанинг  
+юқори қисмида “Тизимни бошқариш” тугмаси босилади.  
+  
+  
+Бу жойдан “Имконсизлик даври” бўлимининг ичига кирилади. Очилган  
+ойнада “Қўшиш” тугмаси босилади ва шу жойдан имконсизлик даврида бўлган  
+судья, имконсизлик даври (бошланиш ва тугалланиш даври саналарда  
+кўрсатилади), имконсизлик тури ва имконсизликни тасдиқловчи ҳужжатнинг  
+имзоланган PDF форматидаги электрон шаклини бириктириш қаторлари  
+тўлдирилиши шарт.  
+  
+  
+Иш  
+ва  
+материалларни  
+тақсимланиши  
+қуйидаги  
+ҳолларда  
+тўхтатилмайди, агарда судья:  
+иш ҳақи сақланмаган ҳолда таътилда бўлиб, бундай таътилнинг муддати  
+уч иш кунидан ошмаса;  
+хизмат сафарида бўлиб, унинг муддати уч иш кунидан ошмаса;  
+ўқишда (малака оширишда) бўлиб, унинг муддати уч иш кунидан ошмаса.  
+  
+Имконсизлик даври муддатидан илгари тугаганда имконсизлик даврига  
+янги ёзув киритишдаги амаллари такрорланади яъни “Имконсизлик даври“  
+классификаторига янги ёзув қўшиш қилинади ва имконсизлик даврининг  
+бошланишига  
+имконсизлик  
+даврининг  
+бошланиш  
+санаси,  
+имконсизлик  
+даврининг тугашига эса судья ишга чиққан сана қўйилади ва сақланади.  
+Шундан сўнг АТИТ модули судьяга иш тақсимлаши мумкин.  
+  
+Эслатма: Судьянинг ваколати муддати тугаганда, судья бошқа ишга  
+ўтганда  
+ёки  
+янги  
+судья  
+келганда  
+судьянинг  
+логини  
+“Ахборот  
+тизими  
+фойдаланувчиларини рўйхатдан ўтказиш тартиби” тўғрисидаги йўриқномага асосан  
+ўзгартирилади ва ушбу судьяни АТИТ модулига қўшиб қйўиш ёки ўчириш учун бу  
+ҳақда Олий суд АКТ бошқармасига масъул ходимига хабар берилилади.  
+  
+Ишларни бирлаштириш тартиби  
+Эслатма: Ишларни бирлаштиришда 2 та ишнинг судланувчилари  
+орасида бир хил судланувчи мавжуд бўлса уларнинг шахсига доир  
+маълумотлари бир-бирига аниқ мос келишини текшириш зарур акс ҳолда иш  
+бирлаштирилганда битта судланувчи 2 марта қайд этилиб қолади.  
+Ишларни бирлаштириш учун:  
+1. Охирги келган иш қайси судьяга автотақсимланган бўлса ўша судьянинг  
+логининидан янги келган ишга тизимдан рақам олинади;  
+2. Янги ишнинг ичига кириб ишнинг пастки қисмидаги “Бирлаштириш”  
+рукни танланади;  
+3. а) Ажримда янги келган иш асосий иш сифатида белгиланган бўлса  
+Бирлаштириш тури қаторига “2 – Бошқа ишга бирлаштириш (мазкур ишни  
+асосий иш сифатида белгилаб)” варианти танланади. Бирлаштириладиган иш  
+рақами қаторига кўрилаётган эски ишнинг рақами киритилади ва бирлаштириш  
+тугмаси босилади. Натижада янги иш эски ишни кўраётган судянинг кабинетига  
+эски ишга асосий иш сифатида бирлашиб тушади;  
+  б) ажримда аввал кўрилаётган иш асосий иш сифатида белгиланган бўса  
+“Бирлаштириш тури” қаторига “1 – Бошқа ишга бирлаштириш” варианти  
+танланади. Асосий иш рақами қаторига аввал кўрилаётган ишнинг рақами  
+киритилади ва бирлаштириш тугмалари босилади. Натижада янги иш эски ишни  
+кўраётган судянинг кабинетига эски ишга бирлашиб тушади;  
+  в) агар аввал бирлаштирилган ишга яна янги ишни бирлаштириш  
+зарурати бўлса, янги келган ишни асосий иш қилиб белгилаб бўлмайди. Бунда  
+“Бирлаштириш тури” қаторига “1 – Бошқа ишга бирлаштириш” варианти  
+танланади ва асосий иш рақами киритилиб бирлаштириш тугмаси босилади.  
+Натижада янги иш эски ишни кўраётган судянинг кабинетига эски (бирлашган)  
+ишга бирлашиб тушади.  
+  
+  
+Мисол:  
+1.Судья С.Махаметов 08.07.2019 йилда келиб тушган Чулиев Отабек  
+Дониёровичга оид 1-1002-1902/174 рақамли жиноят ишини кўраяпди  
+  
+2. Судья О.Илхомжоновга 05.08.2019 йилда келиб тушган Баходиров  
+Шукурулло Баходировичга оид жиноят иши автотақсимот орқали тақсимланди  
+ва судья ишга тизим орқали 1-1002-1903/197 рақамини бириктирди.  
+  
+  
+3. С.Махаметов О.Илхомжоновга келиб тушган 1-1002-1903/197 рақамли ишни  
+ўзининг иш юритувидаги 1-1002-1902/174 рақамли ишга бирлаштириш ва  
+О.Илхомжоновдаги 1-1002-1903/197 рақамли ишни асосий иш сифатида кўриш  
+бўйича ажрим чиқарди.  
+4. О.Илхомжонов ўзининг логинидан 1-1002-1903/197 рақамли ишнинг ичига  
+киради. С.Махаметовнинг ажримига асосан  
+ишнинг пастки қисмидаги  
+“Бирлаштириш” рукни орқали Бирлаштириш тури қаторига “2 – Бошқа ишга  
+бирлаштириш (мазкур ишни асосий иш сифатида белгилаб)” варианти  
+танланади.  
+  
+Бирлаштириладиган иш рақами қаторига С.Махаметов иш юритувидаги  
+1-1002-1902/174 иш рақами киритилади ва бирлаштириш тугмаси босилади.  
+  
+Натижада О.Илхомжоновдаги 1-1002-1903/197 рақамли иш асосий иш сифатида  
+С.Махаметов иш юритувидаги 1-1002-1902/174 рақамли ишга бирлашади.  
+  
+  
+
+
+---
+## 📖 ИШЛАРНИ СУДЬЯЛАР ЎРТАСИДА АВТОМАТИК ТАРЗДА ТАҚСИМЛАШ ВА ҚАЙТА ТАҚСИМЛАШ ҲАМДА БИРЛАШТИРИШ ТАРТИБИ
+*(Manba: Ишларни судьялар ўртасида автоматик тарзда тақсимлаш ва қайта тақсимлаш ҳамда бирлаштириш тартиби.pdf)*
+
+Электрон дастур орқали ишларни судьялар ўртасида автоматик тарзда  
+тақсимлаш ва қайта тақсимлаш ҳамда бирлаштириш бўйича  
+ҚЎЛЛАНМА  
+ЭСЛАТМА: Назорат инстанцияси суди томонидан янгидан кўриш учун  
+юборилган ишлар, Ўзбекистон Республикасининг Жиноят-процессуал кодексида  
+назарда тутилган ҳолларда ва тартибда бошқа жиноят ишлари бўйича судидан  
+келиб тушган ишлар, шунингдек Олий суд раисининг фармойишига асосан кўриб  
+чиқиш учун юборилган ишлар ҳамда Қорақалпоғистон Республикаси жиноят  
+ишлари бўйича суди, жиноят ишлари бўйича вилоятлар, Тошкент шаҳар  
+судлари томонидан биринчи инстанция суди сифатида кўриб чиқиладиган  
+ишлар ҳам АТИТ Модули орқали автоматик тарзда тақсимланади. Шунингдек,  
+бир  
+ишни  
+бошқасига  
+бирлаштириш  
+учун  
+иш  
+қайта  
+тақсимотга  
+юборилмайди.  
+  
+1. Суд девонхонаси томонидан рўйхатдан ўтказилган ишларини судьялар  
+ўртасида автоматик тақсимлаш учун тегишли инстанция ишлари блокига кириб,  
+“Тақсимлаш” рукнига кирилади. Бу ерда судьялар ўртасида тақсимланмаган  
+ишлар рўйхати чиқади.  
+  
+  
+  
+  
+  
+2. “Тақсимлаш” рукни орқали топилган ишларнинг барчаси белгиланади  
+ва “Автоматик тақсимот” тугмаси босилади. “Автоматик тақсимот” тугмаси  
+босилганда маълум муддат кутилади, чунки электрон дастур ишни қайси судьяга  
+бериши лозимлиги аниқлаш ҳамда ҳисоблаши учун вақт талаб қилади. Шу  
+орқали рўйхатдан ўтказилган ишлар автоматик тарзда судьяларга тақсимланади  
+ва судьянинг шахсий кабинетига бориб тушади.  
+  
+  
+  
+3. Ушбу тизимда қайта тақсимот функцияси мавжуд бўлиб, у фақат  
+қуйидаги ҳолларда амалга оширилади:  
+- иш юритишни судья билмайдиган тилда юритиш зарурияти вужудга  
+келганда;  
+- судьяни рад қилиш ёки ўзини-ўзи рад қилиш қабул қилинганда;  
+- судья меҳнат таътилига кетганда;  
+- судья узоқ муддат касал бўлганда;  
+- судья ўқиш ёки хизмат сафарига кетганда;  
+- судьянинг ваколати муддатидан олдин тугатилганда.  
+Девонхона логин ва пароли орқали электрон дастурга кирилади ва тегишли  
+ўша иш топилади. Ишни ичига кирилганда ишнинг юқори ўнг қисмида “Қайта  
+тақсимотга юбориш” тугмаси мавжуд. Мазкур тугма орқали иш қайта тақсимот  
+учун юборилади.  
+  
+  
+  
+4. Шундан сўнг биринчи инстанция ишлари рукни танланади.  
+  
+  
+  
+5. Юқоридаги “Қайта тақсимот” рукнига кирилади.  
+  
+  
+6. “Қайта тақсимот” рукнида қайта тақсимот учун юборилган ишлар  
+рўйхати кўриниб туради. Бу рўйхатдаги ишларнинг ҳолати ҳам “Қайта  
+тақсимлашда” бўлади.  
+  
+7. Қайта тақсимланадиган ишларнинг рўйхатидан тегишли ишнинг ичига  
+кирилади ва пастки қисмида “Қайта тақсимлаш” номли тугма босилади.  
+  
+  
+  
+8. “Қайта тақсимлаш” номли тугма босилганда очиладиган ойнада қайта  
+тақсимлаш сабаби, иш бошқа судья берилган сана ва қайта тақсимот учун асос  
+бўладиган ҳужжатнинг имзоланган PDF форматидаги электрон шаклини  
+бириктириш қаторлари мавжуд. Мазкур қаторларнинг барчасини тўлдириш  
+мажбурий ҳисобланади. Қаторлар тўлдирилгандан сўнг “Сақлаш” тугмаси  
+босилади.  
+  
+  
+  
+  
+9. Шу билан иш қайтадан “Тақсимлаш” рукнига бориб тушади ва иш  
+белгиланиб “Автоматик тақсимот” тугмасини босиш билан АТИТ модули  
+орқали бошқа судьяга қайта тақсимланади.  
+  
+ АТИТ модули “Имконсизлик даври” классифакаторига киритилган  
+ва имконсизлик даври тугамаган судьяга ишни тақсимламайди.  
+Тақсимлаш чоғида судьяни танлаш мумкин бўлмаган даврни белгилаш  
+суд раисининг буйруғи (фармойиши)га мувофиқ, судьянинг вақтинчалик  
+меҳнатга қобилиятсизлик варақаси, суд ажрими ёки имконсизлик сабабларини  
+изоҳлайдиган бошқа ҳужжатлар билан амалга оширилади.  
+Кадрлар бўйича суднинг масъул ходими судьяга меҳнат таътили (иш ҳақи  
+сақланмаган ҳолда меҳнат таътили) бериш ёки хизмат сафарига ёхуд ўқишга  
+(малака оширишга) юбориш ҳақида буйруқ (фармойиш) чиқарилган куннинг  
+эртасига девонхона мудирига буйруқ (фармойиш) нусхасини АТИТ Модулига  
+“имконсизлик даври” классификаторига тегишли маълумотни киритиш учун  
+тақдим этади.  
+Судьянинг имконсизлик даври меҳнат таътили бошланишидан ўн беш  
+кун олдиндан, хизмат сафарига юборилганда, ўқиш (малака ошириш)га  
+юборилганда ёки иш ҳақи сақланмаган ҳолда таътилга юборилганда эса бу  
+тўғрисидаги буйруқ (фармойиш)нинг нусхаси девонхонага топширилган кундан  
+ҳисобланади.  
+Масалан: Судьяга 1 октябрдан 25 октябргача меҳнат таътили бериш  
+тўғрисида суд раиси буйруғи чиқди. Суд девонхонаси логинидан кирилиб  
+тизимни бошқариш тугмаси орқали имконсизлик даври классификаторига янги  
+ёзув қўшиш қилиб, ушбу судьянинг имконсизлик даври бошланишини 16 ноябрь  
+тугашини эса 25 октябрь қилиб киритилади.  
+Судьянинг ишда бўлмаган даврининг бошидан судьяга иш тақсимлаш  
+тўхтатилади ва судья ишга чиққан биринчи кундан тикланади.  
+Судьянинг вақтинчалик меҳнатга қобилиятсизлиги туфайли ишларни  
+(материалларни) тарқатилиши судья кетганидан бошлаб биринчи уч иш куни  
+давомида тўхтатилмайди ва судья ишга чиққан куннинг ўзида қайта тикланади.  
+Иш вақти давомида суднинг кадрлар билан ишлаш ходими, судьянинг  
+меҳнатга лаёқатсиз эканлиги тўғрисида маълумотга эга бўлиб, ушбу маълумотни  
+АТИТ Модулига киритиш учун девонхона мудирига тақдим этади.  
+Мазкур тартиб электрон дастур орқали қуцидагича амалга оширилади:  
+Суд девонхонаси логин ва пароли билан кирилади ва очилган ойнанинг  
+юқори қисмида “Тизимни бошқариш” тугмаси босилади.  
+  
+  
+Бу жойдан “Имконсизлик даври” бўлимининг ичига кирилади. Очилган  
+ойнада “Қўшиш” тугмаси босилади ва шу жойдан имконсизлик даврида бўлган  
+судья, имконсизлик даври (бошланиш ва тугалланиш даври саналарда  
+кўрсатилади), имконсизлик тури ва имконсизликни тасдиқловчи ҳужжатнинг  
+имзоланган PDF форматидаги электрон шаклини бириктириш қаторлари  
+тўлдирилиши шарт.  
+  
+  
+Иш  
+ва  
+материалларни  
+тақсимланиши  
+қуйидаги  
+ҳолларда  
+тўхтатилмайди, агарда судья:  
+иш ҳақи сақланмаган ҳолда таътилда бўлиб, бундай таътилнинг муддати  
+уч иш кунидан ошмаса;  
+хизмат сафарида бўлиб, унинг муддати уч иш кунидан ошмаса;  
+ўқишда (малака оширишда) бўлиб, унинг муддати уч иш кунидан ошмаса.  
+  
+Имконсизлик даври муддатидан илгари тугаганда имконсизлик даврига  
+янги ёзув киритишдаги амаллари такрорланади яъни “Имконсизлик даври“  
+классификаторига янги ёзув қўшиш қилинади ва имконсизлик даврининг  
+бошланишига  
+имконсизлик  
+даврининг  
+бошланиш  
+санаси,  
+имконсизлик  
+даврининг тугашига эса судья ишга чиққан сана қўйилади ва сақланади.  
+Шундан сўнг АТИТ модули судьяга иш тақсимлаши мумкин.  
+  
+Эслатма: Судьянинг ваколати муддати тугаганда, судья бошқа ишга  
+ўтганда  
+ёки  
+янги  
+судья  
+келганда  
+судьянинг  
+логини  
+“Ахборот  
+тизими  
+фойдаланувчиларини рўйхатдан ўтказиш тартиби” тўғрисидаги йўриқномага асосан  
+ўзгартирилади ва ушбу судьяни АТИТ модулига қўшиб қйўиш ёки ўчириш учун бу  
+ҳақда Олий суд АКТ бошқармасига масъул ходимига хабар берилилади.  
+  
+Ишларни бирлаштириш тартиби  
+Эслатма: Ишларни бирлаштиришда 2 та ишнинг судланувчилари  
+орасида бир хил судланувчи мавжуд бўлса уларнинг шахсига доир  
+маълумотлари бир-бирига аниқ мос келишини текшириш зарур акс ҳолда иш  
+бирлаштирилганда битта судланувчи 2 марта қайд этилиб қолади.  
+Ишларни бирлаштириш учун:  
+1. Охирги келган иш қайси судьяга автотақсимланган бўлса ўша судьянинг  
+логининидан янги келган ишга тизимдан рақам олинади;  
+2. Янги ишнинг ичига кириб ишнинг пастки қисмидаги “Бирлаштириш”  
+рукни танланади;  
+3. а) Ажримда янги келган иш асосий иш сифатида белгиланган бўлса  
+Бирлаштириш тури қаторига “2 – Бошқа ишга бирлаштириш (мазкур ишни  
+асосий иш сифатида белгилаб)” варианти танланади. Бирлаштириладиган иш  
+рақами қаторига кўрилаётган эски ишнинг рақами киритилади ва бирлаштириш  
+тугмаси босилади. Натижада янги иш эски ишни кўраётган судянинг кабинетига  
+эски ишга асосий иш сифатида бирлашиб тушади;  
+  б) ажримда аввал кўрилаётган иш асосий иш сифатида белгиланган бўса  
+“Бирлаштириш тури” қаторига “1 – Бошқа ишга бирлаштириш” варианти  
+танланади. Асосий иш рақами қаторига аввал кўрилаётган ишнинг рақами  
+киритилади ва бирлаштириш тугмалари босилади. Натижада янги иш эски ишни  
+кўраётган судянинг кабинетига эски ишга бирлашиб тушади;  
+  в) агар аввал бирлаштирилган ишга яна янги ишни бирлаштириш  
+зарурати бўлса, янги келган ишни асосий иш қилиб белгилаб бўлмайди. Бунда  
+“Бирлаштириш тури” қаторига “1 – Бошқа ишга бирлаштириш” варианти  
+танланади ва асосий иш рақами киритилиб бирлаштириш тугмаси босилади.  
+Натижада янги иш эски ишни кўраётган судянинг кабинетига эски (бирлашган)  
+ишга бирлашиб тушади.  
+  
+  
+Мисол:  
+1.Судья С.Махаметов 08.07.2019 йилда келиб тушган Чулиев Отабек  
+Дониёровичга оид 1-1002-1902/174 рақамли жиноят ишини кўраяпди  
+  
+2. Судья О.Илхомжоновга 05.08.2019 йилда келиб тушган Баходиров  
+Шукурулло Баходировичга оид жиноят иши автотақсимот орқали тақсимланди  
+ва судья ишга тизим орқали 1-1002-1903/197 рақамини бириктирди.  
+  
+  
+3. С.Махаметов О.Илхомжоновга келиб тушган 1-1002-1903/197 рақамли ишни  
+ўзининг иш юритувидаги 1-1002-1902/174 рақамли ишга бирлаштириш ва  
+О.Илхомжоновдаги 1-1002-1903/197 рақамли ишни асосий иш сифатида кўриш  
+бўйича ажрим чиқарди.  
+4. О.Илхомжонов ўзининг логинидан 1-1002-1903/197 рақамли ишнинг ичига  
+киради. С.Махаметовнинг ажримига асосан  
+ишнинг пастки қисмидаги  
+“Бирлаштириш” рукни орқали Бирлаштириш тури қаторига “2 – Бошқа ишга  
+бирлаштириш (мазкур ишни асосий иш сифатида белгилаб)” варианти  
+танланади.  
+  
+Бирлаштириладиган иш рақами қаторига С.Махаметов иш юритувидаги  
+1-1002-1902/174 иш рақами киритилади ва бирлаштириш тугмаси босилади.  
+  
+Натижада О.Илхомжоновдаги 1-1002-1903/197 рақамли иш асосий иш сифатида  
+С.Махаметов иш юритувидаги 1-1002-1902/174 рақамли ишга бирлашади.  
+  
+  
+
+
+---
+## 📖 МАЪМУРИЙ СУДЛАР УЧУН ҚЎЛЛАНМА (МУНДАРИЖА)
+*(Manba: Маъмурий судлар учун қўлланма (мундарижа).pdf)*
+
+  
+  
+  
+  
+Ўзбекистон Республикаси Президентининг «Судлар фаолиятига замонавий ахборот- 
+коммуникация технологияларини жорий этишни янада такомиллаштириш чора-тадбирлари  
+тўғрисида» 2017 йил 30 августдаги ПҚ-3250-сонли Қарори ва 2017-2021 йилларда Ўзбекистон  
+Республикасини ривожлантиришнинг бешта устувор йўналишлари бўйича ҳаракатлар стратегияси  
+ижросини, шунингдек судлар фаолиятига судларда иш юритиш самарадорлигини ва аҳолининг  
+одил судловга эришиш даражасини оширишга қаратилган замонавий ахборот-коммуникация  
+технологияларини кенг жорий этилишини таъминлаш мақсадида E-хSUD судлов ахборот тизими  
+ишлаб чиқилган ва бугунги кунда барча маъмурий судлар фаолиятига жорий этилган.  
+Ушбу қўлланмада E-хSUD ахборот тизими тўғрисида умумий маълумот ҳамда  
+фойдалананувчилар томонидан мазкур ахборот тизимида ишлаш тартиби батафсил баѐн этилган.  
+Қўлланма юридик шахслар вакиллари, иқтисодий судлар раислари, судьялари, судья ѐрдамчилари,  
+адвокатлар,  
+соҳа  
+мутахассислари  
+ва  
+умуман,  
+суд-ҳуқуқ  
+соҳасига  
+қизиқувчилар  
+учун  
+мўлжалланган.  
+  
+  
+МУАЛЛИФ:  
+О.Азляров, “Ўзбекистонда қонун устуворлиги йўлида ҳамкорлик”  
+қўшма лойиҳаси консультанти  
+  
+НАШР УЧУН МАСЪУЛ:  
+А. Назаров, “Ўзбекистонда қонун устуворлиги йўлида ҳамкорлик”  
+қўшма лойиҳасининг E-Ҳукумат бўйича мутахассиси  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+МУНДАРИЖА  
+  
+КИРИШ  
+1-БЎЛИМ. E-XSUD АХБОРОТ ТИЗИМИ ФОЙДАЛАНУВЧИЛАРИНИ  
+РЎЙХАТДАН ЎТКАЗИШ ТАРТИБИ  
+1.1. Тизим администратори  
+1.2. Фойдаланувчиларнинг роллари  
+1.3. Фойдаланувчиларни ахборот тизимида рўйхатдан ўтказиш тартиби  
+2-БЎЛИМ. E-XSUD АХБОРОТ ТИЗИМИГА КИРИШ ТАРТИБИ  
+3-БЎЛИМ. АРИЗА (ШИКОЯТ)ЛАРНИ РЎЙХАТГА ОЛИШ ТАРТИБИ  
+3.1. Маъмурий ишларни рўйхатга олиш тартиби  
+3.2. Маъмурий низоларни рўйхатга олиш тартиби  
+4-БЎЛИМ. ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ИЧКИ ИШЛАР  
+ВАЗИРЛИГИНИНГ АХБОРОТ ТИЗИМИ ОРҚАЛИ ЭЛЕКТРОН  
+ШАКЛДА КЕЛИБ ТУШГАН МАЪМУРИЙ ИШЛАРНИ РЎЙХАТДАН  
+ЎТКАЗИШ ТАРТИБИ  
+4.1. Электрон шаклда келиб тушган маъмурий ишларни қайтариш тартиби  
+4.2. Электрон шаклда келиб тушган маъмурий ишларни қабул қилиш  
+тартиби  
+4.3. Ишни кўриш натижасига кўра ундирилиши белгиланган жарима ѐки  
+зарарни ихтиѐрий тўлаш учун квитанция яратиш тартиби  
+5-БЎЛИМ. ИШЛАРНИ АВТОМАТИК ТАРЗДА ТАҚСИМЛАШ  
+ТАРТИБИ  
+5.1. Автоматик тақсимотни амалга ошириш тартиби  
+5.2. Ишларни қайта тақсимлаш тартиби  
+5.3. Судьяларнинг имконсизлик даврини белгилаш тартиби  
+6-БЎЛИМ. ЭЛЕКТРОН ДАСТУР ОРҚАЛИ МАЪМУРИЙ ИШГА ДОИР  
+ДАЛИЛЛАРНИ РЎЙХАТДАН ЎТКАЗИШ ВА УЛАРНИНГ ТАҚДИРИ  
+БЎЙИЧА НАТИЖАСИНИ ҚАЙД ЭТИШ ТАРТИБИ  
+6.1. Далилларга доир маълумотларни ахборот тизимига киритиш тартиби.  
+6.2. Далиллар бўйича ижро тузиш тартиби  
+7-БЎЛИМ. ЭЛЕКТРОН ДАСТУР ОРҚАЛИ МАТЕРИАЛЛАРНИ  
+РЎЙХАТДАН ЎТКАЗИШ ВА УЛАРНИНГ НАТИЖАСИГА ДОИР  
+МАЪЛУМОТЛАРНИ ҚАЙД ЭТИШ ТАРТИБИ  
+7.1. Маъмурий иш юзасидан келиб тушган материалларни рўйхатдан  
+ўтказиш турлари  
+7.2. Материалларни судьяга тақсимлаш тартиби  
+7.3. Материалларни кўриб чиқиш учун тайинлаш тартиби  
+7.4. Материалларни кўришни бошқа кунга қолдириш тартиби  
+7.5. Материалларни кўриб чиқиш якунига кўра натижасини киритиш  
+тартиби  
+7.6. Маъмурий ишга тегишли бўлмаган материалларни рўйхатдан ўтказиш  
+8-БЎЛИМ. ПОЧТА РЕЕСТРЛАРИ БИЛАН ИШЛАШ ТАРТИБИ  
+8.1. Почта реестрларини тузиш тартиби  
+8.2. Конверт, хабарнома ва кузатув хатларини автоматик тарзда  
+шакллантириш тартиби  
+8.3. Реестрларни девонхонадан қабул қилиб олиш тартиби  
+9-БЎЛИМ. ИЖРО ҲУЖЖАТЛАРИНИ ЭЛЕКТРОН ШАКЛДА  
+МАЖБУРИЙ ИЖРО БЮРО БЎЛИМЛАРИГА ЮБОРИШ ТАРТИБИ  
+9.1. Маъмурий иш бўйича ижро ҳужжатларни электрон шаклда ижрога  
+юбориш тартиби  
+9.2. Далилларни ижрога юбориш тартиби  
+9.3 Маъмурий низо бўйича ижро ҳужжатларни электрон шаклда ижрога  
+юбориш тартиби  
+9.4. Судья томонидан ижроси тузилган ижро ҳужжатларини масъул ходим  
+томонидан қабул қилиб олиш тартиби  
+10-БЎЛИМ. ОЛИЙ СУДНИНГ БИЛЛИНГ ТИЗИМИДАН  
+ФОЙДАЛАНИШ ТАРТИБИ  
+10.1. Олий суднинг биллинг тизими орқали тўланган тўловларни қабул  
+қилиш тартиби  
+10.2. Квитанция ҳолатини текшириш ва ишда фойдаланиш учун қабул  
+қилиш тартиби  
+10.3. Суд ҳужжатига кўра ундириш белгиланган тўловлар учун  
+квитанцияларни шакллантириш тартиби  
+10.4. Якуний суд ҳужжатига кўра ундириш белгиланган тўловларни ихтиѐрий  
+тўланганлиги ҳолатини текшириш  
+11-БЎЛИМ. АПЕЛЛЯЦИЯ ВА КАССАЦИЯ ШИКОЯТ (ПРОТЕСТ)  
+ЛАРИНИ “Е-ХSUD” АХБОРОТ ТИЗИМИ ОРҚАЛИ РЎЙХАТДАН  
+ЎТКАЗИШ ВА ТАҚСИМЛАШ ТАРТИБИ  
+  
+Атама ва қисқартмалар  
+  
+Ахборот тизими (АТ)  
+ахборотни тўплаш, сақлаш, излаш, унга ишлов  
+бериш ҳамда ундан фойда- ланиш имконини  
+берадиган, ташкилий жиҳатдан тартибга солинган  
+жами ахборот ресурслари, ахборот технологиялари  
+ва алоқа воситалари.  
+Браузер  
+интернет тармоғидан фойдаланиш учун  
+ишлатиладиган махсус дастурий таъминот (Microsoft  
+Internet Explorer, Mozilla Firefox, Opera, Google  
+Chrome).  
+Веб-сайт (сайт)  
+бир муаллиф, ташкилот ѐки фойдаланувчига тегишли  
+бўлган, Интернет тармоғида ноѐб манзилга эга ва  
+фойдаланувчиларга ахборот ва хизмат-лардан  
+фойдаланиш имконини берувчи бир мавзуга  
+жамланган веб-саҳи- фаларнинг мажмуи.  
+Логин  
+ахборот тизимидан фойдаланишни бошлаш учун  
+фойдаланувчи томонидан ахборот тизимининг веб- 
+порталида киритадиган қайд ѐзуви номи, яъни  
+фойдаланувчининг шахсини тасдиқлаш воситаси  
+Пароль  
+ахборот тизимидан фойдаланишни бошлаш учун,  
+фойдаланувчи томонидан ахборот тизимининг веб- 
+порталида логин билан биргаликда киритиладиган,  
+сир тутиладиган белгилар кетмакетлиги. Пароль 6 та  
+белгидан кам бўлмаган рақам ва ҳарфлар  
+йиғиндисидан ташкил топади.  
+Шахсий кабинет  
+(фойдаланувчининг  
+автоматлаштирилган  
+иш жойи)  
+эксплуатацион ва техник ҳужжатлар талабларига  
+жавоб берадиган, ҳисоблаш техника воситалари ва  
+махсус дастурий воситалар асосида фойдаланувчига  
+интернет тармоғи орқали ахборот тизимига маълумот  
+киритиш ва маълумотлар билан танишиш имконини  
+берувчи ахборот тизимининг веб-сайтидаги шахсий  
+саҳифаси.  
+Экран  
+ахборотни акс эттириш учун ишлатиладиган юзанинг  
+қисми ѐки қурилма (монитор).  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+КИРИШ  
+  
+Судлар тизимига ахборот технологияларини жорий этиш судлар  
+фаолиятининг очиқлиги ва шаффофлигини таъминлашга, судлар фаолияти  
+самарадорлигини, шунингдек аҳолининг судларга бўлган ишончини оширишга  
+хизмат қилади.  
+Сўнги йиллар давомида Ўзбекистон Республикаси Президентининг  
+«Судлар фаолиятига замонавий ахборот-коммуникация технологияларини  
+жорий этишни янада такомиллаштириш чора-тадбирлари тўғрисида» 2017 йил  
+30 августдаги ПҚ-3250-сонли Қарори билан тасдиқланган 2017-2020 йилларда  
+судлар фаолиятига замонавий ахборот-коммуникация технологияларини жорий  
+этиш Дастури асосида Ўзбекистон Республикаси судлари тизимида АКТни  
+жорий этиш бўйича кенг кўламли ишлар амалга оширилди. Жумладан, суд  
+тизимининг ахборот инфратузилмаси яратилди, барча судлар замонавий  
+компьютер техникаси ва офис воситалари билан таъминланди, судлов соҳасида  
+қатор ахборот тизимлари ва ахборот ресурслари, маълумотлар базалари, турли  
+веб-иловалар ва дастурлар, бир қатор интерактив хизматлар ишлаб чиқилди ва  
+амалиѐтга жорий қилинди. Шунингдек, Олий суднинг ахборот тизими бошқа  
+давлат идораларининг ахборот тизимлари билан интеграция қилинди.  
+Судлов соҳасида жорий этилган ахборот тизимлари ва ахборот  
+ресурсларидан  
+фойдаланиш  
+самарадорлигини  
+ошириш  
+мақсадида  
+фойдаланувчилар учун мазкур ахборот тизимларидан фойдаланиш бўйича  
+йўриқнома ва қўлланмалар ишлаб чиқиш бугунги кунда муҳим вазифалардан  
+бири бўлиб хисобланади. Шу мақсадда судья ва суд ходимлари E-xSUD  
+ахборот тизимидан фойдаланишлари бўйича амалий йўриқнома ишлаб  
+чиқилган бўлиб, унда фойдаланувчиларни ахборот тизимидан рўйхатдан  
+ўтказиш, мурожаатларни судлар томонидан кўриб чиқиш, суд ҳужжатларини  
+чиқариш ва уларни ижрога юбориш тартиби батафсил равишда турли чизма ва  
+расмлардан фойдаланган ҳолда баѐн этилган.  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+1. «E-XSUD» ахборот тизими фойдаланувчиларини рўйхатдан  
+ўтказиш тартиби  
+  
+1.1.  
+Ҳар бир маъмурий судда Олий суд томонидан “Администратор”  
+роли берилган ходимлар мавжуд бўлиб, ушбу роль қоида тариқасида девонхона  
+мудири вазифасини бажарувчи ходимларга берилади. “Администратор”  
+ролига эга ходимларга (бундан буѐн матнда Администратор деб юритилади)  
+тегишли маъмурий суднинг судья ва суд ходимларини ахборот тизимида  
+фойдаланувчи сифатида рўйхатдан ўтказиш функцияси берилган.  
+Ахборот тизими фойдаланувчиларини рўйхатдан ўтказишда уларга  
+бериладиган  
+ролларга  
+алоҳида  
+эътибор  
+қаратиш  
+керак,  
+яъни  
+фойдаланувчиларга берилган роллар уларнинг эгаллаб турган лавозимига мос  
+бўлиши лозим.  
+1.2.  
+Судья ва суд ходимларини ахборот тизимида рўйхатдан  
+ўтказишда қуйидаги роллар берилади:  
+Фойдаланувчи - бу роль ахборот тизимидан фойдаланувчи судья ва суд  
+ходимларига берилади;  
+Судья – бу роль фақат судьялар учун берилади;  
+Судья ѐрдамчиси - бу роль фақат судья (катта) ѐрдамчилари учун  
+берилади;  
+Ижро назорати - бу роль суд томонидан ижрога қаратилиши лозим  
+бўлган ижро ҳужжатларини юбориш ва уларнинг ижросига доир маълумотлар  
+билан ишлаш вазифаси юклатилган суд ходимига берилади;  
+Архив мудири – бу роль ишларни суд архивига қабул қилиш ва архив  
+ишларини юритиш учун масъул бўлган суд ходимига берилади;  
+Ижрочи - бу роль амалда фаолият юритаѐтган судья ва суд ходимларига  
+берилади. Ушбу ролга эга судья ва суд ходимларига умумий мазмундаги  
+мурожаатларни ахборот тизими орқали тақсимлаш имкони мавжуд бўлади;  
+Ҳуқуқий тарғибот ва қонунга таклифлар - бу роль судья ва суд  
+ходимлари томонидан ўтказилган ҳуқуқий тарғибот ва қонун ҳужжатларига  
+берилган таклифларга доир маълумотлар ҳисобини юритишга масъул бўлган  
+суд ходимига берилади;  
+Умумлаштириш - бу роль судья ва суд ходимлари томонидан ўтказилган  
+суд амалиѐтини умумлаштиришга доир маълумотлар ҳисобини юритишга  
+масъул бўлган суд ходимига берилади;  
+Шахсий қабул - бу роль судьялар томонидан фуқароларни шахсий  
+қабулига доир маълумотлар ҳисобини юритишга масъул бўлган суд ходимига  
+берилади.  
+  
+1.3.  
+Ахборот тизими орқали фойдаланувчи сифатида судья ва суд  
+ходимларини рўйхатдан ўтказиш учун “E-XSUD” ахборот тизимига тегишли  
+маъмурий суд администраторининг логин ва пароли орқали кирилади. Очилган  
+ойнанинг юқори қисмида жойлашган “Тизимни бошқариш” бўлимига кириб,  
+ушбу бўлимда жойлашган “Фойдаланувчилар (А)” саҳифасига ўтиш  
+керак (1-расм).  
+1-расм  
+  
+Шундан сўнг “Фойдаланувчилар (А)” саҳифасининг юқори қисмида  
+жойлашган “Қўшиш” тугмаси босилади (2-расм). “Қўшиш” тугмаси  
+босилганда очилган ойнадан судья ва суд ходимларини рўйхатдан ўтказиш  
+мумкин.  
+2-расм  
+  
+Бунинг учун “Логин” қатори тўлдирилади (логинни танлашда суднинг  
+коди ва “/” символ орқали тартиб рақами ѐзилади. Мисол учун 1004/1. Қоида  
+тариқасида суд раисига 1004/1, раис ўринбосарига 1004/2, судьяларга 1004/3  
+дан бошлаб штат бирлигидаги судьялар сонига қараб кетма-кетликда тартиб  
+рақамлар берилади. Штат бирлигидаги судьялар сони 5 тагача бўлган тақдирда  
+логиннинг тартиб рақами /10 дан, судьялар сони 10 ва ундан кўп штат  
+бирлигига эга бўлган судларда логиннинг тартиб рақами /20 дан бошлаб суд  
+ходимларига, шунингдек собиқ судьяларга эса тартиб рақами /50 дан бошлаб  
+берилади)  
+Судьянинг ваколат муддати тугаши ѐки бошқа ишга ўтиши муносабати  
+билан унинг логини собиқ судьяларни логинига ўтказилади, яъни /50 дан  
+бошланадиган тартиб рақами билан собиқ судьялар рўйхатига қўшиб қўйилади.  
+Унинг ўрнига тайинланган судьяга эса аввалги судьянинг логини берилади.  
+Ахборот тизимидан фойдаланувчи сифатида рўйхатдан ўтказилган бошқа  
+суд ходимлари ҳам шу тартибда собиқ ва янги ходимларга ажратилади.  
+“ФИО” қаторига кирилл алифбосида фойдаланувчининг фамилияси,  
+исми ва отасининг исми тўлиқ ѐзилиши шарт.  
+“Код” қаторига фойдаланувчининг логинидаги “/” белгисидан кейинги  
+рақам ѐзилади. Мазкур қатордаги рақам агар бир хонали сон бўлса, унинг  
+олдига “0” рақами ҳам қўйилиши керак. Агар икки хонали сон бўлса олдига “0”  
+рақами қўйилмайди. Бу қатордаги рақам иш рақамини шакллантиришда муҳим  
+аҳамиятга эга.  
+“Лавозим” қаторидан ходимнинг лавозими танланади. Бунинг учун  
+фойдаланувчини  
+рўйхатдан  
+ўтказишдан  
+аввал  
+“Тизимни  
+бошқариш”  
+бўлимида жойлашган “Лавозимлар” саҳифасида керакли лавозимларни  
+киритиб олиш керак бўлади (3-расм).  
+3-расм  
+  
+“Бўлим” қаторидан ходим фаолият юритаѐтган бўлим танланиши керак.  
+Бу қатор судья ва судья (катта) ѐрдамчиларини рўйхатдан ўтказишда  
+тўлдирилмайди. Бунинг учун аввал “Тизимни бошқариш” бўлимида  
+жойлашган “Бўлимлар” саҳифасида мавжуд бўлимлар номи киритиб олиниши  
+керак (4-расм).  
+4-расм  
+“Телефон” қаторига фойдаланувчининг телефон рақами киритилади.  
+“Ҳолати” қаторидан фойдаланувчини актив ҳолатга ўтказиш учун  
+“Актив” тури танланиши шарт. Акс ҳолда фойдаланувчи ахборот тизимидан  
+“Актив эмас” ҳолатида рўйхатдан ўтказилади ва ахборот тизимидан  
+фойдаланиш имконияти чекланади.  
+“Илк муддатга тайинланган сана” қатори фақат судьяларни рўйхатдан  
+ўтказишда тўлдирилади. Бу қаторда судья илк маротаба судьялик лавозимига  
+тайинланган сана кўрсатилиши лозим.  
+“Навбатдаги тайинланган сана” қаторига сўнги марта судьялик  
+лавозимига тайинланган сана киритилади.  
+5-расм  
+  
+Шундан  
+сўнг  
+фойдаланувчини  
+лавозими  
+ва  
+унга  
+юклатилган  
+вазифалардан келиб чиқиб роль танланади. Бунда судьяларни рўйхатдан  
+ўтказишда “Фойдаланувчи”, “Судья” ва “Ижрочи” ролларидан бошқа роль  
+танланмайди (6-расм). Собиқ судьяларни рўйхатдан ўтказишда эса фақат  
+“Фойдаланувчи” ва “Судья” роллари танланади.  
+  
+  
+  
+6-расм  
+  
+Судья (катта) ѐрдамчиларини рўйхатдан ўтказишда “Фойдаланувчи”,  
+“Судья ѐрдамчиси” ва “Ижрочи” ролларидан бошқа роль танланмайди. Собиқ  
+судья (катта) ѐрдамчиларини рўйхатдан ўтказишда эса фақат “Фойдаланувчи”  
+ва “Судья ѐрдамчиси” роллари танланади. Агарда судья (катта) ѐрдамчилари  
+зиммасига Қўлланманинг 1.2.-бандида назарда тутилган вазифалардан бири  
+юклатилган бўлса, ушбу роллар ҳам танланиши мумкин.  
+Шундан сўнг судья ва суд ходимларининг электрон рақамли имзо  
+(ЭРИ)ларини бириктириш керак. Ушбу ҳаракат “Фойдаланувчи” ойнасида  
+жойлашган “Сертификат” номли қаторидаги “Выберите файл” тугмасини  
+босиш орқали амалга оширилади (5-расм).  
+“Выберите файл” тугмасини босгандан кейин электрон рақамли имзо  
+сақланган папкага кирилади ва ундаги сертификат белгиси мавжуд файл  
+танланиб, “Открыть” тугмаси босилади (7-расм).  
+  
+  
+  
+  
+  
+  
+7-расм  
+Шундан сўнг электрон рақамли имзонинг сертификати фойдаланувчини  
+рўйхатдан ўтказиш ойнасига бириктирилади.  
+Юқоридаги барча амаллар бажарилганидан кейин “Фойдаланувчи”  
+ойнасининг пастки қисмида жойлашган “Сақлаш” тугмаси босилади ва шу  
+билан фойдаланувчини ахборот тизими орқали рўйхатдан ўтказиш якунланади.  
+Ахборот тизим орқали рўйхатдан ўтказилган, лекин амалда фаолият  
+юритмаѐтган судья ва суд ходимларини ахборот тизимида фойдаланувчи  
+сифатида зарур бўлмаган ҳолатларда “Неактив” ҳолатга ўтказиш лозим. Агар  
+кейинчалик ахборот тизимига маълумот киритишда ушбу фойдаланувчиларга  
+зарурият туғилса, уларни қайтадан “Актив” ҳолатга ўтказиб қўйиш мумкин.  
+Бунинг учун “Фойдаланувчилар (А)” рўйхатига кириб, тегишли  
+фойдаланувчини устки қисмига босиш орқали ичига кирилади. Очилган  
+ойнадан “Ҳолати” номли қатордан “Актив эмас” ҳолати танланади. Бундай  
+фойдаланувчилар “Фойдаланувчилар (N)” рўйхатига ўтиб қолади (8-расм).  
+8-расм  
+  
+Кейинчалик “Актив эмас” ҳолатида бўлган фойдаланувчини “Актив”  
+ҳолатига ўтказиш зарурияти туғилган тақдирда “Фойдаланувчилар (N)”  
+рўйхати орқали фойдаланувчи “Актив” ҳолатга ўтказилади.  
+Ахборот тизими фойдаланувчиси ўзининг паролини унутиб қўйган  
+ҳолларда “Фойдаланувчилар (А)” рўйхатидан керакли фойдаланувчи топиб,  
+уни ичига кирилади. Очилган ойнада жойлашган “Паролни қайта бериш”  
+қаторига белги қўйиб (9-расм), “Сақлаш” тугмаси босилади. Натижада  
+ахборот тизими фойдаланувчининг паролини автоматик равишда “1” рақамига  
+ўзгартириб қўяди.  
+9-расм  
+  
+2. E-XSUD ахборот тизимига кириш тартиби  
+  
+Фойдаланувчи “Е-ХSUD” ахборот тизимига кириши учун унинг  
+компьютери Олий суднинг корпоратив тармоғига уланган бўлиши шарт.  
+Ахборот тизимига кириш учун Google Chrome, Opera, Mozilla Firefox каби  
+замонавий интернет браузерларидан (охирги версиялари) фойдаланилади.  
+  
+  
+  
+  
+  
+  
+  
+  
+10-расм  
+  
+  
+Ушбу интернет браузерларни megasoft.uz веб-сайти орқали юклаб олиш  
+мумкин (11-расм).  
+11-расм  
+  
+Шундан сўнг интернет браузерининг манзил киритиш майдонига “Е- 
+ХSUD” ахборот тизимининг манзилини – mib.sud.uz киритиш ва “Enter”  
+тугмасини босиш керак.  
+12-расм  
+  
+Очилган “Е-ХSUD” ахборот тизимига кириш ойнасидаги логин ва пароль  
+қаторлари тўлдирилади. Логин ва пароль қаторлари тўлдирилгандан сўнг  
+электрон  
+рақамли  
+имзо  
+бириктирилади.  
+Бунда  
+мазкур  
+ойнадаги  
+“ВВОД КЛЮЧА” тугмаси босилади ва “...” тугмаси орқали электрон рақамли  
+имзо танланади ва “Открыть” ва “Оk” тугмасини кетма-кетликда босилади.  
+Шундан сўнг “ВХОД” тугмаси орқали тизимга кирилади (13,14,15-расмлар).  
+13-расм  
+14-расм  
+15-расм  
+  
+3. Ариза (шикоят)ларни рўйхатга олиш тартиби  
+  
+Ариза (шикоят)ларни рўйхатга олиш суд девонхонасининг шахсий  
+кабинетида амалга оширилади. Бунинг учун девонхона шахсий кабинетининг  
+юқори қисмида жойлашган “Янги ҳужжат” менюсидан “Маъмурий иш” ѐки  
+“Маъмурий низо” қаторларидан “Биринчи инстанция” бўлими танланади  
+(16-расм).  
+16-расм  
+  
+3.1.  
+“Маъмурий  
+иш”  
+қаторидан  
+(бу  
+қатордан  
+маъмурий  
+ҳуқуқбузарликлар бўйича кўриладиган ишлар рўйхатдан ўтказилади) “Биринчи  
+инстанция”  
+бўлими  
+танланганда  
+маъмурий  
+ишга  
+тааллуқли  
+бўлган  
+маълумотларни киритиш ойнаси очилади. Бунда маъмурий ишга тааллуқли  
+бўлган маълумотларни қайд этиш учта, яъни “Биринчи инстанция  
+(Маъмурий иш)” (маъмурий иш юзасидан умумий маълумотларни қайд этиш),  
+“Маъмурий  
+ҳуқуқбузар”  
+(маъмурий  
+ишда  
+мавжуд  
+бўлган  
+ҳуқуқбузар(лар)нинг шахсига ва унга нисбатан Ўзбекистон Республикасининг  
+Маъмурий жавобгарлик тўғрисидаги кодекси (МЖтК)га мувофиқ қўйилган  
+айбловларга доир маълумотларни қайд этиш), “Жабрланувчи” (маъмурий  
+ишда мавжуд бўлган жабрланувчи(лар)нинг шахсига доир маълумотларни қайд  
+этиш) блокларига бўлинган.  
+“Биринчи инстанция (Маъмурий иш)” блоки:  
+17-расм  
+  
+Ушбу блокда маъмурий ишга доир дастлабки маълумотлар киритилади.  
+Агар маъмурий иш камчиликлар билан келган бўлса “Ишни қайтариб  
+юбориш учун” белгиси қўйилади. Бу белги қўйилган ишларга ахборот тизими  
+орқали қайтаришга рухсат берилади ва уларга алоҳида иш рақами берилмайди.  
+Мазкур блокдаги “Қолдиқ” белгиси 2018 йил 1 январгача кўрилган  
+ишларни ахборот тизимига киритиш лозим бўлгандагина танланади. “Қолдиқ”  
+белгиси қўйилганда “Кирим рақами” ва “Маъмурий иш рақами (суд)”  
+майдонлари пайдо бўлади. Бунда “Кирим рақами” қаторига бутун сон  
+(Масалан: 85), “Маъмурий иш рақами (суд)” қаторига эса аввалги йилларда  
+маъмурий ишга берилган иш рақами тўлиқ киритилади (Масалан: 1-85/2015).  
+Агарда мазкур маъмурий иш рақами электрон дастурда мавжудлиги ҳақида  
+дастурнинг ўзи хабар берса, иш рақамига ўзгартириш киритиш мумкин бўлади  
+(Масалан: 1-5-85/15). Бунда маъмурий ишнинг тартиб рақами ва йили  
+ўзгармаслиги лозим.  
+  
+  
+  
+  
+  
+  
+  
+  
+“Маъмурий ҳуқуқбузар” блоки:  
+18-расм  
+  
+“Жабрланувчи” блоки:  
+19-расм  
+  
+Агар ҳуқуқбузар ѐки жабрланувчилар сони бир нечта бўлса, ҳар бир  
+ҳуқуқбузар ѐки жабрланувчига тегишли маълумотлар киритилгандан сўнг  
+“Қўшиш” тугмаси орқали бир нечта ҳуқуқбузар ѐки жабрланувчини киритиш  
+мумкин. Ҳудди шундай ҳуқуқбузарга нисбатан қўйилган айбловлар ҳам бир  
+нечта бўлса, “МЖтК моддаси” қатори орқали МЖтКнинг тегишли моддаси  
+ѐки қисми танланиб “Қўшиш” тугмаси орқали бир нечта модда ѐки қисмларни  
+киритиш мумкин.  
+Маъмурий ишга тааллуқли барча маълумотлар киритилганидан кейин  
+“Сақлаш” тугмаси босилади. Бунда автоматик тарзда рўйхат рақами берилади  
+(буни кирим рақами майдонидан текшириш мумкин. 20-расм).  
+  
+  
+  
+  
+20-расм  
+  
+Агарда ҳуқуқбузар ѐки жабрланувчилар сони кўп бўлса, улардан бир  
+нечтасини киритиб, қолганларини ишни “Сақлаш” тугмаси орқали рўйхатдан  
+ўтказгандан кейин ҳам киритиш имконияти мавжуд. Бунинг учун тегишли  
+ишни ичига кирилади ва “Маъмурий ҳуқуқбузар” ѐки “Жабрланувчи”  
+блокидаги “Қўшиш” тугмаси орқали қолган ҳуқуқбузар ѐки жабрланувчиларни  
+киритиш мумкин (21-расм).  
+21-расм  
+  
+Юқорида кўрсатилган тартибда маъмурий иш суд девонхонаси орқали  
+рўйхатдан ўтказилади.  
+3.2. “Маъмурий низо” қаторидан (бу қатордан оммавий ҳуқуқий  
+муносабатлардан келиб чиқадиган низолар бўйича кўриладиган ишлар  
+рўйхатдан ўтказилади) “Биринчи инстанция” бўлими танланганда маъмурий  
+низога тааллуқли бўлган маълумотларни киритиш ойнаси очилади (22-расм).  
+22-расм  
+  
+ Бунда маъмурий низога тааллуқли бўлган маълумотларни қайд этиш  
+тўрта, яъни “Биринчи инстанция (Маъмурий низо)” (маъмурий низога  
+тегишли умумий маълумотларни қайд этиш), “Даъвогар” (судга ариза ѐки  
+шикоят билан мурожаат қилган шахснинг маълумотларини қайд этиш),  
+“Жавобгар”  
+(маъмурий  
+низода  
+мавжуд  
+бўлган  
+жавобгар(лар)нинг  
+маълумотларини қайд этиш), “Ариза (шикоят) мазмуни” (ариза ѐки шикоят  
+мазмуни яъни ундаги талабларни қайд этиш) блокларига бўлинган.  
+“Биринчи инстанция (Маъмурий низо)” блоки:  
+23-расм  
+  
+Мазкур  
+блокда  
+маъмурий  
+низога  
+доир  
+дастлабки  
+маълумотлар  
+киритилади. Ушбу блокдаги “Қолдиқ” белгиси 2018 йил 1 январгача кўрилган  
+ишларни ахборот тизимига киритиш лозим бўлганида танланади. “Қолдиқ”  
+белгиси танланганида “Кирим рақами” ва “Маъмурий иш рақами (суд)”  
+номли майдонлар пайдо бўлади. Бунда “Кирим рақами” қаторига бутун сон  
+(Масалан: 85), “Маъмурий иш рақами (суд)” қаторига эса аввалги йилларда  
+маъмурий ишга берилган иш рақами киритилади (Масалан: 1-85/2015). Агарда  
+мазкур маъмурий иш рақами электрон дастурда мавжудлиги ҳақида дастурнинг  
+ўзи хабар берса, иш рақамига ўзгартириш киритиш мумкин бўлади (Масалан: 1- 
+5-85/15). Бунда маъмурий ишнинг тартиб рақами ва йили ўзгармаслиги лозим.  
+“Даъвогар” блоки:  
+24-расм  
+“Жавобгар” блоки:  
+25-расм  
+“Ариза (шикоят) мазмуни” блоки:  
+26-расм  
+  
+Маъмурий низога тааллуқли барча маълумотлар киритилганидан кейин  
+экраннинг пастки қисмида жойлашган “Сақлаш” тугмаси босилади. Бунда  
+автоматик тарзда рўйхат рақами берилади (буни кирим рақами майдонидан  
+текшириш мумкин).  
+  
+4.1 Ўзбекистон Республикаси Ички ишлар вазирлигининг ахборот тизими  
+орқали электрон шаклда келиб тушган маъмурий ишларни рўйхатдан  
+ўтказиш тартиби  
+  
+“E-XSUD” ахборот тизимининг мазкур модулидан фойдаланишдан аввал  
+Ўзбекистон Республикаси Олий судининг раиси ва Ички ишлар вазири  
+томонидан 2018 йил 28 августда имзоланган Қарор билан тасдиқланган  
+“Ахборот тизимларини интеграция қилиш орқали маъмурий ҳуқуқбузарлик  
+содир этган шахслар ва жабрланувчилар тўғрисидаги маълумотларни,  
+шунингдек, маъмурий ҳуқуқбузарликлар ҳисобини юритиш” Тартиби (бундан  
+буѐн матнда Тартиб деб юритилади) билан тўлиқ танишиб чиқилиши шарт.  
+  
+Интеграциялашган ахборот тизимлари орқали судларга келиб тушган  
+маъмурий ишлар суд девонхонасининг шахсий кабинетида рўйхатга олинади.  
+Бунинг учун суд девонхонасининг шахсий кабинетининг юқори қисмида  
+жойлашган “Биринчи инстанция ишлари” бўлими танланади (27-расм).  
+  
+  
+  
+  
+27-расм  
+  
+“Биринчи  
+инстанция  
+ишлари”  
+бўлимининг  
+юқориги  
+қисмида  
+жойлашган “Электрон қабул” номли рўйхатга босилади. Мазкур рўйхатда  
+интеграциялашган ахборот тизими орқали электрон шаклда келиб тушган  
+маъмурий ишлар рўйхати акс эттирилади (28-расм).  
+  
+28-расм  
+  
+4.1. “Электрон қабул” номли рўйхатга келиб тушган маъмурий ишларга  
+оид маълумотлар қоғоз шаклида топширилган маъмурий ишлар билан  
+солиштириб чиқилади. Агар маълумотлар қоғоз шаклидаги маъмурий  
+ишлардан фарқ қилса ѐки Тартибда белгиланган қоидаларга риоя қилинмаган  
+ҳолда юборилган бўлса, суднинг масъул ходими томонидан маъмурий ишларга  
+доир маълумотлар ахборот тизими орқали қайтарилади. Бунинг учун  
+қайтарилиши лозим бўлган тегишли иш танланади ва ойнанинг юқори қисмида  
+жойлашган “Рад этилган сана” ва “Рад этиш сабаби” қаторлари тўлдирилади.  
+“Рад этиш сабаби” қаторидан бир вақтнинг ўзидан бир нечта сабабларни  
+танлаш имконияти мавжуд (29-расм).  
+29-расм  
+  
+Мазкур ҳаракатлар бажарилганидан кейин “Сақлаш” тугмаси босилади.  
+Бунда ишларга доир маълумотлар ахборот тизими орқали қайтарилган  
+ҳисобланади ва бундай ишлар “E-XSUD” ахборот тизимининг “Рад этилган”  
+рўйхатида сақланиб колади (30-расм).  
+30-расм  
+  
+Ахборот тизими орқали қайтарилган ишлар доимий равишда Олий суд  
+томонидан таҳлил қилиб борилади. Суднинг масъул ходими томонидан  
+Тартибда кўрсатилмаган асослар билан ишларга доир маълумотларни ахборот  
+тизими орқали қайтарилишига йўл қўйилмайди.  
+4.2. Ахборот тизими орқали судга келиб тушган маъмурий ишларга оид  
+маълумотлар қоғоз шаклида топширилган маъмурий ишлар билан солиштириш  
+натижасида хато ва камчиликлар аниқланмаган ѐки Тартибда белгиланган  
+қоидаларга тўлиқ риоя этилган ҳолда юборилган тақдирда суднинг масъул  
+ходими уни қабул қилиши шарт.  
+Бунинг учун “Электрон қабул” номли рўйхатга келиб тушган тегишли  
+ишни ичига кирилади ва у ердаги “Кирим санаси” қаторига маъмурий ишни  
+қоғоз шаклида келиб тушган санаси киритилади ва “Сақлаш” тугмаси  
+босилади (31-расм).  
+31-расм  
+  
+Тартибнинг 5-бандида ички ишлар органлари томонидан ахборот тизими  
+орқали маъмурий ишларга доир маълумотларни электрон кўриниши судларга  
+юборилгандан кейин, уларнинг қоғоз шакли ўша куни ѐки бир суткадан  
+кечиктирмасдан судларга тақдим этилиши шартлиги белгилаб қўйилган.  
+Бу муддат “E-XSUD” ахборот тизимида автоматик ҳисобланади. Агар  
+маъмурий ишларнинг электрон шаклдаги маълумоти келган санадан бир  
+суткалик муддат ўтганидан сўнг қоғоз шаклидаги ишлар қабул қилинса,  
+Тартибдаги қоидалар бузилган деб баҳоланади. Бунда судга ахборот тизими  
+орқали келиб тушган ишнинг “Электрон иш келиб тушган вақт” номли  
+қаторидаги санага эътибор берилиши лозим (32-расм).  
+32-расм  
+  
+4.3. Электрон шаклда келиб тушган маъмурий ишларга доир маълумотлар  
+бўйича ишни кўриш якуни бўйича жарима жазоси қўлланилган ҳамда давлат  
+фойдасига ундирилиши белгиланган зарар суммалари мавжуд бўлса, ишни  
+натижаси “E-XSUD” ахборот тизимига киритилиб, натижа девонхона  
+томонидан қабул қилиниши билан хос рақамга эга бўлган тўлов квитанцияси  
+автоматик равишда PDF форматида шакллантирилади ва бу ишни пастки  
+қисмидаги  
+“Иш  
+ҳужжатлари”  
+бўлимига  
+“Квитанция  
+жарима”  
+ѐки  
+“Квитанция зарар” номлари билан келиб тушади (33-расм). Мазкур хос  
+рақамга эга бўлган тўлов квитанцияси компютерга юклаб олиниб, чоп этилади  
+ва у суд қарори билан бирга ҳуқуқбузар(лар)га топширилади.  
+33-расм  
+  
+ Тўлов  
+квитанцияси  
+тақдим  
+этилмаган  
+тақдирда  
+ҳуқуқбузар(лар)  
+томонидан ихтиѐрий тўланган жарима ҳамда давлат фойдасига ундирилиши  
+белгиланган зарар суммалари онлайн тарзда “E-XSUD” ахборот тизимига келиб  
+тушмайди. Натижада жарима ҳамда давлат фойдасига ундирилиши белгиланган  
+зарар суммалари ихтиѐрий тўланган бўлса-да, суд томонидан мажбурий ижрога  
+қаратиб юборилишига олиб келиши мумкин.  
+Эслатма: Судлар томонидан ҳуқуқбузар(лар)га ахборот тизими орқали  
+шакллантирилган хос рақамга эга бўлган тўлов квитанцияси тақдим  
+этилганида, уларга тўловларни ушбу квитанция асосида амалга ошириш  
+лозимлиги тушунтирилиши лозим.  
+5. Ишларни автоматик тарзда тақсимлаш тартиби  
+  
+5.1.  
+Ишларни  
+судьяларга  
+автоматик  
+тарзда  
+тақсимлаш  
+суд  
+девонхонасининг шахсий кабинетида амалга оширилади. Бунинг учун суд  
+девонхонасининг шахсий кабинетидан “Биринчи инстанция ишлари”  
+бўлимига кириб, “Тақсимлаш” тугмаси босилади. Бу ерда судьялар ўртасида  
+тақсимланмаган ишлар рўйхати акс эттирилади (34-расм).  
+34-расм  
+  
+Шундан сўнг “Тақсимлаш” бўлимининг юқори ўнг томонида жойлашган  
+“Автоматик тақсимот” тугмасини босиш орқали ишлар автоматик тарзда  
+судьяларга тақсимланади (35-расм).  
+35-расм  
+Бунда электрон дастур ишни қайси судьяга берилиши лозимлигини  
+ҳисоблашга ҳамда бунинг учун маълум бир вақт талаб қилиниши сабабли  
+ишлар тўлиқ тақсимлангунига қадар кутиб туриш лозим. Шу орқали рўйхатдан  
+ўтказилган ишларга автоматик тарзда судьяларга тақсимланди ва судьянинг  
+шахсий кабинетига бориб тушади.  
+5.2. Ушбу тизимда қайта тақсимлаш функцияси ҳам мавжуд бўлиб, у  
+фақат қуйидаги ҳолларда суд раисининг тегишли буйруғи (фармойиш) билан  
+амалга оширилади:  
+- иш юритишни судья билмайдиган тилда юритиш зарурияти вужудга  
+келганда;  
+- судьяни рад қилиш ѐки ўзини-ўзи рад қилиш қабул қилинганда;  
+- судьяга меҳнат таътили берилганда;  
+- судьянинг вақтинчалик меҳнатга қобилиятсизлиги сабабли;  
+- судья ўқишга ѐки хизмат сафарига юборилганда;  
+- судьянинг ваколати муддатидан аввал тугатилганда.  
+Ишларни қайта тақсимлаш девонхона томонидан суд раисининг тегишли  
+буйруқ (фармойиш) нусхаси олинган куннинг эртасидан кечиктирмай амалга  
+оширилади.  
+Бунинг учун қайта тақсимлаш лозим бўлган ишнинг ичига кирилади ва  
+ишнинг юқориги ўнг қисмида жойлашган “Қайта тақсимотга юбориш”  
+тугмаси босилади. Мазкур тугма орқали иш қайта тақсимот учун юборилади ва  
+иш суд девонхонасининг шахсий кабинетидаги “Қайта тақсимот” бўлимига  
+келиб тушади (36-расм).  
+36-расм  
+  
+“Қайта тақсимот” бўлимида тегишли ишни ичига кириб, экранинг  
+пастки қисмида жойлашган “Қайта тақсимлаш” бўлими очилади ва қайта  
+тақсимот сабаби, қайта тақсимот асосини тасдиқловчи ҳужжатнинг имзоланган  
+электрон шаклини (PDF форматида) бириктириш қаторлари мавжуд. Мазкур  
+қаторларнинг барчасини тўлдириш мажбурий ҳисобланади. Барча қаторлар  
+тўлдирилгандан сўнг “Сақлаш” тугмаси босилади. Бунда мазкур иш қайта  
+тақсимлаш учун “Тақсимлаш” бўлимига бориб тушади. “Тақсимлаш”  
+бўлимида “Автоматик тақсимот” тугмасини босиш орқали ушбу иш қайта  
+тақсимланади.  
+5.3. Ўзбекистон Республикаси Олий суди Раѐсатининг 2018 йил 6  
+июлдаги  
+РС-37-18-сонли  
+қарори  
+билан  
+тасдиқланган  
+Низомга  
+кўра,  
+судьяларнинг имконсизлик даврида уларга иш тақсимланмаслиги кўрсатилган.  
+Судьянинг имконсизлик даврини белгилаш суд раисининг буйруғи  
+(фармойиши),  
+вақтинча  
+меҳнатга  
+қобилиятсизлик  
+варақаси  
+ва  
+бошқа  
+ҳужжатларга мувофиқ амалга оширилади.  
+Судьяга меҳнат таътили бериш (иш ҳақи сақланмаган ҳолда таътил  
+бериш) ѐки хизмат сафарига юбориш, ўқиш (малака ошириш)га юбориш  
+тўғрисида суд раисининг буйруғи (фармойиши) чиқарилган куннинг эртаси  
+куни суднинг кадрлар масалалари бўйича масъул ходими томонидан судья  
+бўлмайдиган даври тўғрисидаги маълумотни АТИТ Модулига киритиш учун  
+девонхона мудирига топширилади.  
+Судьянинг бўлмаган даври меҳнат таътили бошланишидан ўн беш кун  
+аввал, хизмат сафарига юборилганда, ўқиш (малака ошириш)га юборилганда  
+ѐки иш ҳақи сақланмаган ҳолда таътилга юборилганда эса бу тўғрисидаги  
+буйруқ  
+(фармойиш)нинг  
+нусхаси  
+девонхонага  
+топширилган  
+кундан  
+ҳисобланади.  
+Судьянинг ишда бўлмаган даврининг бошидан судьяга иш тақсимлаш  
+тўхтатилади ва судья ишга чиққан биринчи кундан тикланади.  
+Иш вақти давомида суднинг кадрлар билан ишлаш бўйича масъул ходими  
+судьянинг  
+меҳнатга  
+лаѐқатсиз  
+эканлиги  
+тўғрисидаги  
+маълумотга  
+эга  
+бўлганидан сўнг, ушбу маълумотни АТИТ Модулига киритиш учун девонхона  
+мудирига тақдим этади.  
+Бунинг учун суд девонхонасининг шахсий кабинетига кирилади ва  
+очилган ойнанинг юқори қисмида жойлашган “Тизимни бошқариш”  
+бўлимида жойлашган “Имконсизлик даври” бўлимига кирилади (37-расм).  
+37-расм  
+  
+Очилган ойнанинг юқориги ўнг томонида жойлашган “Қўшиш” тугмаси  
+босилади ва судья, имконсизлик даврининг бошланиш санаси, имконсизлик  
+даврининг тугаш санаси, тури майдонлар тўлдирилиши шарт. Шундан сўнг  
+тасдиқловчи ҳужжатнинг имзоланган электрон шаклини (PDF форматда)  
+бириктириш ва “Сақлаш” тугмасини босиш лозим (38-расм).  
+38-расм  
+  
+6. Электрон дастур орқали маъмурий ишга доир далилларни рўйхатдан  
+ўтказиш ва уларнинг тақдири бўйича натижасини қайд этиш тартиби  
+  
+Маъмурий ишга боғлиқ барча далилларга доир маълумотлар ва уларнинг  
+ҳукм билан белгиланган тақдири электрон дастур орқали қайд этилиши лозим.  
+6.1. Далилларга доир маълумотларни суд девонхонасининг ѐки судьянинг  
+шахсий кабинетида киритиш мумкин. Бунинг учун электрон дастур орқали  
+тегишли маъмурий иш топилиб, унинг ичига кирилади. Ҳар бир маъмурий  
+ишнинг пастки қисмида “Далиллар” номли тугма мавжуд (39-расм).  
+39-расм  
+  
+“Далиллар” номли тугма орқали маъмурий иш билан боғлиқ ҳар бир  
+ашѐвий далиллар рўйхатдан ўтказилади. Бунда “Далиллар” номли тугма  
+босилади ва очилган блокнинг юқориги ўнг бурчагида жойлашган “Қўшиш”  
+тугмаси орқали ашѐвий далиллар киритилади (40-расм).  
+40-расм  
+  
+“Қўшиш” тугмаси босилганда далилларни киритиш ойнаси очилади.  
+Мазкур ойнада “Далиллар категорияси”, “Далил номи”, “Миқдори”,  
+“Ўлчов бирлиги”, “Қиймати суммаси” каби қаторлар мавжуд (41-расм).  
+41-расм  
+  
+6.2. Далиллар билан боғлиқ ижро варақаси электрон дастурда ижро тузиш  
+орқали рўйхатга олинади. Бунда электрон дастурдан тегишли маъмурий иш  
+топилади ва унинг пастки қисмидаги “Далиллар” номли тугмаси босилади.  
+Электрон дастурга киритилган ҳар бир далилнинг ўнг томонида мавжуд “Ижро  
+тузиш” тумаси орқали ижро варақаси рўйхатга олинади (42-расм).  
+  
+  
+  
+  
+42-расм  
+  
+7. Электрон дастур орқали материалларни рўйхатдан ўтказиш ва  
+уларнинг натижасига доир маълумотларни қайд этиш тартиби  
+  
+Маъмурий материаллар суд девонхонасининг шахсий кабинетида  
+рўйхатга олинади. Бунинг учун суд девонхонасининг шахсий кабинетидаги  
+“Янги ҳужжат” менюсидан “Иш материали” ундан сўнг “Биринчи  
+инстанция” тури танланади (43-расм).  
+43-расм  
+“Биринчи инстанция” тугмаси босилганда маъмурий материалларни  
+рўйхатдан ўтказиш ойнаси очилади. Мазкур ойнадаги қаторлар материал  
+турига қараб ўзгаради.  
+7.1. Материаллар рўйхатдан ўтказилишига қараб икки турга бўлинади:  
+Маъмурий иш доирасидаги материаллар; (Ушбу материалларни рўйхатга  
+олишда маъмурий ишнинг рақами тўлиқ киритилиши шарт) Бунинг учун  
+маъмурий иш электрон дастур орқали рўйхатдан ўтган бўлиши шарт.  
+Электрон дастур орқали рўйхатдан ўтказилган маъмурий иш доирасида  
+келиб тушган материалнинг рақами шу маъмурий иш (намуна 3-1001- 
+2001/1000)нинг рақами билан рўйхатдан ўтказилади. Уларга алоҳида рақам  
+берилмайди.  
+Агарда судларга маъмурий ишнинг рақами маълум бўлмаса ѐки  
+маъмурий иш электрон дастур орқали рўйхатдан ўтказилмаган бўлса, рўйхатга  
+олиш ойнасидаги “Ишга тегишли” номли белгини қўймасдан материалларни  
+рўйхатдан ўтказиш мумкин. Шу билан бирга, аксинча судларга маъмурий иш  
+рақами маълум бўлса ѐки маъмурий иш электрон дастур орқали рўйхатдан  
+ўтказилган бўлса, рўйхатга олиш ойнасидаги “Ишга тегишли” номли белгини  
+танланиши шарт.  
+“Ишга тегишли” деб номланган белги қўйилмасдан рўйхатдан  
+ўтказилган ҳар қандай материалга электрон дастур орқали автоматик равишда  
+рақам олинади (44-расм).  
+44-расм  
+  
+Маъмурий ишга тегишли бўлмаган материаллар. (Бундай материалларга  
+электрон дастур орқали алоҳида материал рақами берилади. Масалан: 3-1- 
+1001-2001/1)  
+“Бошқа орган чиқарган қарор бўйича ашѐвий далиллар тақдирини ҳал  
+этиш юзасидан” номли материал турини рўйхатдан ўтказишда маъмурий иш  
+электрон дастур орқали рўйхатдан ўтказилмаган бўлиши шарт ва уларга  
+электрон дастур орқали алоҳида материал рақами берилади.  
+7.2. Материал рўйхатдан ўтказилгандан кейин тегишли масъул судья  
+қўлда танланади ва “Сақлаш” тугмаси босилади. Шу тартибда материал  
+судьяга тақсимланади (45-расм).  
+45-расм  
+  
+Судьяга тақсимланган материал масъул судьянинг шахсий кабинетининг  
+“Материал” менюсидаги “Материал биринчи инстанция” бўлимига бориб  
+тушади (46-расм).  
+46-расм  
+7.3. Шундан сўнг материални суд мажлисига тайинлаш босқичига  
+ўтилади. Бунда материални тайинлаш ҳақидаги қарор санаси, иш кўриладиган  
+сана, вақти ҳамда суд мажлиси ўтказиладиган жой қаторлари тўлдирилади ва  
+тегишли материал танланиб “Сақлаш” тугмаси босилади (47-расм).  
+47-расм  
+  
+Агарда материални қайтариш лозим бўлса, материалнинг пастки қисмида  
+жойлашган “Материални қайтариш” тугмаси орқали қайтариш сабаби ва  
+санаси кўрсатилади ва “Сақлаш” тугмаси босилади (48-расм).  
+48-расм  
+  
+7.4. Материални кўришни бошқа кунга қолдириш “Ишни кейинга  
+қолдириш” тугмаси орқали амалга оширилади. Бунда қолдириш ажрими  
+санаси, сабаби, янги иш санаси, вақти ва суд мажлиси ўтказилган жой  
+қаторлари тўлдирилади ва тегишли материал танланиб “Сақлаш” тугмаси  
+босилади (49-расм).  
+49-расм  
+  
+7.5. Материал бўйича ишни кўриш якунига кўра унинг натижасига доир  
+маълумотлар “Натижа қўйиш” тугмаси орқали киритилади (50-расм). Бунда  
+тегишли материал тури танланиб ичига кирилади ва ундаги “Натижа қўйиш”  
+тугмаси орқали материал натижаси қўйилади (51-расм).  
+50-расм  
+  
+51-расм  
+  
+Бунда “Натижа қўйиш” тугмаси орқали очилган ойнанинг “Материал  
+натажаси” қаторидан 1-Қаноатлантирилди ѐки 2-Рад этилди натижаларидан  
+бирини танлаш лозим. Агар 2-Рад этилди натижаси танланса, рад қилиш асоси  
+ҳам белгиланиши шарт (52-расм).  
+  
+52-расм  
+  
+Қарор ижросини кечиктириш билан боғлиқ материалларга (ижро  
+ҳужжатини кечиктириш юзасидан, ижро ҳужжатини бўлиб-бўлиб ижро  
+этиш юзасидан) натижа қўйишда “Қаноатлантирилди” тури танланса, қарор  
+ижроси кечиктирилган ва бўлиб-бўлиб ижро этиш қайси санагача рухсат  
+берилганлиги ҳақидаги қатор ҳам тўлдирилиши шарт (53-расм).  
+53-расм  
+  
+7.6. Маъмурий ишга тегишли бўлмаган материаллар рўйхатдан  
+ўтказилаѐтганда материалдаги шахс ва унинг шахсига доир маълумотлар  
+тўлдирилади (54-расм).  
+54-расм  
+  
+  
+  
+  
+Бундай материалларни иш кўришга тайинлаш вақтида электрон дастур  
+орқали алоҳида материал рақами берилади (Масалан: 3-1-1001-1801/1).  
+Бундай маъмурий ишга тегишли бўлмаган материаллар ҳам бошқа  
+материаллар турига ўхшаш тартибда электрон дастур орқали рўйхатдан  
+ўтказилади, тақсимланади, тайинланади ва натижаси қўйилади.  
+Судья томонидан материалларни кўриб чиқиш натижасига кўра  
+киритилган барча натижалар суд девонхонасининг шахсий кабинетидан қабул  
+қилиб олиниши керак.  
+  
+8..Почта реестрлари билан ишлаш тартиби  
+  
+Судьялар томонидан чиқарилган ҳужжатларни қоғоз кўринишда юбориш  
+учун “E-XSUD” ахборот тизими орқали реестр тузилиши шарт.  
+8.1. Бунинг учун судьянинг шахсий кабинетига кирилади ва юқори  
+қисмида жойлашган “Маъмурий ишлар” ѐки “Маъмурий низолар”  
+бўлимларидан бирига ўтилади ва “Реестр тузиш” тугмаси босилади (55-расм).  
+55-расм  
+  
+Ушбу бўлимда ҳужжатлари учун реестр тузилмаган ишлар рўйхати акс  
+эттирилади. Бунда реестр тузилиши лозим бўлган тегишли ишни ичига  
+кирилади. Очилган ойнанинг энг пастки кисмида жойлашган “Реестр тузиш”  
+тугмаси босилади (56-расм).  
+  
+  
+56-расм  
+  
+Шундан кейин очилган “Реестр тузиш” ойнасидаги (57-расм) майдонлар  
+қуйидагича тўлдирилади:  
+57-расм  
+  
+“Ҳужжат санаси” – бу қаторда ҳужжат чиқарилган сана киритилиши  
+лозим;  
+“Ҳужжат тури” – бу қаторда рўйхатдаги мавжуд ҳужжат турларидан  
+тегишли тури танланиши шарт;  
+“Ҳужжат”  
+–  
+бу  
+қаторга  
+ҳужжатларнинг  
+.doc,  
+.docx,  
+ѐки  
+.rtf  
+кенгайтмасидаги электрон шакли бириктирилиши лозим. Файл бўш ѐки матни  
+тўлиқмас бўлиши мумкин эмас. Мазкур файл қоғоз кўриниши билан бир хилда  
+бўлиши керак. Бириктирилган файлларни ахборот тизими орқали орқага  
+қайтаришнинг ѐки ўчиришнинг имкони йўқлиги сабабли файл бириктиришда  
+хато қилиш мумкин эмас. Файлда фақат шу ишга тааллуқли ҳужжат бўлиши  
+шарт.  
+“Томонлар” – бу қаторда мазкур ҳужжат юборилиши лозим бўлган  
+томонлар танланади;  
+Мазкур ойнадаги барча тегишли қаторлар тўлдирилгандан сўнг  
+“Сақлаш” тугмаси босилади (58-расм).  
+  
+  
+  
+  
+  
+  
+58-расм  
+  
+ “Сақлаш” тугмаси босилганда “Рақам олиш” ойнаси очилади.  
+Очилган ойнада ҳужжатнинг чиқиш санаси, юбориш турига доир  
+маълумотлар киритилади.  
+Мазкур ойна қуйидаги тартибда тўлдирилади:  
+“Чиқиш  
+санаси”  
+–  
+қаторига  
+ҳужжатнинг  
+юборилиш  
+санаси  
+киритилади (бу қаторни тўлдириш мажбурийдир);  
+“Юбориш тури” – ушбу қаторда кўрсатилган юбориш турларидан  
+бири танланади (бу қаторни тўлдириш мажбурийдир);  
+“Хабарнома” – бу белги юборилган ҳужжатнинг қабул қилиб  
+олинганлиги ҳақидаги хабар зарур бўлган ҳолларда белгиланади (бу қаторни  
+тўлдириш ихтиѐрийдир).  
+Юқоридаги барча ҳаракатлар бажарилганидан сўнг “Сақлаш” тугмаси  
+босилади (59-расм).  
+59-расм  
+  
+“Сақлаш” тугмаси босилганда ҳужжатга автоматик тарзда рақам  
+берилади (60-расм).  
+60-расм  
+8.2. “Реестр” бўлимига ўтилганда очиладиган “Реестр” номли  
+блокнинг юқори ўнг тарафида “Ўчириш” , “Конверт” , “Хабарнома” ,  
+“Кузатув хати” тугмалари мавжуд (61-расм).  
+61-расм  
+  
+“Конверт” – керакли реестр белгиланиб, “Конверт” тугмаси  
+босилганда, белгиланган реестр маълумотлари асосида ҳужжат учун  
+автоматик тарзда конвертнинг устки қисмига печать қилинадиган матн  
+шакллантирилади.  
+“Хабарнома” – керакли реестр белгиланиб, бу тугма босилганда,  
+белгиланган реестр маълумотлари асосида ҳужжат учун автоматик тарзда  
+конверт билан бирга юбориш учун хабарнома шакллантирилади.  
+“Кузатув хати” – керакли реестр белгиланиб, бу тугма босилганда,  
+белгиланган реестр маълумотлари асосида ҳужжат учун автоматик тарзда  
+кузатув хати шакллантирилади.  
+  
+8.3. Судья томонидан тузилган барча ресстрлар девонхонанинг шахсий  
+кабинетидан қабул қилиб олиниши шарт. Бунинг учун девонхонанинг  
+шахсий кабинетининг юқори қисмида жойлашган “Реестр” рукнига ўтилади.  
+“Реестр” рукнига ўтилганда очилган ойнанинг юқори қисмида “Қабул  
+қилиш”, “Қайтганини белгилаш”, “Электрон қабул қилиш” тугмаси  
+мавжуд (62-расм).  
+62-расм  
+  
+“Қабул қилиш” – бу тугма босилганда “Қабул қилиш” номли блок  
+очилади. Мазкур ойна қуйидаги тартибда тўлдирилади:  
+Аввал қабул қилинмаган хат танланиб, почта бўлимига топшириш  
+санаси киритилади ҳамда “Қабул қилиш” тугмаси босилади (63-расм).  
+  
+63-расм  
+  
+“Қабул қилиш” тугмаси босилганда хат реестр тузишга тайѐр бўлади  
+ва “Реестр” рукнига босилгандаги ойнада акс этади (64-расм).  
+64-расм  
+  
+“Реестр чиқариш” – бу тугма босилганда почтага топширилиши  
+белгиланган хатлар учун реестр автоматик тарзда “Excel” файл кўринишида  
+шакллантирилиб компьютерга юкланади. У қоғоз кўринишида чоп  
+эттирилиб, хатларга маъсул почта ходимига берилади (65-расм).  
+  
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+65-расм  
+  
+  
+  
+9.эИжро ҳужжатларини электрон шаклда мажбурий ижро бюро  
+бўлимларига юбориш тартиби  
+  
+Судья томонидан маъмурий ишлар бўйича чиқарилган барча ижро  
+ҳужжатлари (қарор ва ижро варақаси) “E-XSUD” ахборот тизими орқали  
+қуйидаги кўринишда юборилади:  
+9.1. “E-XSUD” ахборот тизимига судья логини билан кирилади ва  
+судьянинг шахсий кабинетининг юқори қисмида жойлашган “Маъмурий  
+иш” ѐки “Маъмурий низо” менюсидан “Биринчи инстанция ишлари”  
+бўлимига ўтилади. Мазкур бўлимнинг юқори қисмида “Ижро тузиш”,  
+тугмаси мавжуд бўлиб, унда ижро этиш учун юборилмаган ижро ҳужжатлари  
+рўйхати акс эттирилган (66-расм).  
+66-расм  
+  
+“Ижро тузиш” тугмаси босилганда пайдо бўладиган рўйхатдан ижро  
+ҳужжати юборилиши лозим бўлган тегишли ишни ичига кириш керак. Ишни  
+ичига кирилганда ҳуқуқбузар(лар)га тегишли натижа кисмига ўтилади (67- 
+расм).  
+67-расм  
+  
+Очилган ойнанинг “Якуний натижа асослари” блокидан “Ижро  
+тузиш” тугмасини босиш лозим (68-расм).  
+  
+68-расм  
+  
+ “Ижро тузиш” тугмаси босилганда очилган ойнадаги майдонлар  
+қуйидагича тўлдирилади:  
+“Ижро варақа санаси” – бу қаторда ижро ҳужжати чиққан сана  
+киритилиши лозим;  
+“Кучга кириш санаси” - бу қаторда ижро ҳужжати кучга кирган  
+санаси кўрсатилиши шарт;  
+“Мажбурий ижро бюроси” - бу қаторда ижро ҳужжати юборилаѐтган  
+мажбурий ижро бюроси бўлими танланади;  
+“Ижро варақа” – бу қаторга ижро ҳужжати (қарор ѐки ижро варақаси)  
+файли Microsoft Word форматида бириктирилиши шарт. Мазкур файл қоғоз  
+кўринишидаги ҳужжат билан бир хилда бўлиши керак. Бу файл электрон  
+шаклда мажбурий ижро бюросининг ахборот тизимига бориб тушади ва шу  
+файл асосида давлат ижрочиси ижро ишини қўзғатади ҳамда ижро этади. Шу  
+сабабли файлни бириктиришга алоҳида эътибор қаратиш зарур. Шунингдек,  
+файлда фақат шу ишга тааллуқли бўлган ижро ҳужжати бўлиши шарт. Битта  
+файлга бир нечта ижро ҳужжатларини сақлаган ҳолда бириктирилишига йўл  
+қўйилмайди.  
+Мазкур ойнадаги тегишли қаторлар тўлдирилгандан сўнг “Сақлаш”  
+тугмаси босилади (69-расм).  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+69-расм  
+  
+9.2. Маъмурий ишга тегишли ашѐвий далиллар бўйича ижро тузиш  
+қуйидаги тартибда амалга оширилади:  
+- тегишли маъмурий ишнинг ичига кирилганда унинг пастки қисмида  
+жойлашган “Далиллар” тугмаси босилади ва очилган ойнадаги “Ижро  
+тузиш” тугмасига кирилади (70-расм);  
+  
+70-расм  
+  
+- “Ижро тузиш” тугмаси орқали очилган ойнадан тегишли қаторлари  
+юқорида кўрсатилган тартибда тўлдирилади. Бу ойнада бошқа ижро тузиш  
+ойналаридан биргина фарқи файл бириктиришда ҳисобланади, яъни “Ижро  
+варақа” қаторидан ташқари “Далил маълумоти” қатори ҳам мавжуд бўлиб,  
+унга  
+ашѐвий  
+далилга  
+тааллуқли  
+маълумотлар  
+файл  
+кўринишида  
+бириктирилиши лозим бўлади. Файлни бириктириш юқорида кўрсатилган  
+тартиб асосида амалга оширилади.  
+Мазкур ойнадаги барча қаторлар тўлдирилгандан сўнг “Сақлаш”  
+тугмаси босилади (71-расм).  
+71-расм  
+  
+9.3. Оммавий ҳуқуқий муносабатлардан келиб чиқадиган низолар  
+бўйича кўрилган ишлар учун ижро тузиш қуйидаги тартибда амалга  
+оширилади:  
+- “E-XSUD” ахборот тизимига судьянинг логини билан кирилади ва  
+унинг юқори қисмида жойлашган “Маъмурий низо” тугмасидан “Биринчи  
+инстанция ишлари” рукнига ўтилади. Мазкур рукннинг пастки қисмида  
+“Ижро тузиш”, тугмаси мавжуд бўлиб, унда ижро этиш учун юборилмаган  
+ижро ҳужжатлари рўйхати жойлашган.  
+“E-XSUD” ахборот тизимига судья логини билан кирилади ва  
+судьянинг шахсий кабинетининг юқори қисмида жойлашган “Маъмурий  
+низо” менюсидан “Биринчи инстанция ишлари” бўлимига ўтилади.  
+Мазкур бўлимнинг юқори қисмида жойлашган “Ижро тузиш” тугмаси  
+босилади. Очилган ойнада ижро этиш учун юборилмаган ижро ҳужжатлари  
+рўйхати акс эттирилган.  
+- “Ижро тузиш” тугмаси босилганда пайдо бўладиган рўйхатдан ижро  
+ҳужжати юборилиши лозим бўлган тегишли ишни ичига кирилади.  
+- ишни ичига кирилганда кўк рангда кўрсатилган “Ижро тузиш”  
+тугмаси босилади (72-расм).  
+72-расм  
+  
+Қолган амаллар юқорида кўрсатилган тартибда амалга оширилади.  
+9.4. Судья томонидан ахборот тизими орқали ижро тузиш орқали  
+юборилган ижро ҳужжатлари шу суднинг “Ижро назорати” роли берилган  
+тизим  
+фойдаланувчисининг  
+шахсий  
+кабинетида  
+жойлашган  
+“Ижро  
+варақалар” рўйхатидаги “Электрон қабул қилиш” рукнига келиб тушади  
+(73-расм).  
+73-расм  
+  
+Шундан сўнг “Электрон қабул қилиш” рукнидаги ижро ҳужжатини  
+устига  
+босилади  
+ва  
+очилган  
+ойнадан  
+“Чиқиш  
+санаси”  
+қатори  
+тўлдирилгандан кейин “Сақлаш” тугмаси босилади. Шу билан ижро  
+ҳужжати ахборот тизими орқали электрон шаклда тегишли мажбурий ижро  
+бюроси бўлимига юборилган ҳисобланади.  
+Агарда судья томонидан ижро ҳужжати нотўғри ѐки хатоликлар билан  
+ижро тузиш қилинган бўлса, шу суднинг “Ижро назорати” роли берилган  
+тизим фойдаланувчиси томонидан “Электрон қабул қилиш” рукни орқали  
+“Ўчириш” тугмаси босилади. Бунда ўчирилган ижро ҳужжатини қайтадан  
+ижро тузиш имконияти пайдо бўлади.  
+  
+10. Олий суднинг биллинг тизимидан фойдаланиш тартиби  
+  
+Агар судга мурожаат қилиш учун олдиндан ихтиѐрий тўланадиган суд  
+харажатлари Олий суднинг биллинг тизими орқали тўланган бўлса,  
+мурожаатга Олий суднинг махсус тўлов квитанцияси ҳам илова қилинади  
+(74-расм). Ушбу квитанциялар бўйича тўловлар тўланганлигини тасдиқловчи  
+штамплар қўйдириш ѐки чек тақдим этиш талаб этилмайди.  
+  
+74-расм  
+  
+10.1. Квитанция асосида тўланган тўловларни ахборот тизимига  
+киритиш суд девонхонасининг шахсий кабинетида амалга оширилади.  
+Бунинг учун суд девонхонасининг шахсий кабинетига кириш керак ва “Янги  
+ҳужжат” менюсидаги мурожаат турларидан бирини танлаш керак (75-расм).  
+75-расм  
+  
+Ушбу мурожаат турлари танланганида очиладиган бўлимда жойлашган  
+“Квитанция рақами” майдонига (76-расм) суднинг махсус квитанциясида  
+кўрсатилган 12 хонадан иборат хос рақамларни (77-расм) киритиш керак.  
+76-расм  
+  
+  
+  
+  
+77-расм  
+  
+Девонхона шахсий кабинетида даъво аризани рўйхатдан ўтказиш  
+бўлимида “Квитанция рақами” майдонининг жойлашуви қуйидагича  
+78-расм  
+  
+Девонхона шахсий кабинетида қарши даъво аризани рўйхатдан  
+ўтказиш бўлимида “Квитанция рақами” майдонининг жойлашуви қуйидагича  
+79-расм  
+  
+Девонхона шахсий кабинетида апелляция шикоятини рўйхатдан  
+ўтказиш бўлимида “Квитанция рақами” майдонининг жойлашуви қуйидагича  
+  
+  
+  
+  
+  
+80-расм  
+  
+Девонхона шахсий кабинетида кассация шикоятини рўйхатдан  
+ўтказиш бўлимида “Квитанция рақами” майдонининг жойлашуви қуйидагича  
+81-расм  
+  
+Девонхона  
+шахсий  
+кабинетида  
+бошқа  
+кирим  
+ҳужжатларини  
+рўйхатдан ўтказиш бўлимида “Квитанция рақами” майдонининг жойлашуви  
+қуйидагича  
+82-расм  
+  
+Кирим ҳужжати бўлимида ушбу майдон фақат суд харажатлари тўлаш  
+талаб этиладиган мурожаат тури танланганда пайдо бўлади.  
+Олий суд девонхонасининг шахсий кабинетида бошқа кирим  
+ҳужжатларини  
+рўйхатдан  
+ўтказиш  
+бўлимида  
+“Квитанция  
+рақами”  
+майдонининг жойлашуви қуйидагича  
+83-расм  
+Олий суд девонхонасининг кирим ҳужжати бўлимида ҳам ушбу майдон  
+фақат суд харажатлари тўлаш талаб этиладиган мурожаат турлари  
+танланганда пайдо бўлади.  
+10.2. «Квитанция рақами» майдонига квитанцияда кўрсатилган хос  
+рақам киритилганидан сўнг “Текшириш” тугмасини босиш керак (84-расм).  
+84-расм  
+  
+“Текшириш” тугмасини босганда квитанцияга тегишли маълумотлар  
+ойнаси очилади (85-расм).  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+85-расм  
+  
+Ушбу ойнада “Тўлов ҳолати”, “Тўланиши лозим” ва “Тўланган  
+сумма” қаторларидаги маълумотларга алоҳида эътибор қаратиш лозим. Агар  
+квитанцияда кўрсатилган тўланиши лозим бўлган сумма тўланган бўлса  
+“Тўлов ҳолати” қаторида Тўлиқ тўланган деган маълумот пайдо бўлади  
+(86-расм).  
+  
+  
+  
+  
+  
+86-расм  
+  
+Агар квитанцияда кўрсатилган тўланиши лозим бўлган сумма  
+тўланмаган бўлса “Тўлов ҳолати” қаторида Тўланмаган деган маълумот  
+пайдо бўлади (87-расм).  
+87-расм  
+  
+Квитанция бўйича тўловни қабул қилиш учун ойнанинг пастки  
+қисмида жойлашган “Ишда фойдаланиш” тугмасини босиш керак (88- 
+расм).  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+88-расм  
+  
+“Ишда фойдаланиш” тугмаси босилганда квитанцияда кўрсатилган  
+“Тўлов тури”га қараб тегишли майдонлар автоматик тарзда тўлдирилади.  
+  
+88-расмда мисол тариқасида кўрсатилган квитанцияда “Тўлов тури”  
+қаторида “Давлат божи” танланганлиги сабабли ушбу квитанция девонхона  
+масъул ходими томонидан қабул қилинганда “Ихтиѐрий тўланган давлат  
+божи” турига тегишли майдонлар автоматик тарзда тўлдирилади (89-расм).  
+  
+  
+  
+  
+  
+89-расм  
+  
+Агар квитанциялар сони биттадан кўп бўлса улар бўйича тўланган  
+суммаларнинг умумий йиғиндиси автоматик тарзда қўшиб борилади (90- 
+расм).  
+90-расм  
+  
+90-расмда кўрсатилган мисолда биринчи квитанция бўйича 500 сўм  
+тўланган бўлса, иккинчи квитанция бўйича 222.500 сўм тўланган, “Ихтиѐрий  
+тўланган давлат божи” майдонида эса ушбу иккита квитанциялар бўйича  
+тўланган суммалар қўшилиб умумий сумма кўрсатилган.  
+Шу тартибда қолган квитанциялар ҳам киритиб борилади.  
+  
+10.3. Суд ҳужжатига кўра ундириш белгиланган тўловларни биллинг  
+тизими орқали ихтиѐрий тўлаш учун суд квитанцияларини шакллантириш.  
+Ахборот тизимида фақат қуйидаги ундирув турлари учун Олий суднинг  
+махсус квитанциялар шакллантирилади:  
+-  
+Республика бюджетига ундириладиган ундирувлар;  
+-  
+Суд депозитига ундириладиган ундирувлар учун.  
+  
+Тўлов квитанцияларини шакллантириш ва юбориш тартиби  
+қуйидагича:  
+  
+А) Судья томонидан маъмурий низо ишини кўриб чиқиш якунига кўра  
+ахборот  
+тизимига  
+натижа  
+киритилади  
+(натижа  
+қисмида  
+юқорида  
+кўрсатилган ундирув турларидан бири бўлиши керак 91-расм ).  
+91-расм  
+  
+Б) Суд девонхонасининг шахсий кабинетида “Натижани қабул  
+қилиш” бўлимига кириб, судья томонидан киритилган натижа қабул қилиб  
+олинади (92,93-расмлар).  
+92-расм  
+93-расм  
+  
+В) Шундан сўнг, махсус квитанциянинг файли автоматик тарзда  
+шакллантирилади ва судьянинг шахсий кабинетидаги тегишли ишнинг “Иш  
+ҳужжатлари” рўйхатига қўшиб қўйилади (94-расм).  
+94-расм  
+  
+Г) Шакллантирилган тўлов квитанцияси чоп этилади (1 та варақда 2  
+та квитанция чоп этилади 95-расм).  
+95-расм  
+  
+Д) Чоп этилган тўлов квитанциялари ушбу квитанцияда тўловчи  
+сифатида кўрсатилган тарафга ихтиѐрий тўловни амалга ошириш учун  
+суднинг ҳал қилув қарори ѐки ажрими билан бирга қўшиб юборилади.  
+  
+Апелляция,  
+кассация  
+ва  
+назорат  
+инстанцияларида  
+ҳам  
+тўлов  
+квитанцияларини шакллантириш юқорида кўрсатилган тартибда амалга  
+оширилади.  
+  
+10.4. Якуний суд ҳужжатига кўра ундириш белгиланган тўловларни  
+биллинг тизими орқали ихтиѐрий тўланганлиги ҳолатини текшириш.  
+Суднинг ҳал қилув қарорига ѐки ажримига кўра республика бюджетига  
+ундирилган давлат божи, суд депозитига ундирилган видеоконференцалоқа  
+ѐки суд депозитига ундирилган почта харажати суд томонидан тўловчига  
+юборилган махсус квитанция орқали ихтиѐрий тўланганлиги ҳолатини  
+судьянинг шахсий кабинетида текшириш мумкин.  
+Бунинг учун судьянинг шахсий кабинетига кириб, тўлов ҳолатини  
+текшириш керак бўлган маъмурий низо ишини топиб, очиш керак.  
+Агар тўлов амалга оширилмаган бўлса, ишнинг натижа қисмида  
+“Тўланмаган” деган маълумот акс эттирилади. Шу билан бирга “Ижро  
+тузиш” тугмаси ҳам мавжуд бўлади (96-расм).  
+96-расм  
+  
+Агар тўлов амалга оширилган бўлса, ишнинг натижа қисмида  
+“Тўлиқ ихтиѐрий тўланган” деган маълумот акс эттирилади ва “Ижро  
+тузиш” тугмаси йўқолади (97-расм).  
+97-расм  
+  
+Шунингдек, ушбу тўловга тегишли қўшимча маълумотлар экраннинг  
+пастки қисмида жойлашган “Тўловлар” рўйхатига автоматик тарзда келиб  
+тушади (98-расм).  
+  
+  
+  
+98-расм  
+  
+Бундай ҳолатда ихтиѐрий тўланган сумма учун ижро варақаси  
+тузилмайди ҳамда мажбурий ижрога қаратилмайди.  
+  
+11. Апелляция ва кассация шикоят (протест)ларини “Е-ХSUD” ахборот  
+тизими орқали рўйхатдан ўтказиш ва тақсимлаш тартиби  
+  
+Маъмурий ишлари бўйича туман (шаҳар) судларига келиб тушган  
+апелляция ва кассация шикоят (протест)ларини рўйхатдан ўтказиш суд  
+девонхонасининг шахсий кабинетида амалга оширилади. Бунинг учун суд  
+девонхонасининг шахсий кабинетининг юқори қисмида жойлашган “Янги  
+ҳужжат” менюси орқали “Маъмурий иш” ѐки “Маъмурий низо”  
+қаторларидан тегишлича “Апелляция” ѐки “Кассация” бўлимларидан бири  
+танланади.  
+99-расм  
+100-расм  
+  
+“Маъмурий иш” ва “Маъмурий низо” қаторларидан тегишлича  
+“Апелляция” ѐки “Кассация” бири танланганда апелляция ѐки кассация  
+шикояти (протести)га тааллуқли бўлган маълумотларни киритиш ойнаси  
+очилади.  
+Бунда “Маъмурий иш рақами (суд):” деб номланган қаторга электрон  
+дастур томонидан маъмурий ишга берилган рақам тўлиқ киритилиши шарт.  
+(Мисол учун 3-1001-1801/212) Маъмурий иш рақами киритилиши билан  
+дастур  
+ушбу  
+иш  
+рақамига  
+доир  
+биринчи  
+инстанция  
+судининг  
+маълумотларини шакллантириб беради (101-расм).  
+101-расм  
+  
+Мазкур ойнадан “Шикоят берган тараф:” қаторидан шикоят берган  
+тегишли тараф белгиланади. Шикоят берган тараф танланиши билан шу  
+қаторга тааллуқли қатор очилади ва улар тўлдирилади.  
+Агарда шикоят ҳуқуқбузарнинг манфаатида бошқа шахс апелляция ѐки  
+кассация шикояти (протести) берган бўлса, тегишли ҳуқуқбузарга белги  
+қўйилиши шарт.  
+102-расм  
+103-расм  
+  
+  
+  
+  
+104-расм  
+  
+Апелляция ѐки кассация протестини рўйхатдан ўтказишда “Шикоят  
+берган тараф:” қаторидан “6-Бошқа” тури танланади ва “Шикоят берувчи  
+Ф.И.Ш.:” қаторига протестни имзоланган шахсни Ф.И.Ш. киритилади. Бу  
+апелляция ѐки кассация протести эканлигини белгилаш учун “Протест”  
+белгиси қўйиш шарт (105-расм).  
+105-расм  
+  
+Битта маъмурий иш бўйича бир нечта апелляция ѐки кассация  
+шикоятлари келиб тушган бўлса, рўйхатдан ўтказилган биринчи шикоят  
+(протест)дан ташқари қолган шикоятларга “Такрор” белгиси қўйилиши  
+шарт. Агарда шикоятдан сўнг протест келиб тушган бўлса, протестни  
+рўйхатдан ўтказишда “Протест” ва “Такрор” белгилари танланиши шарт.  
+Барча маълумотлар тўлдирилгандан сўнг “Сақлаш” тугмаси босилади.  
+“Е-ХSUD” ахборот тизими орқали рўйхатдан ўтказилган апелляция ѐки  
+кассация  
+шикоят  
+(протест)лари  
+тегишли  
+“Маъмурий  
+ишлар”  
+ва  
+“Маъмурий низолар” менюсида жойлашган “Апелляция” ѐки “Кассация”  
+рўйхатига ўтилади.  
+Мазкур рўйхатларнинг юқори қисмида жойлашган “Тақсимлаш”  
+тугмаси орқали рўйхатдан ўтказилган апелляция ѐки кассация шикоят  
+(протест)ларини белгилаган ҳолда тегишли масъул судьялар танланади.  
+Шундан сўнг маъмурий иш судьяга тақсимланган сана киритилади ва  
+“Сақлаш” тугмаси босилади. Шундан сўнг шикоят (протест) судьянинг  
+шахсий кабинетига бориб тушади.  
+106-расм  
+  
+  
+  
+  
+  
+  
+  
+
+
+---
+## 📖 МОЛ-МУЛККА ТАҚИҚ СОЛИШ БЎЙИЧА ҚЎЛЛАНМА
+*(Manba: Мол-мулкка тақиқ солиш бўйича қўлланма.pdf)*
+
+Кўчмас мулкни ва автомототранспорт воситаларини бошқа шахсга беришга  
+тақиқ қўйиш, мол-мулкни хатлаш, шунингдек тақиқни (хатловни) бекор  
+қилиш ҳақидаги маълумотларни суд (судья) томонидан тўғридан-тўғри  
+«Нотариус» автоматлаштирилган ахборот тизимига киритиш бўйича  
+ҚЎЛЛАНМА  
+I. Кўчмас мулк ва автомототранспорт воситаларига тақиқ қўйиш  
+(хатлаш) тартиби  
+  
+1. Судья ўзининг шахсий кабинетида жойлашган «Интеграциялар»  
+рукнидан «Нотариус (Тақиқ қўйиш (хатлаш) ва бекор қилиш)» модулига  
+кирилади.  
+2. Кўчмас мулк ва автомототранспорт воситаларига тақиқ қўйиш учун  
+«Интеграциялар» рукнидаги «Нотариус (Тақиқ қўйиш (хатлаш) ва бекор  
+қилиш)» модулидан «Тақиқ қўйиш (хатлаш)» тури танланади.  
+3. Судья «Тақиқ қўйиш (хатлаш)» тури орқали очилган ойнадан «Мол-мулк  
+тури» майдонидаги кўчмас мулк ёки автотраспорт воситасининг тегишлисини  
+танлайди.  
+  
+3.1. Агар автотранспорт воситасига тақиқ солиш лозим бўлса қуйидаги  
+амалларни бажариши керак:  
+- автотранспорт воситасига тақиқ солиш қайси иш доирасида амалга  
+оширилаётган бўлса ўша ишнинг рақами киритилади ва «Излаш» тугмаси  
+босилади. Натижада ойнанинг чап қисми ишлар рўйхати очилади ва ундан  
+тегишли иш танланади (1-расм);  
+- тақиқ солинаётган автотранспорт воситаси ишда иштирокчи бўлмаган  
+шахсга тегишли бўлса, «Мулкдорнинг Ф.И.Ш.» майдонидан «Бошқа» тури  
+танланади (2-расм);  
+- шахсга доир маълумотлар тўлиқ тўлдирилгач тақиқ солинаётган  
+автотранспорт воситасининг давлат рақами ва техник ҳужжат рақами  
+киритилиши шарт. Шундан сўнг «Транспорт воситасини излаш» тугмаси  
+босилади (2-расм);  
+- ушбу ойнадаги барча маълумотлар тўлдирилгандан сўнг, тақиқ солиш  
+ҳақидаги ажрим қабул қилинган сана ва унинг WORD форматдаги электрон  
+шакли бириктирилади (2-расм).  
+Эслатма: Тақиқ солинаётган автотранспорт воситаси ишда иштирокчи бўлмаган  
+шахсга тегишли бўлса, ушбу шахснинг ЖШШИР маълумоти киритиши керак.  
+  
+(1-расм)  
+(2-расм)  
+  
+3.2. Агар кўчмас мулкка тақиқ солиш лозим бўлса қуйидаги амалларни  
+бажариши керак:  
+- кўчмас мулкка тақиқ солиш қайси иш доирасида амалга оширилаётган  
+бўлса ўша ишнинг рақами киритилади ва «Излаш» тугмаси босилади.  
+Натижада ойнанинг чап қисми ишлар рўйхати очилади ва ундан тегишли иш  
+танланади (1-расм);  
+- тақиқ солинаётган кўчмас мулк ишда иштирокчи бўлмаган шахсга  
+тегишли бўлса, «Мулкдорнинг Ф.И.Ш.» майдонидан «Бошқа» тури танланади  
+(3-расм);  
+- шахсга доир маълумотлар тўлиқ тўлдирилгач тақиқ солинаётган  
+кўчмас мулкнинг кадастр рақами киритилиб, «Излаш» тугмаси босилади  
+(3-расм);  
+- ушбу ойнадаги барча маълумотлар тўлдирилгандан сўнг, тақиқ солиш  
+ҳақидаги ажрим қабул қилинган сана ва унинг WORD форматдаги электрон  
+шакли бириктирилади (3-расм).  
+(3-расм)  
+Юқоридаги амаллар бажарилгандан сўнг судья томонидан кўчмас мулк ва  
+автомототранспорт воситаларига тақиқ қўйиш ҳақида чиқарилган ажрим (қарор)  
+«Нотариус» автоматлаштирилган ахборот тизимига онлайн тарзда юборилган  
+ҳисобланади.  
+4. Судья томонидан «Нотариус» автоматлаштирилган ахборот тизимига  
+онлайн тарзда юборилган кўчмас мулк ва автомототранспорт воситаларига тақиқ  
+қўйиш ҳақида чиқарилган ажрим (қарор) рўйхати «Нотариус (Тақиқ қўйиш  
+(хатлаш) ва бекор қилиш)» модулида жойлашган «Тақиқ (хатловлар) рўйхати»  
+турида шаклланади.  
+II. Кўчмас мулк ва автомототранспорт воситаларига солинган тақиқ  
+(хатлов)ни бекор қилиш тартиби  
+  
+1. Кўчмас мулк ва автомототранспорт воситаларига солинган тақиқ  
+(хатлов)ни бекор қилиш судья ўзининг шахсий кабинетида жойлашган  
+«Интеграциялар» рукнидан «Нотариус (Тақиқ қўйиш (хатлаш) ва бекор  
+қилиш)» модулида жойлашган «Тақиқ (хатловлар) рўйхати» турига кирилади.  
+  
+2. «Тақиқ (хатловлар) рўйхати» турида судья томонидан тақиқ солинган  
+(хатланган) кўчмас мулк ва автомототранспорт воситалари рўйхати тўлиқ  
+сақланади.  
+Рўйхатда солинган тақиқ (хатланган) кўчмас мулк ва автомототранспорт  
+воситаларидан тегишлиси топилади ва ойнанинг ўнг томонидан жойлашган «Бекор  
+қилиш» тугмаси босилади (1-расм).  
+Рўйхатдан «Бекор қилиш» тугмаси босилгандан сўнг, ойнанинг пастки  
+қисмида судьянинг тақиқ (хатлов)ни бекор қилиш ҳақидаги ажрим (қарори) санаси  
+ва унинг WORD форматдаги электрон шакли бириктирилади (2-расм)  
+(1-расм)  
+(2-расм)  
+  
+3. Агар кўчмас мулк ва автомототранспорт воситаларига шу суднинг бошқа  
+судьяси томонидан тақиқ солинган (хатланган), лекин ушбу судья мавжуд бўлмаса,  
+улардан тақиқ (хатлов)ни бекор қилиш учун «Бошқа судьяга юклаш» тугмаси  
+орқали ҳозирда тақиқ (хатлов)ни бекор қилишга ваколатли судьянинг шахсий  
+кабинетига юборилади. Бунинг учун ваколатли судья танланиб, «Сақлаш» тугмаси  
+босилади.  
+  
 

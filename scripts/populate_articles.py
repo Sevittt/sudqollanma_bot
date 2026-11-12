@@ -64,6 +64,30 @@ ARTICLE_TOPICS = [
         "systemId": "IT",
         "title": "Sud xodimlari uchun MS Word va MS Excel darsligi (Masterclass)",
         "tags": ["word", "excel", "qollanma"]
+    },
+    {
+        "category": "general",
+        "systemId": "IT_WIN11",
+        "title": "Windows 11 operatsion tizimi bilan ishlash va yangi funksiyalar",
+        "tags": ["windows11", "os", "it", "sozlamalar"]
+    },
+    {
+        "category": "general",
+        "systemId": "IT_EXCEL",
+        "title": "Excel 2021 yangi formulalari va ma'lumotlar tahlili",
+        "tags": ["excel", "formulalar", "it", "tahlil"]
+    },
+    {
+        "category": "general",
+        "systemId": "IT_PC",
+        "title": "Kompyuter texnik nosozliklarini diagnostika qilish va tezkor birinchi yordam",
+        "tags": ["pc", "diagnostika", "nosozlik", "it"]
+    },
+    {
+        "category": "general",
+        "systemId": "IT_PRINTER",
+        "title": "HP va Canon printerlarini kompyuterga o'rnatish va muammolar yechimi",
+        "tags": ["printer", "drayver", "hp", "canon", "o'rnatish"]
     }
 ]
 

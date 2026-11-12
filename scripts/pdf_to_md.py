@@ -1,5 +1,9 @@
 import os
+import sys
 import fitz  # PyMuPDF
+
+# Windows konsolida unicode (emoji) chiqarish xatolarini oldini olish
+sys.stdout.reconfigure(encoding='utf-8')
 
 def pdf_to_markdown(root_folder, output_file):
     with open(output_file, 'w', encoding='utf-8') as md_file:

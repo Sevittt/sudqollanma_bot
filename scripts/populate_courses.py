@@ -10,10 +10,16 @@ Ishlatish:
 """
 
 import sys
+import os
 import uuid
 import datetime
 import logging
 import argparse
+
+# Asosiy papkani pathga qo'shish
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+
 from loader import get_db
 from firebase_admin import firestore
 
@@ -192,10 +198,10 @@ def build_courses() -> list[dict]:
         "title": "IT Ko'nikmalar va EDO Tizimi",
         "description": "MS Office asoslari, umumiy IT savodxonlik va elektron hujjat aylanishi (EDO)",
         "difficulty": "beginner",
-        "estimatedHours": 1,
-        "hasCertificate": False,
+        "estimatedHours": 2,
+        "hasCertificate": True,
         "targetRole": ["all"],
-        "tags": ["it", "edo", "office", "ms-word", "ms-excel"],
+        "tags": ["it", "edo", "office", "ms-word", "ms-excel", "windows", "hardware"],
         "imageUrl": "assets/images/courses/it_edo.png",
         "isPublished": True,
         "authorId": "system",
@@ -203,10 +209,14 @@ def build_courses() -> list[dict]:
         "createdAt": now,
         "updatedAt": now,
         "modules": [
-            module("it_m1", "MS Office va Umumiy IT Asoslari", "MS Word va Excel asosiy funksiyalarini o'rganish", 1, [
+            module("it_m1", "MS Office va Umumiy IT Asoslari", "MS Word, Excel, Windows va Hardware bilan ishlash", 1, [
                 lesson("MS Word va Excel Masterclass", "article", "art_it_4", 1, 8, True),
-                lesson("IT savodxonlik — Test (Qism 1)", "quiz", "quiz_general_01", 2, 20, True, 50),
-                lesson("IT savodxonlik — Test (Qism 2)", "quiz", "quiz_general_02", 3, 20, True, 50)
+                lesson("Windows 11 operatsion tizimi bilan ishlash asoslari", "article", "art_it_win11_5", 2, 8, True),
+                lesson("Excel 2021 va Ma'lumotlar Tahlili", "article", "art_it_excel_6", 3, 8, True),
+                lesson("Kompyuter texnik nosozliklarini diagnostika qilish", "article", "art_it_pc_7", 4, 8, True),
+                lesson("HP va Canon printerlarini sozlash va o'rnatish", "article", "art_it_printer_8", 5, 8, True),
+                lesson("IT savodxonlik — Test (Qism 1)", "quiz", "quiz_general_01", 6, 20, True, 50),
+                lesson("IT savodxonlik — Test (Qism 2)", "quiz", "quiz_general_02", 7, 20, True, 50)
             ]),
             module("it_m2", "EDO va Billing Tizimi", "Elektron to'lov va billing tizimini o'rganish", 2, [
                 lesson("Billing elektron to'lov tizimi", "video", "tmIGWqbK5Gtid5vKJZaA", 1, 10, False),
