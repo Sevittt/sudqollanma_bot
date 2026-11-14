@@ -113,5 +113,39 @@ class SyncTest(unittest.TestCase):
         self.assertEqual(len(plan_sync([c], existing, {'dars'}, MODEL, DIM).upsert), 1)
 
 
+class EmbedTest(unittest.TestCase):
+    def test_each_text_sent_as_separate_content(self):
+        try:
+            from google.genai import types
+        except ImportError:
+            self.skipTest('google-genai oʻrnatilmagan')
+        from types import SimpleNamespace
+        from rag.build import embed_documents
+
+        seen = {}
+
+        def embed_content(model, contents, config):
+            seen['contents'] = contents
+            return SimpleNamespace(embeddings=[SimpleNamespace(values=[0.1]) for _ in contents])
+
+        client = SimpleNamespace(models=SimpleNamespace(embed_content=embed_content))
+        vectors = embed_documents(client, ['a', 'b', 'c'], MODEL, DIM)
+        self.assertEqual(len(vectors), 3)
+        self.assertTrue(all(isinstance(c, types.Content) for c in seen['contents']))
+
+    def test_vector_count_mismatch_raises(self):
+        try:
+            import google.genai  # noqa: F401
+        except ImportError:
+            self.skipTest('google-genai oʻrnatilmagan')
+        from types import SimpleNamespace
+        from rag.build import embed_documents
+
+        client = SimpleNamespace(models=SimpleNamespace(
+            embed_content=lambda **_: SimpleNamespace(embeddings=[SimpleNamespace(values=[0.1])])))
+        with self.assertRaises(RuntimeError):
+            embed_documents(client, ['a', 'b'], MODEL, DIM, retries=1)
+
+
 if __name__ == '__main__':
     unittest.main()

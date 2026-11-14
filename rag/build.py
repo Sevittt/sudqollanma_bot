@@ -64,9 +64,12 @@ def embed_documents(client, texts: list[str], model: str, dim: int, retries: int
     from google.genai import types
 
     config = types.EmbedContentConfig(task_type='RETRIEVAL_DOCUMENT', output_dimensionality=dim)
+    # MUHIM: gemini-embedding-2 oddiy satrlar ro'yxatini BITTA kontent deb qabul qilib,
+    # bitta vektor qaytaradi. Har bir matn alohida Content bo'lishi shart.
+    contents = [types.Content(parts=[types.Part(text=t)]) for t in texts]
     for attempt in range(retries):
         try:
-            result = client.models.embed_content(model=model, contents=texts, config=config)
+            result = client.models.embed_content(model=model, contents=contents, config=config)
             vectors = [e.values for e in result.embeddings]
             if len(vectors) != len(texts):
                 raise RuntimeError(f'{len(texts)} ta matnga {len(vectors)} ta vektor qaytdi')
