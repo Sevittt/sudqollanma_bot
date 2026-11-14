@@ -21,6 +21,10 @@ EMBEDDING_DIM = int(os.getenv("EMBEDDING_DIM", "768"))
 WIKI_HIT_THRESHOLD = float(os.getenv("WIKI_HIT_THRESHOLD", "0.35"))
 # RAG vector search uchun necha chunk qaytarilsin
 RAG_LIMIT = int(os.getenv("RAG_LIMIT", "3"))
+# rag/build.py yig'adigan kolleksiya (gemini-embedding-2, RETRIEVAL_DOCUMENT)
+RAG_COLLECTION = os.getenv("RAG_COLLECTION", "rag_chunks_v2")
+# Cosine distance chegarasi: bundan uzoq bo'laklar mavzuga aloqasiz deb tashlanadi
+RAG_MAX_DISTANCE = float(os.getenv("RAG_MAX_DISTANCE", "0.33"))
 # knowledge_base fallback uchun necha maqola o'qilsin
 KB_FALLBACK_LIMIT = int(os.getenv("KB_FALLBACK_LIMIT", "5"))
 

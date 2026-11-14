@@ -27,37 +27,21 @@ Qoidalar:
 class AIService:
     @staticmethod
     async def get_system_manuals():
-        """
-        Fetch manual content from Firestore knowledge_base and Markdown files.
+        """Test savoli uchun zaxira kontekst: knowledge_base'dan bir nechta maqola.
+
+        Avval data/*.md fayllar (jumladan 1.4 MB knowledge.md) ham butunlay
+        promptga qo'shilardi — bu olib tashlandi.
         """
         context_parts = []
         try:
-            # 1. Firestore 'knowledge_base' kolleksiyasidan (articles emas!)
             if get_db():
                 kb_ref = get_db().collection('knowledge_base').limit(config.KB_FALLBACK_LIMIT).stream()
                 for doc in kb_ref:
                     data = doc.to_dict()
-                    # Field 'content' ishlatiladi (text emas)
                     content = data.get('content', data.get('text', ''))
                     if content:
                         title = data.get('title', 'Maqola')
                         context_parts.append(f"Qo'llanma: {title}\n{content[:3000]}")
-
-            # 2. Recursive Markdown File Search in 'data' directory
-            import os
-            data_dir = 'data'
-            if os.path.exists(data_dir):
-                for root, dirs, files in os.walk(data_dir):
-                    for file in files:
-                        if file.endswith(".md"):
-                            file_path = os.path.join(root, file)
-                            try:
-                                with open(file_path, 'r', encoding='utf-8') as f:
-                                    content = f.read()
-                                    context_parts.append(f"Guide ({file}):\n{content}")
-                            except Exception as read_err:
-                                logging.warning(f"Failed to read manual {file}: {read_err}")
-
             return "\n\n".join(context_parts)
         except Exception as e:
             logging.error(f"Error fetching manuals: {e}")
@@ -66,78 +50,18 @@ class AIService:
 
     @staticmethod
     async def get_relevant_context(user_query, limit=3):
+        """Savolga mos bo'laklarni rag_chunks_v2 vektor qidiruvidan oladi.
+
+        Mos bo'lak topilmasa bo'sh satr qaytadi — prompt modelga umumiy
+        bilimdan foydalanishni aytadi. Tasodifiy maqolalar qo'shilmaydi.
         """
-        Kontekst qidiruv zanjiri:
-          1. WikiService → Vector Search (cosine, threshold=0.25) — tezkor wiki qatlami
-          2. Topilmasa: 'rag_chunks' Vector Search — mavjud RAG mantiq
-          3. RAG natijasi bor bo'lsa: fon rejimida wiki sahifa yaratiladi
-          4. RAG ham bo'sh bo'lsa: knowledge_base fallback
-
-        Wiki qatlami xato bersaham, asosiy RAG ishlashda davom etadi.
-        """
-        # ── 1. Wiki qatlami ──────────────────────────────────────────────────────
         try:
-            from services.wiki_service import WikiService
-            wiki_context = await WikiService.search(user_query)
-            if wiki_context:
-                return wiki_context
-        except Exception as e:
-            logging.error(f"Wiki search xatosi (RAG ga o'tiladi): {e}")
-
-        # ── 2. RAG fallback: rag_chunks Vector Search ────────────────────────────
-        try:
-            # pyrefly: ignore [missing-import]
-            from google.genai import types
-
-            # Query embedding — config.EMBEDDING_MODEL rag_chunks bilan bir xil bo'lishi SHART
-            embedding_result = await init_gemini().aio.models.embed_content(
-                model=config.EMBEDDING_MODEL,
-                contents=user_query,
-                config=types.EmbedContentConfig(output_dimensionality=config.EMBEDDING_DIM)
-            )
-            query_vector = embedding_result.embeddings[0].values
-
-            # Firestore Vector Search — faqat 'rag_chunks' kolleksiyasi
-            from google.cloud.firestore_v1.vector import Vector
-            from google.cloud.firestore_v1.base_vector_query import DistanceMeasure
-
-            results = get_db().collection("rag_chunks").find_nearest(
-                vector_field="embedding",
-                query_vector=Vector(query_vector),
-                distance_measure=DistanceMeasure.COSINE,
-                limit=limit
-            ).get()
-
-            context_parts = []
-            for doc in results:
-                data = doc.to_dict()
-                # 'rag_chunks' da matn 'text' maydonida saqlanadi
-                content = data.get('text', '')
-                if content:
-                    context_parts.append(content[:3000])
-
-            if not context_parts:
-                logging.warning("Wiki miss → RAG fallback → knowledge_base fallback")
-                return await AIService.get_system_manuals()
-
-            rag_context = "\n\n...[Vector Chunk]...\n\n".join(context_parts)
-
-            # ── 3. Fon rejimida wiki sahifa yaratish ─────────────────────────────
-            try:
-                from services.wiki_service import WikiService
-                loop = asyncio.get_running_loop()
-                loop.create_task(WikiService.build_page(user_query, rag_context))
-            except RuntimeError:
-                pass  # Running loop yo'q — wiki fon vazifasi o'tkazildi
-            except Exception as wiki_err:
-                logging.error(f"Wiki build_page task xatosi: {wiki_err}")
-
-            return rag_context
-
+            from services.rag_search import format_context, search
+            hits = await search(user_query, limit=limit)
+            return format_context(hits)
         except Exception as e:
             logging.error(f"Vector search xatosi: {e}")
-            # ── 4. Oxirgi fallback: knowledge_base ───────────────────────────────
-            return await AIService.get_system_manuals()
+            return ""
 
 
     @staticmethod
