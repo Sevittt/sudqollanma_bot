@@ -11,21 +11,19 @@ FIREBASE_CREDENTIALS = os.getenv("FIREBASE_CREDENTIALS")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 
 # ── Embedding konfiguratsiyasi ──────────────────────────────────────────────
-# MUHIM: Bu model bilan rag_chunks va wiki_pages indexlangan bo'lishi SHART.
-# Agar model o'zgarsа — barcha kolleksiyalarni qayta indexlash kerak!
+# MUHIM: Bu model bilan rag_chunks_v2 indexlangan bo'lishi SHART.
+# Agar model o'zgarsа — kolleksiyani `python -m rag.build` bilan qayta indexlash kerak!
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "gemini-embedding-2")
 EMBEDDING_DIM = int(os.getenv("EMBEDDING_DIM", "768"))
 
-# ── RAG va Wiki threshold konfiguratsiyasi ──────────────────────────────────
-# Cosine distance threshold (kichikroq = qatiyroq moslik)
-WIKI_HIT_THRESHOLD = float(os.getenv("WIKI_HIT_THRESHOLD", "0.35"))
+# ── RAG konfiguratsiyasi ────────────────────────────────────────────────────
 # RAG vector search uchun necha chunk qaytarilsin
 RAG_LIMIT = int(os.getenv("RAG_LIMIT", "3"))
 # rag/build.py yig'adigan kolleksiya (gemini-embedding-2, RETRIEVAL_DOCUMENT)
 RAG_COLLECTION = os.getenv("RAG_COLLECTION", "rag_chunks_v2")
 # Cosine distance chegarasi: bundan uzoq bo'laklar mavzuga aloqasiz deb tashlanadi
 RAG_MAX_DISTANCE = float(os.getenv("RAG_MAX_DISTANCE", "0.33"))
-# knowledge_base fallback uchun necha maqola o'qilsin
+# knowledge_base fallback (test savoli generatsiyasi) uchun necha maqola o'qilsin
 KB_FALLBACK_LIMIT = int(os.getenv("KB_FALLBACK_LIMIT", "5"))
 
 # Admin Telegram IDs (comma-separated in .env, e.g., "123456,789012")

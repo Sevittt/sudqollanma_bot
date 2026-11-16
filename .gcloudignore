@@ -33,7 +33,6 @@ sudqollanma_bot/data/
 # Exclude populate/ETL scripts (not needed in production container)
 populate_*.py
 pdf_to_md.py
-upload_knowledge.py
 list_models.py
 read_excel.py
 

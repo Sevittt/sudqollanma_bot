@@ -147,5 +147,44 @@ class EmbedTest(unittest.TestCase):
             embed_documents(client, ['a', 'b'], MODEL, DIM, retries=1)
 
 
+class EvalTest(unittest.TestCase):
+    def test_eval_cases_has_30_unique_queries(self):
+        from rag.eval import EVAL_CASES
+
+        self.assertEqual(len(EVAL_CASES), 30)
+        self.assertEqual(len({c.query for c in EVAL_CASES}), 30)
+        self.assertTrue(all(c.expected_doc_ids for c in EVAL_CASES))
+
+    def test_evaluate_case_tracks_ranks_and_distance_threshold(self):
+        from rag.eval import EvalCase, evaluate_case
+
+        case = EvalCase(query='Q', expected_doc_ids=('doc_b',))
+        hits = [
+            {'doc_id': 'doc_a', 'distance': 0.21},
+            {'doc_id': 'doc_b', 'distance': 0.35},
+            {'doc_id': 'doc_c', 'distance': 0.36},
+        ]
+        res = evaluate_case(case, hits, max_distance=0.33)
+        self.assertFalse(res['hit_at_1'])
+        self.assertFalse(res['hit_at_3_threshold'])  # 0.35 > 0.33
+        self.assertTrue(res['hit_at_5'])
+        self.assertEqual(res['matched_rank'], 2)
+
+        res_loose = evaluate_case(case, hits, max_distance=0.40)
+        self.assertTrue(res_loose['hit_at_3_threshold'])
+
+    def test_summarize_eval_threshold(self):
+        from rag.eval import EvalCase, evaluate_case, summarize_eval
+
+        c1 = evaluate_case(EvalCase('q1', ('a',)), [{'doc_id': 'a', 'distance': 0.20}])
+        c2 = evaluate_case(EvalCase('q2', ('b',)), [{'doc_id': 'x', 'distance': 0.25}, {'doc_id': 'b', 'distance': 0.28}])
+        c3 = evaluate_case(EvalCase('q3', ('c',)), [{'doc_id': 'z', 'distance': 0.30}])
+        summary = summarize_eval([c1, c2, c3], min_hit5=0.80)
+        self.assertEqual(summary['hit_1'], 1)
+        self.assertEqual(summary['hit_3_threshold'], 2)
+        self.assertEqual(summary['hit_5'], 2)
+        self.assertFalse(summary['passed'])  # 2/3 = 66.7% < 80%
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -20,8 +20,8 @@ O'zbekiston sud tizimi xodimlari uchun AI-powered Telegram boti. Flutter mobil i
 | Bot framework | Aiogram 3.x (async) |
 | Ma'lumotlar bazasi | Firebase Firestore (NoSQL) |
 | AI generatsiya | Google Gemini (`gemini-3.1-flash-lite-preview`) |
-| AI embedding | `gemini-embedding-exp-03-07` (768 dimension) |
-| Vektor qidiruv | Firestore Vector Search (Cosine, `rag_chunks` kolleksiyasi) |
+| AI embedding | `gemini-embedding-2` (768 dimension) |
+| Vektor qidiruv | Firestore Vector Search (Cosine, `rag_chunks_v2` kolleksiyasi) |
 | Infratuzilma | Google Cloud Run, region: `europe-west4` |
 | GCP project | `educationapp-4780a` |
 | Cloud Run URL | `https://sudqollanmabot-660835097321.europe-west4.run.app` |
@@ -55,10 +55,17 @@ sudqollanma_bot/
 │
 ├── services/
 │   ├── ai_service.py        # Gemini API, RAG (vector search), prompt, suhbat tarixi
+│   ├── rag_search.py        # rag_chunks_v2 bo'yicha vektor qidiruv va kontekst formatlash
 │   └── firestore_service.py # Barcha Firestore CRUD amallari
 │
+├── rag/                     # Yagona RAG yig'ish va sifat o'lchovi paketi
+│   ├── build.py             # Manbalar → gemini-embedding-2 → rag_chunks_v2
+│   ├── chunker.py           # Markdown va matn bo'laklovchi
+│   ├── sources.py           # DARS, qollanma (knowledge.md), faqs, knowledge_base
+│   ├── sync.py              # Hash tekshiruvi, dedupe va incremental sync rejasi
+│   └── eval.py              # 30 ta savolda hit@1 / hit@3 / hit@5 sifat o'lchovi
+│
 ├── scripts/                 # ETL/baza to'ldirish (production containerga kirmaydi)
-│   ├── upload_knowledge.py  # PDF/MD → embedding → rag_chunks kolleksiyasiga yuklash
 │   ├── pdf_to_md.py         # PDF fayllarni Markdown ga aylantirish
 │   ├── populate_*.py        # Firestore kolleksiyalarini to'ldirish skriptlari
 │   └── generate_certificate.py
@@ -99,7 +106,7 @@ ADMIN_IDS=123456789,987654321
 |---|---|
 | `users` | Foydalanuvchilar (telegram_id, phoneNumber, xp, level, role, courtName, ...) |
 | `conversations` | Suhbat tarixi (RAG uchun context) |
-| `rag_chunks` | Vektorlashtirilgan bilimlar bazasi (text + embedding[768]) |
+| `rag_chunks_v2` | Yagona vektorlashtirilgan bilimlar bazasi (text + Vector[768], `gemini-embedding-2`) |
 | `knowledge_base` | Maqolalar (title, content, category, systemId) |
 | `faqs` | Ko'p so'raladigan savollar (question, answer, category, difficulty) |
 | `quizzes` | Test topiklari → subcollection: `questions` |
@@ -132,29 +139,35 @@ dp.include_router(helpdesk.router)     # 8. OXIRGI — catch-all text handler
 ## AI va RAG arxitekturasi
 
 1. Foydalanuvchi savol yozadi
-2. `ai_service.py → get_relevant_context()` → savol `gemini-embedding-exp-03-07` orqali vektorizatsiya qilinadi (768 dim)
-3. `rag_chunks` kolleksiyasida Firestore Vector Search (Cosine) → Top-3 chunk topiladi
+2. `ai_service.py → get_relevant_context()` → `rag_search.py` savolni `gemini-embedding-2` (`RETRIEVAL_QUERY`, 768 dim) orqali vektorizatsiya qiladi
+3. `rag_chunks_v2` kolleksiyasida Firestore Vector Search (Cosine, chegara `<= 0.33`) → Top-3 chunk topiladi
 4. Chunk + foydalanuvchi konteksti (ism, lavozim, sud) + suhbat tarixi → Gemini ga yuboriladi
 5. `SYSTEM_INSTRUCTION` — "Raqamli Mentor" roli, o'zbekona empatiya, faqat IT savollarga javob
 
-**Fallback:** Vector search natija bermasa → `knowledge_base` kolleksiyasidan oddiy o'qish.
+**Eslatma:** Mos bo'lak topilmasa kontekst bo'sh qaytadi — prompt modelga umumiy IT bilimi asosida javob berishni aytadi (tasodifiy maqolalar qo'shilmaydi).
 
 ---
 
 ## Bilimlar bazasini yangilash
 
+Bilim qo'shish = manbani (`DARS`, `data/knowledge.md`, `faqs` yoki `knowledge_base`) yangilab, `rag.build` ni ishga tushirish:
+
 ```powershell
-# 1. PDF → MD
 cd sudqollanma_bot
+# 1. PDF → MD (yangi PDF qo'shilganda)
 python scripts/pdf_to_md.py
 
-# 2. MD → Firestore rag_chunks (embedding bilan)
-python scripts/upload_knowledge.py
+# 2. Manbalar → Firestore rag_chunks_v2 (faqat o'zgargan bo'laklar embed qilinadi)
+python -m rag.build --dry-run
+python -m rag.build
+
+# 3. Qidiruv sifatini tekshirish (30 ta savol, hit@5 >= 80%)
+python -m rag.eval
 ```
 
-Firestore Vector Search index (bir marta yaratiladi):
+Firestore Vector Search index (`rag_chunks_v2` uchun bir marta yaratiladi):
 ```powershell
-cmd /c "gcloud alpha firestore indexes composite create --project=educationapp-4780a --collection-group=knowledge_base --query-scope=COLLECTION --field-config=field-path=embedding,vector-config='{\"dimension\":\"768\",\"flat\":\"{}\"}'"
+cmd /c "gcloud alpha firestore indexes composite create --project=educationapp-4780a --collection-group=rag_chunks_v2 --query-scope=COLLECTION --field-config=field-path=embedding,vector-config='{\"dimension\":\"768\",\"flat\":\"{}\"}'"
 ```
 
 ---
